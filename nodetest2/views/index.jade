@@ -1,21 +1,21 @@
 extends layout
 
 block content
-    h1= title
-    p Welcome to our test
+    #logo
+        img(src = "/images/logo.svg" alt = "main logo")
+        p 
+           | Alex Norton<br>
+           | UX Design / Systems
 
     // Wrapper
     #wrapper
 
-        // ITERATE PROJECTS
-        each project in projects
-            img(src=project.images[0].src, alt=project.images[0]name)
-
-        // /ITERATE PROJECTS
-
         // IMAGE TEST
-        h2#dynam-text Image Test
-        img#im-test.hero-img
+        for result in projects
+            h2= result.name
+            .hero
+                img.hero-img(src= result.images[0].src)
+
         // /IMAGE TEST
 
     // /WRAPPER

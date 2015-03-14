@@ -14,6 +14,9 @@ $(document).ready(function() {
     // Username link click
     // $('#userList table tbody').on('click', 'td a.linkshowuser', showUserInfo);
 
+    // Center In
+    $('#wrapper').alwaysCenterIn(window);
+
 });
 
 // Functions =============================================================
@@ -68,6 +71,22 @@ function showUserInfo(event) {
 
 };
 
+
+// // Pull in our content Json
+// var content = (function () {
+//     var content = null;
+//     $.ajax({
+//         'async': false,
+//         'global': false,
+//         'url': "javascripts/content.json",
+//         'dataType': "json",
+//         'success': function (data) {
+//             content = data;
+//             alert("Success!");
+//         }
+//     });
+//     return content;
+// })(); 
 
 // function buildSite() {
 
