@@ -1,0 +1,101 @@
+var Products = {
+
+  orange: {
+    title: "Orange Tiny Terror",
+    price: 699.99,
+    image: "img/orange.jpg",
+    description:  "All valve, 15 watt portable guitar head. Featuring a unique two stage preamp which has a massive tonal range using just three controls. When driven, this little amp has almost as much gain as most four stage lead channels!",
+  },
+
+  headphone: {
+    title: "B+W P3 Headphones",
+    price: 399.99 ,
+    image: "img/headphone.jpg",
+    description:  "These over-ear headphones represent a giant leap forward in sound quality. They provide a truly immersive sound, combined with luxurious comfort and impeccable build quality.",
+  },
+
+  fish: {
+    title: "The Computational Beauty of Nature",
+    price: 12.86,
+    image: "img/nature.jpg",
+    description:  "The Computational Beauty of Nature: Computer Explorations of Fractals, Chaos, Complex Systems, and Adaptation",
+  },
+
+  honey: {
+    title: "Overpriced Honey",
+    price: 15.00,
+    image: "img/honey.jpg",
+    description:  "Wildflower honey, varying in color from light gold to a medium amber, with a range of flavor from dark cher, jasmine and spices. ",
+  },
+
+  candle: {
+    title: "Scent of Neroli",
+    price: 42.00,
+    image: "img/neroli.jpg",
+    description:  "Scents of neroli candle by Land Candles. Using the finest ingredients, each candle is handmade using carefully blended natural fragrances and pure essential oils in their New York atelier. ",
+  },
+
+  norse: {
+    title: "Classic Raincoat",
+    price: 604.00,
+    image: "img/norse.jpg",
+    description:  "Classic rain coat in a double faced, bonded Italian cotton fabric. The length of Thor Rain Cotton provides a good shield from wind and rain, with a hidden collar storm-flap and double front closure to ensure protection.",
+  },
+
+  para: {
+    title: "Parametric Pillow",
+    price: 666.66,
+    image: "img/para.jpg",
+    description:  "SFMOMA Architecture and Design Curator Henry Urbach for the exhibition Sensate: Bodies and Design. The wall, part of a series started with P_Wall (2006), is an evolution of the earlier work exploring the self-organization of material under force. Using nylon fabric and wooden dowels as form-work, the weight of the liquid plaster slurry causes the fabric to sag, expand, and wrinkle.",
+  },
+
+  meri: {
+    title: "Hauki Fabric",
+    price: 56.80,
+    image: "img/merimekko.jpg",
+    description:  "Deep Water Pike. The charming new Hauki print is designed by Sanna Annukka, inspired by summers spent at her grandmother’s lakeside cottage. Fearing these underwater creatures might nibble her toes, she always swam close to shore. The 100% organic cotton fabric is ideal for pillows and duvet covers among other creations, especially for the fish-friendly.",
+  },
+
+   buda: {
+    title: "Grand Budapest Hotel Soundtrack",
+    price: 10.35,
+    image: "img/wes.jpg",
+    description:  "Sound track to the adventures of Gustave H, a legendary concierge at a famous European hotel between the wars, and Zero Moustafa, the lobby boy who becomes his most trusted friend.",
+  },
+
+  clock: {
+    title: "Concrete Clock",
+    price: 240.00,
+    image: "img/watch.jpg",
+    description:  "Time divides and measures the progress of existence. A timepiece displays that time in three dimensions. With our 4th Dimension Timepieces, we bring these dimensions together with an original design. The timepieces’ concrete construction strongly proclaims its physicality while its design, in the shape of a spiral staircase, helps you envision the concept of time by its constantly evolving patterns of light and shade. These timepieces clearly tell the time while quietly engaging the viewer in the concepts of a 4th dimension.",
+  },
+
+  guy: {
+    title: "Panegyric",
+    price: 5.99,
+    image: "img/guy_debord.jpg",
+    description:  "Guy Debord, as founding and pivotal figure of the Situationist International, pursued one of the twentieth century’s most arch and exciting assaults on modern life. His 1967 Society of the Spectacle (followed, twenty years later, by Comments on the Society of the Spectacle) was a fierce critique of late-capitalist culture and became the signal text for those involved in the political events of May 1968 and beyond.",
+  },
+
+  lego: {
+    title: "Lego Architecture Studio",
+    price: 149.99,
+    image: "img/lego_2.jpg",
+    description:  "Bring your architectural creations to life in LEGO® form with LEGO Architecture Studio. In this amazing set you get over 1200 LEGO bricks and an inspirational guidebook filled with 272 pages of tips, techniques, features, and intuitive hands-on exercises endorsed by leading design houses. LEGO Architecture Studio gives you everything you need to create your very own unique buildings. Let your imagination guide your design.",
+  },
+
+  witch: {
+    title: "Redwitch Chorus",
+    price: 150.00,
+    image: "img/redwitch.jpg",
+    description:  "The Empress is a three-dimensional modulation machine, and when you couple its vast array of sounds with absolutely wicked construction – and some cool graphics – you’ve got one of the drippiest sounding chorus/vibrato pedals ever made.",
+  },
+
+  uno: {
+    title: "Arduino Uno",
+    price: 32.25,
+    image: "img/arduino.jpg",
+    description:  "The Arduino Uno R3 is a microcontroller board based on the ATmega328. It has 14 digital input/output pins (of which 6 can be used as PWM outputs), 6 analog inputs, a 16 MHz crystal oscillator, a USB connection, a power jack, an ICSP header, and a reset button. It contains everything needed to support the microcontroller; simply connect it to a computer with a USB cable or power it with a AC-to-DC adapter or battery to get started.",
+  }
+
+};

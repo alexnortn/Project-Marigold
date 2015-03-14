@@ -1,14 +1,18 @@
 // Userlist data array for filling in info box
 var userListData = [];
+var projects;
 
 // DOM Ready =============================================================
 $(document).ready(function() {
 
     // Populate the user table on initial page load
-    populateTable();
+    // populateTable();
+
+    // Build Site
+    // buildSite();
 
     // Username link click
-    $('#userList table tbody').on('click', 'td a.linkshowuser', showUserInfo);
+    // $('#userList table tbody').on('click', 'td a.linkshowuser', showUserInfo);
 
 });
 
@@ -63,3 +67,12 @@ function showUserInfo(event) {
     $('#userInfoLocation').text(thisUserObject.location);
 
 };
+
+
+// function buildSite() {
+
+//     // Set up projects array
+//     projects = content.projects;
+//     console.log(projects);  
+//     $('#im-test').attr("src", content.projects[0].images[0].src);
+// }
