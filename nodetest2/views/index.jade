@@ -7,14 +7,26 @@ block content
            | Alex Norton<br>
            | UX Design / Systems
 
+    #hamburger
+        img(src = "/images/hamburger2.svg" alt = "main nav")
+
+    #pagination
+        for result in projects
+            .pagination&attributes({'data': result.name})
+
+    img#arrow(src = "/images/arrow.svg" alt = "down arrow")
+
+
     // Wrapper
     #wrapper
 
         // IMAGE TEST
         for result in projects
-            h2= result.name
             .hero(style='background-image: url(#{result.images[0].src});')
-                
+            .description
+                h3 #{result.year}
+                h2 #{result.name}
+                p #{result.description_short}
 
         // /IMAGE TEST
 
