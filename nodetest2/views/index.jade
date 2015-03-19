@@ -25,6 +25,7 @@ block content
                 p #{result.description_short}
             .overlay
             .hero-box
-                .hero(style='background-image: url(#{result.images[0].src});')
+                img(style='background-image: url(#{result.images[0].src});')
+                img(src=result.images[0].src alt =result.images[0].caption)
 
     // /IMAGE TEST
