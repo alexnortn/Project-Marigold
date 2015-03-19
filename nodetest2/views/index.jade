@@ -17,13 +17,14 @@ block content
             .pagination&attributes({'data': result.name})
 
     // IMAGE TEST
-    for result in projects
-        section.project-box
-            .project-view
+    each result, index in projects
+        .project-view&attributes({'data': index})
+            .description
+                p - #{result.year} -
+                h2 #{result.name}
+                p #{result.description_short}
+            .overlay
+            .hero-box
                 .hero(style='background-image: url(#{result.images[0].src});')
-                .description
-                    p - #{result.year} -
-                    h2 #{result.name}
-                    p #{result.description_short}
 
     // /IMAGE TEST
