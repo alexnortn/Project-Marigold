@@ -23,9 +23,8 @@ block content
                 p - #{result.year} -
                 h2 #{result.name}
                 p #{result.description_short}
-            .overlay
             .hero-box
-                img(style='background-image: url(#{result.images[0].src});')
-                img(src=result.images[0].src alt =result.images[0].caption)
+                .overlay
+                .hero(style='background-image: url(#{result.images[0].src});')
 
     // /IMAGE TEST

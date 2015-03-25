@@ -18,6 +18,7 @@ $(document).ready(function() {
     $('.project-view').alwaysCenterIn(window, { top: "-3%" });
     $('#pagination').alwaysCenterIn(window, { direction: 'vertical' });
 
+
 });
 
 // Functions =============================================================
@@ -71,6 +72,9 @@ function showUserInfo(event) {
     $('#userInfoLocation').text(thisUserObject.location);
 
 };
+
+// Hide/Show Index
+    function buildSite
 
 
 // // Pull in our content Json
