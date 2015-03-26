@@ -74,7 +74,7 @@ function showUserInfo(event) {
 };
 
 // Hide/Show Index
-    function buildSite
+    // function buildSite
 
 
 // // Pull in our content Json

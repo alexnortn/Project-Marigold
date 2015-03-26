@@ -127,6 +127,10 @@ a {
 	/*background-color: rgba(125,125,125,0.25);*/
 }
 
+#logo:hover {
+	cursor: pointer;
+}
+
 #logo img {
 	width: 100px;
 	position: relative;
@@ -240,6 +244,7 @@ a {
 
 .pagination:hover {
 	background-color: black;
+	cursor: pointer;
 }
 
 .pagination:active {
