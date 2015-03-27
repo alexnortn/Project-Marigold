@@ -15,7 +15,7 @@ $(document).ready(function() {
     // $('#userList table tbody').on('click', 'td a.linkshowuser', showUserInfo);
 
     // Center In
-    $('.hero-box').alwaysCenterIn(window, { top: "-3%" });
+    $('.project-overview').alwaysCenterIn(window, { top: "-3%" });
     $('#pagination').alwaysCenterIn(window, { direction: 'vertical' });
 
     $('.hero-box').click(function(){
