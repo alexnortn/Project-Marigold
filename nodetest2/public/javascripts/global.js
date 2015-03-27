@@ -1,6 +1,7 @@
 // Userlist data array for filling in info box
 var userListData = [];
 var projects;
+var open = false;
 
 // DOM Ready =============================================================
 $(document).ready(function() {
@@ -18,10 +19,34 @@ $(document).ready(function() {
     $('.project-overview').alwaysCenterIn(window, { top: "-3%" });
     $('#pagination').alwaysCenterIn(window, { direction: 'vertical' });
 
-    $('.hero-box').click(function(){
-        $('.project-view').toggleClass("project-content");
+    // Open Project
+    $('.project-overview').click(function(){
+        open = !open;
+
+        $('.project-contents').toggle('slow');
+        $('#logo p').fadeToggle('slow');
+        $('#pagination').fadeToggle('slow');
+        $('#arrow').fadeToggle('slow');
+
         console.log("click");
-    })
+
+        if (open == true) {
+            $('html, body').animate({
+                scrollTop: $('p.main-description').offset().top
+                }, 750);
+                return false;
+                console.log(open);
+        };
+    });
+
+    $('#hamburger').click(function(){
+        $('.hero-box').css('opacity', 0)
+                      .slideDown('slow')
+                      .animate(
+                        { opacity: 1 },
+                        { queue: false, duration: 'slow' }
+                       );
+    });
 });
 
 // Functions =============================================================

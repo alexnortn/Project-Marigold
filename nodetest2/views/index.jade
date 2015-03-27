@@ -16,8 +16,9 @@ block content
         for result in projects
             .pagination&attributes({'data': result.name})
 
-    // IMAGE TEST
+    // PROJECT ITERATOR
     each result, index in projects
+        // PROJECT OVERVIEW
         .project-view&attributes({'data': index})
             .project-overview
                 .description
@@ -27,4 +28,14 @@ block content
                 .hero-box
                     .overlay
                     .hero(style='background-image: url(#{result.images[0].src});')
-    // /IMAGE TEST
+        // /PROJECT OVERVIEW
+        .project-contents
+            p.main-description #{result.description_long}
+            // GRID ITERATOR
+            .image-grid-wrapper
+                each image, index in result.images
+                    .image-grid(style='background-image: url(#{result.images[index].src});')
+            // /GRID ITERATOR
+            .big-moment-1
+                .big-moment-1-image
+    // /PROJECT ITERATOR
