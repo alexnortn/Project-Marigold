@@ -15,10 +15,13 @@ $(document).ready(function() {
     // $('#userList table tbody').on('click', 'td a.linkshowuser', showUserInfo);
 
     // Center In
-    $('.project-view').alwaysCenterIn(window, { top: "-3%" });
+    $('.hero-box').alwaysCenterIn(window, { top: "-3%" });
     $('#pagination').alwaysCenterIn(window, { direction: 'vertical' });
 
-
+    $('.hero-box').click(function(){
+        $('.project-view').toggleClass("project-content");
+        console.log("click");
+    })
 });
 
 // Functions =============================================================
@@ -34,6 +37,7 @@ function populateTable() {
 
         // Stick our user data array into a userlist variable in the global object
         userListData = data;
+
 
         // For each item in our JSON, add a table row and cells to the content string
         $.each(data, function(){
@@ -72,9 +76,6 @@ function showUserInfo(event) {
     $('#userInfoLocation').text(thisUserObject.location);
 
 };
-
-// Hide/Show Index
-    // function buildSite
 
 
 // // Pull in our content Json

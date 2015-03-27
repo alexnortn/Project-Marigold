@@ -19,12 +19,11 @@ block content
     // IMAGE TEST
     each result, index in projects
         .project-view&attributes({'data': index})
-            .description
-                p - #{result.year} -
-                h2 #{result.name}
-                p #{result.description_short}
             .hero-box
+                .description
+                    p - #{result.year} -
+                    h2 #{result.name}
+                    p #{result.description_short}
                 .overlay
                 .hero(style='background-image: url(#{result.images[0].src});')
-
     // /IMAGE TEST
