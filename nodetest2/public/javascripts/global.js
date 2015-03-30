@@ -1,6 +1,8 @@
 // Userlist data array for filling in info box
 var userListData = [];
 var projects;
+var open = false;
+var menu = false;
 
 // DOM Ready =============================================================
 $(document).ready(function() {
@@ -15,10 +17,56 @@ $(document).ready(function() {
     // $('#userList table tbody').on('click', 'td a.linkshowuser', showUserInfo);
 
     // Center In
-    $('.project-view').alwaysCenterIn(window, { top: "-3%" });
+    $('.project-overview').alwaysCenterIn(window, { top: "-3%" });
     $('#pagination').alwaysCenterIn(window, { direction: 'vertical' });
 
+    // Open Project
+    $('.project-overview').click(function(){
+        open = !open;
 
+        $('.project-contents').toggle('slow');
+        $('#logo p').fadeToggle('slow');
+        $('#pagination').fadeToggle('slow');
+        $('#arrow').fadeToggle('slow');
+
+        console.log("click");
+
+        if (open == true) {
+            $('html, body').animate({
+                scrollTop: $('.main-description').offset().top
+                }, 750);
+                return false;
+                console.log(open);
+        };
+    });
+
+    /*
+
+    $('.hamburger').click(function(){
+        $('.nav').toggleClass('nav-in');
+        $('.hamburger').toggleClass('hamburger-out');
+    });
+
+    if  ($('.nav').hasClass('nav-in')) {
+
+        $('html').click(function() {
+          //Hide the menus if visible
+          $('.nav').toggleClass('nav-in');
+        });
+
+        $('#nav').click(function(event){
+            event.stopPropagation();
+        });
+
+    }
+
+    */
+
+    $('#logo').click(function(){
+        // $("html, body").animate({ scrollTop: "300px" });
+        $("html, body").animate({ scrollTop: "0px" }, 500);
+        console.log('scroll click');
+    });
 });
 
 // Functions =============================================================
@@ -34,6 +82,7 @@ function populateTable() {
 
         // Stick our user data array into a userlist variable in the global object
         userListData = data;
+
 
         // For each item in our JSON, add a table row and cells to the content string
         $.each(data, function(){
@@ -72,9 +121,6 @@ function showUserInfo(event) {
     $('#userInfoLocation').text(thisUserObject.location);
 
 };
-
-// Hide/Show Index
-    // function buildSite
 
 
 // // Pull in our content Json

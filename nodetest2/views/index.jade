@@ -1,30 +1,65 @@
 extends layout
 
 block content
-    #logo
-        img(src = "/images/logo.svg" alt = "main logo")
-        p 
-           | Alex Norton<br>
-           | UX Design / Systems
 
-    #hamburger
-        img(src = "/images/hamburger2.svg" alt = "main nav")
+    input(type="checkbox" id = "nav-trigger" class = "nav-trigger")
+    label(for = "nav-trigger")
 
-    img#arrow(src = "/images/rnd.svg" alt = "down arrow")
+    // NAV DRAWER
+    .nav
+        ul
+            li.nav-item
+                a(href="#") Home
+            li.nav-item
+                a(href="#") Works
+            li.nav-item
+                a(href="#") Bios
+            li.nav-item
+                a(href="#") Contact
+    // /NAV DRAWER
+
+    // HEADER
+    header
+
+        #logo
+            img(src = "/images/logo.svg" alt = "main logo")
+            p 
+               | Alex Norton<br>
+               | UX Design / Systems
+
+        img#arrow(src = "/images/rnd.svg" alt = "down arrow")
+    // /HEADER    
 
     #pagination
         for result in projects
             .pagination&attributes({'data': result.name})
 
-    // IMAGE TEST
+    // PROJECT ITERATOR
     each result, index in projects
+        // PROJECT OVERVIEW
         .project-view&attributes({'data': index})
-            .description
-                p - #{result.year} -
-                h2 #{result.name}
-                p #{result.description_short}
-            .hero-box
-                .overlay
-                .hero(style='background-image: url(#{result.images[0].src});')
-
-    // /IMAGE TEST
+            .project-overview
+                .description
+                    p - #{result.year} -
+                    h2 #{result.name}
+                    p #{result.description_short}
+                .hero-box
+                    .overlay
+                    .hero(style='background-image: url(#{result.hero});')
+        // /PROJECT OVERVIEW
+        .project-contents
+            .content-wrapper
+                .pull-left
+                    h1 #{result.pull_quotes[0]}
+                .main-description 
+                    p #{result.description_long}
+            // GRID ITERATOR
+            .image-grid-wrapper
+                each image, index in result.images
+                    .image-grid-container
+                        .image-grid(style='background-image: url(#{result.images[index].src});')
+            // /GRID ITERATOR
+            .big-moment-1
+                img(src = result.cut alt = "big image")
+                .big-moment-1-color
+    // /PROJECT ITERATOR
