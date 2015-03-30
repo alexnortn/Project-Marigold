@@ -48,11 +48,13 @@ block content
                     .hero(style='background-image: url(#{result.hero});')
         // /PROJECT OVERVIEW
         .project-contents
-            .content-wrapper
-                .pull-left
-                    h1 #{result.pull_quotes[0]}
-                .main-description 
-                    p #{result.description_long}
+            .main-description 
+                p #{result.description_long}
+            .pull-left
+                .top-rule
+                h1 #{result.pull_quotes[0]}
+                .bottom-rule
+                // p  #{result.pull_quotes[0]}
             // GRID ITERATOR
             .image-grid-wrapper
                 each image, index in result.images
