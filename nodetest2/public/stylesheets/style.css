@@ -81,6 +81,11 @@ Typography
 	src: url(../fonts/FreigTexProBook.otf);
 }
 
+@font-face {
+	font-family: Freight-Text-Italic;
+	src: url(../fonts/FreigTexProMedIt.otf);
+}
+
 
 
 /*
@@ -111,9 +116,9 @@ h2 {
 
 h1 {
 	font-family: 'Vaud-Display-Ultra-Italic';
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	font-weight: 300;
-	font-size: 25px;
+	font-size: 30px;
 	/*letter-spacing: 5px;*/
 	line-height: 1.5em;
 }
@@ -432,7 +437,7 @@ label[for="nav-trigger"] {
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
-	border-bottom: solid 5px rgb(50,50,50);
+	border-bottom: solid 2px rgb(50,50,50);
 }
 
 .top-rule {
@@ -441,13 +446,17 @@ label[for="nav-trigger"] {
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
-	border-top: solid 5px rgb(50,50,50);
+	border-top: solid 2px rgb(50,50,50);
 }
 
 .pull-left p {
 	text-align: center;
 	line-height: 1.5em;
 	padding: 0 75px 25px 75px;
+}
+
+.pull-left h1 {
+	font-family: Freight-Text-Italic;
 }
 
 .pull-left {
@@ -537,22 +546,27 @@ label[for="nav-trigger"] {
 	/*background-color: red;*/
 	height: 750px;
 	position: relative;
+	text-align: center;
 }
 
 .big-moment-1 img {
 	width: 50%;
+	position: absolute;
 	display: block;
-	position: relative;
 	margin-left: auto;
 	margin-right: auto;
+	left: 0;
+	right: 0;
 	margin-top: 100px;
 	margin-bottom: -200px;
+	-webkit-transition-timing-function: linear;
+			transition-timing-function: linear;
 	-webkit-transition: all 0.5s; /* Safari */
     		transition: all 0.5s;
 }
 
 .big-moment-1 img:hover {
-	padding-top: 25px;
+	margin-top: 90px;
 }
 
 .big-moment-1-color {
@@ -590,6 +604,49 @@ label[for="nav-trigger"] {
 	text-align: right;
 	float: left;
 	padding: 0;
+	margin-right: 5%;
+}
+
+.img-box {
+	position: relative;
+	float: right;
+	width: 400px;
+	height: 500px;
+	margin-right: 200px;
+	background-color: red;
+	bottom: -250px;
+}
+
+.big-moment-2 {
+	margin-top: 300px;
+	display: block;
+	width: 100%;
+	/*background-color: red;*/
+	height: 750px;
+	position: relative;
+	text-align: center;
+}
+
+.big-moment-2-color {
+	padding-top: 200px;
+	background-color: Beige;
+	height: 50%;
+  	bottom:0;
+}
+
+.big-moment-2 p.caption {
+	font-size: 12px;
+	line-height: 2em;
+	margin-top: 25px;
+	left: 0;
+	width: 300px;
+	text-align: left;
+	position: absolute;
+  	bottom: 95px;
+  	margin-left: 100px;
+  	display: inline-block;
+  	text-align: justify;
+    text-justify: inter-word;
 }
 
 /*.hero img*/
