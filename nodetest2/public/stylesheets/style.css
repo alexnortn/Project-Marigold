@@ -561,13 +561,10 @@ label[for="nav-trigger"] {
   	bottom:0;
 }
 
-.two-bi-two img {
+.two-bi-two .image-grid-container {
+	width: 60%;
 	position: relative;
-	/*float: left;*/
-	border: solid 1px black;
-	margin: 0 30px 30px 10px;
-	width: 80%;
-	display: block;
+	text-align: center;
 }
 
 .two-bi-two p.text {
@@ -580,13 +577,19 @@ label[for="nav-trigger"] {
 .two-bi-two p.caption {
 	font-size: 12px;
 	line-height: 2em;
-	margin-bottom: 25px;
+	margin-top: 25px;
+	width: 300px;
 	text-align: left;
+	position: relative;
+  	display: inline-block;
+  	text-align: justify;
+    text-justify: inter-word;
 }
 
 .two-bi-two .pull-left {
+	text-align: right;
 	float: left;
-	padding: 20px;
+	padding: 0;
 }
 
 /*.hero img*/

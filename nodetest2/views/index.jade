@@ -66,9 +66,11 @@ block content
                 .big-moment-1-color
             .two-bi-two
                 .pull-left
-                    img(src = result.cut alt = "big image")
-                    img(src = result.cut alt = "big image")
+                    .image-grid-container
+                        .image-grid(style='background-image: url(#{result.images[index].src});')
+                    .image-grid-container
+                        .image-grid(style='background-image: url(#{result.images[index].src});')
                 .pull-right
                     p.text #{result.description_long_1}
-                    p.caption #{result.pull_quotes[0]}
+                    p.caption #{result.description_long_2}
     // /PROJECT ITERATOR
