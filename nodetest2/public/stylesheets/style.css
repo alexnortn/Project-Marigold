@@ -559,9 +559,35 @@ label[for="nav-trigger"] {
 	background-color: Beige;
 	height: 50%;
   	bottom:0;
-
 }
 
+.two-bi-two img {
+	position: relative;
+	/*float: left;*/
+	border: solid 1px black;
+	margin: 0 30px 30px 10px;
+	width: 80%;
+	display: block;
+}
+
+.two-bi-two p.text {
+	/*float: right;*/
+	font-family: 'Freight-Text';
+	font-size: 22px;
+	line-height: 2em;
+}
+
+.two-bi-two p.caption {
+	font-size: 12px;
+	line-height: 2em;
+	margin-bottom: 25px;
+	text-align: left;
+}
+
+.two-bi-two .pull-left {
+	float: left;
+	padding: 20px;
+}
 
 /*.hero img*/
 
