@@ -437,7 +437,7 @@ label[for="nav-trigger"] {
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
-	border-bottom: solid 2px rgb(50,50,50);
+	border-bottom: solid 1px rgb(50,50,50);
 }
 
 .top-rule {
@@ -446,7 +446,7 @@ label[for="nav-trigger"] {
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
-	border-top: solid 2px rgb(50,50,50);
+	border-top: solid 1px rgb(50,50,50);
 }
 
 .pull-left p {
