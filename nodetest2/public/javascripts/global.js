@@ -26,13 +26,14 @@ $(document).ready(function() {
 
         !open ? $('.project-contents').fadeOut('slow') : $('.project-contents').fadeIn('slow') 
 
-        newWidth = $fluidEl.width();
-
         $('#logo p').fadeToggle(1000);
         $('#pagination').fadeToggle(1000);
         $('#arrow').fadeToggle(1000);
 
         console.log("click");
+
+        // Size the video properly please
+        videoSize();
 
         if (open == true) {
             $('html, body').animate({
@@ -41,6 +42,14 @@ $(document).ready(function() {
                 return false;
                 console.log(open);
         };
+    });
+
+    $('body').keyup(function(e){
+        if(e.keyCode == 32){
+           // user has pressed space
+           videoSize();
+           console.log("video size");
+        }
     });
 
     function closeProject() {
@@ -58,8 +67,6 @@ $(document).ready(function() {
     $('#logo').click(function(){
         closeProject();
     });
-
-    $(function() {
 
         // Find all Vimeo videos
         var $allVideos = $("iframe[src^='//player.vimeo.com'], iframe[src^='//www.youtube.com']"),
@@ -99,7 +106,23 @@ $(document).ready(function() {
         // Kick off one resize to fix all videos on page load
         }).resize();
 
-    });
+        function videoSize() {
+
+                newWidth = $fluidEl.width();
+                console.log(newWidth);
+
+            // Resize all videos according to their own aspect ratio
+            $allVideos.each(function() {
+
+                var $el = $(this);
+                $el
+                  .width(newWidth)
+                  .height(newWidth * $el.data('aspectRatio'));
+
+            });
+
+        };
+
 
 
     /*
