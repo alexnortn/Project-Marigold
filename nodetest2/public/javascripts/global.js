@@ -64,7 +64,13 @@ $(document).ready(function() {
         }
     };
 
+    // Close Project
+    
     $('#logo').click(function(){
+        closeProject();
+    });
+
+    $('.close').click(function() {
         closeProject();
     });
 
