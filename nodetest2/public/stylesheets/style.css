@@ -437,7 +437,7 @@ label[for="nav-trigger"] {
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
-	border-bottom: solid 1px rgb(50,50,50);
+	border-bottom: solid 5px rgb(100,100,100);
 }
 
 .top-rule {
@@ -446,7 +446,7 @@ label[for="nav-trigger"] {
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
-	border-top: solid 1px rgb(50,50,50);
+	border-top: solid 5px rgb(100,100,100);
 }
 
 .pull-left p {
@@ -544,9 +544,30 @@ label[for="nav-trigger"] {
 	display: block;
 	width: 100%;
 	/*background-color: red;*/
-	height: 750px;
+	height: 650px;
 	position: relative;
 	text-align: center;
+}
+
+.center {
+	position: relative;
+	font-family: Vaud-Bold;
+	font-size: 50px;
+	color: rgba(50,50,50,1);
+	opacity: 0;
+	z-index: 10;
+	-webkit-transition-timing-function: ease-in-out;
+			transition-timing-function: ease-in-out;
+	-webkit-transition: all .5s; /* Safari */
+    		transition: all .5s;
+}
+
+.big-moment-1 h1 {
+	padding-top: 15%;
+}
+
+.big-moment-1:hover .center {
+	opacity: 1;
 }
 
 .big-moment-1 img {
@@ -558,20 +579,19 @@ label[for="nav-trigger"] {
 	left: 0;
 	right: 0;
 	margin-top: 100px;
-	margin-bottom: -200px;
 	-webkit-transition-timing-function: linear;
 			transition-timing-function: linear;
 	-webkit-transition: all 0.5s; /* Safari */
     		transition: all 0.5s;
 }
 
-.big-moment-1 img:hover {
+.big-moment-1:hover img {
 	margin-top: 90px;
 }
 
 .big-moment-1-color {
 	background-color: Beige;
-	height: 50%;
+	height: 60%;
   	top: 0;
   	position: absolute;
   	width: 150%;
@@ -637,6 +657,7 @@ label[for="nav-trigger"] {
 	bottom: -250px;
 	margin-right: 0;
 	float: none;
+	/*background-size: 100% auto;*/
 }
 
 .big-moment-2-color {
@@ -644,6 +665,7 @@ label[for="nav-trigger"] {
 	background-color: Beige;
   	bottom: 0;
   	width: 100%;
+  	background-size: 100% auto;
 }
 
 .big-moment-2 p.caption {
@@ -658,6 +680,9 @@ label[for="nav-trigger"] {
   	display: inline-block;
   	text-align: justify;
     text-justify: inter-word;
+    background-color: white;
+    padding: 40px 30px 15px 30px;
+    box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.18); 
 }
 
 #video-frame {

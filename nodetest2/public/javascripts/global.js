@@ -65,7 +65,7 @@ $(document).ready(function() {
     };
 
     // Close Project
-    
+
     $('#logo').click(function(){
         closeProject();
     });

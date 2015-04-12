@@ -64,6 +64,7 @@ block content
             .big-moment-1
                 .big-moment-1-color
                 img(src = result.cut alt = "big image")
+                h1.center We Out Here
             .two-bi-two
                 .pull-left
                     .image-grid-container
@@ -74,8 +75,8 @@ block content
                     p.text #{result.description_long_1}
                     p.caption #{result.description_long_2}
             .big-moment-2
-                .big-moment-2-color
-                .img-box
+                .big-moment-2-color(style='background-image: url(#{result.images[index].src});')
+                .img-box(style='background-image: url(#{result.images[index].src});')
                 p.caption #{result.description_long_2}
             #video-frame
                 iframe(src="//player.vimeo.com/video/95969058" width="1600" height="1000" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
