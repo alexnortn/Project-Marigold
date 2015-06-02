@@ -8,6 +8,8 @@ var physics;
 var p1;
 var p2;
 var w,h;
+var aVerts = [];
+var aCounterVerts = [];
 
 // This will be our JSON object for the phys sim
 var vertices; 
@@ -40,6 +42,8 @@ function setup() {
   physics.addParticle(p2);
   physics.addSpring(spring);
 
+  // Load the arrays
+  loadArrays(vertices);
   // Draw the Bezier Shape (call)
   drawBezier(vertices);
 
@@ -136,6 +140,18 @@ function drawBasicA(vertices){
     bezierVertex(vertices.counter_vertex[8].x, vertices.counter_vertex[8].y, vertices.counter_vertex[9].x, vertices.counter_vertex[9].y, vertices.counter_vertex[10].x, vertices.counter_vertex[10].y);
     bezierVertex(vertices.counter_vertex[11].x, vertices.counter_vertex[11].y, vertices.counter_vertex[12].x, vertices.counter_vertex[12].y, vertices.counter_vertex[13].x, vertices.counter_vertex[13].y);
   endShape(CLOSE);
+}
+
+// Setup the dynamic arrays
+function loadArrays(vertices) {
+  for(var i in vertices.a_vertex) {
+    aVerts.push(createVector(vertices.a_vertex[i].x, vertices.a_vertex[i].y));
+    console.log(aVerts[i].x + " , " + aVerts[i].y);
+  }
+  for(var j in vertices.counter_vertex) {
+    aCounterVerts.push(createVector(vertices.counter_vertex[j].x, vertices.counter_vertex[j].y));
+    console.log(aCounterVerts[j].x + " , " + aCounterVerts[j].y);
+  }
 }
 
 
