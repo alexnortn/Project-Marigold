@@ -27,6 +27,7 @@ function preload() {
 }
 
 function setup() {
+  noStroke();
   canvas = createCanvas(window.innerWidth, window.innerHeight);
   w = windowWidth;
   h = windowHeight;
@@ -74,7 +75,7 @@ function draw() {
   nudgeAttractor.set(mouseX,mouseY);
   nudgeAttractor.display();
 
-  background(51);
+  background(255);
 
   // Draw the bezier Shapes 
   drawBasicA();
@@ -88,13 +89,8 @@ function draw() {
   // p1.display();
   // p2.display();
 
-  // Display the Physiscs Particles;
-  displayPhys();
-
   // Move the second one according to the mouse
   if (mouseIsPressed) {
-    nudgeAttractor.setStrength(1);
-    console.log("MousePrssed!");
 
     // for(var i in aVerts) {
     //     aSpringVert[i].lock();
@@ -109,6 +105,9 @@ function draw() {
     //     aCounterSpringVert[i].y = mouseY;
     //     aCounterSpringVert[i].unlock();
     // }
+
+    // Display the Physiscs Particles;
+    displayPhys();
 
   }
 }
@@ -139,6 +138,7 @@ function drawBezier(vertices) {
 }
 
 function drawBasicA(){
+  noStroke();
   beginShape();
 	vertex(aSpringVert[0].x, aSpringVert[0].y);
 	vertex(aSpringVert[1].x, aSpringVert[1].y);
@@ -162,7 +162,7 @@ function drawBasicA(){
 	bezierVertex(aSpringVert[49].x, aSpringVert[49].y, aSpringVert[50].x, aSpringVert[50].y, aSpringVert[51].x, aSpringVert[51].y);
 	bezierVertex(aSpringVert[52].x, aSpringVert[52].y, aSpringVert[53].x, aSpringVert[53].y, aSpringVert[54].x, aSpringVert[54].y);
   endShape(CLOSE);
-  fill(51);
+  fill(255);
   beginShape();
 	vertex(aCounterSpringVert[0].x, aCounterSpringVert[0].y);
 	vertex(aCounterSpringVert[1].x, aCounterSpringVert[1].y);
