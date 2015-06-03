@@ -19,7 +19,8 @@ var p1,
     aCounterVerts = [];
 
 // This will be our JSON object for the phys sim
-var vertices; 
+var vertices;
+var nudgeAttractor; 
 
 function preload() {
   vertices = loadJSON("../data/a.json");
@@ -36,6 +37,7 @@ function setup() {
 
   // Initialize the physics
   physics=new VerletPhysics2D();
+  physics.setDrag (0.01);
   physics.addBehavior(new GravityBehavior(new Vec2D(0,0.5)));
 
   // Set the world's bounding box
@@ -44,6 +46,9 @@ function setup() {
   // Initiate the physics array
   physInit();
   
+  // Make our Node Object
+  nudgeAttractor = new Nudge(new Vec2D(width/2,height/2),24,width,0.1);
+
   // Make two particles
   p1 = new Particle(new Vec2D(width/2,height/3));
   p2 = new Particle(new Vec2D(width/2+160,20));
@@ -51,7 +56,7 @@ function setup() {
   p1.lock();
 
   // Make a spring connecting both Particles
-  var spring=new VerletSpring2D(p1,p2,160,0.0005);
+  var spring =new VerletSpring2D(p1,p2,160,0.0005);
 
   // Anything we make, we have to add into the physics world
   physics.addParticle(p1);
@@ -64,6 +69,10 @@ function draw() {
 
   // Update the physics world
   physics.update();
+
+  // Update the attractor position
+  nudgeAttractor.set(mouseX,mouseY);
+  nudgeAttractor.display();
 
   background(51);
 
@@ -84,29 +93,23 @@ function draw() {
 
   // Move the second one according to the mouse
   if (mouseIsPressed) {
-	p2.lock();
-	p2.x = mouseX;
-	p2.y = mouseY;
-	p2.unlock();
+    nudgeAttractor.setStrength(1);
+    console.log("MousePrssed!");
 
-    for(var i in aVerts) {
-        aSpringVert[i].lock();
-        aSpringVert[i].x = mouseX;
-        aSpringVert[i].y = mouseY;
-        aSpringVert[i].unlock();
-    }
+    // for(var i in aVerts) {
+    //     aSpringVert[i].lock();
+    //     aSpringVert[i].x = mouseX;
+    //     aSpringVert[i].y = mouseY;
+    //     aSpringVert[i].unlock();
+    // }
 
-    for(var i in aCounterVerts) {
-        aCounterSpringVert[i].lock();
-        aCounterSpringVert[i].x = mouseX;
-        aCounterSpringVert[i].y = mouseY;
-        aCounterSpringVert[i].unlock();
-    }
+    // for(var i in aCounterVerts) {
+    //     aCounterSpringVert[i].lock();
+    //     aCounterSpringVert[i].x = mouseX;
+    //     aCounterSpringVert[i].y = mouseY;
+    //     aCounterSpringVert[i].unlock();
+    // }
 
-  }
-
-  if(keyIsDown(ALT)) {
-   saveFrames("toxiMov",".targa",1,1); 
   }
 }
 
