@@ -149,6 +149,16 @@ a {
   color: #00B7FF;
 }
 
+#welcome {
+	/*background-color: blue;*/
+	width: 100%;
+	height: 100%;
+}
+
+#content-wrapper {
+	display: none;
+}
+
 .project-view {
 	width: 100%;
 	min-width: 800px;
