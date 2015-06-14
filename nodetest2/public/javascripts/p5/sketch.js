@@ -52,7 +52,7 @@ var descriptiveText  = "This interactive visualization of interest was developed
 var descriptiveText1 = "Vertices used to construct the character are influenced by an underlying physics system and mapped to extend towards difference areas of my interest.";
 
 function preload() {
-  vertices = loadJSON("data/verts.json");
+  vertices = loadJSON("javascripts/p5/data/verts.json");
 }
 
 function setup() {
