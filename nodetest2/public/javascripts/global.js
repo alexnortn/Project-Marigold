@@ -24,7 +24,7 @@ $(document).ready(function() {
     $('.project-overview').click(function(){
         open = !open;
 
-        !open ? $('.project-contents').fadeOut('slow') : $('.project-contents').fadeIn('slow') 
+        !open ? $('.project-contents').fadeOut('slow') : $('.project-contents').fadeIn('slow'); 
 
         $('#logo p').fadeToggle(1000);
         $('#pagination').fadeToggle(1000);

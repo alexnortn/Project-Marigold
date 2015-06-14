@@ -49,8 +49,8 @@ float x0, y0;
 int pointSize = 10;
 int controlPointSize = 5;
 PathIterator iterator;
-String someText = "a";
-String fontName = "AdobeDevanagari-Regular";
+String someText = "N";
+String fontName = "MrEavesSanOT-Heavy";
 
 public void setup() {
   size(1500 , 1000);
