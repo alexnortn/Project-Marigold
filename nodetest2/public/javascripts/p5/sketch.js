@@ -2,6 +2,8 @@
 // a^N 
 // http://alexnortn.com
 
+// var bodyParser = require('body-parser');
+
 // Reference to physics world
 var physics;
 
@@ -673,3 +675,154 @@ function fadeOutButton() {
   if (buttonFade1 > 0) buttonFade1 -= fadeSpeed;
   dashButton.opa(buttonFade1);
 }
+
+/*
+      Class repository
+      /////////////////////////////////////////////////////////////////////////////////////////
+*/
+
+/*
+
+  MakeButton Class (object)
+
+*/
+
+function MakeButton(_x, _y, _buttonWidth) {
+  this.x = _x;
+  this.y = _y;
+  var xPos;
+  var yPos;
+  var opacity = 0;
+  this.buttonWidth = _buttonWidth;
+
+  var sizeOffset = this.buttonWidth / 2;
+
+  this.display = function(_x, _y) {
+    this.x = _x;
+    this.y = _y;
+
+    xPos = (this.x / 7);
+    yPos = this.y - (this.y / 8);
+
+    // Center ellipse
+    fill(0,0,0,opacity);
+    ellipseMode(CENTER);
+    ellipse(xPos,yPos,25,25);
+
+    // Center Cross
+    stroke(255,255,255);
+    strokeWeight(2);
+    line(xPos, yPos+2.5, xPos, yPos-2.5);
+    line(xPos-2.5, yPos, xPos+2.5, yPos);
+
+    // Dashed Borders
+    /*
+    fill(0,0,0);
+    noStroke();
+    var r = 1;
+    var spaces = 30;
+    var spacing = this.buttonWidth / spaces;
+    for(var i = 0; i < spaces; i+= spacing) {
+      ellipse(((xPos - sizeOffset) + (i * spacing)), (yPos - sizeOffset), r, r);
+      ellipse(((xPos - sizeOffset) + (i * spacing)), (yPos + sizeOffset), r, r);
+      ellipse((xPos - sizeOffset), ((yPos + sizeOffset) - (i * spacing)), r, r);
+      ellipse((xPos + sizeOffset), ((yPos + sizeOffset) - (i * spacing)), r, r);
+    }
+    */
+  }
+
+  this.hover = function(_x, _y) {
+    this.x = _x;
+    this.y = _y;
+
+    xPos = (this.x / 7);
+    yPos = this.y - (this.y / 8);
+
+    // Center ellipse
+    fill(0,0,0);
+    ellipseMode(CENTER);
+    ellipse(xPos,yPos,25,25);
+
+    // Center Cross
+    stroke(255,255,255);
+    strokeWeight(2);
+    line(xPos-2.5, yPos, xPos+2.5, yPos);
+  }
+
+  this.loc = function() {
+    var loc = createVector(xPos, yPos);
+    return loc;
+  }
+
+  this.opa = function(_opacity) {
+    opacity = _opacity;
+  }
+}
+
+  MakeButton.prototype.constructor = MakeButton;
+
+/*
+
+  Nudge Attractor Class (object)
+
+*/
+
+// Child class constructor
+function Nudge(position, radius, range, strength) {
+  VerletParticle2D.call(this,position);
+  var attractForce = new AttractionBehavior(this, range, strength);
+  this.r = radius;
+  physics.addParticle(this);
+  physics.addBehavior(attractForce);
+
+  // // Override the display method
+  this.display = function(){
+    fill(127);
+    stroke(200);
+    strokeWeight(2);
+    ellipse(this.x,this.y,this.r*2,this.r*2);
+  }
+
+  this.hover = function() {
+    attractForce.setStrength(0.5);
+  }
+
+  this.away = function() {
+    attractForce.setStrength(0.1);
+  }
+
+  this.press = function() {
+    var newOpStrength = attractForce.getStrength() * -25;
+    attractForce.setStrength(newOpStrength);
+  }
+}
+
+// Inherit from the parent class
+Nudge.prototype = Object.create(VerletParticle2D.prototype);
+Nudge.prototype.constructor = Nudge;
+
+
+/*
+
+  Particle Class (object)
+
+*/
+
+// Child class constructor
+function Particle(position) {
+  VerletParticle2D.call(this,position);
+
+  // Override the display method
+  this.display = function(){
+    fill(255,0,0);
+    // stroke(200);
+    // strokeWeight(2);
+    noStroke();
+    // ellipse(this.x,this.y,1,1);
+  }
+}
+
+// Inherit from the parent class
+Particle.prototype = Object.create(VerletParticle2D.prototype);
+Particle.prototype.constructor = Particle;
+
