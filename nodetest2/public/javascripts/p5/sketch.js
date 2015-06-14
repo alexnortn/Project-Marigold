@@ -4,7 +4,7 @@
 
 // var bodyParser = require('body-parser');
 
-var p5Intro = function(p) {
+p5(function (p) {
 
   // Reference to physics world
   var physics;
@@ -55,13 +55,13 @@ var p5Intro = function(p) {
   var descriptiveText  = "This interactive visualization of interest was developed using the P5js framework along with the Toxiclibs physics library."; 
   var descriptiveText1 = "Vertices used to construct the character are influenced by an underlying physics system and mapped to extend towards difference areas of my interest.";
 
-  function preload() {
+   p.preload = function() {
     vertices = p.loadJSON("javascripts/p5/data/verts.json");
   }
 
-  function setup() {
+  p.setup = function() {
     p.noStroke();
-    phi = (1 + sqrt(5)) / 2;
+    phi = (1 + p.sqrt(5)) / 2;
     canvas = p.createCanvas(window.innerWidth / phi, window.innerHeight);
     // canvas.parent('welcome');
     w = p.windowWidth / phi;
@@ -126,7 +126,7 @@ var p5Intro = function(p) {
 
   }
 
-  function draw() {
+  p.draw = function() {
 
     // Update the physics world
     physics.update();
@@ -161,7 +161,7 @@ var p5Intro = function(p) {
 
   }
 
-  function windowResized() {
+  p.windowResized = function() {
     p.resizeCanvas(p.windowWidth / phi, p.windowHeight);
     w = p.windowWidth / phi;
     scaleFunc(w,h);
@@ -819,7 +819,7 @@ var p5Intro = function(p) {
       p.fill(255,0,0);
       // p.stroke(200);
       // p.strokeWeight(2);
-      noStroke();
+      p.noStroke();
       // p.ellipse(this.x,this.y,1,1);
     }
   }
@@ -828,7 +828,7 @@ var p5Intro = function(p) {
   Particle.prototype = Object.create(VerletParticle2D.prototype);
   Particle.prototype.constructor = Particle;
 
-}
+}, 'welcome');
 
 // Create the sketch--simulation
-var myp5 = new p5(p5Intro, 'welcome');
+// var myp5 = new p5(p5Intro, 'welcome');
