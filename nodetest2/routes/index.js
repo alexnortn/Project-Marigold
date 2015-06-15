@@ -2,9 +2,10 @@ var express = require('express');
 var router  = express.Router();
 
 
-    // Declare variables
+// Declare variables
 var fs = require('fs'),
     contents,
+    welcome,
     projects;
 
 // Read the file and send to the callback
@@ -16,7 +17,8 @@ function handleFile(err, data) {
     contents = JSON.parse(data)
     // You can now play with your datas
     console.log(contents);
-    projects = contents.projects
+    projects = contents.projects;
+    welcome = contents.welcome;
 }
 
 
@@ -24,7 +26,8 @@ function handleFile(err, data) {
 router.get('/', function(req, res, next) {
   res.render('index', {
   	title: 'Alex Norton',
-  	projects: projects
+  	projects: projects,
+    welcome: welcome
   });
 });
 

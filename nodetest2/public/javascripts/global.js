@@ -16,6 +16,9 @@ $(document).ready(function() {
     // Username link click
     // $('#userList table tbody').on('click', 'td a.linkshowuser', showUserInfo);
 
+    // Set Greeting
+    setGreeting();
+
     // Center In
     $('.project-overview').alwaysCenterIn(window, { top: "-3%" });
     $('#pagination').alwaysCenterIn(window, { direction: 'vertical' });
@@ -231,3 +234,14 @@ function showUserInfo(event) {
 //     console.log(projects);  
 //     $('#im-test').attr("src", content.projects[0].images[0].src);
 // }
+
+
+var setGreeting = function() {
+
+    // Get current time
+    var d = new Date();
+    var n = d.getHours();
+    var greeting = welcome.greeting_afternoon;
+
+    $('#welcome-box h2').html("greetings");
+}
