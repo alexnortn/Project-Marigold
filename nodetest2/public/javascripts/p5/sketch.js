@@ -171,7 +171,6 @@ function windowResized() {
   loadArrays(vertices);
   // Initiate the physics array
   physInit();
-  // console.log("Window Resized!");
 }
 
 function drawBezier(vertices) {
@@ -270,7 +269,6 @@ function clockDisp(alphaOpa) {
   var theta = TAU / interests;
   var radLen = ( w < h ? w : h ) / 3;
   var fadeSpeed1 = 10;
-  // console.log(radLen);
 
   for (var i = 0; i < interests; i++) {
     var selection;
@@ -288,7 +286,6 @@ function clockDisp(alphaOpa) {
     if (dist1 < 75) {
       // FadeIn content
       if (alphaOpa1 < 255) alphaOpa1 += fadeSpeed1;
-      // console.log("You are near point " + i);
       tempSelection = i;
       nudgeAttractor.hover();
 
@@ -308,7 +305,6 @@ function clockDisp(alphaOpa) {
         interestDisp(i, x, y, alphaOpa1);
         dashedCircle(x, y, alphaOpa1);
         displayPhys1(x, y, alphaOpa1);
-        // console.log(alphaOpa1);
       }
     }
   }
@@ -348,14 +344,12 @@ function loadArrays(vertices) {
   aVerts.length = 0;
   aCounterVerts.length = 0;
   nVerts.length = 0;
-  console.log("Arrays at Zero");
   for(var i in vertices.a_vertex) {
   aVerts.push(createVector(vertices.a_vertex[i].x, vertices.a_vertex[i].y));
     aVerts[i].x *= scaleFactor;
     aVerts[i].x += (glyphCenter.x);
     aVerts[i].y *= scaleFactor;
     aVerts[i].y += (glyphCenter.y);
-  // console.log(aVerts[i].x + " , " + aVerts[i].y);
   }
   for(var j in vertices.counter_vertex) {
   aCounterVerts.push(createVector(vertices.counter_vertex[j].x, vertices.counter_vertex[j].y));
@@ -363,7 +357,6 @@ function loadArrays(vertices) {
     aCounterVerts[j].x += (glyphCenter.x);
     aCounterVerts[j].y *= scaleFactor;
     aCounterVerts[j].y += (glyphCenter.y);
-  // console.log(aCounterVerts[j].x + " , " + aCounterVerts[j].y);
   }
   for(var k in vertices.n_vertex) {
   nVerts.push(createVector(vertices.n_vertex[k].x, vertices.n_vertex[k].y));
@@ -375,7 +368,6 @@ function loadArrays(vertices) {
     nVerts[k].y += nOffset.y
     nVerts[k].y *= scaleFactor;
     nVerts[k].y += glyphCenter.y;
-  // console.log(aCounterVerts[j].x + " , " + aCounterVerts[j].y);
   }
 }
 
@@ -469,7 +461,6 @@ function physInit() {
               physics.addParticle(aLockVert[i]);
               physics.addParticle(aSpringVert[i]);
               physics.addSpring(aSpringArr[i]);
-          // console.log(aSpringVert[i]);
     }
 
     // Make our ToxiParticles for 'a counter'
@@ -579,7 +570,6 @@ function arrayMax(arr) {
 function scaleFunc(w,h) {
   var dynamicScale = ((w < 700) || (h < 700)) ?  2 : 1.25;
   scaleFactor = w / (1920 / dynamicScale);
-  // console.log(dynamicScale);
 }
 
 // A little too much interaction, if you ask me! Might be useful later
@@ -593,7 +583,6 @@ function mouseClicked() {
   gravityStrength.y *= -1;
   gravity = new GravityBehavior(gravityStrength);
   physics.addBehavior(gravity);
-  console.log(gravityStrength);
   // prevent default
   return false;
 }
@@ -629,7 +618,6 @@ function hoverButton() {
   var lineOffset = 60;
   var lineLoc;
   var opacity;
-  console.log(overButton);
 
   lineLoc = map(buttonFade, 0, 255, 0, lineOffset);
   opacity = norm(buttonFade, 0, 255);

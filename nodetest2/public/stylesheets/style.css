@@ -300,7 +300,8 @@ p#interests {
 	z-index: 100;
 	width: 500px;
 	background-color: #fff;
-	right: -500px;
+	right: -510px;
+	top: 0px;
 	height: 100%;
 	border: solid 1px rgba(218,218,218,0);
 	box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.18);

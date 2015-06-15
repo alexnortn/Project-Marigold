@@ -4,26 +4,26 @@ block content
 
     //Welcome Page
     #welcome
+
+    input(type="checkbox" id = "nav-trigger" class = "nav-trigger")
+    label(for = "nav-trigger")
+
+    // NAV DRAWER
+    .nav
+        ul
+            li.nav-item
+                a(href="#") Home
+            li.nav-item
+                a(href="#") Works
+            li.nav-item
+                a(href="#") Bios
+            li.nav-item
+                a(href="#") Contact
+    // /NAV DRAWER
     
 
     // Wrapper for site main contents
     #content-wrapper
-
-        input(type="checkbox" id = "nav-trigger" class = "nav-trigger")
-        label(for = "nav-trigger")
-
-        // NAV DRAWER
-        .nav
-            ul
-                li.nav-item
-                    a(href="#") Home
-                li.nav-item
-                    a(href="#") Works
-                li.nav-item
-                    a(href="#") Bios
-                li.nav-item
-                    a(href="#") Contact
-        // /NAV DRAWER
 
         // HEADER
         header
