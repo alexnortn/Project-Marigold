@@ -1,8 +1,10 @@
 // Userlist data array for filling in info box
-var userListData = [];
-var projects;
-var open = false;
-var menu = false;
+var userListData = [],
+    projects,
+    open = false,
+    menu = false,
+    attachFastClick = require('fastclick');
+
 
 // DOM Ready =============================================================
 $(document).ready(function() {
@@ -15,6 +17,9 @@ $(document).ready(function() {
 
     // Username link click
     // $('#userList table tbody').on('click', 'td a.linkshowuser', showUserInfo);
+
+    // Attach Fast Click
+    attachFastClick(document.body);
 
     // Set Greeting
     setGreeting();

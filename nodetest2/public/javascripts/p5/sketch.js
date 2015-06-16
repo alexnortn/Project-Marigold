@@ -198,7 +198,7 @@ function drawBasicA(){
   var fadeSpeed = 5;
   if (glyphOp < 255) glyphOp += fadeSpeed;
   noStroke();
-  fill(50,50,50,glyphOp);
+  fill(35,35,35,glyphOp);
   beginShape();
   vertex(aSpringVert[0].x, aSpringVert[0].y);
   vertex(aSpringVert[1].x, aSpringVert[1].y);
@@ -237,7 +237,7 @@ function drawBasicN(){
   var fadeSpeed = 5;
   if (glyphOp < 255) glyphOp += fadeSpeed;
   noStroke();
-  fill(50,50,50,glyphOp);
+  fill(35,35,35,glyphOp);
   beginShape();
     vertex(nSpringVert[0].x, nSpringVert[0].y);
     vertex(nSpringVert[1].x, nSpringVert[1].y);
