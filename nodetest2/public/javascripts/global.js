@@ -2,8 +2,8 @@
 var userListData = [],
     projects,
     open = false,
-    menu = false,
-    attachFastClick = require('fastclick');
+    menu = false;
+    // attachFastClick = require('fastclick');
 
 
 // DOM Ready =============================================================
@@ -19,7 +19,7 @@ $(document).ready(function() {
     // $('#userList table tbody').on('click', 'td a.linkshowuser', showUserInfo);
 
     // Attach Fast Click
-    attachFastClick(document.body);
+    // attachFastClick(document.body);
 
     // Set Greeting
     setGreeting();
