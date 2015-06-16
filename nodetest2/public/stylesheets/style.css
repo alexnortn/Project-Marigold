@@ -164,6 +164,10 @@ canvas {
   	position: absolute;
 }
 
+strong {
+	font-family: BerlingskeSansBold, sans-serif;
+}
+
 #welcome {
 	/*background-color: beige;*/
 	width: 100%;
@@ -181,7 +185,7 @@ canvas {
 #welcome-box {
 	position: relative;
 	height: 100%;
-	width: 360px;
+	width: 380px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -189,36 +193,69 @@ canvas {
 #welcome-box h2 {
 	text-align: left;
 	margin-top: 60px;
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 	font-family: BerlingskeSansBold, sans-serif;
 	text-transform: uppercase;
 	font-size: 12px;
 	letter-spacing: 2px;
 }
 
-#welcome-box button {
+#welcome-box p {
+	text-align: left;
+	font-family: BerlingskeSansRegular, sans-serif;
+	font-size: 13px;
+	line-height: 2.5em;
+	padding-bottom: 25px;
+	border-bottom: 1.25px dotted black;
+}
+
+#welcome-box ul li {
+	width: 50%;
 	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	width: 150px;
-	height: 60px;
+	display: inline-block;
+	border-bottom: 1.25px dotted black;
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+}
+
+#welcome-box ul li:first-child {
+	border-right: 1.25px dotted black;
+	width: 49.6%;
+}
+
+#welcome-box ul li:last-child {
+	width: 100%;
+}
+
+#welcome-box a {
+	text-decoration: none;
+	color: black;
+	font-family: BerlingskeSansBold, sans-serif;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 2px;
+	padding-bottom: 2px;
+	border-bottom: 1px solid white;
+	-webkit-transition: all 0.25s; /* Safari */
+    		transition: all 0.25s;
+}
+
+#welcome-box ul li:hover a {
+	border-bottom: 1px solid black;
 }
 
 #triangle-top {
 	width: 0;
 	height: 0;
-	margin-left: auto;
-	margin-right: auto;
 	margin-top: 45%;
 	border-bottom: 36px solid black;
-	border-left: 360px solid transparent;
+	border-left: 365px solid transparent;
 }
 
 #rectangle-bottom {
-	width: 360px;
+	width: 365px;
 	height: 45px;
-	margin-left: auto;
-	margin-right: auto;
 	background-color: black;
 }
 
