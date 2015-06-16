@@ -161,6 +161,7 @@ a {
 
 canvas {
   	float: left;
+  	position: absolute;
 }
 
 #welcome {

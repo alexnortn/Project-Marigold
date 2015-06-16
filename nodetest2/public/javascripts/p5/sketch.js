@@ -114,10 +114,13 @@ function setup() {
 
   // Create text node
   liveText = createP().id('interests');
+  liveText.parent('welcome');
   liveText.style("opacity", "0");
   describeText = createP(descriptiveText).class('describe');
+  describeText.parent('welcome');
   describeText.style("opacity", "0");
   describeText1 = createP(descriptiveText1).class('describe');
+  describeText1.parent('welcome');
   describeText1.style("opacity", "0");
 
   interestsArr.push('Artificial Intelligence','Neuroscience','Game Design','Graphic Design','Architecture','Urban Design','Physics','Computation');
@@ -606,7 +609,7 @@ function interestDisp(i, x, y, opacity) {
   var textOpacity = map(opacity, 0, 255, 0, 1);
   liveText.style("opacity", textOpacity);
   liveText.html(interestsArr[i]);
-  liveText.position(x,y-17);
+  liveText.position(x,y-7);
 
 }
 
@@ -623,9 +626,9 @@ function hoverButton() {
   opacity = norm(buttonFade, 0, 255);
 
   // Position the descriptive text along with the button
-  describeText.position(mousey.x, mousey.y -105);
+  describeText.position(mousey.x, mousey.y -95);
   describeText.style("opacity", opacity);
-  describeText1.position(mousey.x, mousey.y -45);
+  describeText1.position(mousey.x, mousey.y -35);
   describeText1.style("opacity", opacity);
 
  push();
