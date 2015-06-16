@@ -243,5 +243,5 @@ var setGreeting = function() {
     var n = d.getHours();
     var greeting = welcome.greeting_afternoon;
 
-    $('#welcome-box h2').html("greetings");
+    $('#welcome-box h2').html("good afternoon!");
 }
