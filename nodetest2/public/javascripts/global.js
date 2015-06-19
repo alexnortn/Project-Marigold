@@ -246,7 +246,7 @@ var setGreeting = function() {
     // Get current time
     var d = new Date();
     var n = d.getHours();
-    var greeting = welcome.greeting_afternoon;
+    var greeting = bios.greeting_afternoon;
 
-    $('#welcome-box h2').html("good afternoon!");
+    $('#bios-box h2').html("good afternoon!");
 }

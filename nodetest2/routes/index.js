@@ -5,7 +5,7 @@ var router  = express.Router();
 // Declare variables
 var fs = require('fs'),
     contents,
-    welcome_text,
+    bios_text,
     projects;
 
 // Read the file and send to the callback
@@ -18,7 +18,7 @@ function handleFile(err, data) {
     // You can now play with your datas
     console.log(contents);
     projects = contents.projects;
-    welcome_text = contents.welcome_text;
+    bios_text = contents.bios_text;
 }
 
 
@@ -27,7 +27,7 @@ router.get('/', function(req, res, next) {
   res.render('index', {
   	title: 'Alex Norton',
   	projects: projects,
-    welcome_text: welcome_text
+    bios_text: bios_text
   });
 });
 

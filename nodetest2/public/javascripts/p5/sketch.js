@@ -61,7 +61,7 @@ function setup() {
   noStroke();
   phi = (1 + sqrt(5)) / 2;
   canvas = createCanvas(window.innerWidth / phi, window.innerHeight);
-  canvas.parent('welcome');
+  canvas.parent('interactive');
   w = windowWidth / phi;
   h = windowHeight;
   scaleFunc(w,h);
@@ -114,13 +114,13 @@ function setup() {
 
   // Create text node
   liveText = createP().id('interests');
-  liveText.parent('welcome');
+  liveText.parent('interactive');
   liveText.style("opacity", "0");
   describeText = createP(descriptiveText).class('describe');
-  describeText.parent('welcome');
+  describeText.parent('interactive');
   describeText.style("opacity", "0");
   describeText1 = createP(descriptiveText1).class('describe');
-  describeText1.parent('welcome');
+  describeText1.parent('interactive');
   describeText1.style("opacity", "0");
 
   interestsArr.push('Artificial Intelligence','Neuroscience','Game Design','Graphic Design','Architecture','Urban Design','Physics','Computation');

@@ -168,13 +168,13 @@ strong {
 	font-family: BerlingskeSansBold, sans-serif;
 }
 
-#welcome {
+#bios {
 	/*background-color: beige;*/
 	width: 100%;
 	height: 100%;
 }
 
-#welcome-right {
+#bios-right {
 	float: right;
 	/*clear: left;*/
 	/*background-color: rgb(250,250,250);*/
@@ -182,7 +182,7 @@ strong {
 	width: 38.2%;
 }
 
-#welcome-box {
+#bios-box {
 	position: relative;
 	width: 380px;
 	padding-right: 25%;
@@ -191,7 +191,7 @@ strong {
 	margin-top: 40%;
 }
 
-#welcome-box h2 {
+#bios-box h2 {
 	text-align: left;
 	margin-top: 55px;
 	margin-bottom: 25px;
@@ -201,7 +201,7 @@ strong {
 	letter-spacing: 2px;
 }
 
-#welcome-box p {
+#bios-box p {
 	text-align: left;
 	font-family: BerlingskeSansRegular, sans-serif;
 	font-size: 13px;
@@ -210,7 +210,7 @@ strong {
 	border-bottom: 1.25px dotted black;
 }
 
-#welcome-box img {
+#bios-box img {
 	width:  35px;
 	height: 35px;
 	display: inline-block;
@@ -218,7 +218,7 @@ strong {
 	padding: 5px;
 }
 
-#welcome-box ul li {
+#bios-box ul li {
 	width: 50%;
 	position: relative;
 	display: inline-block;
@@ -228,16 +228,16 @@ strong {
 	text-align: center;
 }
 
-#welcome-box ul li:first-child {
+#bios-box ul li:first-child {
 	border-right: 1.25px dotted black;
 	width: 49.6%;
 }
 
-#welcome-box ul li:last-child {
+#bios-box ul li:last-child {
 	width: 100%;
 }
 
-#welcome-box a {
+#bios-box a {
 	text-decoration: none;
 	color: black;
 	font-family: BerlingskeSansBold, sans-serif;
@@ -250,15 +250,15 @@ strong {
     		transition: all 0.25s;
 }
 
-#welcome-box ul:hover {
+#bios-box ul:hover {
 	cursor: pointer;
 }
 
-#welcome-box ul li:hover a {
+#bios-box ul li:hover a {
 	border-bottom: 1px solid black;
 }
 
-#welcome-box ul li:active a {
+#bios-box ul li:active a {
 	border-bottom: 1px solid white;
 }
 

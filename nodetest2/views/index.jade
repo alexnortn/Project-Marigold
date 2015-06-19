@@ -2,16 +2,21 @@ extends layout
 
 block content
 
-    //WELCOME PAGE
-    #welcome
+    // INTERACTIVE PAGE
+    #interactive
+
+    // /INTERACTIVE
+
+    //BIOS PAGE
+    #bios
         
-        // WELCOME RIGHT
-        #welcome-right
-            #welcome-box
+        // BIOS RIGHT
+        #bios-right
+            #bios-box
                 #triangle-top
                 #rectangle-bottom
                 h2 
-                p !{welcome_text.description_short}
+                p !{bios_text.description_short}
                 ul
                     li.link
                         a(href="#") Bios
@@ -25,9 +30,9 @@ block content
                     img(src = "/images/social-icons-03.png" alt = "")
                     img(src = "/images/social-icons-04.png" alt = "")
                     img(src = "/images/social-icons-05.png" alt = "")
-        // /WELCOME RIGHT
+        // /BIOS RIGHT
 
-    // /WELCOME PAGE
+    // /BIOS PAGE
 
     input(type="checkbox" id = "nav-trigger" class = "nav-trigger")
     label(for = "nav-trigger")
