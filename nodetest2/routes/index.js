@@ -6,6 +6,7 @@ var router  = express.Router();
 var fs = require('fs'),
     contents,
     bios_text,
+    welcome_text,
     projects;
 
 // Read the file and send to the callback
@@ -19,14 +20,15 @@ function handleFile(err, data) {
     console.log(contents);
     projects = contents.projects;
     bios_text = contents.bios_text;
+    welcome_text = contents.welcome_text;
 }
-
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', {
   	title: 'Alex Norton',
   	projects: projects,
+    welcome_text: welcome_text,
     bios_text: bios_text
   });
 });

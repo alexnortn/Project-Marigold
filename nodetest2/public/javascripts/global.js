@@ -218,7 +218,7 @@ function showUserInfo(event) {
 
 // // Pull in our content Json
 // var content = (function () {
-//     var content = null;
+//     content = null;
 //     $.ajax({
 //         'async': false,
 //         'global': false,
@@ -226,7 +226,7 @@ function showUserInfo(event) {
 //         'dataType': "json",
 //         'success': function (data) {
 //             content = data;
-//             alert("Success!");
+//             // alert("Success!");
 //         }
 //     });
 //     return content;
@@ -240,13 +240,25 @@ function showUserInfo(event) {
 //     $('#im-test').attr("src", content.projects[0].images[0].src);
 // }
 
-
-var setGreeting = function() {
+// Set up Date Query
+function setGreeting() {
 
     // Get current time
     var d = new Date();
     var n = d.getHours();
-    var greeting = bios.greeting_afternoon;
 
-    $('#bios-box h2').html("good afternoon!");
+    var greeting;
+
+    if (n < 11) {
+        greeting = "Good Morning, ";
+    } else if (n < 18) {
+        greeting = "Good Afternoon, ";
+    } else {
+        greeting = "Good Evening, ";
+    }
+
+    console.log("Current hour is " + n);
+
+    $('#interactive p').prepend(greeting);
+    $('#interactive p').delay(1000).fadeIn(1000);
 }

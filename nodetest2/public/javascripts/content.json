@@ -65,13 +65,17 @@
         }
     ],
     "bios_text": {
-        "greeting_morning": "Good Morning!",
-        "greeting_afternoon": "Good Afternoon!",
-        "greeting_evening": "Good Evening!",
         "description_short": "I’m <strong>Alex Norton</strong>, Interaction Designer and Researcher. My work explores the intersection of design and technology, weaving lessons from natural systems into creative solutions and computational models. I believe a multidisciplinary approach to design thinking can yield rich and often unexpected results.",
         "description_long": "I recently completed my undergraduate studies in Boston, MA achieving a BFA with highest honors while attending MassArt and MIT. Link to my resume. \n I  am fascinated by ubiquitous computing and the emerging 'Internet of Things' [iot] movement. My current research explores how advancements in artificial intelligence will revolutionize user experience by transforming quanitive data into qualitative insights.",
         "link_1": "bios",
         "link_2": "resume",
         "link_3": "works"
+    },
+    "welcome_text": {
+        "greeting_text": "I'm Alex Norton.",
+        "discipline_text": "Interaction Designer & Researcher.",
+        "greeting_morning": "Good Morning, ",
+        "greeting_afternoon": "Good Afternoon, ",
+        "greeting_evening": "Good Evening, "
     }
 }

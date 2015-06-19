@@ -60,9 +60,9 @@ function preload() {
 function setup() {
   noStroke();
   phi = (1 + sqrt(5)) / 2;
-  canvas = createCanvas(window.innerWidth / phi, window.innerHeight);
+  canvas = createCanvas(window.innerWidth, window.innerHeight);
   canvas.parent('interactive');
-  w = windowWidth / phi;
+  w = windowWidth;
   h = windowHeight;
   scaleFunc(w,h);
 
@@ -163,8 +163,8 @@ function draw() {
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth / phi, windowHeight);
-  w = windowWidth / phi;
+  resizeCanvas(windowWidth, windowHeight);
+  w = windowWidth;
   scaleFunc(w,h);
   // Empty the Physics Sim
   physEmpty();
@@ -518,7 +518,7 @@ function physEmpty() {
 }
 
 function findCenter() {
-  w = windowWidth / phi;
+  w = windowWidth;
   h = windowHeight;
   center.set(w/2, h/2);
   var glyphCenterX = center.x - aCenterOffset.x; 
@@ -571,7 +571,7 @@ function arrayMax(arr) {
 // Scaling function
 
 function scaleFunc(w,h) {
-  var dynamicScale = ((w < 700) || (h < 700)) ?  2 : 1.25;
+  var dynamicScale = ((w < 700) || (h < 700)) ?  1.25 : 0.75;
   scaleFactor = w / (1920 / dynamicScale);
 }
 
