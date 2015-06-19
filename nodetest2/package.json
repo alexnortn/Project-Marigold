@@ -16,6 +16,7 @@
     "mongodb": "*",
     "mongoskin": "*",
     "p5": "*",
-    "fastclick": "*"
+    "fastclick": "*",
+    "font-awesome": "*"
   }
 }

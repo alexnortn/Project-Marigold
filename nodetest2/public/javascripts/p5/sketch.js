@@ -520,7 +520,7 @@ function physEmpty() {
 function findCenter() {
   w = windowWidth;
   h = windowHeight;
-  center.set(w/2, h/2);
+  center.set(w/2 + 30, h/2 -60);
   var glyphCenterX = center.x - aCenterOffset.x; 
   var glyphCenterY = center.y + aCenterOffset.y; 
   glyphCenter.set(glyphCenterX, glyphCenterY);
@@ -692,7 +692,7 @@ function MakeButton(_x, _y, _buttonWidth) {
     this.x = _x;
     this.y = _y;
 
-    xPos = (this.x / 7);
+    xPos = (100);
     yPos = this.y - (this.y / 8);
 
     // Center ellipse
@@ -726,7 +726,7 @@ function MakeButton(_x, _y, _buttonWidth) {
     this.x = _x;
     this.y = _y;
 
-    xPos = (this.x / 7);
+    xPos = (100);
     yPos = this.y - (this.y / 8);
 
     // Center ellipse

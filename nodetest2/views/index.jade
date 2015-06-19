@@ -4,9 +4,18 @@ block content
 
     // INTERACTIVE PAGE
     #interactive
-        p I'm <strong>Alex Norton.</strong> <br> Interaction Designer & Researcher.
+        p#greeting  I'm <strong>Alex Norton.</strong> <br> Interaction Designer & Researcher.
+        #nav-button
+            <i class="fa fa-arrow-down fa-lg"></i>
 
     // /INTERACTIVE
+
+    // PAGINATION
+    #pagination
+        for result in projects
+            .pagination&attributes({'data': result.name})
+
+    // /PAGINATION
 
     //BIOS PAGE
     #bios
@@ -66,10 +75,6 @@ block content
 
             img#arrow(src = "/images/rnd.svg" alt = "down arrow")
         // /HEADER    
-
-        #pagination
-            for result in projects
-                .pagination&attributes({'data': result.name})
 
         // PROJECT ITERATOR
         each result, index in projects
