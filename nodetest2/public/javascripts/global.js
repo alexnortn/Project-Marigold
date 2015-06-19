@@ -27,6 +27,8 @@ $(document).ready(function() {
     // Center In
     $('.project-overview').alwaysCenterIn(window, { top: "-3%" });
     $('#pagination').alwaysCenterIn(window, { direction: 'vertical' });
+    var bios_div = $('#bios');
+    $('#bios-box').alwaysCenterIn(bios_div);;
 
     // Open Project
     $('.project-overview').click(function(){

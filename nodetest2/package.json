@@ -17,6 +17,7 @@
     "mongoskin": "*",
     "p5": "*",
     "fastclick": "*",
-    "font-awesome": "*"
+    "font-awesome": "*",
+    "node-sass" : "*"
   }
 }
