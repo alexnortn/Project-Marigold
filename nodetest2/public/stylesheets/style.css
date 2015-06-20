@@ -176,7 +176,7 @@ strong {
 }
 
 #greeting {
-	margin: 100px;
+	margin: 50px;
 	padding-top: 12px;
 	position: absolute;
 	display: none;
@@ -379,6 +379,7 @@ p.directions {
 	min-width: 800px;
 	height: 100%;
 	display: block;
+	position: relative;
 	box-shadow: 0 5px 3px rgba(0, 0, 0, 0);
 	-webkit-transition: all 0.25s; /* Safari */
     		transition: all 0.25s;

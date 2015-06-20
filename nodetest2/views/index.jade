@@ -84,53 +84,52 @@ block content
 
         // PROJECT ITERATOR
         each result, index in projects
-            .project-page
-                // PROJECT OVERVIEW
-                .project-view&attributes({'data': index})
-                    .project-overview
-                        .description
-                            p - #{result.year} -
-                            h2 #{result.name}
-                            p #{result.description_short}
-                        .hero-box
-                            .overlay
-                            .hero(style='background-image: url(#{result.hero});')
-                // /PROJECT OVERVIEW
-                .project-contents
-                    .main-description 
-                        p #{result.description_long}
+            // PROJECT OVERVIEW
+            .project-view&attributes({'data': index})
+                .project-overview
+                    .description
+                        p - #{result.year} -
+                        h2 #{result.name}
+                        p #{result.description_short}
+                    .hero-box
+                        .overlay
+                        .hero(style='background-image: url(#{result.hero});')
+            // /PROJECT OVERVIEW
+            .project-contents
+                .main-description 
+                    p #{result.description_long}
+                .pull-left
+                    .top-rule
+                    h1 #{result.pull_quotes[0]}
+                    .bottom-rule
+                    // p  #{result.pull_quotes[0]}
+                // GRID ITERATOR
+                .image-grid-wrapper
+                    each image, index in result.images
+                        .image-grid-container
+                            .image-grid(style='background-image: url(#{result.images[index].src});')
+                // /GRID ITERATOR
+                .big-moment-1
+                    .big-moment-1-color
+                    img(src = result.cut alt = "big image")
+                    h1.center We Out Here
+                .two-bi-two
                     .pull-left
-                        .top-rule
-                        h1 #{result.pull_quotes[0]}
-                        .bottom-rule
-                        // p  #{result.pull_quotes[0]}
-                    // GRID ITERATOR
-                    .image-grid-wrapper
-                        each image, index in result.images
-                            .image-grid-container
-                                .image-grid(style='background-image: url(#{result.images[index].src});')
-                    // /GRID ITERATOR
-                    .big-moment-1
-                        .big-moment-1-color
-                        img(src = result.cut alt = "big image")
-                        h1.center We Out Here
-                    .two-bi-two
-                        .pull-left
-                            .image-grid-container
-                                .image-grid(style='background-image: url(#{result.images[index].src});')
-                            .image-grid-container
-                                .image-grid(style='background-image: url(#{result.images[index].src});')
-                        .pull-right
-                            p.text #{result.description_long_1}
-                            p.caption #{result.description_long_2}
-                    .big-moment-2
-                        .big-moment-2-color(style='background-image: url(#{result.images[index].src});')
-                        .img-box(style='background-image: url(#{result.images[index].src});')
+                        .image-grid-container
+                            .image-grid(style='background-image: url(#{result.images[index].src});')
+                        .image-grid-container
+                            .image-grid(style='background-image: url(#{result.images[index].src});')
+                    .pull-right
+                        p.text #{result.description_long_1}
                         p.caption #{result.description_long_2}
-                    #video-frame
-                        iframe(src="//player.vimeo.com/video/95969058" width="1600" height="1000" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
-                    .close
-                        svg.clothes-line
-                            line(x1="0" y1="0" x2="25" y2="0" stroke-linecap="round")
+                .big-moment-2
+                    .big-moment-2-color(style='background-image: url(#{result.images[index].src});')
+                    .img-box(style='background-image: url(#{result.images[index].src});')
+                    p.caption #{result.description_long_2}
+                #video-frame
+                    iframe(src="//player.vimeo.com/video/95969058" width="1600" height="1000" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
+                .close
+                    svg.clothes-line
+                        line(x1="0" y1="0" x2="25" y2="0" stroke-linecap="round")
 
         // /PROJECT ITERATOR
