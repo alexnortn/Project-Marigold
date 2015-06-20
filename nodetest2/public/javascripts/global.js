@@ -24,6 +24,9 @@ $(document).ready(function() {
     // Set Greeting
     setGreeting();
 
+    // Set Initial Width
+    setWidth();
+
     // Center In
     $('.project-overview').alwaysCenterIn(window, { top: "-3%" });
     $('#pagination').alwaysCenterIn(window, { direction: 'vertical' });
@@ -73,6 +76,11 @@ $(document).ready(function() {
             open = false;
         }
     };
+
+    // Set the bottom elements to proper size
+    $(window).resize(function() {
+        setWidth();
+    });
 
     // Close Project
 
@@ -272,4 +280,11 @@ function setGreeting() {
 
     $('#interactive p').prepend(greeting);
     $('#interactive p').delay(1000).fadeIn(1000);
+}
+
+// Set the bottom element width to full using jQuery
+function setWidth() {
+    var windowWidth = $( window ).width();
+    $("#triangle-bottom-left").css("border-left-width", windowWidth);
+    $("#triangle-bottom-right").css("border-right-width", windowWidth);
 }
