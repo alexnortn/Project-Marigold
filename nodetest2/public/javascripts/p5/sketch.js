@@ -692,8 +692,8 @@ function MakeButton(_x, _y, _buttonWidth) {
     this.x = _x;
     this.y = _y;
 
-    xPos = (100);
-    yPos = this.y - (this.y / 8);
+    xPos = (50);
+    yPos = this.y - (this.y / 2);
 
     // Center ellipse
     fill(0,0,0,opacity);
@@ -726,8 +726,8 @@ function MakeButton(_x, _y, _buttonWidth) {
     this.x = _x;
     this.y = _y;
 
-    xPos = (100);
-    yPos = this.y - (this.y / 8);
+    xPos = (50);
+    yPos = this.y - (this.y / 2);
 
     // Center ellipse
     fill(0,0,0);
