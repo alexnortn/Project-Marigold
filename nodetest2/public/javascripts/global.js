@@ -139,6 +139,15 @@ $(document).ready(function() {
 
         };
 
+        // Bios readmore function
+        $('#bio').click(function(){
+            $('#readMore').slideToggle('slow', 'swing', function() {
+                if($(this).is(':visible'))
+                    $('#bio').html("Read Less")
+                else 
+                    $('#bio').html("Read More");
+            });            
+        });
 
 
     /*

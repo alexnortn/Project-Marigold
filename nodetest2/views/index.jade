@@ -24,21 +24,19 @@ block content
         #bios-box
             #triangle-top
             #rectangle-bottom
-            h2 
-            p !{bios_text.description_short}
+            #bios-text
+                h2 
+                p !{bios_text.description_short}
+                p#readMore !{bios_text.description_long}
             ul
-                li.link
-                    a(href="#") Bios
-                li.link
-                    a(href="#") Resume
-                li.link
-                    a(href="#") Works
-            #social
-                img(src = "/images/social-icons-01.png" alt = "")
-                img(src = "/images/social-icons-02.png" alt = "")
-                img(src = "/images/social-icons-03.png" alt = "")
-                img(src = "/images/social-icons-04.png" alt = "")
-                img(src = "/images/social-icons-05.png" alt = "")
+                li.link 
+                    p#bio Read More
+            .social
+                <i class="fa fa-envelope fa-2x"></i>
+                <i class="fa fa-twitter fa-2x"></i>
+                <i class="fa fa-vimeo-square fa-2x"></i>
+                <i class="fa fa-github fa-2x"></i>
+                <i class="fa fa-behance-square fa-2x"></i>
         // /BIOS BOX
 
     // /BIOS PAGE
@@ -48,15 +46,24 @@ block content
 
     // NAV DRAWER
     .nav
-        ul
-            li.nav-item
-                a(href="#") Home
-            li.nav-item
-                a(href="#") Works
-            li.nav-item
-                a(href="#") Bios
-            li.nav-item
-                a(href="#") Contact
+        #nav-box
+            #nav-triangle-top
+            #nav-rectangle-bottom
+            ul
+                li.nav-item
+                    a(href="#") Bios
+                li.nav-item
+                    a(href="#") Resume
+                li.nav-item
+                    a(href="#") Contact
+                li.nav-item
+                    a(href="#") Works
+        .social
+            <i class="fa fa-envelope fa-2x"></i>
+            <i class="fa fa-twitter fa-2x"></i>
+            <i class="fa fa-vimeo-square fa-2x"></i>
+            <i class="fa fa-github fa-2x"></i>
+            <i class="fa fa-behance-square fa-2x"></i>
     // /NAV DRAWER
     
 
@@ -77,52 +84,53 @@ block content
 
         // PROJECT ITERATOR
         each result, index in projects
-            // PROJECT OVERVIEW
-            .project-view&attributes({'data': index})
-                .project-overview
-                    .description
-                        p - #{result.year} -
-                        h2 #{result.name}
-                        p #{result.description_short}
-                    .hero-box
-                        .overlay
-                        .hero(style='background-image: url(#{result.hero});')
-            // /PROJECT OVERVIEW
-            .project-contents
-                .main-description 
-                    p #{result.description_long}
-                .pull-left
-                    .top-rule
-                    h1 #{result.pull_quotes[0]}
-                    .bottom-rule
-                    // p  #{result.pull_quotes[0]}
-                // GRID ITERATOR
-                .image-grid-wrapper
-                    each image, index in result.images
-                        .image-grid-container
-                            .image-grid(style='background-image: url(#{result.images[index].src});')
-                // /GRID ITERATOR
-                .big-moment-1
-                    .big-moment-1-color
-                    img(src = result.cut alt = "big image")
-                    h1.center We Out Here
-                .two-bi-two
+            .project-page
+                // PROJECT OVERVIEW
+                .project-view&attributes({'data': index})
+                    .project-overview
+                        .description
+                            p - #{result.year} -
+                            h2 #{result.name}
+                            p #{result.description_short}
+                        .hero-box
+                            .overlay
+                            .hero(style='background-image: url(#{result.hero});')
+                // /PROJECT OVERVIEW
+                .project-contents
+                    .main-description 
+                        p #{result.description_long}
                     .pull-left
-                        .image-grid-container
-                            .image-grid(style='background-image: url(#{result.images[index].src});')
-                        .image-grid-container
-                            .image-grid(style='background-image: url(#{result.images[index].src});')
-                    .pull-right
-                        p.text #{result.description_long_1}
+                        .top-rule
+                        h1 #{result.pull_quotes[0]}
+                        .bottom-rule
+                        // p  #{result.pull_quotes[0]}
+                    // GRID ITERATOR
+                    .image-grid-wrapper
+                        each image, index in result.images
+                            .image-grid-container
+                                .image-grid(style='background-image: url(#{result.images[index].src});')
+                    // /GRID ITERATOR
+                    .big-moment-1
+                        .big-moment-1-color
+                        img(src = result.cut alt = "big image")
+                        h1.center We Out Here
+                    .two-bi-two
+                        .pull-left
+                            .image-grid-container
+                                .image-grid(style='background-image: url(#{result.images[index].src});')
+                            .image-grid-container
+                                .image-grid(style='background-image: url(#{result.images[index].src});')
+                        .pull-right
+                            p.text #{result.description_long_1}
+                            p.caption #{result.description_long_2}
+                    .big-moment-2
+                        .big-moment-2-color(style='background-image: url(#{result.images[index].src});')
+                        .img-box(style='background-image: url(#{result.images[index].src});')
                         p.caption #{result.description_long_2}
-                .big-moment-2
-                    .big-moment-2-color(style='background-image: url(#{result.images[index].src});')
-                    .img-box(style='background-image: url(#{result.images[index].src});')
-                    p.caption #{result.description_long_2}
-                #video-frame
-                    iframe(src="//player.vimeo.com/video/95969058" width="1600" height="1000" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
-                .close
-                    svg.clothes-line
-                        line(x1="0" y1="0" x2="25" y2="0" stroke-linecap="round")
+                    #video-frame
+                        iframe(src="//player.vimeo.com/video/95969058" width="1600" height="1000" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
+                    .close
+                        svg.clothes-line
+                            line(x1="0" y1="0" x2="25" y2="0" stroke-linecap="round")
 
         // /PROJECT ITERATOR
