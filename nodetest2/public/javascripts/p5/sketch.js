@@ -520,7 +520,7 @@ function physEmpty() {
 function findCenter() {
   w = windowWidth;
   h = windowHeight;
-  center.set(w/2 + 30, h/2 -60);
+  center.set(w/2, h/2 -60);
   var glyphCenterX = center.x - aCenterOffset.x; 
   var glyphCenterY = center.y + aCenterOffset.y; 
   glyphCenter.set(glyphCenterX, glyphCenterY);

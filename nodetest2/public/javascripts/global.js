@@ -27,6 +27,9 @@ $(document).ready(function() {
     // Set Initial Width
     setWidth();
 
+    // Initial FadeIn
+    fadeInPage();
+
     // Center In
     $('.project-overview').alwaysCenterIn(window, { top: "-3%" });
     $('#pagination').alwaysCenterIn(window, { direction: 'vertical' });
@@ -260,7 +263,7 @@ function showUserInfo(event) {
 // }
 
 // Set up Date Query
-function setGreeting() {
+var setGreeting = function () {
 
     // Get current time
     var d = new Date();
@@ -278,13 +281,17 @@ function setGreeting() {
 
     console.log("Current hour is " + n);
 
-    $('#interactive p').prepend(greeting);
-    $('#interactive p').delay(1000).fadeIn(1000);
+    $('#greeting').prepend(greeting);
+    $('#greeting').delay(1000).fadeIn(1000);
 }
 
 // Set the bottom element width to full using jQuery
-function setWidth() {
+var setWidth = function() {
     var windowWidth = $( window ).width();
     $("#triangle-bottom-left").css("border-left-width", windowWidth);
     $("#triangle-bottom-right").css("border-right-width", windowWidth);
+}
+
+var fadeInPage = function() {
+    $("#nav-footer").delay(2000).fadeIn('slow');
 }
