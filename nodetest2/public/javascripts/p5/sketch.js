@@ -66,8 +66,6 @@ function setup() {
   h = windowHeight;
   scaleFunc(w,h);
 
-  cursor(HAND);
-
   mousePos = createVector();
   xOff = 0;
   alphaOpa = 0;
@@ -288,6 +286,7 @@ function clockDisp(alphaOpa) {
     var dist1 = mousePos.dist(tempLoc);
     if (dist1 < 75) {
       // FadeIn content
+      cursor(CROSS);
       if (alphaOpa1 < 255) alphaOpa1 += fadeSpeed1;
       tempSelection = i;
       nudgeAttractor.hover();
@@ -643,6 +642,7 @@ function hoverButton() {
 
   if (overButton < 50) { 
     lineOp = 255;
+    cursor(HAND);
     dashButton.hover(width,height);
      if (buttonFade < 255) buttonFade += fadeSpeed;
      if (alphaOpa > 0) alphaOpa -= fadeSpeed;
@@ -650,6 +650,7 @@ function hoverButton() {
     dashButton.display(width,height);
     if (buttonFade > 60) {
       buttonFade -= fadeSpeed * 4;
+      cursor(ARROW);
     } else  if (buttonFade > 0) buttonFade -= fadeSpeed / 2;
   }
 
