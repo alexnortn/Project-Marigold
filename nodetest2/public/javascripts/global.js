@@ -36,6 +36,11 @@ $(document).ready(function() {
     var bios_div = $('#bios');
     $('#bios-box').alwaysCenterIn(bios_div);;
 
+    // Display Interaction Info
+    $('#cross-circle').hover(function() {
+        $('#infoText').slideToggle('slow', 'swing');
+    });
+
     // Open Project
     $('.project-overview').click(function(){
         open = !open;
@@ -283,6 +288,7 @@ var setGreeting = function () {
 
     $('#greeting').prepend(greeting);
     $('#greeting').delay(1000).fadeIn(1000);
+    $('#greeting').css("display", "inline-block");
 }
 
 // Set the bottom element width to full using jQuery

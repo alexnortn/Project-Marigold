@@ -40,6 +40,7 @@ var aLockVert = [],
     liveText,
     describeText,
     describeText1,
+    hover,
     interestsArr = [],
     aVerts = [],
     aCounterVerts = [],
@@ -76,6 +77,7 @@ function setup() {
   lineOp = 0;
   timeOut = 255;
   timeOut1 = 400;
+  hover = false;
 
   // Address N Scaling
   nScaleFactor = 0.3;
@@ -156,7 +158,7 @@ function draw() {
   // displayPhys();
 
   // Button Interactivity
-  hoverButton();
+  hoverButton1();
 
 }
 
@@ -295,6 +297,7 @@ function clockDisp(alphaOpa) {
       // FadeOut content
       if (i == tempSelection) {
         while (alphaOpa1 > 30) {
+          cursor(ARROW);
           alphaOpa1 -= fadeSpeed1 * 3;  
         } if ((alphaOpa1 < 30) && (alphaOpa1 > 0)) alphaOpa1 -= fadeSpeed1 / 10;  
 
@@ -651,6 +654,35 @@ function hoverButton() {
     if (buttonFade > 60) {
       buttonFade -= fadeSpeed * 4;
       cursor(ARROW);
+    } else  if (buttonFade > 0) buttonFade -= fadeSpeed / 2;
+  }
+
+}
+
+// Hover button interactivity
+function hoverButton1() {
+  var fadeSpeed = 20;
+  var opacity;
+
+  opacity = norm(buttonFade, 0, 255);
+
+  var element = getElement('cross-circle');
+
+  element.mouseOver(function() {
+    hover = true;
+  });
+
+    element.mouseOut(function() {
+    hover = false;
+  });
+
+  if (hover) { 
+    lineOp = 255;
+     if (buttonFade < 255) buttonFade += fadeSpeed;
+     if (alphaOpa > 0) alphaOpa -= fadeSpeed;
+  } else {
+    if (buttonFade > 60) {
+      buttonFade -= fadeSpeed * 4;
     } else  if (buttonFade > 0) buttonFade -= fadeSpeed / 2;
   }
 
