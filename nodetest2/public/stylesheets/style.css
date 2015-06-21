@@ -198,7 +198,7 @@ strong {
 	position: relative;
 }
 
-.cross-circle:hover .vert-line {
+#cross-circle:hover .vert-line {
 	opacity: 0;
 	cursor: pointer;
 }
@@ -664,11 +664,6 @@ p.directions {
 	display: none;
 }
 
-label[for="nav-trigger"]:hover {
-	box-shadow: 0 0 3px rgba(0,0,0,0.18);
-	border: solid 1px rgba(218,218,218,0);
-}
-
 label[for="nav-trigger"] {
 	position: fixed;
 	top: 50px;
@@ -676,21 +671,68 @@ label[for="nav-trigger"] {
 	z-index: 1001;
 	width:  75px;
 	height: 75px;
-	border: solid 1px rgba(218, 218, 218, 1);
+	border: solid 1.5px rgba(35, 35, 35, 1);
 	/*box-shadow: 0 3px 3px rgba(0, 0, 0, 0.18);*/
 	cursor: pointer;
-	background-image: url("../images/hamburger2.svg");
+	background-color: white;
+	/*background-image: url("../images/hamburger2.svg");*/
 	background-size: contain;
 }
 
+label[for="nav-trigger"]:hover {
+	box-shadow: 0 0 3px rgba(0,0,0,0.18);
+	border: solid 1px rgba(218,218,218,0);
+}
+
+label[for="nav-trigger"] hr {
+	width: 25px;	
+	height: 2px;
+	border: none;
+	margin-bottom: 8px;
+	color: rgba(35, 35, 35, 1);
+    background-color: rgba(35, 35, 35, 1);
+    -webkit-transition: all 0.5s; /* Safari */
+			transition: all 0.5s;
+}
+
+label[for="nav-trigger"] hr:first-child {
+	margin-top: 28px;
+}
+
+label[for="nav-trigger"] hr:nth-child(3) {
+	margin-top: -10px;
+}
+
+.nav-trigger:checked + label hr:first-child {
+	color: rgba(35, 35, 35, 0);
+    background-color: rgba(35, 35, 35, 0);
+}
+
+.nav-trigger:checked + label hr:last-child {
+	color: rgba(35, 35, 35, 0);
+    background-color: rgba(35, 35, 35, 0);
+}
+
+.nav-trigger:checked + label hr:nth-child(2) {
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+	    -ms-transform: rotate(45deg); /* IE 9 */
+            transform: rotate(45deg);
+}
+
+.nav-trigger:checked + label hr:nth-child(3) {
+    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+	    -ms-transform: rotate(-45deg); /* IE 9 */
+            transform: rotate(-45deg);
+}
+
 .nav-trigger:checked + label {
-	right: 400px;
+	right: 399px;
 	box-shadow: -3px 0 5px rgba(0, 0, 0, 0.1);
 	border: solid 0px rgba(218,218,218,0);
 }
 
 .nav-trigger:checked + label:hover {
-	right: 400px;
+	right: 399px;
 	border: solid 0px rgba(218,218,218,0);
 }
 
