@@ -178,6 +178,7 @@ strong {
 #info {
 	position: absolute;
 	margin: 35px;
+	margin-top: 50px;
 	width: 550px;
 	z-index: 1000;
 	top: 0;
@@ -691,8 +692,8 @@ label[for="nav-trigger"] hr {
 	margin-bottom: 8px;
 	color: rgba(35, 35, 35, 1);
     background-color: rgba(35, 35, 35, 1);
-    -webkit-transition: all 0.5s; /* Safari */
-			transition: all 0.5s;
+    -webkit-transition: all 0.25s; /* Safari */
+			transition: all 0.25s;
 }
 
 label[for="nav-trigger"] hr:first-child {

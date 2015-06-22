@@ -276,9 +276,9 @@ var setGreeting = function () {
 
     var greeting;
 
-    if (n < 11) {
+    if ((n < 11) && (n > 4)) {
         greeting = "Good Morning, ";
-    } else if (n < 18) {
+    } else if ((n < 18) && (n > 11)) {
         greeting = "Good Afternoon, ";
     } else {
         greeting = "Good Evening, ";
