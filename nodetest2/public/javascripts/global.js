@@ -158,10 +158,14 @@ $(document).ready(function() {
         // Bios readmore function
         $('#bio').click(function(){
             $('#readMore').slideToggle('slow', 'swing', function() {
-                if($(this).is(':visible'))
+                if($(this).is(':visible')) {
                     $('#bio').html("Read Less")
-                else 
+                }
+                else {
                     $('#bio').html("Read More");
+                }
+
+                $('#bios-box').centerIn('#bios');
             });            
         });
 

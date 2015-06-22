@@ -295,6 +295,8 @@ strong {
 #bios-box {
 	position: absolute;
 	width: 380px;
+	-webkit-transition: all 0.25s; /* Safari */
+    		transition: all 0.25s;
 }
 
 #bios-text {
