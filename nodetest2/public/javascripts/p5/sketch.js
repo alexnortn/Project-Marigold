@@ -318,7 +318,7 @@ function clockDisp(alphaOpa) {
 
 function clockViz() {
   var fadeSpeed = 5;
-    if ((w > 750) && (h > 700)) {
+    if ((w > 1000) && (h > 850)) {
       if (alphaOpa < 255) alphaOpa += fadeSpeed;
     } else {
       if (alphaOpa > 0) alphaOpa -= fadeSpeed;
@@ -573,7 +573,7 @@ function arrayMax(arr) {
 // Scaling function
 
 function scaleFunc(w,h) {
-  var dynamicScale = ((w < 700) || (h < 700)) ?  1.25 : 0.75;
+  var dynamicScale = ((w < 1000) || (h < 850)) ?  1.25 : 0.75;
   scaleFactor = w / (1920 / dynamicScale);
 }
 

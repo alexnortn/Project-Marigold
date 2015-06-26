@@ -18,6 +18,12 @@
     "p5": "*",
     "fastclick": "*",
     "font-awesome": "*",
-    "node-sass" : "*"
+    "node-sass": "*",
+    "jquery": "~2.1.4",
+    "jquery-ui": "~1.10.5",
+    "browserify": "10.2.4"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0"
   }
 }

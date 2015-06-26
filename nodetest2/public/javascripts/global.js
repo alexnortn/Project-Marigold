@@ -5,6 +5,12 @@ var userListData = [],
     menu = false;
     // attachFastClick = require('fastclick');
 
+// load jquery 
+var $ = require('jquery');
+ 
+        // load everything 
+        require('jquery-ui');    
+
 
 // DOM Ready =============================================================
 $(document).ready(function() {
@@ -291,8 +297,6 @@ var setGreeting = function () {
     console.log("Current hour is " + n);
 
     $('#greeting').prepend(greeting);
-    $('#greeting').delay(1000).fadeIn(1000);
-    $('#greeting').css("display", "inline-block");
 }
 
 // Set the bottom element width to full using jQuery
@@ -303,5 +307,16 @@ var setWidth = function() {
 }
 
 var fadeInPage = function() {
-    $("#nav-footer").delay(2000).fadeIn('slow');
+
+    setTimeout(
+      function() {
+        $("#nav-footer").animate({
+            bottom: "0"
+        }, { duration: 1000, easing: "easein", queue: false });
+
+        $("#greeting").animate({
+            opacity: "1"
+        }, { duration: 250, queue: false });
+
+      }, 3000);
 }

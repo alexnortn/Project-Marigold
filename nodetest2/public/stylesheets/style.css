@@ -229,7 +229,7 @@ strong {
 
 #greeting {
 	position: relative;
-	display: none;
+	display: inline-block;
 	margin-left: 20px;
 	margin-bottom: 20px;
 	text-align: left;
@@ -237,6 +237,7 @@ strong {
   	font-size: 13px;
   	line-height: 2em;
   	word-spacing: 1px;
+  	opacity: 0;
 }
 
 #infoText {
@@ -380,7 +381,7 @@ strong {
 	background-color: rgb(35,35,35);
 	display: block;
 	position: fixed;
-	bottom: 0;
+	bottom: -75px;
 	z-index: 100;
 	box-shadow: 0 10px 15px rgba(0, 0, 0, 0);
 	-webkit-transition: all 0.25s; /* Safari */
