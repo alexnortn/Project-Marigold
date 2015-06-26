@@ -133,12 +133,26 @@ body {
   position: absolute;
   letter-spacing: .01rem;
   /*background-color: red;*/
+  -webkit-transition-timing-function: ease-in-out; /* Safari and Chrome */
+    	  transition-timing-function: ease-in-out;
+}
+
+body::selection {
+	background: #ECECEC;
+}
+
+div::selection {
+	background: #ECECEC;
 }
 
 h2 {
 	font-family: 'DeArchie-Bold';
 	font-size: 35px;
 	letter-spacing: 5px;
+}
+
+h2::selection {
+	background: #ECECEC;
 }
 
 h1 {
@@ -150,14 +164,30 @@ h1 {
 	line-height: 1.5em;
 }
 
+h1::selection {
+	background: #ECECEC;
+}
+
 p {
 	font-family: Metro-Serif;
 	text-rendering: optimizeLegibility;
 	/*letter-spacing: .5px;*/
 }
 
+p::selection {
+	background: #ECECEC;
+}
+
+strong::selection {
+	background: #ECECEC;
+}
+
 a {
   color: #00B7FF;
+}
+
+a::selection {
+	background: #ECECEC;
 }
 
 canvas {
@@ -168,6 +198,26 @@ canvas {
 
 strong {
 	font-family: BerlingskeSansBold, sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 14px;
+    height: 18px;
+}
+::-webkit-scrollbar-thumb {
+    height: 6px;
+    border: 4px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    -webkit-border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    display: none;
+}
+::-webkit-scrollbar-corner {
+    background-color: transparent;
 }
 
 #interactive {
@@ -197,6 +247,7 @@ strong {
 	background-color: rgb(35,35,35);
 	display: inline-block;
 	position: relative;
+	opacity: 0;
 }
 
 #cross-circle:hover .vert-line {
@@ -301,8 +352,8 @@ strong {
 }
 
 #bios-text {
-	/*overflow-y: scroll;*/
-	/*max-height: 400px;*/
+	overflow-y: scroll;
+	max-height: 300px;
 }
 
 #bios-box h2 {
@@ -320,7 +371,7 @@ strong {
 	font-family: BerlingskeSansRegular, sans-serif;
 	font-size: 13px;
 	line-height: 2.5em;
-	padding-bottom: 30px;
+	/*padding-bottom: 30px;*/
 }
 
 #bios-box img {
@@ -332,9 +383,10 @@ strong {
 }
 
 #bios-box ul {
-	width: 100%;
+	width: 380px;
 	position: relative;
 	display: inline-block;
+	margin-top: 30px;
 	border-top: 1.25px dotted black;
 	border-bottom: 1.25px dotted black;
 	height: 70px;
@@ -357,6 +409,10 @@ strong {
 	border-bottom: 1px solid white;
 	-webkit-transition: all 0.25s; /* Safari */
     		transition: all 0.25s;
+}
+
+#readMore {
+	margin-top: 30px;
 }
 
 #bios-box ul:hover {
@@ -429,6 +485,7 @@ strong {
 	width: 365px;
 	height: 45px;
 	background-color: rgb(25,25,25);
+	margin-bottom: 45px;
 }
 
 #nav-triangle-top {
@@ -668,10 +725,21 @@ p.directions {
 	display: none;
 }
 
+.nav-burger-preload {
+	right: -125px;
+	-webkit-transition: right 0.25s; /* Safari */
+    		transition: right 0.25s;
+}
+
+.nav-burger-load {
+	right: 50px;
+	-webkit-transition: right 0.25s; /* Safari */
+    		transition: right 0.25s;
+}
+
 label[for="nav-trigger"] {
 	position: fixed;
 	top: 50px;
-	right: 50px;
 	z-index: 1001;
 	width:  75px;
 	height: 75px;
@@ -796,7 +864,7 @@ label[for="nav-trigger"] hr:nth-child(3) {
 
 #pagination {
 	position: fixed;
-	right: 82px;
+	right: -25px;
 	margin-left: 25px;
 	z-index: 100;
 }

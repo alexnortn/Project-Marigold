@@ -3,13 +3,7 @@ var userListData = [],
     projects,
     open = false,
     menu = false;
-    // attachFastClick = require('fastclick');
-
-// load jquery 
-var $ = require('jquery');
- 
-        // load everything 
-        require('jquery-ui');    
+    // attachFastClick = require('fastclick');    
 
 
 // DOM Ready =============================================================
@@ -166,9 +160,15 @@ $(document).ready(function() {
             $('#readMore').slideToggle('slow', 'swing', function() {
                 if($(this).is(':visible')) {
                     $('#bio').html("Read Less")
+                    $('#bios-box').css("width", '400px');
+                    $('#bios-text').css("padding-right", '20px');
+                    $('#bios-box ul').css("width", '380px');
                 }
                 else {
                     $('#bio').html("Read More");
+                    $('#bios-box').css("width", '380px');
+                    $('#bios-text').css("padding-right", '0px');
+                    $('#bios-box ul').css("margin-right", '0px');
                 }
 
                 $('#bios-box').centerIn('#bios');
@@ -288,9 +288,9 @@ var setGreeting = function () {
 
     if ((n < 11) && (n > 4)) {
         greeting = "Good Morning, ";
-    } else if ((n < 18) && (n > 11)) {
+    } else if ((n < 18) && (n > 10)) {
         greeting = "Good Afternoon, ";
-    } else {
+    } else if (n > 18) {
         greeting = "Good Evening, ";
     }
 
@@ -312,11 +312,21 @@ var fadeInPage = function() {
       function() {
         $("#nav-footer").animate({
             bottom: "0"
-        }, { duration: 1000, easing: "easein", queue: false });
+        }, { duration: 200, queue: false });
 
         $("#greeting").animate({
             opacity: "1"
         }, { duration: 250, queue: false });
+
+        $("#cross-circle").animate({
+            opacity: "1"
+        }, { duration: 250, queue: false });
+
+        $("#pagination").animate({
+            right: "82"
+        }, { duration: 500, queue: false });
+
+        $("#nav-burger").removeClass('nav-burger-preload').addClass('nav-burger-load');
 
       }, 3000);
 }

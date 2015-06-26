@@ -5,11 +5,6 @@
 // var bodyParser = require('body-parser');
 
 // Load P5js
-/*
-
-  require('p5');
-
-*/
 
 
 // Reference to physics world
@@ -49,6 +44,8 @@ var aLockVert = [],
     describeText,
     describeText1,
     hover,
+    clockBool,
+    bigGlyph,
     interestsArr = [],
     aVerts = [],
     aCounterVerts = [],
@@ -75,6 +72,15 @@ function setup() {
   h = windowHeight;
   scaleFunc(w,h);
 
+  /*
+
+    Toggle the clock, scale glyph
+
+  */
+
+      clockBool = true;
+      clockBool ? bigGlyph = 0.75 : bigGlyph = 1.25;
+
   mousePos = createVector();
   xOff = 0;
   alphaOpa = 0;
@@ -83,7 +89,7 @@ function setup() {
   buttonFade = 0;
   buttonFade1 = 0;
   lineOp = 0;
-  timeOut = 255;
+  timeOut = 500;
   timeOut1 = 400;
   hover = false;
 
@@ -153,7 +159,7 @@ function draw() {
 
   // Set timeout for loading the clockViz
   if (timeOut > 0) timeOut--;
-  if (timeOut == 0) {
+  if ((timeOut == 0) && (clockBool)) {
     clockViz(); 
   } 
 
@@ -581,7 +587,7 @@ function arrayMax(arr) {
 // Scaling function
 
 function scaleFunc(w,h) {
-  var dynamicScale = ((w < 1000) || (h < 850)) ?  1.25 : 0.75;
+  var dynamicScale = ((w < 1000) || (h < 850)) ?  1.25 : 0.85;
   scaleFactor = w / (1920 / dynamicScale);
 }
 

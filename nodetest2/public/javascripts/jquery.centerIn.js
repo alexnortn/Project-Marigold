@@ -14,9 +14,7 @@
  * Affiliation: Seung Lab, Brain and Cognitive Sciences Dept., MIT
  * Date: August 2013 - February 2014
  */
-
-// load jquery 
-var $ = require('jquery');
+ 
 
 ;(function($, undefined) {
 
