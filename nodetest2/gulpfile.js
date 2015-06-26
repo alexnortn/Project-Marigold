@@ -11,7 +11,7 @@ gulp.task('default', function() {
     // bundled:
     var files = [
         './public/javascripts/global.js',
-        './public/javascripts/sketch.js',
+        './public/javascripts/p5/sketch.js',
         './public/javascripts/jquery.centerIn.js'
     ];
     // map them to our stream function
