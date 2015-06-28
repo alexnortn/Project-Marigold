@@ -30,6 +30,8 @@ $(document).ready(function() {
     // Initial FadeIn
     fadeInPage();
 
+    logoToggle();
+
     // Center In
     $('.project-overview').alwaysCenterIn(window, { top: "-3%" });
     $('#pagination').alwaysCenterIn(window, { direction: 'vertical' });
@@ -327,4 +329,10 @@ var fadeInPage = function() {
         $("#nav-burger").removeClass('nav-burger-preload').addClass('nav-burger-load');
 
       }, 3000);
+}
+
+var logoToggle = function() {
+        if ( $(document).scrollTop() > $(window).height()) {
+
+        } 
 }
