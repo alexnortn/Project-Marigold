@@ -162,16 +162,14 @@ $(document).ready(function() {
                     $('#bio').html("Read Less")
                     $('#bios-box').css("width", '400px');
                     $('#bios-text').css("padding-right", '20px');
-                    $('#bios-box ul').css("width", '380px');
                 }
                 else {
                     $('#bio').html("Read More");
                     $('#bios-box').css("width", '380px');
                     $('#bios-text').css("padding-right", '0px');
-                    $('#bios-box ul').css("margin-right", '0px');
                 }
 
-                $('#bios-box').centerIn('#bios');
+                $('#bios-box').centerIn('#bios', { direction: 'vertical'});
             });            
         });
 

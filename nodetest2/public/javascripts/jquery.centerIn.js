@@ -6,7 +6,7 @@
  *
  * $(element).centerIn(); // centers horizontally and vertically in parent
  * $(element).centerIn(window); // centers horizontally and vertically in window
- * $(element).centerIn(window, { direction: 'vertical' ); // centers vertically in window
+ * $(element).centerIn(window, { direction: 'vertical' }); // centers vertically in window
  * $(element).centerIn(window, { top: "-20%" }); // centers vertically in window offset upwards by 20%
  * $(element).alwaysCenterIn(window); // deals with resize events
  *
