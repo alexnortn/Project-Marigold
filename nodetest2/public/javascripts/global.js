@@ -308,7 +308,7 @@ var fadeInPage = function() {
 
     setTimeout(
       function() {
-        $("#nav-footer").animate({
+        $(".nav-footer").animate({
             bottom: "0"
         }, { duration: 200, queue: false });
 
