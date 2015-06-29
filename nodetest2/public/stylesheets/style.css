@@ -186,6 +186,13 @@ canvas {
   	min-width: 750px;
 }
 
+header {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
 strong {
 	font-family: 'BerlingskeSans-Bold', sans-serif;
 }
@@ -264,8 +271,8 @@ strong {
 	position: absolute;
 	display: inline-block;
 	opacity: 1;
-	-webkit-transition: all 0.25s; /* Safari */
-    		transition: all 0.25s;
+	-webkit-transition: all 250ms; /* Safari */
+    		transition: all 250ms;
 }
 
 #greeting {
@@ -308,8 +315,8 @@ strong {
 	height: 20px;
 	opacity: 0.75;
 	z-index: 100;
-	-webkit-transition: all 0.25s; /* Safari */
-    		transition: all 0.25s;
+	-webkit-transition: all 250ms; /* Safari */
+    		transition: all 250ms;
 }
 
 #nav-button:hover {
@@ -337,8 +344,8 @@ strong {
 #bios-box {
 	position: absolute;
 	width: 380px;
-	-webkit-transition: all 0.25s; /* Safari */
-    		transition: all 0.25s;
+	-webkit-transition: all 250ms; /* Safari */
+    		transition: all 250ms;
 }
 
 #bios-text {
@@ -397,8 +404,8 @@ strong {
 	padding-bottom: 2px;
 	padding-top: 22px;
 	border-bottom: 1px solid white;
-	-webkit-transition: all 0.25s; /* Safari */
-    		transition: all 0.25s;
+	-webkit-transition: all 250ms; /* Safari */
+    		transition: all 250ms;
 }
 
 #readMore {
@@ -421,17 +428,54 @@ strong {
 	display: none;
 }
 
+.golden-divider {
+	position: relative;
+	display: inline;
+	float: left;
+	margin-left: 60%;
+	margin-top: -6px;
+	height: 125%;
+	width: 1px;
+	background-color: white;
+	-webkit-transform: rotate(30deg);
+	   -moz-transform: rotate(30deg);
+		-ms-transform: rotate(30deg);
+			transform: rotate(30deg);
+
+}
+
+.section-name {
+	color: white;
+	padding: 35px;
+	float: right;
+	margin-right: 15%;
+	display: inline-block;
+}
+
+.section-name p {
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	display: inline;
+}
+
+.section-name i {
+	display: inline-block;
+	position: relative;
+  	padding-left: 5px;
+	color: white;
+}
+
 .nav-footer {
 	width: 100%;
 	height: 75px;
 	background-color: rgb(35,35,35);
 	display: block;
-	position: absolute;
+	position: fixed;
 	bottom: -75px;
 	z-index: 100;
 	box-shadow: 0 10px 15px rgba(0, 0, 0, 0);
-	-webkit-transition: all 0.25s; /* Safari */
-    		transition: all 0.25s;
+	-webkit-transition: all 250ms; /* Safari */
+    		transition: all 250ms;
 }
 
 .nav-footer:hover {
@@ -549,8 +593,8 @@ p.directions {
 	display: block;
 	position: relative;
 	box-shadow: 0 5px 3px rgba(0, 0, 0, 0);
-	-webkit-transition: all 0.25s; /* Safari */
-    		transition: all 0.25s;
+	-webkit-transition: all 250ms; /* Safari */
+    		transition: all 250ms;
 }
 
 .project-overview:hover {
@@ -574,6 +618,7 @@ p.directions {
 	box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
 	/*border: solid 1px rgba(218, 218, 218, 0);*/
 }
+
 #logo {
 	z-index: 100;
 	float: left;
@@ -596,14 +641,16 @@ p.directions {
 }
 
 #logo p {
+	display: none;
 	margin-top: 75px;
 	margin-left: -5px;
 	text-align: right;
 	line-height: 1.5em;
 	position: relative;
-	-ms-transform: rotate(-90deg); /* IE 9 */
     -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
-    transform: rotate(-90deg);
+       -moz-transform: rotate(-90deg); /* Mozilla Firefox */
+		-ms-transform: rotate(-90deg); /* IE 9 */
+    		transform: rotate(-90deg);
 }
 
 #arrow {
@@ -623,8 +670,8 @@ p.directions {
        -moz-animation: arrow-animate 1s ease-in-out 2s infinite;
          -o-animation: arrow-animate 1s ease-in-out 2s infinite;
 			animation: arrow-animate 1s ease-in-out 2s infinite;
-	-webkit-transition: all 0.25s; /* Safari */
-	transition: all 0.25s;
+	-webkit-transition: all 250ms; /* Safari */
+	transition: all 250ms;
 }
 
 #arrow:hover {
@@ -682,8 +729,8 @@ p.directions {
 	border-right: 1.25px dotted black;
 	height: 70px;
 	line-height: 70px;
-	-webkit-transition: all 0.25s; /* Safari */
-    		transition: all 0.25s;
+	-webkit-transition: all 250ms; /* Safari */
+    		transition: all 250ms;
 }
 
 #nav-box li:hover {
@@ -712,8 +759,8 @@ p.directions {
 	padding-bottom: 2px;
 	padding-top: 22px;
 /*	border-bottom: 1px solid white;*/
-	-webkit-transition: all 0.25s; /* Safari */
-    		transition: all 0.25s;
+	-webkit-transition: all 250ms; /* Safari */
+    		transition: all 250ms;
 }
 
 #nav-box li:hover a {
@@ -728,14 +775,14 @@ p.directions {
 
 .nav-burger-preload {
 	right: -125px;
-	-webkit-transition: right 0.25s; /* Safari */
-    		transition: right 0.25s;
+	-webkit-transition: right 250ms; /* Safari */
+    		transition: right 250ms;
 }
 
 .nav-burger-load {
 	right: 50px;
-	-webkit-transition: right 0.25s; /* Safari */
-    		transition: right 0.25s;
+	-webkit-transition: right 250ms; /* Safari */
+    		transition: right 250ms;
 }
 
 label[for="nav-trigger"] {
@@ -764,8 +811,8 @@ label[for="nav-trigger"] hr {
 	margin-bottom: 8px;
 	color: rgba(35, 35, 35, 1);
     background-color: rgba(35, 35, 35, 1);
-    -webkit-transition: all 0.25s; /* Safari */
-			transition: all 0.25s;
+    -webkit-transition: all 250ms; /* Safari */
+			transition: all 250ms;
 }
 
 label[for="nav-trigger"] hr:first-child {
@@ -816,8 +863,8 @@ label[for="nav-trigger"] hr:nth-child(3) {
 .nav-trigger + label {
 	-webkit-transition: all 0.5s; /* Safari */
 			transition: all 0.5s;
-	/*-webkit-transition: box-shadow, border 0.25s;  Safari 
-			transition: box-shadow, border 0.25s;*/
+	/*-webkit-transition: box-shadow, border 250ms;  Safari 
+			transition: box-shadow, border 250ms;*/
 }
 
 .project-page {
@@ -865,7 +912,8 @@ label[for="nav-trigger"] hr:nth-child(3) {
 
 #pagination {
 	position: fixed;
-	right: -30px;
+	width: 50px;
+	right: -50px;
 	margin-left: 25px;
 	z-index: 100;
 }
@@ -873,21 +921,30 @@ label[for="nav-trigger"] hr:nth-child(3) {
 .pagination {
 	width: 10px;
 	height: 10px;
-	margin-bottom: 10px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 25px;
 	border-radius: 100%;
 	border: 1px solid black;
-	-webkit-transition: background-color 0.25s; /* Safari */
-    		transition: background-color 0.25s;
+	-webkit-transition-timing-function: ease-in-out; /* Safari and Chrome */
+    		transition-timing-function: ease-in-out;
+    -webkit-transition: all 250ms; /* Safari */
+			transition: all 250ms;
 }
 
 .pagination:hover {
 	background-color: black;
+	border: 5px solid black;
+	margin-bottom: 17.5px;
 	cursor: pointer;
 }
 
 .pagination:active {
 	background-color: orange;
 	border: 1px solid orange;
+	border: 5px solid orange;
+	margin-bottom: 17.5px;
 }
 
 .description {
@@ -901,8 +958,8 @@ label[for="nav-trigger"] hr:nth-child(3) {
 	z-index: 2;
 	/*border: solid 1px rgba(218, 218, 218, 1);*/
 	box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.18);
-	-webkit-transition: all 0.25s; /* Safari */
-			transition: all 0.25s;
+	-webkit-transition: all 250ms; /* Safari */
+			transition: all 250ms;
 }
 
 .description h3 {
@@ -1243,8 +1300,8 @@ label[for="nav-trigger"] hr:nth-child(3) {
 	text-align: center;
 	border: solid 1px rgba(218, 218, 218, 1);
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.18);
-	-webkit-transition: all 0.25s; /* Safari */
-			transition: all 0.25s;
+	-webkit-transition: all 250ms; /* Safari */
+			transition: all 250ms;
 }
 
 .close:hover {

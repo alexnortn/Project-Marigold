@@ -10,13 +10,16 @@ block content
                 .horz-line
             p#greeting I'm <strong>Alex Norton.</strong> <br> Interaction Designer & Researcher.
             p#infoText This interactive visualization of interest was developed using the P5js framework along with the Toxiclibs physics library. <br class="boost-space"> Vertices used to construct the character are influenced by an underlying physics system and mapped to extend towards difference areas of my interest.
-        .nav-footer
 
     // /INTERACTIVE
 
     // PAGINATION
     #pagination
         for result in projects
+            .pagination&attributes({'data': result.name})
+            .pagination&attributes({'data': result.name})
+            .pagination&attributes({'data': result.name})
+            .pagination&attributes({'data': result.name})
             .pagination&attributes({'data': result.name})
 
     // /PAGINATION
@@ -42,9 +45,14 @@ block content
                 <i class="fa fa-behance-square fa-2x"></i>
         // /BIOS BOX
 
-        .nav-footer
-
     // /BIOS PAGE
+
+    // GLOBAL NAVIGATION
+    .nav-footer
+        .golden-divider
+        .section-name
+            p //  Next  ::  <strong>Works</strong> 
+            <i class="fa fa-long-arrow-right"></i>
 
     input(type="checkbox" id = "nav-trigger" class = "nav-trigger")
     label(for = "nav-trigger")#nav-burger.nav-burger-preload
@@ -52,6 +60,8 @@ block content
         hr
         hr
         hr
+
+    // /GLOBAL NAVIGATION
 
     // NAV DRAWER
     .nav
@@ -84,7 +94,6 @@ block content
                | Alex Norton<br>
                | Interaction Designer
 
-        img#arrow(src = "/images/rnd.svg" alt = "down arrow")
     // /HEADER  
     
 
@@ -96,6 +105,7 @@ block content
             .project-view&attributes({'data': index})
                 // PROJECT OVERVIEW
                 .filler-content
+                    img#arrow(src = "/images/rnd.svg" alt = "down arrow")
                 .project-overview
                     .description
                         p - #{result.year} -

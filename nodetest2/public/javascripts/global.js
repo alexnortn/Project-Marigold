@@ -30,8 +30,6 @@ $(document).ready(function() {
     // Initial FadeIn
     fadeInPage();
 
-    logoToggle();
-
     // Center In
     $('.project-overview').alwaysCenterIn(window, { top: "-3%" });
     $('#pagination').alwaysCenterIn(window, { direction: 'vertical' });
@@ -43,13 +41,24 @@ $(document).ready(function() {
         $('#infoText').slideToggle('slow', 'swing');
     });
 
+    // Control Header
+    $(window).on('scroll', function() {
+        if ( $(document).scrollTop() > $(window).height()) {
+            $('header').fadeIn(500);
+            console.log("fade IN");
+        } else if ( $(document).scrollTop() < $(window).height()) {
+            $('header').fadeOut(500);
+            console.log("fade OUT");
+        }
+    });
+
     // Open Project
     $('.project-overview').click(function(){
         open = !open;
 
         !open ? $('.project-contents').fadeOut('slow') : $('.project-contents').fadeIn('slow'); 
 
-        $('#logo p').fadeToggle(1000);
+        // $('#logo p').fadeToggle(1000);
         $('#pagination').fadeToggle(1000);
         $('#arrow').fadeToggle(1000);
 
@@ -77,10 +86,10 @@ $(document).ready(function() {
 
     function closeProject() {
         if (open == true) {
-            $("html, body").animate({ scrollTop: "0px" }, 500);
+            // $("html, body").animate({ scrollTop: "0px" }, 500);
             $('.project-contents').fadeOut('slow')
     
-            $('#logo p').fadeToggle('slow');
+            // $('#logo p').fadeToggle('slow');
             $('#pagination').fadeToggle('slow');
             $('#arrow').fadeToggle('slow');
             open = false;
@@ -96,6 +105,7 @@ $(document).ready(function() {
 
     $('#logo').click(function(){
         closeProject();
+        $("html, body").animate({ scrollTop: "0px" }, 750);
     });
 
     $('.close').click(function() {
@@ -329,10 +339,4 @@ var fadeInPage = function() {
         $("#nav-burger").removeClass('nav-burger-preload').addClass('nav-burger-load');
 
       }, 3000);
-}
-
-var logoToggle = function() {
-        if ( $(document).scrollTop() > $(window).height()) {
-
-        } 
 }
