@@ -343,7 +343,7 @@ strong {
 
 #bios-box {
 	position: absolute;
-	width: 380px;
+	width: 391px;
 	-webkit-transition: all 250ms; /* Safari */
     		transition: all 250ms;
 }
@@ -380,7 +380,7 @@ strong {
 }
 
 #bios-box ul {
-	width: 380px;
+	width: 391px;
 	position: relative;
 	display: inline-block;
 	margin-top: 30px;
@@ -693,7 +693,7 @@ p.directions {
 .nav {
 	position: fixed;
 	z-index: 100;
-	width: 400px;
+	width: 411px;
 	background-color: #fff;
 	right: -510px;
 	top: 0px;
@@ -912,8 +912,8 @@ label[for="nav-trigger"] hr:nth-child(3) {
 
 #pagination {
 	position: fixed;
-	width: 50px;
-	right: -50px;
+	width: 60px;
+	right: -75px;
 	z-index: 100;
 	text-align: center;
 }
@@ -922,29 +922,74 @@ label[for="nav-trigger"] hr:nth-child(3) {
 	display: inline-block;
 	padding: 10px;
 	position: relative;
+	margin-top: 10px;
 }
 
-#prev-arrow {
-	margin-bottom: 50px;
+#prev-arrow-box {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50px;
+	height: 50px;
+	border: 1px solid black;
+	margin-bottom: 25px;
+	-webkit-transition-timing-function: ease-in-out; /* Safari and Chrome */
+    		transition-timing-function: ease-in-out;
+    -webkit-transition: all 250ms; /* Safari */
+			transition: all 250ms;
 }
 
-#next-arrow {
-	margin-top: 50px;
+#prev-arrow-box:hover {
+	background-color: black;
+
+}
+
+#prev-arrow-box:hover i {
+	color: white;
+
+}
+
+#next-arrow-box {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50px;
+	height: 50px;
+	border: 1px solid black;
+	margin-top: 25px;
+	-webkit-transition-timing-function: ease-in-out; /* Safari and Chrome */
+    		transition-timing-function: ease-in-out;
+    -webkit-transition: all 250ms; /* Safari */
+			transition: all 250ms;
+}
+
+#next-arrow-box:hover {
+	background-color: black;
+
+}
+
+#next-arrow-box:hover i {
+	color: white;
+
 }
 
 .pagination {
-	width: 10px;
-	height: 10px;
+	width: 7px;
+	height: 7px;
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 25px;
-	border-radius: 100%;
+	/*border-radius: 100%;*/
 	border: 1px solid black;
 	-webkit-transition-timing-function: ease-in-out; /* Safari and Chrome */
     		transition-timing-function: ease-in-out;
     -webkit-transition: all 250ms; /* Safari */
 			transition: all 250ms;
+}
+
+#pagination div:nth-child(2) {
+	background-color: black;
 }
 
 #pagination div:last-of-type {
@@ -963,6 +1008,19 @@ label[for="nav-trigger"] hr:nth-child(3) {
 	border: 1px solid orange;
 	border: 5px solid orange;
 	margin-bottom: 17.5px;
+}
+
+.next-section {
+	display: inline-block;
+	width: 250px;
+	text-align: left;
+  	position: relative;
+  	right: 95px;
+  	top: 140px;
+	-webkit-transform: rotate(90deg);
+	   -moz-transform: rotate(90deg);
+		-ms-transform: rotate(90deg);
+			transform: rotate(90deg);
 }
 
 .description {

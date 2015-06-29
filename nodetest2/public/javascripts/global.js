@@ -172,12 +172,12 @@ $(document).ready(function() {
             $('#readMore').slideToggle('slow', 'swing', function() {
                 if($(this).is(':visible')) {
                     $('#bio').html("Read Less")
-                    $('#bios-box').css("width", '400px');
+                    $('#bios-box').css("width", '411px');
                     $('#bios-text').css("padding-right", '20px');
                 }
                 else {
                     $('#bio').html("Read More");
-                    $('#bios-box').css("width", '380px');
+                    $('#bios-box').css("width", '391px');
                     $('#bios-text').css("padding-right", '0px');
                 }
 
@@ -300,7 +300,7 @@ var setGreeting = function () {
         greeting = "Good Morning, ";
     } else if ((n < 18) && (n > 10)) {
         greeting = "Good Afternoon, ";
-    } else if (n > 18) {
+    } else if ((n > 18) || (n < 5)) {
         greeting = "Good Evening, ";
     }
 

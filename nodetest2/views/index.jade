@@ -16,7 +16,7 @@ block content
     // PAGINATION
     #pagination
         #prev-arrow-box
-            <i class="fa fa-long-arrow-up fa-lg"></i>
+            <i class="fa fa-long-arrow-up fa-lg" id="prev-arrow"></i>
         for result in projects
             .pagination&attributes({'data': result.name})
             .pagination&attributes({'data': result.name})
@@ -24,7 +24,8 @@ block content
             .pagination&attributes({'data': result.name})
             .pagination&attributes({'data': result.name})
         #next-arrow-box
-            <i class="fa fa-long-arrow-down fa-lg"></i>
+            <i class="fa fa-long-arrow-down fa-lg" id="next-arrow"></i>
+        //p.next-section Next Section  ::  <strong>!{projects[0].name}</strong>
 
     // /PAGINATION
 
@@ -52,7 +53,7 @@ block content
     // /BIOS PAGE
 
     // GLOBAL NAVIGATION
-    .nav-footer
+    //.nav-footer
         .golden-divider
         .section-name
             p //  Next  ::  <strong>Works</strong> 
