@@ -914,8 +914,22 @@ label[for="nav-trigger"] hr:nth-child(3) {
 	position: fixed;
 	width: 50px;
 	right: -50px;
-	margin-left: 25px;
 	z-index: 100;
+	text-align: center;
+}
+
+#pagination i {
+	display: inline-block;
+	padding: 10px;
+	position: relative;
+}
+
+#prev-arrow {
+	margin-bottom: 50px;
+}
+
+#next-arrow {
+	margin-top: 50px;
 }
 
 .pagination {
@@ -931,6 +945,10 @@ label[for="nav-trigger"] hr:nth-child(3) {
     		transition-timing-function: ease-in-out;
     -webkit-transition: all 250ms; /* Safari */
 			transition: all 250ms;
+}
+
+#pagination div:last-of-type {
+	margin-bottom: 0;
 }
 
 .pagination:hover {

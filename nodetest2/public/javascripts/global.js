@@ -333,7 +333,7 @@ var fadeInPage = function() {
         }, { duration: 250, queue: false });
 
         $("#pagination").animate({
-            right: "82"
+            right: "57"
         }, { duration: 500, queue: false });
 
         $("#nav-burger").removeClass('nav-burger-preload').addClass('nav-burger-load');

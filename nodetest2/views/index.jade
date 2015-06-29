@@ -15,12 +15,16 @@ block content
 
     // PAGINATION
     #pagination
+        #prev-arrow-box
+            <i class="fa fa-long-arrow-up fa-lg"></i>
         for result in projects
             .pagination&attributes({'data': result.name})
             .pagination&attributes({'data': result.name})
             .pagination&attributes({'data': result.name})
             .pagination&attributes({'data': result.name})
             .pagination&attributes({'data': result.name})
+        #next-arrow-box
+            <i class="fa fa-long-arrow-down fa-lg"></i>
 
     // /PAGINATION
 
