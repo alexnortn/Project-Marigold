@@ -10,6 +10,9 @@ block content
                 .horz-line
             p#greeting I'm <strong>Alex Norton.</strong> <br> Interaction Designer & Researcher.
             p#infoText This interactive visualization of interest was developed using the P5js framework along with the Toxiclibs physics library. <br class="boost-space"> Vertices used to construct the character are influenced by an underlying physics system and mapped to extend towards difference areas of my interest.
+        //- .scroll-arrow
+            p Scroll Down 
+            <i class="fa  fa-angle-down fa-2x"></i>           
 
     // /INTERACTIVE
 
@@ -25,7 +28,7 @@ block content
             .pagination&attributes({'data': result.name})
         #next-arrow-box
             <i class="fa fa-long-arrow-down fa-lg" id="next-arrow"></i>
-        //p.next-section Next Section  ::  <strong>!{projects[0].name}</strong>
+        //- p.next-section Next Section  ::  <strong>!{projects[0].name}</strong>
 
     // /PAGINATION
 
@@ -129,11 +132,24 @@ block content
                 .project-contents
                     .main-description 
                         p #{result.description_long}
-                    //- .pull-left
-                        .top-rule
-                        h1 #{result.pull_quotes[0]}
-                        .bottom-rule
-                        // p  #{result.pull_quotes[0]}
+                    ul.meta-data
+                        li Client
+                        li #{result.meta.Client}
+                        li Year
+                        li #{result.meta.Year}
+                        li Role
+                        li #{result.meta.Role}
+                        li Team
+                        li #{result.meta.Team}
+                        li Discipline
+                        li #{result.meta.Discipline}
+                        li Medium
+                        li #{result.meta.Medium}
+                        li Technologies
+                        li #{result.meta.Technologies}
+                        li Duration
+                        li #{result.meta.Duration}
+
                     // GRID ITERATOR
                     .image-grid-wrapper
                         each image, index in result.images

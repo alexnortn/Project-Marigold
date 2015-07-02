@@ -302,6 +302,16 @@ strong {
   	word-spacing: 1px;
 }
 
+.scroll-arrow {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	bottom: 100px;
+	font-family: BerlingskeSansRegular, sans-serif;
+	font-size: 12px;
+	color: black;
+}
+
 #nav-button {
 	display: block;
 	position:absolute;
@@ -1150,6 +1160,29 @@ label[for="nav-trigger"] hr:nth-child(3) {
 	position: relative;
 }
 
+.meta-data {
+	position: relative;
+	float: right;
+	border-left: 1.25px dotted black;
+	margin-top: 20px;
+	padding: 20px 100px 20px 40px;
+}
+
+.meta-data li:nth-child(odd) {
+	font-family: BerlingskeSans-Bold;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	font-size: 10px;
+	line-height: 2em;
+	color: black;
+}
+
+.meta-data li:nth-child(even) {
+	font-family: BerlingskeSans-Regular;
+	font-size: 12px;
+	letter-spacing: 0px;
+	margin-bottom: 20px;
+}
 
 .main-description {
 	width: 605px;;
