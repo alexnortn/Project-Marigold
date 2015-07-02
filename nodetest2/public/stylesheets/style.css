@@ -1152,7 +1152,7 @@ label[for="nav-trigger"] hr:nth-child(3) {
 
 
 .main-description {
-	width: 50%;
+	width: 605px;;
 	float: right;
 	position: relative;
 	display: block;
@@ -1163,9 +1163,9 @@ label[for="nav-trigger"] hr:nth-child(3) {
 }
 
 .main-description p {
-	font-family: 'Metro-Serif';
-	font-size: 22px;
-	line-height: 2em;
+	font-family: 'BerlingskeSerif-Regular';
+	font-size: 16px;
+	line-height: 3em;
 }
 
 .image-grid-wrapper {

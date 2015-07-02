@@ -22,6 +22,16 @@
                 "This is the second big quote",
                 "This is the third big quote"
             ],
+            "meta" : {
+                "Client" : "Self (MIT)",
+                "Year" : 2015,
+                "Role" : "Designer / Developer",
+                "Team" : "N/A",
+                "Discipline" : "Fabrication / Industrial Design",
+                "Medium" : "Internet of Things / Wood",
+                "Technologies" : "Arduino / Woodshop",
+                "Duration" : "Two Months"
+            },
             "hero": "images/crystal-8.jpg",
             "cut": "images/lamp-Out.png",
             "images": [
