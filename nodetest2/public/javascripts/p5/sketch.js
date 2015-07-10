@@ -160,7 +160,7 @@ function draw() {
   // Set timeout for loading the clockViz
   if (timeOut > 0) timeOut--;
   if ((timeOut == 0) && (clockBool)) {
-    clockViz(); 
+    // clockViz(); 
   } 
 
   if (timeOut1 > 0) timeOut1--;

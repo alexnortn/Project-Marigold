@@ -856,13 +856,13 @@ label[for="nav-trigger"] hr:nth-child(3) {
 }
 
 .nav-trigger:checked + label {
-	right: 399px;
+	right: 411px;
 	box-shadow: -3px 0 5px rgba(0, 0, 0, 0.1);
 	border: solid 0px rgba(218,218,218,0);
 }
 
 .nav-trigger:checked + label:hover {
-	right: 399px;
+	right: 411px;
 	border: solid 0px rgba(218,218,218,0);
 }
 

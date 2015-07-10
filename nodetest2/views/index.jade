@@ -18,7 +18,7 @@ block content
 
     // PAGINATION
     #pagination
-        #prev-arrow-box
+        //- #prev-arrow-box
             <i class="fa fa-long-arrow-up fa-lg" id="prev-arrow"></i>
         for result in projects
             .pagination&attributes({'data': result.name})
@@ -26,7 +26,7 @@ block content
             .pagination&attributes({'data': result.name})
             .pagination&attributes({'data': result.name})
             .pagination&attributes({'data': result.name})
-        #next-arrow-box
+        //- #next-arrow-box
             <i class="fa fa-long-arrow-down fa-lg" id="next-arrow"></i>
         //- p.next-section Next Section  ::  <strong>!{projects[0].name}</strong>
 
