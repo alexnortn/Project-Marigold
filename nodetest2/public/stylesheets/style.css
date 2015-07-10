@@ -853,8 +853,8 @@ label[for="nav-trigger"] hr {
 	margin-bottom: 8px;
 	color: rgba(35, 35, 35, 1);
     background-color: rgba(35, 35, 35, 1);
-    -webkit-transition: all 250ms; /* Safari */
-			transition: all 250ms;
+    -webkit-transition: all 250ms ease-in-out; /* Safari */
+			transition: all 250ms ease-in-out;
 }
 
 label[for="nav-trigger"] hr:first-child {
@@ -903,8 +903,8 @@ label[for="nav-trigger"] hr:nth-child(3) {
 }
 
 .nav-trigger + label {
-	-webkit-transition: all 0.5s; /* Safari */
-			transition: all 0.5s;
+	-webkit-transition: all 0.5s ease-in-out; /* Safari */
+			transition: all 0.5s ease-in-out;
 	/*-webkit-transition: box-shadow, border 250ms;  Safari 
 			transition: box-shadow, border 250ms;*/
 }
@@ -973,7 +973,7 @@ label[for="nav-trigger"] hr:nth-child(3) {
 	margin-right: auto;
 	width: 50px;
 	height: 50px;
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	margin-bottom: 25px;
 	-webkit-transition-timing-function: ease-in-out; /* Safari and Chrome */
     		transition-timing-function: ease-in-out;
@@ -997,7 +997,7 @@ label[for="nav-trigger"] hr:nth-child(3) {
 	margin-right: auto;
 	width: 50px;
 	height: 50px;
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	margin-top: 25px;
 	-webkit-transition-timing-function: ease-in-out; /* Safari and Chrome */
     		transition-timing-function: ease-in-out;
@@ -1023,7 +1023,7 @@ label[for="nav-trigger"] hr:nth-child(3) {
 	margin-right: auto;
 	margin-bottom: 25px;
 	/*border-radius: 100%;*/
-	border: 1px solid black;
+	border: 1px solid rgba(0,0,0,0.25);
 	-webkit-transition-timing-function: ease-in-out; /* Safari and Chrome */
     		transition-timing-function: ease-in-out;
     -webkit-transition: all 100ms; /* Safari */

@@ -113,7 +113,9 @@ block content
             .project-view&attributes({'data': index})
                 // PROJECT OVERVIEW
                 .filler-content
-                    img#arrow(src = "/images/rnd.svg" alt = "down arrow")
+                    .scroll-arrow
+                        //- p Scroll Down 
+                        <i class="fa  fa-angle-down fa-2x"></i>    
                 .project-overview
                     .description
                         p - #{result.year} -
