@@ -169,7 +169,7 @@ function draw() {
   } 
 
   // Display the Physiscs Particles;
-  // displayPhys();
+  displayPhys();
 
   // Button Interactivity
   hoverButton1();
@@ -538,7 +538,7 @@ function findCenter() {
   h = windowHeight;
   center.set(w/2, h/2);
   var glyphCenterX = center.x - aCenterOffset.x; 
-  var glyphCenterY = center.y + aCenterOffset.y; 
+  var glyphCenterY = center.y + aCenterOffset.y -50; 
   glyphCenter.set(glyphCenterX, glyphCenterY);
 }
 
@@ -587,7 +587,7 @@ function arrayMax(arr) {
 // Scaling function
 
 function scaleFunc(w,h) {
-  var dynamicScale = ((w < 1000) || (h < 850)) ?  1.25 : 0.85;
+  var dynamicScale = ((w < 1000) || (h < 850)) ?  1.25 : 1;
   scaleFactor = w / (1920 / dynamicScale);
 }
 

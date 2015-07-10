@@ -35,11 +35,13 @@ $(document).ready(function() {
     $('#pagination').alwaysCenterIn(window, { direction: 'vertical' });
     var bios_div = $('#bios');
     $('#bios-box').alwaysCenterIn(bios_div);;
+    $('.scroll-arrow').alwaysCenterIn(window, { direction: 'horizontal' });
 
     // Display Interaction Info
     $('#cross-circle').hover(function() {
         $('#infoText').slideToggle('slow', 'swing');
     });
+
 
     // Control Header
     $(window).on('scroll', function() {
