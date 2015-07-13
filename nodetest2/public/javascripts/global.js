@@ -1,3 +1,8 @@
+// Alex Norton
+// a^N 
+// http://alexnortn.com
+
+
 // Userlist data array for filling in info box
 var userListData = [],
     projects,
@@ -28,7 +33,8 @@ $(document).ready(function() {
     setWidth();
 
     // Initial FadeIn
-    fadeInPage();
+    // fadeInPage();
+    $.Velocity.RunSequence(loadingSequence);
 
     // Center In
     $('.project-overview').alwaysCenterIn(window, { top: "-3%" });
@@ -176,39 +182,18 @@ $(document).ready(function() {
                     $('#bio').html("Read Less")
                     $('#bios-box').css("width", '411px');
                     $('#bios-text').css("padding-right", '20px');
+                    $('#bios-text').css("overflowY", 'scroll');
                 }
                 else {
                     $('#bio').html("Read More");
                     $('#bios-box').css("width", '391px');
                     $('#bios-text').css("padding-right", '0px');
+                    $('#bios-text').css("overflowY", 'hidden');
                 }
 
                 $('#bios-box').centerIn('#bios', { direction: 'vertical'});
             });            
         });
-
-
-    /*
-
-    $('.hamburger').click(function(){
-        $('.nav').toggleClass('nav-in');
-        $('.hamburger').toggleClass('hamburger-out');
-    });
-
-    if  ($('.nav').hasClass('nav-in')) {
-
-        $('html').click(function() {
-          //Hide the menus if visible
-          $('.nav').toggleClass('nav-in');
-        });
-
-        $('#nav').click(function(event){
-            event.stopPropagation();
-        });
-
-    }
-
-    */
 });
 
 // Functions =============================================================
@@ -264,31 +249,6 @@ function showUserInfo(event) {
 
 };
 
-
-// // Pull in our content Json
-// var content = (function () {
-//     content = null;
-//     $.ajax({
-//         'async': false,
-//         'global': false,
-//         'url': "javascripts/content.json",
-//         'dataType': "json",
-//         'success': function (data) {
-//             content = data;
-//             // alert("Success!");
-//         }
-//     });
-//     return content;
-// })(); 
-
-// function buildSite() {
-
-//     // Set up projects array
-//     projects = content.projects;
-//     console.log(projects);  
-//     $('#im-test').attr("src", content.projects[0].images[0].src);
-// }
-
 // Set up Date Query
 var setGreeting = function () {
 
@@ -342,3 +302,71 @@ var fadeInPage = function() {
 
       }, 3000);
 }
+
+// Alex Norton
+// a^N 
+// http://alexnortn.com
+
+/*
+
+
+Seperation of styling for complex page animations
+
+
+*/
+
+
+// Set up page-load animation
+
+var $info = $("#info"),
+    $landingArrow = $("#landing-arrow"),
+    $navBurger = $('#nav-burger'),
+    $pagination = $('#pagination');
+
+
+var loadingSequence = [
+    {
+        e: $landingArrow,
+        p: {
+            opacity: 1,
+            bottom: 75
+        },
+        o: {
+            duration: 250,
+            easing: "easeInSine",
+            sequenceQueue: false
+        }
+    },
+    {
+        e: $navBurger,
+        p: {
+            right: 50,
+            opacity: 1 
+        },
+        o: {
+            duration: 250,
+            easing: "easeInSine",
+            sequenceQueue: false
+        }
+    },
+    {
+        e: $pagination,
+        p: {
+            right: 57, 
+        }, 
+        o: {
+            duration: 250,
+            easing: "easeInSine",
+            sequenceQueue: false
+        }
+    },
+    { 
+        e: $info,
+        p: { opacity: 1 },
+        o: { 
+            duration: 250,
+            easing: "easeInSine",
+            sequenceQueue: false
+        }
+    }
+]
