@@ -284,13 +284,13 @@ function clockDisp(alphaOpa) {
   var interests = 8;
   var tempLoc = createVector();
   var theta = TAU / interests;
-  var radLen = ( w < h ? w : h ) / 3;
+  var radLen = ( w < h ? w : h ) / 2.75;
   var fadeSpeed1 = 10;
 
   for (var i = 0; i < interests; i++) {
     var selection;
     var x = (radLen * sin(theta * i)) + center.x;
-    var y = (radLen * cos(theta * i)) + center.y;
+    var y = (radLen * cos(theta * i)) + center.y - 50; // 50 = relative y offset
 
     // Display the clock ellipses
     fill(0,0,0, alphaOpa);
@@ -538,7 +538,7 @@ function findCenter() {
   h = windowHeight;
   center.set(w/2, h/2);
   var glyphCenterX = center.x - aCenterOffset.x; 
-  var glyphCenterY = center.y + aCenterOffset.y -50; 
+  var glyphCenterY = center.y + aCenterOffset.y - 75; 
   glyphCenter.set(glyphCenterX, glyphCenterY);
 }
 
@@ -587,7 +587,7 @@ function arrayMax(arr) {
 // Scaling function
 
 function scaleFunc(w,h) {
-  var dynamicScale = ((w < 1000) || (h < 850)) ?  1.25 : 1;
+  var dynamicScale = ((w < 1000) || (h < 850)) ?  1.25 : 1.15;
   scaleFactor = w / (1920 / dynamicScale);
 }
 

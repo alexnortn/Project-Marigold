@@ -34,7 +34,11 @@ $(document).ready(function() {
 
     // Initial FadeIn
     // fadeInPage();
-    $.Velocity.RunSequence(loadingSequence);
+        window.setTimeout(function() { loader() }, 5000);
+
+    var loader = function() {
+        $.Velocity.RunSequence(loadingSequence);
+    } 
 
     // Center In
     $('.project-overview').alwaysCenterIn(window, { top: "-3%" });
@@ -82,14 +86,6 @@ $(document).ready(function() {
                 return false;
                 console.log(open);
         };
-    });
-
-    $('body').keyup(function(e){
-        if(e.keyCode == 32){
-           // user has pressed space
-           videoSize();
-           console.log("video size");
-        }
     });
 
     function closeProject() {
@@ -198,57 +194,6 @@ $(document).ready(function() {
 
 // Functions =============================================================
 
-// Fill table with data
-function populateTable() {
-
-    // Empty content string
-    var tableContent = '';
-
-    // jQuery AJAX call for JSON
-    $.getJSON( '/users/userlist', function( data ) {
-
-        // Stick our user data array into a userlist variable in the global object
-        userListData = data;
-
-
-        // For each item in our JSON, add a table row and cells to the content string
-        $.each(data, function(){
-            tableContent += '<tr>';
-            tableContent += '<td><a href="#" class="linkshowuser" rel="' + this.username + '">' + this.username + '</a></td>';
-            tableContent += '<td>' + this.email + '</td>';
-            tableContent += '<td><a href="#" class="linkdeleteuser" rel="' + this._id + '">delete</a></td>';
-            tableContent += '</tr>';
-        });
-
-        // Inject the whole content string into our existing HTML table
-        $('#userList table tbody').html(tableContent);
-        console.log(tableContent);
-    });
-};
-
-// Show User Info
-function showUserInfo(event) {
-
-    // Prevent Link from Firing
-    event.preventDefault();
-
-    // Retrieve username from link rel attribute
-    var thisUserName = $(this).attr('rel');
-
-    // Get Index of object based on id value
-    var arrayPosition = userListData.map(function(arrayItem) { return arrayItem.username; }).indexOf(thisUserName);
-
-    // Get our User Object
-    var thisUserObject = userListData[arrayPosition];
-
-    //Populate Info Box
-    $('#userInfoName').text(thisUserObject.fullname);
-    $('#userInfoAge').text(thisUserObject.age);
-    $('#userInfoGender').text(thisUserObject.gender);
-    $('#userInfoLocation').text(thisUserObject.location);
-
-};
-
 // Set up Date Query
 var setGreeting = function () {
 
@@ -278,35 +223,6 @@ var setWidth = function() {
     $("#triangle-bottom-right").css("border-right-width", windowWidth);
 }
 
-var fadeInPage = function() {
-
-    setTimeout(
-      function() {
-        $(".nav-footer").animate({
-            bottom: "0"
-        }, { duration: 200, queue: false });
-
-        $("#greeting").animate({
-            opacity: "1"
-        }, { duration: 250, queue: false });
-
-        $("#cross-circle").animate({
-            opacity: "1"
-        }, { duration: 250, queue: false });
-
-        $("#pagination").animate({
-            right: "57"
-        }, { duration: 500, queue: false });
-
-        $("#nav-burger").removeClass('nav-burger-preload').addClass('nav-burger-load');
-
-      }, 3000);
-}
-
-// Alex Norton
-// a^N 
-// http://alexnortn.com
-
 /*
 
 
@@ -318,25 +234,13 @@ Seperation of styling for complex page animations
 
 // Set up page-load animation
 
-var $info = $("#info"),
-    $landingArrow = $("#landing-arrow"),
-    $navBurger = $('#nav-burger'),
-    $pagination = $('#pagination');
+var $info          = $("#info"),
+    $navBurger     = $('#nav-burger'),
+    $pagination    = $('#pagination'),
+    $navFooter     = $('.nav-footer');
 
 
 var loadingSequence = [
-    {
-        e: $landingArrow,
-        p: {
-            opacity: 1,
-            bottom: 75
-        },
-        o: {
-            duration: 250,
-            easing: "easeInSine",
-            sequenceQueue: false
-        }
-    },
     {
         e: $navBurger,
         p: {
@@ -344,7 +248,7 @@ var loadingSequence = [
             opacity: 1 
         },
         o: {
-            duration: 250,
+            duration: 500,
             easing: "easeInSine",
             sequenceQueue: false
         }
@@ -355,7 +259,7 @@ var loadingSequence = [
             right: 57, 
         }, 
         o: {
-            duration: 250,
+            duration: 500,
             easing: "easeInSine",
             sequenceQueue: false
         }
@@ -364,7 +268,16 @@ var loadingSequence = [
         e: $info,
         p: { opacity: 1 },
         o: { 
-            duration: 250,
+            duration: 500,
+            easing: "easeInSine",
+            sequenceQueue: false
+        }
+    },
+    { 
+        e: $navFooter,
+        p: { bottom: 0 },
+        o: { 
+            duration: 500,
             easing: "easeInSine",
             sequenceQueue: false
         }
