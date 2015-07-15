@@ -55,10 +55,10 @@ $(document).ready(function() {
 
     // Control Header
     $(window).on('scroll', function() {
-        if ( $(document).scrollTop() > $(window).height()) {
+        if ( $(document).scrollTop() > $(window).height() - 50) {
             $('header').fadeIn(500);
             console.log("fade IN");
-        } else if ( $(document).scrollTop() < $(window).height()) {
+        } else if ( $(document).scrollTop() < $(window).height() - 50) {
             $('header').fadeOut(500);
             console.log("fade OUT");
         }
@@ -190,6 +190,32 @@ $(document).ready(function() {
                 $('#bios-box').centerIn('#bios', { direction: 'vertical'});
             });            
         });
+
+        // Event Handlers
+        $('.nav-footer').click(function(){
+          $('#bios').velocity("scroll", { duration: 1000, easing: "ease-in-out" });
+        });
+
+        // Basically, you're gonna write a function here that first off detects whether the user is scrolling.
+        // Secondly detects the direction
+        // Thirdly detects what + where the scroll happened and respond appropriately
+
+        $('html').bind('mousewheel DOMMouseScroll', function (e) {
+            var delta = (e.originalEvent.wheelDelta || -e.originalEvent.detail);
+        
+            if (delta < 0) {
+                console.log('You scrolled down');
+                $("html").velocity("scroll", { offset: $(window).height(), duration: 1000, easing: "ease-in-out" });
+                // $('#bios').velocity("scroll", { duration: 1000, easing: "ease-in-out" });
+            } else if (delta > 0) {
+                console.log('You scrolled up');
+                // $('#interactive').velocity("scroll", { duration: 1000, easing: "ease-in-out" });
+                $("html").velocity("scroll", { offset: -$(window).height(), duration: 1000, easing: "ease-in-out" });
+            }
+        });
+
+
+
 });
 
 // Functions =============================================================

@@ -209,7 +209,7 @@ function drawBezier(vertices) {
 }
 
 function drawBasicA(){
-  var fadeSpeed = 5;
+  var fadeSpeed = 2;
   if (glyphOp < 255) glyphOp += fadeSpeed;
   noStroke();
   fill(35,35,35,glyphOp);
@@ -248,7 +248,7 @@ function drawBasicA(){
 }
 
 function drawBasicN(){
-  var fadeSpeed = 5;
+  var fadeSpeed = 2;
   if (glyphOp < 255) glyphOp += fadeSpeed;
   noStroke();
   fill(35,35,35,glyphOp);
@@ -331,7 +331,7 @@ function clockDisp(alphaOpa) {
 }
 
 function clockViz() {
-  var fadeSpeed = 5;
+  var fadeSpeed = 2;
     if ((w > 1000) && (h > 850)) {
       if (alphaOpa < 255) alphaOpa += fadeSpeed;
     } else {
