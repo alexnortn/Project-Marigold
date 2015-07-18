@@ -68,36 +68,37 @@ $(document).ready(function() {
     $('.project-overview').click(function(){
         open = !open;
 
-        !open ? $('.project-contents').fadeOut('slow') : $('.project-contents').fadeIn('slow'); 
+        !open ? closeProject() : openProject(); 
 
+    });
+
+    function openProject() {
         // $('#logo p').fadeToggle(1000);
         $('#pagination').fadeToggle(1000);
         $('#arrow').fadeToggle(1000);
-
-        console.log("click");
+        $('.project-contents').fadeToggle(1000);
+        // $('.project-view').css("overflow-y", "scroll");
+        /*
+        $('html, body').animate({
+            scrollTop: $('.main-description').offset().top
+            }, 750);
+            return false;
+            console.log(open);
+        */
 
         // Size the video properly please
         videoSize();
-
-        if (open == true) {
-            $('html, body').animate({
-                scrollTop: $('.main-description').offset().top
-                }, 750);
-                return false;
-                console.log(open);
-        };
-    });
+    }
 
     function closeProject() {
-        if (open == true) {
-            // $("html, body").animate({ scrollTop: "0px" }, 500);
-            $('.project-contents').fadeOut('slow')
+        // $("html, body").animate({ scrollTop: "0px" }, 500);
+        $('.project-contents').fadeOut('slow');
+        // $('.project-view').css("overflow-y", "hidden"); 
     
-            // $('#logo p').fadeToggle('slow');
-            $('#pagination').fadeToggle('slow');
-            $('#arrow').fadeToggle('slow');
-            open = false;
-        }
+        // $('#logo p').fadeToggle('slow');
+        $('#pagination').fadeToggle('slow');
+        $('#arrow').fadeToggle('slow');
+        open = false;
     };
 
     // Set the bottom elements to proper size
@@ -200,19 +201,23 @@ $(document).ready(function() {
         // Secondly detects the direction
         // Thirdly detects what + where the scroll happened and respond appropriately
 
+        /*
+
         $('html').bind('mousewheel DOMMouseScroll', function (e) {
             var delta = (e.originalEvent.wheelDelta || -e.originalEvent.detail);
         
             if (delta < 0) {
                 console.log('You scrolled down');
-                $("html").velocity("scroll", { offset: $(window).height(), duration: 1000, easing: "ease-in-out" });
+                $("html").velocity("scroll", { offset: ($(document).scrollTop() + $(window).height()), duration: 1000, easing: "ease-in-out" });
                 // $('#bios').velocity("scroll", { duration: 1000, easing: "ease-in-out" });
             } else if (delta > 0) {
                 console.log('You scrolled up');
                 // $('#interactive').velocity("scroll", { duration: 1000, easing: "ease-in-out" });
-                $("html").velocity("scroll", { offset: -$(window).height(), duration: 1000, easing: "ease-in-out" });
+                $("html").velocity("scroll", { offset: -($(document).scrollTop() - ($(document).scrollTop()-$(window).height())), duration: 1000, easing: "ease-in-out" });
             }
         });
+
+        */
 
 
 

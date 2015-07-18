@@ -112,7 +112,7 @@ block content
             .project-view&attributes({'data': index})
                 // PROJECT OVERVIEW
                 .filler-content
-                    .scroll-arrow
+                    //- .scroll-arrow
                         //- p Scroll Down 
                         <i class="fa  fa-angle-down fa-2x"></i>    
                 .project-overview
@@ -151,6 +151,15 @@ block content
                         li Duration
                         li #{result.meta.Duration}
 
+                    // 2X PARALLAX IMAGES LEFT
+                    .para-box
+                        .image-box(style='background-image: url(#{result.hero});')
+                            .image-left.parallax
+                                .parallax-layer.parallax__layer--forward
+                        .image-box(style='background-image: url(#{result.hero});')
+                            .image-left
+                                p.caption #{result.description_long_2}
+
                     // GRID ITERATOR
                     .image-grid-wrapper
                         each image, index in result.images
@@ -158,18 +167,25 @@ block content
                                 .image-grid(style='background-image: url(#{result.images[index].src});')
                     // /GRID ITERATOR
                     .big-moment-1
-                        .big-moment-1-color
-                        img(src = result.cut alt = "big image")
+                        .big-moment-1-color(style='background-image: url(#{result.images[index].src});')
                         h1.center We Out Here
-                    .two-bi-two
-                        .pull-left
+
+                    // GRID ITERATOR 2
+                    .image-grid-wrapper
+                        each image, index in result.images
                             .image-grid-container
                                 .image-grid(style='background-image: url(#{result.images[index].src});')
-                            .image-grid-container
-                                .image-grid(style='background-image: url(#{result.images[index].src});')
-                        .pull-right
-                            p.text #{result.description_long_1}
-                            p.caption #{result.description_long_2}
+                    // /GRID ITERATOR 2
+
+                    // 2X PARALLAX IMAGES RIGHT
+                    .para-box
+                        .image-box.right(style='background-image: url(#{result.hero});')
+                            .image-left.parallax
+                                .parallax-layer.parallax__layer--forward
+                        .image-box.right(style='background-image: url(#{result.hero});')
+                            .image-left
+                                p.caption #{result.description_long_2}
+
                     .big-moment-2
                         .big-moment-2-color(style='background-image: url(#{result.images[index].src});')
                         .img-box(style='background-image: url(#{result.images[index].src});')
