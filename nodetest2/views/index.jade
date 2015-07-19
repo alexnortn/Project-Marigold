@@ -131,31 +131,32 @@ block content
                         .hero(style='background-image: url(#{result.hero});')
                 // /PROJECT OVERVIEW
                 .project-contents
-                    .main-description 
-                        p #{result.description_long}
-                    ul.meta-data
-                        li Client
-                        li #{result.meta.Client}
-                        li Year
-                        li #{result.meta.Year}
-                        li Role
-                        li #{result.meta.Role}
-                        li Team
-                        li #{result.meta.Team}
-                        li Discipline
-                        li #{result.meta.Discipline}
-                        li Medium
-                        li #{result.meta.Medium}
-                        li Technologies
-                        li #{result.meta.Technologies}
-                        li Duration
-                        li #{result.meta.Duration}
+                    .project-intro.cf
+                        .main-description 
+                            p #{result.description_long}
+                        ul.meta-data
+                            li Client
+                            li #{result.meta.Client}
+                            li Year
+                            li #{result.meta.Year}
+                            li Role
+                            li #{result.meta.Role}
+                            li Team
+                            li #{result.meta.Team}
+                            li Discipline
+                            li #{result.meta.Discipline}
+                            li Medium
+                            li #{result.meta.Medium}
+                            li Technologies
+                            li #{result.meta.Technologies}
+                            li Duration
+                            li #{result.meta.Duration}
 
                     // 2X PARALLAX IMAGES LEFT
                     .para-box
                         .image-box(style='background-image: url(#{result.hero});')
                             .image-left.parallax
-                                .parallax-layer.parallax__layer--forward
+                                blockquote.parallax-layer.parallax__layer--forward #{result.pull_quotes[0]}
                         .image-box(style='background-image: url(#{result.hero});')
                             .image-left
                                 p.caption #{result.description_long_2}
@@ -180,18 +181,31 @@ block content
                     // 2X PARALLAX IMAGES RIGHT
                     .para-box
                         .image-box.right(style='background-image: url(#{result.hero});')
-                            .image-left.parallax
-                                .parallax-layer.parallax__layer--forward
+                            .image-right
+                                p.caption.caption--2 #{result.description_long_2}
                         .image-box.right(style='background-image: url(#{result.hero});')
-                            .image-left
-                                p.caption #{result.description_long_2}
+                            .image-right.parallax
+                                .parallax-layer.parallax__layer--forward
+
+                    #video-frame
+                        iframe(src="//player.vimeo.com/video/95969058" width="1600" height="1000" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
 
                     .big-moment-2
                         .big-moment-2-color(style='background-image: url(#{result.images[index].src});')
                         .img-box(style='background-image: url(#{result.images[index].src});')
                         p.caption #{result.description_long_2}
-                    #video-frame
-                        iframe(src="//player.vimeo.com/video/95969058" width="1600" height="1000" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
+
+                    // 2X PARALLAX IMAGES LEFT
+                    .para-box
+                        .image-box(style='background-image: url(#{result.hero});')
+                            .image-left.parallax
+                                .parallax-layer.parallax__layer--forward
+                        .image-box(style='background-image: url(#{result.hero});')
+                            .image-left
+                                p.caption #{result.description_long_2}
+
+                    .big-moment-2
+                        .big-moment-2-color(style='background-image: url(#{result.images[index].src});')
                     .close
                         svg.clothes-line
                             line(x1="0" y1="0" x2="25" y2="0" stroke-linecap="round")
