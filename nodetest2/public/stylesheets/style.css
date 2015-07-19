@@ -1210,6 +1210,10 @@ label[for="nav-trigger"] hr:nth-child(3) {
 	padding-top: 50px;
 }
 
+/*
+	Micro-Clear Fix!
+*/
+
 .cf:before,
 .cf:after {
 	content: " "; /* 1 */
@@ -1419,7 +1423,7 @@ label[for="nav-trigger"] hr:nth-child(3) {
 
 .big-moment-2 {
 	margin-top:    100px;
-	margin-bottom: 250px;
+	margin-bottom: 500px;
 	display: block;
 	width: 100%;
 	clear: both;
