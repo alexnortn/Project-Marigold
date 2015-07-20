@@ -109,7 +109,7 @@ block content
 
         // PROJECT ITERATOR
         each result, index in projects
-            .project-view&attributes({'data': index})
+            .project-view.parallax&attributes({'data': index})
                 // PROJECT OVERVIEW
                 .filler-content
                     //- .scroll-arrow
@@ -155,8 +155,8 @@ block content
                     // 2X PARALLAX IMAGES LEFT
                     .para-box
                         .image-box(style='background-image: url(#{result.hero});')
-                            .image-left.parallax
-                                blockquote.parallax-layer.parallax__layer--forward #{result.pull_quotes[0]}
+                            .image-left
+                                blockquote.parallax__layer.parallax__layer--fore #{result.pull_quotes[0]}
                         .image-box(style='background-image: url(#{result.hero});')
                             .image-left
                                 p.caption #{result.description_long_2}
@@ -169,7 +169,6 @@ block content
                     // /GRID ITERATOR
                     .big-moment-1
                         .big-moment-1-color(style='background-image: url(#{result.images[index].src});')
-                        h1.center We Out Here
 
                     // GRID ITERATOR 2
                     .image-grid-wrapper
