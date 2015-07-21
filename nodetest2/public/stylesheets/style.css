@@ -1232,7 +1232,9 @@ label[for="nav-trigger"] hr:nth-child(3) {
 */
 
 .parallax {
+	-webkit-perspective: 1px;
 	perspective: 1px;
+	-webkit-perspective-origin-x: 100%;
 	perspective-origin-x: 100%;
 	height: 100vh;
 	overflow-x: hidden;
@@ -1240,6 +1242,7 @@ label[for="nav-trigger"] hr:nth-child(3) {
 }
 
 .parallax__layer {
+	-webkit-transform-origin-x: 100%;
 	transform-origin-x: 100%;
 	position: absolute;
 	top: 0;
@@ -1249,18 +1252,22 @@ label[for="nav-trigger"] hr:nth-child(3) {
 }
 
 .parallax__layer--fore {
+	-webkit-transform: translateZ(1px) scale(0.5);
 	transform: translateZ(1px) scale(0.5);
 }
 
 .parallax__layer--base {
+	-webkit-transform: translateZ(0);
 	transform: translateZ(0);
 }
 
 .parallax__layer--back {
+	-webkit-transform: translateZ(-1px) scale(2);
 	transform: translateZ(-1px) scale(2);
 }
 
 .parallax__layer--deep {
+	-webkit-transform: translateZ(-2px) scale(3);
 	transform: translateZ(-2px) scale(3);
 }
 
