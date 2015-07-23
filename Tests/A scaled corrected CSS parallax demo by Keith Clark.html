@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)http://keithclark.co.uk/articles/pure-css-parallax-websites/demo2/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>A scaled corrected CSS parallax demo by Keith Clark</title>
+<style>
+
+  /* Parallax base styles
+  --------------------------------------------- */
+
+  .parallax {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 1px;
+    perspective: 1px;
+    -webkit-perspective-origin-x: 100%;
+    perspective-origin-x: 100%;
+  }
+
+  .parallax__layer {
+    position: absolute;
+    -webkit-perspective-origin-x: 100%;
+    perspective-origin-x: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .parallax__layer--base {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+
+  .parallax__layer--back {
+    -webkit-transform: translateZ(-1px) scale(2);
+    transform: translateZ(-1px) scale(2);
+    /*z-index: 5;*/
+  }
+
+  .parallax__layer--fore {
+  -webkit-transform: translateZ(1px) scale(0.5);
+      transform: translateZ(1px) scale(0.5);
+  /*z-index: 10;*/
+}
+
+
+  /* demo styles
+  --------------------------------------------- */
+
+  * {
+    margin:0;
+    padding:0;
+  }
+
+  body {
+    font: 100% / 1.5 Arial;
+  }
+
+  .parallax {
+    font-size: 200%;
+  }
+
+  .parallax__group {
+    position: relative;
+    height: 100vh;
+    transform-style: preserve-3d;
+  }
+
+   /* add some padding to force scrollbars */
+  .parallax__layer {
+    padding: 100vh 0;
+  }
+
+   /* centre the content in the parallax layers */
+  .title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  #red {
+    margin-top: 250px;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: red;
+  }
+  #blue {
+    margin-top: 250px;
+    position: relative;
+    background-color: blue;
+  }
+
+</style>
+</head>
+
+  <div class="parallax">
+    <div id="one" class="parallax__group">
+      <div class="parallax__layer parallax__layer--back">
+        <div class="title">This is the parallax back</div>
+      </div>
+      <div class="parallax__layer parallax__layer--base">
+        <div class="title">This is base</div>
+      </div>
+    </div>
+    <div id="red"></div>
+    <div id="blue" class="parallax__group">
+      <div class="parallax__layer parallax__layer--base">
+        <div class="title">This is the parallax base</div>
+      </div>
+    </div>
+    <div id="two" class="parallax__group">
+      <div class="parallax__layer parallax__layer--back">
+        <div class="title">This is the parallax back</div>
+      </div>
+      <div class="parallax__layer parallax__layer--base">
+        <div class="title">This is base</div>
+      </div>
+    </div>
+  </div>
+</body></html>
