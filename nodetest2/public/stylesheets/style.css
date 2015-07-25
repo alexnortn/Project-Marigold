@@ -622,8 +622,10 @@ p.directions {
 
 .project-view {
 	width: 100%;
+	height: 100%;
 	display: block;
 	position: relative;
+	overflow: auto;
 }
 
 .filler-content {
@@ -1232,19 +1234,16 @@ label[for="nav-trigger"] hr:nth-child(3) {
 */
 
 .parallax {
-	height: 100vh;
 	overflow-x: hidden;
 	overflow-y: auto;
-	-webkit-perspective: 300px;
-			perspective: 300px;
 	-webkit-perspective-origin-x: 100%;
 			perspective-origin-x: 100%;
+	-webkit-perspective: 300px;
+			perspective: 300px;
 }
 
 .parallax__group {
 	position: relative;
-	height: 500px; /* fallback for older browsers */
-	height: 100vh;
 	-webkit-transform-style: preserve-3d;
 			transform-style: preserve-3d;
 }
@@ -1283,6 +1282,8 @@ label[for="nav-trigger"] hr:nth-child(3) {
 	z-index: 2;
 }
 
+
+
 .main-description {
 	width: 605px;;
 	float: right;
@@ -1300,8 +1301,7 @@ label[for="nav-trigger"] hr:nth-child(3) {
 }
 
 .para-box {
-	overflow: hidden;
-	clear: both;
+	/*height: 880px;*/
 }
 
 .image-box {
@@ -1322,7 +1322,11 @@ label[for="nav-trigger"] hr:nth-child(3) {
 	height: 100%;
 }
 
-.image-left blockquote {
+.parabox .image-box:last-of-type {
+	margin-bottom: 125px;
+}
+
+.para-box blockquote {
 	font-family: "BerlingskeSerif-Regular";
 	font-size: 40px;
 	line-height: 2em;
@@ -1437,15 +1441,20 @@ label[for="nav-trigger"] hr:nth-child(3) {
 	opacity: 1;
 }
 
-.big-moment-1 img {
-	width: 50%;
-	position: absolute;
+.big-moment-1 {
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	left: 0;
-	right: 0;
-	margin-top: 100px;
+	width: 150%;
+	left: -25%;
+	height: 750px;
+	position: relative;
+	text-align: center;
+	border-top: 1000px;
+	border-bottom: 1000px;
+	border-style: solid;
+	border-color: white;
+	margin-top: -1000px;
+	margin-bottom: -950px;
+	z-index: -1;
 	-webkit-transition-timing-function: linear;
 			transition-timing-function: linear;
 	-webkit-transition: all 0.5s; /* Safari */
@@ -1458,16 +1467,20 @@ label[for="nav-trigger"] hr:nth-child(3) {
 
 .big-moment-1-color {
 	background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;   
-    background-position: center; 
+	background-attachment: scroll;
+	background-size: cover;
+	background-position: left;
 	background-color: Beige;
-	height: 100%;
-  	top: 0;
-  	position: absolute;
-  	width: 150%;
-  	left: -25%;
-  	right: 25%;
+	position: absolute;
+	top: 0;
+	left: -20%;
+	right: -20%;
+	margin-top: -125px;
+}
+
+.white {
+	width: 100%;
+	background-color: white;
 }
 
 .img-box {

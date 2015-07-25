@@ -202,6 +202,7 @@ $(document).ready(function() {
         // Thirdly detects what + where the scroll happened and respond appropriately
 
 
+    /*
 
         $('html').bind('mousewheel DOMMouseScroll', function (e) {
             var delta = (e.originalEvent.wheelDelta || -e.originalEvent.detail);
@@ -218,6 +219,7 @@ $(document).ready(function() {
         });
 
         
+    */
 
 
 
