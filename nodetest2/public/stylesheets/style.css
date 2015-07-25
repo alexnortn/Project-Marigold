@@ -1448,11 +1448,11 @@ label[for="nav-trigger"] hr:nth-child(3) {
 	height: 750px;
 	position: relative;
 	text-align: center;
-	border-top: 1000px;
-	border-bottom: 1000px;
 	border-style: solid;
 	border-color: white;
-	margin-top: -1000px;
+	border-top: 1200px;
+	margin-top: -1200px;
+	border-bottom: 1000px;
 	margin-bottom: -950px;
 	z-index: -1;
 	-webkit-transition-timing-function: linear;
@@ -1472,9 +1472,10 @@ label[for="nav-trigger"] hr:nth-child(3) {
 	background-position: left;
 	background-color: Beige;
 	position: absolute;
-	top: 0;
 	left: -20%;
 	right: -20%;
+	top: 0;
+	height: 125%;
 	margin-top: -125px;
 }
 
