@@ -1331,10 +1331,19 @@ label[for="nav-trigger"] hr:nth-child(3) {
 	font-size: 40px;
 	line-height: 2em;
 	position: absolute;
-	left: 50%;
 	width: 50%;
 	margin-left: 50px;
 	margin-top: 14.5%;
+}
+
+.para-box blockquote.left {
+	text-align: left;
+	left: 55%;
+}
+
+.para-box blockquote.right {
+	text-align: right;
+	left: 13%;
 }
 
 .image-left p {

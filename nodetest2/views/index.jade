@@ -154,12 +154,12 @@ block content
 
                     // 2X PARALLAX IMAGES LEFT
                     .para-box.parallax__group
-                        blockquote.parallax__layer.parallax__layer--fore #{result.pull_quotes[0]}
+                        blockquote.left.parallax__layer.parallax__layer--fore #{result.pull_quotes[0]}
                         .image-box(style='background-image: url(#{result.hero});')
                             .image-left
                         .image-box(style='background-image: url(#{result.hero});')
                             .image-left
-                                p.caption #{result.description_long_2}
+                                //- p.caption #{result.description_long_2}
 
                     // GRID ITERATOR
                     .image-grid-wrapper
@@ -178,12 +178,13 @@ block content
                     // /GRID ITERATOR 2
 
                     // 2X PARALLAX IMAGES RIGHT
-                    .para-box
+                    .para-box.parallax__group
                         .image-box.right(style='background-image: url(#{result.hero});')
                             .image-right
-                                p.caption.caption--2 #{result.description_long_2}
+                                //- p.caption.caption--2 #{result.description_long_2}
                         .image-box.right(style='background-image: url(#{result.hero});')
                             .image-right
+                        blockquote.right.parallax__layer.parallax__layer--fore #{result.pull_quotes[0]}
 
                     #video-frame
                         iframe(src="//player.vimeo.com/video/95969058" width="1600" height="1000" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
@@ -197,9 +198,9 @@ block content
                     .para-box
                         .image-box(style='background-image: url(#{result.hero});')
                             .image-left
+                                p.caption #{result.description_long_2}
                         .image-box(style='background-image: url(#{result.hero});')
                             .image-left
-                                p.caption #{result.description_long_2}
 
                     .big-moment-2
                         .big-moment-2-color(style='background-image: url(#{result.images[index].src});')
