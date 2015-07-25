@@ -1448,12 +1448,12 @@ label[for="nav-trigger"] hr:nth-child(3) {
 	height: 750px;
 	position: relative;
 	text-align: center;
-	border-style: solid;
-	border-color: white;
 	border-top: 1200px;
 	margin-top: -1200px;
 	border-bottom: 1000px;
 	margin-bottom: -950px;
+	border-style: solid;
+	border-color: white;
 	z-index: -1;
 	-webkit-transition-timing-function: linear;
 			transition-timing-function: linear;
