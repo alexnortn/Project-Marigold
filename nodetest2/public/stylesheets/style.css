@@ -1322,6 +1322,10 @@ label[for="nav-trigger"] hr:nth-child(3) {
 	height: 100%;
 }
 
+.image-box--bottom {
+	margin-bottom: 125px;
+}
+
 .parabox .image-box:last-of-type {
 	margin-bottom: 125px;
 }
@@ -1485,7 +1489,7 @@ label[for="nav-trigger"] hr:nth-child(3) {
 	right: -20%;
 	top: 0;
 	height: 125%;
-	margin-top: -125px;
+	margin-top: -225px;
 }
 
 .white {
@@ -1546,6 +1550,16 @@ label[for="nav-trigger"] hr:nth-child(3) {
     background-color: white;
     padding: 40px 30px 15px 30px;
     box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.18); 
+}
+
+.big-moment-3 {
+	margin-top:    100px;
+	display: block;
+	width: 100%;
+	clear: both;
+	/*background-color: red;*/
+	position: relative;
+	text-align: center;
 }
 
 #video-frame {

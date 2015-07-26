@@ -157,7 +157,7 @@ block content
                         blockquote.left.parallax__layer.parallax__layer--fore #{result.pull_quotes[0]}
                         .image-box(style='background-image: url(#{result.hero});')
                             .image-left
-                        .image-box(style='background-image: url(#{result.hero});')
+                        .image-box.image-box--bottom(style='background-image: url(#{result.hero});')
                             .image-left
                                 //- p.caption #{result.description_long_2}
 
@@ -182,7 +182,7 @@ block content
                         .image-box.right(style='background-image: url(#{result.hero});')
                             .image-right
                                 //- p.caption.caption--2 #{result.description_long_2}
-                        .image-box.right(style='background-image: url(#{result.hero});')
+                        .image-box.right.image-box--bottom(style='background-image: url(#{result.hero});')
                             .image-right
                         blockquote.right.parallax__layer.parallax__layer--fore #{result.pull_quotes[0]}
 
@@ -196,11 +196,11 @@ block content
 
                     // 2X PARALLAX IMAGES LEFT
                     .para-box
-                        .image-box(style='background-image: url(#{result.hero});')
+                        .image-box.image-box--bottom(style='background-image: url(#{result.hero});')
                             .image-left
                                 p.caption #{result.description_long_2}
 
-                    .big-moment-2
+                    .big-moment-3
                         .big-moment-2-color(style='background-image: url(#{result.images[index].src});')
                     .close
                         svg.clothes-line
