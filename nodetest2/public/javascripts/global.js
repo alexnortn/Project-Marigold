@@ -231,9 +231,10 @@ $(document).ready(function() {
 // Setup for Slick slider plugin
 var slickInit = function() {
     $('.big-moment-3').slick({
-        arrows:         false,
-        dots:           true,
-        adaptiveHeight: true
+        arrows:             false,
+        dots:               true,
+        lazyLoad:           'ondemand',
+        adaptiveHeight:     true
     });
 }
 
