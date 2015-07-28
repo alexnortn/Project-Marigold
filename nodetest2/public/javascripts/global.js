@@ -77,6 +77,8 @@ $(document).ready(function() {
         $('#pagination').fadeToggle(1000);
         $('#arrow').fadeToggle(1000);
         $('.project-contents').fadeToggle(1000);
+        // Initialize Slick object 
+        slickInit();
         // $('.project-view').css("overflow-y", "scroll");
         /*
         $('html, body').animate({
@@ -221,18 +223,19 @@ $(document).ready(function() {
         
     */
 
-    // Setup for Slick slider plugin
-
-    $('.big-moment-3').slick({
-        arrows: false,
-        dots:   true
-    });
-
-
-
 });
 
 // Functions =============================================================
+
+
+// Setup for Slick slider plugin
+var slickInit = function() {
+    $('.big-moment-3').slick({
+        arrows:         false,
+        dots:           true,
+        adaptiveHeight: true
+    });
+}
 
 // Set up Date Query
 var setGreeting = function () {
