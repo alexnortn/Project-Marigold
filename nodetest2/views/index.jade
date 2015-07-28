@@ -201,7 +201,14 @@ block content
                                 p.caption #{result.description_long_2}
 
                     .big-moment-3
-                        .big-moment-2-color(style='background-image: url(#{result.images[index].src});')
+                        img.big-moment-3-color(src = "#{result.images[index].src}")
+                        img.big-moment-3-color(src = "#{result.images[index].src}")
+                        img.big-moment-3-color(src = "#{result.images[index].src}")
+                        img.big-moment-3-color(src = "#{result.images[index].src}")
+                        img.big-moment-3-color(src = "#{result.images[index].src}")                            
+                        //- .big-moment-3-color(style='background-image: url(#{result.images[index].src});')
+
+                    
                     .close
                         svg.clothes-line
                             line(x1="0" y1="0" x2="25" y2="0" stroke-linecap="round")

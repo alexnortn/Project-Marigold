@@ -221,6 +221,13 @@ $(document).ready(function() {
         
     */
 
+    // Setup for Slick slider plugin
+
+    $('.big-moment-3').slick({
+        arrows: false,
+        dots:   true
+    });
+
 
 
 });
