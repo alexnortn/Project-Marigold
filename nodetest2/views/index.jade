@@ -17,7 +17,7 @@ block content
     // /INTERACTIVE
 
     // PAGINATION
-    #pagination
+    #pagination.top
         //- #prev-arrow-box
             <i class="fa fa-long-arrow-up fa-lg" id="prev-arrow"></i>
         for result in projects
@@ -33,23 +33,22 @@ block content
     // /PAGINATION
 
     // GLOBAL NAVIGATION
-    .nav-footer
+    .nav-footer.top
         //- .golden-divider
         .section-name
             p //  Next  ::  <strong>Works</strong> 
             <i class="fa fa-long-arrow-right"></i>
 
-    input(type="checkbox" id = "nav-trigger" class = "nav-trigger")
-    label(for = "nav-trigger")#nav-burger.nav-burger-preload
-        hr
-        hr
-        hr
-        hr
-
     // /GLOBAL NAVIGATION
 
     // NAV DRAWER
-    .nav
+    .nav.top
+        input(type="checkbox" id = "nav-trigger" class = "nav-trigger")
+        label(for = "nav-trigger")#nav-burger.nav-burger-preload
+            hr
+            hr
+            hr
+            hr
         #nav-box
             #nav-triangle-top
             #nav-rectangle-bottom
@@ -71,7 +70,7 @@ block content
     // /NAV DRAWER
 
     // HEADER
-    header
+    header.top
 
         #logo
             img(src = "/images/logo.svg" alt = "main logo")
@@ -109,6 +108,13 @@ block content
 
         // PROJECT ITERATOR
         each result, index in projects
+
+            .image-grid-overlay
+                .overlay-background
+                .overlay-slider
+                    each image, index in result.images
+                            img.big-moment-3-color(src = "#{result.images[index].src}")
+
             .project-view.parallax&attributes({'data': index})
                 // PROJECT OVERVIEW
                 .filler-content

@@ -1229,6 +1229,16 @@ label[for="nav-trigger"] hr:nth-child(3) {
 
 /*
 
+	Top (z-index modifiers)
+
+*/
+
+.top {
+	z-index: 1000;
+}
+
+/*
+
 	Parallax!
 
 */
@@ -1384,6 +1394,26 @@ label[for="nav-trigger"] hr:nth-child(3) {
 	left: 20%;
 }
 
+.image-grid-overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 100;
+	display: none;
+}
+
+.overlay-background {
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	opacity: 0.75;
+}
+
+.overlay-slider {
+	width: 750px;
+	height: 400px;
+}
+
 .image-grid-wrapper {
 	clear: both;
 	position: relative;
@@ -1400,7 +1430,7 @@ label[for="nav-trigger"] hr:nth-child(3) {
 	/*padding-bottom: 25%;*/
 	margin: 15px;
 	overflow: hidden;
-	box-shadow: 0 -10px 15px rgba(0, 0, 0, 0); 
+	box-shadow: 0 0px 10px rgba(0, 0, 0, 0); 
 	-webkit-transition: all 250ms; /* Safari */
     		transition: all 250ms;
 }
@@ -1432,7 +1462,7 @@ label[for="nav-trigger"] hr:nth-child(3) {
 }
 
 .image-grid-container:hover {
-	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.18); 
+	box-shadow: 0 15px 10px rgba(0, 0, 0, 0.18); 
 	cursor: pointer;
 	-webkit-transform: translateY(-15px);
 			transform: translateY(-15px);

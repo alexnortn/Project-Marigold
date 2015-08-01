@@ -78,7 +78,7 @@ $(document).ready(function() {
         $('#arrow').fadeToggle(1000);
         $('.project-contents').fadeToggle(1000);
         // Initialize Slick object 
-        slickInit();
+        slickInitBtm();
         // $('.project-view').css("overflow-y", "scroll");
         /*
         $('html, body').animate({
@@ -199,6 +199,17 @@ $(document).ready(function() {
           $('#bios').velocity("scroll", { duration: 1000, easing: "ease-in-out" });
         });
 
+        // Image-Grid Overlay
+        $('.image-grid-wrapper').click(function() {
+            var overlay = $('.image-grid-overlay');
+            var overlaySlider = $('.overlay-slider');
+
+                $(overlaySlider).alwaysCenterIn(overlay);
+                $(overlay).fadeIn();
+                
+                slickInitOverlay();
+        })
+
         // Basically, you're gonna write a function here that first off detects whether the user is scrolling.
         // Secondly detects the direction
         // Thirdly detects what + where the scroll happened and respond appropriately
@@ -228,8 +239,20 @@ $(document).ready(function() {
 // Functions =============================================================
 
 
-// Setup for Slick slider plugin
-var slickInit = function() {
+// Setup for Slick slider plugin Grid #1
+var slickInitOverlay = function() {
+
+    $('.overlay-slider').slick({
+        arrows:             false,
+        dots:               true,
+        lazyLoad:           'progressive',
+        adaptiveHeight:     true
+    });
+}
+
+// Setup for Slick slider plugin Bottom
+var slickInitBtm = function() {
+
     $('.big-moment-3').slick({
         arrows:             false,
         dots:               true,
