@@ -1400,18 +1400,23 @@ label[for="nav-trigger"] hr:nth-child(3) {
 	/*padding-bottom: 25%;*/
 	margin: 15px;
 	overflow: hidden;
+	box-shadow: 0 -10px 15px rgba(0, 0, 0, 0); 
+	-webkit-transition: all 250ms; /* Safari */
+    		transition: all 250ms;
 }
 
-.image-grid-cross {
-  	position: relative;
+.image-cross {
+  	position: absolute;
   	display: inline-block;
 	width:  50px;
 	height: 50px;
+	top: 36%;
+	left: 36%;
 	border-radius: 100%;
-	background-color: red;
-	opacity: 1;
-	-webkit-transition: all 0.5s; /* Safari */
-    		transition: all 0.5s;
+	border: 1px solid black;
+	opacity: 0;
+	-webkit-transition: all ease-in-out 250ms; /* Safari */
+    		transition: all ease-in-out 250ms;
 }
 
 .image-grid {
@@ -1421,18 +1426,16 @@ label[for="nav-trigger"] hr:nth-child(3) {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	/*padding-bottom: -100%;*/
-	-webkit-transition: all 0.5s; /* Safari */
-    		transition: all 0.5s;
+	-webkit-transition: all ease-in-out 250ms; /* Safari */
+    		transition: all ease-in-out 250ms;
 
 }
 
-.image-grid:hover {
-	-webkit-transform:scale(1.03); /* Safari and Chrome */
-       -moz-transform:scale(1.03); /* Firefox */
-        -ms-transform:scale(1.03); /* IE 9 */
-         -o-transform:scale(1.03); /* Opera */
-            transform:scale(1.03);
+.image-grid-container:hover {
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.18); 
+	cursor: pointer;
+	-webkit-transform: translateY(-15px);
+			transform: translateY(-15px);
 }
 
 .big-moment-1 {
