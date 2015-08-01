@@ -204,10 +204,10 @@ $(document).ready(function() {
             var overlay = $('.image-grid-overlay');
             var overlaySlider = $('.overlay-slider');
 
-                $(overlaySlider).alwaysCenterIn(overlay);
                 $(overlay).fadeIn();
-                
+
                 slickInitOverlay();
+                $(overlaySlider).alwaysCenterIn(overlay, { top: "-5%" });
         })
 
         // Basically, you're gonna write a function here that first off detects whether the user is scrolling.

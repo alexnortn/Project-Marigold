@@ -1410,8 +1410,7 @@ label[for="nav-trigger"] hr:nth-child(3) {
 }
 
 .overlay-slider {
-	width: 750px;
-	height: 400px;
+	width: 65%;
 }
 
 .image-grid-wrapper {
