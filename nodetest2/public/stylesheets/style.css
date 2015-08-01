@@ -1400,7 +1400,22 @@ label[for="nav-trigger"] hr:nth-child(3) {
 	/*padding-bottom: 25%;*/
 	margin: 15px;
 	overflow: hidden;
+}
 
+.image-grid-container ::before {
+	position: relative;
+	display: inline-block;
+	width:  25px;
+	height: 25px;
+	border-radius: 100%;
+	background-color: red;
+	opacity: 0;
+	-webkit-transition: all 0.5s; /* Safari */
+    		transition: all 0.5s;
+}
+
+.image-grid-container:hover ::before {
+	opacity: 1;
 }
 
 .image-grid {
