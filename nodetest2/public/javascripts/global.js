@@ -44,7 +44,7 @@ $(document).ready(function() {
     $('.project-overview').alwaysCenterIn(window, { top: "-3%" });
     $('#pagination').alwaysCenterIn(window, { direction: 'vertical' });
     var bios_div = $('#bios');
-    $('#bios-box').alwaysCenterIn(bios_div);;
+    $('#bios-box').alwaysCenterIn(bios_div);
     $('.scroll-arrow').alwaysCenterIn(window, { direction: 'horizontal' });
 
     // Display Interaction Info
@@ -138,7 +138,7 @@ $(document).ready(function() {
 
         });
 
-        // When the window is resized
+        // When the window is resized some fany ui positioning
         $(window).resize(function() {
 
                 newWidth = $fluidEl.width();

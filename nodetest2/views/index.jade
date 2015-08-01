@@ -165,8 +165,10 @@ block content
                     .image-grid-wrapper
                         each image, index in result.images
                             .image-grid-container
+                                .image-grid-cross
                                 .image-grid(style='background-image: url(#{result.images[index].src});')
                     // /GRID ITERATOR
+
                     .big-moment-1.parallax__group
                         .big-moment-1-color.parallax__layer--back(style='background-image: url(#{result.images[index].src});')
 
@@ -174,11 +176,12 @@ block content
                     .image-grid-wrapper
                         each image, index in result.images
                             .image-grid-container
+                                .image-grid-cross 
                                 .image-grid(style='background-image: url(#{result.images[index].src});')
                     // /GRID ITERATOR 2
 
                     // 2X PARALLAX IMAGES RIGHT
-                    .para-box.parallax__group
+                    .para-box.parallax__group   
                         .image-box.right(style='background-image: url(#{result.hero});')
                             .image-right
                                 //- p.caption.caption--2 #{result.description_long_2}
