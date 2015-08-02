@@ -1453,6 +1453,25 @@ label[for="nav-trigger"] hr:nth-child(3) {
     		transition: all ease-in-out 250ms;
 }
 
+.it {
+	    width: 100%;
+    padding-bottom: 50%;
+    background-color: brown;
+    margin-bottom: 50px;
+    transition: all ease-in-out 500ms;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 1;
+    transform: translateZ(0);
+}
+
+.it:hover {
+	padding-bottom: 0;
+    width: 75%;
+    opacity: 0;
+}
+
 .image-grid {
 	width: 100%;
 	padding-bottom: 100%;
