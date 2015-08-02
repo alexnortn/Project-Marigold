@@ -212,15 +212,14 @@ $(document).ready(function() {
                 $(overlay).fadeIn('fast');
 
                 overlaySlider.on('init', function(event) {
-                    overlaySlider.slick('slickGoTo', '2');
-                    console.log("INIT " + counter);
-                    counter++;
                     slickBool = true;
                 });
 
                 if(!slickBool) slickInitOverlay();
 
                 $(overlaySlider).alwaysCenterIn(overlay, { top: "-5%" });
+
+                overlaySlider.slick('slickGoTo', slideIndex, true);
         });
 
         $('.overlay-background').click(function() {

@@ -168,7 +168,7 @@ block content
                                 //- p.caption #{result.description_long_2}
 
                     // GRID ITERATOR
-                    #gridOne.image-grid-wrapper
+                    .image-grid-wrapper
                         each image, index in result.images
                             .image-grid-container&attributes({'data-slide': index})
                                 .image-grid(style='background-image: url(#{result.images[index].src});')
