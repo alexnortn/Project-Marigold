@@ -201,43 +201,47 @@ $(document).ready(function() {
           $('#bios').velocity("scroll", { duration: 1000, easing: "ease-in-out" });
         });
 
-        var slickBool = false;
+        var animateBool = true;
 
         // Image-Grid Overlay
         $('.image-grid-container').click(function() {
+            
             var overlaySlider = $('.grid-slider');
+            var slideIndex    = $(this).data('slide');
 
-            var slideIndex = $(this).data('slide');
-                    
+            $('.image-grid-container').removeClass("active-grid");
+            $(this)
+                .addClass("active-grid")
+                .removeClass("bounce");
+                
+            if (animateBool) {    
+                
                 $('.gridOne').addClass('shrink-grid');
-
-                if(!slickBool) {
-
-                    slickInitOverlay();
-                    overlaySlider.slick('slickGoTo', slideIndex, true);
                     
-                        overlaySlider.on('init', function(event) {
-                            slickBool = true;
-                        });
+                overlaySlider.addClass('active-grid-slider');
+                slickInitOverlay();
 
-                    overlaySlider.fadeIn('fast', function() {
-                        $(this).addClass('active-grid-slider');
-                    });
-
-                } else {
-                    overlaySlider.slick('slickGoTo', slideIndex, false);
-                }
-        });
-
-        $('.image-grid-overlay').keyup(function(e) {
-             if (e.keyCode == 27) { // escape key maps to keycode `27`
-                $('.image-grid-overlay').fadeOut('fast');
+                overlaySlider.slick('slickGoTo', slideIndex, true);
+            } else {
+                overlaySlider.slick('slickGoTo', slideIndex, false);
             }
-        });
 
-        // Basically, you're gonna write a function here that first off detects whether the user is scrolling.
-        // Secondly detects the direction
-        // Thirdly detects what + where the scroll happened and respond appropriately
+            overlaySlider.on('init', function(event) {
+                animateBool = false;
+            });
+
+            overlaySlider.on('swipe', function(event) {
+                $('.image-grid-container').removeClass("active-grid");
+                $('.image-grid-container').addClass("bounce");
+
+                var currentSlide = $('.grid-slider').slick('slickCurrentSlide');
+                var activeSlide  = $('.image-grid-wrapper').find("[data-slide='" + currentSlide + "']");
+                    activeSlide
+                        .addClass("active-grid")
+                        .removeClass("bounce");
+            });
+
+        });
 
 
     /*
