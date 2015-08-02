@@ -202,7 +202,7 @@ $(document).ready(function() {
         var counter = 0;
         var slickBool = false;
 
-        // Image-Grid Overlay
+        // Image-Grid Overlay Centered
         $('.image-grid-container').click(function() {
             var overlay       = $('.image-grid-overlay'),
                 overlaySlider = $('.overlay-slider');
