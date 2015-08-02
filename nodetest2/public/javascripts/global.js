@@ -210,9 +210,11 @@ $(document).ready(function() {
             var slideIndex    = $(this).data('slide');
 
             $('.image-grid-container').removeClass("active-grid");
+            $('.image-grid-container').addClass("bounce");
+
             $(this)
-                .addClass("active-grid")
-                .removeClass("bounce");
+                .removeClass("bounce")
+                .addClass("active-grid");
                 
             if (animateBool) {    
                 
