@@ -199,16 +199,42 @@ $(document).ready(function() {
           $('#bios').velocity("scroll", { duration: 1000, easing: "ease-in-out" });
         });
 
+        var counter = 0;
+        var slickBool = false;
+
         // Image-Grid Overlay
-        $('.image-grid-wrapper').click(function() {
-            var overlay = $('.image-grid-overlay');
-            var overlaySlider = $('.overlay-slider');
+        $('.image-grid-container').click(function() {
+            var overlay       = $('.image-grid-overlay'),
+                overlaySlider = $('.overlay-slider');
 
-                $(overlay).fadeIn();
+            var slideIndex    = $(this).data('slide');
 
-                slickInitOverlay();
+                $(overlay).fadeIn('fast');
+
+                overlaySlider.on('init', function(event) {
+                    overlaySlider.slick('slickGoTo', '2');
+                    console.log("INIT " + counter);
+                    counter++;
+                    slickBool = true;
+                });
+
+                if(!slickBool) slickInitOverlay();
+
                 $(overlaySlider).alwaysCenterIn(overlay, { top: "-5%" });
+        });
+
+        $('.overlay-background').click(function() {
+            $('.image-grid-overlay').fadeOut('fast', function(){
+                // $('.overlay-slider').slick('unslick');
+            });
+
         })
+
+        $('.image-grid-overlay').keyup(function(e) {
+             if (e.keyCode == 27) { // escape key maps to keycode `27`
+                $('.image-grid-overlay').fadeOut('fast');
+            }
+        });
 
         // Basically, you're gonna write a function here that first off detects whether the user is scrolling.
         // Secondly detects the direction
@@ -240,7 +266,7 @@ $(document).ready(function() {
 
 
 // Setup for Slick slider plugin Grid #1
-var slickInitOverlay = function() {
+function slickInitOverlay() {
 
     $('.overlay-slider').slick({
         arrows:             false,
@@ -251,7 +277,7 @@ var slickInitOverlay = function() {
 }
 
 // Setup for Slick slider plugin Bottom
-var slickInitBtm = function() {
+function slickInitBtm() {
 
     $('.big-moment-3').slick({
         arrows:             false,

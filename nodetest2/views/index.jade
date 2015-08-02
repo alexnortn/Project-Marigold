@@ -168,9 +168,9 @@ block content
                                 //- p.caption #{result.description_long_2}
 
                     // GRID ITERATOR
-                    .image-grid-wrapper
+                    #gridOne.image-grid-wrapper
                         each image, index in result.images
-                            .image-grid-container
+                            .image-grid-container&attributes({'data-slide': index})
                                 .image-grid(style='background-image: url(#{result.images[index].src});')
                                 .image-cross
                     // /GRID ITERATOR
@@ -181,7 +181,7 @@ block content
                     // GRID ITERATOR 2
                     .image-grid-wrapper
                         each image, index in result.images
-                            .image-grid-container
+                            .image-grid-container&attributes({'data-slide': index})
                                 .image-grid(style='background-image: url(#{result.images[index].src});')
                                 .image-cross
                     // /GRID ITERATOR 2

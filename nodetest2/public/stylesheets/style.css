@@ -1409,8 +1409,13 @@ label[for="nav-trigger"] hr:nth-child(3) {
 	opacity: 0.75;
 }
 
+.overlay-background:hover {
+	cursor:url("../images/assets/xx.png"), auto;
+}
+
 .overlay-slider {
 	width: 65%;
+	box-shadow: 0 15px 10px rgba(0, 0, 0, 0.18); 
 }
 
 .image-grid-wrapper {
