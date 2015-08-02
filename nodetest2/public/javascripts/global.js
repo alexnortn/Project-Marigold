@@ -43,7 +43,9 @@ $(document).ready(function() {
     // Center In
     $('.project-overview').alwaysCenterIn(window, { top: "-3%" });
     $('#pagination').alwaysCenterIn(window, { direction: 'vertical' });
+    
     var bios_div = $('#bios');
+    
     $('#bios-box').alwaysCenterIn(bios_div);
     $('.scroll-arrow').alwaysCenterIn(window, { direction: 'horizontal' });
 
@@ -199,35 +201,33 @@ $(document).ready(function() {
           $('#bios').velocity("scroll", { duration: 1000, easing: "ease-in-out" });
         });
 
-        var counter = 0;
         var slickBool = false;
 
         // Image-Grid Overlay
         $('.image-grid-container').click(function() {
-            var overlay       = $('.image-grid-overlay'),
-                overlaySlider = $('.overlay-slider');
+            var overlaySlider = $('.grid-slider');
 
-            var slideIndex    = $(this).data('slide');
+            var slideIndex = $(this).data('slide');
+                    
+                $('.gridOne').addClass('shrink-grid');
 
-                $(overlay).fadeIn('fast');
+                if(!slickBool) {
 
-                overlaySlider.on('init', function(event) {
-                    slickBool = true;
-                });
+                    slickInitOverlay();
+                    overlaySlider.slick('slickGoTo', slideIndex, true);
+                    
+                        overlaySlider.on('init', function(event) {
+                            slickBool = true;
+                        });
 
-                if(!slickBool) slickInitOverlay();
+                    overlaySlider.fadeIn('fast', function() {
+                        $(this).addClass('active-grid-slider');
+                    });
 
-                $(overlaySlider).alwaysCenterIn(overlay, { top: "-5%" });
-
-                overlaySlider.slick('slickGoTo', slideIndex, true);
+                } else {
+                    overlaySlider.slick('slickGoTo', slideIndex, false);
+                }
         });
-
-        $('.overlay-background').click(function() {
-            $('.image-grid-overlay').fadeOut('fast', function(){
-                // $('.overlay-slider').slick('unslick');
-            });
-
-        })
 
         $('.image-grid-overlay').keyup(function(e) {
              if (e.keyCode == 27) { // escape key maps to keycode `27`
@@ -267,9 +267,9 @@ $(document).ready(function() {
 // Setup for Slick slider plugin Grid #1
 function slickInitOverlay() {
 
-    $('.overlay-slider').slick({
+    $('.grid-slider').slick({
         arrows:             false,
-        dots:               true,
+        dots:               false,
         lazyLoad:           'progressive',
         adaptiveHeight:     true
     });

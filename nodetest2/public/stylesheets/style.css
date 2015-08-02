@@ -1413,9 +1413,22 @@ label[for="nav-trigger"] hr:nth-child(3) {
 	cursor:url("../images/assets/xx.png"), auto;
 }
 
-.overlay-slider {
-	width: 65%;
-	box-shadow: 0 15px 10px rgba(0, 0, 0, 0.18); 
+.grid-slider {
+	width: 0;
+	height: 0;
+	margin-bottom: 50px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+	display: none;
+	-webkit-transition: all 250ms; /* Safari */
+    		transition: all 250ms;
+	transform: translateZ(0);
+}
+
+.active-grid-slider {
+	width: 100%;
+	height: auto;
 }
 
 .image-grid-wrapper {
@@ -1439,6 +1452,15 @@ label[for="nav-trigger"] hr:nth-child(3) {
     		transition: all 250ms;
 }
 
+.active-grid {
+	border-bottom: 1px solid black;
+}
+
+.shrink-grid {
+	width:  4%;
+	margin: 10px;
+}
+
 .image-cross {
   	position: absolute;
   	display: inline-block;
@@ -1451,25 +1473,6 @@ label[for="nav-trigger"] hr:nth-child(3) {
 	opacity: 0;
 	-webkit-transition: all ease-in-out 250ms; /* Safari */
     		transition: all ease-in-out 250ms;
-}
-
-.it {
-	    width: 100%;
-    padding-bottom: 50%;
-    background-color: brown;
-    margin-bottom: 50px;
-    transition: all ease-in-out 500ms;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    opacity: 1;
-    transform: translateZ(0);
-}
-
-.it:hover {
-	padding-bottom: 0;
-    width: 75%;
-    opacity: 0;
 }
 
 .image-grid {
