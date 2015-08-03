@@ -97,7 +97,7 @@ $(document).ready(function() {
     function closeProject() {
         // $("html, body").animate({ scrollTop: "0px" }, 500);
         $('.project-contents').fadeOut('slow');
-        // $('.project-view').css("overflow-y", "hidden"); 
+        // $('.projec
     
         // $('#logo p').fadeToggle('slow');
         $('#pagination').fadeToggle('slow');
