@@ -221,7 +221,7 @@ $(document).ready(function() {
             $(this)
                 .removeClass("bounce-sm")
                 .addClass("active-grid");
-                
+
                 
             if (!overlaySlider.hasClass('slick-initialized')) {    
                 
@@ -234,8 +234,29 @@ $(document).ready(function() {
 
                 // Add Slick slider with current parent id
                 addSlick(slickInitId);
+                    $(slickInitId).removeClass('slider-transition');
+
+                    // Wait to calculate page offset until class transition ends
+                    setTimeout(
+                        function(e) {
+
+                            var scrollInId = $('.project-view'),
+                                scrollTo = centerOffest(scrollInId, overlaySlider);
+
+                                console.log('scrollTo' + scrollTo );
+
+                            overlaySlider.velocity("scroll", { 
+                                container: scrollInId,
+                                duration:  800,
+                                delay:     0,
+                                mobileHA:  false,
+                                offset:    scrollTo
+                            });
+
+                    }, 500);
 
                 overlaySlider.slick('slickGoTo', slideIndex, true);   // Do not animate to first position
+
             } else {
                 overlaySlider.slick('slickGoTo', slideIndex, false);  // Once loaded, animate to new position
             }
@@ -302,6 +323,20 @@ function slickInitBtm() {
         lazyLoad:           'ondemand',
         adaptiveHeight:     true
     });
+}
+
+function centerOffest(scrollInId, scrollToId) {
+
+    var scrollTop     = scrollInId.scrollTop(),
+        elementOffset = scrollToId.offset().top,
+        distance      = (elementOffset - scrollTop),
+        middle        = distance - $(scrollInId).height()/2;
+
+        console.log("element-offset " + elementOffset);
+        console.log("distance " + distance);
+        console.log("middle " + middle);
+
+    return middle;
 }
 
 // Set up Date Query

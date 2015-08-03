@@ -122,7 +122,7 @@ body {
   min-width: 750px;
   position: absolute;
   letter-spacing: .01rem;
-  overflow: visible;
+  overflow: hidden;
 }
 
 body::selection {
@@ -1421,8 +1421,8 @@ label[for="nav-trigger"] hr:nth-child(3) {
     margin-left: auto;
     margin-right: auto;
 	display: none;
-	-webkit-transition: all 250ms; /* Safari */
-    		transition: all 250ms;
+	-webkit-transition: all ease-in-out 500ms; /* Safari */
+    		transition: all ease-in-out 500ms;
 	transform: translateZ(0);
 }
 
@@ -1448,6 +1448,14 @@ label[for="nav-trigger"] hr:nth-child(3) {
 	box-shadow: 0 0px 10px rgba(0, 0, 0, 0); 
 	-webkit-transition: all ease-in-out 250ms; /* Safari */
     		transition: all ease-in-out 250ms;
+}
+
+.slider-transition {
+	margin-bottom: -55%;
+	top: -275px;
+	transform: scale(0.15);
+	z-index: 0;
+	opacity: 0;
 }
 
 .bounce {
