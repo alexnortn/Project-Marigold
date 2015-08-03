@@ -198,7 +198,7 @@ $(document).ready(function() {
 
         // Event Handlers
         $('.nav-footer').click(function(){
-          $('#bios').velocity("scroll", { duration: 1000, easing: "ease-in-out" });
+            $('#bios').velocity("scroll", { duration: 1000, easing: "ease-in-out" });
         });
 
         var animateBool = true;
@@ -212,12 +212,11 @@ $(document).ready(function() {
                 slideIndex     = $(this).data('slide');
 
 
-            $(containerId).children('.image-grid-container').each(function(i) {
-                
-                $('.image-grid-container').removeClass("active-grid");
-                $('.image-grid-container').addClass("bounce");
-
-            });
+            $(containerId).children('.image-grid-container')
+                .each(function(i) {
+                    $('.image-grid-container').removeClass("active-grid");
+                    $('.image-grid-container').addClass("bounce");
+                });
 
 
             $(this)
@@ -227,14 +226,18 @@ $(document).ready(function() {
                 
             if (animateBool) {    
                 
-                $('.gridOne').addClass('shrink-grid');
+                $(containerId)
+                    .children('.image-grid-container')
+                        .addClass('shrink-grid');
                     
                 overlaySlider.addClass('active-grid-slider');
-                slickInitOverlay();
 
-                overlaySlider.slick('slickGoTo', slideIndex, true);
+                // Add Slick slider with current parent id
+                addSlick(slickInitId);
+
+                overlaySlider.slick('slickGoTo', slideIndex, true);   // Do not animate to first position
             } else {
-                overlaySlider.slick('slickGoTo', slideIndex, false);
+                overlaySlider.slick('slickGoTo', slideIndex, false);  // Once loaded, animate to new position
             }
 
             overlaySlider.on('init', function(event) {
@@ -243,17 +246,17 @@ $(document).ready(function() {
 
             overlaySlider.on('swipe', function(event) {
                 
-                $(containerId).children('.image-grid-container').each(function(i) {
-                
-                    $('.image-grid-container').removeClass("active-grid");
-                    $('.image-grid-container').addClass("bounce");
-
-                });
+                $(containerId)
+                    .children('.image-grid-container')
+                        .each(function(i) {
+                            $('.image-grid-container').removeClass("active-grid");
+                            $('.image-grid-container').addClass("bounce");
+                        });
 
                 var currentSlide = $(containerId).slick('slickCurrentSlide');
                 var activeSlide  = $(containerId)
                                         .children('.image-grid-container')
-                                        .find("[data-slide='" + currentSlide + "']");
+                                            .find("[data-slide='" + currentSlide + "']");
                     activeSlide
                         .addClass("active-grid")
                         .removeClass("bounce");
@@ -287,19 +290,9 @@ $(document).ready(function() {
 
 
 // Setup for Slick slider plugin Grid #1
-function slickInitGridOne() {
+function addSlick(_id) {
 
-    $('#grid-slider-one').slick({
-        arrows:             false,
-        dots:               false,
-        lazyLoad:           'progressive',
-        adaptiveHeight:     true
-    });
-}
-
-function slickInitGridTwo() {
-
-    $('#grid-slider-two').slick({
+    $(_id).slick({
         arrows:             false,
         dots:               false,
         lazyLoad:           'progressive',
