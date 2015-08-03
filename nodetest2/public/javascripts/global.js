@@ -201,8 +201,6 @@ $(document).ready(function() {
             $('#bios').velocity("scroll", { duration: 1000, easing: "ease-in-out" });
         });
 
-        var animateBool = true;
-
         // Image-Grid Overlay
         $('.image-grid-container').click(function() {
             
@@ -210,6 +208,10 @@ $(document).ready(function() {
                 slickInitId    = containerId + "-slider",
                 overlaySlider  = $(slickInitId),
                 slideIndex     = $(this).data('slide');
+
+                console.log("slideIndex " + slideIndex);
+                console.log("slickInitId " + slickInitId);
+
 
             $(containerId)
                 .children('.image-grid-container')
@@ -219,14 +221,9 @@ $(document).ready(function() {
             $(this)
                 .removeClass("bounce-sm")
                 .addClass("active-grid");
-
-
-            overlaySlider.on('init', function(event) {
-                animateBool = false;
-            });
-
                 
-            if (animateBool) {    
+                
+            if (!overlaySlider.hasClass('slick-initialized')) {    
                 
                 $(containerId)
                     .children('.image-grid-container')
