@@ -82,11 +82,11 @@ $(document).ready(function() {
         // Initialize Slick object 
         slickInitBtm();
         
-        $('.project-view').velocity("scroll", { 
+        $('.project-overview').velocity("scroll", { 
             container: $('.project-view'),
             duration:  800,
             delay:     150,
-            offset:    850,
+            offset:    '850px',
             mobileHA:  false
         });
         
@@ -96,11 +96,7 @@ $(document).ready(function() {
     }
 
     function closeProject() {
-        // $("html, body").animate({ scrollTop: "0px" }, 500);
         $('.project-contents').fadeOut('slow');
-        // $('.projec
-    
-        // $('#logo p').fadeToggle('slow');
         $('#pagination').fadeToggle('slow');
         $('#arrow').fadeToggle('slow');
         open = false;
