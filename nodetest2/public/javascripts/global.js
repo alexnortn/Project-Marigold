@@ -206,18 +206,19 @@ $(document).ready(function() {
         // Image-Grid Overlay
         $('.image-grid-container').click(function() {
             
-            var containerId    = $(this).closest('div').attr('id'),  
+            var containerId    = '#' + $(this).parent().attr('id'),  
                 slickInitId    = containerId + "-slider",
                 overlaySlider  = $(slickInitId),
                 slideIndex     = $(this).data('slide');
 
+            var ccc = $(containerId);
 
-            $(containerId).children('.image-grid-container')
-                .each(function(i) {
-                    $('.image-grid-container').removeClass("active-grid");
-                    $('.image-grid-container').addClass("bounce");
-                });
+            console.log(ccc);
 
+            $(containerId)
+                .children('.image-grid-container')
+                    .removeClass("active-grid")
+                    .addClass("bounce");
 
             $(this)
                 .removeClass("bounce")
@@ -248,18 +249,18 @@ $(document).ready(function() {
                 
                 $(containerId)
                     .children('.image-grid-container')
-                        .each(function(i) {
-                            $('.image-grid-container').removeClass("active-grid");
-                            $('.image-grid-container').addClass("bounce");
-                        });
+                        .removeClass("active-grid")
+                        .addClass("bounce");
 
-                var currentSlide = $(containerId).slick('slickCurrentSlide');
+                var currentSlide = $(slickInitId).slick('slickCurrentSlide');
                 var activeSlide  = $(containerId)
-                                        .children('.image-grid-container')
-                                            .find("[data-slide='" + currentSlide + "']");
+                                        .find("[data-slide='" + currentSlide + "']");
                     activeSlide
                         .addClass("active-grid")
                         .removeClass("bounce");
+
+                    console.log(activeSlide);
+                    console.log($(containerId));
             });
 
         });
