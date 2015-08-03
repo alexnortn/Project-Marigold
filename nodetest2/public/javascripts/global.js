@@ -81,14 +81,15 @@ $(document).ready(function() {
         $('.project-contents').fadeToggle(1000);
         // Initialize Slick object 
         slickInitBtm();
-        // $('.project-view').css("overflow-y", "scroll");
-        /*
-        $('html, body').animate({
-            scrollTop: $('.main-description').offset().top
-            }, 750);
-            return false;
-            console.log(open);
-        */
+        
+        $('.project-view').velocity("scroll", { 
+            container: $('.project-view'),
+            duration:  800,
+            delay:     150,
+            offset:    850,
+            mobileHA:  false
+        });
+        
 
         // Size the video properly please
         videoSize();

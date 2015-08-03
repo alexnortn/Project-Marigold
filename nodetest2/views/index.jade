@@ -208,12 +208,8 @@ block content
                                 p.caption #{result.description_long_2}
 
                     .big-moment-3
-                        img.big-moment-3-color(src = "#{result.images[index].src}")
-                        img.big-moment-3-color(src = "#{result.images[index].src}")
-                        img.big-moment-3-color(src = "#{result.images[index].src}")
-                        img.big-moment-3-color(src = "#{result.images[index].src}")
-                        img.big-moment-3-color(src = "#{result.images[index].src}")                            
-                        //- .big-moment-3-color(style='background-image: url(#{result.images[index].src});')
+                        each image, index in result.images
+                            img.big-moment-3-color(src = "#{result.images[index].src}")
 
                     
                     .close
