@@ -34,13 +34,16 @@ $(document).ready(function() {
 
     // Initial FadeIn
     // fadeInPage();
-        window.setTimeout(function() { loader() }, 5000);
+    window.setTimeout(function() { loader() }, 5000);
 
     var loader = function() {
         $.Velocity.RunSequence(loadingSequence);
     } 
 
     // Center In
+
+    $('#content-wrapper').alwaysCenterIn(window, { top: "-3%" });
+
     $('.project-overview').alwaysCenterIn(window, { top: "-3%" });
     $('#pagination').alwaysCenterIn(window, { direction: 'vertical' });
     
@@ -80,7 +83,7 @@ $(document).ready(function() {
         $('#arrow').fadeToggle(1000);
         $('.project-contents').fadeToggle(1000);
         // Initialize Slick object 
-        slickInitBtm();
+        addSlick($('.big-moment-3'), true);
         
         $('.project-overview').velocity("scroll", { 
             container: $('.project-view'),
@@ -230,7 +233,7 @@ $(document).ready(function() {
                 overlaySlider.addClass('active-grid-slider');
 
                 // Add Slick slider with current parent id
-                addSlick(slickInitId);
+                addSlick(slickInitId, false);
                     $(slickInitId).removeClass('slider-transition');
 
                     // Wait to calculate page offset until class transition ends
@@ -300,24 +303,26 @@ $(document).ready(function() {
 
 
 // Setup for Slick slider plugin Grid #1
-function addSlick(_id) {
+function addSlick(_id, _dotsBool) {
 
     $(_id).slick({
         arrows:             false,
-        dots:               false,
+        dots:               _dotsBool,
         lazyLoad:           'progressive',
         adaptiveHeight:     true
     });
 }
 
-// Setup for Slick slider plugin Bottom
-function slickInitBtm() {
+function navSlick(_id) {
 
-    $('.big-moment-3').slick({
-        arrows:             false,
-        dots:               true,
-        lazyLoad:           'ondemand',
-        adaptiveHeight:     true
+    $(_id).slick({
+        arrows:             true,
+        dots:               false,
+        lazyLoad:           'progressive',
+        infinite:           false,
+        adaptiveHeight:     true,
+        vertical:           true,
+        verticalSwiping:    true
     });
 }
 

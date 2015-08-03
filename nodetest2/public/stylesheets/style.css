@@ -1332,8 +1332,12 @@ label[for="nav-trigger"] hr:nth-child(3) {
 	height: 100%;
 }
 
-.image-box--bottom {
-	margin-bottom: 125px;
+.image-box--center {
+	clear: none;
+    float: none;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .parabox .image-box:last-of-type {
@@ -1607,7 +1611,7 @@ label[for="nav-trigger"] hr:nth-child(3) {
 
 .big-moment-2 {
 	margin-top:    100px;
-	margin-bottom: 500px;
+	margin-bottom: 350px;
 	display: block;
 	width: 100%;
 	clear: both;
@@ -1617,12 +1621,10 @@ label[for="nav-trigger"] hr:nth-child(3) {
 }
 
 .big-moment-2 .img-box {
-	position: absolute;
-	right: 10%;
-	bottom: -250px;
-	margin-right: 0;
-	float: none;
-	/*background-size: 100% auto;*/
+    position: relative;
+    margin-right: auto;
+    float: right;
+    top: -300px;
 }
 
 .big-moment-2-color {

@@ -67,153 +67,158 @@ block content
     // /HEADER  
 
 
-    // INTERACTIVE PAGE
-    section#interactive
-        #info
-            #cross-circle
-                .vert-line
-                .horz-line
-            p#greeting I'm <strong>Alex Norton.</strong> <br> Interaction Designer & Researcher.
-            p#infoText This interactive character was developed using the P5js framework along with the Toxiclibs physics library.
-        //- #landing-arrow.scroll-arrow
-            //- p Scroll Down 
-            <i class="fa  fa-angle-down fa-2x"></i>           
+    // SITE content
+    #content-wrapper
 
-    // /INTERACTIVE
+        // INTERACTIVE PAGE
+        section#interactive.slickNav
+            #info
+                #cross-circle
+                    .vert-line
+                    .horz-line
+                p#greeting I'm <strong>Alex Norton.</strong> <br> Interaction Designer & Researcher.
+                p#infoText This interactive character was developed using the P5js framework along with the Toxiclibs physics library.
+            //- #landing-arrow.scroll-arrow
+                //- p Scroll Down 
+                <i class="fa  fa-angle-down fa-2x"></i>           
 
-
-    //BIOS PAGE
-    section#bios
-        
-        // BIOS BOX
-        #bios-box
-            #triangle-top
-            #rectangle-bottom
-            #bios-text
-                p !{bios_text.description_short}
-                p#readMore !{bios_text.description_long}
-            ul
-                li.link 
-                    p#bio Read More
-            .social
-                <i class="fa fa-envelope fa-2x"></i>
-                <i class="fa fa-twitter fa-2x"></i>
-                <i class="fa fa-vimeo-square fa-2x"></i>
-                <i class="fa fa-github fa-2x"></i>
-                <i class="fa fa-behance-square fa-2x"></i>
-        // /BIOS BOX
-
-    // /BIOS PAGE   
+        // /INTERACTIVE
 
 
-    // PROJECT ITERATOR
-    each result, index in projects
+        //BIOS PAGE
+        section#bios.slickNav
+            
+            // BIOS BOX
+            #bios-box
+                #triangle-top
+                #rectangle-bottom
+                #bios-text
+                    p !{bios_text.description_short}
+                    p#readMore !{bios_text.description_long}
+                ul
+                    li.link 
+                        p#bio Read More
+                .social
+                    <i class="fa fa-envelope fa-2x"></i>
+                    <i class="fa fa-twitter fa-2x"></i>
+                    <i class="fa fa-vimeo-square fa-2x"></i>
+                    <i class="fa fa-github fa-2x"></i>
+                    <i class="fa fa-behance-square fa-2x"></i>
+            // /BIOS BOX
 
-        section.project-view.parallax&attributes({'data-project': index})
-            // PROJECT OVERVIEW
-            .filler-content
-                //- .scroll-arrow
-                    //- p Scroll Down 
-                    <i class="fa  fa-angle-down fa-2x"></i>    
-            .project-overview
-                .description
-                    p - #{result.year} -
-                    h2 #{result.name}
-                    p #{result.description_short}
-                    .social
-                        <i class="fa fa-envelope fa-lg"></i>
-                        <i class="fa fa-twitter fa-lg"></i>
-                        <i class="fa fa-vimeo-square fa-lg"></i>
-                        <i class="fa fa-github fa-lg"></i>
-                        <i class="fa fa-behance-square fa-lg"></i>
-                .hero-box
-                    .overlay
-                    .hero(style='background-image: url(#{result.hero});')
-            // /PROJECT OVERVIEW
-            .project-contents.parallax__group
-                .project-intro.cf
-                    .main-description 
-                        p #{result.description_long}
-                    ul.meta-data
-                        li Client
-                        li #{result.meta.Client}
-                        li Year
-                        li #{result.meta.Year}
-                        li Role
-                        li #{result.meta.Role}
-                        li Team
-                        li #{result.meta.Team}
-                        li Discipline
-                        li #{result.meta.Discipline}
-                        li Medium
-                        li #{result.meta.Medium}
-                        li Technologies
-                        li #{result.meta.Technologies}
-                        li Duration
-                        li #{result.meta.Duration}
+        // /BIOS PAGE   
 
-                // 2X PARALLAX IMAGES LEFT
-                .para-box.parallax__group
-                    blockquote.left.parallax__layer.parallax__layer--fore #{result.pull_quotes[0]}
-                    .image-box(style='background-image: url(#{result.hero});')
-                        .image-left
-                    .image-box.image-box--bottom(style='background-image: url(#{result.hero});')
-                        .image-left
-                            //- p.caption #{result.description_long_2}
 
-                // GRID ITERATOR
-                #grid-one.image-grid-wrapper
-                    #grid-one-slider.grid-slider.slider-transition
+        // PROJECT ITERATOR
+        each result, index in projects
+
+            section.slickNav.project-view.parallax&attributes({'data-project': index})
+                // PROJECT OVERVIEW
+                .filler-content
+                    //- .scroll-arrow
+                        //- p Scroll Down 
+                        <i class="fa  fa-angle-down fa-2x"></i>    
+                .project-overview
+                    .description
+                        p - #{result.year} -
+                        h2 #{result.name}
+                        p #{result.description_short}
+                        .social
+                            <i class="fa fa-envelope fa-lg"></i>
+                            <i class="fa fa-twitter fa-lg"></i>
+                            <i class="fa fa-vimeo-square fa-lg"></i>
+                            <i class="fa fa-github fa-lg"></i>
+                            <i class="fa fa-behance-square fa-lg"></i>
+                    .hero-box
+                        .overlay
+                        .hero(style='background-image: url(#{result.hero});')
+                // /PROJECT OVERVIEW
+                .project-contents.parallax__group
+                    .project-intro.cf
+                        .main-description 
+                            p #{result.description_long}
+                        ul.meta-data
+                            li Client
+                            li #{result.meta.Client}
+                            li Year
+                            li #{result.meta.Year}
+                            li Role
+                            li #{result.meta.Role}
+                            li Team
+                            li #{result.meta.Team}
+                            li Discipline
+                            li #{result.meta.Discipline}
+                            li Medium
+                            li #{result.meta.Medium}
+                            li Technologies
+                            li #{result.meta.Technologies}
+                            li Duration
+                            li #{result.meta.Duration}
+
+                    // 2X PARALLAX IMAGES LEFT
+                    .para-box.parallax__group
+                        blockquote.left.parallax__layer.parallax__layer--fore #{result.pull_quotes[0]}
+                        .image-box(style='background-image: url(#{result.hero});')
+                            .image-left
+                        .image-box.image-box--bottom(style='background-image: url(#{result.hero});')
+                            .image-left
+                                //- p.caption #{result.description_long_2}
+
+                    // GRID ITERATOR
+                    #grid-one.image-grid-wrapper
+                        #grid-one-slider.grid-slider.slider-transition
+                            each image, index in result.images
+                                    img.big-moment-3-color(src = "#{result.images[index].src}")
                         each image, index in result.images
-                                img.big-moment-3-color(src = "#{result.images[index].src}")
-                    each image, index in result.images
-                        .image-grid-container.bounce&attributes({'data-slide': index})
-                            .image-grid(style='background-image: url(#{result.images[index].src});')
-                // /GRID ITERATOR
+                            .image-grid-container.bounce&attributes({'data-slide': index})
+                                .image-grid(style='background-image: url(#{result.images[index].src});')
+                    // /GRID ITERATOR
 
-                .big-moment-1.parallax__group
-                    .big-moment-1-color.parallax__layer--back(style='background-image: url(#{result.images[index].src});')
+                    .big-moment-1.parallax__group
+                        .big-moment-1-color.parallax__layer--back(style='background-image: url(#{result.images[index].src});')
 
-                // GRID ITERATOR 2
-                #grid-two.image-grid-wrapper
-                    #grid-two-slider.grid-slider.slider-transition
+                    // GRID ITERATOR 2
+                    #grid-two.image-grid-wrapper
+                        #grid-two-slider.grid-slider.slider-transition
+                            each image, index in result.images
+                                    img.big-moment-3-color(src = "#{result.images[index].src}")
                         each image, index in result.images
-                                img.big-moment-3-color(src = "#{result.images[index].src}")
-                    each image, index in result.images
-                        .image-grid-container.bounce&attributes({'data-slide': index})
-                            .image-grid(style='background-image: url(#{result.images[index].src});')
-                // /GRID ITERATOR 2
+                            .image-grid-container.bounce&attributes({'data-slide': index})
+                                .image-grid(style='background-image: url(#{result.images[index].src});')
+                    // /GRID ITERATOR 2
 
-                // 2X PARALLAX IMAGES RIGHT
-                .para-box.parallax__group   
-                    .image-box.right(style='background-image: url(#{result.hero});')
-                        .image-right
-                            //- p.caption.caption--2 #{result.description_long_2}
-                    .image-box.right.image-box--bottom(style='background-image: url(#{result.hero});')
-                        .image-right
-                    blockquote.right.parallax__layer.parallax__layer--fore #{result.pull_quotes[0]}
+                    // 2X PARALLAX IMAGES RIGHT
+                    .para-box.parallax__group   
+                        .image-box.right(style='background-image: url(#{result.hero});')
+                            .image-right
+                                //- p.caption.caption--2 #{result.description_long_2}
+                        .image-box.right.image-box--bottom(style='background-image: url(#{result.hero});')
+                            .image-right
+                        blockquote.right.parallax__layer.parallax__layer--fore #{result.pull_quotes[0]}
 
-                #video-frame
-                    iframe(src="//player.vimeo.com/video/95969058" width="1600" height="1000" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
+                    #video-frame
+                        iframe(src="//player.vimeo.com/video/95969058" width="1600" height="1000" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
 
-                .big-moment-2
-                    .big-moment-2-color(style='background-image: url(#{result.images[index].src});')
-                    .img-box(style='background-image: url(#{result.images[index].src});')
-                    p.caption #{result.description_long_2}
+                    .big-moment-2.parallax__group  
+                        .big-moment-2-color(style='background-image: url(#{result.images[index].src});')
+                        .img-box.parallax__layer.parallax__layer--fore(style='background-image: url(#{result.images[index].src});')
+                        p.caption #{result.description_long_2}
 
-                // 2X PARALLAX IMAGES LEFT
-                .para-box
-                    .image-box.image-box--bottom(style='background-image: url(#{result.hero});')
-                        .image-left
-                            p.caption #{result.description_long_2}
+                    // 2X PARALLAX IMAGES LEFT
+                    .para-box
+                        .image-box.image-box--center(style='background-image: url(#{result.hero});')
+                            .image-left
+                                p.caption #{result.description_long_2}
 
-                .big-moment-3
-                    each image, index in result.images
-                        img.big-moment-3-color(src = "#{result.images[index].src}")
+                    .big-moment-3
+                        each image, index in result.images
+                            img.big-moment-3-color(src = "#{result.images[index].src}")
 
-                
-                .close
-                    svg.clothes-line
-                        line(x1="0" y1="0" x2="25" y2="0" stroke-linecap="round")
+                    
+                    .close
+                        svg.clothes-line
+                            line(x1="0" y1="0" x2="25" y2="0" stroke-linecap="round")
 
-    // /PROJECT ITERATOR
+        // /PROJECT ITERATOR
+
+    // /SITE CONTENT
