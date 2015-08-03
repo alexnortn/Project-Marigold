@@ -163,11 +163,11 @@ block content
 
                     // GRID ITERATOR
                     .image-grid-wrapper&attributes({'data-gridSlider': 0})
-                        .grid-slider
+                        #grid-one-slider.grid-slider
                             each image, index in result.images
                                     img.big-moment-3-color(src = "#{result.images[index].src}")
                         each image, index in result.images
-                            .gridOne.image-grid-container.bounce&attributes({'data-slide': index})
+                            #grid-one.image-grid-container.bounce&attributes({'data-slide': index})
                                 .image-grid(style='background-image: url(#{result.images[index].src});')
                     // /GRID ITERATOR
 
@@ -176,11 +176,11 @@ block content
 
                     // GRID ITERATOR 2
                     .image-grid-wrapper&attributes({'data-gridSlider': 1})
-                        .grid-slider
+                        #grid-two-slider.grid-slider
                             each image, index in result.images
                                     img.big-moment-3-color(src = "#{result.images[index].src}")
                         each image, index in result.images
-                            .gridOne.image-grid-container.bounce&attributes({'data-slide': index})
+                            #grid-two.image-grid-container.bounce&attributes({'data-slide': index})
                                 .image-grid(style='background-image: url(#{result.images[index].src});')
                     // /GRID ITERATOR 2
 

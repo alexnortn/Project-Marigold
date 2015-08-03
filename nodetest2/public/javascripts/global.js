@@ -206,8 +206,12 @@ $(document).ready(function() {
         // Image-Grid Overlay
         $('.image-grid-container').click(function() {
             
-            var overlaySlider = $('.grid-slider');
-            var slideIndex    = $(this).data('slide');
+            var overlaySlider  = $('.grid-slider'),
+                containerId    = $(this).attr('id'),  
+                slickInitId    = containerId + "-slider";
+                slideIndex     = $(this).data('slide');
+
+                console.log(slickInitId);
 
             $('.image-grid-container').removeClass("active-grid");
             $('.image-grid-container').addClass("bounce");
@@ -271,9 +275,19 @@ $(document).ready(function() {
 
 
 // Setup for Slick slider plugin Grid #1
-function slickInitOverlay() {
+function slickInitGridOne() {
 
-    $('.grid-slider').slick({
+    $('#grid-slider-one').slick({
+        arrows:             false,
+        dots:               false,
+        lazyLoad:           'progressive',
+        adaptiveHeight:     true
+    });
+}
+
+function slickInitGridTwo() {
+
+    $('#grid-slider-two').slick({
         arrows:             false,
         dots:               false,
         lazyLoad:           'progressive',
@@ -381,3 +395,13 @@ var loadingSequence = [
         }
     }
 ]
+
+
+// jQuery Extentions =============================================================
+
+$.fn.appendAttr = function(attrName, suffix) {
+    this.attr(attrName, function(i, val) {
+        return val + suffix;
+    });
+    return this;
+};
