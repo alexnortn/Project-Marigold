@@ -206,19 +206,24 @@ $(document).ready(function() {
         // Image-Grid Overlay
         $('.image-grid-container').click(function() {
             
-            var overlaySlider  = $('.grid-slider'),
-                containerId    = $(this).attr('id'),  
-                slickInitId    = containerId + "-slider";
+            var containerId    = $(this).closest('div').attr('id'),  
+                slickInitId    = containerId + "-slider",
+                overlaySlider  = $(slickInitId),
                 slideIndex     = $(this).data('slide');
 
-                console.log(slickInitId);
 
-            $('.image-grid-container').removeClass("active-grid");
-            $('.image-grid-container').addClass("bounce");
+            $(containerId).children('.image-grid-container').each(function(i) {
+                
+                $('.image-grid-container').removeClass("active-grid");
+                $('.image-grid-container').addClass("bounce");
+
+            });
+
 
             $(this)
                 .removeClass("bounce")
                 .addClass("active-grid");
+
                 
             if (animateBool) {    
                 
@@ -237,11 +242,18 @@ $(document).ready(function() {
             });
 
             overlaySlider.on('swipe', function(event) {
-                $('.image-grid-container').removeClass("active-grid");
-                $('.image-grid-container').addClass("bounce");
+                
+                $(containerId).children('.image-grid-container').each(function(i) {
+                
+                    $('.image-grid-container').removeClass("active-grid");
+                    $('.image-grid-container').addClass("bounce");
 
-                var currentSlide = $('.grid-slider').slick('slickCurrentSlide');
-                var activeSlide  = $('.image-grid-wrapper').find("[data-slide='" + currentSlide + "']");
+                });
+
+                var currentSlide = $(containerId).slick('slickCurrentSlide');
+                var activeSlide  = $(containerId)
+                                        .children('.image-grid-container')
+                                        .find("[data-slide='" + currentSlide + "']");
                     activeSlide
                         .addClass("active-grid")
                         .removeClass("bounce");
