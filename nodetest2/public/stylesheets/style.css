@@ -1462,6 +1462,18 @@ label[for="nav-trigger"] hr:nth-child(3) {
 			transform: translateY(-15px);
 }
 
+.bounce-sm {
+	-webkit-transition: all ease-in-out 250ms; /* Safari */
+    		transition: all ease-in-out 250ms;
+}
+
+.bounce-sm:hover {
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.18); 
+	cursor: pointer;
+			transform: translateY(-5px);
+	-webkit-transform: translateY(-5px);
+}
+
 .active-grid::after {
 	content: "";
 	position: absolute;

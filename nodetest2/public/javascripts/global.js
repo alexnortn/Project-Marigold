@@ -211,25 +211,27 @@ $(document).ready(function() {
                 overlaySlider  = $(slickInitId),
                 slideIndex     = $(this).data('slide');
 
-            var ccc = $(containerId);
-
-            console.log(ccc);
-
             $(containerId)
                 .children('.image-grid-container')
                     .removeClass("active-grid")
-                    .addClass("bounce");
+                    .addClass("bounce-sm");
 
             $(this)
-                .removeClass("bounce")
+                .removeClass("bounce-sm")
                 .addClass("active-grid");
+
+
+            overlaySlider.on('init', function(event) {
+                animateBool = false;
+            });
 
                 
             if (animateBool) {    
                 
                 $(containerId)
                     .children('.image-grid-container')
-                        .addClass('shrink-grid');
+                        .removeClass("bounce")
+                        .addClass('bounce-sm shrink-grid');
                     
                 overlaySlider.addClass('active-grid-slider');
 
@@ -241,26 +243,19 @@ $(document).ready(function() {
                 overlaySlider.slick('slickGoTo', slideIndex, false);  // Once loaded, animate to new position
             }
 
-            overlaySlider.on('init', function(event) {
-                animateBool = false;
-            });
-
             overlaySlider.on('swipe', function(event) {
                 
                 $(containerId)
                     .children('.image-grid-container')
                         .removeClass("active-grid")
-                        .addClass("bounce");
+                        .addClass("bounce-sm");
 
                 var currentSlide = $(slickInitId).slick('slickCurrentSlide');
                 var activeSlide  = $(containerId)
                                         .find("[data-slide='" + currentSlide + "']");
                     activeSlide
                         .addClass("active-grid")
-                        .removeClass("bounce");
-
-                    console.log(activeSlide);
-                    console.log($(containerId));
+                        .removeClass("bounce-sm");
             });
 
         });
