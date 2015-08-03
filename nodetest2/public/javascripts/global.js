@@ -88,7 +88,7 @@ $(document).ready(function() {
         $('.project-overview').velocity("scroll", { 
             container: $('.project-view'),
             duration:  800,
-            delay:     150,
+            delay:     250,
             offset:    '850px',
             mobileHA:  false
         });
