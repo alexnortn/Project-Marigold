@@ -240,17 +240,16 @@ $(document).ready(function() {
                     setTimeout(
                         function(e) {
 
-                            var scrollInId = $('.project-view'),
-                                scrollTo = centerOffest(scrollInId, overlaySlider);
+                            var scrollInId = $('.project-view');
+                            //     scrollTo = -centerOffest(scrollInId, overlaySlider);
 
-                                console.log('scrollTo' + scrollTo );
+                            //     console.log('scrollTo' + scrollTo );
 
-                            overlaySlider.velocity("scroll", { 
+                            $(this).velocity("scroll", { 
                                 container: scrollInId,
                                 duration:  800,
                                 delay:     0,
-                                mobileHA:  false,
-                                offset:    scrollTo
+                                mobileHA:  false
                             });
 
                     }, 500);
