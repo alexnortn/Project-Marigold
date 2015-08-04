@@ -94,7 +94,7 @@ $(document).ready(function() {
             container: $('.project-view'),
             duration:  800,
             delay:     250,
-            offset:    '850px',
+            offset:    '800px',
             mobileHA:  false
         });
         
@@ -145,162 +145,197 @@ $(document).ready(function() {
 
         });
 
-        // When the window is resized some fany ui positioning
-        $(window).resize(function() {
+    // When the window is resized some fany ui positioning
+    $(window).resize(function() {
 
-                newWidth = $fluidEl.width();
-                console.log(newWidth);
+            newWidth = $fluidEl.width();
+            console.log(newWidth);
 
-            // Resize all videos according to their own aspect ratio
-            $allVideos.each(function() {
+        // Resize all videos according to their own aspect ratio
+        $allVideos.each(function() {
 
-                var $el = $(this);
-                $el
-                  .width(newWidth)
-                  .height(newWidth * $el.data('aspectRatio'));
+            var $el = $(this);
+            $el
+              .width(newWidth)
+              .height(newWidth * $el.data('aspectRatio'));
 
-            });
-
-        // Kick off one resize to fix all videos on page load
-        }).resize();
-
-        function videoSize() {
-
-                newWidth = $fluidEl.width();
-                console.log(newWidth);
-
-            // Resize all videos according to their own aspect ratio
-            $allVideos.each(function() {
-
-                var $el = $(this);
-                $el
-                  .width(newWidth)
-                  .height(newWidth * $el.data('aspectRatio'));
-
-            });
-
-        };
-
-        // Bios readmore function
-        $('#bio').click(function(){
-            $('#readMore').slideToggle('slow', 'swing', function() {
-                if($(this).is(':visible')) {
-                    $('#bio').html("Read Less")
-                    $('#bios-box').css("width", '411px');
-                    $('#bios-text').css("padding-right", '20px');
-                    $('#bios-text').css("overflowY", 'scroll');
-                }
-                else {
-                    $('#bio').html("Read More");
-                    $('#bios-box').css("width", '391px');
-                    $('#bios-text').css("padding-right", '0px');
-                    $('#bios-text').css("overflowY", 'hidden');
-                }
-
-                $('#bios-box').centerIn('#bios', { direction: 'vertical'});
-            });            
         });
 
-        // Event Handlers
-        $('.nav-footer').click(function(){
-            $('#bios').velocity("scroll", { duration: 1000, easing: "ease-in-out" });
+    // Kick off one resize to fix all videos on page load
+    }).resize();
+
+    function videoSize() {
+
+            newWidth = $fluidEl.width();
+            console.log(newWidth);
+
+        // Resize all videos according to their own aspect ratio
+        $allVideos.each(function() {
+
+            var $el = $(this);
+            $el
+              .width(newWidth)
+              .height(newWidth * $el.data('aspectRatio'));
+
         });
 
-        // Image-Grid Overlay
-        $('.image-grid-container').click(function() {
+    };
+
+    // Bios readmore function
+    $('#bio').click(function(){
+        $('#readMore').slideToggle('slow', 'swing', function() {
+            if($(this).is(':visible')) {
+                $('#bio').html("Read Less")
+                $('#bios-box').css("width", '411px');
+                $('#bios-text').css("padding-right", '20px');
+                $('#bios-text').css("overflowY", 'scroll');
+            }
+            else {
+                $('#bio').html("Read More");
+                $('#bios-box').css("width", '391px');
+                $('#bios-text').css("padding-right", '0px');
+                $('#bios-text').css("overflowY", 'hidden');
+            }
+
+            $('#bios-box').centerIn('#bios', { direction: 'vertical'});
+        });            
+    });
+
+    // Event Handlers
+    $('.nav-footer').click(function(){
+        $('#bios').velocity("scroll", { duration: 1000, easing: "ease-in-out" });
+    });
+
+    // Image-Grid Overlay
+    $('.image-grid-container').click(function() {
+        
+        var containerId    = '#' + $(this).parent().attr('id'),  
+            slickInitId    = containerId + "-slider",
+            overlaySlider  = $(slickInitId),
+            slideIndex     = $(this).data('slide');
+
+            console.log("slideIndex " + slideIndex);
+            console.log("slickInitId " + slickInitId);
+
+
+        $(containerId)
+            .children('.image-grid-container')
+                .removeClass("active-grid")
+                .addClass("bounce-sm");
+
+        $(this)
+            .removeClass("bounce-sm")
+            .addClass("active-grid");
+
             
-            var containerId    = '#' + $(this).parent().attr('id'),  
-                slickInitId    = containerId + "-slider",
-                overlaySlider  = $(slickInitId),
-                slideIndex     = $(this).data('slide');
+        if (!overlaySlider.hasClass('slick-initialized')) {    
+            
+            $(containerId)
+                .children('.image-grid-container')
+                    .removeClass("bounce")
+                    .addClass('bounce-sm shrink-grid');
+                
+            overlaySlider.addClass('active-grid-slider');
 
-                console.log("slideIndex " + slideIndex);
-                console.log("slickInitId " + slickInitId);
+            // Add Slick slider with current parent id
+            addSlick(slickInitId, false);
+                $(slickInitId).removeClass('slider-transition');
 
+                // Wait to calculate page offset until class transition ends
+                setTimeout(
+                    function(e) {
 
+                        var scrollInId = $('.project-view');
+                        //     scrollTo = -centerOffest(scrollInId, overlaySlider);
+
+                        //     console.log('scrollTo' + scrollTo );
+
+                        $(this).velocity("scroll", { 
+                            container: scrollInId,
+                            duration:  800,
+                            delay:     0,
+                            mobileHA:  false
+                        });
+
+                }, 500);
+
+            overlaySlider.slick('slickGoTo', slideIndex, true);   // Do not animate to first position
+
+        } else {
+            overlaySlider.slick('slickGoTo', slideIndex, false);  // Once loaded, animate to new position
+        }
+
+        overlaySlider.on('swipe', function(event) {
+            
             $(containerId)
                 .children('.image-grid-container')
                     .removeClass("active-grid")
                     .addClass("bounce-sm");
 
-            $(this)
-                .removeClass("bounce-sm")
-                .addClass("active-grid");
-
-                
-            if (!overlaySlider.hasClass('slick-initialized')) {    
-                
-                $(containerId)
-                    .children('.image-grid-container')
-                        .removeClass("bounce")
-                        .addClass('bounce-sm shrink-grid');
-                    
-                overlaySlider.addClass('active-grid-slider');
-
-                // Add Slick slider with current parent id
-                addSlick(slickInitId, false);
-                    $(slickInitId).removeClass('slider-transition');
-
-                    // Wait to calculate page offset until class transition ends
-                    setTimeout(
-                        function(e) {
-
-                            var scrollInId = $('.project-view');
-                            //     scrollTo = -centerOffest(scrollInId, overlaySlider);
-
-                            //     console.log('scrollTo' + scrollTo );
-
-                            $(this).velocity("scroll", { 
-                                container: scrollInId,
-                                duration:  800,
-                                delay:     0,
-                                mobileHA:  false
-                            });
-
-                    }, 500);
-
-                overlaySlider.slick('slickGoTo', slideIndex, true);   // Do not animate to first position
-
-            } else {
-                overlaySlider.slick('slickGoTo', slideIndex, false);  // Once loaded, animate to new position
-            }
-
-            overlaySlider.on('swipe', function(event) {
-                
-                $(containerId)
-                    .children('.image-grid-container')
-                        .removeClass("active-grid")
-                        .addClass("bounce-sm");
-
-                var currentSlide = $(slickInitId).slick('slickCurrentSlide');
-                var activeSlide  = $(containerId)
-                                        .find("[data-slide='" + currentSlide + "']");
-                    activeSlide
-                        .addClass("active-grid")
-                        .removeClass("bounce-sm");
-            });
-
+            var currentSlide = $(slickInitId).slick('slickCurrentSlide');
+            var activeSlide  = $(containerId)
+                                    .find("[data-slide='" + currentSlide + "']");
+                activeSlide
+                    .addClass("active-grid")
+                    .removeClass("bounce-sm");
         });
 
+    });
 
-    /*
 
-        $('html').bind('mousewheel DOMMouseScroll', function (e) {
-            var delta = (e.originalEvent.wheelDelta || -e.originalEvent.detail);
-        
+    // Navigation Functions
+
+    var _sections = $('.slickNav'),
+        _sectionCount = _sections.length,
+        _sectionCurrent = 0;
+
+        // set first page to current
+        $(_sections[0]).addClass('currentSection');
+
+
+    $('html').bind('mousewheel DOMMouseScroll', function (e) {
+        var delta = (e.originalEvent.wheelDelta || -e.originalEvent.detail);
+
+        if (open == false) {
+    
             if (delta < 0) {
-                console.log('You scrolled down');
-                $("html").velocity("scroll", { offset: ($(document).scrollTop() + $(window).height()), duration: 1000, easing: "ease-in-out" });
-                // $('#bios').velocity("scroll", { duration: 1000, easing: "ease-in-out" });
+
+                    console.log('You scrolled down');   
+
+                if (_sectionCurrent < _sectionCount - 1) {
+                    
+                    // Increment _sectionCurrent 
+                     _sectionCurrent++
+
+                     console.log(_sectionCurrent + " down");
+
+                     // Scroll to section
+                    $(_sections[_sectionCurrent]).velocity("scroll", { duration: 750, easing: "ease-in-out" });
+
+                }
+
             } else if (delta > 0) {
-                console.log('You scrolled up');
-                // $('#interactive').velocity("scroll", { duration: 1000, easing: "ease-in-out" });
-                $("html").velocity("scroll", { offset: -($(document).scrollTop() - ($(document).scrollTop()-$(window).height())), duration: 1000, easing: "ease-in-out" });
+                    
+                    console.log('You scrolled up');
+                
+                if (_sectionCurrent > 0) {
+                    
+                    // Decrement _sectionCurrent 
+                     _sectionCurrent--
+
+                     console.log(_sectionCurrent + " up");
+
+                     // Scroll to section
+                    $(_sections[_sectionCurrent]).velocity("scroll", { duration: 750, easing: "ease-in-out" });
+
+                }
             }
-        });
+        }
+
+    });
 
         
-    */
+    
 
 });
 
