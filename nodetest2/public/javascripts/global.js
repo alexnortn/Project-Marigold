@@ -78,12 +78,17 @@ $(document).ready(function() {
     });
 
     function openProject() {
-        // $('#logo p').fadeToggle(1000);
         $('#pagination').fadeToggle(1000);
         $('#arrow').fadeToggle(1000);
         $('.project-contents').fadeToggle(1000);
+
+        var bottomSlick = $('.big-moment-3');
+
         // Initialize Slick object 
-        addSlick($('.big-moment-3'), true);
+        if (!bottomSlick.hasClass('slick-initialized')) { 
+            addSlick($('.big-moment-3'), true);
+        };
+
         
         $('.project-overview').velocity("scroll", { 
             container: $('.project-view'),
