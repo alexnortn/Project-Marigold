@@ -303,11 +303,17 @@ $(document).ready(function() {
                     console.log('You scrolled down');   
 
                 if (_sectionCurrent < _sectionCount - 1) {
+
+                    // Remove active class
+                    $(_sections[_sectionCurrent]).removeClass('currentSection');
                     
                     // Increment _sectionCurrent 
                      _sectionCurrent++
 
-                     console.log(_sectionCurrent + " down");
+                     // Add active class
+                     $(_sections[_sectionCurrent]).addClass('currentSection');
+
+                        console.log(_sectionCurrent + " down");
 
                      // Scroll to section
                     $(_sections[_sectionCurrent]).velocity("scroll", { duration: 750, easing: "ease-in-out" });
@@ -319,9 +325,15 @@ $(document).ready(function() {
                     console.log('You scrolled up');
                 
                 if (_sectionCurrent > 0) {
+
+                    // Remove active class
+                    $(_sections[_sectionCurrent]).removeClass('currentSection');
                     
                     // Decrement _sectionCurrent 
                      _sectionCurrent--
+
+                     // Add active class
+                     $(_sections[_sectionCurrent]).addClass('currentSection');
 
                      console.log(_sectionCurrent + " up");
 
