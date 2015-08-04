@@ -42,8 +42,6 @@ $(document).ready(function() {
 
     // Center In
 
-    $('#content-wrapper').alwaysCenterIn(window, { top: "-3%" });
-
     $('.project-overview').alwaysCenterIn(window, { top: "-3%" });
     $('#pagination').alwaysCenterIn(window, { direction: 'vertical' });
     

@@ -1386,7 +1386,9 @@ label[for="nav-trigger"] hr:nth-child(3) {
 	margin-top: 0;
 }
 
-p.center-caption {
+p
+
+.center-caption {
 	margin-left: auto;
     margin-right: auto;
     display: block;
