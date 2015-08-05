@@ -89,16 +89,13 @@ block content
         section#bios.slickNav
             
             // BIOS BOX
-            #bios-box
-                #triangle-top
-                #rectangle-bottom
-                #bios-text
-                    p !{bios_text.description_short}
-                    p#readMore !{bios_text.description_long}
-                ul
-                    li.link 
-                        p#bio Read More
-                .social
+            #bios-content
+                h1 !{bios_text.description_headline}
+                p.short  !{bios_text.description_short}
+                p.long !{bios_text.description_long}
+                button
+                    p Read More
+                //- .social
                     <i class="fa fa-envelope fa-2x"></i>
                     <i class="fa fa-twitter fa-2x"></i>
                     <i class="fa fa-vimeo-square fa-2x"></i>

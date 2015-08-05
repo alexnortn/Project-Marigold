@@ -47,6 +47,53 @@ table {
 	border-spacing: 0;
 }
 
+[role="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+    -webkit-box-sizing: content-box;
+       -moz-box-sizing: content-box;
+            box-sizing: content-box;
+}
+
+/* Reset `button` and button-style `input` default styles */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+    background: none;
+    border: 0;
+    color: inherit;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-appearance: button; /* for input */
+    -webkit-user-select: none; /* for button */
+       -moz-user-select: none;
+        -ms-user-select: none;
+}
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/* Make `a` like a button */
+[role="button"] {
+    color: inherit;
+    cursor: default;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    white-space: pre;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+}
+
 /*
 
 END OF CSS RESET
@@ -387,34 +434,73 @@ strong {
 	height: 100%;
 }
 
-#bios-box {
-	position: absolute;
-	width: 391px;
+#bios-content {
+	position: relative;
+	float: left;
+	margin-top: 12%;
+	margin-left: 15%;
+	width: 950px;
 	-webkit-transition: all 250ms; /* Safari */
     		transition: all 250ms;
 }
 
-#bios-text {
-	overflow-y: hidden;
-	max-height: 300px;
+#bios-content h1 {
+	text-align: left;
+    margin-top: 55px;
+    margin-bottom: 25px;
+    font-family: BerlingskeSerif-Regular, serif;
+    font-size: 55px;
+    line-height: 1.5em;
 }
 
-#bios-box h2 {
+#bios-content p {
 	text-align: left;
-	margin-top: 55px;
-	margin-bottom: 25px;
-	font-family: BerlingskeSans-Bold, sans-serif;
-	text-transform: uppercase;
-	font-size: 12px;
-	letter-spacing: 2px;
-}
-
-#bios-box p {
-	text-align: left;
-	font-family: BerlingskeSansRegular, sans-serif;
-	font-size: 13px;
-	line-height: 2.5em;
+	font-family: BerlingskeSerif-Regular, serif;
+	font-size: 22px;
+	margin-left: 125px;
+	line-height: 2em;
+	letter-spacing: 0;
 	/*padding-bottom: 30px;*/
+}
+
+#bios-content br {
+	line-height: 2.75em;
+}
+
+#bios-content .short {
+	border-top: 1px dotted black;
+    padding-top: 30px;
+    padding-bottom: 1em;
+}
+
+#bios-content p.long {
+	text-align: left;
+    font-family: BerlingskeSans-Regular, serif;
+    font-size: 16px;
+    line-height: 2.25em;
+}
+
+#bios-content button {
+	background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid black;
+    height: 60px;
+    width: 200px;
+    margin-left: 125px;
+    margin-top: 30px;
+}
+
+#bios-content button p {
+    font-family: BerlingskeSans-bold, serif;
+    font-size: 14px;
+    line-height: 1em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 4px;
+}
 }
 
 #bios-box img {

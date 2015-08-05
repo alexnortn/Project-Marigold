@@ -44,11 +44,6 @@ $(document).ready(function() {
 
     $('.project-overview').alwaysCenterIn(window, { top: "-3%" });
     $('#pagination').alwaysCenterIn(window, { direction: 'vertical' });
-    
-    var bios_div = $('#bios');
-    
-    $('#bios-box').alwaysCenterIn(bios_div);
-    $('.scroll-arrow').alwaysCenterIn(window, { direction: 'horizontal' });
 
     // Display Interaction Info
     $('#cross-circle').hover(function() {
@@ -178,26 +173,6 @@ $(document).ready(function() {
         });
 
     };
-
-    // Bios readmore function
-    $('#bio').click(function(){
-        $('#readMore').slideToggle('slow', 'swing', function() {
-            if($(this).is(':visible')) {
-                $('#bio').html("Read Less")
-                $('#bios-box').css("width", '411px');
-                $('#bios-text').css("padding-right", '20px');
-                $('#bios-text').css("overflowY", 'scroll');
-            }
-            else {
-                $('#bio').html("Read More");
-                $('#bios-box').css("width", '391px');
-                $('#bios-text').css("padding-right", '0px');
-                $('#bios-text').css("overflowY", 'hidden');
-            }
-
-            $('#bios-box').centerIn('#bios', { direction: 'vertical'});
-        });            
-    });
 
     // Event Handlers
     $('.nav-footer').click(function(){
