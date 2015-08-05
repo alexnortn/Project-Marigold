@@ -1447,6 +1447,8 @@ p.center-caption {
 
 .active-grid-slider {
 	width: 100%;
+	transform: scale(0.85);
+	margin-bottom: 0;
 }
 
 .image-grid-wrapper {
