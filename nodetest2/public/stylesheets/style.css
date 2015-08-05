@@ -438,10 +438,10 @@ strong {
 	position: relative;
 	float: left;
 	margin-top: 12%;
-	margin-left: 15%;
+	margin-left: 16%;
 	width: 950px;
-	-webkit-transition: all 250ms; /* Safari */
-    		transition: all 250ms;
+	-webkit-transition: all ease-in-out 250ms; /* Safari */
+    		transition: all ease-in-out 250ms;
 }
 
 #bios-content h1 {
@@ -467,28 +467,50 @@ strong {
 	line-height: 2.75em;
 }
 
-#bios-content .short {
+#bios-content #short {
 	border-top: 1px dotted black;
     padding-top: 30px;
     padding-bottom: 1em;
 }
 
-#bios-content p.long {
+#bios-content #long {
 	text-align: left;
     font-family: BerlingskeSans-Regular, serif;
     font-size: 16px;
-    line-height: 2.25em;
+    line-height: 2em;
+    display: none;
 }
 
 #bios-content button {
 	background-color: transparent;
     border-radius: 10px;
-    border: 1px solid black;
-    height: 60px;
+    border: 1px solid #C3C3C3;
+    focus: outline:0;
+    height: 66px;
     width: 200px;
     margin-left: 125px;
-    margin-top: 30px;
+    margin-top: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.18);
+    -webkit-transition: all ease-in-out 250ms;
+    		transition: all ease-in-out 250ms;
 }
+
+#bios-content button:hover {
+	cursor: pointer;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+}
+
+#bios-content button:active {
+	cursor: pointer;
+	background-color: transparent;
+	color: black;
+	outline: none;
+}
+
+#bios-content button:focus {
+	outline: 0;
+}
+
 
 #bios-content button p {
     font-family: BerlingskeSans-bold, serif;
@@ -500,44 +522,6 @@ strong {
     margin-right: auto;
     text-align: center;
     margin-top: 4px;
-}
-}
-
-#bios-box img {
-	width:  35px;
-	height: 35px;
-	display: inline-block;
-	position: relative;
-	padding: 5px;
-}
-
-#bios-box ul {
-	width: 391px;
-	position: relative;
-	display: inline-block;
-	margin-top: 30px;
-	border-top: 1.25px dotted black;
-	border-bottom: 1.25px dotted black;
-	height: 70px;
-	line-height: 70px;
-}
-
-#bios-box ul li p {
-	width: 90px;
-	text-decoration: none;
-	text-align: center;
-	color: black;
-	font-family: BerlingskeSans-Bold, sans-serif;
-	text-transform: uppercase;
-	font-size: 12px;
-	letter-spacing: 2px;
-	margin-left: auto;
-	margin-right: auto;
-	padding-bottom: 2px;
-	padding-top: 22px;
-	border-bottom: 1px solid white;
-	-webkit-transition: all 250ms; /* Safari */
-    		transition: all 250ms;
 }
 
 #readMore {

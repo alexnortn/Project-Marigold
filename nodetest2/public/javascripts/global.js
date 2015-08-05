@@ -174,10 +174,23 @@ $(document).ready(function() {
 
     };
 
+
     // Event Handlers
+
+
     $('.nav-footer').click(function(){
         $('#bios').velocity("scroll", { duration: 1000, easing: "ease-in-out" });
     });
+
+
+    // Bios page button
+    $('#bios-button').click(function() {
+        $(this).velocity("fadeOut", { duration: 500 });
+        $('#long').velocity("fadeIn", { delay: 500, duration: 666 });
+    })
+
+
+
 
     // Image-Grid Overlay
     $('.image-grid-container').click(function() {
