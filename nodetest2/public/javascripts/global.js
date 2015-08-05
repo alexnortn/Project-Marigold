@@ -398,6 +398,7 @@ var setGreeting = function () {
     console.log("Current hour is " + n);
 
     $('#greeting').prepend(greeting);
+    $('#bios-header').prepend(greeting);
 }
 
 // Set the bottom element width to full using jQuery
