@@ -188,6 +188,7 @@ $(document).ready(function() {
     $('#bios-button').click(function() {
         $(this).velocity("fadeOut", { duration: 500 });
         $('#long').velocity("fadeIn", { delay: 500, duration: 666 });
+        $('#bios-content').alwaysCenterIn($('#bios'), { direction: 'vertical' });
     })
 
 
