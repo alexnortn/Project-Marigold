@@ -437,7 +437,7 @@ strong {
 #bios-content {
 	position: absolute;
 	float: left;
-	/*margin-top: 12%;*/
+	margin-top: 14%;
 	margin-left: 16%;
 	width: 950px;
 	-webkit-transition: all ease-in-out 250ms; /* Safari */
@@ -733,7 +733,7 @@ p.directions {
 
 .project-overview:hover .description {
 	box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
-	/*border: solid 1px rgba(218, 218, 218, 0);*/
+	border: solid 1px rgba(218, 218, 218, 0);
 }
 
 #logo {
@@ -1131,14 +1131,14 @@ label[for="nav-trigger"] hr:nth-child(3) {
 	position: absolute;
 	bottom: -15%;
 	z-index: 2;
-	/*border: solid 1px rgba(218, 218, 218, 1);*/
+	border: solid 1px rgba(218, 218, 218, 1);
 	box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.18);
 	-webkit-transition: all 250ms; /* Safari */
 			transition: all 250ms;
 }
 
 .description h3 {
-	margin-bottom: 25px;
+	margin-bottom: 50px;
 	margin-top: 5px;
 	text-align: center;
 }
@@ -1154,7 +1154,7 @@ label[for="nav-trigger"] hr:nth-child(3) {
 .description p {
 	font-size: 12px;
 	line-height: 2em;
-	margin-bottom: 35px;
+	margin-bottom: 50px;
 	text-align: center;
 }
 
