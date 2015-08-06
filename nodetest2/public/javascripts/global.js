@@ -44,6 +44,7 @@ $(document).ready(function() {
 
     $('.project-overview').alwaysCenterIn(window, { top: "-3%" });
     $('#pagination').alwaysCenterIn(window, { direction: 'vertical' });
+    $('#bios-content').alwaysCenterIn($('#bios'), { direction: 'vertical' });
 
     // Display Interaction Info
     $('#cross-circle').hover(function() {
