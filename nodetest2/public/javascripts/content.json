@@ -1,8 +1,9 @@
 {
     "projects": [
         {
-            "name": "Gestural Lamp",
-            "year": "2014",
+            "route" :"gestural-lamp",
+            "name"  : "Gestural Lamp",
+            "year"  : "2014",
             "medium": [
                 "Paper",
                 "Wood",

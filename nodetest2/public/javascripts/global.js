@@ -8,6 +8,10 @@ var userListData = [],
     projects,
     open = false,
     menu = false;
+
+var _sections = $('.slickNav'),
+    _sectionCurrent;
+
     // attachFastClick = require('fastclick');    
 
 
@@ -25,9 +29,6 @@ $(document).ready(function() {
 
     // Attach Fast Click
     // attachFastClick(document.body);
-
-    // Routing
-        var _sectionCurrent;
 
     hashRoute();
 
@@ -283,8 +284,7 @@ $(document).ready(function() {
 
     $('html').bind('mousewheel DOMMouseScroll', function (e) {
         var delta = (e.originalEvent.wheelDelta || -e.originalEvent.detail);
-        var _sections = $('.slickNav'),
-            _sectionCount = _sections.length;
+        var _sectionCount = _sections.length;
 
         if (open == false) {
     
