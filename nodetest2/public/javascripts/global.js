@@ -354,9 +354,10 @@ $(document).ready(function() {
 function hashRoute() {
 
     // Set current url hash
+    var loaded;
     var _sections = $('.slickNav');
 
-    if (window.location.hash == "") {
+    if ((window.location.hash == "") && (loaded !== true)) {
 
         // If the user requests the index page, redirect to #bios
         window.location.hash = "bios";
@@ -365,6 +366,7 @@ function hashRoute() {
         _sectionCurrent = $(_sections).index($('#bios'));
 
         console.log("section current " + _sectionCurrent);
+        loaded = true;
 
     } else {
 
@@ -384,6 +386,28 @@ function hashRoute() {
         .addClass('currentSection')
         .velocity("scroll", { duration: 1});
 
+}
+
+// Dealing with in-page use generated routinge events (copy+paste stack overflow hotfix)
+
+if ("onhashchange" in window) { // event supported?
+    window.onhashchange = function () {
+        // hashChanged(window.location.hash);
+        console.log("HASH CHANGE");
+        // update current hash
+        hashRoute();
+    }
+}
+else { // event not supported:
+    var storedHash = window.location.hash;
+    window.setInterval(function () {
+        if (window.location.hash != storedHash) {
+            storedHash = window.location.hash;
+            // hashChanged(storedHash);
+            // update current hash
+            hashRoute();
+        }
+    }, 100);
 }
 
 function setHash(_sectionCurrent) {
