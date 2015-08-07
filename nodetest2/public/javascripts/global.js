@@ -271,62 +271,64 @@ $(document).ready(function() {
     // Navigation Functions
 
     $('html').bind('mousewheel DOMMouseScroll', function (e) {
-        var delta = (e.originalEvent.wheelDelta || -e.originalEvent.detail);
-        var _sectionCount = _sections.length;
+        setTimeout( function() {
+            var delta = (e.originalEvent.wheelDelta || -e.originalEvent.detail);
+            var _sectionCount = _sections.length;
 
-        if (open == false) {
-    
-            if (delta < 0) {
+            if (open == false) {
+        
+                if (delta < 0) {
 
-                    console.log('You scrolled down');   
+                        console.log('You scrolled down');   
 
-                if (_sectionCurrent < _sectionCount - 1) {
+                    if (_sectionCurrent < _sectionCount - 1) {
 
-                    // Remove active class
-                    $(_sections[_sectionCurrent]).removeClass('currentSection');
+                        // Remove active class
+                        $(_sections[_sectionCurrent]).removeClass('currentSection');
+                        
+                        // Increment _sectionCurrent 
+                         _sectionCurrent++
+
+                         // Add active class
+                         $(_sections[_sectionCurrent]).addClass('currentSection');
+
+                            console.log(_sectionCurrent + " down");
+
+                         // Scroll to section
+                        $(_sections[_sectionCurrent]).velocity("scroll", { duration: 750, easing: "ease-in-out" });
+
+                        // Set the url hash
+                        setHash(_sectionCurrent);
+
+                    }
+
+                } else if (delta > 0) {
+                        
+                        console.log('You scrolled up');
                     
-                    // Increment _sectionCurrent 
-                     _sectionCurrent++
+                    if (_sectionCurrent > 0) {
 
-                     // Add active class
-                     $(_sections[_sectionCurrent]).addClass('currentSection');
+                        // Remove active class
+                        $(_sections[_sectionCurrent]).removeClass('currentSection');
+                        
+                        // Decrement _sectionCurrent 
+                         _sectionCurrent--
 
-                        console.log(_sectionCurrent + " down");
+                         // Add active class
+                         $(_sections[_sectionCurrent]).addClass('currentSection');
 
-                     // Scroll to section
-                    $(_sections[_sectionCurrent]).velocity("scroll", { duration: 750, easing: "ease-in-out" });
+                         console.log(_sectionCurrent + " up");
 
-                    // Set the url hash
-                    setHash(_sectionCurrent);
+                         // Scroll to section
+                        $(_sections[_sectionCurrent]).velocity("scroll", { duration: 750, easing: "ease-in-out" });
 
-                }
+                        // Set the url hash
+                        setHash(_sectionCurrent);
 
-            } else if (delta > 0) {
-                    
-                    console.log('You scrolled up');
-                
-                if (_sectionCurrent > 0) {
-
-                    // Remove active class
-                    $(_sections[_sectionCurrent]).removeClass('currentSection');
-                    
-                    // Decrement _sectionCurrent 
-                     _sectionCurrent--
-
-                     // Add active class
-                     $(_sections[_sectionCurrent]).addClass('currentSection');
-
-                     console.log(_sectionCurrent + " up");
-
-                     // Scroll to section
-                    $(_sections[_sectionCurrent]).velocity("scroll", { duration: 750, easing: "ease-in-out" });
-
-                    // Set the url hash
-                    setHash(_sectionCurrent);
-
+                    }
                 }
             }
-        }
+        }, 100);
 
     });
 
@@ -354,6 +356,7 @@ function hashRoute() {
         _sectionCurrent = $(_sections).index($('#bios'));
 
         console.log("section current " + _sectionCurrent);
+        hashChanged('#bios')
         loaded = true;
 
     } else {
