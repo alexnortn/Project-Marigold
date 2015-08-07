@@ -38,6 +38,10 @@ $(document).ready(function() {
     // Set Initial Width
     setWidth();
 
+    // Call pagination
+    pagination(_sections);
+    paginationUpdate(_sectionCurrent);
+
     // Initial FadeIn
     // fadeInPage();
     window.setTimeout(function() { loader() }, 5000);
@@ -124,12 +128,12 @@ $(document).ready(function() {
         // Figure out and save aspect ratio for each video
         $allVideos.each(function() {
 
-          $(this)
-            .data('aspectRatio', this.height / this.width)
-
-            // and remove the hard coded width/height
-            .removeAttr('height')
-            .removeAttr('width');
+            $(this)
+                .data('aspectRatio', this.height / this.width)
+    
+                    // and remove the hard coded width/height
+                    .removeAttr('height')
+                .removeAttr('width');
 
         });
 
@@ -332,6 +336,22 @@ $(document).ready(function() {
 
     });
 
+    // Pagination event listener
+    $('.pagination').click(function() {
+
+        _sectionCurrent = $('.pagination').index($(this));
+        paginationUpdate(_sectionCurrent);
+
+        $(_sections[_sectionCurrent]).velocity("scroll", { duration: 750, easing: "ease-in-out" });
+
+        setTimeout(function() {
+
+            setHash(_sectionCurrent);
+
+        }, 750);
+
+    });
+
         
     
 
@@ -420,10 +440,37 @@ function hashChanged(_hash) {
                 $('header').delay( 100 ).fadeIn( 400 );
                 console.log("fade IN");
             }
+
+            // Affect pagination on navigation change
+            paginationUpdate(_sectionCurrent);
+
         }
-    , 125 );
+    , 250 );
+
+
 
 };
+
+function pagination(_sections) {
+
+    $(_sections).each(function(i, obj) {
+
+        var id = $(this).attr('id');
+
+        // For each element with '_sections' class; append new pagination to dom.
+        $('#pagination').append('<div class = "pagination"></div>');
+        $('.pagination').eq(i).attr( 'data-sectionId', id );
+
+    });
+
+}
+
+function paginationUpdate(_sectionCurrent) {
+
+    $('.pagination').removeClass('pagination-active');
+    $('.pagination').eq(_sectionCurrent).addClass('pagination-active');
+
+}
 
 
 // Setup for Slick slider plugin Grid #1
