@@ -60,10 +60,10 @@ $(document).ready(function() {
 
     // Control Header
     $(window).on('scroll', function() {
-        if ( $(document).scrollTop() > $(window).height() - 50) {
+        if (window.location.hash != "#interactive") {
             $('header').fadeIn(500);
             console.log("fade IN");
-        } else if ( $(document).scrollTop() < $(window).height() - 50) {
+        } else {
             $('header').fadeOut(500);
             console.log("fade OUT");
         }
