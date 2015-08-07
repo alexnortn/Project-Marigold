@@ -57,18 +57,6 @@ $(document).ready(function() {
         $('#infoText').slideToggle('slow', 'swing');
     });
 
-
-    // Control Header
-    $(window).on('scroll', function() {
-        if (window.location.hash != "#interactive") {
-            $('header').fadeIn(500);
-            console.log("fade IN");
-        } else {
-            $('header').fadeOut(500);
-            console.log("fade OUT");
-        }
-    });
-
     // Open Project
     $('.project-overview').click(function(){
         open = !open;
@@ -392,7 +380,7 @@ function hashRoute() {
 
 if ("onhashchange" in window) { // event supported?
     window.onhashchange = function () {
-        // hashChanged(window.location.hash);
+        hashChanged(window.location.hash);
         console.log("HASH CHANGE");
         // update current hash
         hashRoute();
@@ -403,7 +391,7 @@ else { // event not supported:
     window.setInterval(function () {
         if (window.location.hash != storedHash) {
             storedHash = window.location.hash;
-            // hashChanged(storedHash);
+            hashChanged(storedHash);
             // update current hash
             hashRoute();
         }
@@ -416,6 +404,19 @@ function setHash(_sectionCurrent) {
     window.location.hash = $(_sections[_sectionCurrent]).attr('id');
 
 }
+
+// Control Header or Anything else Hash related
+function hashChanged(_hash) {
+    
+    if (_hash != "#interactive") {
+        $('header').fadeIn(500);
+        console.log("fade IN");
+    } else {
+        $('header').fadeOut(500);
+        console.log("fade OUT");
+    }
+
+};
 
 
 // Setup for Slick slider plugin Grid #1
