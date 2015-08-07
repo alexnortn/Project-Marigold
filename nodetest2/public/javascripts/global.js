@@ -26,6 +26,11 @@ $(document).ready(function() {
     // Attach Fast Click
     // attachFastClick(document.body);
 
+    // Routing
+        var _sectionCurrent;
+
+    hashRoute();
+
     // Set Greeting
     setGreeting();
 
@@ -276,16 +281,10 @@ $(document).ready(function() {
 
     // Navigation Functions
 
-    var _sections = $('.slickNav'),
-        _sectionCount = _sections.length,
-        _sectionCurrent = 0;
-
-        // set first page to current
-        $(_sections[0]).addClass('currentSection');
-
-
     $('html').bind('mousewheel DOMMouseScroll', function (e) {
         var delta = (e.originalEvent.wheelDelta || -e.originalEvent.detail);
+        var _sections = $('.slickNav'),
+            _sectionCount = _sections.length;
 
         if (open == false) {
     
@@ -309,6 +308,9 @@ $(document).ready(function() {
                      // Scroll to section
                     $(_sections[_sectionCurrent]).velocity("scroll", { duration: 750, easing: "ease-in-out" });
 
+                    // Set the url hash
+                    setHash(_sectionCurrent);
+
                 }
 
             } else if (delta > 0) {
@@ -331,6 +333,9 @@ $(document).ready(function() {
                      // Scroll to section
                     $(_sections[_sectionCurrent]).velocity("scroll", { duration: 750, easing: "ease-in-out" });
 
+                    // Set the url hash
+                    setHash(_sectionCurrent);
+
                 }
             }
         }
@@ -343,6 +348,50 @@ $(document).ready(function() {
 });
 
 // Functions =============================================================
+
+
+// Page load routing + hashing
+function hashRoute() {
+
+    // Set current url hash
+    var _sections = $('.slickNav');
+
+    if (window.location.hash == "") {
+
+        // If the user requests the index page, redirect to #bios
+        window.location.hash = "bios";
+
+        // Set #bios as current
+        _sectionCurrent = $(_sections).index($('#bios'));
+
+        console.log("section current " + _sectionCurrent);
+
+    } else {
+
+        // Find requested route
+        var loc = window.location.hash;
+
+        // Set current object to this route
+        _sectionCurrent = $(_sections).index($(loc));
+
+        console.log("section current " + _sectionCurrent);
+
+    }
+
+    $(_sections).removeClass('currentSection');
+
+    $( _sections[ _sectionCurrent ] )
+        .addClass('currentSection')
+        .velocity("scroll", { duration: 1});
+
+}
+
+function setHash(_sectionCurrent) {
+
+    // Get the id of the current section, set the url hash to match
+    window.location.hash = $(_sections[_sectionCurrent]).attr('id');
+
+}
 
 
 // Setup for Slick slider plugin Grid #1
