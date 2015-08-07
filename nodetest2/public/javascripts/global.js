@@ -407,14 +407,18 @@ function setHash(_sectionCurrent) {
 
 // Control Header or Anything else Hash related
 function hashChanged(_hash) {
-    
-    if (_hash != "#interactive") {
-        $('header').fadeIn(500);
-        console.log("fade IN");
-    } else {
-        $('header').fadeOut(500);
-        console.log("fade OUT");
-    }
+
+    setTimeout(
+        function() {
+            if (_hash == "#interactive") {
+                $('header').delay( 100 ).fadeOut( 400 );
+                console.log("fade OUT");
+            } else {
+                $('header').delay( 100 ).fadeIn( 400 );
+                console.log("fade IN");
+            }
+        }
+    , 125 );
 
 };
 
