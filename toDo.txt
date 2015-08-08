@@ -1,0 +1,58 @@
+
+
+
+
+
+--------------------------------------------
+
+Consider a strategic movement towards implementing the site improvements:
+
+	Bottom nav bar
+
+		Next
+		Prev
+
+		Color change
+
+		Easter egg != mobile
+
+	Add up / down arrow to commands for the scrolling nav
+
+	Nav menu (hamburger) --> fuck velocity (mostly)
+
+	Content on the interactive page
+
+		How do you get this section to read "Web Experiment"
+
+	Consider the alterations to the content on the project page:
+
+		Adding the top grid system
+
+			+ Aligning it to the details box
+
+		Adding the float right content 
+
+			+ Main description
+
+			+ Process
+
+			* All booleans --> repsectfully, sections of the template are triggered by flags set in the <content.json>
+
+				> Allowing for a dynamical templating system
+
+			* Left float the section titles
+
+			* Increase text size dramatically
+
+				> Attempt to simplify the typography across the site
+
+					Heading
+
+					Sub-Heading
+
+					Paragraph
+
+					Caption
+
+		Following the additional content, add a <100% width> image + minor caption
+
