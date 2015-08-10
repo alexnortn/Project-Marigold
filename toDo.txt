@@ -56,3 +56,47 @@ Consider a strategic movement towards implementing the site improvements:
 
 		Following the additional content, add a <100% width> image + minor caption
 
+	It's really important that you figure out how to trigger the page transtition event only once on both mobile decices and laptops where the user is used to simply scrolling!
+
+
+
+	-----------------------------------------------------------------------
+
+
+	Finish website
+
+		All above.
+
+			Robust nav, menu, content, images, typography, resume, contact, RESPONSIVE <-- fun
+
+
+	Explore React
+			ThreeJS
+
+	Get excited about typography
+
+	Resolve eyewire onboarding --> we will use text boxes?
+
+		The quesiton there of course is whether or not it's important to consider the mobile scenario
+
+		This is so worth a very intricuit case study. Ughh not as good as Upstatement.. so simple (elegant)
+
+		As little orchestration as possible!
+
+			OK
+
+			So that means like animated in, followed by a form dropdown.
+
+			+++ How will this all come together? Can you move a little faster?
+
+			+++ Consider how it is possible to integrate the cards / mobile dialogue boxes into Eyewire?
+
+			+++ Like how do you deal with such a dark interface?
+
+			+++ Gotta keep pop up boxes pretty neutral
+
+			+++ Accents
+
+			+++ Design process Alex, maybe you could remeber it a little more. It moves forward, and it has discrete steps
+
+			+++ No back tracking

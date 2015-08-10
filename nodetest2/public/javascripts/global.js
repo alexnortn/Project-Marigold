@@ -352,7 +352,36 @@ $(document).ready(function() {
 
     });
 
-        
+
+    // Dealing with key events regarding navigation
+
+    /*
+
+    var UP = 38;
+    var DOWN = 40;
+    var ENTER = 13;
+
+    var getKey = function(e) {
+      if(window.event) { return e.keyCode; }  // IE
+      else if(e.which) { return e.which; }    // Netscape/Firefox/Opera
+    };
+
+
+        var keynum = getKey(e);
+
+        if(keynum === UP) {
+          //Move selection up
+        }
+
+        if(keynum === DOWN) {
+          //Move selection down
+        }
+
+        if(keynum === ENTER) {
+          //Act on current selection
+        }
+
+    */
     
 
 });
@@ -472,7 +501,6 @@ function paginationUpdate(_sectionCurrent) {
 
 }
 
-
 // Setup for Slick slider plugin Grid #1
 function addSlick(_id, _dotsBool) {
 
@@ -512,7 +540,7 @@ function centerOffest(scrollInId, scrollToId) {
 }
 
 // Set up Date Query
-var setGreeting = function () {
+function setGreeting() {
 
     // Get current time
     var d = new Date();
@@ -530,12 +558,12 @@ var setGreeting = function () {
 
     console.log("Current hour is " + n);
 
-    $('#greeting').prepend(greeting);
+    /* $('#greeting').prepend(greeting);  // Add the greeting to the very first interactive section*/
     $('#bios-header').prepend(greeting);
 }
 
 // Set the bottom element width to full using jQuery
-var setWidth = function() {
+function setWidth() {
     var windowWidth = $( window ).width();
     $("#triangle-bottom-left").css("border-left-width", windowWidth);
     $("#triangle-bottom-right").css("border-right-width", windowWidth);
