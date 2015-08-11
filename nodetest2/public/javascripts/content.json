@@ -1,6 +1,80 @@
 {
     "projects": [
         {
+            "route" :"gestural-lamp1",
+            "name"  : "Gestural Lamp1",
+            "year"  : "2014",
+            "medium": [
+                "Paper",
+                "Wood",
+                "Arduino"
+            ],
+            "technique": [
+                "Laser Cutter",
+                "Wood Working",
+                "Programing"
+            ],
+            "description_short": "A traditional Japanese lamp that responds gesturally to weather phenomena.",
+            "description_long": "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know? When is a qualitative understanding of data sufficient? The lamp is also a sort of commentary on the current state of culture in Japan. It is no coincidence that the lamp resembles a tower crane. The lamp bridges the gap between traditional Japanese culture and Japan as a world-leading technological hub. The Lamp is a collaboration between Massart’s graphic design program and MIT’s Architectural Computation department. The following pages detail the CAD models and a bit of the building process for the first of the 3 proposed lamps, this is the smallest desk lamp. Further on there is a glimpse into the program written to aggregate weather sources as well as a web-interface designed to program + control the lamp.",
+            "description_long_1": "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know? When is a qualitative understanding of data sufficient? The lamp is also a sort of commentary on the current state of culture in Japan.",
+            "description_long_2": "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know?",
+            "pull_quotes": [
+                " The lamp seeks to explore our relationship with dynamic data, for this instance weather.",
+                "This is the second big quote",
+                "This is the third big quote"
+            ],
+            "meta" : {
+                "Client" : "Self (MIT)",
+                "Year" : 2015,
+                "Role" : "Designer / Developer",
+                "Team" : "N/A",
+                "Discipline" : "Fabrication / Industrial Design",
+                "Medium" : "Internet of Things / Wood",
+                "Technologies" : "Arduino / Woodshop",
+                "Duration" : "Two Months"
+            },
+            "hero": "images/crystal-8.jpg",
+            "cut": "images/lamp-Out.png",
+            "images": [
+                {
+                    "name": "hero",
+                    "src": "images/crystal-8.jpg",
+                    "src-sm": "images/lamp-sm-0.jpg",
+                    "caption": "Side view of Gestural Lamp. "
+                },
+                {
+                    "name": "support_1",
+                    "src": "images/crystal-8.jpg",
+                    "src-sm": "Images/Sun-sm.png",
+                    "caption": " "
+                },
+                {
+                    "name": "support_2",
+                    "src": "images/crystal-8.jpg",
+                    "src-sm": "Images/Sun-sm.png",
+                    "caption": " "
+                },
+                {
+                    "name": "support_3",
+                    "src": "images/crystal-8.jpg",
+                    "src-sm": "Images/Sun-sm.png",
+                    "caption": " "
+                },
+                {
+                    "name": "support_4",
+                    "src": "images/crystal-8.jpg",
+                    "src-sm": "Images/Sun-sm.png",
+                    "caption": " "
+                },
+                {
+                    "name": "support_5",
+                    "src": "images/crystal-8.jpg",
+                    "src-sm": "Images/Sun-sm.png",
+                    "caption": " "
+                }
+            ]
+        },
+        {
             "route" :"gestural-lamp",
             "name"  : "Gestural Lamp",
             "year"  : "2014",

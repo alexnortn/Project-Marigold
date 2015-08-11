@@ -1,6 +1,12 @@
-// Alex Norton
-// a^N 
-// http://alexnortn.com
+/*
+
+Alex Norton
+a^N 
+http://alexnortn.com
+
+*/
+
+
 
 
 // Userlist data array for filling in info box
@@ -18,18 +24,6 @@ var _sections = $('.slickNav'),
 // DOM Ready =============================================================
 $(document).ready(function() {
 
-    // Populate the user table on initial page load
-    // populateTable();
-
-    // Build Site
-    // buildSite();
-
-    // Username link click
-    // $('#userList table tbody').on('click', 'td a.linkshowuser', showUserInfo);
-
-    // Attach Fast Click
-    // attachFastClick(document.body);
-
     hashRoute();
 
     // Set Greeting
@@ -44,10 +38,6 @@ $(document).ready(function() {
 
     // Check for section (header)
     hashChanged(window.location.hash);
-
-    // Initial FadeIn
-    // fadeInPage();
-    // window.setTimeout(function() { loader() }, 5000);
 
     // var loader = function() {
     //     $.Velocity.RunSequence(loadingSequence);
@@ -580,8 +570,6 @@ function paginationUpdate(_sectionCurrent) {
 
 // Set the state of the bottom nav-footer
 function navUpdate(_sectionCurrent) {
-
-    var _sections = $('.slickNav');
 
     // Check for prev section
     if (_sectionCurrent > 0) {
