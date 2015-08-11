@@ -499,7 +499,7 @@ function hashChanged(_hash) {
             paginationUpdate(_sectionCurrent);
 
             // Affect the bottom navigation bar
-            // navUpdate(_sectionCurrent);
+            navUpdate(_sectionCurrent);
 
         }
     , 10 );
@@ -525,6 +525,31 @@ function paginationUpdate(_sectionCurrent) {
 
     $('.pagination').removeClass('pagination-active');
     $('.pagination').eq(_sectionCurrent).addClass('pagination-active');
+
+}
+
+// Set the state of the bottom nav-footer
+function navUpdate(_sectionCurrent) {
+
+    var _sections = $('.slickNav');
+
+    // Check for prev section
+    if (_sectionCurrent > 0) {
+
+        // PREV 
+
+    } else {
+        // PREV.inner = ""
+    }
+
+    // Check for next section
+    if (_sectionCurrent < _sections - 2) {
+
+        // NEXT 
+
+    } else {
+        // NEXT.inner = ""
+    }
 
 }
 
