@@ -585,6 +585,7 @@ strong {
 	text-align: left;
 	margin-left: 2%;
 	display: inline-block;
+	width: 20%;
 }
 
 .section-prev i {
@@ -611,6 +612,7 @@ strong {
 	margin-right: 2%;
 	text-align: right;
 	display: inline-block;
+	width: 20%;
 }
 
 .section-next i {

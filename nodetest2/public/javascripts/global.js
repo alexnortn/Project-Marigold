@@ -536,20 +536,48 @@ function navUpdate(_sectionCurrent) {
     // Check for prev section
     if (_sectionCurrent > 0) {
 
-        // PREV 
+            // PREV section
+        var prev   = _sectionCurrent - 1;
+        var prevId = $(_sections[prev]).attr('id');
+            // REGEX for dealing with hyphen conversion to spaces
+            prevId = prevId.replace(/-/g, ' ');
+
+            // Set the inner html of our <strong> section
+        $('.section-prev strong').html(prevId);
 
     } else {
-        // PREV.inner = ""
+
+        // If there is nothing beforehand, set the inner html to nothing
+        // Also, probably set it to display none <--
+        $('.section-prev strong').html("");
+
     }
 
     // Check for next section
-    if (_sectionCurrent < _sections - 2) {
+    if (_sectionCurrent < (_sections.length - 1)) {
 
-        // NEXT 
+            // NEXT section
+        var next   = _sectionCurrent + 1;
+        var nextId = $(_sections[next]).attr('id');
+            // REGEX for dealing with hyphen conversion to spaces
+            nextId = nextId.replace(/-/g, ' ');
+
+            // Set the inner html of our <strong> section
+        $('.section-next strong').html(nextId);
 
     } else {
-        // NEXT.inner = ""
+
+        // If there is nothing beforehand, set the inner html to nothing
+        // Also, probably set it to display none <--
+        $('.section-next strong').html("");
+
     }
+
+        // Set the inner html of the current project
+    var currentId = $(_sections[_sectionCurrent]).attr('id');
+        // REGEX for dealing with hyphen conversion to spaces
+        currentId = currentId.replace(/-/g, ' ');
+    $('.section-current strong').html(currentId);
 
 }
 
