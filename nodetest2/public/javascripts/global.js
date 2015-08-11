@@ -47,11 +47,13 @@ $(document).ready(function() {
 
     // Initial FadeIn
     // fadeInPage();
-    window.setTimeout(function() { loader() }, 5000);
+    // window.setTimeout(function() { loader() }, 5000);
 
-    var loader = function() {
-        $.Velocity.RunSequence(loadingSequence);
-    } 
+    // var loader = function() {
+    //     $.Velocity.RunSequence(loadingSequence);
+    // } 
+
+    $('body').addClass('loading');
 
     // Center In
 
@@ -495,6 +497,9 @@ function hashChanged(_hash) {
 
             // Affect pagination on navigation change
             paginationUpdate(_sectionCurrent);
+
+            // Affect the bottom navigation bar
+            // navUpdate(_sectionCurrent);
 
         }
     , 10 );

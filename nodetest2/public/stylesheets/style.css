@@ -170,6 +170,17 @@ body {
   position: absolute;
   letter-spacing: .01rem;
   overflow: hidden;
+  opacity: 0;
+  -webkit-transition: opacity ease-in-out 1000ms;
+    	  transition: opacity ease-in-out 1000ms;
+  /*-webkit-animation: loading 1000ms ease-in-out;
+     -moz-animation: loading 1000ms ease-in-out;
+       -o-animation: loading 1000ms ease-in-out;
+          animation: loading 1000ms ease-in-out;
+  -webkit-animation-iteration-count: 1;
+     -moz-animation-iteration-count: 1;
+       -o-animation-iteration-count: 1;
+          animation-iteration-count: 1;*/
 }
 
 body::selection {
@@ -262,6 +273,10 @@ strong {
     background-color: transparent;
 }
 
+.loading {
+	opacity: 1;
+}
+
 #interactive {
 	width: 100%;
 	height: 100%;
@@ -275,7 +290,7 @@ strong {
 	z-index: 1000;
 	top: 0;
 	left: 0;
-	opacity: 0;
+	opacity: 1;
 }
 
 .boost-space {
@@ -391,8 +406,8 @@ strong {
 }
 
 #nav-burger {
-	right: -125px;
-	opacity: 0;
+	right: 50px;
+	opacity: 1;
 }
 
 #nav-button {
@@ -589,7 +604,7 @@ strong {
 	background-color: rgb(35,35,35);
 	display: block;
 	position: fixed;
-	bottom: -60px;
+	bottom: 0px;
 	z-index: 100;
 	box-shadow: 0 10px 15px rgba(0, 0, 0, 0);
 }
@@ -1018,7 +1033,7 @@ label[for="nav-trigger"] hr:nth-child(3) {
 #pagination {
 	position: fixed;
 	width: 60px;
-	right: -75px;
+	right: 57px;
 	z-index: 100;
 	text-align: center;
 }
@@ -1107,7 +1122,8 @@ label[for="nav-trigger"] hr:nth-child(3) {
 
 .pagination:active {
 	transform:scale(2,2);
-	background-color: orange;
+	background-color: white;
+	border: 1px solid black;
 }
 
 .next-section {
@@ -1827,3 +1843,23 @@ Animations
 					0%  {transform: none;}
 					50% { transform: translate(0px,15px); }  }
 					0%  {transform: none;}
+
+/*
+
+	Page load animation
+
+*/
+
+
+@-webkit-keyframes loading { 
+					0%   {opacity: 0;}
+					100% { opacity: 1;}  }
+   @-moz-keyframes arrow-animate { 
+					0%   {opacity: 0;}
+					100% { opacity: 1;}  }
+     @-o-keyframes arrow-animate { 
+					0%   {opacity: 0;}
+					100% { opacity: 1;}  }
+        @keyframes arrow-animate { 
+					0%   {opacity: 0;}
+					100% { opacity: 1;}  }
