@@ -76,7 +76,7 @@ block content
     #content-wrapper
 
         // INTERACTIVE PAGE
-        section#interactive.slickNav
+        section#interactive.slickNav&attributes({'data-inproject': true})
             #info
                 #cross-circle
                     .vert-line
@@ -91,7 +91,7 @@ block content
 
 
         //BIOS PAGE
-        section#bios.slickNav
+        section#bios.slickNav&attributes({'data-inproject': false})
             
             // BIOS BOX
             #bios-content
@@ -114,7 +114,7 @@ block content
         // PROJECT ITERATOR
         each result, index in projects
 
-            section.slickNav.project-view.parallax&attributes({'data-isProject': true}, {'data-project': index}, {'id': result.route})
+            section.slickNav.project-view.parallax&attributes({'data-inproject': true}, {'data-project': index}, {'id': result.route})
                 // PROJECT OVERVIEW
                 .filler-content
                     //- .scroll-arrow

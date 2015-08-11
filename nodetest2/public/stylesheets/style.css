@@ -623,8 +623,12 @@ strong {
 	color: white;
 }
 
+.qt-opacity {
+	opacity: 0.25;
+	cursor: default;
+}
+
 .nav-footer p {
-	color: white;
 	font-size: 10px;
 	text-transform: uppercase;
 	letter-spacing: 3px;
@@ -634,19 +638,32 @@ strong {
 .nav-footer {
 	width: 100%;
 	height: 65px;
-	background-color: rgb(35,35,35);
 	display: block;
 	position: fixed;
 	bottom: 0px;
 	z-index: 100;
 	text-align: center;
-	box-shadow: 0 10px 15px rgba(0, 0, 0, 0);
+	background-color: white;
+	border: solid 1px rgba(218, 218, 218, 1);
+	box-shadow: 0 0px 15px rgba(0, 0, 0, 0.18);
+	-webkit-transition: all 0.5s ease-in-out; /* Safari */
+			transition: all 0.5s ease-in-out;
+}
+
+.white-nav {
+	background-color: white;
+	color: rgb(35,35,35);
+}
+
+.dark-nav {
+	background-color: rgb(35,35,35);
+	color: white;
 }
 
 .nav-footer:hover {
-	box-shadow: 0 10px 15px rgba(0, 0, 0, 0.18);
-	background-color: rgb(50,50,50);
-	cursor: pointer;
+	/*box-shadow: 0 10px 15px rgba(0, 0, 0, 0.18);
+	background-color: rgb(50,50,50);*/
+	/*cursor: pointer;*/
 }
 
 #triangle-bottom-left {

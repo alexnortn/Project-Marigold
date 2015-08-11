@@ -544,12 +544,14 @@ function navUpdate(_sectionCurrent) {
 
             // Set the inner html of our <strong> section
         $('.section-prev strong').html(prevId);
+        $('.section-prev').removeClass('qt-opacity');
 
     } else {
 
         // If there is nothing beforehand, set the inner html to nothing
         // Also, probably set it to display none <--
         $('.section-prev strong').html("");
+        $('.section-prev').addClass('qt-opacity');
 
     }
 
@@ -564,12 +566,14 @@ function navUpdate(_sectionCurrent) {
 
             // Set the inner html of our <strong> section
         $('.section-next strong').html(nextId);
+        $('.section-next').removeClass('qt-opacity');
 
     } else {
 
         // If there is nothing beforehand, set the inner html to nothing
         // Also, probably set it to display none <--
         $('.section-next strong').html("");
+        $('.section-next').addClass('qt-opacity');
 
     }
 
@@ -578,6 +582,21 @@ function navUpdate(_sectionCurrent) {
         // REGEX for dealing with hyphen conversion to spaces
         currentId = currentId.replace(/-/g, ' ');
     $('.section-current strong').html(currentId);
+
+    // Check if we're in a project --> controle footer color ::
+    if ($(_sections[_sectionCurrent]).data('inproject')) {
+
+        $('.nav-footer')
+            .removeClass('.dark-nav')
+            .addClass('.white-nav');
+
+    } else {
+
+        $('.nav-footer')
+            .removeClass('.white-nav')
+            .addClass('.dark-nav');
+
+    }
 
 }
 
