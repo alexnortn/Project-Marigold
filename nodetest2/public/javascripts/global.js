@@ -346,7 +346,7 @@ $(document).ready(function() {
 
             setHash(_sectionCurrent);
 
-        }, 750);
+        }, 250);
 
     });
 
@@ -371,7 +371,7 @@ $(document).ready(function() {
 
             setHash(_sectionCurrent);
 
-        }, 750);
+        }, 250);
 
     });
 
@@ -489,7 +489,7 @@ function hashChanged(_hash) {
                 $('header').delay( 10 ).fadeOut( 400 );
                 console.log("fade OUT");
             } else {
-                $('header').delay( 100 ).fadeIn( 400 );
+                $('header').delay( 10 ).fadeIn( 400 );
                 console.log("fade IN");
             }
 
@@ -497,7 +497,7 @@ function hashChanged(_hash) {
             paginationUpdate(_sectionCurrent);
 
         }
-    , 250 );
+    , 10 );
 
 };
 
