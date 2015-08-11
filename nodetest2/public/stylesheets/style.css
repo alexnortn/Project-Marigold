@@ -580,9 +580,10 @@ strong {
 
 .section-prev {
 	padding: 30px;
-	float: left;
+	position: absolute;
+	left: 0;
 	text-align: left;
-	margin-right: 2%;
+	margin-left: 2%;
 	display: inline-block;
 }
 
@@ -605,7 +606,8 @@ strong {
 
 .section-next {
 	padding: 30px;
-	float: right;
+	position: absolute;
+	right: 0;
 	margin-right: 2%;
 	text-align: right;
 	display: inline-block;
