@@ -42,6 +42,9 @@ $(document).ready(function() {
     pagination(_sections);
     paginationUpdate(_sectionCurrent);
 
+    // Check for section (header)
+    hashChanged(window.location.hash);
+
     // Initial FadeIn
     // fadeInPage();
     window.setTimeout(function() { loader() }, 5000);
@@ -108,11 +111,6 @@ $(document).ready(function() {
     });
 
     // Close Project
-
-    $('#logo').click(function(){
-        closeProject();
-        $("html, body").animate({ scrollTop: "0px" }, 750);
-    });
 
     $('.close').click(function() {
         closeProject();
@@ -352,6 +350,31 @@ $(document).ready(function() {
 
     });
 
+    // Header navigation --> Go Home (clicking 'a' sends the users to /#bios)
+    $('#logo').click(function(){
+        
+        //  Close current project
+        if (open) closeProject();
+
+        // Set #bios as current
+        _sectionCurrent = $(_sections).index($('#bios'));
+        // Update pagination
+        paginationUpdate(_sectionCurrent);
+
+        // Call function to make sure the header is loaded
+        hashChanged('#bios');
+
+
+        $(_sections[_sectionCurrent]).velocity("scroll", { duration: 750, easing: "ease-in-out" });
+
+        setTimeout(function() {
+
+            setHash(_sectionCurrent);
+
+        }, 750);
+
+    });
+
 
     // Dealing with key events regarding navigation
 
@@ -463,7 +486,7 @@ function hashChanged(_hash) {
     setTimeout(
         function() {
             if (_hash == "#interactive") {
-                $('header').delay( 100 ).fadeOut( 400 );
+                $('header').delay( 10 ).fadeOut( 400 );
                 console.log("fade OUT");
             } else {
                 $('header').delay( 100 ).fadeIn( 400 );
@@ -476,9 +499,8 @@ function hashChanged(_hash) {
         }
     , 250 );
 
-
-
 };
+
 
 function pagination(_sections) {
 

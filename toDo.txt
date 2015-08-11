@@ -83,6 +83,12 @@ Consider a strategic movement towards implementing the site improvements:
 
 		As little orchestration as possible!
 
+		What's cool about the responsive nature of Eyewire, is that on desktop we prioritize the users to start playing the game as our highest priority, where on mobile, where the game is impossible to play.. we prioritize sharing (swaping button priority)
+
+			HOW IS THIS GOING TO WORK ON MOBILE
+
+				Design mobile first!
+
 			OK
 
 			So that means like animated in, followed by a form dropdown.
@@ -100,3 +106,4 @@ Consider a strategic movement towards implementing the site improvements:
 			+++ Design process Alex, maybe you could remeber it a little more. It moves forward, and it has discrete steps
 
 			+++ No back tracking
+
