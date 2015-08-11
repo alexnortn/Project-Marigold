@@ -499,7 +499,7 @@ strong {
 #bios-content button {
 	background-color: transparent;
     border-radius: 10px;
-    border: 1px solid #C3C3C3;
+    border: solid 1px rgba(218, 218, 218, 1);
     focus: outline:0;
     height: 66px;
     width: 200px;
@@ -588,6 +588,10 @@ strong {
 	width: 20%;
 }
 
+.section-prev:hover {
+	cursor: pointer;
+}
+
 .section-prev i {
 	display: inline-block;
 	position: relative;
@@ -613,6 +617,10 @@ strong {
 	text-align: right;
 	display: inline-block;
 	width: 20%;
+}
+
+.section-next:hover {
+	cursor: pointer;
 }
 
 .section-next i {
@@ -661,8 +669,8 @@ strong {
 }
 
 .nav-footer:hover {
-	/*box-shadow: 0 10px 15px rgba(0, 0, 0, 0.18);
-	background-color: rgb(50,50,50);*/
+	box-shadow: 0 10px 15px rgba(0, 0, 0, 0);
+	/*background-color: rgb(50,50,50);*/
 	/*cursor: pointer;*/
 }
 

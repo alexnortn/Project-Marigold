@@ -279,56 +279,53 @@ $(document).ready(function() {
             var delta = (e.originalEvent.wheelDelta || -e.originalEvent.detail);
             var _sectionCount = _sections.length;
 
-            if (open == false) {
-        
-                if (delta < 0) {
+            if(e.handled !== true) { // This will prevent event triggering more then once
 
-                        console.log('You scrolled down');   
+                if (open == false) {
+            
+                    if (delta < 0) {
 
-                    if (_sectionCurrent < _sectionCount - 1) {
+                            console.log('You scrolled down');   
 
-                        // Remove active class
-                        $(_sections[_sectionCurrent]).removeClass('currentSection');
+                        if (_sectionCurrent < _sectionCount - 1) {
+
+                            // Remove active class
+                            $(_sections[_sectionCurrent]).removeClass('currentSection');
+                            
+                            // Increment _sectionCurrent 
+                            _sectionCurrent++;
+
+                            // Add active class
+                            $(_sections[_sectionCurrent]).addClass('currentSection');
+
+                                console.log(_sectionCurrent + " down");
+
+                            // Navigate
+                            navigateScroll(_sectionCurrent);
+
+                        }
+
+                    } else if (delta > 0) {
+                            
+                            console.log('You scrolled up');
                         
-                        // Increment _sectionCurrent 
-                         _sectionCurrent++
+                        if (_sectionCurrent > 0) {
 
-                         // Add active class
-                         $(_sections[_sectionCurrent]).addClass('currentSection');
+                            // Remove active class
+                            $(_sections[_sectionCurrent]).removeClass('currentSection');
+                            
+                            // Decrement _sectionCurrent 
+                            _sectionCurrent--;
 
-                            console.log(_sectionCurrent + " down");
+                            // Add active class
+                            $(_sections[_sectionCurrent]).addClass('currentSection');
 
-                         // Scroll to section
-                        $(_sections[_sectionCurrent]).velocity("scroll", { duration: 750, easing: "ease-in-out" });
+                            console.log(_sectionCurrent + " up");
 
-                        // Set the url hash
-                        setHash(_sectionCurrent);
+                            // Navigate
+                            navigateScroll(_sectionCurrent);
 
-                    }
-
-                } else if (delta > 0) {
-                        
-                        console.log('You scrolled up');
-                    
-                    if (_sectionCurrent > 0) {
-
-                        // Remove active class
-                        $(_sections[_sectionCurrent]).removeClass('currentSection');
-                        
-                        // Decrement _sectionCurrent 
-                         _sectionCurrent--
-
-                         // Add active class
-                         $(_sections[_sectionCurrent]).addClass('currentSection');
-
-                         console.log(_sectionCurrent + " up");
-
-                         // Scroll to section
-                        $(_sections[_sectionCurrent]).velocity("scroll", { duration: 750, easing: "ease-in-out" });
-
-                        // Set the url hash
-                        setHash(_sectionCurrent);
-
+                        }
                     }
                 }
             }
@@ -340,15 +337,9 @@ $(document).ready(function() {
     $('.pagination').click(function() {
 
         _sectionCurrent = $('.pagination').index($(this));
-        paginationUpdate(_sectionCurrent);
 
-        $(_sections[_sectionCurrent]).velocity("scroll", { duration: 750, easing: "ease-in-out" });
-
-        setTimeout(function() {
-
-            setHash(_sectionCurrent);
-
-        }, 250);
+        // Navigate
+        navigateScroll(_sectionCurrent);
 
     });
 
@@ -360,20 +351,65 @@ $(document).ready(function() {
 
         // Set #bios as current
         _sectionCurrent = $(_sections).index($('#bios'));
-        // Update pagination
-        paginationUpdate(_sectionCurrent);
 
         // Call function to make sure the header is loaded
         hashChanged('#bios');
 
 
-        $(_sections[_sectionCurrent]).velocity("scroll", { duration: 750, easing: "ease-in-out" });
+        // Navigate
+        navigateScroll(_sectionCurrent);
 
-        setTimeout(function() {
+    });
 
-            setHash(_sectionCurrent);
 
-        }, 250);
+    // Footer navigation moments
+
+    $('#prev').click( function(e) {
+
+         if(e.handled !== true) { // This will prevent event triggering more then once
+        
+            if (_sectionCurrent > 0) {
+
+                // Remove active class
+                $(_sections[_sectionCurrent]).removeClass('currentSection');
+                
+                // Decrement _sectionCurrent 
+                _sectionCurrent--;
+
+                // Add active class
+                $(_sections[_sectionCurrent]).addClass('currentSection');
+
+                console.log(_sectionCurrent + " prev");
+
+                // Navigate
+                navigateScroll(_sectionCurrent);
+
+            }
+        }
+    });
+
+    $('#next').click( function(e) {
+
+         if(e.handled !== true) { // This will prevent event triggering more then once
+        
+            if (_sectionCurrent < _sections.length - 1) {
+
+                // Remove active class
+                $(_sections[_sectionCurrent]).removeClass('currentSection');
+                
+                // Increment _sectionCurrent 
+                _sectionCurrent++;
+
+                // Add active class
+                $(_sections[_sectionCurrent]).addClass('currentSection');
+
+                    console.log(_sectionCurrent + " next");
+
+                // Navigate
+                navigateScroll(_sectionCurrent);
+
+            }
+        }
 
     });
 
@@ -505,6 +541,20 @@ function hashChanged(_hash) {
     , 10 );
 
 };
+
+// Navigate with velocity
+function navigateScroll(_sectionCurrent) {
+
+    // Scroll navigate, call setHash when finished moveing
+    $(_sections[_sectionCurrent]).velocity("scroll", { duration: 750, easing: "ease-in-out" });
+
+    setTimeout(function() {
+
+        setHash(_sectionCurrent);
+
+    }, 250);
+    
+}
 
 
 function pagination(_sections) {
