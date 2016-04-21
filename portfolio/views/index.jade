@@ -1,0 +1,219 @@
+extends layout
+
+block content
+
+    // PAGINATION
+    #pagination.top
+        //- #prev-arrow-box
+            <i class="fa fa-long-arrow-up fa-lg" id="prev-arrow"></i>
+        for result in projects
+            //- .pagination&attributes({'data': result.name})
+            //- .pagination&attributes({'data': result.name})
+            //- .pagination&attributes({'data': result.name})
+            //- .pagination&attributes({'data': result.name})
+            //- .pagination&attributes({'data': result.name})
+        //- #next-arrow-box
+            <i class="fa fa-long-arrow-down fa-lg" id="next-arrow"></i>
+        //- p.next-section Next Section  ::  <strong>!{projects[0].name}</strong>
+
+    // /PAGINATION
+
+    // GLOBAL NAVIGATION
+    .nav-footer.top
+        //- .golden-divider
+        #prev.section-prev
+            <i class="fa fa-long-arrow-left"></i>
+            p <strong>Web Experiments</strong>  ::  Prev  \\ 
+        .section-current
+            p  { <strong> Current </strong> } 
+        #next.section-next
+            p //  Next  ::  <strong>Works</strong> 
+            <i class="fa fa-long-arrow-right"></i>
+
+    // /GLOBAL NAVIGATION
+
+    // NAV DRAWER
+    nav.nav.top
+        input(type="checkbox" id = "nav-trigger" class = "nav-trigger")
+        label(for = "nav-trigger")#nav-burger.nav-burger-preload
+            hr
+            hr
+            hr
+            hr
+        #nav-box
+            #nav-triangle-top
+            #nav-rectangle-bottom
+            ul
+                li.nav-item
+                    a(href="#") Bios
+                li.nav-item
+                    a(href="#") Resume
+                li.nav-item
+                    a(href="#") Contact
+                li.nav-item
+                    a(href="#") Works
+        .social
+            <i class="fa fa-envelope fa-2x"></i>
+            <i class="fa fa-twitter fa-2x"></i>
+            <i class="fa fa-vimeo-square fa-2x"></i>
+            <i class="fa fa-github fa-2x"></i>
+            <i class="fa fa-behance-square fa-2x"></i>
+    // /NAV DRAWER
+
+    // HEADER
+    header.top
+
+        #logo
+            img(src = "/images/logo.svg" alt = "main logo")
+            p 
+               | Alex Norton<br>
+               | Interaction Designer
+
+    // /HEADER  
+
+
+    // SITE content
+    #content-wrapper
+
+        // INTERACTIVE PAGE
+        section#interactive.slickNav&attributes({'data-inproject': true})
+            #info
+                #cross-circle
+                    .vert-line
+                    .horz-line
+                p#greeting <strong>Web Experiments.</strong> <br> Move cursor around glyph.
+                p#infoText This interactive character was developed using the P5js framework along with the Toxiclibs physics library.
+            //- #landing-arrow.scroll-arrow
+                //- p Scroll Down 
+                <i class="fa  fa-angle-down fa-2x"></i>           
+
+        // /INTERACTIVE
+
+
+        //BIOS PAGE
+        section#bios.slickNav&attributes({'data-inproject': false})
+            
+            // BIOS BOX
+            #bios-content
+                h1#bios-header !{bios_text.description_headline}
+                p#short  !{bios_text.description_short}
+                p#long !{bios_text.description_long}
+                button#bios-button
+                    p Read More
+                //- .social
+                    <i class="fa fa-envelope fa-2x"></i>
+                    <i class="fa fa-twitter fa-2x"></i>
+                    <i class="fa fa-vimeo-square fa-2x"></i>
+                    <i class="fa fa-github fa-2x"></i>
+                    <i class="fa fa-behance-square fa-2x"></i>
+            // /BIOS BOX
+
+        // /BIOS PAGE   
+
+
+        // PROJECT ITERATOR
+        each result, index in projects
+
+            section.slickNav.project-view.parallax&attributes({'data-inproject': true}, {'data-project': index}, {'id': result.route})
+                // PROJECT OVERVIEW
+                .filler-content
+                    //- .scroll-arrow
+                        //- p Scroll Down 
+                        <i class="fa  fa-angle-down fa-2x"></i>    
+                .project-overview
+                    .description
+                        p - #{result.year} -
+                        h2 #{result.name}
+                        p #{result.description_short}
+                    .hero-box
+                        .overlay
+                        .hero(style='background-image: url(#{result.hero});')
+                // /PROJECT OVERVIEW
+                .project-contents.parallax__group
+                    .project-intro.cf
+                        .main-description 
+                            p #{result.description_long}
+                        ul.meta-data
+                            li Client
+                            li #{result.meta.Client}
+                            li Year
+                            li #{result.meta.Year}
+                            li Role
+                            li #{result.meta.Role}
+                            li Team
+                            li #{result.meta.Team}
+                            li Discipline
+                            li #{result.meta.Discipline}
+                            li Medium
+                            li #{result.meta.Medium}
+                            li Technologies
+                            li #{result.meta.Technologies}
+                            li Duration
+                            li #{result.meta.Duration}
+
+                    // 2X PARALLAX IMAGES LEFT
+                    .para-box.parallax__group
+                        blockquote.left.parallax__layer.parallax__layer--fore #{result.pull_quotes[0]}
+                        .image-box(style='background-image: url(#{result.hero});')
+                            .image-left
+                        .image-box.image-box--bottom(style='background-image: url(#{result.hero});')
+                            .image-left
+                                //- p.caption #{result.description_long_2}
+
+                    // GRID ITERATOR
+                    #grid-one.image-grid-wrapper
+                        #grid-one-slider.grid-slider.slider-transition
+                            each image, index in result.images
+                                    img.big-moment-3-color(src = "#{result.images[index].src}")
+                        each image, index in result.images
+                            .image-grid-container.bounce&attributes({'data-slide': index})
+                                .image-grid(style='background-image: url(#{result.images[index].src});')
+                    // /GRID ITERATOR
+
+                    .big-moment-1.parallax__group
+                        .big-moment-1-color.parallax__layer--back(style='background-image: url(#{result.images[index].src});')
+
+                    // GRID ITERATOR 2
+                    #grid-two.image-grid-wrapper
+                        #grid-two-slider.grid-slider.slider-transition
+                            each image, index in result.images
+                                    img.big-moment-3-color(src = "#{result.images[index].src}")
+                        each image, index in result.images
+                            .image-grid-container.bounce&attributes({'data-slide': index})
+                                .image-grid(style='background-image: url(#{result.images[index].src});')
+                    // /GRID ITERATOR 2
+
+                    // 2X PARALLAX IMAGES RIGHT
+                    .para-box.parallax__group   
+                        .image-box.right(style='background-image: url(#{result.hero});')
+                            .image-right
+                                //- p.caption.caption--2 #{result.description_long_2}
+                        .image-box.right.image-box--bottom(style='background-image: url(#{result.hero});')
+                            .image-right
+                        blockquote.right.parallax__layer.parallax__layer--fore #{result.pull_quotes[0]}
+
+                    #video-frame
+                        iframe(src="//player.vimeo.com/video/95969058" width="1600" height="1000" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
+
+                    .big-moment-2.parallax__group  
+                        .big-moment-2-color(style='background-image: url(#{result.images[index].src});')
+                        .img-box.parallax__layer.parallax__layer--fore(style='background-image: url(#{result.images[index].src});')
+                        p.caption #{result.description_long_2}
+
+                    // 2X PARALLAX IMAGES LEFT
+                    .para-box
+                        .image-box.image-box--center(style='background-image: url(#{result.hero});')
+                        p.caption.center-caption #{result.description_long_2}
+
+                    .big-moment-3
+                        each image, index in result.images
+                            img.big-moment-3-color(src = "#{result.images[index].src}")
+
+                    
+                    .close
+                        svg.clothes-line
+                            line(x1="0" y1="0" x2="25" y2="0" stroke-linecap="round")
+
+        // /PROJECT ITERATOR
+
+    // /SITE CONTENT
