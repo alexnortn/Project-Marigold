@@ -1,58 +1,18 @@
-'use strict';
-
-var gulp       = require('gulp'),
-    jade       = require('gulp-jade'), 
-    source     = require('vinyl-source-stream'),
-    rename     = require('gulp-rename'),
-    browserify = require('browserify'),
-    es         = require('event-stream');
-
-// Compile Jade --> HTML
-gulp.task('jade', function() {
-    return gulp.src('src/views/**/*.jade')
-        .pipe(jade())
-        .pipe(gulp.dest('builds/development'))
-});
-
-// Concatenate Js
-gulp.task('default', function() {
-    // we define our input files, which we want to have
-    // bundled:
-    var files = [
-        './public/javascripts/global.js',
-        './public/javascripts/p5/sketch.js',
-        './public/javascripts/jquery.centerIn.js'
-    ];
-    // map them to our stream function
-    var tasks = files.map(function(entry) {
-        return browserify({ entries: [entry] })
-            .bundle()
-            .pipe(source(entry))
-            // rename them to have "bundle as postfix"
-            .pipe(rename({
-                extname: '.bundle.js'
-            }))
-            .pipe(gulp.dest('./dist')); 
-        });
-    // create a merged stream
-    return es.merge.apply(null, tasks);
-});
-
-// From Eyewire
-
 var argv = require('yargs').argv,
     gulp = require('gulp'),
+    jade = require('gulp-jade'), 
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
     stylus = require('gulp-stylus'),
     replace = require('gulp-replace'),
     include = require('gulp-include'),
     browserify = require('browserify'),
-    minifyCss = require('gulp-minify-css'),
+    cleanCss = require('gulp-clean-css'),
     autoprefixer = require('gulp-autoprefixer'),
     rsync = require('gulp-rsync'),
     print = require('gulp-print')
     sourcemaps = require('gulp-sourcemaps'),
+    runSequence = require('run-sequence'),
     babel = require("gulp-babel"),
     shell = require('gulp-shell'),
     GulpSSH = require('gulp-ssh'),
@@ -72,43 +32,46 @@ var BASEURL = argv.production
     ? 'http://alexnortn.com/'
     : '';
 
+
 gulp.task('default', ['make']);
 
-gulp.task('make', [ 'images', 'animations', 'js', 'css', 'fonts' ]);
+gulp.task('make', [ 'images', 'js', 'css', 'fonts' ]);
+
 
 gulp.task('images', [ ], function () {
     gulp
-        .src('assets/images/**')
-        .pipe(gulp.dest('dist/public/images/'));
+        .src('./assets/images/**')
+        .pipe(gulp.dest('./dist/public/images/'));
 
     gulp
-        .src('assets/favicon*')
-        .pipe(gulp.dest('dist/public/'));
-});
-
-gulp.task('animations', function () {
-    gulp
-        .src('assets/animations/**')
-        .pipe(gulp.dest('dist/public/animations/'));
+        .src('./assets/favicon*')
+        .pipe(gulp.dest('./dist/public/'));
 });
 
 gulp.task('clean', function () {
     del([
-        'build/**',
         'dist/**'
     ]);
 });
 
+// Compile Jade --> HTML
+// gulp.task('jade', function() {
+//     return gulp.src('views/**/*.jade')
+//         .pipe(jade())
+//         .pipe(gulp.dest('dist/public/views'))
+// });
+
+
 gulp.task('js', function () {
     var b = browserify({
-        entries: 'clientjs/main.js',
+        entries: 'clientjs/entry.js',
         //debug: true,
         // defining transforms here will avoid crashing your stream
         transform: [ babelify, browserify_shim ],
     });
 
     var stream = b.bundle()
-        .pipe(source('intake.min.js'))
+        .pipe(source('bundle.min.js'))
         .pipe(buffer())
         .pipe(replace(/__BASE_URL/g, `'${BASEURL}'`));
 
@@ -128,7 +91,7 @@ gulp.task('css', [ ], function () {
     gulp.src([
         'assets/css/normalize.css',
         'assets/css/*.css',
-        'assets/css/main.styl'
+        // 'assets/css/main.styl'
     ])
         .pipe(concat('all.styl'))
         .pipe(stylus())
@@ -136,19 +99,15 @@ gulp.task('css', [ ], function () {
         .pipe(autoprefixer({
             browser: "> 1%, last 2 versions, Firefox ESR"
         }))
-        .pipe(minifyCss())
-        .pipe(gulp.dest('dist/public/css/'))
-
-    // del([
-    //  'assets/css/sprites/**'
-    // ]);
+        .pipe(cleanCss())
+        .pipe(gulp.dest('./dist/public/css/'))
 });
 
 gulp.task('fonts', function () {
     gulp.src([
         'assets/fonts/**'
     ])
-        .pipe(gulp.dest('dist/public/fonts/'))
+        .pipe(gulp.dest('./dist/public/fonts/'))
 })
 
 gulp.task('watch', function () {
