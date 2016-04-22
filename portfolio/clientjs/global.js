@@ -11,7 +11,8 @@ var velocity    = require('velocity-animate'),
     velocity_ui = require('velocity-ui-pack'),
     slick       = require('slick-carousel');
 
-
+// Script Plugins
+require('./jquery.centerIn.js');
 
 
 // Userlist data array for filling in info box

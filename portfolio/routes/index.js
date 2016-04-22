@@ -10,7 +10,7 @@ var fs = require('fs'),
     projects;
 
 // Read the file and send to the callback
-fs.readFile('./public/javascripts/content.json', handleFile)
+fs.readFile('./clientjs/content.json', handleFile)
 
 // Write the callback function
 function handleFile(err, data) {

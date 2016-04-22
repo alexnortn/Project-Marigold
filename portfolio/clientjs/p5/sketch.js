@@ -3,7 +3,8 @@
 // http://alexnortn.com
 
 // var bodyParser = require('body-parser');
-var p5 = require('p5');
+require('p5');
+require('toxiclibsjs');
 
 // Load P5js
 
