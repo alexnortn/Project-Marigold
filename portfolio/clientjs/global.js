@@ -6,22 +6,26 @@ http://alexnortn.com
 
 */
 
+"use strict";
+
 // Module Dependencies
-var velocity    = require('velocity-animate'),
+let velocity    = require('velocity-animate'),
     velocity_ui = require('velocity-ui-pack'),
     slick       = require('slick-carousel');
+
+let $ = require('jquery');
 
 // Script Plugins
 require('./jquery.centerIn.js');
 
 
 // Userlist data array for filling in info box
-var userListData = [],
+let userListData = [],
     projects,
     open = false,
     menu = false;
 
-var _sections = $('.slickNav'),
+let _sections = $('.slickNav'),
     _sectionCurrent;
 
     // attachFastClick = require('fastclick');    
@@ -45,7 +49,7 @@ $(document).ready(function() {
     // Check for section (header)
     hashChanged(window.location.hash);
 
-    // var loader = function() {
+    // let loader = function() {
     //     $.Velocity.RunSequence(loadingSequence);
     // } 
 
@@ -75,7 +79,7 @@ $(document).ready(function() {
         $('#arrow').fadeToggle(1000);
         $('.project-contents').fadeToggle(1000);
 
-        var bottomSlick = $('.big-moment-3');
+        let bottomSlick = $('.big-moment-3');
 
         // Initialize Slick object 
         if (!bottomSlick.hasClass('slick-initialized')) { 
@@ -115,11 +119,11 @@ $(document).ready(function() {
     });
 
         // Find all Vimeo videos
-        var $allVideos = $("iframe[src^='//player.vimeo.com'], iframe[src^='//www.youtube.com']"),
+        let $allVideos = $("iframe[src^='//player.vimeo.com'], iframe[src^='//www.youtube.com']"),
 
         // The element that is fluid width
         $fluidEl = $("#video-frame");
-        var newWidth = $fluidEl.width();
+        let newWidth = $fluidEl.width();
 
         // Figure out and save aspect ratio for each video
         $allVideos.each(function() {
@@ -142,7 +146,7 @@ $(document).ready(function() {
         // Resize all videos according to their own aspect ratio
         $allVideos.each(function() {
 
-            var $el = $(this);
+            let $el = $(this);
             $el
               .width(newWidth)
               .height(newWidth * $el.data('aspectRatio'));
@@ -160,7 +164,7 @@ $(document).ready(function() {
         // Resize all videos according to their own aspect ratio
         $allVideos.each(function() {
 
-            var $el = $(this);
+            let $el = $(this);
             $el
               .width(newWidth)
               .height(newWidth * $el.data('aspectRatio'));
@@ -194,7 +198,7 @@ $(document).ready(function() {
     // Image-Grid Overlay
     $('.image-grid-container').click(function() {
         
-        var containerId    = '#' + $(this).parent().attr('id'),  
+        let containerId    = '#' + $(this).parent().attr('id'),  
             slickInitId    = containerId + "-slider",
             overlaySlider  = $(slickInitId),
             slideIndex     = $(this).data('slide');
@@ -230,7 +234,7 @@ $(document).ready(function() {
                 setTimeout(
                     function(e) {
 
-                        var scrollInId = $('.project-view');
+                        let scrollInId = $('.project-view');
                         //     scrollTo = -centerOffest(scrollInId, overlaySlider);
 
                         //     console.log('scrollTo' + scrollTo );
@@ -257,8 +261,8 @@ $(document).ready(function() {
                     .removeClass("active-grid")
                     .addClass("bounce-sm");
 
-            var currentSlide = $(slickInitId).slick('slickCurrentSlide');
-            var activeSlide  = $(containerId)
+            let currentSlide = $(slickInitId).slick('slickCurrentSlide');
+            let activeSlide  = $(containerId)
                                     .find("[data-slide='" + currentSlide + "']");
                 activeSlide
                     .addClass("active-grid")
@@ -272,8 +276,8 @@ $(document).ready(function() {
 
     $('html').bind('mousewheel DOMMouseScroll', function (e) {
         setTimeout( function() {
-            var delta = (e.originalEvent.wheelDelta || -e.originalEvent.detail);
-            var _sectionCount = _sections.length;
+            let delta = (e.originalEvent.wheelDelta || -e.originalEvent.detail);
+            let _sectionCount = _sections.length;
 
             if(e.handled !== true) { // This will prevent event triggering more then once
 
@@ -414,17 +418,17 @@ $(document).ready(function() {
 
     /*
 
-    var UP = 38;
-    var DOWN = 40;
-    var ENTER = 13;
+    let UP = 38;
+    let DOWN = 40;
+    let ENTER = 13;
 
-    var getKey = function(e) {
+    let getKey = function(e) {
       if(window.event) { return e.keyCode; }  // IE
       else if(e.which) { return e.which; }    // Netscape/Firefox/Opera
     };
 
 
-        var keynum = getKey(e);
+        let keynum = getKey(e);
 
         if(keynum === UP) {
           //Move selection up
@@ -450,8 +454,8 @@ $(document).ready(function() {
 function hashRoute() {
 
     // Set current url hash
-    var loaded;
-    var _sections = $('.slickNav');
+    let loaded;
+    let _sections = $('.slickNav');
 
     if ((window.location.hash == "") && (loaded !== true)) {
 
@@ -468,7 +472,7 @@ function hashRoute() {
     } else {
 
         // Find requested route
-        var loc = window.location.hash;
+        let loc = window.location.hash;
 
         // Set current object to this route
         _sectionCurrent = $(_sections).index($(loc));
@@ -496,7 +500,7 @@ if ("onhashchange" in window) { // event supported?
     }
 }
 else { // event not supported:
-    var storedHash = window.location.hash;
+    let storedHash = window.location.hash;
     window.setInterval(function () {
         if (window.location.hash != storedHash) {
             storedHash = window.location.hash;
@@ -557,7 +561,7 @@ function pagination(_sections) {
 
     $(_sections).each(function(i, obj) {
 
-        var id = $(this).attr('id');
+        let id = $(this).attr('id');
 
         // For each element with '_sections' class; append new pagination to dom.
         $('#pagination').append('<div class = "pagination"></div>');
@@ -581,8 +585,8 @@ function navUpdate(_sectionCurrent) {
     if (_sectionCurrent > 0) {
 
             // PREV section
-        var prev   = _sectionCurrent - 1;
-        var prevId = $(_sections[prev]).attr('id');
+        let prev   = _sectionCurrent - 1;
+        let prevId = $(_sections[prev]).attr('id');
             // REGEX for dealing with hyphen conversion to spaces
             prevId = prevId.replace(/-/g, ' ');
 
@@ -603,8 +607,8 @@ function navUpdate(_sectionCurrent) {
     if (_sectionCurrent < (_sections.length - 1)) {
 
             // NEXT section
-        var next   = _sectionCurrent + 1;
-        var nextId = $(_sections[next]).attr('id');
+        let next   = _sectionCurrent + 1;
+        let nextId = $(_sections[next]).attr('id');
             // REGEX for dealing with hyphen conversion to spaces
             nextId = nextId.replace(/-/g, ' ');
 
@@ -622,7 +626,7 @@ function navUpdate(_sectionCurrent) {
     }
 
         // Set the inner html of the current project
-    var currentId = $(_sections[_sectionCurrent]).attr('id');
+    let currentId = $(_sections[_sectionCurrent]).attr('id');
         // REGEX for dealing with hyphen conversion to spaces
         currentId = currentId.replace(/-/g, ' ');
     $('.section-current strong').html(currentId);
@@ -670,7 +674,7 @@ function navSlick(_id) {
 
 function centerOffest(scrollInId, scrollToId) {
 
-    var scrollTop     = scrollInId.scrollTop(),
+    let scrollTop     = scrollInId.scrollTop(),
         elementOffset = scrollToId.offset().top,
         distance      = (elementOffset - scrollTop),
         middle        = distance - $(scrollInId).height()/2;
@@ -686,10 +690,10 @@ function centerOffest(scrollInId, scrollToId) {
 function setGreeting() {
 
     // Get current time
-    var d = new Date();
-    var n = d.getHours();
+    let d = new Date();
+    let n = d.getHours();
 
-    var greeting;
+    let greeting;
 
     if ((n < 11) && (n > 4)) {
         greeting = "Good Morning, ";
@@ -707,7 +711,7 @@ function setGreeting() {
 
 // Set the bottom element width to full using jQuery
 function setWidth() {
-    var windowWidth = $( window ).width();
+    let windowWidth = $( window ).width();
     $("#triangle-bottom-left").css("border-left-width", windowWidth);
     $("#triangle-bottom-right").css("border-right-width", windowWidth);
 }
@@ -723,13 +727,13 @@ Seperation of styling for complex page animations
 
 // Set up page-load animation
 
-var $info          = $("#info"),
+let $info          = $("#info"),
     $navBurger     = $('#nav-burger'),
     $pagination    = $('#pagination'),
     $navFooter     = $('.nav-footer');
 
 
-var loadingSequence = [
+let loadingSequence = [
     {
         e: $navBurger,
         p: {

@@ -1,5 +1,7 @@
 
-var $ = require('jquery');
+"use strict";
+
+let $ = require('jquery');
 
 window.jQuery = $; // Assign to global window object
 
@@ -12,6 +14,6 @@ require('./global.js');
 require('./p5/sketch.js');
 
 // Activation Function
-$(document).ready(function () {
+// $(document).ready(function () {
 	
-});
+// });

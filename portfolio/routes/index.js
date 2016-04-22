@@ -1,9 +1,13 @@
-var express = require('express');
-var router  = express.Router();
 
 
-// Declare variables
-var fs = require('fs'),
+"use strict";
+
+let express = require('express');
+let router  = express.Router();
+
+
+// Declare letiables
+let fs = require('fs'),
     contents,
     bios_text,
     welcome_text,

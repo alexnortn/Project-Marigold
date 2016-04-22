@@ -1,4 +1,8 @@
-var argv = require('yargs').argv,
+
+
+"use strict";
+
+let argv = require('yargs').argv,
     gulp = require('gulp'),
     jade = require('gulp-jade'), 
     concat = require('gulp-concat'),
@@ -10,7 +14,7 @@ var argv = require('yargs').argv,
     cleanCss = require('gulp-clean-css'),
     autoprefixer = require('gulp-autoprefixer'),
     rsync = require('gulp-rsync'),
-    print = require('gulp-print')
+    print = require('gulp-print'),
     sourcemaps = require('gulp-sourcemaps'),
     runSequence = require('run-sequence'),
     babel = require("gulp-babel"),
@@ -23,19 +27,19 @@ var argv = require('yargs').argv,
     babelify = require('babelify'),
     browserify_shim = require('browserify-shim');
 
-var fs = require('fs');
-var del = require('del');
-var path = require('path');
-var extend = require('node.extend');
+let fs = require('fs');
+let del = require('del');
+let path = require('path');
+let extend = require('node.extend');
 
-var BASEURL = argv.production 
+let BASEURL = argv.production 
     ? 'http://alexnortn.com/'
     : '';
 
 
-gulp.task('default', ['make']);
+gulp.task('default', ['build']);
 
-gulp.task('make', [ 'images', 'js', 'css', 'fonts' ]);
+gulp.task('build', [ 'images', 'js', 'css', 'fonts' ]);
 
 
 gulp.task('images', [ ], function () {
@@ -50,7 +54,7 @@ gulp.task('images', [ ], function () {
 
 gulp.task('clean', function () {
     del([
-        '/.public/**'
+        './public/**'
     ]);
 });
 
@@ -63,14 +67,14 @@ gulp.task('clean', function () {
 
 
 gulp.task('js', function () {
-    var b = browserify({
+    let b = browserify({
         entries: 'clientjs/entry.js',
         //debug: true,
         // defining transforms here will avoid crashing your stream
         transform: [ babelify, browserify_shim ],
     });
 
-    var stream = b.bundle()
+    let stream = b.bundle()
         .pipe(source('bundle.min.js'))
         .pipe(buffer())
         .pipe(replace(/__BASE_URL/g, `'${BASEURL}'`));
