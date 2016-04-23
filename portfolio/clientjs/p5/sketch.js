@@ -6,17 +6,21 @@
 "use strict";
 
 let toxi = require('toxiclibsjs'),
-		p5 = require('p5'),
-		$ = require('jquery'),
-		Particle = require('./particle.js'),
-		Nudge = require('./nudge.js'),
-		MakeButton = require('./makeButton.js');
+	p5 = require('p5'),
+	$ = require('jquery'),
+	Particle = require('./particle.js'),
+	Nudge = require('./nudge.js'),
+	MakeButton = require('./makeButton.js'),
+	vertices = require('./data/verts.json');
+
+	// p5.dom
+	// let dom = require('../../node_modules/p5/lib/addons/p5.dom.js');
+	require('p5/lib/addons/p5.dom');
 
 let _options = {
 	width: 100,
 	height: 100,
 	anchor: null,
-	slide_count: null,
 };
 
 let _canvas = $.Deferred();
@@ -72,8 +76,6 @@ let glyph = function (p) {
 			aCounterVerts = [],
 			nVerts = [];
 
-	// This will be our JSON object for the phys sim
-	let vertices;
 	let nudgeAttractor; 
 	let dashButton;
 
@@ -81,22 +83,19 @@ let glyph = function (p) {
 	let descriptiveText1 = "Vertices used to construct the character are influenced by an underlying physics system and mapped to extend towards difference areas of my interest.";
 
 	p.preload = function() {
-		vertices = p.loadJSON("javascripts/p5/data/verts.json");
+		// vertices = p.loadJSON("clientjs/p5/data/verts.json");
 	}
 
 	p.setup = function() {
 
-		canvas = p.createCanvas(_options.width, _options.height);
-		canvas.parent(_options.anchor);
+		canvas = p.createCanvas(window.innerWidth, window.innerHeight);
+		canvas.parent('interactive');
 
 		_canvas.resolve(canvas.elt); // --> Sneaky deferred shenanigans
 
-		// canvas = createCanvas(window.innerWidth, window.innerHeight);
-		// canvas.parent('interactive');
-
-p.noStroke();
+		p.noStroke();
 		
-		phi = (1 + sqrt(5)) / 2;
+		phi = (1 + p.sqrt(5)) / 2;
 
 		w = p.windowWidth;
 		h = p.windowHeight;
@@ -144,7 +143,14 @@ p.noStroke();
 		physics.addBehavior(gravity);
 
 		// Set the world's bounding box
-		physics.setWorldBounds(new Rect(0,0,width*1.25,height*1.25));
+		physics.setWorldBounds(
+			new toxi.geom.Rect(
+				0,
+				0,
+				p.width*1.25,
+				p.height*1.25
+			)
+		);
 
 		// Initiate the physics array
 		physInit();
@@ -152,9 +158,9 @@ p.noStroke();
 		// Make our Node Object
 		nudgeAttractor = new Nudge({
 			physics: physics,
-			posittion: new Vec2D(width/2,height/2),
+			position: new toxi.geom.Vec2D(p.width/2,p.height/2),
 			radius: 24,
-			range: width/2,
+			range: p.width/2,
 			strength: 0.1,
 			p: p,
 		});
@@ -188,7 +194,7 @@ p.noStroke();
 		physics.update();
 
 		// Update the attractor position
-		touchIsDown ? mousePos.set(touchX ,touchY) : mousePos.set(mouseX,mouseY);
+		p.touchIsDown ? mousePos.set(p.touchX ,p.touchY) : mousePos.set(p.mouseX,p.mouseY);
 		nudgeAttractor.set(mousePos.x ,mousePos.y);
 
 		p.background(255);
@@ -218,7 +224,7 @@ p.noStroke();
 	}
 
 	function windowResized() {
-		p.resizeCanvas(windowWidth, windowHeight);
+		p.resizeCanvas(p.windowWidth, p.windowHeight);
 		w = p.windowWidth;
 		scaleFunc(w,h);
 		// Empty the Physics Sim
@@ -245,7 +251,7 @@ p.noStroke();
 			p.vertex(vertices.a_vertex[i].x, vertices.a_vertex[i].y);
 		}
 		}
-		p.endShape(CLOSE);
+		p.endShape(p.CLOSE);
 
 	}
 
@@ -276,7 +282,7 @@ p.noStroke();
 		p.vertex(aSpringVert[48].x, aSpringVert[48].y);
 		p.bezierVertex(aSpringVert[49].x, aSpringVert[49].y, aSpringVert[50].x, aSpringVert[50].y, aSpringVert[51].x, aSpringVert[51].y);
 		p.bezierVertex(aSpringVert[52].x, aSpringVert[52].y, aSpringVert[53].x, aSpringVert[53].y, aSpringVert[54].x, aSpringVert[54].y);
-		p.endShape(CLOSE);
+		p.endShape(p.CLOSE);
 		p.fill(255);
 		p.beginShape();
 		p.vertex(aCounterSpringVert[0].x, aCounterSpringVert[0].y);
@@ -285,7 +291,7 @@ p.noStroke();
 		p.bezierVertex(aCounterSpringVert[5].x, aCounterSpringVert[5].y, aCounterSpringVert[6].x, aCounterSpringVert[6].y, aCounterSpringVert[7].x, aCounterSpringVert[7].y);
 		p.bezierVertex(aCounterSpringVert[8].x, aCounterSpringVert[8].y, aCounterSpringVert[9].x, aCounterSpringVert[9].y, aCounterSpringVert[10].x, aCounterSpringVert[10].y);
 		p.bezierVertex(aCounterSpringVert[11].x, aCounterSpringVert[11].y, aCounterSpringVert[12].x, aCounterSpringVert[12].y, aCounterSpringVert[13].x, aCounterSpringVert[13].y);
-		p.endShape(CLOSE);
+		p.endShape(p.CLOSE);
 	}
 
 	function drawBasicN(){
@@ -304,7 +310,7 @@ p.noStroke();
 			p.vertex(nSpringVert[7].x, nSpringVert[7].y);
 			p.vertex(nSpringVert[8].x, nSpringVert[8].y);
 			p.vertex(nSpringVert[9].x, nSpringVert[9].y);
-		p.endShape(CLOSE);
+		p.endShape(p.CLOSE);
 	}
 
 	function rayTest2() {
@@ -435,8 +441,8 @@ p.noStroke();
 			for(let i in aVerts) {
 					p.strokeWeight(scaleFactor);
 					let aVertPos = p.createVector(aLockVert[i].x, aLockVert[i].y);
-					let trans = map(aVertPos.dist(mousePos), 0, center.x/2, 100, 0);
-					let strokeCol = color(255,0,0,trans);
+					let trans = p.map(aVertPos.dist(mousePos), 0, center.x/2, 100, 0);
+					let strokeCol = p.color(255,0,0,trans);
 					p.fill(strokeCol);
 					p.stroke(strokeCol);
 					p.ellipse(aLockVert[i].x,aLockVert[i].y,scaleFactor,scaleFactor);
@@ -448,8 +454,8 @@ p.noStroke();
 			for(let i in aCounterVerts) {
 					p.strokeWeight(scaleFactor);
 					let aVertPos = p.createVector(aCounterLockVert[i].x, aCounterLockVert[i].y);
-					let trans = map(aVertPos.dist(mousePos), 0, center.x/2, 100, 0);
-					let strokeCol = color(255,0,0,trans);
+					let trans = p.map(aVertPos.dist(mousePos), 0, center.x/2, 100, 0);
+					let strokeCol = p.color(255,0,0,trans);
 					p.stroke(strokeCol);
 					p.fill(strokeCol);
 					p.ellipse(aCounterLockVert[i].x,aCounterLockVert[i].y,scaleFactor,scaleFactor);
@@ -461,8 +467,8 @@ p.noStroke();
 			for(let i in nVerts) {
 					p.strokeWeight(scaleFactor);
 					let aVertPos = p.createVector(nLockVert[i].x, nLockVert[i].y);
-					let trans = map(aVertPos.dist(mousePos), 0, center.x/2, 100, 0);
-					let strokeCol = color(255,0,0,trans);
+					let trans = p.map(aVertPos.dist(mousePos), 0, center.x/2, 100, 0);
+					let strokeCol = p.color(255,0,0,trans);
 					p.stroke(strokeCol);
 					p.fill(strokeCol);
 					p.ellipse(nLockVert[i].x,nLockVert[i].y,scaleFactor,scaleFactor);
@@ -477,8 +483,8 @@ p.noStroke();
 			let locConverge = p.createVector(x,y);
 			for(let i in aVerts) {
 					let aVertPos = p.createVector(aSpringVert[i].x, aSpringVert[i].y);
-					let trans = map(aVertPos.dist(locConverge), 0, center.x, 100, 0);
-					let strokeCol = color(255,0,0,trans);
+					let trans = p.map(aVertPos.dist(locConverge), 0, center.x, 100, 0);
+					let strokeCol = p.color(255,0,0,trans);
 					p.fill(strokeCol);
 					p.stroke(strokeCol);
 					p.ellipse(aSpringVert[i].x,aSpringVert[i].y,scaleFactor,scaleFactor);
@@ -488,8 +494,8 @@ p.noStroke();
 			for(let i in aCounterVerts) {
 					p.strokeWeight(scaleFactor);
 					let aVertPos = p.createVector(aCounterSpringVert[i].x, aCounterSpringVert[i].y);
-					let trans = map(aVertPos.dist(locConverge), 0, center.x, 100, 0);
-					let strokeCol = color(255,0,0,trans);
+					let trans = p.map(aVertPos.dist(locConverge), 0, center.x, 100, 0);
+					let strokeCol = p.color(255,0,0,trans);
 					p.stroke(strokeCol);
 					p.fill(strokeCol);
 					p.ellipse(aCounterSpringVert[i].x,aCounterSpringVert[i].y,scaleFactor,scaleFactor);
@@ -499,8 +505,8 @@ p.noStroke();
 			for(let i in nVerts) {
 					p.strokeWeight(scaleFactor);
 					let aVertPos = p.createVector(nSpringVert[i].x, nSpringVert[i].y);
-					let trans = map(aVertPos.dist(locConverge), 0, center.x, 100, 0);
-					let strokeCol = color(255,0,0,trans);
+					let trans = p.map(aVertPos.dist(locConverge), 0, center.x, 100, 0);
+					let strokeCol = p.color(255,0,0,trans);
 					p.stroke(strokeCol);
 					p.fill(strokeCol);
 					p.ellipse(nSpringVert[i].x,nSpringVert[i].y,scaleFactor,scaleFactor);
@@ -528,7 +534,7 @@ p.noStroke();
 							})
 						);
 						aSpringArr.push(
-							new new toxi.geom.VerletSpring2D(aLockVert[i], aSpringVert[i],springLength, springStrength)
+							new toxi.physics2d.VerletSpring2D(aLockVert[i], aSpringVert[i],springLength, springStrength)
 						);
 								physics.addParticle(aLockVert[i]);
 								physics.addParticle(aSpringVert[i]);
@@ -554,7 +560,7 @@ p.noStroke();
 					);
 
 					aCounterSpringArr.push(
-						new toxi.geom.VerletSpring2D(aCounterLockVert[i], aCounterSpringVert[i],springLength, springStrength)
+						new toxi.physics2d.VerletSpring2D(aCounterLockVert[i], aCounterSpringVert[i],springLength, springStrength)
 					);
 
 					physics.addParticle(aCounterLockVert[i]);
@@ -581,7 +587,7 @@ p.noStroke();
 					);
 					
 					nSpringArr.push(
-						new toxi.geom.VerletSpring2D(nLockVert[i], nSpringVert[i],springLength, springStrength)
+						new toxi.physics2d.VerletSpring2D(nLockVert[i], nSpringVert[i],springLength, springStrength)
 					);
 					
 					physics.addParticle(nLockVert[i]);
@@ -619,8 +625,8 @@ p.noStroke();
 	}
 
 	function findCenter() {
-		w = windowWidth;
-		h = windowHeight;
+		w = p.windowWidth;
+		h = p.windowHeight;
 		center.set(w/2, h/2);
 		let glyphCenterX = center.x - aCenterOffset.x; 
 		let glyphCenterY = center.y + aCenterOffset.y - 75; 
@@ -695,7 +701,7 @@ p.noStroke();
 	function motionBlur() {
 		p.push();
 			p.fill(255, 100);
-			rect(0,0,width,height);
+			p.rect(0,0,width,height);
 		p.pop();
 	}
 
@@ -707,7 +713,7 @@ p.noStroke();
 		i < 5 ? (x += 30) : (x -= 125);
 		if (i > 4) y -= 3;
 		if (i == 6) x += 45;
-		let textOpacity = map(opacity, 0, 255, 0, 1);
+		let textOpacity = p.map(opacity, 0, 255, 0, 1);
 		liveText.style("opacity", textOpacity);
 		liveText.html(interestsArr[i]);
 		liveText.position(x,y-7);
@@ -723,8 +729,8 @@ p.noStroke();
 		let lineLoc;
 		let opacity;
 
-		lineLoc = map(buttonFade, 0, 255, 0, lineOffset);
-		opacity = norm(buttonFade, 0, 255);
+		lineLoc = p.map(buttonFade, 0, 255, 0, lineOffset);
+		opacity = p.norm(buttonFade, 0, 255);
 
 		// Position the descriptive text along with the button
 		describeText.position(mousey.x, mousey.y -95);
@@ -763,15 +769,15 @@ p.noStroke();
 		let fadeSpeed = 20;
 		let opacity;
 
-		opacity = norm(buttonFade, 0, 255);
+		opacity = p.norm(buttonFade, 0, 255);
 
-		let element = p.getElement('cross-circle');
+		let element = $('#cross-circle');
 
-		element.mouseOver(function() {
+		element.hover(function() {
 			hover = true;
 		});
 
-			element.mouseOut(function() {
+		element.mouseout(function() {
 			hover = false;
 		});
 
@@ -813,12 +819,7 @@ p.noStroke();
 	*/
 
 
-module.exports.init = function (args = {}) {
-	_options.anchor = args.anchor;
-	_options.width = args.width;
-	_options.height = args.height;
-	_options.slide_count = args.slide_count;
-
+module.exports.init = function () {
 	_canvas = $.Deferred();
 
 	return new p5(glyph); // Instantiate the entire P5 sketch

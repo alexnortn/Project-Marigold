@@ -19,7 +19,7 @@ function Particle(args = {}) {
 
 	this.position = args.position || new toxi.geom.Vec2D(0,0);
 
-	toxi.physics2d.VerletParticle2D.call(this,position);
+	toxi.physics2d.VerletParticle2D.call(this,_this.position);
 
 	// Override the display method
 	this.display = function(){
