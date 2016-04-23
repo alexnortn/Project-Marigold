@@ -53,7 +53,7 @@ gulp.task('images', [ ], function () {
 });
 
 gulp.task('clean', function () {
-    del([
+    del([   
         './public/**'
     ]);
 });
