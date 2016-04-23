@@ -39,7 +39,7 @@ let BASEURL = argv.production
 
 gulp.task('default', ['build']);
 
-gulp.task('build', [ 'images', 'js', 'css', 'fonts' ]);
+gulp.task('build', [ 'images', 'js', 'css', 'fonts', 'plugins' ]);
 
 
 gulp.task('images', [ ], function () {
@@ -114,6 +114,13 @@ gulp.task('fonts', function () {
         .pipe(gulp.dest('./public/fonts/'))
 })
 
+gulp.task('plugins', function () {
+    gulp.src([
+        'assets/plugins/**'
+    ])
+        .pipe(gulp.dest('./public/plugins/'))
+})
+
 gulp.task('watch', function () {
     gulp.watch([
         'assets/animations/**'
@@ -122,6 +129,10 @@ gulp.task('watch', function () {
     gulp.watch([
         'assets/fonts/**'
     ], [ 'fonts' ]);
+
+    gulp.watch([
+        'assets/plugins/**'
+    ], [ 'plugins' ]);
 
     gulp.watch([
         'assets/css/*'

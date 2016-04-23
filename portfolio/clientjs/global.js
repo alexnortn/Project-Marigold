@@ -10,6 +10,7 @@ http://alexnortn.com
 
 // jQuery things
 let $ = require('jquery');
+        require('./jquery.centerIn.js');
 
 // Module Dependencies
 let velocity    = require('velocity-animate');
@@ -55,8 +56,8 @@ $(document).ready(function() {
 
     // Center In
 
-    // $('.project-overview').alwaysCenterIn(window, { top: "-3%" });
-    // $('#pagination').alwaysCenterIn(window, { direction: 'vertical' });
+    $('.project-overview').alwaysCenterIn(window, { top: "-3%" });
+    $('#pagination').alwaysCenterIn(window, { direction: 'vertical' });
     // $('#bios-content').alwaysCenterIn('#bios', { top: "-3%" });
 
     // Display Interaction Info
