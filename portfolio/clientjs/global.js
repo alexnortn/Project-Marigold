@@ -8,15 +8,13 @@ http://alexnortn.com
 
 "use strict";
 
-// Module Dependencies
-let velocity    = require('velocity-animate'),
-    velocity_ui = require('velocity-ui-pack'),
-    slick       = require('slick-carousel');
-
+// jQuery things
 let $ = require('jquery');
 
-// Script Plugins
-require('./jquery.centerIn.js');
+// Module Dependencies
+let velocity    = require('velocity-animate');
+let velocity_ui = require('velocity-ui-pack');
+let slick       = require('slick-carousel');
 
 
 // Userlist data array for filling in info box
@@ -57,8 +55,8 @@ $(document).ready(function() {
 
     // Center In
 
-    $('.project-overview').alwaysCenterIn(window, { top: "-3%" });
-    $('#pagination').alwaysCenterIn(window, { direction: 'vertical' });
+    // $('.project-overview').alwaysCenterIn(window, { top: "-3%" });
+    // $('#pagination').alwaysCenterIn(window, { direction: 'vertical' });
     // $('#bios-content').alwaysCenterIn('#bios', { top: "-3%" });
 
     // Display Interaction Info

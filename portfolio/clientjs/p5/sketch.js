@@ -806,10 +806,10 @@ let glyph = function (p) {
 	}
 
 	// Deal with resize events
-	window.onresize = function() { 
-		$(canvas).width(window.innerWidth)
-			     .height(window.innerHeight);
-	}
+	// window.onresize = function() { 
+	// 	$(canvas).width(window.innerWidth)
+	// 		     .height(window.innerHeight);
+	// }
 
 }
 
