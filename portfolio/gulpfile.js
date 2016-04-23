@@ -94,9 +94,8 @@ gulp.task('js', function () {
 gulp.task('css', [ ], function () {
     gulp.src([
         'assets/css/normalize.css',
+        'assets/css/main.styl',
         'assets/css/*.css',
-        'assets/css/*.stylus',
-        // 'assets/css/main.styl'
     ])
         .pipe(concat('all.styl'))
         .pipe(stylus())
