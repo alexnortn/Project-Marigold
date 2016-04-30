@@ -9,7 +9,7 @@ let toxi = require('toxiclibsjs'),
 	p5 = require('p5'),
 	$ = require('jquery'),
 	Particle = require('./particle.js'),
-	Nudge = require('./nudge.js'),
+	Attractor = require('./attractor.js'),
 	MakeButton = require('./makeButton.js'),
 	vertices = require('./data/verts.json');
 
@@ -142,8 +142,8 @@ let glyph = function (p) {
 		// Initiate the physics array
 		physInit();
 		
-		// Make our Node Object
-		nudgeAttractor = new Nudge({
+		// Make our Attractor Object
+		nudgeAttractor = new Attractor({
 			physics: physics,
 			position: new toxi.geom.Vec2D(p.width/2,p.height/2),
 			radius: 24,
@@ -562,15 +562,46 @@ let glyph = function (p) {
 		scaleFactor = w / (1920 / dynamicScale);
 	}
 
-	// A little too much interaction, if you ask me! Might be useful later
+	// // Perlin Attractors
+	// // Wandering agents exerting force on the glyph
+	// function perlinAttractors(num) {
+	// 	let perlinSwarm = [];
+	// 	let pos = p.createVector();
 
+	// 	for (let i = 0; i < num; i++) {
+	// 		// Randomize pos
+	// 		pos.x = p.random(p.width);
+	// 		pos.y = p.random(p.height);
+			
+	// 		// Make our Attractor Objects
+	// 		perlinSwarm.push(
+	// 			new Attractor({
+	// 				physics: physics,
+	// 				position: new toxi.geom.Vec2D(pos.x,pos.y),
+	// 				radius: 24,
+	// 				range: p.width/2,
+	// 				strength: 0.1,
+	// 				p: p,
+	// 			});
+	// 		)
+	// 	}
+
+	// 	return function() {
+	// 		// Let em' wander
+	// 		perlinSwarm.forEach(function(agent) {
+
+	// 		});
+	// 	}
+	// }
+
+	// A little too much interaction, if you ask me! Might be useful later
 	p.mouseClicked = function() {
 		physics.removeBehavior(gravity);
 		// Use perlin noise to achieve a similar* gravity vector
-		xOff += 0.5;
+		// xOff += 0.5;
 		console.log('mouse clicked')
 		// Horizontal + Vertical leaping may be too much...
-		gravityStrength.x = p.noise(xOff) * 0.75;
+		// gravityStrength.x = p.noise(xOff) * 0.75;
 		gravityStrength.y *= -1;
 		gravity = new toxi.physics2d.behaviors.GravityBehavior(gravityStrength); // Re-initialize gravity
 		physics.addBehavior(gravity);
@@ -590,6 +621,8 @@ let glyph = function (p) {
 	window.onresize = function() { 
 		$("#glyph").width(window.innerWidth)
 			     .height(window.innerHeight);
+
+	    glyphOp = 0; // Fade glyph in each resize to avoid jumpiness
 
      	console.log("window resized")
      	console.log($("#glyph").width());

@@ -11,7 +11,7 @@ let $ = require('jquery'),
 	p5 = require('p5');
 
 // Child class constructor
-function Nudge(args = {}) {
+function Attractor(args = {}) {
 	
 	let p = args.p; // p5 instance
 	let _this = this;
@@ -40,7 +40,7 @@ function Nudge(args = {}) {
 			_this.radius*2
 		);
 	}
-
+ 	
 	this.hover = function() {
 		attractForce.setStrength(0.5);
 	}
@@ -56,7 +56,7 @@ function Nudge(args = {}) {
 }
 
 // Inherit from the parent class
-Nudge.prototype = Object.create(toxi.physics2d.VerletParticle2D.prototype);
-Nudge.prototype.constructor = Nudge;
+Attractor.prototype = Object.create(toxi.physics2d.VerletParticle2D.prototype);
+Attractor.prototype.constructor = Attractor;
 
-module.exports = Nudge;
+module.exports = Attractor;
