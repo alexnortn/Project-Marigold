@@ -222,8 +222,6 @@
         for (var i = 0; i < len; i++) {
             var item = array[i];
 
-            console.log(item, typeof(item));
-
             if (typeof(item) === 'object' && Array.isArray(item)) {
                 flat = flat.concat(flatten(item));
             }

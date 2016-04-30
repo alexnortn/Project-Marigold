@@ -286,6 +286,12 @@ strong
 	margin-top: 7px
 
 
+#wrapper
+	width: 100%
+	height: 100%
+	display: flex
+
+
 #nav-burger 
 	right: 50px
 	opacity: 1
@@ -327,13 +333,13 @@ strong
 	/*background-color: beige*/
 	width: 100%
 	height: 100%
+	display: flex
 
 
 #bios-content 
-	position: absolute
-	float: left
-	margin-top: 9%
+	margin-top: -9%
 	margin-left: 16%
+	align-self: center
 	width: 950px
 	transition: all ease-in-out 250ms
 
@@ -376,19 +382,25 @@ strong
 
 #bios-content button 
 	background-color: transparent
-	border-radius: 10px
-	border: solid 1px rgba(218, 218, 218, 1)
-	height: 66px
-	width: 200px
+	border: 1px solid grey
+	padding: 10px 20px 10px 20px
 	margin-left: 125px
 	margin-top: 15px
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.18)
+	display: inline-flex
+	text-align: center
+	align-items: center
+	justify-content: center
 	transition: all ease-in-out 250ms
 
 
 #bios-content button:hover 
 	cursor: pointer
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0)
+	background-color: #404040
+	border-color: #404040
+	
+
+#bios-content button:hover p
+	color: white
 
 
 #bios-content button:active 
@@ -402,17 +414,16 @@ strong
 	outline: 0
 
 
-
 #bios-content button p 
 	font-family: BerlingskeSans-bold, serif
-	font-size: 14px
-	line-height: 1em
+	color: grey
+	font-size: 12px
+	line-height: 2.4em
+	margin: 0
 	text-transform: uppercase
-	letter-spacing: 3px
-	margin-left: auto
-	margin-right: auto
+	letter-spacing: 5px
 	text-align: center
-	margin-top: 4px
+	align-self: center
 
 
 #readMore 

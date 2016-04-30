@@ -176,11 +176,6 @@ $(document).ready(function() {
     // Event Handlers
 
 
-    $('.nav-footer').click(function(){
-        $('#bios').velocity("scroll", { duration: 1000, easing: "ease-in-out" });
-    });
-
-
     // Bios page button
     $('#bios-button').click(function() {
         $(this).velocity("fadeOut", { duration: 500 });
@@ -270,68 +265,6 @@ $(document).ready(function() {
 
     });
 
-
-    // Navigation Functions
-
-    $('html').bind('mousewheel DOMMouseScroll', function (e) {
-        setTimeout( function() {
-            let delta = (e.originalEvent.wheelDelta || -e.originalEvent.detail);
-            let _sectionCount = _sections.length;
-
-            if(e.handled !== true) { // This will prevent event triggering more then once
-
-                if (open == false) {
-            
-                    if (delta < 0) {
-
-                            console.log('You scrolled down');   
-
-                        if (_sectionCurrent < _sectionCount - 1) {
-
-                            // Remove active class
-                            $(_sections[_sectionCurrent]).removeClass('currentSection');
-                            
-                            // Increment _sectionCurrent 
-                            _sectionCurrent++;
-
-                            // Add active class
-                            $(_sections[_sectionCurrent]).addClass('currentSection');
-
-                                console.log(_sectionCurrent + " down");
-
-                            // Navigate
-                            navigateScroll(_sectionCurrent);
-
-                        }
-
-                    } else if (delta > 0) {
-                            
-                            console.log('You scrolled up');
-                        
-                        if (_sectionCurrent > 0) {
-
-                            // Remove active class
-                            $(_sections[_sectionCurrent]).removeClass('currentSection');
-                            
-                            // Decrement _sectionCurrent 
-                            _sectionCurrent--;
-
-                            // Add active class
-                            $(_sections[_sectionCurrent]).addClass('currentSection');
-
-                            console.log(_sectionCurrent + " up");
-
-                            // Navigate
-                            navigateScroll(_sectionCurrent);
-
-                        }
-                    }
-                }
-            }
-        }, 100);
-
-    });
-
     // Pagination event listener
     $('.pagination').click(function() {
 
@@ -359,89 +292,6 @@ $(document).ready(function() {
         navigateScroll(_sectionCurrent);
 
     });
-
-
-    // Footer navigation moments
-
-    $('#prev').click( function(e) {
-
-         if(e.handled !== true) { // This will prevent event triggering more then once
-        
-            if (_sectionCurrent > 0) {
-
-                // Remove active class
-                $(_sections[_sectionCurrent]).removeClass('currentSection');
-                
-                // Decrement _sectionCurrent 
-                _sectionCurrent--;
-
-                // Add active class
-                $(_sections[_sectionCurrent]).addClass('currentSection');
-
-                console.log(_sectionCurrent + " prev");
-
-                // Navigate
-                navigateScroll(_sectionCurrent);
-
-            }
-        }
-    });
-
-    $('#next').click( function(e) {
-
-         if(e.handled !== true) { // This will prevent event triggering more then once
-        
-            if (_sectionCurrent < _sections.length - 1) {
-
-                // Remove active class
-                $(_sections[_sectionCurrent]).removeClass('currentSection');
-                
-                // Increment _sectionCurrent 
-                _sectionCurrent++;
-
-                // Add active class
-                $(_sections[_sectionCurrent]).addClass('currentSection');
-
-                    console.log(_sectionCurrent + " next");
-
-                // Navigate
-                navigateScroll(_sectionCurrent);
-
-            }
-        }
-
-    });
-
-
-    // Dealing with key events regarding navigation
-
-    /*
-
-    let UP = 38;
-    let DOWN = 40;
-    let ENTER = 13;
-
-    let getKey = function(e) {
-      if(window.event) { return e.keyCode; }  // IE
-      else if(e.which) { return e.which; }    // Netscape/Firefox/Opera
-    };
-
-
-        let keynum = getKey(e);
-
-        if(keynum === UP) {
-          //Move selection up
-        }
-
-        if(keynum === DOWN) {
-          //Move selection down
-        }
-
-        if(keynum === ENTER) {
-          //Act on current selection
-        }
-
-    */
     
 
 });
@@ -533,9 +383,6 @@ function hashChanged(_hash) {
             // Affect pagination on navigation change
             paginationUpdate(_sectionCurrent);
 
-            // Affect the bottom navigation bar
-            navUpdate(_sectionCurrent);
-
         }
     , 10 );
 
@@ -577,75 +424,6 @@ function paginationUpdate(_sectionCurrent) {
 
 }
 
-// Set the state of the bottom nav-footer
-function navUpdate(_sectionCurrent) {
-
-    // Check for prev section
-    if (_sectionCurrent > 0) {
-
-            // PREV section
-        let prev   = _sectionCurrent - 1;
-        let prevId = $(_sections[prev]).attr('id');
-            // REGEX for dealing with hyphen conversion to spaces
-            prevId = prevId.replace(/-/g, ' ');
-
-            // Set the inner html of our <strong> section
-        $('.section-prev strong').html(prevId);
-        $('.section-prev').removeClass('qt-opacity');
-
-    } else {
-
-        // If there is nothing beforehand, set the inner html to nothing
-        // Also, probably set it to display none <--
-        $('.section-prev strong').html("");
-        $('.section-prev').addClass('qt-opacity');
-
-    }
-
-    // Check for next section
-    if (_sectionCurrent < (_sections.length - 1)) {
-
-            // NEXT section
-        let next   = _sectionCurrent + 1;
-        let nextId = $(_sections[next]).attr('id');
-            // REGEX for dealing with hyphen conversion to spaces
-            nextId = nextId.replace(/-/g, ' ');
-
-            // Set the inner html of our <strong> section
-        $('.section-next strong').html(nextId);
-        $('.section-next').removeClass('qt-opacity');
-
-    } else {
-
-        // If there is nothing beforehand, set the inner html to nothing
-        // Also, probably set it to display none <--
-        $('.section-next strong').html("");
-        $('.section-next').addClass('qt-opacity');
-
-    }
-
-        // Set the inner html of the current project
-    let currentId = $(_sections[_sectionCurrent]).attr('id');
-        // REGEX for dealing with hyphen conversion to spaces
-        currentId = currentId.replace(/-/g, ' ');
-    $('.section-current strong').html(currentId);
-
-    // Check if we're in a project --> controle footer color ::
-    if ($(_sections[_sectionCurrent]).data('inproject')) {
-
-        $('.nav-footer')
-            .removeClass('.dark-nav')
-            .addClass('.white-nav');
-
-    } else {
-
-        $('.nav-footer')
-            .removeClass('.white-nav')
-            .addClass('.dark-nav');
-
-    }
-
-}
 
 // Setup for Slick slider plugin Grid #1
 function addSlick(_id, _dotsBool) {

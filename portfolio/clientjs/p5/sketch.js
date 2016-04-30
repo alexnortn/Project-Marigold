@@ -36,45 +36,45 @@ let glyph = function (p) {
 	let canvas;
 
 	let aLockVert = [],
-			aSpringVert = [],
-			aSpringArr = [],
-			aCounterLockVert = [],
-			aCounterSpringVert = [],
-			aCounterSpringArr = [],
-			nLockVert = [],
-			nSpringVert = [],
-			nSpringArr = [],
-			w,h,
-			gravity,
-			gravityStrength,
-			xOff,
-			mousePos,
-			scaleFactor,
-			nScaleFactor,
-			center,
-			glyphCenter,
-			nOffset,
-			phi,
-			alphaOpa,
-			timeOut,
-			timeOut1,
-			alphaOpa1,
-			buttonFade,
-			buttonFade1,
-			lineOp,
-			glyphOp,
-			tempSelection,
-			aCenterOffset,
-			liveText,
-			describeText,
-			describeText1,
-			hover,
-			clockBool,
-			bigGlyph,
-			interestsArr = [],
-			aVerts = [],
-			aCounterVerts = [],
-			nVerts = [];
+		aSpringVert = [],
+		aSpringArr = [],
+		aCounterLockVert = [],
+		aCounterSpringVert = [],
+		aCounterSpringArr = [],
+		nLockVert = [],
+		nSpringVert = [],
+		nSpringArr = [],
+		w,h,
+		gravity,
+		gravityStrength,
+		xOff,
+		mousePos,
+		scaleFactor,
+		nScaleFactor,
+		center,
+		glyphCenter,
+		nOffset,
+		phi,
+		alphaOpa,
+		timeOut,
+		timeOut1,
+		alphaOpa1,
+		buttonFade,
+		buttonFade1,
+		lineOp,
+		glyphOp,
+		tempSelection,
+		aCenterOffset,
+		liveText,
+		describeText,
+		describeText1,
+		hover,
+		clockBool,
+		bigGlyph,
+		interestsArr = [],
+		aVerts = [],
+		aCounterVerts = [],
+		nVerts = [];
 
 	let nudgeAttractor; 
 	let dashButton;
@@ -90,6 +90,7 @@ let glyph = function (p) {
 
 		canvas = p.createCanvas(window.innerWidth, window.innerHeight);
 		canvas.parent('interactive');
+		canvas.id('glyph');
 
 		_canvas.resolve(canvas.elt); // --> Sneaky deferred shenanigans
 
@@ -226,6 +227,8 @@ let glyph = function (p) {
 	function windowResized() {
 		p.resizeCanvas(p.windowWidth, p.windowHeight);
 		w = p.windowWidth;
+		h = p.windowHeight;
+
 		scaleFunc(w,h);
 		// Empty the Physics Sim
 		physEmpty();
@@ -235,6 +238,7 @@ let glyph = function (p) {
 		loadArrays(vertices);
 		// Initiate the physics array
 		physInit();
+
 	}
 
 	function drawBezier(vertices) {
@@ -258,8 +262,9 @@ let glyph = function (p) {
 	function drawBasicA(){
 		let fadeSpeed = 2;
 		if (glyphOp < 255) glyphOp += fadeSpeed;
-		p.noStroke();
-		p.fill(35,35,35,glyphOp);
+		// p.noStroke();
+		p.stroke(1);
+		// p.fill(35,35,35,glyphOp);
 		p.beginShape();
 		p.vertex(aSpringVert[0].x, aSpringVert[0].y);
 		p.vertex(aSpringVert[1].x, aSpringVert[1].y);
@@ -297,8 +302,9 @@ let glyph = function (p) {
 	function drawBasicN(){
 		let fadeSpeed = 2;
 		if (glyphOp < 255) glyphOp += fadeSpeed;
-		p.noStroke();
-		p.fill(35,35,35,glyphOp);
+		p.stroke(1);
+		// p.noStroke();
+		// p.fill(35,35,35,glyphOp);
 		p.beginShape();
 			p.vertex(nSpringVert[0].x, nSpringVert[0].y);
 			p.vertex(nSpringVert[1].x, nSpringVert[1].y);
@@ -678,7 +684,7 @@ let glyph = function (p) {
 	// Scaling function
 
 	function scaleFunc(w,h) {
-		let dynamicScale = ((w < 1000) || (h < 850)) ?  1.25 : 1.15;
+		let dynamicScale = ((w < 1000) || (h < 850)) ?  1.5 : 1.25;
 		scaleFactor = w / (1920 / dynamicScale);
 	}
 
@@ -806,10 +812,16 @@ let glyph = function (p) {
 	}
 
 	// Deal with resize events
-	// window.onresize = function() { 
-	// 	$(canvas).width(window.innerWidth)
-	// 		     .height(window.innerHeight);
-	// }
+	window.onresize = function() { 
+		$("#glyph").width(window.innerWidth)
+			     .height(window.innerHeight);
+
+     	console.log("window resized")
+     	console.log($("#glyph").width());
+
+     	windowResized();	
+  
+	}
 
 }
 
