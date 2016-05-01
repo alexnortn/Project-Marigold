@@ -96,15 +96,6 @@ let glyph = function (p) {
 		h = p.windowHeight;
 		scaleFunc(w,h);
 
-		/*
-
-			Toggle the clock, scale glyph
-
-		*/
-
-		clockBool = true;
-		clockBool ? bigGlyph = 0.75 : bigGlyph = 1.25;
-
 		mousePos = p.createVector();
 		xOff = 0;
 		alphaOpa = 0;
@@ -582,7 +573,7 @@ let glyph = function (p) {
 	// Scaling function
 
 	function scaleFunc(w,h) {
-		let dynamicScale = ((w < 1000) || (h < 850)) ?  2 : 1.75;
+		let dynamicScale = ((w < 1000) || (h < 850)) ?  2 : 1.5;
 		scaleFactor = w / (1920 / dynamicScale);
 	}
 

@@ -36,14 +36,14 @@ $(document).ready(function() {
     // Set Greeting
     setGreeting();
 
-    // Call pagination
-    pagination(_sections);
-    paginationUpdate(_sectionCurrent);
+    window.addEventListener("hashchange", hashChanged, false);
 
     hashRoute();
     hashChanged();
 
-    window.addEventListener("hashchange", hashChanged, false);
+    // Call pagination
+    pagination(_sections);
+    paginationUpdate(_sectionCurrent);
 
     // let loader = function() {
     //     $.Velocity.RunSequence(loadingSequence);
@@ -413,6 +413,8 @@ function hashChanged() {
 
     toggleLogo(loc); 
 
+    _sectionCurrent = String(loc).slice(1);
+
     // Affect pagination on navigation change
     paginationUpdate(_sectionCurrent);
 
@@ -433,6 +435,7 @@ function navigateScroll(_sectionCurrent) {
 }
 
 
+// Setup Pagination
 function pagination(_sections) {
 
     $(_sections).each(function(i, obj) {
@@ -447,10 +450,15 @@ function pagination(_sections) {
 
 }
 
+// Update pagination active states
 function paginationUpdate(_sectionCurrent) {
 
     $('.pagination').removeClass('pagination-active');
-    $('.pagination').eq(_sectionCurrent).addClass('pagination-active');
+    $('#pagination')
+        .find("[data-sectionId='" + _sectionCurrent + "']")
+        .addClass('pagination-active');
+
+    // debugger;
 
 }
 
