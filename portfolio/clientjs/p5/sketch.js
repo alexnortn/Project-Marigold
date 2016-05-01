@@ -509,7 +509,7 @@ let glyph = function (p) {
 		h = p.windowHeight;
 		center.set(w/2, h/2);
 		let glyphCenterX = center.x - aCenterOffset.x; 
-		let glyphCenterY = center.y + aCenterOffset.y - 75; 
+		let glyphCenterY = center.y + aCenterOffset.y - 25; 
 		glyphCenter.set(glyphCenterX, glyphCenterY);
 	}
 
@@ -562,37 +562,88 @@ let glyph = function (p) {
 		scaleFactor = w / (1920 / dynamicScale);
 	}
 
-	// // Perlin Attractors
-	// // Wandering agents exerting force on the glyph
-	// function perlinAttractors(num) {
-	// 	let perlinSwarm = [];
-	// 	let pos = p.createVector();
+	// FlowField Attractors
+	// 2D distribution of attractors exerting force on the glyph
+	let flowField = function(r) {
+		let field = [],
+			cols, rows,
+			resolution, 
+			pos = p.createVector();
 
-	// 	for (let i = 0; i < num; i++) {
-	// 		// Randomize pos
-	// 		pos.x = p.random(p.width);
-	// 		pos.y = p.random(p.height);
-			
-	// 		// Make our Attractor Objects
-	// 		perlinSwarm.push(
-	// 			new Attractor({
-	// 				physics: physics,
-	// 				position: new toxi.geom.Vec2D(pos.x,pos.y),
-	// 				radius: 24,
-	// 				range: p.width/2,
-	// 				strength: 0.1,
-	// 				p: p,
-	// 			});
-	// 		)
-	// 	}
+		let zoff = 0;
 
-	// 	return function() {
-	// 		// Let em' wander
-	// 		perlinSwarm.forEach(function(agent) {
+			resolution = r;
 
-	// 		});
-	// 	}
-	// }
+			let area_x = p.width * 0.3; // 30% of windowWidth
+			let area_y = p.width * 0.5; // 50% of windowWidth
+
+			// Determine the number of columns and rows based on width and height
+		    cols = area_x / resolution;
+		    rows = area_y / resolution;
+
+		    initialize(); // Set up the Flow Field | Call this immediately
+
+	    function initialize() { // Private | Intialize the field of attractors
+			for (let i = 0; i < cols; i++) { // X grid
+				for (let j = 0; j < rows; j++) { // Y grid
+
+					pos.x = i * resolution + area_x; // Center offset
+					pos.y = j * resolution + area_y / 2; // 50% of windowWidth, but centered ~ 25%
+					
+					// Make our Attractor Objects
+					field.push(
+						new Attractor({
+							physics: physics,
+							position: new toxi.geom.Vec2D(pos.x,pos.y),
+							radius: 24,
+							range: p.width/2,
+							strength: 0.1,
+							p: p,
+						})
+					);
+				}
+			}
+		}
+
+		function update() { // Private | Update the noise field
+			let xoff = 0;
+			for (let i = 0; i < cols; i++) {
+				let yoff = 0;
+				for (let j = 0; j < rows; j++) {
+					let strength = p.map(
+						p.noise(
+							xoff,yoff,zoff
+						),0,1,-1,1 // Attract => Repel
+					);
+					let f_index = i + j; // Lookup Attractor
+					field[f_index].strength = strength; // Set Attractor strength
+					field[f_index].display();
+					yoff += 0.1;
+				}
+
+				xoff += 0.1;
+			}
+
+			zoff += 0.01; // Animate by changing 3rd dimension of noise every frame
+		}
+
+		function reset() { // Private | Reset
+			field.length = 0; // Empty existing array
+		}
+
+		// Method calls
+		return {
+			initialize: function() {
+				initialize();
+			},
+			update: function() {
+				update();
+			},
+			reset: function() {
+				reset();
+			}
+		}
+	}
 
 	// A little too much interaction, if you ask me! Might be useful later
 	p.mouseClicked = function() {

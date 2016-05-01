@@ -18,7 +18,6 @@ function Attractor(args = {}) {
 
 	this.physics = args.physics || new toxi.physics2d.VerletPhysics2D(0,0); // Initialize the physics;
 	this.position = args.position || 0;
-	this.radius = args.radius || 5;
 	this.range = args.range || 10;
 	this.strength = args.strength || 1;
 
@@ -28,6 +27,8 @@ function Attractor(args = {}) {
 	_this.physics.addParticle(_this);
 	_this.physics.addBehavior(attractForce);
 
+	let radius = p.abs(_this.strength) * 20;
+
 	// // Override the display method
 	this.display = function() {
 		p.fill(127);
@@ -36,8 +37,8 @@ function Attractor(args = {}) {
 		p.ellipse(
 			_this.x,
 			_this.y,
-			_this.radius*2,
-			_this.radius*2
+			_this.radius,
+			_this.radius
 		);
 	}
  	
