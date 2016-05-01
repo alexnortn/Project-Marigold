@@ -127,7 +127,6 @@ $(document).ready(function() {
     $(window).resize(function() {
 
             newWidth = $fluidEl.width();
-            console.log(newWidth);
 
         // Resize all videos according to their own aspect ratio
         $allVideos.each(function() {
@@ -145,7 +144,6 @@ $(document).ready(function() {
     function videoSize() {
 
             newWidth = $fluidEl.width();
-            console.log(newWidth);
 
         // Resize all videos according to their own aspect ratio
         $allVideos.each(function() {
@@ -180,9 +178,6 @@ $(document).ready(function() {
             slickInitId    = containerId + "-slider",
             overlaySlider  = $(slickInitId),
             slideIndex     = $(this).data('slide');
-
-            console.log("slideIndex " + slideIndex);
-            console.log("slickInitId " + slickInitId);
 
 
         $(containerId)
@@ -266,11 +261,7 @@ $(document).ready(function() {
         if (open) closeProject();
 
         // Set #bios as current
-        _sectionCurrent = $(_sections).index($('#bios'));
-
-        // Call function to make sure the header is loaded
-        hashChanged('#bios');
-
+        _sectionCurrent = "web-lab";
 
         // Navigate
         navigateScroll(_sectionCurrent);
@@ -298,7 +289,6 @@ function hashRoute() {
         // Set #bios as current
         _sectionCurrent = $(_sections).index($('#web-lab'));
 
-        console.log("section current " + _sectionCurrent);
         hashChanged('#web-lab');
         loaded = true;
 
@@ -309,8 +299,6 @@ function hashRoute() {
 
         // Set current object to this route
         _sectionCurrent = $(_sections).index($(loc));
-
-        console.log("section current " + _sectionCurrent);
 
     }
 
@@ -386,12 +374,10 @@ function toggleLogo(loc) {
 
     if (loc == "#web-lab") {
         if (logo.css('display') == 'block') {    
-            console.log('fadeOut');
             logo.velocity("fadeOut", { duration: 250 });
         }
     } else {
         if (logo.css('display') == 'none') {    
-            console.log('fadeIn');
             logo.velocity("fadeIn", { duration: 500 });
         }
     }
@@ -400,7 +386,6 @@ function toggleLogo(loc) {
 // Control Header or Anything else Hash related
 function hashChanged() {
     let loc = window.location.hash;
-    console.log('hash changed:' + loc);
 
     toggleLogo(loc); // Check the logo visibility
 
@@ -480,10 +465,6 @@ function centerOffest(scrollInId, scrollToId) {
         distance      = (elementOffset - scrollTop),
         middle        = distance - $(scrollInId).height()/2;
 
-        console.log("element-offset " + elementOffset);
-        console.log("distance " + distance);
-        console.log("middle " + middle);
-
     return middle;
 }
 
@@ -503,8 +484,6 @@ function setGreeting() {
     } else if ((n > 18) || (n < 5)) {
         greeting = "Good Evening, ";
     }
-
-    console.log("Current hour is " + n);
 
     /* $('#greeting').prepend(greeting);  // Add the greeting to the very first interactive section*/
     $('#bios-header').prepend(greeting);
