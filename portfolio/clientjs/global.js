@@ -38,12 +38,12 @@ $(document).ready(function() {
 
     window.addEventListener("hashchange", hashChanged, false);
 
-    hashRoute();
-    hashChanged();
-
     // Call pagination
     pagination(_sections);
     paginationUpdate(_sectionCurrent);
+
+    hashRoute();
+    hashChanged();
 
     // let loader = function() {
     //     $.Velocity.RunSequence(loadingSequence);
@@ -252,7 +252,7 @@ $(document).ready(function() {
     // Pagination event listener
     $('.pagination').click(function() {
 
-        _sectionCurrent = $('.pagination').index($(this));
+        _sectionCurrent = $(this).attr("data-sectionId");
 
         // Navigate
         navigateScroll(_sectionCurrent);
@@ -397,40 +397,26 @@ function toggleLogo(loc) {
     }
 }
 
-
- 
-function setHash(_sectionCurrent) {
-
-    // Get the id of the current section, set the url hash to match
-    window.location.hash = "$(_sections[_sectionCurrent]).attr('id')";
-
-}
-
 // Control Header or Anything else Hash related
 function hashChanged() {
     let loc = window.location.hash;
     console.log('hash changed:' + loc);
 
-    toggleLogo(loc); 
+    toggleLogo(loc); // Check the logo visibility
 
-    _sectionCurrent = String(loc).slice(1);
+    let sectionUpdate = String(loc).slice(1);
 
     // Affect pagination on navigation change
-    paginationUpdate(_sectionCurrent);
+    paginationUpdate(sectionUpdate);
 
 };
 
 // Navigate with velocity
 function navigateScroll(_sectionCurrent) {
 
+    let nav = "#" + _sectionCurrent;
     // Scroll navigate, call setHash when finished moveing
-    $(_sections[_sectionCurrent]).velocity("scroll", { duration: 750, easing: "ease-in-out" });
-
-    setTimeout(function() {
-
-        setHash(_sectionCurrent);
-
-    }, 250);
+    $(nav).velocity("scroll", { duration: 750, easing: "ease-in-out" });
     
 }
 
@@ -451,11 +437,11 @@ function pagination(_sections) {
 }
 
 // Update pagination active states
-function paginationUpdate(_sectionCurrent) {
+function paginationUpdate(sectionUpdate) {
 
     $('.pagination').removeClass('pagination-active');
     $('#pagination')
-        .find("[data-sectionId='" + _sectionCurrent + "']")
+        .find("[data-sectionId='" + sectionUpdate + "']")
         .addClass('pagination-active');
 
     // debugger;
