@@ -35,8 +35,8 @@ function Attractor(args = {}) {
 
 	// // Override the display method
 	this.display = function() {
-		let radius = p.abs(_this.strength * 100);
-		let alpha = p.map(_this.strength, 0.1, -0.1, 0, 255); // 1/x | inversely proportional
+		let radius = p.abs(_this.strength * 200);
+		let alpha = p.map(_this.strength, 0.05, -0.05, 0, 255); // 1/x | inversely proportional
 
 		p.noStroke();
 		p.fill(35,35,35,alpha);

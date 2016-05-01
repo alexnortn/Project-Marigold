@@ -186,6 +186,7 @@ let glyph = function (p) {
 		if (typeof _perlin != 'undefined') {
 			_perlin.step(); // I wish there was a way to avoid calling this every time
 		}
+
 	}
 
 	function windowResized() {
@@ -194,14 +195,12 @@ let glyph = function (p) {
 		h = p.windowHeight;
 
 		scaleFunc(w,h);
-		// Empty the Physics Sim
-		physEmpty();
+		physEmpty(); 			// Empty the Physics Sim
 		findCenter();
-		centerGlyph(vertices);
-		// Reload the Arrays
-		loadArrays(vertices);
-		// Initiate the physics array
-		physInit();
+		centerGlyph(vertices); 
+		loadArrays(vertices); 	// Reload the Arrays
+		physInit(); 			// Initiate the physics array
+		_perlin.resize(); 		// Resize the Perlin sim
 
 	}
 
@@ -489,31 +488,39 @@ let glyph = function (p) {
 			}
 	}
 
+
+	// Reset the physics simulation
 	function physEmpty() {
 		if (aSpringArr.length == aVerts.length) {
-			for(let i in aSpringArr) {
+			for (let i in aSpringArr) {
 				physics.removeSpringElements(aSpringArr[i]);
 			} 
+
 			aSpringArr.length  = 0;
 			aLockVert.length   = 0;
 			aSpringVert.length = 0;
+
 		}
 		if (aCounterSpringArr.length == aCounterVerts.length) {
-			for(let i in aCounterSpringArr) {
+			for (let i in aCounterSpringArr) {
 				physics.removeSpringElements(aCounterSpringArr[i]);
 			}
+
 			aCounterSpringArr.length  = 0;
 			aCounterLockVert.length   = 0;
 			aCounterSpringVert.length = 0;
+
 		}
 
 		if (nSpringArr.length == nVerts.length) {
-			for(let i in nSpringArr) {
+			for (let i in nSpringArr) {
 				physics.removeSpringElements(nSpringArr[i]);
 			}
+
 			nSpringArr.length  = 0;
 			nLockVert.length   = 0;
 			nSpringVert.length = 0;
+
 		}
 	}
 
@@ -580,36 +587,44 @@ let glyph = function (p) {
 	let flowField = function(r) {
 		let field = [],
 			cols, rows,
+			area_x, area_y,
 			resolution, 
 			pos = p.createVector();
 
 		let zoff = 0;
-		let count = 0;
 
 			resolution = r;
 
-			let area_x = p.width * 0.6; // 50% of windowWidth
-			let area_y = p.height * 0.6; // 60% of windowWidth
+		    initialize(); // Set up the Flow Field | Call this immediately
+
+	    function initialize() { // Private | Intialize the field of attractors
+
+	    	area_x = p.width * 0.6;  // 60% of windowWidth
+			area_y = p.height * 0.6; // 60% of windowWidth
 
 			// Determine the number of columns and rows based on width and height
 		    cols = p.round(area_x / resolution);
 		    rows = p.round(area_y / resolution);
 
-		    console.log(cols);
-		    console.log(rows);
+		    // Remove previous behaviours | attractors from simulation
+		    if (field.length > 0) {
+		    	console.log(field.length);
+		    	console.log('dumping array..');
+		    	field.forEach(function(attractor) {
+		    		attractor.physics.removeBehavior(attractor.attractForce);
+		    		physics.removeParticle(attractor);
+		    	});
+		    }
 
-		    initialize(); // Set up the Flow Field | Call this immediately
+		    reset(); // Wipe out the array references
 
-	    function initialize() { // Private | Intialize the field of attractors
+		    console.log("Post dump: " + field.length);
+
 			for (let i = 0; i < cols; i++) { // X grid
 				for (let j = 0; j < rows; j++) { // Y grid
 
 					pos.x = i * resolution + area_x / 2.5; // 60% of windowWidth, but centered ~ 30%
 					pos.y = j * resolution + area_y / 2.5; // 60% of windowHeight, but centered ~ 25%
-
-					console.log(count);
-					count++;
-
 					
 					// Make our Attractor Objects
 					field.push(
@@ -634,7 +649,7 @@ let glyph = function (p) {
 				let yoff = 0;
 				for (let j = 0; j < rows; j++) {
 					let strength = p.map(
-						p.noise(xoff,yoff,zoff),0,1,-0.1,0.1 // Attract => Repel
+						p.noise(xoff,yoff,zoff),0,1,-0.05,0.05 // Attract => Repel
 					);
 					field[index].attractForce.setStrength(strength); // Set Attractor strength
 					field[index].strength = strength;
@@ -647,7 +662,7 @@ let glyph = function (p) {
 				xoff += 0.1;
 			}
 
-			zoff += 0.0025; // Animate by changing 3rd dimension of noise every frame
+			zoff += 0.005; // Animate by changing 3rd dimension of noise every frame
 		}
 
 		function reset() { // Private | Reset
@@ -661,6 +676,10 @@ let glyph = function (p) {
 			} else {
 				return false;
 			}
+		}
+
+		function resize() {
+
 		}
 
 		// Method calls
@@ -678,6 +697,9 @@ let glyph = function (p) {
 			},
 			update: function() {
 				update();
+			},
+			resize: function() {
+				initialize(); // Set up the Flow Field | Call on window.Resize()
 			}
 		}
 	}
