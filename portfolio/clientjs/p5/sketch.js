@@ -83,7 +83,7 @@ let glyph = function (p) {
 	p.setup = function() {
 
 		canvas = p.createCanvas(window.innerWidth, window.innerHeight);
-		canvas.parent('interactive');
+		canvas.parent('web-lab');
 		canvas.id('glyph');
 
 		_canvas.resolve(canvas.elt); // --> Sneaky deferred shenanigans
@@ -582,7 +582,7 @@ let glyph = function (p) {
 	// Scaling function
 
 	function scaleFunc(w,h) {
-		let dynamicScale = ((w < 1000) || (h < 850)) ?  1.5 : 1.25;
+		let dynamicScale = ((w < 1000) || (h < 850)) ?  2 : 1.75;
 		scaleFactor = w / (1920 / dynamicScale);
 	}
 
@@ -740,7 +740,7 @@ let glyph = function (p) {
 	// Deal with resize events
 	window.onresize = function() { 
 		$("#glyph").width(window.innerWidth)
-			     .height(window.innerHeight);
+			       .height(window.innerHeight);
 
 	    glyphOp = 0; // Fade glyph in each resize to avoid jumpiness
 

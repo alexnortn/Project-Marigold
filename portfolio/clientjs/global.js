@@ -372,7 +372,7 @@ function hashChanged(_hash) {
 
     setTimeout(
         function() {
-            if (_hash == "#interactive") {
+            if (_hash == "#web-lab") {
                 $('header').delay( 10 ).fadeOut( 400 );
                 console.log("fade OUT");
             } else {
