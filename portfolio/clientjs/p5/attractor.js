@@ -20,25 +20,31 @@ function Attractor(args = {}) {
 	this.position = args.position || 0;
 	this.range = args.range || 10;
 	this.strength = args.strength || 1;
+	this.locked = args.locked || false;
 
 	toxi.physics2d.VerletParticle2D.call(_this,_this.position);
-	let attractForce = new toxi.physics2d.behaviors.AttractionBehavior(_this, _this.range, _this.strength);
+	
+	this.attractForce = new toxi.physics2d.behaviors.AttractionBehavior(_this, _this.range, _this.strength);
 
 	_this.physics.addParticle(_this);
-	_this.physics.addBehavior(attractForce);
+	_this.physics.addBehavior(_this.attractForce);
 
-	let radius = p.abs(_this.strength) * 20;
+	if (_this.locked) {
+		_this.lock(); // Lock particle in place
+	}
 
 	// // Override the display method
 	this.display = function() {
-		p.fill(127);
-		p.stroke(200);
-		p.strokeWeight(2);
+		let radius = p.abs(_this.strength * 100);
+		let alpha = p.map(_this.strength, 0.5, -0.5, 0, 255); // 1/x | inversely proportional
+
+		p.noStroke();
+		p.fill(35,35,35,alpha);
 		p.ellipse(
 			_this.x,
 			_this.y,
-			_this.radius,
-			_this.radius
+			radius,
+			radius
 		);
 	}
  	

@@ -69,6 +69,11 @@ let glyph = function (p) {
 		aCounterVerts = [],
 		nVerts = [];
 
+	// Global interaction states
+	let _perlin = $.Deferred(),
+		_vertex = $.Deferred(),
+		_force  = $.Deferred();
+
 	let nudgeAttractor; 
 
 	p.preload = function() {
@@ -152,6 +157,10 @@ let glyph = function (p) {
 			p: p,
 		});
 
+		// Setup interactive modules
+		_perlin = flowField(100); // Turning up 2nite
+		_perlin.reset();
+
 	}
 
 	p.draw = function() {
@@ -173,6 +182,10 @@ let glyph = function (p) {
 		// Display the Physiscs Particles;
 		displayPhys();
 
+		// Web Lab interactive states
+		if (typeof _perlin != 'undefined') {
+			_perlin.step(); // I wish there was a way to avoid calling this every time
+		}
 	}
 
 	function windowResized() {
@@ -575,19 +588,23 @@ let glyph = function (p) {
 			resolution = r;
 
 			let area_x = p.width * 0.3; // 30% of windowWidth
-			let area_y = p.width * 0.5; // 50% of windowWidth
+			let area_y = p.height * 0.5; // 50% of windowWidth
 
 			// Determine the number of columns and rows based on width and height
-		    cols = area_x / resolution;
-		    rows = area_y / resolution;
+		    cols = p.round(area_x / resolution);
+		    rows = p.round(area_y / resolution);
+
+		    let count = cols + rows
+
+		    console.log("Attractor Count:" + count);
 
 		    initialize(); // Set up the Flow Field | Call this immediately
 
 	    function initialize() { // Private | Intialize the field of attractors
 			for (let i = 0; i < cols; i++) { // X grid
+				pos.x = i * resolution + area_x; // Center offset
 				for (let j = 0; j < rows; j++) { // Y grid
 
-					pos.x = i * resolution + area_x; // Center offset
 					pos.y = j * resolution + area_y / 2; // 50% of windowWidth, but centered ~ 25%
 					
 					// Make our Attractor Objects
@@ -598,6 +615,7 @@ let glyph = function (p) {
 							radius: 24,
 							range: p.width/2,
 							strength: 0.1,
+							locked : true,
 							p: p,
 						})
 					);
@@ -605,18 +623,17 @@ let glyph = function (p) {
 			}
 		}
 
-		function update() { // Private | Update the noise field
+		function step() { // Private | Update the noise field
 			let xoff = 0;
 			for (let i = 0; i < cols; i++) {
 				let yoff = 0;
 				for (let j = 0; j < rows; j++) {
 					let strength = p.map(
-						p.noise(
-							xoff,yoff,zoff
-						),0,1,-1,1 // Attract => Repel
+						p.noise(xoff,yoff,zoff),0,1,-0.5,0.5 // Attract => Repel
 					);
 					let f_index = i + j; // Lookup Attractor
-					field[f_index].strength = strength; // Set Attractor strength
+					field[f_index].attractForce.setStrength(strength); // Set Attractor strength
+					field[f_index].strength = strength;
 					field[f_index].display();
 					yoff += 0.1;
 				}
@@ -624,11 +641,20 @@ let glyph = function (p) {
 				xoff += 0.1;
 			}
 
-			zoff += 0.01; // Animate by changing 3rd dimension of noise every frame
+			zoff += 0.005; // Animate by changing 3rd dimension of noise every frame
 		}
 
 		function reset() { // Private | Reset
 			field.length = 0; // Empty existing array
+		}
+
+		function update() {
+			if (field.length > 0) {
+				return true;
+				step(); // if we exist, we do | step forward in time
+			} else {
+				return false;
+			}
 		}
 
 		// Method calls
@@ -636,11 +662,16 @@ let glyph = function (p) {
 			initialize: function() {
 				initialize();
 			},
-			update: function() {
-				update();
+			step: function() {
+				step();
 			},
 			reset: function() {
-				reset();
+				field.forEach(function(attractor) {
+					attractor.attractForce.setStrength(0);
+				});
+			},
+			update: function() {
+				update();
 			}
 		}
 	}
@@ -668,6 +699,12 @@ let glyph = function (p) {
 		p.pop();
 	}
 
+	/*
+
+		jQuery listeners
+
+	*/
+
 	// Deal with resize events
 	window.onresize = function() { 
 		$("#glyph").width(window.innerWidth)
@@ -681,6 +718,17 @@ let glyph = function (p) {
      	windowResized();	
   
 	}
+
+	// Web Lab interation states
+	$('#perlin').on('click', function() {
+		if (this.hasClass('active')) {
+			this.removeClass('active');
+			_perlin.reset(); // Shutting down the studio | performance gains
+		} else {
+			this.addClass('active');
+			_perlin = flowField(10); // Turning up 2nite
+		}
+	});
 
 }
 
