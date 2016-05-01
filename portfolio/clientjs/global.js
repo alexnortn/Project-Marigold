@@ -24,7 +24,7 @@ let userListData = [],
     open = false,
     menu = false;
 
-let _sections = $('.slickNav'),
+let _sections = $('.section'),
     _sectionCurrent;
 
     // attachFastClick = require('fastclick');    
@@ -59,11 +59,6 @@ $(document).ready(function() {
     $('.project-overview').alwaysCenterIn(window, { top: "-3%" });
     $('#pagination').alwaysCenterIn(window, { direction: 'vertical' });
     // $('#bios-content').alwaysCenterIn('#bios', { top: "-3%" });
-
-    // Display Interaction Info
-    $('#cross-circle').hover(function() {
-        $('#infoText').slideToggle('slow', 'swing');
-    });
 
     // Open Project
     $('.project-overview').click(function(){
@@ -304,21 +299,21 @@ function hashRoute() {
 
     // Set current url hash
     let loaded;
-    let _sections = $('.slickNav');
+    let _sections = $('.section');
 
-    if ((window.location.hash == "") && (loaded !== true)) {
+    // if ((window.location.hash == "") && (loaded !== true)) {
 
-        // If the user requests the index page, redirect to #bios
-        window.location.hash = "bios";
+    //     // If the user requests the index page, redirect to #bios
+    //     window.location.hash = "bios";
 
-        // Set #bios as current
-        _sectionCurrent = $(_sections).index($('#bios'));
+    //     // Set #bios as current
+    //     _sectionCurrent = $(_sections).index($('#bios'));
 
-        console.log("section current " + _sectionCurrent);
-        hashChanged('#bios')
-        loaded = true;
+    //     console.log("section current " + _sectionCurrent);
+    //     hashChanged('#bios')
+    //     loaded = true;
 
-    } else {
+    // } else {
 
         // Find requested route
         let loc = window.location.hash;
@@ -328,7 +323,7 @@ function hashRoute() {
 
         console.log("section current " + _sectionCurrent);
 
-    }
+    // }
 
     $(_sections).removeClass('currentSection');
 
@@ -338,27 +333,20 @@ function hashRoute() {
 
 }
 
-// Dealing with in-page use generated routinge events (copy+paste stack overflow hotfix)
-
-if ("onhashchange" in window) { // event supported?
-    window.onhashchange = function () {
-        hashChanged(window.location.hash);
-        console.log("HASH CHANGE");
-        // update current hash
-        hashRoute();
-    }
-}
-else { // event not supported:
-    let storedHash = window.location.hash;
-    window.setInterval(function () {
-        if (window.location.hash != storedHash) {
-            storedHash = window.location.hash;
-            hashChanged(storedHash);
-            // update current hash
-            hashRoute();
+// Dynaimcally update window.location 
+$(document).bind('scroll',function(e){
+    $('section').each(function(){
+        if (
+           $(this).offset().top < window.pageYOffset + 10
+        //begins before top
+        && $(this).offset().top + $(this).height() > window.pageYOffset + 10
+        //but ends in visible area
+        //+ 10 allows you to change hash before it hits the top border
+        ) {
+            window.location.hash = $(this).attr('id');
         }
-    }, 100);
-}
+    });
+});
 
 function setHash(_sectionCurrent) {
 
