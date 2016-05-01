@@ -584,28 +584,32 @@ let glyph = function (p) {
 			pos = p.createVector();
 
 		let zoff = 0;
+		let count = 0;
 
 			resolution = r;
 
-			let area_x = p.width * 0.3; // 30% of windowWidth
-			let area_y = p.height * 0.5; // 50% of windowWidth
+			let area_x = p.width * 0.6; // 50% of windowWidth
+			let area_y = p.height * 0.6; // 60% of windowWidth
 
 			// Determine the number of columns and rows based on width and height
 		    cols = p.round(area_x / resolution);
 		    rows = p.round(area_y / resolution);
 
-		    let count = cols + rows
-
-		    console.log("Attractor Count:" + count);
+		    console.log(cols);
+		    console.log(rows);
 
 		    initialize(); // Set up the Flow Field | Call this immediately
 
 	    function initialize() { // Private | Intialize the field of attractors
 			for (let i = 0; i < cols; i++) { // X grid
-				pos.x = i * resolution + area_x; // Center offset
 				for (let j = 0; j < rows; j++) { // Y grid
 
-					pos.y = j * resolution + area_y / 2; // 50% of windowWidth, but centered ~ 25%
+					pos.x = i * resolution + area_x / 2.5; // 60% of windowWidth, but centered ~ 30%
+					pos.y = j * resolution + area_y / 2.5; // 60% of windowHeight, but centered ~ 25%
+
+					console.log(count);
+					count++;
+
 					
 					// Make our Attractor Objects
 					field.push(
@@ -625,23 +629,25 @@ let glyph = function (p) {
 
 		function step() { // Private | Update the noise field
 			let xoff = 0;
+			let index = 0; // c:
 			for (let i = 0; i < cols; i++) {
 				let yoff = 0;
 				for (let j = 0; j < rows; j++) {
 					let strength = p.map(
-						p.noise(xoff,yoff,zoff),0,1,-0.5,0.5 // Attract => Repel
+						p.noise(xoff,yoff,zoff),0,1,-0.1,0.1 // Attract => Repel
 					);
-					let f_index = i + j; // Lookup Attractor
-					field[f_index].attractForce.setStrength(strength); // Set Attractor strength
-					field[f_index].strength = strength;
-					field[f_index].display();
+					field[index].attractForce.setStrength(strength); // Set Attractor strength
+					field[index].strength = strength;
+					field[index].display();
 					yoff += 0.1;
+
+					index++;
 				}
 
 				xoff += 0.1;
 			}
 
-			zoff += 0.005; // Animate by changing 3rd dimension of noise every frame
+			zoff += 0.0025; // Animate by changing 3rd dimension of noise every frame
 		}
 
 		function reset() { // Private | Reset
