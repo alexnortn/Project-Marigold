@@ -333,20 +333,64 @@ function hashRoute() {
 
 }
 
-// Dynaimcally update window.location 
-$(document).bind('scroll',function(e){
-    $('section').each(function(){
-        if (
-           $(this).offset().top < window.pageYOffset + 10
-        //begins before top
-        && $(this).offset().top + $(this).height() > window.pageYOffset + 10
-        //but ends in visible area
-        //+ 10 allows you to change hash before it hits the top border
-        ) {
-            window.location.hash = $(this).attr('id');
-        }
+// Dynamic page hash setting (anonymous fn)
+(function () {
+    // Find all top,bottom and Hash of each sections
+    let section = $.map($("section"), function (e) {
+        let $e = $(e);
+        let pos = $e.position();
+        return {
+            top: pos.top - 100,
+            bottom: pos.top - 100 + $e.height(),
+            hash: $e.attr('id')
+        };
     });
-});
+     // Checking scroll 
+    let top = null;
+    let changed = false;
+    let currentHash = null;
+
+    $(window).scroll(function () {
+        let newTop = $(document).scrollTop();
+       
+        changed = newTop != top;
+
+        if (changed) {
+            top = newTop;
+        }
+
+    });
+
+    //Set Hash while start scroll | check only every 200ms
+    function step() {
+        if (!changed) {
+            return setTimeout(step, 200);
+        }
+
+        let count = section.length,
+            p;
+
+        while (p = section[--count]) {
+            if (p.top >= top || p.bottom <= top) {
+                continue;
+            }
+            if (currentHash == p.hash) {
+                break;
+            }
+            
+            let scrollTop = $(document).scrollTop();
+            window.location.hash = currentHash = p.hash;
+            
+            // prevent browser to scroll
+            $(document).scrollTop(scrollTop);
+        }
+
+        setTimeout(step, 200);
+    }
+
+    setTimeout(step, 200);
+    
+})();
 
 function setHash(_sectionCurrent) {
 
