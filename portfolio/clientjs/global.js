@@ -33,20 +33,17 @@ let _sections = $('.section'),
 // DOM Ready =============================================================
 $(document).ready(function() {
 
-    hashRoute();
-
     // Set Greeting
     setGreeting();
-
-    // Set Initial Width
-    setWidth();
 
     // Call pagination
     pagination(_sections);
     paginationUpdate(_sectionCurrent);
 
-    // Check for section (header)
-    hashChanged(window.location.hash);
+    hashRoute();
+    hashChanged();
+
+    window.addEventListener("hashchange", hashChanged, false);
 
     // let loader = function() {
     //     $.Velocity.RunSequence(loadingSequence);
@@ -101,35 +98,30 @@ $(document).ready(function() {
         open = false;
     };
 
-    // Set the bottom elements to proper size
-    $(window).resize(function() {
-        setWidth();
-    });
 
     // Close Project
-
     $('.close').click(function() {
         closeProject();
     });
 
-        // Find all Vimeo videos
-        let $allVideos = $("iframe[src^='//player.vimeo.com'], iframe[src^='//www.youtube.com']"),
+    // Find all Vimeo videos
+    let $allVideos = $("iframe[src^='//player.vimeo.com'], iframe[src^='//www.youtube.com']"),
 
-        // The element that is fluid width
-        $fluidEl = $("#video-frame");
-        let newWidth = $fluidEl.width();
+    // The element that is fluid width
+    $fluidEl = $("#video-frame");
+    let newWidth = $fluidEl.width();
 
-        // Figure out and save aspect ratio for each video
-        $allVideos.each(function() {
+    // Figure out and save aspect ratio for each video
+    $allVideos.each(function() {
 
-            $(this)
-                .data('aspectRatio', this.height / this.width)
-    
-                    // and remove the hard coded width/height
-                    .removeAttr('height')
-                .removeAttr('width');
+        $(this)
+            .data('aspectRatio', this.height / this.width)
 
-        });
+                // and remove the hard coded width/height
+                .removeAttr('height')
+            .removeAttr('width');
+
+    });
 
     // When the window is resized some fany ui positioning
     $(window).resize(function() {
@@ -164,7 +156,6 @@ $(document).ready(function() {
               .height(newWidth * $el.data('aspectRatio'));
 
         });
-
     };
 
 
@@ -180,8 +171,6 @@ $(document).ready(function() {
                 // $('#bios-content').centerIn('#bios', { top: "-3%" });   
         }, 750);
     });
-
-
 
 
     // Image-Grid Overlay
@@ -301,19 +290,19 @@ function hashRoute() {
     let loaded;
     let _sections = $('.section');
 
-    // if ((window.location.hash == "") && (loaded !== true)) {
+    if ((window.location.hash == "") && (loaded !== true)) {
 
-    //     // If the user requests the index page, redirect to #bios
-    //     window.location.hash = "bios";
+        // If the user requests the index page, redirect to #bios
+        window.location.hash = "web-lab";
 
-    //     // Set #bios as current
-    //     _sectionCurrent = $(_sections).index($('#bios'));
+        // Set #bios as current
+        _sectionCurrent = $(_sections).index($('#web-lab'));
 
-    //     console.log("section current " + _sectionCurrent);
-    //     hashChanged('#bios')
-    //     loaded = true;
+        console.log("section current " + _sectionCurrent);
+        hashChanged('#web-lab');
+        loaded = true;
 
-    // } else {
+    } else {
 
         // Find requested route
         let loc = window.location.hash;
@@ -323,7 +312,7 @@ function hashRoute() {
 
         console.log("section current " + _sectionCurrent);
 
-    // }
+    }
 
     $(_sections).removeClass('currentSection');
 
@@ -358,7 +347,6 @@ function hashRoute() {
         if (changed) {
             top = newTop;
         }
-
     });
 
     //Set Hash while start scroll | check only every 200ms
@@ -389,34 +377,44 @@ function hashRoute() {
     }
 
     setTimeout(step, 200);
-    
+
 })();
 
+// Toggle visibility of main logo
+function toggleLogo(loc) {
+    let logo = $('#logo');
+
+    if (loc == "#web-lab") {
+        if (logo.css('display') == 'block') {    
+            console.log('fadeOut');
+            logo.velocity("fadeOut", { duration: 250 });
+        }
+    } else {
+        if (logo.css('display') == 'none') {    
+            console.log('fadeIn');
+            logo.velocity("fadeIn", { duration: 500 });
+        }
+    }
+}
+
+
+ 
 function setHash(_sectionCurrent) {
 
     // Get the id of the current section, set the url hash to match
-    window.location.hash = $(_sections[_sectionCurrent]).attr('id');
+    window.location.hash = "$(_sections[_sectionCurrent]).attr('id')";
 
 }
 
 // Control Header or Anything else Hash related
-function hashChanged(_hash) {
+function hashChanged() {
+    let loc = window.location.hash;
+    console.log('hash changed:' + loc);
 
-    setTimeout(
-        function() {
-            if (_hash == "#web-lab") {
-                $('header').delay( 10 ).fadeOut( 400 );
-                console.log("fade OUT");
-            } else {
-                $('header').delay( 10 ).fadeIn( 400 );
-                console.log("fade IN");
-            }
+    toggleLogo(loc); 
 
-            // Affect pagination on navigation change
-            paginationUpdate(_sectionCurrent);
-
-        }
-    , 10 );
+    // Affect pagination on navigation change
+    paginationUpdate(_sectionCurrent);
 
 };
 
@@ -516,13 +514,6 @@ function setGreeting() {
 
     /* $('#greeting').prepend(greeting);  // Add the greeting to the very first interactive section*/
     $('#bios-header').prepend(greeting);
-}
-
-// Set the bottom element width to full using jQuery
-function setWidth() {
-    let windowWidth = $( window ).width();
-    $("#triangle-bottom-left").css("border-left-width", windowWidth);
-    $("#triangle-bottom-right").css("border-right-width", windowWidth);
 }
 
 /*
