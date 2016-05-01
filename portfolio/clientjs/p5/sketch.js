@@ -128,25 +128,10 @@ let glyph = function (p) {
 		// Load the arrays
 		loadArrays(vertices);
 
-		physics = new toxi.physics2d.VerletPhysics2D(); // Initialize the physics
-		physics.setDrag (0.01);
-		gravityStrength = new toxi.geom.Vec2D(0,0.5);
-		gravity = new toxi.physics2d.behaviors.GravityBehavior(gravityStrength); // Set up Gravity
-		physics.addBehavior(gravity);
 
-		// Set the world's bounding box
-		physics.setWorldBounds(
-			new toxi.geom.Rect(
-				0,
-				0,
-				p.width*1.25,
-				p.height*1.25
-			)
-		);
-
-		// Initiate the physics array
+		// Initiate the physics world
 		physInit();
-		
+
 		// Make our Attractor Object
 		nudgeAttractor = new Attractor({
 			physics: physics,
@@ -156,6 +141,7 @@ let glyph = function (p) {
 			strength: 0.1,
 			p: p,
 		});
+
 
 		// Setup interactive modules
 		_perlin = flowField(100); // Turning up 2nite
@@ -407,85 +393,103 @@ let glyph = function (p) {
 	}
 
 	function physInit() {
-			let springStrength = 0.00035,
-					springLength   = 0.05;
 
-				// Make our ToxiParticles for 'a'
-				for (let i in aVerts) {
-						aLockVert.push(
-							new Particle ({
-								position: new toxi.geom.Vec2D(aVerts[i].x, aVerts[i].y),
-								p: p,
-							})
-						);
-						aLockVert[i].lock();
-						aSpringVert.push(
-							new Particle ({
-								position: new toxi.geom.Vec2D(aVerts[i].x, aVerts[i].y),
-								p: p,
-							})
-						);
-						aSpringArr.push(
-							new toxi.physics2d.VerletSpring2D(aLockVert[i], aSpringVert[i],springLength, springStrength)
-						);
-								physics.addParticle(aLockVert[i]);
-								physics.addParticle(aSpringVert[i]);
-								physics.addSpring(aSpringArr[i]);
-			}
+		// Set up Physics environment
+		physics = new toxi.physics2d.VerletPhysics2D(); // Initialize the physics
+		physics.setDrag (0.01);
+		gravityStrength = new toxi.geom.Vec2D(0,0.5);
+		gravity = new toxi.physics2d.behaviors.GravityBehavior(gravityStrength); // Set up Gravity
+		physics.addBehavior(gravity);
 
-			// Make our ToxiParticles for 'a counter'
-			for(let i in aCounterVerts) {
-					aCounterLockVert.push(
+		// Set the world's bounding box
+		physics.setWorldBounds(
+			new toxi.geom.Rect(
+				0,
+				0,
+				p.width*1.25,
+				p.height*1.25
+			)
+		);
+
+		let springStrength = 0.00035,
+				springLength   = 0.05;
+
+			// Make our ToxiParticles for 'a'
+			for (let i in aVerts) {
+					aLockVert.push(
 						new Particle ({
-							position: new toxi.geom.Vec2D(aCounterVerts[i].x, aCounterVerts[i].y),
+							position: new toxi.geom.Vec2D(aVerts[i].x, aVerts[i].y),
 							p: p,
 						})
 					);
-
-					aCounterLockVert[i].lock();
-
-					aCounterSpringVert.push(
+					aLockVert[i].lock();
+					aSpringVert.push(
 						new Particle ({
-							position: new toxi.geom.Vec2D(aCounterVerts[i].x, aCounterVerts[i].y),
+							position: new toxi.geom.Vec2D(aVerts[i].x, aVerts[i].y),
 							p: p,
 						})
 					);
-
-					aCounterSpringArr.push(
-						new toxi.physics2d.VerletSpring2D(aCounterLockVert[i], aCounterSpringVert[i],springLength, springStrength)
+					aSpringArr.push(
+						new toxi.physics2d.VerletSpring2D(aLockVert[i], aSpringVert[i],springLength, springStrength)
 					);
+							physics.addParticle(aLockVert[i]);
+							physics.addParticle(aSpringVert[i]);
+							physics.addSpring(aSpringArr[i]);
+		}
 
-					physics.addParticle(aCounterLockVert[i]);
-					physics.addParticle(aCounterSpringVert[i]);
-					physics.addSpring(aCounterSpringArr[i]);
-			}
+		// Make our ToxiParticles for 'a counter'
+		for(let i in aCounterVerts) {
+				aCounterLockVert.push(
+					new Particle ({
+						position: new toxi.geom.Vec2D(aCounterVerts[i].x, aCounterVerts[i].y),
+						p: p,
+					})
+				);
 
-			// Make our ToxiParticles for 'N'
-			for (let i in nVerts) {
-					nLockVert.push(
-						new Particle ({
-							position: new toxi.geom.Vec2D(nVerts[i].x, nVerts[i].y),
-							p: p
-						})
-					);
-					
-					nLockVert[i].lock();
+				aCounterLockVert[i].lock();
 
-					nSpringVert.push(
-						new Particle({
-							position: new toxi.geom.Vec2D(nVerts[i].x, nVerts[i].y),
-							p: p,
-						})
-					);
-					
-					nSpringArr.push(
-						new toxi.physics2d.VerletSpring2D(nLockVert[i], nSpringVert[i],springLength, springStrength)
-					);
-					
-					physics.addParticle(nLockVert[i]);
-					physics.addParticle(nSpringVert[i]);
-					physics.addSpring(nSpringArr[i]);
-			}
+				aCounterSpringVert.push(
+					new Particle ({
+						position: new toxi.geom.Vec2D(aCounterVerts[i].x, aCounterVerts[i].y),
+						p: p,
+					})
+				);
+
+				aCounterSpringArr.push(
+					new toxi.physics2d.VerletSpring2D(aCounterLockVert[i], aCounterSpringVert[i],springLength, springStrength)
+				);
+
+				physics.addParticle(aCounterLockVert[i]);
+				physics.addParticle(aCounterSpringVert[i]);
+				physics.addSpring(aCounterSpringArr[i]);
+		}
+
+		// Make our ToxiParticles for 'N'
+		for (let i in nVerts) {
+				nLockVert.push(
+					new Particle ({
+						position: new toxi.geom.Vec2D(nVerts[i].x, nVerts[i].y),
+						p: p
+					})
+				);
+				
+				nLockVert[i].lock();
+
+				nSpringVert.push(
+					new Particle({
+						position: new toxi.geom.Vec2D(nVerts[i].x, nVerts[i].y),
+						p: p,
+					})
+				);
+				
+				nSpringArr.push(
+					new toxi.physics2d.VerletSpring2D(nLockVert[i], nSpringVert[i],springLength, springStrength)
+				);
+				
+				physics.addParticle(nLockVert[i]);
+				physics.addParticle(nSpringVert[i]);
+				physics.addSpring(nSpringArr[i]);
+		}
 	}
 
 
