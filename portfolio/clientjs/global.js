@@ -486,7 +486,7 @@ function setGreeting() {
     }
 
     // Add the greeting to the very first interactive section*/
-    $('#greeting').prepend(greeting);
+    $('#greeting p:first-child').html(greeting);
 }
 
 /*

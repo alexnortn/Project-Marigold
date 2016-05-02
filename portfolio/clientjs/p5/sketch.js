@@ -770,20 +770,28 @@ let glyph = function (p) {
 		}
 
 		function force() { // Calculate our offset force (may have to invert)
-			return p.map(acceleration, -200, 200, -2, 2);
+			return p.map(acceleration, -200, 200, -10, 10);
 		}
 
 		// Affect physics sim directly
-		function gravitation() {
+		function gravitation(strength) {
 			physics.removeBehavior(gravity);
-			gravityStrength.y = force();
+			gravityStrength.y = strength;
 			gravity = new toxi.physics2d.behaviors.GravityBehavior(gravityStrength); // Re-initialize gravity
 			physics.addBehavior(gravity);
 		}
 
 		function bounceFactory(dy) {
 			accelerator(dy); // Calculate acceleration
-			gravitation(); // Affect physics sim
+
+			if (acceleration > 1) {
+				console.log('crazy');
+				gravitation(force()); // Return gravity back to normal
+			} else {
+				gravitation(0.5); // Return gravity back to normal
+				console.log('sleepy');
+			}
+
 		}
 
 		return { // Overly verbose, why not
