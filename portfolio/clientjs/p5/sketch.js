@@ -717,7 +717,6 @@ let glyph = function (p) {
 		return false;
 	}
 
-
 	function motionBlur() {
 		p.push();
 			p.fill(255, 100);
@@ -770,12 +769,35 @@ let glyph = function (p) {
 			acceleration = (delta - prev_delta) / 2; // Consider uniform update, given by accumulation
 		}
 
-		return {
-			deltaY: function() {
-				return acceleration;
+		function force() { // Calculate our offset force (may have to invert)
+			return p.map(acceleration, -200, 200, -2, 2);
+		}
+
+		// Affect physics sim directly
+		function gravitation() {
+			physics.removeBehavior(gravity);
+			gravityStrength.y = force();
+			gravity = new toxi.physics2d.behaviors.GravityBehavior(gravityStrength); // Re-initialize gravity
+			physics.addBehavior(gravity);
+		}
+
+		function bounceFactory(dy) {
+			accelerator(dy); // Calculate acceleration
+			gravitation(); // Affect physics sim
+		}
+
+		return { // Overly verbose, why not
+			force: function() {
+				return force();
 			},
 			accelerator: function(dy) {
 				return accelerator(dy);
+			},
+			gravitation: function() {
+				return gravitation();
+			},
+			bounceFactory: function(dy) {
+				return bounceFactory(dy);
 			}
 		}
 	}
@@ -784,8 +806,7 @@ let glyph = function (p) {
 	$( window ).scroll(function() {
 		let scroll_top = $(window).scrollTop();
 		if (scroll_top < p.height)  { // We only care if it's happening around p5 environment
-			_bounce.accelerator(scroll_top);
-			console.log(_bounce.deltaY());
+			_bounce.bounceFactory(scroll_top);
 		}
 	});
 
