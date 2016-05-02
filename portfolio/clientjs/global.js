@@ -485,8 +485,8 @@ function setGreeting() {
         greeting = "Good Evening, ";
     }
 
-    /* $('#greeting').prepend(greeting);  // Add the greeting to the very first interactive section*/
-    $('#bios-header').prepend(greeting);
+    // Add the greeting to the very first interactive section*/
+    $('#greeting').prepend(greeting);
 }
 
 /*

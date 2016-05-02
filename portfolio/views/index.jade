@@ -40,9 +40,6 @@ block content
 
         #logo
             img(src = "/images/logo.svg" alt = "main logo")
-            p 
-               | Alex Norton<br>
-               | Interaction Designer
 
     // /HEADER  
 
@@ -52,9 +49,12 @@ block content
 
         // INTERACTIVE PAGE
         section#web-lab.section&attributes({'data-inproject': true})
-            #info
-                p#greeting <strong>Web Lab.</strong> <br> Move cursor around glyph.
-                p#infoText This interactive character was developed using the P5js framework along with the Toxiclibs physics library.
+            #greeting
+                p 
+                    !{welcome_text.greeting_text}
+                p
+                    !{welcome_text.discipline_text}
+
             //- #landing-arrow.scroll-arrow
                 //- p Scroll Down 
                 <i class="fa  fa-angle-down fa-2x"></i>           
@@ -68,7 +68,7 @@ block content
             // BIOS BOX
             #bios-content
                 h1#bios-header !{bios_text.description_headline}
-                p#short  !{bios_text.description_short}
+                p#short !{bios_text.description_short}
                 p#long !{bios_text.description_long}
                 button#bios-button
                     p Read More
