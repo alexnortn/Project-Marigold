@@ -72,7 +72,8 @@ let glyph = function (p) {
 	// Global interaction states
 	let _perlin = $.Deferred(),
 		_vertex = $.Deferred(),
-		_force  = $.Deferred();
+		_force  = $.Deferred(),
+		_bounce = $.Deferred();
 
 	let nudgeAttractor; 
 
@@ -137,6 +138,8 @@ let glyph = function (p) {
 		// Setup interactive modules
 		_perlin = flowField(100); // Turning up 2nite
 		_perlin.reset();
+
+		_bounce = scrollAccumulator();
 
 	}
 
@@ -752,6 +755,41 @@ let glyph = function (p) {
 			_perlin = flowField(10); // Turning up 2nite
 		}
 	});
+
+	// Calculate displacement during scroll events
+	// Can we make this only applicable when p5 is on screen?
+	let scrollAccumulator = function() {
+		let delta 	   	 = 0,
+			prev_delta 	 = 0,
+			acceleration = 0;
+
+		function accelerator(dy) {
+			prev_delta = delta;
+			delta = dy;
+
+			acceleration = (delta - prev_delta) / 2; // Consider uniform update, given by accumulation
+		}
+
+		return {
+			deltaY: function() {
+				return acceleration;
+			},
+			accelerator: function(dy) {
+				return accelerator(dy);
+			}
+		}
+	}
+
+	// Scroll Accumulator
+	$( window ).scroll(function() {
+		let scroll_top = $(window).scrollTop();
+		if (scroll_top < p.height)  { // We only care if it's happening around p5 environment
+			_bounce.accelerator(scroll_top);
+			console.log(_bounce.deltaY());
+		}
+	});
+
+
 
 }
 
