@@ -478,11 +478,11 @@ function setGreeting() {
     let greeting;
 
     if ((n < 11) && (n > 4)) {
-        greeting = "Good Morning, ";
+        greeting = "Good Morning ";
     } else if ((n < 18) && (n > 10)) {
-        greeting = "Good Afternoon, ";
+        greeting = "Good Afternoon ";
     } else if ((n > 18) || (n < 5)) {
-        greeting = "Good Evening, ";
+        greeting = "Good Evening ";
     }
 
     // Add the greeting to the very first interactive section*/

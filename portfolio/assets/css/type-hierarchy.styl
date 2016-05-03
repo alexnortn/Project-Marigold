@@ -5,9 +5,15 @@ Typographic Hierarchy
 */
 
 @require 'type.styl'
+@require 'color.styl'
 
 //---------------------------------------------------------------
 // Native Resolution
+
+
+// Borders
+body 
+	border-color: $BLACK
 
 // Basic Typographic Elements
 
@@ -52,7 +58,8 @@ ol
 	
 
 p
-	font-family: 'BerlingskeSans-Regular'
+	margin: 0
+	line-height: 1.75em
 
 	
 
@@ -71,6 +78,8 @@ ul
 
 body
 	text-rendering: optimizeLegibility
+	text-align: left
+	color: $BLACK
 
 
 article
@@ -156,54 +165,93 @@ article h2
 
 summary p
 	font-family: 'Circular-Bold'
+	font-size: 18px
 
 
 section details
 	font-family: 'BerlingskeSans-Regular'
+	
+
+#greeting p:first-child
+	margin-bottom: 1.5em
+
+
+#greeting p:first-child:after
+	position: relative
+	display: inline-block
+	margin-left: -124px
+	top: 13px
+	width: 20px
+	border-bottom: 2px solid
+	content: " " /* 1 */
+	
+
+
+/*
+ *	Media Queries
+ */
+ 
 
 
 //---------------------------------------------------------------
-// Breakpoint 1 | Small Desktop
+// Breakpoint 1 | Medium Screen
 
+@media screen and (max-width: 1000px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)
+	summary p
+		font-family: 'Circular-Bold'
+		font-size: 14px
+		
+	#greeting p:first-child:after
+		margin-left: -96px
+		top: 11px
+		width: 15px
+		
+@media screen and (max-width: 1000px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
+	summary p
+		font-family: 'Circular-Bold'
+		font-size: 14px
+		
+	#greeting p:first-child:after
+		margin-left: -96px
+		top: 11px
+		width: 15px
+		
 
-section button
-	font-family: 'BerlingskeSans-Regular'
+// Breakpoint 2 | Small Screen
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen and (min-width: 400px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)
+	section button
+		font-family: 'BerlingskeSans-Regular'
+		
+/* ----------- Retina Screens ----------- */
+@media screen and (min-width: 400px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
+	section button
+		font-family: 'BerlingskeSans-Regular'
 
 
 
 //---------------------------------------------------------------
-// Breakpoint 2 | Tablet
-
-
-section button
-	font-family: 'BerlingskeSans-Regular'
-
-
-
-//---------------------------------------------------------------
-// Breakpoint 3 | Big Mobile
-
-
-section button
-	font-family: 'BerlingskeSans-Regular'
+// Breakpoint 3 | Phablet // iPhone 6s+
+@media only screen and (max-device-width: 414px) and (min-resolution: 2dppx)
+	section button
+		font-family: 'BerlingskeSans-Regular'
 
 
 
 //---------------------------------------------------------------
-// Breakpoint 4 | Medium Mobile
-
-
-section button
-	font-family: 'BerlingskeSans-Regular'
+// Breakpoint 4 | Big Mobile // iPhone 6s
+@media only screen and (max-device-width: 375px) and (min-resolution: 2dppx)
+	section button
+		font-family: 'BerlingskeSans-Regular'
 
 
 
 //---------------------------------------------------------------
-// Breakpoint 5 | Small Mobile
-
-
-section button
-	font-family: 'BerlingskeSans-Regular'
+// Breakpoint 5 | Medium Mobile // iPhone 5s, 5, 4
+@media only screen and (max-device-width: 320px) and (min-resolution: 2dppx)
+	section button
+		font-family: 'BerlingskeSans-Regular' 
 
 
 	
