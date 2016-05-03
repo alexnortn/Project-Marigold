@@ -576,7 +576,7 @@ let glyph = function (p) {
 	// Scaling function
 
 	function scaleFunc(w,h) {
-		let dynamicScale = ((w < 1000) || (h < 850)) ?  2 : 1.5;
+		let dynamicScale = ((w < 1000) || (h < 850)) ?  1.5 : 1.25;
 		scaleFactor = w / (1920 / dynamicScale);
 	}
 

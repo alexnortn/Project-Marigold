@@ -260,12 +260,15 @@ $(document).ready(function() {
         //  Close current project
         if (open) closeProject();
 
-        // Set #bios as current
-        _sectionCurrent = "web-lab";
+        _sectionCurrent = "web-lab"; // Set #web-lab as current
+        navigateScroll(_sectionCurrent); // Navigate
 
-        // Navigate
-        navigateScroll(_sectionCurrent);
+    });
 
+    $('.scroll-arrow').click(function() {
+        _sectionCurrent = "bios"; // Set #bios as current
+        navigateScroll(_sectionCurrent); // Navigate
+        $(this).velocity("fadeOut", { duration: 250 }); // Fade it out | They get it
     });
     
 
