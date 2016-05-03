@@ -256,20 +256,24 @@ label[for="nav-trigger"] hr:nth-child(3)
 	top: 140px
 	transform: rotate(90deg)
 	
+	
+// Down-Arrow
 
 .scroll-arrow 
-	display: block
+	display: inline-block
+	align-self: flex-end
+	left: 50%;
+	bottom: 50px
 	position: absolute
-	bottom: -50px
 	text-align: center
 	border-radius: 100%
 	border: solid 1px rgba(0,0,0,0)
 	padding: 25px
-	height: 35px
-	width: 35px
+	height: 25px
+	width: 25px
 	z-index: 100
 	animation: arrow-animate 1s ease-in-out 2s infinite
-	transition: all 250ms
+	transition: transform 250ms
 
 
 .scroll-arrow:hover 
@@ -281,10 +285,6 @@ label[for="nav-trigger"] hr:nth-child(3)
 	border: solid 1px rgba(0,0,0,1)
 	opacity: 0.25
 	animation-play-state: paused
-
-
-.scroll-arrow i 
-	margin-top: 7px
 	
 
 //  Scrollbar
