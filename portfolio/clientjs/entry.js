@@ -17,7 +17,7 @@ let GLYPH = require('./p5/sketch.js');
 // Activation Function
 $(document).ready(function () {
 
-	activateGlyph();
+	// activateGlyph();
 
 });
 

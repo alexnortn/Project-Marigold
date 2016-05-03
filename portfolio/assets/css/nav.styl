@@ -4,7 +4,7 @@ Navigation Elements
 
 */
 
-
+@require 'color.styl'
 
 
 // Pagination
@@ -93,78 +93,26 @@ Navigation Elements
 #arrow:active 
 	border: solid 1px rgba(0,0,0,0)
 	animation-play-state: paused
+	
 
+// Nav Menu
 
 .nav 
 	position: fixed
 	z-index: 100
 	width: 411px
-	background-color: #fff
+	background-color: #000
 	right: -510px
 	top: 0px
 	height: 100%
-	z-index: 1000
-	border: solid 1px rgba(218,218,218,0)
-	box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.18)
 	transition: all 0.5s ease-in-out
+	z-index: 100
 
 
-// .nav .social 
-	/*margin-top: -10px*/
-
-
-#nav-box 
-	width: 225px
-	margin-top: 75%
-	margin-left: auto
-	margin-right: auto
-
-
-#nav-box ul 
+#nav-overlay
 	width: 100%
-
-
-#nav-box li 
-	text-align: center
-	position: relative
-	display: block
-	border-bottom: 1.25px dotted black
-	border-left: 1.25px dotted black
-	border-right: 1.25px dotted black
-	height: 70px
-	line-height: 70px
-	transition: all 250ms
-
-
-#nav-box li:hover 
-	background-color: rgb(35,35,35)
-	cursor: pointer
-
-
-#nav-box li:first-child 
-	margin-top: 35px
-	border-top: 1.25px dotted black
-
-
-#nav-box li:last-child 
-	margin-top: 35px
-	border-top: 1.25px dotted black
-
-
-#nav-box a 
-	color: black
-	text-decoration: none
-	font-family: BerlingskeSans-Bold, sans-serif
-	text-transform: uppercase
-	font-size: 12px
-	letter-spacing: 2px
-	padding-bottom: 2px
-	padding-top: 22px
-	transition: all 250ms
-
-
-#nav-box li:hover a
-	color: rgb(225,225,225)
+	height: 100%
+	background-color: $BLACK
 
 
 .nav-trigger 
@@ -176,20 +124,14 @@ Navigation Elements
 label[for="nav-trigger"] 
 	position: fixed
 	top: 50px
-	z-index: 1001
 	width:  75px
 	height: 75px
-	border: solid 1.5px rgba(35, 35, 35, 1)
-	/*box-shadow: 0 3px 3px rgba(0, 0, 0, 0.18)*/
 	cursor: pointer
-	background-color: white
-	/*background-image: url("../images/hamburger2.svg")*/
 	background-size: contain
+	transition: all 250ms ease-in-out
 
 
-label[for="nav-trigger"]:hover 
-	box-shadow: 0 0 3px rgba(0,0,0,0.18)
-	border: solid 1px rgba(218,218,218,0)
+// label[for="nav-trigger"]:hover 
 
 
 label[for="nav-trigger"] hr 
@@ -230,8 +172,6 @@ label[for="nav-trigger"] hr:nth-child(3)
 
 .nav-trigger:checked + label 
 	right: 411px
-	box-shadow: -3px 0 5px rgba(0, 0, 0, 0.1)
-	border: solid 0px rgba(218,218,218,0)
 
 
 .nav-trigger:checked + label:hover 
@@ -244,17 +184,7 @@ label[for="nav-trigger"] hr:nth-child(3)
 
 
 .nav-trigger + label 
-	transition: all 0.5s ease-in-out
-
-
-.next-section 
-	display: inline-block
-	width: 250px
-	text-align: left
-	position: relative
-	right: 95px
-	top: 140px
-	transform: rotate(90deg)
+	transition: all 250ms ease-in-out
 	
 	
 // Down-Arrow
