@@ -8,25 +8,23 @@ block content
     // /PAGINATION
 
     // NAV MENU
+    input(type="checkbox" id="nav-trigger" class="nav-trigger")
+    label(for="nav-trigger").front
+        hr
+        hr
+        hr
+        hr
+    
     nav.nav.front
-        input(type="checkbox" id = "nav-trigger" class = "nav-trigger")
-        label(for = "nav-trigger")#nav-burger
-            hr
-            hr
-            hr
-            hr
-        #nav-box
-            #nav-triangle-top
-            #nav-rectangle-bottom
-            ul
-                li.nav-item
-                    a(href="#") Web Lab
-                li.nav-item
-                    a(href="#") Bios
-                li.nav-item
-                    a(href="#") Works
-                li.nav-item
-                    a(href="#") Contact
+        ul
+            li
+                a(href="#") Web Lab
+            li
+                a(href="#") Bios
+            li
+                a(href="#") Works
+            li
+                a(href="#") Contact
         .social
             <i class="fa fa-envelope fa-2x"></i>
             <i class="fa fa-twitter fa-2x"></i>
