@@ -42,7 +42,6 @@ Navigation Elements
 	position: fixed
 	width: 10px
 	right: 50px
-	z-index: 100
 	text-align: center
 
 
@@ -80,7 +79,6 @@ Navigation Elements
 	height: 50px
 	width: 50px
 	opacity: 0.25
-	z-index: 100
 	animation: arrow-animate 1s ease-in-out 2s infinite
 	transition: all 250ms
 
@@ -99,14 +97,14 @@ Navigation Elements
 
 .nav 
 	position: fixed
-	z-index: 100
 	width: 100%
-	background-color: #000
+	background-color: $BLACK_BG
 	top: 0px
 	height: 100%
-	transition: all 0.5s ease-in-out
-	z-index: 100
 	opacity: 0
+	display: block
+	visibility: hidden
+	transition: opacity 250ms ease-in-out
 
 
 #nav-overlay
@@ -119,12 +117,12 @@ Navigation Elements
 	position: absolute
 	clip: rect(0,0,0,0)
 	// display: none
-
+		
 
 label[for="nav-trigger"] 
 	position: fixed
-	right: 50px
-	top: 50px
+	right: 18px
+	top: 25px
 	width:  75px
 	height: 75px
 	cursor: pointer
@@ -133,6 +131,7 @@ label[for="nav-trigger"]
 
 
 // label[for="nav-trigger"]:hover 
+// 	background-color: red
 
 
 label[for="nav-trigger"] hr 
@@ -140,8 +139,9 @@ label[for="nav-trigger"] hr
 	height: 2px
 	border: none
 	margin-bottom: 8px
-	color: rgba(35, 35, 35, 1)
-	background-color: rgba(35, 35, 35, 1)
+	opacity: 1
+	color: $BLACK
+	background-color: $BLACK
 	transition: all 250ms ease-in-out
 
 
@@ -154,21 +154,21 @@ label[for="nav-trigger"] hr:nth-child(3)
 
 
 .nav-trigger:checked + label hr:first-child 
-	color: rgba(35, 35, 35, 0)
-	background-color: rgba(35, 35, 35, 0)
+	opacity: 0
 
 
 .nav-trigger:checked + label hr:last-child 
-	color: rgba(35, 35, 35, 0)
-	background-color: rgba(35, 35, 35, 0)
+	opacity: 0 
 
 
 .nav-trigger:checked + label hr:nth-child(2) 
 	transform: rotate(45deg)
+	background-color: $WHITE
 
 
 .nav-trigger:checked + label hr:nth-child(3) 
 	transform: rotate(-45deg)
+	background-color: $WHITE
 
 
 .nav-trigger:checked + label 
@@ -182,6 +182,7 @@ label[for="nav-trigger"] hr:nth-child(3)
 
 .nav-trigger:checked ~ .nav 
 	opacity: 1
+	visibility: visible
 
 
 .nav-trigger + label 
@@ -202,7 +203,6 @@ label[for="nav-trigger"] hr:nth-child(3)
 	padding: 25px
 	height: 25px
 	width: 25px
-	z-index: 100
 	animation: arrow-animate 1s ease-in-out 2s infinite
 	transition: transform 250ms
 
