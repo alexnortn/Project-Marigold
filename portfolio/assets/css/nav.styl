@@ -104,6 +104,7 @@ Navigation Elements
 	height: 100%
 	opacity: 0
 	display: flex
+	flex-direction: row
 	visibility: hidden
 	transition: opacity 250ms ease-in-out
 
@@ -190,6 +191,16 @@ label[for="nav-trigger"] hr:nth-child(3)
 	transition: all 250ms ease-in-out
 	
 
+// Nav Content
+
+.nav-content
+	right: 100px
+	top: 200px
+	width: 300px
+	position: fixed
+	height: 80%
+	
+
 .nav ul
 	list-style: none
 	font-family: Circular-Bold, sans-serif
@@ -197,11 +208,6 @@ label[for="nav-trigger"] hr:nth-child(3)
 	letter-spacing: 3px
 	line-height: 2em
 	text-align: right
-	position: fixed
-	right: 100px
-	top: 200px
-	width: auto
-	// align-self: center
 	
 
 // Links
@@ -213,7 +219,7 @@ nav a
 	transition: border-bottom 100ms ease-in-out
 	
 
-nav a:hover
+nav li a:hover
 	border-bottom: 7.5px solid $WHITE
 	
 
@@ -244,12 +250,19 @@ nav a:hover
 //  Social buttons
 
 .social 
-	width: 300px
-	position: relative
-	padding: 40px
-	right: 100px
-	text-align: center
+	color: $WHITE
+	width: 100%
+	position: absolute
+	bottom: 100px
+	padding-top: 25px
+	border-top: 1px solid $WHITE
+	text-align: right
 	word-spacing: 15px
+	align-self: center
+	
+.social i
+	margin-left: 25px
+	padding: 5px
 	
 	
 // Down-Arrow
