@@ -5,7 +5,13 @@ Navigation Elements
 */
 
 @require 'color.styl'
+@require 'type.styl'
 
+
+// Links
+a
+	color: $WHITE
+	text-decoration: none
 
 // Pagination
 
@@ -188,6 +194,15 @@ label[for="nav-trigger"] hr:nth-child(3)
 .nav-trigger + label 
 	transition: all 250ms ease-in-out
 	
+
+.nav ul
+	list-style: none
+	font-family: Circular-Bold, sans-serif
+	font-size: 60px
+	letter-spacing: 3px
+	line-height: 2em
+	text-align: right
+	margin-right: 20%
 	
 // Down-Arrow
 

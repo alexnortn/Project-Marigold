@@ -152,7 +152,8 @@ let glyph = function (p) {
 		p.touchIsDown ? mousePos.set(p.touchX ,p.touchY) : mousePos.set(p.mouseX,p.mouseY);
 		nudgeAttractor.set(mousePos.x ,mousePos.y);
 
-		p.background(255);
+		// p.background(255);
+		p.clear();
 		// motionBlur();
 
 		// Draw the bezier Shapes 
@@ -713,8 +714,8 @@ let glyph = function (p) {
 		gravityStrength.y *= -1;
 		gravity = new toxi.physics2d.behaviors.GravityBehavior(gravityStrength); // Re-initialize gravity
 		physics.addBehavior(gravity);
-		// prevent default
-		return false;
+		// prevent default | Which also shuts down non-p5 handlers!
+		// return false; 
 	}
 
 	function motionBlur() {
