@@ -170,6 +170,15 @@ $(document).ready(function() {
         }, 750);
     });
 
+
+    // Header navigation | JS Interaction
+    $('#nav-trigger').click(function() {
+        let e = document.getElementById("nav-trigger");
+        $("body").toggleClass("nav-open");
+
+    });
+    
+
     // Close the nav overlay
     function closeNav() {
         document.getElementById("nav-trigger").checked = false;
@@ -307,7 +316,7 @@ $(document).ready(function() {
         navigateScroll(_sectionCurrent); // Navigate
         $(this).velocity("fadeOut", { duration: 250 }); // Fade it out | They get it
     });
-    
+
 
 });
 
