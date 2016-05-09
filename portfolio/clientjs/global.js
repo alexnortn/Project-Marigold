@@ -186,6 +186,11 @@ $(document).ready(function() {
         let target = getEventTarget(event);
         _sectionCurrent = target.getAttribute('data-nav'); // Get target id from data attr
         closeNav(); // Close Section
+
+        if (_sectionCurrent == "works") {
+            _sectionCurrent = $(".project-view").attr('id');
+        }
+
         navigateScroll(_sectionCurrent); // Navigate
     });
 
