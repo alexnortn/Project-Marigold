@@ -173,7 +173,6 @@ $(document).ready(function() {
     // Close the nav overlay
     function closeNav() {
         document.getElementById("nav-trigger").checked = false;
-        debugger;
     }
 
     // Get Event Target
