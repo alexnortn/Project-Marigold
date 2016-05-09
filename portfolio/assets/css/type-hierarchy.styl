@@ -187,6 +187,18 @@ section details
 	
 
 
+// Navigation
+//  These require targeted styling
+.nav ul
+	list-style: none
+	font-family: Circular-Bold, sans-serif
+	font-size: 60px
+	letter-spacing: 3px
+	line-height: 2em
+	text-align: right
+	
+
+
 /*
  *	Media Queries
  */
@@ -206,6 +218,10 @@ section details
 		top: 11px
 		width: 15px
 		
+	.nav ul
+		font-size: 48px
+		letter-spacing: 2.5px
+		
 @media screen and (max-width: 1000px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
 	summary p
 		font-family: 'Circular-Bold'
@@ -217,18 +233,24 @@ section details
 		width: 15px
 		border-bottom: 2px solid
 		
+	.nav ul
+		font-size: 48px
+		letter-spacing: 2.5px
+		
 
 // Breakpoint 2 | Small Screen
 
 /* ----------- Non-Retina Screens ----------- */
-@media screen and (min-width: 400px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)
-	section button
-		font-family: 'BerlingskeSans-Regular'
+@media screen and (max-width: 500px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)
+	.nav ul
+		font-size: 36px
+		letter-spacing: 2px
 		
 /* ----------- Retina Screens ----------- */
-@media screen and (min-width: 400px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
-	section button
-		font-family: 'BerlingskeSans-Regular'
+@media screen and (max-width: 500px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
+	.nav ul
+		font-size: 36px
+		letter-spacing: 2px
 
 
 

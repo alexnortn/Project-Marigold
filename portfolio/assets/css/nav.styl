@@ -201,15 +201,6 @@ label[for="nav-trigger"] hr:nth-child(3)
 	height: 80%
 	
 
-.nav ul
-	list-style: none
-	font-family: Circular-Bold, sans-serif
-	font-size: 60px
-	letter-spacing: 3px
-	line-height: 2em
-	text-align: right
-	
-
 // Links
 
 nav a
@@ -323,6 +314,57 @@ nav .social a // Open social links in new tabs
 
 ::-webkit-scrollbar-corner 
 	background-color: transparent
+	
+
+/*
+ *	Media Queries
+ */
+ 
+
+
+//---------------------------------------------------------------
+// Breakpoint 1 | Medium Screen
+
+// @media screen and (max-width: 1000px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)
+
+		
+// @media screen and (max-width: 1000px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
+		
+
+// Breakpoint 2 | Small Screen
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen and (max-width: 500px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)
+	.nav-content
+		width: 200px
+		
+/* ----------- Retina Screens ----------- */
+@media screen and (max-width: 500px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
+	.nav-content
+		width: 200px
+
+
+
+//---------------------------------------------------------------
+// Breakpoint 3 | Phablet // iPhone 6s+
+@media only screen and (max-device-width: 414px) and (min-resolution: 2dppx)
+	section button
+		font-family: 'BerlingskeSans-Regular'
+
+
+
+//---------------------------------------------------------------
+// Breakpoint 4 | Big Mobile // iPhone 6s
+@media only screen and (max-device-width: 375px) and (min-resolution: 2dppx)
+	section button
+		font-family: 'BerlingskeSans-Regular'
+
+
+
+//---------------------------------------------------------------
+// Breakpoint 5 | Medium Mobile // iPhone 5s, 5, 4
+@media only screen and (max-device-width: 320px) and (min-resolution: 2dppx)
+	section button
 	
 
 
