@@ -291,6 +291,17 @@ $(document).ready(function() {
 
     });
 
+    // Header navigation --> Go Home (clicking 'a' sends the users to /#bios)
+    $('#logo-header').click(function(){
+        
+        if (open) closeProject(); //  Close current project
+        closeNav() // Close nav
+
+        _sectionCurrent = "web-lab"; // Set #web-lab as current
+        navigateScroll(_sectionCurrent); // Navigate
+
+    });
+
     $('.scroll-arrow').click(function() {
         _sectionCurrent = "bios"; // Set #bios as current
         navigateScroll(_sectionCurrent); // Navigate
