@@ -15,23 +15,23 @@ block content
             #logo-header
                 img(src = "/images/logo.svg" alt = "main logo")
         .nav-content
-            ul
+            ul#web-lab-nav
                 li
-                    a(href="#") Web Lab
+                    a(href="#web-lab")&attributes({'data-nav': "web-lab"}) Web Lab
                 li
-                    a(href="#") Bios
+                    a(href="#bios")&attributes({'data-nav': "bios"}) Bios
                 li
-                    a(href="#") Works
+                    a(href="#works")&attributes({'data-nav': "works"}) Works
                 li
-                    a(href="#") Contact
+                    a(href="#contact")&attributes({'data-nav': "contact"}) Contact
             .social
                 a(href='google.com')
                     i.fa.fa-envelope.fa-2x
-                a(href='google.com')
+                a(href='https://twitter.com/alexnortn' target="_blank")
                     i.fa.fa-twitter.fa-2x
                 a(href='google.com')
                     i.fa.fa-vimeo-square.fa-2x
-                a(href='google.com')
+                a(href='https://github.com/alexnortn' target="_blank")
                     i.fa.fa-github.fa-2x
                 a(href='google.com')
                     i.fa.fa-behance-square.fa-2x
@@ -57,14 +57,14 @@ block content
 
         // INTERACTIVE PAGE
         section#web-lab.section&attributes({'data-inproject': true})
-            summary#greeting.forward
+            summary#greeting.plus
                 p
                 p 
                     !{welcome_text.greeting_text}
                 p
                     !{welcome_text.discipline_text}
 
-            .scroll-arrow
+            .scroll-arrow.plus
                 <i class="fa  fa-angle-down fa-2x"></i>           
 
         // /INTERACTIVE
