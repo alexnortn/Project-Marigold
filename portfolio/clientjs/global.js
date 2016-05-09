@@ -170,9 +170,10 @@ $(document).ready(function() {
         }, 750);
     });
 
-    // Close Nav
-    function closeNav(id) {
-        document.getElementById(id).checked = true;
+    // Close the nav overlay
+    function closeNav() {
+        document.getElementById("nav-trigger").checked = false;
+        debugger;
     }
 
     // Get Event Target
@@ -185,7 +186,7 @@ $(document).ready(function() {
     $('#web-lab-nav').click(function() {
         let target = getEventTarget(event);
         _sectionCurrent = target.getAttribute('data-nav'); // Get target id from data attr
-        closeNav(_sectionCurrent); // Close Section
+        closeNav(); // Close Section
         navigateScroll(_sectionCurrent); // Navigate
     });
 
