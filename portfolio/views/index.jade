@@ -64,9 +64,17 @@ block content
                 p
                     !{welcome_text.discipline_text}
 
-            #lab-options.interactive-element
-                p f(x)
-            #lab-what.interactive-element
+            #lab-options.plus
+                .interactive-element
+                    p f(x)
+                .lab-menu
+                    ul
+                        li Free
+                        li Warp
+                        li Debug
+
+            #lab-what.interactive-element.plus
+                p ?
 
             .scroll-arrow.plus
                 <i class="fa  fa-angle-down fa-2x"></i>           
