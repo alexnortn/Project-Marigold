@@ -8,12 +8,12 @@ require('type.styl')
 require('color.styl') 
 
 
-.lab-options
+.interactive-element
 	position: absolute
 	clip: rect(0,0,0,0)
 
 
-label[for="lab-options"]
+#lab-options
 	position: absolute
 	display: flex
 	align-items: center
@@ -23,43 +23,8 @@ label[for="lab-options"]
 	height: 50px;
 	
 
-label[for="lab-options"] .interactive-element
+label[for="interactive-element"]
 	float: left
-	
-
-label[for="lab-options"]:hover
-	cursor: pointer
-		
-
-label[for="lab-options"] p 
-	font-family: Chronicle-Semitalic
-	display: block
-
-
-.lab-options:checked + label .lab-menu
-	display: inline
-	
-
-.lab-options:checked + label .interactive-element
-	background-color: $BLACK
-	cursor: pointer
-	
-
-.lab-options:checked + label .interactive-element p
-	color: $WHITE
-
-
-#lab-what
-	position: absolute
-	right: 50px
-	bottom: 50px
-	
-
-#lab-what p 
-	font-family: Circular-Bold
-	
-	
-.interactive-element
 	position: relative
 	display: flex
 	align-items: center
@@ -72,13 +37,42 @@ label[for="lab-options"] p
 	transition: background-color ease 250ms
 	
 
-.interactive-element p 
+label[for="interactive-element"]:hover
+	cursor: pointer
+		
+
+label[for="interactive-element"] p 
+	font-family: Chronicle-Semitalic
+	display: block
 	font-size: 12px
 	color: $BLACK
 	align-self: center
 	text-align: center
 	user-select: none    
 	transition: color ease 250ms
+
+
+.interactive-element:checked ~ .lab-menu
+	display: inline
+	
+
+.interactive-element:checked + label
+	background-color: $BLACK
+	cursor: pointer
+	
+
+.interactive-element:checked + label .interactive-element p
+	color: $WHITE
+
+
+#lab-what
+	position: absolute
+	right: 50px
+	bottom: 50px
+	
+
+#lab-what p 
+	font-family: Circular-Bold
 	
 
 .lab-menu
@@ -93,6 +87,7 @@ label[for="lab-options"] p
 	padding-left: 10px
 	padding-right: 10px
 	border-right: 1px solid $BLACK
+	
 	
 .lab-menu ul li:last-child
 	border-right: none
