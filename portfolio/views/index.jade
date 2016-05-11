@@ -64,10 +64,11 @@ block content
                 p
                     !{welcome_text.discipline_text}
 
-            #lab-options.plus
-                button.interactive-element
+            input(type="checkbox" id="lab-options" class="lab-options")
+            label(for="lab-options").plus_plus_plus
+                .interactive-element
                     p f(x)
-                button.lab-menu
+                .lab-menu
                     ul
                         li Free
                         li Warp
