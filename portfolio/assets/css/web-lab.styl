@@ -17,9 +17,10 @@ require('color.styl')
 	position: absolute
 	display: flex
 	align-items: center
+	user-select: none
 	left: 50px
 	bottom: 50px
-	width: 300px
+	width: 400px
 	height: 50px;
 	
 
@@ -31,10 +32,10 @@ label[for="interactive-element"]
 	justify-content: center
 	width: 50px
 	height: 50px
-	border: 1px solid black
+	border: 1px solid rgba(35 35 35 1)
 	background-color: transparent
 	border-radius: 3px
-	transition: background-color ease 250ms
+	transition: border ease 250ms
 	
 
 label[for="interactive-element"]:hover
@@ -43,26 +44,23 @@ label[for="interactive-element"]:hover
 
 label[for="interactive-element"] p 
 	font-family: Chronicle-Semitalic
+	letter-spacing: 1px
 	display: block
 	font-size: 12px
 	color: $BLACK
 	align-self: center
-	text-align: center
-	user-select: none    
+	text-align: center    
 	transition: color ease 250ms
 
 
 .interactive-element:checked ~ .lab-menu
-	display: inline
+	// display: inline
+	opacity: 1
 	
 
 .interactive-element:checked + label
-	background-color: $BLACK
+	border: 1px solid rgba(35 35 35 0)
 	cursor: pointer
-	
-
-.interactive-element:checked + label .interactive-element p
-	color: $WHITE
 
 
 #lab-what
@@ -76,21 +74,32 @@ label[for="interactive-element"] p
 	
 
 .lab-menu
-	display: none
+	display: inline
 	text-align: left
+	opacity: 0
 	float left
 	width: 60%
+	transition: opacity ease 250ms
 	
 	
 .lab-menu ul li
+	font-family: Circular-Bold
+	text-transform: uppercase
+	letter-spacing: 3px
+	color: $GREY
 	display: inline-block
-	padding-left: 10px
-	padding-right: 10px
-	border-right: 1px solid $BLACK
+	padding-left: 15px
+	padding-right: 15px
+	border-left: 1px solid $GREY
+	transition: color ease 100ms
 	
+.lab-menu ul li:hover
+	cursor: pointer
+	color: $BLACK
 	
-.lab-menu ul li:last-child
-	border-right: none
+.lab-menu ul li:active
+	cursor: pointer
+	color: $GREY
 
 
 
