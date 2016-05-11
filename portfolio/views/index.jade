@@ -65,8 +65,8 @@ block content
                     !{welcome_text.discipline_text}
 
             #lab-options
-                input(type="checkbox" id="interactive-element" class="interactive-element")
-                label(for="interactive-element").plus_plus_plus
+                input(type="checkbox" id="lab-options-element" class="lab-options-element")
+                label(for="lab-options-element").button.plus_plus_plus
                     p f(x)
                 .lab-menu
                     ul
@@ -74,8 +74,12 @@ block content
                         li Warp
                         li Debug
 
-            #lab-what.interactive-element.plus
-                p ?
+            #lab-what
+                input(type="checkbox" id="lab-what-element" class="lab-what-element")
+                label(for="lab-what-element").button.plus_plus_plus
+                    p ?
+                .lab-details
+                    p Glyph simulation rendered using p5js<br>Physics applied using toxiclibs
 
             .scroll-arrow.plus
                 <i class="fa  fa-angle-down fa-2x"></i>           

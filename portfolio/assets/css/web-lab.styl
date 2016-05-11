@@ -7,11 +7,28 @@ Web-Lab | Define states for elements
 require('type.styl') 
 require('color.styl') 
 
+	
+// --------------------------------------	
+// General interactive style
+.button
+	position: relative
+	display: flex
+	align-items: center
+	justify-content: center
+	user-select: none 
+	width: 50px
+	height: 50px
+	border: 1px solid rgba(35 35 35 1)
+	background-color: transparent
+	border-radius: 3px
+	transition: border ease 250ms
+	
+.button:hover
+	cursor: pointer
+	
 
-.interactive-element
-	position: absolute
-	clip: rect(0,0,0,0)
-
+// --------------------------------------
+// f(x) styles
 
 #lab-options
 	position: absolute
@@ -24,25 +41,16 @@ require('color.styl')
 	height: 50px;
 	
 
-label[for="interactive-element"]
-	float: left
-	position: relative
-	display: flex
-	align-items: center
-	justify-content: center
-	width: 50px
-	height: 50px
-	border: 1px solid rgba(35 35 35 1)
-	background-color: transparent
-	border-radius: 3px
-	transition: border ease 250ms
+.lab-options-element
+	position: absolute
+	clip: rect(0,0,0,0)
 	
 
-label[for="interactive-element"]:hover
-	cursor: pointer
+label[for="lab-options-element"]
+	float: left
 		
 
-label[for="interactive-element"] p 
+label[for="lab-options-element"] p 
 	font-family: Chronicle-Semitalic
 	letter-spacing: 1px
 	display: block
@@ -53,24 +61,13 @@ label[for="interactive-element"] p
 	transition: color ease 250ms
 
 
-.interactive-element:checked ~ .lab-menu
-	// display: inline
+.lab-options-element:checked ~ .lab-menu
 	opacity: 1
 	
 
-.interactive-element:checked + label
+.lab-options-element:checked + label
 	border: 1px solid rgba(35 35 35 0)
 	cursor: pointer
-
-
-#lab-what
-	position: absolute
-	right: 50px
-	bottom: 50px
-	
-
-#lab-what p 
-	font-family: Circular-Bold
 	
 
 .lab-menu
@@ -93,13 +90,81 @@ label[for="interactive-element"] p
 	border-left: 1px solid $GREY
 	transition: color ease 100ms
 	
+
 .lab-menu ul li:hover
 	cursor: pointer
 	color: $BLACK
 	
+	
 .lab-menu ul li:active
 	cursor: pointer
 	color: $GREY
+	
+
+// --------------------------------------
+// ? styles
+
+#lab-what
+	position: absolute
+	display: flex
+	flex-direction: row
+	justify-content: flex-end
+	align-items: flex-end
+	align-items: center
+	right: 40px // Scroll Bar ~10px
+	bottom: 50px
+	width: 400px
+	height: 50px;
+	
+
+.lab-what-element
+	position: absolute
+	clip: rect(0,0,0,0)
+	
+
+label[for="lab-what-element"]
+	align-self: flex-end
+	order: 1
+		
+
+label[for="lab-what-element"] p 
+	font-family: Circular-Bold
+	display: block
+	font-size: 12px
+	color: $BLACK
+	align-self: center
+	text-align: center    
+	transition: color ease 250ms
+
+
+.lab-what-element:checked ~ .lab-details
+	opacity: 1
+	
+
+.lab-what-element:checked + label
+	border: 1px solid rgba(35 35 35 0)
+	cursor: pointer
+	
+.lab-details
+	align-self: center
+	order: 0
+	display: inline
+	text-align: right
+	padding-right: 15px
+	border-right: 1px solid $BLACK
+	opacity: 0
+	float right
+	width: 60%
+	transition: opacity ease 250ms
+	
+	
+.lab-details p
+	font-family: Circular-Roman
+	line-height: 1.5em
+	color: $BLACK
+	display: inline-block
+	transition: color ease 100ms
+	
 
 
 
