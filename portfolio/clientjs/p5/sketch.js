@@ -701,6 +701,7 @@ let glyph = function (p) {
 					);
 					field[index].attractForce.setStrength(strength); // Set Attractor strength
 					field[index].strength = strength;
+					field[index].display();
 					yoff += 0.1;
 
 					index++;
@@ -879,15 +880,12 @@ let glyph = function (p) {
 			e.preventDefault();
 
 	        if ($("#fluid-radio").is(":checked")) { 		// Fluid
-	            console.log("fluid");
 	            _renderMode = "fluid"; 
 	        }
 	        else if ($("#perlin-radio").is(":checked")) {	// Perlin
-	            console.log("perlin");
 	            _renderMode = "perlin";
 	        }
 	        else if ($("#debug-radio").is(":checked")) {	// Debug
-	            console.log("debug");
 	        	_renderMode = "debug";
 	        }
 	});    
