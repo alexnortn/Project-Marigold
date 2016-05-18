@@ -23,7 +23,20 @@ require('color.styl')
 	border-radius: 3px
 	transition: border ease 250ms
 	
+
 .button:hover
+	cursor: pointer
+	
+
+#web-lab ul
+	list-style: none
+	
+
+#web-lab input
+	visibility: hidden
+	
+	
+#web-lab label
 	cursor: pointer
 	
 
@@ -75,15 +88,11 @@ label[for="lab-options-element"] p
 	text-align: left
 	opacity: 0
 	float left
-	width: 60%
+	width: 80%
 	transition: opacity ease 250ms
 	
 	
 .lab-menu ul li
-	font-family: Circular-Bold
-	text-transform: uppercase
-	letter-spacing: 3px
-	color: $GREY
 	display: inline-block
 	padding-left: 15px
 	padding-right: 15px
@@ -91,14 +100,31 @@ label[for="lab-options-element"] p
 	transition: color ease 100ms
 	
 
-.lab-menu ul li:hover
+.lab-menu ul li label
+	font-family: Circular-Bold
+	text-transform: uppercase
+	letter-spacing: 3px
+	color: $GREY
+	
+
+.lab-menu label:hover
 	cursor: pointer
 	color: $BLACK
 	
 	
-.lab-menu ul li:active
+.lab-menu label:active
 	cursor: pointer
 	color: $GREY
+	
+
+.lab-menu input + label
+	color: $GREY
+	
+
+.lab-menu input:checked + label
+	color: $BLACK
+	
+	
 	
 
 // --------------------------------------
@@ -145,6 +171,7 @@ label[for="lab-what-element"] p
 	border: 1px solid rgba(35 35 35 0)
 	cursor: pointer
 	
+
 .lab-details
 	align-self: center
 	order: 0

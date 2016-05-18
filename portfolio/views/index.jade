@@ -64,17 +64,24 @@ block content
                 p
                     !{welcome_text.discipline_text}
 
-            #lab-options.plus_plus_plus
+            #lab-options.plus_plus
                 input(type="checkbox" id="lab-options-element" class="lab-options-element")
                 label(for="lab-options-element").button
                     p f(x)
                 .lab-menu
                     ul
-                        li Free
-                        li Warp
-                        li Debug
+                        li
+                            input(type="radio" name="lab-radio" id="fluid-radio" class="lab-radio" value="1")
+                            label(for="fluid-radio") Fluid
+                        li
+                            input(type="radio" name="lab-radio" id="perlin-radio" class="lab-radio" value="2")
+                            label(for="perlin-radio") Perlin
+                        li
+                            input(type="radio" name="lab-radio" id="debug-radio" class="lab-radio" value="3") 
+                            label(for="debug-radio") Debug
 
-            #lab-what.plus_plus_plus
+
+            #lab-what.plus_plus
                 input(type="checkbox" id="lab-what-element" class="lab-what-element")
                 label(for="lab-what-element").button
                     p ?
