@@ -75,6 +75,9 @@ let glyph = function (p) {
 		_force  = $.Deferred(),
 		_bounce = $.Deferred();
 
+	let _renderMode,
+		_renderMan;
+
 	let nudgeAttractor; 
 
 	p.preload = function() {
@@ -139,6 +142,8 @@ let glyph = function (p) {
 		_perlin = flowField(100); // Turning up 2nite
 		_perlin.reset();
 
+		_renderMan = render(); // Default Fluid
+
 		_bounce = scrollAccumulator();
 
 	}
@@ -147,10 +152,6 @@ let glyph = function (p) {
 
 		// Update the physics world
 		physics.update();
-
-		// Update the attractor position
-		p.touchIsDown ? mousePos.set(p.touchX ,p.touchY) : mousePos.set(p.mouseX,p.mouseY);
-		nudgeAttractor.set(mousePos.x ,mousePos.y);
 
 		// p.background(255);
 		p.clear();
@@ -161,12 +162,9 @@ let glyph = function (p) {
 		drawBasicN();
 
 		// Display the Physiscs Particles;
-		displayPhys();
+		// displayPhys();
 
-		// Web Lab interactive states
-		if (typeof _perlin != 'undefined') {
-			_perlin.step(); // I wish there was a way to avoid calling this every time
-		}
+		_renderMan.render(_renderMode);
 
 	}
 
@@ -210,27 +208,27 @@ let glyph = function (p) {
 		p.noStroke();
 		p.fill(35,35,35,glyphOp);
 		p.beginShape();
-		p.vertex(aSpringVert[0].x, aSpringVert[0].y);
-		p.vertex(aSpringVert[1].x, aSpringVert[1].y);
-		p.bezierVertex(aSpringVert[2].x, aSpringVert[2].y, aSpringVert[3].x, aSpringVert[3].y, aSpringVert[4].x, aSpringVert[4].y);
-		p.bezierVertex(aSpringVert[5].x, aSpringVert[5].y, aSpringVert[6].x, aSpringVert[6].y, aSpringVert[7].x, aSpringVert[7].y);
-		p.bezierVertex(aSpringVert[8].x, aSpringVert[8].y, aSpringVert[9].x, aSpringVert[9].y, aSpringVert[10].x, aSpringVert[10].y);
-		p.bezierVertex(aSpringVert[11].x, aSpringVert[11].y, aSpringVert[12].x, aSpringVert[12].y, aSpringVert[13].x, aSpringVert[13].y);
-		p.bezierVertex(aSpringVert[14].x, aSpringVert[14].y, aSpringVert[15].x, aSpringVert[15].y, aSpringVert[16].x, aSpringVert[16].y);
-		p.bezierVertex(aSpringVert[17].x, aSpringVert[17].y, aSpringVert[18].x, aSpringVert[18].y, aSpringVert[19].x, aSpringVert[19].y);
-		p.vertex(aSpringVert[20].x, aSpringVert[20].y);
-		p.bezierVertex(aSpringVert[21].x, aSpringVert[21].y, aSpringVert[22].x, aSpringVert[22].y, aSpringVert[23].x, aSpringVert[23].y);
-		p.bezierVertex(aSpringVert[24].x, aSpringVert[24].y, aSpringVert[25].x, aSpringVert[25].y, aSpringVert[26].x, aSpringVert[26].y);
-		p.bezierVertex(aSpringVert[27].x, aSpringVert[27].y, aSpringVert[28].x, aSpringVert[28].y, aSpringVert[29].x, aSpringVert[29].y);
-		p.bezierVertex(aSpringVert[30].x, aSpringVert[30].y, aSpringVert[31].x, aSpringVert[31].y, aSpringVert[32].x, aSpringVert[32].y);
-		p.bezierVertex(aSpringVert[33].x, aSpringVert[33].y, aSpringVert[34].x, aSpringVert[34].y, aSpringVert[35].x, aSpringVert[35].y);
-		p.bezierVertex(aSpringVert[36].x, aSpringVert[36].y, aSpringVert[37].x, aSpringVert[37].y, aSpringVert[38].x, aSpringVert[38].y);
-		p.bezierVertex(aSpringVert[39].x, aSpringVert[39].y, aSpringVert[40].x, aSpringVert[40].y, aSpringVert[41].x, aSpringVert[41].y);
-		p.bezierVertex(aSpringVert[42].x, aSpringVert[42].y, aSpringVert[43].x, aSpringVert[43].y, aSpringVert[44].x, aSpringVert[44].y);
-		p.bezierVertex(aSpringVert[45].x, aSpringVert[45].y, aSpringVert[46].x, aSpringVert[46].y, aSpringVert[47].x, aSpringVert[47].y);
-		p.vertex(aSpringVert[48].x, aSpringVert[48].y);
-		p.bezierVertex(aSpringVert[49].x, aSpringVert[49].y, aSpringVert[50].x, aSpringVert[50].y, aSpringVert[51].x, aSpringVert[51].y);
-		p.bezierVertex(aSpringVert[52].x, aSpringVert[52].y, aSpringVert[53].x, aSpringVert[53].y, aSpringVert[54].x, aSpringVert[54].y);
+			p.vertex(aSpringVert[0].x, aSpringVert[0].y);
+			p.vertex(aSpringVert[1].x, aSpringVert[1].y);
+			p.bezierVertex(aSpringVert[2].x, aSpringVert[2].y, aSpringVert[3].x, aSpringVert[3].y, aSpringVert[4].x, aSpringVert[4].y);
+			p.bezierVertex(aSpringVert[5].x, aSpringVert[5].y, aSpringVert[6].x, aSpringVert[6].y, aSpringVert[7].x, aSpringVert[7].y);
+			p.bezierVertex(aSpringVert[8].x, aSpringVert[8].y, aSpringVert[9].x, aSpringVert[9].y, aSpringVert[10].x, aSpringVert[10].y);
+			p.bezierVertex(aSpringVert[11].x, aSpringVert[11].y, aSpringVert[12].x, aSpringVert[12].y, aSpringVert[13].x, aSpringVert[13].y);
+			p.bezierVertex(aSpringVert[14].x, aSpringVert[14].y, aSpringVert[15].x, aSpringVert[15].y, aSpringVert[16].x, aSpringVert[16].y);
+			p.bezierVertex(aSpringVert[17].x, aSpringVert[17].y, aSpringVert[18].x, aSpringVert[18].y, aSpringVert[19].x, aSpringVert[19].y);
+			p.vertex(aSpringVert[20].x, aSpringVert[20].y);
+			p.bezierVertex(aSpringVert[21].x, aSpringVert[21].y, aSpringVert[22].x, aSpringVert[22].y, aSpringVert[23].x, aSpringVert[23].y);
+			p.bezierVertex(aSpringVert[24].x, aSpringVert[24].y, aSpringVert[25].x, aSpringVert[25].y, aSpringVert[26].x, aSpringVert[26].y);
+			p.bezierVertex(aSpringVert[27].x, aSpringVert[27].y, aSpringVert[28].x, aSpringVert[28].y, aSpringVert[29].x, aSpringVert[29].y);
+			p.bezierVertex(aSpringVert[30].x, aSpringVert[30].y, aSpringVert[31].x, aSpringVert[31].y, aSpringVert[32].x, aSpringVert[32].y);
+			p.bezierVertex(aSpringVert[33].x, aSpringVert[33].y, aSpringVert[34].x, aSpringVert[34].y, aSpringVert[35].x, aSpringVert[35].y);
+			p.bezierVertex(aSpringVert[36].x, aSpringVert[36].y, aSpringVert[37].x, aSpringVert[37].y, aSpringVert[38].x, aSpringVert[38].y);
+			p.bezierVertex(aSpringVert[39].x, aSpringVert[39].y, aSpringVert[40].x, aSpringVert[40].y, aSpringVert[41].x, aSpringVert[41].y);
+			p.bezierVertex(aSpringVert[42].x, aSpringVert[42].y, aSpringVert[43].x, aSpringVert[43].y, aSpringVert[44].x, aSpringVert[44].y);
+			p.bezierVertex(aSpringVert[45].x, aSpringVert[45].y, aSpringVert[46].x, aSpringVert[46].y, aSpringVert[47].x, aSpringVert[47].y);
+			p.vertex(aSpringVert[48].x, aSpringVert[48].y);
+			p.bezierVertex(aSpringVert[49].x, aSpringVert[49].y, aSpringVert[50].x, aSpringVert[50].y, aSpringVert[51].x, aSpringVert[51].y);
+			p.bezierVertex(aSpringVert[52].x, aSpringVert[52].y, aSpringVert[53].x, aSpringVert[53].y, aSpringVert[54].x, aSpringVert[54].y);
 		p.endShape(p.CLOSE);
 		p.fill(244);
 		p.beginShape();
@@ -290,14 +288,14 @@ let glyph = function (p) {
 			aVerts[i].y *= scaleFactor;
 			aVerts[i].y += (glyphCenter.y);
 		}
-		for(let j in vertices.counter_vertex) {
+		for (let j in vertices.counter_vertex) {
 		aCounterVerts.push(p.createVector(vertices.counter_vertex[j].x, vertices.counter_vertex[j].y));
 			aCounterVerts[j].x *= scaleFactor;
 			aCounterVerts[j].x += (glyphCenter.x);
 			aCounterVerts[j].y *= scaleFactor;
 			aCounterVerts[j].y += (glyphCenter.y);
 		}
-		for(let k in vertices.n_vertex) {
+		for (let k in vertices.n_vertex) {
 		nVerts.push(p.createVector(vertices.n_vertex[k].x, vertices.n_vertex[k].y));
 			nVerts[k].x *= nScaleFactor;
 			nVerts[k].x += nOffset.x;
@@ -311,7 +309,7 @@ let glyph = function (p) {
 	}
 
 	function displayPhys() {
-			for(let i in aVerts) {
+			for (let i in aVerts) {
 					p.strokeWeight(scaleFactor);
 					let aVertPos = p.createVector(aLockVert[i].x, aLockVert[i].y);
 					let trans = p.map(aVertPos.dist(mousePos), 0, center.x/2, 100, 0);
@@ -324,7 +322,7 @@ let glyph = function (p) {
 					aSpringVert[i].display();
 			}
 			// Display and draw line between the 'a counter' vertices
-			for(let i in aCounterVerts) {
+			for (let i in aCounterVerts) {
 					p.strokeWeight(scaleFactor);
 					let aVertPos = p.createVector(aCounterLockVert[i].x, aCounterLockVert[i].y);
 					let trans = p.map(aVertPos.dist(mousePos), 0, center.x/2, 100, 0);
@@ -337,7 +335,7 @@ let glyph = function (p) {
 					aCounterSpringVert[i].display();
 			}
 			// Display and draw line between the 'N' vertices
-			for(let i in nVerts) {
+			for (let i in nVerts) {
 					p.strokeWeight(scaleFactor);
 					let aVertPos = p.createVector(nLockVert[i].x, nLockVert[i].y);
 					let trans = p.map(aVertPos.dist(mousePos), 0, center.x/2, 100, 0);
@@ -351,10 +349,60 @@ let glyph = function (p) {
 			}
 	}
 
+	function debugAttractors(loc, strength) { // Pass in location of attractor
+
+			let maxDistance = (p.width / 2);
+			let absStrength = p.abs(strength);
+			let r,g,b; // color elements
+
+			 if (strength > 0) { // Blue -> Push | Red -> Pull
+			 	r = 0;
+			 	g = 0;
+			 	b = 255;
+			 } else {
+			 	r = 255;
+			 	g = 0;
+			 	b = 0;
+			 }
+
+			for (let i in aVerts) { // 'a' Vertices
+					let aVertPos = p.createVector(aLockVert[i].x, aLockVert[i].y);
+					let opacity = p.map(absStrength, 0, 0.5, 100, 0); // Look to perlin for values
+					let strokeCol = p.color(r,g,b,opacity);
+					p.strokeWeight(p.map(aVertPos.dist(loc), 0 , maxDistance, 5, 1));
+					p.fill(strokeCol);
+					p.stroke(strokeCol);
+					p.line(loc.x,loc.y,aSpringVert[i].x,aSpringVert[i].y);
+					aSpringVert[i].display();
+			}
+			
+			for (let i in aCounterVerts) { // 'a-Counter' Vertices
+					let aVertPos = p.createVector(aCounterLockVert[i].x, aCounterLockVert[i].y);
+					let opacity = p.map(absStrength, 0, 0.5, 100, 0); // Look to perlin for values
+					let strokeCol = p.color(r,g,b,opacity);
+					p.strokeWeight(p.map(aVertPos.dist(loc), 0 , maxDistance, 5, 1));
+					p.stroke(strokeCol);
+					p.fill(strokeCol);
+					p.line(loc.x,loc.y,aCounterSpringVert[i].x,aCounterSpringVert[i].y);
+					aCounterSpringVert[i].display();
+			}
+			
+			for (let i in nVerts) { // 'N' vertices
+					let aVertPos = p.createVector(nLockVert[i].x, nLockVert[i].y);
+					let opacity = p.map(absStrength, 0, 0.5, 100, 0); // Look to perlin for values
+					let strokeCol = p.color(r,g,b,opacity);
+					p.strokeWeight(p.map(aVertPos.dist(loc), 0 , maxDistance, 5, 1));
+					p.stroke(strokeCol);
+					p.fill(strokeCol);
+					p.line(loc.x,loc.y,nSpringVert[i].x,nSpringVert[i].y);
+					nSpringVert[i].display();
+			}
+	}
+
 	function displayPhys1(x, y, alphaOpa1) {
 			p.strokeWeight(scaleFactor);
 			let locConverge = p.createVector(x,y);
-			for(let i in aVerts) {
+			for (let i in aVerts) {
 					let aVertPos = p.createVector(aSpringVert[i].x, aSpringVert[i].y);
 					let trans = p.map(aVertPos.dist(locConverge), 0, center.x, 100, 0);
 					let strokeCol = p.color(255,0,0,trans);
@@ -364,7 +412,7 @@ let glyph = function (p) {
 					p.line(aSpringVert[i].x,aSpringVert[i].y,locConverge.x,locConverge.y);
 			}
 			// Display and draw line between the 'a counter' vertices
-			for(let i in aCounterVerts) {
+			for (let i in aCounterVerts) {
 					p.strokeWeight(scaleFactor);
 					let aVertPos = p.createVector(aCounterSpringVert[i].x, aCounterSpringVert[i].y);
 					let trans = p.map(aVertPos.dist(locConverge), 0, center.x, 100, 0);
@@ -375,7 +423,7 @@ let glyph = function (p) {
 					p.line(locConverge.x,locConverge.y,aCounterSpringVert[i].x,aCounterSpringVert[i].y);
 			}
 			// Display and draw line between the 'N' vertices
-			for(let i in nVerts) {
+			for (let i in nVerts) {
 					p.strokeWeight(scaleFactor);
 					let aVertPos = p.createVector(nSpringVert[i].x, nSpringVert[i].y);
 					let trans = p.map(aVertPos.dist(locConverge), 0, center.x, 100, 0);
@@ -630,9 +678,10 @@ let glyph = function (p) {
 						new Attractor({
 							physics: physics,
 							position: new toxi.geom.Vec2D(pos.x,pos.y),
+							location: new p5.Vector(pos.x,pos.y),
 							radius: 24,
 							range: p.width/2,
-							strength: 0.1,
+							strength: 0.25,
 							locked : true,
 							p: p,
 						})
@@ -652,8 +701,32 @@ let glyph = function (p) {
 					);
 					field[index].attractForce.setStrength(strength); // Set Attractor strength
 					field[index].strength = strength;
+					yoff += 0.1;
+
+					index++;
+				}
+
+				xoff += 0.1;
+			}
+
+			zoff += 0.005; // Animate by changing 3rd dimension of noise every frame
+		}
+
+		function debug() { // Private | Update the noise field
+			let xoff = 0;
+			let index = 0; // c:
+			for (let i = 0; i < cols; i++) {
+				let yoff = 0;
+				for (let j = 0; j < rows; j++) {
+					let strength = p.map(
+						p.noise(xoff,yoff,zoff),0,1,-0.05,0.05 // Attract => Repel
+					);
+					field[index].attractForce.setStrength(strength); // Set Attractor strength
+					field[index].strength = strength;
 					field[index].display();
 					yoff += 0.1;
+
+					debugAttractors(field[index].location, field[index].strength); // Display the Flow-Field
 
 					index++;
 				}
@@ -677,6 +750,15 @@ let glyph = function (p) {
 			}
 		}
 
+		function update_debug() {
+			if (field.length > 0) {
+				return true;
+				debug(); // if we exist, we do | step forward in time
+			} else {
+				return false;
+			}
+		}
+
 		function resize() {
 
 		}
@@ -689,6 +771,9 @@ let glyph = function (p) {
 			step: function() {
 				step();
 			},
+			debug: function() {
+				debug();
+			},
 			reset: function() {
 				field.forEach(function(attractor) {
 					attractor.attractForce.setStrength(0);
@@ -697,8 +782,49 @@ let glyph = function (p) {
 			update: function() {
 				update();
 			},
+			update_debug: function() {
+				update_debug();
+			},
 			resize: function() {
 				initialize(); // Set up the Flow Field | Call on window.Resize()
+			}
+		}
+	}
+
+	let render = function() {
+		function fluid() {
+			// Update the attractor position, both touch & mouse events
+			p.touchIsDown ? mousePos.set(p.touchX ,p.touchY) : mousePos.set(p.mouseX,p.mouseY);
+			nudgeAttractor.set(mousePos.x ,mousePos.y);
+		}
+
+		function perlin() {
+			_perlin.step();
+		}
+
+		function debug() {
+			_perlin.debug();
+		}
+
+		// Method Calls
+		return {
+			fluid: function() {
+				fluid();
+			},
+			perlin: function() {
+				_perlin.step();
+			},
+			debug: function() {
+				_perlin.debug();
+			},
+			render: function(mode) {
+				if (mode === "perlin") {
+					return perlin();
+				} else if (mode === "debug") {
+					return debug();
+				} else {
+					return fluid();
+				}
 			}
 		}
 	}
@@ -744,12 +870,28 @@ let glyph = function (p) {
   
 	}
 
-	// Web Lab interation states
-	$('.lab-menu').click(function(e) {
-		e.stopPropagation(); // yo,
-		e.preventDefault();	 // chill
-		console.log('Fluid On');
-	});
+	// Web Lab interation states	
+	// Check Radio.. Transmission..
+	$("#fluid-radio, #perlin-radio, #debug-radio")
+		.change(function(e) {
+
+			e.stopPropagation();
+			e.preventDefault();
+
+	        if ($("#fluid-radio").is(":checked")) { 		// Fluid
+	            console.log("fluid");
+	            _renderMode = "fluid"; 
+	        }
+	        else if ($("#perlin-radio").is(":checked")) {	// Perlin
+	            console.log("perlin");
+	            _renderMode = "perlin";
+	        }
+	        else if ($("#debug-radio").is(":checked")) {	// Debug
+	            console.log("debug");
+	        	_renderMode = "debug";
+	        }
+	});    
+	
 
 	// Calculate displacement during scroll events
 	// Can we make this only applicable when p5 is on screen?
@@ -781,11 +923,9 @@ let glyph = function (p) {
 			accelerator(dy); // Calculate acceleration
 
 			if (acceleration > 1) {
-				console.log('crazy');
 				gravitation(force()); // Return gravity back to normal
 			} else {
 				gravitation(0.5); // Return gravity back to normal
-				console.log('sleepy');
 			}
 
 		}

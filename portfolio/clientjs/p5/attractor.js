@@ -18,6 +18,7 @@ function Attractor(args = {}) {
 
 	this.physics = args.physics || new toxi.physics2d.VerletPhysics2D(0,0); // Initialize the physics;
 	this.position = args.position || 0;
+	this.location = args.location || 0;
 	this.range = args.range || 10;
 	this.strength = args.strength || 1;
 	this.locked = args.locked || false;

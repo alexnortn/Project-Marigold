@@ -27,7 +27,7 @@ function Particle(args = {}) {
 		// p.stroke(200);
 		// p.strokeWeight(2);
 		p.noStroke();
-		// p.ellipse(this.x,this.y,1,1);
+		p.ellipse(this.x,this.y,1,1);
 	}
 }
 
