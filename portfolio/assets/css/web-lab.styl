@@ -35,9 +35,10 @@ require('color.styl')
 #web-lab input
 	visibility: hidden
 	
-	
-#web-lab label
+
+.lab-menu label
 	cursor: pointer
+	transition: color 100ms ease
 	
 
 // --------------------------------------
@@ -110,11 +111,6 @@ label[for="lab-options-element"] p
 .lab-menu label:hover
 	cursor: pointer
 	color: $BLACK
-	
-	
-.lab-menu label:active
-	cursor: pointer
-	color: $GREY
 	
 
 .lab-menu input + label

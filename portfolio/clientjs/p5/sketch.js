@@ -708,7 +708,6 @@ let glyph = function (p) {
 		physics.removeBehavior(gravity);
 		// Use perlin noise to achieve a similar* gravity vector
 		// xOff += 0.5;
-		console.log('mouse clicked')
 		// Horizontal + Vertical leaping may be too much...
 		// gravityStrength.x = p.noise(xOff) * 0.75;
 		gravityStrength.y *= -1;
@@ -746,14 +745,10 @@ let glyph = function (p) {
 	}
 
 	// Web Lab interation states
-	$('#perlin').on('click', function() {
-		if (this.hasClass('active')) {
-			this.removeClass('active');
-			_perlin.reset(); // Shutting down the studio | performance gains
-		} else {
-			this.addClass('active');
-			_perlin = flowField(10); // Turning up 2nite
-		}
+	$('.lab-menu').click(function(e) {
+		e.stopPropagation(); // yo,
+		e.preventDefault();	 // chill
+		console.log('Fluid On');
 	});
 
 	// Calculate displacement during scroll events
