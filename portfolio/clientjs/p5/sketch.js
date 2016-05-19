@@ -351,7 +351,7 @@ let glyph = function (p) {
 
 	function debugAttractors(loc, strength) { // Pass in location of attractor
 
-			let maxDistance = (p.width / 2);
+			let maxDistance = (p.width);
 			let absStrength = p.abs(strength);
 			let r,g,b; // color elements
 
@@ -367,9 +367,9 @@ let glyph = function (p) {
 
 			for (let i in aVerts) { // 'a' Vertices
 					let aVertPos = p.createVector(aLockVert[i].x, aLockVert[i].y);
-					let opacity = p.map(absStrength, 0, 0.5, 100, 0); // Look to perlin for values
+					let opacity = p.map(absStrength, 0.01, 0.05, 0, 50); // Look to perlin for values
 					let strokeCol = p.color(r,g,b,opacity);
-					p.strokeWeight(p.map(aVertPos.dist(loc), 0 , maxDistance, 5, 1));
+					p.strokeWeight(p.map(aVertPos.dist(loc), 0 , maxDistance, 1, 0));
 					p.fill(strokeCol);
 					p.stroke(strokeCol);
 					p.line(loc.x,loc.y,aSpringVert[i].x,aSpringVert[i].y);
@@ -378,9 +378,9 @@ let glyph = function (p) {
 			
 			for (let i in aCounterVerts) { // 'a-Counter' Vertices
 					let aVertPos = p.createVector(aCounterLockVert[i].x, aCounterLockVert[i].y);
-					let opacity = p.map(absStrength, 0, 0.5, 100, 0); // Look to perlin for values
+					let opacity = p.map(absStrength, 0.01, 0.05, 0, 50); // Look to perlin for values
 					let strokeCol = p.color(r,g,b,opacity);
-					p.strokeWeight(p.map(aVertPos.dist(loc), 0 , maxDistance, 5, 1));
+					p.strokeWeight(p.map(aVertPos.dist(loc), 0 , maxDistance, 1, 0));
 					p.stroke(strokeCol);
 					p.fill(strokeCol);
 					p.line(loc.x,loc.y,aCounterSpringVert[i].x,aCounterSpringVert[i].y);
@@ -389,9 +389,9 @@ let glyph = function (p) {
 			
 			for (let i in nVerts) { // 'N' vertices
 					let aVertPos = p.createVector(nLockVert[i].x, nLockVert[i].y);
-					let opacity = p.map(absStrength, 0, 0.5, 100, 0); // Look to perlin for values
+					let opacity = p.map(absStrength, 0.01, 0.05, 0, 50); // Look to perlin for values
 					let strokeCol = p.color(r,g,b,opacity);
-					p.strokeWeight(p.map(aVertPos.dist(loc), 0 , maxDistance, 5, 1));
+					p.strokeWeight(p.map(aVertPos.dist(loc), 0 , maxDistance, 1, 0));
 					p.stroke(strokeCol);
 					p.fill(strokeCol);
 					p.line(loc.x,loc.y,nSpringVert[i].x,nSpringVert[i].y);
@@ -727,7 +727,9 @@ let glyph = function (p) {
 					field[index].display();
 					yoff += 0.1;
 
-					debugAttractors(field[index].location, field[index].strength); // Display the Flow-Field
+					if ((strength > 0.015) || (strength < -0.015)) {
+						debugAttractors(field[index].location, field[index].strength); // Display the Flow-Field
+					}
 
 					index++;
 				}
