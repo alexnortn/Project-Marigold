@@ -367,7 +367,7 @@ let glyph = function (p) {
 
 			for (let i in aVerts) { // 'a' Vertices
 					let aVertPos = p.createVector(aLockVert[i].x, aLockVert[i].y);
-					let opacity = p.map(absStrength, 0.01, 0.05, 0, 50); // Look to perlin for values
+					let opacity = p.map(absStrength, 0.015, 0.05, 0, 50); // Look to perlin for values
 					let strokeCol = p.color(r,g,b,opacity);
 					p.strokeWeight(p.map(aVertPos.dist(loc), 0 , maxDistance, 1, 0));
 					p.fill(strokeCol);
@@ -378,7 +378,7 @@ let glyph = function (p) {
 			
 			for (let i in aCounterVerts) { // 'a-Counter' Vertices
 					let aVertPos = p.createVector(aCounterLockVert[i].x, aCounterLockVert[i].y);
-					let opacity = p.map(absStrength, 0.01, 0.05, 0, 50); // Look to perlin for values
+					let opacity = p.map(absStrength, 0.015, 0.05, 0, 50); // Look to perlin for values
 					let strokeCol = p.color(r,g,b,opacity);
 					p.strokeWeight(p.map(aVertPos.dist(loc), 0 , maxDistance, 1, 0));
 					p.stroke(strokeCol);
@@ -389,7 +389,7 @@ let glyph = function (p) {
 			
 			for (let i in nVerts) { // 'N' vertices
 					let aVertPos = p.createVector(nLockVert[i].x, nLockVert[i].y);
-					let opacity = p.map(absStrength, 0.01, 0.05, 0, 50); // Look to perlin for values
+					let opacity = p.map(absStrength, 0.015, 0.05, 0, 50); // Look to perlin for values
 					let strokeCol = p.color(r,g,b,opacity);
 					p.strokeWeight(p.map(aVertPos.dist(loc), 0 , maxDistance, 1, 0));
 					p.stroke(strokeCol);
