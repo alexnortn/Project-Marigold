@@ -141,6 +141,15 @@ $(document).ready(function() {
     // Kick off one resize to fix all videos on page load
     }).resize();
 
+    // Check current position relative to top of page
+    $(window).scroll(function () {
+        let scrollTop = $(document).scrollTop();
+        setTimeout(function() {
+            toggleGlyphControls(scrollTop);    
+        }, 100);
+        
+    });
+
     function videoSize() {
 
             newWidth = $fluidEl.width();
@@ -428,6 +437,24 @@ function toggleLogo(loc) {
     } else {
         if (logo.css('display') == 'none') {    
             logo.velocity("fadeIn", { duration: 500 });
+        }
+    }
+}
+
+// Toggle visibility of Glyph Controls
+function toggleGlyphControls(scrollTop) {
+    let lab_options = $('#lab-options');
+    let lab_what = $('#lab-what');
+
+    if (scrollTop > 100) {
+        if (lab_what.css('display') === 'flex') {    
+            lab_options.velocity("fadeOut", { duration: 250 });
+            lab_what.velocity("fadeOut", { duration: 250 });
+        }
+    } else {
+        if (lab_what.css('display') === 'none') {    
+            lab_options.velocity("fadeIn", { duration: 250, display: 'flex' });
+            lab_what.velocity("fadeIn", { duration: 250, display: 'flex'  });
         }
     }
 }
