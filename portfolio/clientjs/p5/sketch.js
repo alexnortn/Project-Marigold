@@ -179,7 +179,9 @@ let glyph = function (p) {
 		centerGlyph(vertices); 
 		loadArrays(vertices); 	// Reload the Arrays
 		physInit(); 			// Initiate the physics array
-		_perlin.resize(); 		// Resize the Perlin sim
+
+		_perlin.resize(); 		// Resize Perlin sim
+		_perlin.step(); 		// Setup Perlin sim
 
 	}
 
@@ -655,8 +657,6 @@ let glyph = function (p) {
 
 		    // Remove previous behaviours | attractors from simulation
 		    if (field.length > 0) {
-		    	console.log(field.length);
-		    	console.log('dumping array..');
 		    	field.forEach(function(attractor) {
 		    		attractor.physics.removeBehavior(attractor.attractForce);
 		    		physics.removeParticle(attractor);
@@ -664,8 +664,6 @@ let glyph = function (p) {
 		    }
 
 		    reset(); // Wipe out the array references
-
-		    console.log("Post dump: " + field.length);
 
 			for (let i = 0; i < cols; i++) { // X grid
 				for (let j = 0; j < rows; j++) { // Y grid
@@ -681,7 +679,7 @@ let glyph = function (p) {
 							location: new p5.Vector(pos.x,pos.y),
 							radius: 24,
 							range: p.width/2,
-							strength: 0.25,
+							strength: 0,
 							locked : true,
 							p: p,
 						})
@@ -760,10 +758,6 @@ let glyph = function (p) {
 			} else {
 				return false;
 			}
-		}
-
-		function resize() {
-
 		}
 
 		// Method calls
