@@ -557,8 +557,10 @@ function setGreeting() {
         greeting = "Good Morning ";
     } else if ((n < 18) && (n > 10)) {
         greeting = "Good Afternoon ";
-    } else if ((n > 18) || (n < 5)) {
+    } else if ((n > 17) || (n < 5)) {
         greeting = "Good Evening ";
+    } else {
+        greeting = "Hello ";
     }
 
     // Add the greeting to the very first interactive section*/

@@ -21,7 +21,7 @@ let _options = {
 	width: 100,
 	height: 100,
 	anchor: null,
-	mobile: true,
+	mobile: false,
 };
 
 let _canvas = $.Deferred();
@@ -94,8 +94,6 @@ let glyph = function (p) {
 		_canvas.resolve(canvas.elt); // --> Sneaky deferred shenanigans
 
 		p.noStroke();
-
-		console.log(_options.mobile);
 		
 		phi = (1 + p.sqrt(5)) / 2;
 
@@ -153,6 +151,10 @@ let glyph = function (p) {
 	}
 
 	p.draw = function() {
+
+		if (_options.mobile) {
+			setRotation();
+		}
 
 		// Update the physics world
 		physics.update();
@@ -855,6 +857,17 @@ let glyph = function (p) {
 		physics.addBehavior(gravity);
 		// prevent default | Which also shuts down non-p5 handlers!
 		// return false; 
+	}
+
+	function setRotation() { // If mobile, set the relative orientation of the gravity vector
+		physics.removeBehavior(gravity);
+
+		gravityStrength.y = p.map(p.rotationX, -180, 180, -1, 1); // For some Reason they are reversed
+		gravityStrength.x = p.map(p.rotationY, -90, 90, -1, 1);
+
+		gravity = new toxi.physics2d.behaviors.GravityBehavior(gravityStrength); // Re-initialize gravity
+		
+		physics.addBehavior(gravity);
 	}
 
 	function motionBlur() {
