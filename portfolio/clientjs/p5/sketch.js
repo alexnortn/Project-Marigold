@@ -21,6 +21,7 @@ let _options = {
 	width: 100,
 	height: 100,
 	anchor: null,
+	mobile: true,
 };
 
 let _canvas = $.Deferred();
@@ -93,11 +94,14 @@ let glyph = function (p) {
 		_canvas.resolve(canvas.elt); // --> Sneaky deferred shenanigans
 
 		p.noStroke();
+
+		console.log(_options.mobile);
 		
 		phi = (1 + p.sqrt(5)) / 2;
 
 		w = p.windowWidth;
 		h = p.windowHeight;
+
 		scaleFunc(w,h);
 
 		mousePos = p.createVector();
@@ -576,7 +580,11 @@ let glyph = function (p) {
 	function findCenter() {
 		w = p.windowWidth;
 		h = p.windowHeight;
-		center.set(w/2, h/2);
+		
+		w < 450
+			? center.set(w/2, h/1.7)
+			: center.set(w/2, h/2);
+
 		let glyphCenterX = center.x - aCenterOffset.x; 
 		let glyphCenterY = center.y + aCenterOffset.y - 25; 
 		glyphCenter.set(glyphCenterX, glyphCenterY);
@@ -627,7 +635,16 @@ let glyph = function (p) {
 	// Scaling function
 
 	function scaleFunc(w,h) {
-		let dynamicScale = ((w < 1000) || (h < 850)) ?  1.5 : 1.25;
+		let dynamicScale;
+
+		if (w < 450) {
+			dynamicScale = 2; 				// Mobile Screen			
+		} else if ((w < 1000) || (h < 850)) {
+			dynamicScale = 1.5;  			// Small Screen
+		} else {
+			dyanmicScale = 1.25; 			// Big Screen
+		}
+
 		scaleFactor = w / (1920 / dynamicScale);
 	}
 
@@ -958,7 +975,9 @@ let glyph = function (p) {
 	*/
 
 
-module.exports.init = function () {
+module.exports.init = function (args = {}) {
+	_options.mobile = args.mobile;
+
 	_canvas = $.Deferred();
 
 	return new p5(glyph); // Instantiate the entire P5 sketch
