@@ -129,13 +129,19 @@ let glyph = function (p) {
 		// Initiate the physics world
 		physInit();
 
+		let nudgeStrength;
+
+		_options.mobile
+			? nudgeStrength = 0.05
+			: nudgeStrength = 0.1;
+
 		// Make our Attractor Object
 		nudgeAttractor = new Attractor({
 			physics: physics,
 			position: new toxi.geom.Vec2D(p.width/2,p.height/2),
 			radius: 24,
 			range: p.width/2,
-			strength: 0.1,
+			strength: nudgeStrength,
 			p: p,
 		});
 
@@ -152,10 +158,6 @@ let glyph = function (p) {
 
 	p.draw = function() {
 
-		if (_options.mobile) {
-			setRotation();
-		}
-
 		// Update the physics world
 		physics.update();
 
@@ -163,12 +165,14 @@ let glyph = function (p) {
 		p.clear();
 		// motionBlur();
 
+		if (_options.mobile) {
+			setRotation();
+			displayPhys();
+		}
+
 		// Draw the bezier Shapes 
 		drawBasicA();
 		drawBasicN();
-
-		// Display the Physiscs Particles;
-		// displayPhys();
 
 		_renderMan.render(_renderMode);
 
@@ -584,7 +588,7 @@ let glyph = function (p) {
 		h = p.windowHeight;
 		
 		w < 450
-			? center.set(w/2, h/1.7)
+			? center.set(w/2, h/1.5)
 			: center.set(w/2, h/2);
 
 		let glyphCenterX = center.x - aCenterOffset.x; 
@@ -640,7 +644,7 @@ let glyph = function (p) {
 		let dynamicScale;
 
 		if (w < 450) {
-			dynamicScale = 2; 				// Mobile Screen			
+			dynamicScale = 3; 				// Mobile Screen			
 		} else if ((w < 1000) || (h < 850)) {
 			dynamicScale = 1.5;  			// Small Screen
 		} else {
@@ -810,7 +814,10 @@ let glyph = function (p) {
 	let render = function() {
 		function fluid() {
 			// Update the attractor position, both touch & mouse events
-			p.touchIsDown ? mousePos.set(p.touchX ,p.touchY) : mousePos.set(p.mouseX,p.mouseY);
+			p.touchIsDown
+				? mousePos.set(p.touchX ,p.touchY)
+				: mousePos.set(p.mouseX,p.mouseY);
+
 			nudgeAttractor.set(mousePos.x ,mousePos.y);
 		}
 
@@ -862,8 +869,8 @@ let glyph = function (p) {
 	function setRotation() { // If mobile, set the relative orientation of the gravity vector
 		physics.removeBehavior(gravity);
 
-		gravityStrength.y = p.map(p.rotationX, -180, 180, -1, 1); // For some Reason they are reversed
-		gravityStrength.x = p.map(p.rotationY, -90, 90, -1, 1);
+		gravityStrength.y = p.map(p.rotationX, -180, 180, -0.5, 0.5); // For some Reason they are reversed
+		gravityStrength.x = p.map(p.rotationY, -90, 90, -0.5, 0.5);
 
 		gravity = new toxi.physics2d.behaviors.GravityBehavior(gravityStrength); // Re-initialize gravity
 		
