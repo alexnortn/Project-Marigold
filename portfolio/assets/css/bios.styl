@@ -6,3 +6,151 @@ BIOS section
 
 @require 'color.styl'
 @require 'type.styl'
+
+
+// --------------------------------------
+// Variables
+
+$Margins = 100px
+
+
+
+// --------------------------------------
+// Elements
+
+#bios 
+	width: 100%
+	height: 2000px
+	display: flex
+	
+
+#bios-wrapper
+	max-width: 1200px
+	min-width: 750px
+	width: 75% 
+	position: relative
+	margin-left: auto
+	margin-right: auto
+
+
+#bios-content 
+	max-width: 600px
+	min-width: 375px
+	width: 50%
+
+
+#bios-content h1 
+	text-align: left
+	margin-top: 55px
+	margin-bottom: 25px
+	font-family: BerlingskeSerif-Regular, serif
+	font-size: 50px
+	line-height: 1.5em
+
+
+#bios-content p 
+	text-align: left
+	font-family: BerlingskeSerif-Regular, serif
+	font-size: 22px
+	margin-left: 125px
+	line-height: 2em
+	letter-spacing: 0
+
+
+#bios-content br 
+	line-height: 2.75em
+	
+
+#bios-content img 
+	width: 300px
+	position: absolute
+	right: 0
+	
+
+
+#bios-content #short 
+	border-top: 1px dotted black
+	padding-top: 30px
+	padding-bottom: 1em
+
+
+#bios-content #long 
+	text-align: left
+	font-family: BerlingskeSans-Regular, serif
+	font-size: 16px
+	line-height: 2em
+	display: none
+
+
+#bios-content button 
+	background-color: transparent
+	border: 1px solid grey
+	padding: 10px 20px 10px 20px
+	margin-left: 125px
+	margin-top: 15px
+	display: inline-flex
+	text-align: center
+	align-items: center
+	justify-content: center
+	transition: all ease-in-out 250ms
+
+
+#bios-content button:hover 
+	cursor: pointer
+	background-color: #404040
+	border-color: #404040
+	
+
+#bios-content button:hover p
+	color: white
+
+
+#bios-content button:active 
+	cursor: pointer
+	background-color: transparent
+	color: black
+	outline: none
+
+
+#bios-content button:focus 
+	outline: 0
+
+
+#bios-content button p 
+	font-family: BerlingskeSans-bold, serif
+	color: grey
+	font-size: 12px
+	line-height: 2.4em
+	margin: 0
+	text-transform: uppercase
+	letter-spacing: 5px
+	text-align: center
+	align-self: center
+	
+
+#bios-title
+	max-width: 600px
+	min-width: 375px
+	width: 50%
+
+#bios-title img
+	width: 100%
+	
+
+#bios-title p
+	font-family: Circular-Bold
+	font-size: 12px
+	text-transform: uppercase
+	letter-spacing: 3px
+	text-align: left
+	position: absolute
+	width: 500px
+	color: $BLACK	
+
+
+#readMore 
+	margin-top: 30px
+
+
+#readMore 
+	display: none

@@ -95,21 +95,17 @@ block content
 
         //BIOS SECTION
         section#bios.section&attributes({'data-inproject': false})
-            
-            // BIOS BOX
-            #bios-content
-                h1#bios-header !{bios_text.description_headline}
-                p#short !{bios_text.description_short}
-                p#long !{bios_text.description_long}
-                button#bios-button
-                    p Read More
-                //- .social
-                    <i class="fa fa-envelope fa-2x"></i>
-                    <i class="fa fa-twitter fa-2x"></i>
-                    <i class="fa fa-vimeo-square fa-2x"></i>
-                    <i class="fa fa-github fa-2x"></i>
-                    <i class="fa fa-behance-square fa-2x"></i>
-            // /BIOS BOX
+            #bios-wrapper
+                #bios-title
+                    img(src = "/images/name.svg" alt = "Alex Norton")
+                    p !{bios_text.title}
+                #bios-content
+                    img(src = "/images/self.jpg" alt = "Alex Norton Portrait")
+                    p#short !{bios_text.description_short}
+                    p#long !{bios_text.description_long}
+                    button#bios-button
+                        p Read More
+
 
         // /BIOS SECTION   
 
