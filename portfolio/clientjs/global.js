@@ -492,6 +492,7 @@ function pagination(_sections) {
         // For each element with '_sections' class; append new pagination to dom.
         $('#pagination').append('<div class = "pagination"></div>');
         $('.pagination').eq(i).attr( 'data-sectionId', id );
+        $('.pagination').eq(i).attr( 'data-content', id );
 
     });
 

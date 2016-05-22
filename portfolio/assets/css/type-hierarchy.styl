@@ -197,6 +197,25 @@ section details
 	line-height: 2em
 	text-align: right
 	
+.pagination::before
+	font-family: Circular-Bold
+	font-size: 12px
+	text-transform: uppercase
+	letter-spacing: 3px
+	text-align: right
+	position: absolute
+	opacity: 0;
+	width: 200px
+	right: 40px
+	color: $BLACK
+	content: attr(data-content)
+	transition: opacity 250ms
+	
+
+.pagination:hover::before
+	opacity: 1
+	
+	
 
 
 /*
