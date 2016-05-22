@@ -428,15 +428,15 @@ function hashRoute() {
 
 // Toggle visibility of main logo
 function toggleLogo(loc) {
-    let logo = $('#logo');
+    let header = $('#header');
 
     if (loc == "#web-lab") {
-        if (logo.css('display') == 'block') {    
-            logo.velocity("fadeOut", { duration: 250 });
+        if (header.css('display') == 'block') {    
+            header.velocity("fadeOut", { duration: 250 });
         }
     } else {
-        if (logo.css('display') == 'none') {    
-            logo.velocity("fadeIn", { duration: 500 });
+        if (header.css('display') == 'none') {    
+            header.velocity("fadeIn", { duration: 500 });
         }
     }
 }

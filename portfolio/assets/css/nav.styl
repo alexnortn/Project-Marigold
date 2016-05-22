@@ -26,22 +26,18 @@ Navigation Elements
 	border: 1px solid rgba(0,0,0,0.25)
 	transition: all ease-in-out 100ms
 
-
 .pagination-active 
 	background-color: black
-
 
 .pagination:hover 
 	background-color: black
 	border: 1px solid rgba(0,0,0,0)
 	cursor: pointer
 
-
 .pagination:active 
 	transform:scale(1.25,1.25)
 	background-color: white
 	border: 1px solid black	
-
 
 #pagination 
 	position: fixed
@@ -49,17 +45,15 @@ Navigation Elements
 	right: 35px
 	text-align: center
 
-
 #pagination i 
 	display: inline-block
 	padding: 10px
 	position: relative
 	margin-top: 10px
-	
 
 #pagination div:last-of-type 
 	margin-bottom: 0
-	
+
 
 // Navigation-Burger
 
@@ -67,10 +61,8 @@ Navigation Elements
 	right: 50px
 	opacity: 1
 
-
 #nav-button i 
-	margin-top: 7px
-	
+	margin-top: 7px	
 
 #arrow 
 	display: block
@@ -87,11 +79,9 @@ Navigation Elements
 	animation: arrow-animate 1s ease-in-out 2s infinite
 	transition: all 250ms
 
-
 #arrow:hover 
 	border: solid 1px rgba(0,0,0,1)
 	animation-play-state: paused
-
 
 #arrow:active 
 	border: solid 1px rgba(0,0,0,0)
@@ -113,18 +103,15 @@ Navigation Elements
 	visibility: hidden
 	transition: opacity 250ms ease-in-out
 
-
 #nav-overlay
 	width: 100%
 	height: 100%
 	background-color: $BLACK
 
-
 .nav-trigger 
 	position: absolute
 	clip: rect(0,0,0,0)
 	// display: none
-		
 
 label[for="nav-trigger"] 
 	position: fixed
@@ -136,7 +123,6 @@ label[for="nav-trigger"]
 	background-size: contain
 	transition: all 250ms ease-in-out
 
-
 label[for="nav-trigger"] hr 
 	width: 25px	
 	height: 2px
@@ -147,46 +133,36 @@ label[for="nav-trigger"] hr
 	background-color: $BLACK
 	transition: all 250ms ease-in-out
 
-
 label[for="nav-trigger"] hr:first-child 
 	margin-top: 28px
-
 
 label[for="nav-trigger"] hr:nth-child(3) 
 	margin-top: -10px
 
-
 .nav-trigger:checked + label hr:first-child 
 	opacity: 0
 
-
 .nav-trigger:checked + label hr:last-child 
 	opacity: 0 
-
 
 .nav-trigger:checked + label hr:nth-child(2) 
 	transform: rotate(45deg)
 	background-color: $BLACK
 
-
 .nav-trigger:checked + label hr:nth-child(3) 
 	transform: rotate(-45deg)
 	background-color: $BLACK
 
-
 .nav-trigger:checked + label 
 	// right: 411px
-
 
 .nav-trigger:checked + label:hover 
 	// right: 411px
 	// border: solid 0px rgba(218,218,218,0)
 
-
 .nav-trigger:checked ~ .nav 
 	opacity: 1
 	visibility: visible
-
 
 .nav-trigger + label 
 	transition: all 250ms ease-in-out
@@ -209,12 +185,10 @@ nav a
 	text-decoration: none
 	border-bottom: none
 	transition: border-bottom 100ms ease-in-out
-	
 
 nav li a:hover
 	border-bottom: 7.5px solid $WHITE
 	
-
 nav .social a // Open social links in new tabs
 	target-name: new
 	target-new: tab
@@ -229,6 +203,8 @@ header
 	position: fixed
 	top: 0
 	left: 0
+	display: none
+	border-bottom: 1px solid $BLACK
 
 .header
 	width: 100%
@@ -237,15 +213,41 @@ header
 	position: fixed
 	top: 0
 	
+#logo 
+	z-index: 100
+	float: left
+	position: fixed
+	margin-top: 25px
+	margin-left: 10px
+	display: inline-block
+
+#logo:hover 
+	cursor: pointer
+
+#logo img 
+	width: 45px
+	position: relative
+	display: block
+	margin-left: 25px
+	opacity: 0.8
+
+#logo p 
+	display: none
+	margin-top: 75px
+	margin-left: -5px
+	text-align: right
+	line-height: 1.5em
+	position: relative
+	transform: rotate(-90deg)
+	
 #logo-header 
 	float: left
 	position: fixed
-	margin-top: 27.5px
+	margin-top: 25px
 	margin-left: 10px 
 	
 #logo-header:hover
 	cursor: pointer
-
 
 #logo-header img 
 	width: 45px
@@ -254,7 +256,6 @@ header
 	margin-left: 25px
 	opacity: 0.8
 	
-
 //  Social buttons
 
 .social 
@@ -266,8 +267,8 @@ header
 	border-top: 1px solid $WHITE
 	text-align: right
 	word-spacing: 15px
-	align-self: center
-	
+	align-self: center	
+
 .social i
 	margin-left: 25px
 	padding: 5px
@@ -290,12 +291,10 @@ header
 	animation: arrow-animate 1s ease-in-out 2s infinite
 	transition: transform 250ms
 
-
 .scroll-arrow:hover
 	border: solid 1px rgba(0,0,0,1)
 	animation-play-state: paused
 	cursor: pointer
-
 
 .scroll-arrow:active
 	border: solid 1px rgba(0,0,0,1)
@@ -359,6 +358,9 @@ header
 //---------------------------------------------------------------
 // Breakpoint 3 | Phablet // iPhone 6s
 @media only screen and (max-device-width: 414px) and (min-resolution: 2dppx)
+	header 
+		height: 75px
+
 	.header
 		height: 75px
 		
@@ -366,6 +368,16 @@ header
 		margin-top: 22px
 		
 	#logo-header img 
+		width: 35px
+		position: relative
+		display: block
+		margin-left: 10px
+		opacity: 0.8
+		
+	#logo
+		margin-top: 22px
+		
+	#logo img 
 		width: 35px
 		position: relative
 		display: block
