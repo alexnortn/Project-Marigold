@@ -645,10 +645,10 @@ let glyph = function (p) {
 
 		if (w < 450) {
 			dynamicScale = 3; 				// Mobile Screen			
-		} else if ((w < 1000) || (h < 850)) {
+		} else if ((w < 1000) || (h < 750)) {
 			dynamicScale = 1.5;  			// Small Screen
 		} else {
-			dyanmicScale = 1.25; 			// Big Screen
+			dynamicScale = 1.25; 			// Big Screen
 		}
 
 		scaleFactor = w / (1920 / dynamicScale);

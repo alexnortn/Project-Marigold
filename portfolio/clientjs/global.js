@@ -502,9 +502,17 @@ function pagination(_sections) {
 function paginationUpdate(sectionUpdate) {
 
     $('.pagination').removeClass('pagination-active');
-    $('#pagination')
-        .find("[data-sectionId='" + sectionUpdate + "']")
-        .addClass('pagination-active');
+    let active_section = $('#pagination').find("[data-sectionId='" + sectionUpdate + "']");
+        active_section.addClass('pagination-active pagination-active-before');
+
+    setTimeout(function() {
+        active_section.removeClass('pagination-active-before');
+    }, 2000
+    );
+
+
+
+
 
     // debugger;
 

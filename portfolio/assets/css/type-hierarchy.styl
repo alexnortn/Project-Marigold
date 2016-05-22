@@ -206,7 +206,8 @@ section details
 	position: absolute
 	opacity: 0;
 	width: 200px
-	right: 40px
+	bottom: -3px
+	right: 30px
 	color: $BLACK
 	content: attr(data-content)
 	transition: opacity 250ms
@@ -214,6 +215,9 @@ section details
 
 .pagination:hover::before
 	opacity: 1
+	
+.pagination-active-before::before
+	opacity: 1 
 	
 	
 
