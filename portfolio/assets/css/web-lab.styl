@@ -205,10 +205,17 @@ label[for="lab-what-element"] p
 /*
  *	Media Queries
  */
+ 
+//---------------------------------------------------------------
+// Breakpoint 1 | iPad			
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)
+	.lab-menu ul li
+		padding-left: 5px
+		padding-right: 5px
 
 
 //---------------------------------------------------------------
-// Breakpoint 1 | Phablet // iPhone 6s+
+// Breakpoint 2 | Phablet // iPhone 6s+
 @media only screen and (max-device-width: 414px) and (min-resolution: 2dppx)
 	#lab-what
 		visibility: hidden
