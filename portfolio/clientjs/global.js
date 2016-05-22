@@ -147,6 +147,8 @@ $(document).ready(function() {
         setTimeout(function() {
             toggleGlyphControls(scrollTop);    
         }, 100);
+
+        $('.scroll-arrow').velocity("fadeOut", { duration: 250 }); // Fade it out | They get it
         
     });
 
