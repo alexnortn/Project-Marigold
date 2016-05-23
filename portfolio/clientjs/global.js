@@ -27,7 +27,8 @@ let userListData = [],
 let _sections = $('.section'),
     _sectionCurrent;
 
-let _pin_element;
+let _pinner,
+    _pin;
 let _log;
 
     // attachFastClick = require('fastclick');    
@@ -47,13 +48,6 @@ $(document).ready(function() {
 
     hashRoute();
     hashChanged();
-
-    _log = function() {
-        console.log(_sectionCurrent);
-        if (_sectionCurrent === "bios") {
-            window.requestAnimationFrame(_log);
-        }
-    }
 
     $('body').addClass('loading');
 
@@ -150,28 +144,36 @@ $(document).ready(function() {
     // Check current position relative to top of page
     $(window).scroll(function () {
         let scrollTop = $(document).scrollTop();
+       
         setTimeout(function() {
             toggleGlyphControls(scrollTop);    
         }, 100);
 
         $('.scroll-arrow').velocity("fadeOut", { duration: 250 }); // Fade it out | They get it
+
+
+        // Pin + Unpin elements
+
+        if (_sectionCurrent == "bios") {
+            let bios_title = $('.bios-title');
+            _pinner(bios_title, scrollTop, 600, 1500);
+        }
         
     });
 
     // Generic Pin/Unpin Element
-    _pin_element = function(el, low, high) {
-        let scrollTop = $(document).scrollTop();
-        console.log('pinner');
+    _pinner = function(el, scroll, low, high) {
+        console.log(scroll);
 
-        if ((scrollTop > low) && (scrollTop < high)) {
-            let padding = scrollTop - low;
+        if ((scroll > low) && (scroll < high)) {
+            el.addClass('bios-title-pin');
+            el.css('padding-top', 0);
+            _pin = false;
+        } else if (!_pin) {
+            let padding = scroll - low;
+            el.removeClass('bios-title-pin');
             el.css('padding-top', padding);
-
-            if (_sectionCurrent === "bios") {
-                window.requestAnimationFrame(function() {
-                    _pin_element(el, low, high);
-                });
-            }
+            _pin = true;
         }
 
 
@@ -498,22 +500,6 @@ function hashChanged() {
 
     // Affect pagination on navigation change
     paginationUpdate(sectionUpdate);
-
-    // Pin + Unpin Elements
-    if (_sectionCurrent === "bios") {
-        let low = 450,
-            high = 1500;
-        let bios_title = $('#bios-title');
-
-        console.log('rq bios');
-
-        window.requestAnimationFrame(function() {
-            _pin_element(bios_title, low, high);
-        });
-
-        // window.requestAnimationFrame(_log);
-
-    }
 
 };
 
