@@ -27,6 +27,9 @@ let userListData = [],
 let _sections = $('.section'),
     _sectionCurrent;
 
+let _pin_element;
+let _log;
+
     // attachFastClick = require('fastclick');    
 
 
@@ -45,22 +48,12 @@ $(document).ready(function() {
     hashRoute();
     hashChanged();
 
-    window.requestAnimationFrame(log);
-
-    function log() {
+    _log = function() {
         console.log(_sectionCurrent);
-        window.requestAnimationFrame(log);
+        if (_sectionCurrent === "bios") {
+            window.requestAnimationFrame(_log);
+        }
     }
-
-    // Pin + Unpin Elements
-    if (_sectionCurrent === 1) {
-        let bios_title = $('#bios-title');
-        window.requestAnimationFrame(pin(bios_title, 450, 1500));
-    }
-
-    // let loader = function() {
-    //     $.Velocity.RunSequence(loadingSequence);
-    // } 
 
     $('body').addClass('loading');
 
@@ -166,7 +159,7 @@ $(document).ready(function() {
     });
 
     // Generic Pin/Unpin Element
-    function pin_element(el, low, high) {
+    _pin_element = function(el, low, high) {
         let scrollTop = $(document).scrollTop();
         console.log('pinner');
 
@@ -174,7 +167,11 @@ $(document).ready(function() {
             let padding = scrollTop - low;
             el.css('padding-top', padding);
 
-            window.requestAnimationFrame(pin(el, low, high)); // watch that recurssion
+            if (_sectionCurrent === "bios") {
+                window.requestAnimationFrame(function() {
+                    _pin_element(el, low, high);
+                });
+            }
         }
 
 
@@ -501,6 +498,22 @@ function hashChanged() {
 
     // Affect pagination on navigation change
     paginationUpdate(sectionUpdate);
+
+    // Pin + Unpin Elements
+    if (_sectionCurrent === "bios") {
+        let low = 450,
+            high = 1500;
+        let bios_title = $('#bios-title');
+
+        console.log('rq bios');
+
+        window.requestAnimationFrame(function() {
+            _pin_element(bios_title, low, high);
+        });
+
+        // window.requestAnimationFrame(_log);
+
+    }
 
 };
 
