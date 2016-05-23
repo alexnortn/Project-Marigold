@@ -45,6 +45,19 @@ $(document).ready(function() {
     hashRoute();
     hashChanged();
 
+    window.requestAnimationFrame(log);
+
+    function log() {
+        console.log(_sectionCurrent);
+        window.requestAnimationFrame(log);
+    }
+
+    // Pin + Unpin Elements
+    if (_sectionCurrent === 1) {
+        let bios_title = $('#bios-title');
+        window.requestAnimationFrame(pin(bios_title, 450, 1500));
+    }
+
     // let loader = function() {
     //     $.Velocity.RunSequence(loadingSequence);
     // } 
@@ -151,6 +164,21 @@ $(document).ready(function() {
         $('.scroll-arrow').velocity("fadeOut", { duration: 250 }); // Fade it out | They get it
         
     });
+
+    // Generic Pin/Unpin Element
+    function pin_element(el, low, high) {
+        let scrollTop = $(document).scrollTop();
+        console.log('pinner');
+
+        if ((scrollTop > low) && (scrollTop < high)) {
+            let padding = scrollTop - low;
+            el.css('padding-top', padding);
+
+            window.requestAnimationFrame(pin(el, low, high)); // watch that recurssion
+        }
+
+
+    }
 
     function videoSize() {
 
@@ -416,6 +444,8 @@ function hashRoute() {
             
             let scrollTop = $(document).scrollTop();
             window.location.hash = currentHash = p.hash;
+
+            _sectionCurrent = p.hash;
             
             // prevent browser to scroll
             $(document).scrollTop(scrollTop);
