@@ -28,7 +28,7 @@ let _sections = $('.section'),
     _sectionCurrent;
 
 let _pinner,
-    _pin;
+    _pin = true;
 let _log;
 
     // attachFastClick = require('fastclick');    
@@ -50,6 +50,9 @@ $(document).ready(function() {
     hashChanged();
 
     $('body').addClass('loading');
+
+    console.log($('#bios-title').offset());
+    console.log($('#bios').offset());
 
     // Center In
 
@@ -156,24 +159,38 @@ $(document).ready(function() {
 
         if (_sectionCurrent == "bios") {
             let bios_title = $('.bios-title');
-            _pinner(bios_title, scrollTop, 600, 1500);
+
+            let left_margin = (window.innerWidth - $('#bios-wrapper').width()) / 2;
+            let padding_offset = $('#bios').css('padding-top');
+            let offset = (window.innerHeight - bios_title.height() - $('#bios-title-p').height()) / 2;
+
+            _pinner(bios_title, scrollTop, 2200, offset, left_margin);
         }
         
     });
 
     // Generic Pin/Unpin Element
-    _pinner = function(el, scroll, low, high) {
-        console.log(scroll);
+    _pinner = function(el, scroll, end, offset = 0, left_margin = 0, padding_offset = 0) {
 
-        if ((scroll > low) && (scroll < high)) {
+        let center = offset;
+        let low = el.offset().top - offset;
+        left_margin -= 10;
+
+        if ((scroll > low) && (scroll < end)) {
             el.addClass('bios-title-pin');
             el.css('padding-top', 0);
-            _pin = false;
-        } else if (!_pin) {
-            let padding = scroll - low;
-            el.removeClass('bios-title-pin');
-            el.css('padding-top', padding);
-            _pin = true;
+            el.css('left', left_margin + "px");
+            el.css('top', center + "px");
+            _pin = false
+
+        } else if ((scroll < low) || (scroll > end)) {
+            if (!_pin) {
+                let padding = scroll - low;
+                el.removeClass('bios-title-pin');
+                el.css('top', padding + "px");
+                el.css('left', 0);
+                _pin = true;
+            }
         }
 
 
