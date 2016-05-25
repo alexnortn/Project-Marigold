@@ -17,7 +17,8 @@ let velocity    = require('velocity-animate');
 let velocity_ui = require('velocity-ui-pack');
 let slick       = require('slick-carousel');
 // let waypoints   = require('waypoints');
-                  require('waypoints/lib/noframework.waypoints.js'); // Poopy shim fix bind to window
+                  require('waypoints/lib/jquery.waypoints.js'); // Poopy shim fix bind to window
+                  require('waypoints/lib/shortcuts/sticky.js'); // Poopy shim fix bind to window
 
 
 // Userlist data array for filling in info box
@@ -39,6 +40,8 @@ $(document).ready(function() {
     setGreeting();
 
     window.addEventListener("hashchange", hashChanged, false);
+
+    debugger;
 
     // Call pagination
     pagination(_sections);
