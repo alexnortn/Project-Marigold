@@ -16,6 +16,8 @@ let $ = require('jquery');
 let velocity    = require('velocity-animate');
 let velocity_ui = require('velocity-ui-pack');
 let slick       = require('slick-carousel');
+// let waypoints   = require('waypoints');
+                  require('waypoints/lib/noframework.waypoints.js'); // Poopy shim fix bind to window
 
 
 // Userlist data array for filling in info box
@@ -26,10 +28,6 @@ let userListData = [],
 
 let _sections = $('.section'),
     _sectionCurrent;
-
-let _pinner,
-    _pin = true;
-let _log;
 
     // attachFastClick = require('fastclick');    
 
@@ -50,9 +48,6 @@ $(document).ready(function() {
     hashChanged();
 
     $('body').addClass('loading');
-
-    console.log($('#bios-title').offset());
-    console.log($('#bios').offset());
 
     // Center In
 
@@ -153,48 +148,8 @@ $(document).ready(function() {
         }, 100);
 
         $('.scroll-arrow').velocity("fadeOut", { duration: 250 }); // Fade it out | They get it
-
-
-        // Pin + Unpin elements
-
-        if (_sectionCurrent == "bios") {
-            let bios_title = $('.bios-title');
-
-            let left_margin = (window.innerWidth - $('#bios-wrapper').width()) / 2;
-            let padding_offset = $('#bios').css('padding-top');
-            let offset = (window.innerHeight - bios_title.height() - $('#bios-title-p').height()) / 2;
-
-            _pinner(bios_title, scrollTop, 2200, offset, left_margin);
-        }
         
     });
-
-    // Generic Pin/Unpin Element
-    _pinner = function(el, scroll, end, offset = 0, left_margin = 0, padding_offset = 0) {
-
-        let center = offset;
-        let low = el.offset().top - offset;
-        left_margin -= 10;
-
-        if ((scroll > low) && (scroll < end)) {
-            el.addClass('bios-title-pin');
-            el.css('padding-top', 0);
-            el.css('left', left_margin + "px");
-            el.css('top', center + "px");
-            _pin = false
-
-        } else if ((scroll < low) || (scroll > end)) {
-            if (!_pin) {
-                let padding = scroll - low;
-                el.removeClass('bios-title-pin');
-                el.css('top', padding + "px");
-                el.css('left', 0);
-                _pin = true;
-            }
-        }
-
-
-    }
 
     function videoSize() {
 

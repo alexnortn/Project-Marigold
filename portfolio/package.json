@@ -37,7 +37,8 @@
     "toxiclibsjs": "^0.3.1",
     "velocity-animate": "^1.2.3",
     "velocity-ui-pack": "^1.2.2",
-    "watchify": "^3.6.0"
+    "watchify": "^3.6.0",
+    "waypoints": "^4.0.0"
   },
   "devDependencies": {
     "babelify": "^6.3.0",
