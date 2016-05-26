@@ -33,6 +33,7 @@
     "pug": "^2.0.0-alpha6",
     "serve-favicon": "^2.2.1",
     "slick-carousel": "^1.5.9",
+    "stickyfill": "^1.1.1",
     "stylus": "^0.52.4",
     "toxiclibsjs": "^0.3.1",
     "velocity-animate": "^1.2.3",

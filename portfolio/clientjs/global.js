@@ -13,9 +13,10 @@ let $ = require('jquery');
         require('./jquery.centerIn.js');
 
 // Module Dependencies
-let velocity    = require('velocity-animate');
-let velocity_ui = require('velocity-ui-pack');
-let slick       = require('slick-carousel');
+let velocity    = require('velocity-animate'),
+    velocity_ui = require('velocity-ui-pack'),
+    slick       = require('slick-carousel'),
+    Stickyfill  = require('stickyfill');
 
 // Userlist data array for filling in info box
 let userListData = [],
@@ -25,6 +26,8 @@ let userListData = [],
 
 let _sections = $('.section'),
     _sectionCurrent;
+
+let stickyfill = Stickyfill();
 
     // attachFastClick = require('fastclick');    
 
@@ -36,8 +39,6 @@ $(document).ready(function() {
     setGreeting();
 
     window.addEventListener("hashchange", hashChanged, false);
-
-    // debugger;
 
     // Call pagination
     pagination(_sections);
@@ -330,7 +331,9 @@ $(document).ready(function() {
     // --------------------------------------
     // Sticky Elements
 
-    // let bios_title = $('#bios-title');
+    let bios_title = $('#bios-title')[0];
+        stickyfill.add(bios_title);
+        
     // let waypoint_bios = new Waypoint.Sticky({
     //     element: bios_title,
     //     wrapper: '<div class="article-sticky-wrapper" />',

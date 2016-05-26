@@ -12,6 +12,7 @@ BIOS section
 // Variables
 
 $Margins = 100px
+$StickyOffset = 40vh
 
 
 
@@ -124,10 +125,16 @@ $Margins = 100px
 
 .bios-title
 	position: sticky
-	top: 35%
+	top: $StickyOffset
 	width: 400px
 	height: 500px
 	order: 1
+	
+.bios-title:before,
+.bios-title:after {
+    content: '';
+    display: table;
+}
 	
 	
 .bios-title-pin
