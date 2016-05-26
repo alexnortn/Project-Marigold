@@ -33,14 +33,7 @@ $Margins = 100px
 	margin-right: auto
 	display: flex
 	justify-content: space-between
-
-
-.bios-content 
-	position: absolute
-	right: 0
-	max-width: 600px
-	min-width: 375px
-	width: 40%
+	flex-direction: row
 
 
 #bios-content h1 
@@ -131,14 +124,23 @@ $Margins = 100px
 	
 
 .bios-title
-	position: absolute
-	left: 0
+	position: sticky
+	top: 50px
 	width: 400px
+	height: 500px
 	order: 1
 	
 	
 .bios-title-pin
 	position: fixed
+	
+
+.bios-content 
+	position: relative
+	max-width: 600px
+	min-width: 375px
+	width: 40%
+	order: 2
 	
 
 #bios-title img

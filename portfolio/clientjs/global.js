@@ -16,10 +16,6 @@ let $ = require('jquery');
 let velocity    = require('velocity-animate');
 let velocity_ui = require('velocity-ui-pack');
 let slick       = require('slick-carousel');
-// let waypoints   = require('waypoints');
-                  require('waypoints/lib/jquery.waypoints.js'); // Poopy shim fix bind to window
-                  require('waypoints/lib/shortcuts/sticky.js'); // Poopy shim fix bind to window
-
 
 // Userlist data array for filling in info box
 let userListData = [],
@@ -41,7 +37,7 @@ $(document).ready(function() {
 
     window.addEventListener("hashchange", hashChanged, false);
 
-    debugger;
+    // debugger;
 
     // Call pagination
     pagination(_sections);
@@ -329,6 +325,35 @@ $(document).ready(function() {
         navigateScroll(_sectionCurrent); // Navigate
         $(this).velocity("fadeOut", { duration: 250 }); // Fade it out | They get it
     });
+
+
+    // --------------------------------------
+    // Sticky Elements
+
+    // let bios_title = $('#bios-title');
+    // let waypoint_bios = new Waypoint.Sticky({
+    //     element: bios_title,
+    //     wrapper: '<div class="article-sticky-wrapper" />',
+    //     stuckClass: 'sticky',
+    //     offset: '50%',
+    //     handler: function(direction) {
+    //         if (direction == 'down') {
+    //             // when scrolling down
+    //             // replace pos:fixed with absolute and set top value to
+    //             // the distance from $stopEl to viewport top minus the 
+    //             // height of the stickyElement 
+    //             let footerOffset = $stopEl.offset();
+    //             $bios_title.css({
+    //                 position: 'absolute',
+    //                 top: footerOffset.top - $bios_title.outerHeight()
+    //             });
+    //         } else if (direction == 'up') {
+    //         // remove the inline styles so sticky styles apply again
+    //         $bios_title.attr('style', '');
+    //         }
+    //     },
+    // });
+
 
 
 });
