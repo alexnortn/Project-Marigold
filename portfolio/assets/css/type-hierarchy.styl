@@ -12,9 +12,11 @@ Typographic Hierarchy
 
 
 // Basic Typographic Elements
-
 a
 	text-decoration: none
+	
+a::selection
+	background: yellow
 	
 
 br 
@@ -23,10 +25,16 @@ br
 
 h1
 	font-family: 'BerlingskeSans-Regular'
+	
+h1::selection
+	background: yellow
 
 
 h2
 	font-family: 'BerlingskeSans-Regular'
+	
+h2::selection
+	background: yellow
 
 
 h3
@@ -36,6 +44,9 @@ h3
 	letter-spacing: 3px
 	text-align: left
 	color: $BLACK
+	
+h3::selection
+	background: yellow
 
 
 h4
@@ -49,22 +60,37 @@ h4
 	letter-spacing: 3px
 	text-align: left
 	color: $BLACK
+	
+h4::selection
+	background: yellow
 
 
 h5
 	font-family: 'BerlingskeSans-Regular'
+	
+h5::selection
+	background: yellow
 
 	
 h6
 	font-family: 'BerlingskeSans-Regular'
 	
+h6::selection
+	background: yellow
+	
 
 li
 	// font-family: 'BerlingskeSans-Regular'
+		
+li::selection
+	background: yellow
 
 
 ol
 	// font-family: 'BerlingskeSans-Regular'
+		
+ol::selection
+	background: yellow
 	
 
 p
@@ -83,11 +109,18 @@ q
 	display: inline-block
 	margin-top: 50px
 	margin-bottom: 50px
+	
+q::selection
+	background: yellow
 
 	
 	
-ul
-	// font-family: 'BerlingskeSans-Regular'
+ul::selection
+	background: yellow
+	
+
+img::selection
+	background: yellow
 
 	
 	
