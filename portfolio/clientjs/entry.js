@@ -26,7 +26,7 @@ $(document).ready(function () {
 		return check;
 	})(); // Call immediately
 
-	// activateGlyph(_mobile);
+	activateGlyph(_mobile);
 
 });
 
