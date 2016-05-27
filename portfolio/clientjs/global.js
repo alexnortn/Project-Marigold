@@ -352,6 +352,7 @@ $(document).ready(function() {
             return;
         }
             console.log('add sticky');
+            stickyfill.rebuild();
             stickyfill.add(bios_title);
 
     }
