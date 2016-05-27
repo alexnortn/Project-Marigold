@@ -132,7 +132,7 @@ $(document).ready(function() {
 
     });
 
-    // When the window is resized some fany ui positioning
+    // When the window is resized some fancy ui positioning
     $(window).resize(function() {
 
             newWidth = $fluidEl.width();
@@ -146,6 +146,8 @@ $(document).ready(function() {
               .height(newWidth * $el.data('aspectRatio'));
 
         });
+
+        stickyUpdate();
 
     // Kick off one resize to fix all videos on page load
     }).resize();
@@ -342,8 +344,17 @@ $(document).ready(function() {
     // --------------------------------------
     // Sticky Elements
 
-    let bios_title = $('#bios-title')[0];
-        stickyfill.add(bios_title);
+    function stickyUpdate() {
+        let bios_title = $('#bios-title')[0];
+        if (_mobile || window.innerWidth < 1000) {
+            stickyfill.remove(bios_title);
+            console.log('remove sticky');
+            return;
+        }
+            console.log('add sticky');
+            stickyfill.add(bios_title);
+
+    }
 
     // let waypoint_bios = new Waypoint.Sticky({
     //     element: bios_title,
