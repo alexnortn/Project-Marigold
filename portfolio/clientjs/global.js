@@ -16,7 +16,8 @@ let $ = require('jquery');
 let velocity    = require('velocity-animate'),
     velocity_ui = require('velocity-ui-pack'),
     slick       = require('slick-carousel'),
-    Stickyfill  = require('stickyfill');
+    Stickyfill  = require('stickyfill'),
+    WidowTamer  = require('../assets/plugins/widowtamer/widowtamer.js');
 
 // Userlist data array for filling in info box
 let userListData = [],
@@ -43,6 +44,8 @@ $(document).ready(function() {
         
         return check;
     })(); // Call immediately
+
+    debugger;
 
     console.log(_mobile);
 
