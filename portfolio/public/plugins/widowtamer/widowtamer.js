@@ -1,6 +1,6 @@
 // Widow Tamer JS by Nathan C. Ford http://artequalswork.com
 
-var wt = {
+wt = {
 	
 	// default options
 	opts : {

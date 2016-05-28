@@ -16,8 +16,7 @@ let $ = require('jquery');
 let velocity    = require('velocity-animate'),
     velocity_ui = require('velocity-ui-pack'),
     slick       = require('slick-carousel'),
-    Stickyfill  = require('stickyfill'),
-    WidowTamer  = require('../assets/plugins/widowtamer/widowtamer.js');
+    Stickyfill  = require('stickyfill');
 
 // Userlist data array for filling in info box
 let userListData = [],
@@ -29,6 +28,7 @@ let _sections = $('.section'),
     _sectionCurrent;
 
 let stickyfill = Stickyfill();
+// let widowtamer = WidowTamer();
 
 let _mobile;
 
@@ -44,8 +44,6 @@ $(document).ready(function() {
         
         return check;
     })(); // Call immediately
-
-    debugger;
 
     console.log(_mobile);
 
@@ -341,6 +339,19 @@ $(document).ready(function() {
         _sectionCurrent = "bios"; // Set #bios as current
         navigateScroll(_sectionCurrent); // Navigate
         $(this).velocity("fadeOut", { duration: 250 }); // Fade it out | They get it
+    });
+
+
+    // --------------------------------------
+    // Widow Tamer
+
+    debugger;
+
+    wt.fix({
+        elements: '#posts article p',
+        chars: 20,
+        method: 'padding-right',
+        event: 'resize'
     });
 
 
