@@ -157,6 +157,92 @@
         "link_2": "resume",
         "link_3": "works"
     },
+    "feature": [
+        {
+            "feature": "MIT Media Lab",
+            "project": "BrainVR",
+            "src": "images/crystal-8.jpg",
+            "project-thum": "images/lamp-sm-0.jpg",
+            "caption": "Side view of Gestural Lamp. "
+        },
+        {
+            "feature": "MIT",
+            "project": "Eyewire",
+            "src": "images/crystal-8.jpg",
+            "project-thum": "images/lamp-sm-0.jpg",
+            "caption": "Side view of Gestural Lamp. "
+        },
+        {
+            "feature": "TED",
+            "project": "Neurons & Space",
+            "src": "images/crystal-8.jpg",
+            "project-thum": "images/lamp-sm-0.jpg",
+            "caption": "Side view of Gestural Lamp. "
+        },
+        {
+            "feature": "Wired",
+            "project": "Eyewire",
+            "src": "images/crystal-8.jpg",
+            "project-thum": "images/lamp-sm-0.jpg",
+            "caption": "Side view of Gestural Lamp. "
+        },
+        {
+            "feature": "NY Times",
+            "project": "Eyewire",
+            "src": "images/crystal-8.jpg",
+            "project-thum": "images/lamp-sm-0.jpg",
+            "caption": "Side view of Gestural Lamp. "
+        },
+        {
+            "feature": "Nature",
+            "project": "Eyewire",
+            "src": "images/crystal-8.jpg",
+            "project-thum": "images/lamp-sm-0.jpg",
+            "caption": "Side view of Gestural Lamp. "
+        },
+        {
+            "feature": "Microsoft Research",
+            "project": "Neurons & Space",
+            "src": "images/crystal-8.jpg",
+            "project-thum": "images/lamp-sm-0.jpg",
+            "caption": "Side view of Gestural Lamp. "
+        },
+        {
+            "feature": "Times Square Arts Allience",
+            "project": "Scales of Complexity",
+            "src": "images/crystal-8.jpg",
+            "project-thum": "images/lamp-sm-0.jpg",
+            "caption": "Side view of Gestural Lamp. "
+        },
+        {
+            "feature": "Tribeca Film Festival",
+            "project": "BrainVR",
+            "src": "images/crystal-8.jpg",
+            "project-thum": "images/lamp-sm-0.jpg",
+            "caption": "Side view of Gestural Lamp. "
+        },
+        {
+            "feature": "TEDx",
+            "project": "A Game to Map the Brain",
+            "src": "images/crystal-8.jpg",
+            "project-thum": "images/lamp-sm-0.jpg",
+            "caption": "Side view of Gestural Lamp. "
+        },
+        {
+            "feature": "FastCo Design",
+            "project": "Eyewire",
+            "src": "images/crystal-8.jpg",
+            "project-thum": "images/lamp-sm-0.jpg",
+            "caption": "Side view of Gestural Lamp. "
+        },
+        {
+            "feature": "Forbes",
+            "project": "BrainVR",
+            "src": "images/crystal-8.jpg",
+            "project-thum": "images/lamp-sm-0.jpg",
+            "caption": "Side view of Gestural Lamp. "
+        }
+    ],
     "welcome_text": {
         "greeting_text": "I'm Alex Norton",
         "discipline_text": "designer, researcher, <br> creative coder",

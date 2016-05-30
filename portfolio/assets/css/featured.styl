@@ -1,0 +1,111 @@
+/*
+
+feature section
+
+*/
+
+@require 'color.styl'
+@require 'type.styl'
+
+
+/* -------------------------------------- */
+/* Variables */
+
+$Margins = 100px
+$F-padding = 15px
+
+/* -------------------------------------- */
+/* Elements */
+
+#feature 
+	width: 100%
+	padding-top: 10%
+	padding-bottom: 10%
+	
+
+#feature-wrapper
+	max-width: 1200px
+	min-width: 650px
+	width: 75% 
+	position: relative
+	margin-left: auto
+	margin-right: auto
+
+
+.feature p 
+	text-align: left
+	font-family: Chronicle-Roman, serif
+	font-size: 18px
+	line-height: 1.75em
+	letter-spacing: 0
+	
+
+.feature ul
+	width: 100%
+	display: flex
+	flex-flow: row wrap
+	justify-content: space-around
+	
+
+.feature li
+	background: tomato
+	padding: 5px
+	width: 200px
+	height: 150px
+	margin: 25px
+
+	line-height: 150px
+	color: white
+	font-weight: bold
+	font-size: 3em
+	text-align: center
+	
+
+.feature img 
+	width: 0
+
+
+.feature button:hover 
+	cursor: pointer
+	background-color: #404040
+	border-color: #404040
+	
+
+.feature img
+	clip-path: none
+
+
+/*
+ *	Media Queries
+ */
+ 
+
+/*---------------------------------------------------------------*/
+/* Breakpoint 1 | Medium Screen */
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen and (max-width: 1000px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)	
+	#feature-wrapper
+		min-width: 500px
+		width: 75% 
+		
+
+/* ----------- Retina Screens ----------- */
+@media screen and (max-width: 1000px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
+	#feature-wrapper
+		min-width: 500px
+		width: 75% 
+		
+
+//---------------------------------------------------------------
+// Breakpoint 2 | Phablet // iPhone 6s
+@media only screen and (max-device-width: 414px) and (min-resolution: 2dppx)
+	#feature-wrapper
+		min-width: 300px
+		width: 90% 
+
+		
+
+
+
+	

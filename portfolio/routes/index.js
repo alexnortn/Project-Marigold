@@ -11,6 +11,7 @@ let fs = require('fs'),
     contents,
     bios_text,
     welcome_text,
+    feature,
     projects;
 
 // Read the file and send to the callback
@@ -21,8 +22,9 @@ function handleFile(err, data) {
     if (err) throw err
     contents = JSON.parse(data)
     // You can now play with your datas
-    console.log(contents);
+    // console.log(contents);
     projects = contents.projects;
+    feature = contents.feature;
     bios_text = contents.bios_text;
     welcome_text = contents.welcome_text;
 }
@@ -33,6 +35,7 @@ router.get('/', function(req, res, next) {
   	title: 'Alex Norton',
   	projects: projects,
     welcome_text: welcome_text,
+    feature, feature,
     bios_text: bios_text
   });
 });

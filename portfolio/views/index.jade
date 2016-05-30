@@ -105,9 +105,21 @@ block content
                         q !{bios_text.description_short}
                         h4 About
                         p.tamer.body-copy !{bios_text.description_long}
+        // /BIOS SECTION  
 
 
-        // /BIOS SECTION   
+        //FEATURE SECTION
+        section#feature.feature.section
+            #feature-wrapper
+                ul
+                    // FEATURE ITERATOR
+                    each result, index in feature
+                        li
+                            //- img(src = "#{result.src}")
+                            //- p #{result.feature}
+
+        // /FEATURE SECTION  
+
 
         //WORKS SECTION
         section#works.section&attributes({'data-inproject': false})

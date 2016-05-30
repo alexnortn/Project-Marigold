@@ -1,0 +1,12 @@
+/*
+
+Mixins
+
+*/
+
+
+
+// Create a Mixin for calculating perfect sizing of elements
+center-vertical(offset=0px)
+	position absolute
+	top s("calc(50% - %s / 2 + %s)", @height, offset)
