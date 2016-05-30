@@ -345,14 +345,12 @@ $(document).ready(function() {
     // --------------------------------------
     // Widow Tamer
 
-    wt.fix({
-        elements: '.tamer',
-        chars: 20,
-        method: 'letter-spacing',
-        event: 'resize'
-    });
-
-    debugger;
+    // wt.fix({
+    //     elements: '.tamer',
+    //     chars: 14,
+    //     method: 'letter-spacing',
+    //     event: 'resize'
+    // });
 
 
     // --------------------------------------
