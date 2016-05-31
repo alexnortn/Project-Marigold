@@ -79,7 +79,7 @@ $(document).ready(function() {
         $('#pagination').fadeToggle(1000);
         $('#arrow').fadeToggle(1000);
         $('.case-study-contents').fadeToggle(1000);
-        $('body').addClass('open-project');
+        $('body').addClass('project-open');
 
         let bottomSlick = $('.big-moment-3');
 
@@ -103,11 +103,12 @@ $(document).ready(function() {
     }
 
     function closeProject() {
-        $('.case-study-contents').fadeOut('slow');
-        $('#pagination').fadeToggle('slow');
-        $('#arrow').fadeToggle('slow', function() {
-            $('body').removeClass('open-project');
+        $('.case-study-contents').fadeOut('slow', function() {
+            $('body').removeClass('project-open');
+            console.log('faded');
         });
+        $('#pagination').fadeToggle('slow');
+        $('#arrow').fadeToggle('slow');
         open = false;
     };
 
