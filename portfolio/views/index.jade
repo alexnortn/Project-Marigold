@@ -111,11 +111,11 @@ block content
         //FEATURE SECTION
         section#feature.feature.section
             #feature-wrapper
+                h3 Feature & Collaborations
                 ul
                     // FEATURE ITERATOR
                     each result, index in feature
-                        li
-                            //- img(src = "#{result.src}")
+                        li(style='background-image: url(#{result.logo});')
                             //- p #{result.feature}
 
         // /FEATURE SECTION  
