@@ -150,12 +150,8 @@ $F-padding = 15px
 		width: 75% 
 	
 	.feature ul
-		max-width: 650px
-		min-width: 600px
-		
-	.feature li
-		width: 50px
-		height: @width
+		max-width: 624px
+		min-width: 500px
 		
 		
 
@@ -166,17 +162,40 @@ $F-padding = 15px
 		width: 75% 
 	
 	.feature ul
-		max-width: 650px
-		min-width: 600px
+		max-width: 624px
+		min-width: 500px
 		
-	.feature li
-		width: 50px
-		height: @width
+
+
+/*---------------------------------------------------------------*/
+/* Breakpoint 4 | Tiny Screen */
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen and (max-width: 600px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)	
+	#feature-wrapper
+		min-width: 500px
+		width: 75% 
+	
+	.feature ul
+		max-width: 400px
+		min-width: 300px
+		
+		
+
+/* ----------- Retina Screens ----------- */
+@media screen and (max-width: 600px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
+	#feature-wrapper
+		min-width: 500px
+		width: 75% 
+	
+	.feature ul
+		max-width: 400px
+		min-width: 300px
 		
 		
 
 //---------------------------------------------------------------
-// Breakpoint 4 | Phablet // iPhone 6s
+// Breakpoint 5 | Phablet // iPhone 6s
 @media only screen and (max-device-width: 414px) and (min-resolution: 2dppx)
 	#feature-wrapper
 		min-width: 300px
