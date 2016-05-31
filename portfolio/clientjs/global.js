@@ -63,12 +63,12 @@ $(document).ready(function() {
 
     // Center In
 
-    $('.project-overview').alwaysCenterIn(window, { top: "-3%" });
+    $('.case-study-overview').alwaysCenterIn(window, { top: "-3%" });
     $('#pagination').alwaysCenterIn(window, { direction: 'vertical' });
     // $('#bios-content').alwaysCenterIn('#bios', { top: "-3%" });
 
     // Open Project
-    $('.project-overview').click(function(){
+    $('.case-study-overview').click(function(){
         open = !open;
 
         !open ? closeProject() : openProject(); 
@@ -78,7 +78,8 @@ $(document).ready(function() {
     function openProject() {
         $('#pagination').fadeToggle(1000);
         $('#arrow').fadeToggle(1000);
-        $('.project-contents').fadeToggle(1000);
+        $('.case-study-contents').fadeToggle(1000);
+        $('body').addClass('open-project');
 
         let bottomSlick = $('.big-moment-3');
 
@@ -88,8 +89,8 @@ $(document).ready(function() {
         };
 
         
-        $('.project-overview').velocity("scroll", { 
-            container: $('.project-view'),
+        $('.case-study-overview').velocity("scroll", { 
+            container: $('.case-study-view'),
             duration:  800,
             delay:     250,
             offset:    '800px',
@@ -102,9 +103,11 @@ $(document).ready(function() {
     }
 
     function closeProject() {
-        $('.project-contents').fadeOut('slow');
+        $('.case-study-contents').fadeOut('slow');
         $('#pagination').fadeToggle('slow');
-        $('#arrow').fadeToggle('slow');
+        $('#arrow').fadeToggle('slow', function() {
+            $('body').removeClass('open-project');
+        });
         open = false;
     };
 
@@ -221,7 +224,7 @@ $(document).ready(function() {
         closeNav(); // Close Section
 
         if (_sectionCurrent == "works") {
-            _sectionCurrent = $(".project-view").attr('id');
+            _sectionCurrent = $(".case-study-view").attr('id');
         }
 
         navigateScroll(_sectionCurrent); // Navigate
@@ -266,7 +269,7 @@ $(document).ready(function() {
                 setTimeout(
                     function(e) {
 
-                        let scrollInId = $('.project-view');
+                        let scrollInId = $('.case-study-view');
                         //     scrollTo = -centerOffest(scrollInId, overlaySlider);
 
                         //     console.log('scrollTo' + scrollTo );

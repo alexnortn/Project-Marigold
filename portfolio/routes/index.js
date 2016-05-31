@@ -12,7 +12,7 @@ let fs = require('fs'),
     bios_text,
     welcome_text,
     feature,
-    projects;
+    case_studies;
 
 // Read the file and send to the callback
 fs.readFile('./clientjs/content.json', handleFile)
@@ -23,7 +23,7 @@ function handleFile(err, data) {
     contents = JSON.parse(data)
     // You can now play with your datas
     // console.log(contents);
-    projects = contents.projects;
+    case_studies = contents.projects.case_studies;
     feature = contents.feature;
     bios_text = contents.bios_text;
     welcome_text = contents.welcome_text;
@@ -33,7 +33,7 @@ function handleFile(err, data) {
 router.get('/', function(req, res, next) {
   res.render('index', {
   	title: 'Alex Norton',
-  	projects: projects,
+  	case_studies: case_studies,
     welcome_text: welcome_text,
     feature, feature,
     bios_text: bios_text

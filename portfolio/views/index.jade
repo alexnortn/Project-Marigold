@@ -111,7 +111,7 @@ block content
         //FEATURE SECTION
         section#feature.feature.section
             #feature-wrapper
-                h3 Feature & Collaborations
+                h4 Feature & Collaboration
                 ul
                     // FEATURE ITERATOR
                     each result, index in feature
@@ -124,15 +124,15 @@ block content
         //WORKS SECTION
         section#works.section&attributes({'data-inproject': false})
             // PROJECT ITERATOR
-            each result, index in projects
+            each result, index in case_studies
 
-                .project.project-view.parallax&attributes({'data-inproject': true}, {'data-project': index}, {'id': result.route})
+                .case-study.case-study-view.parallax&attributes({'data-inproject': true}, {'data-project': index}, {'id': result.route})
                     // PROJECT OVERVIEW
                     .filler-content
                         //- .scroll-arrow
                             //- p Scroll Down 
                             <i class="fa  fa-angle-down fa-2x"></i>    
-                    .project-overview
+                    .case-study-overview
                         .description
                             p - #{result.year} -
                             h2 #{result.name}
@@ -141,8 +141,8 @@ block content
                             .overlay
                             .hero(style='background-image: url(#{result.hero});')
                     // /PROJECT OVERVIEW
-                    .project-contents.parallax__group
-                        .project-intro.cf
+                    .case-study-contents.parallax__group
+                        .case-study-intro.cf
                             .main-description 
                                 p #{result.description_long}
                             ul.meta-data
