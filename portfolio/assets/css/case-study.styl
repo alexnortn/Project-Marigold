@@ -28,8 +28,6 @@ $F-padding = 15px
 	display: flex
 	
 #works-wrapper
-	max-width: 1200px
-	min-width: 650px
 	width: 100% 
 	position: relative
 	margin-left: auto
@@ -42,15 +40,16 @@ $F-padding = 15px
 	height: 100%
 	
 .case-study
-	width: 102%
-	height: 600px
+	width: 100%
+	height: 75vh
 	display: flex
 	justify-content: center
+	top: 0
 	
 
 .case-study-overview 
 	width: 100%
-	height: 50vh
+	height: 60vh
 	position: absolute
 	left: 0
 	box-shadow: 0 5px 3px rgba(0, 0, 0, 0)
@@ -105,10 +104,12 @@ $F-padding = 15px
 
 .case-study-contents 
 	width: 75%
+	max-width: 1200px
+	min-width: 650px
 	position: relative
 	margin-left: auto
 	margin-right: auto
-	margin-top: -50px
+	margin-top: 70vh
 	display: none
 	
 
@@ -122,3 +123,127 @@ $F-padding = 15px
 	position: relative
 	padding-bottom: 100px
 	padding-top: 50px
+	
+
+
+/* -------------------------------------- */
+/* Moments */
+
+
+.big-moment-1 
+	margin-bottom: 150px
+	display: block
+	width: 100%
+	height: 750px
+	position: relative
+	text-align: center
+	
+
+.big-moment-1 h1 
+	padding-top: 15%
+
+
+.big-moment-1:hover .center 
+	opacity: 1
+
+
+.big-moment-1 
+	display: block
+	width: 150%
+	left: -25%
+	height: 750px
+	position: relative
+	text-align: center
+	border-top: 1200px
+	margin-top: -1200px
+	border-bottom: 1000px
+	margin-bottom: -950px
+	border-style: solid
+	border-color: $WHITE_BG
+	z-index: -1
+	transition-timing-function: linear
+	transition: all 0.5s
+
+
+.big-moment-1:hover img 
+	margin-top: 90px
+
+
+.big-moment-1-color 
+	background-repeat: no-repeat
+	background-attachment: scroll
+	background-size: cover
+	background-position: left
+	background-color: Beige
+	position: absolute
+	left: -20%
+	right: -20%
+	top: 0
+	height: 125%
+	margin-top: -225px
+	
+
+.big-moment-2 
+	margin-top:    100px
+	margin-bottom: 350px
+	display: block
+	width: 100%
+	clear: both
+	/*background-color: red*/
+	position: relative
+	text-align: center
+
+
+.big-moment-2 .img-box 
+	position: relative
+	margin-right: auto
+	float: right
+	top: -300px
+
+
+.big-moment-2-color 
+	padding-top: 50%
+	background-color: Beige
+	bottom: 0
+	width: 100%
+	background-size: 100% auto
+
+
+.big-moment-2 p.caption 
+	font-size: 12px
+	line-height: 2em
+	margin-top: 25px
+	left: 10%
+	width: 300px
+	bottom: -80px
+	text-align: left
+	position: absolute
+	display: inline-block
+	text-align: justify
+	text-justify: inter-word
+	background-color: $WHITE_BG
+	padding: 40px 30px 15px 30px
+	box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.18) 
+
+
+.big-moment-3 
+	margin-top:    100px
+	display: block
+	width: 100%
+	clear: both
+	position: relative
+	text-align: center
+
+
+.big-moment-3-color 
+	height: 100%
+	bottom: 0
+	width: 100%
+	background-size: 100% auto
+
+
+
+
+
+
+

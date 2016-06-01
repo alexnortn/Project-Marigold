@@ -209,9 +209,9 @@ $(document).ready(function() {
     // --------------------------------------
     // Works Interaction
 
-    $('.case-study').click(function(e) {
+    $('.case-study-overview').click(function(e) {
         // Navigate
-        let el = e.currentTarget.id;
+        let el = e.currentTarget.parentElement.id;
         navigateScroll(el);
 
         // Open Project
