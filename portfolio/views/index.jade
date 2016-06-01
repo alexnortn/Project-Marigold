@@ -108,6 +108,113 @@ block content
         // /BIOS SECTION  
 
 
+        //WORKS SECTION
+        section#works.section&attributes({'data-inproject': false})
+            #works-wrapper
+                // PROJECT ITERATOR
+                each result, index in case_studies
+
+                    .case-study.case-study-view.parallax&attributes({'data-inproject': true}, {'data-project': index}, {'id': result.route})
+                        // PROJECT OVERVIEW
+                        .filler-content
+                        .case-study-overview
+                            .description
+                                p - #{result.year} -
+                                h2 #{result.name}
+                                p #{result.description_short}
+                            .hero-box
+                                .overlay
+                                .hero(style='background-image: url(#{result.hero});')
+                        // /PROJECT OVERVIEW
+                        .case-study-contents.parallax__group
+                            .case-study-intro.cf
+                                .main-description 
+                                    p #{result.description_long}
+                                ul.meta-data
+                                    li Client
+                                    li #{result.meta.Client}
+                                    li Year
+                                    li #{result.meta.Year}
+                                    li Role
+                                    li #{result.meta.Role}
+                                    li Team
+                                    li #{result.meta.Team}
+                                    li Discipline
+                                    li #{result.meta.Discipline}
+                                    li Medium
+                                    li #{result.meta.Medium}
+                                    li Technologies
+                                    li #{result.meta.Technologies}
+                                    li Duration
+                                    li #{result.meta.Duration}
+
+                            // 2X PARALLAX IMAGES LEFT
+                            .para-box.parallax__group
+                                blockquote.left.parallax__layer.parallax__layer--fore #{result.pull_quotes[0]}
+                                .image-box(style='background-image: url(#{result.hero});')
+                                    .image-left
+                                .image-box.image-box--bottom(style='background-image: url(#{result.hero});')
+                                    .image-left
+                                        //- p.caption #{result.description_long_2}
+
+                            // GRID ITERATOR
+                            #grid-one.image-grid-wrapper
+                                #grid-one-slider.grid-slider.slider-transition
+                                    each image, index in result.images
+                                            img.big-moment-3-color(src = "#{result.images[index].src}")
+                                each image, index in result.images
+                                    .image-grid-container.bounce&attributes({'data-slide': index})
+                                        .image-grid(style='background-image: url(#{result.images[index].src});')
+                            // /GRID ITERATOR
+
+                            .big-moment-1.parallax__group
+                                .big-moment-1-color.parallax__layer--back(style='background-image: url(#{result.images[index].src});')
+
+                            // GRID ITERATOR 2
+                            #grid-two.image-grid-wrapper
+                                #grid-two-slider.grid-slider.slider-transition
+                                    each image, index in result.images
+                                            img.big-moment-3-color(src = "#{result.images[index].src}")
+                                each image, index in result.images
+                                    .image-grid-container.bounce&attributes({'data-slide': index})
+                                        .image-grid(style='background-image: url(#{result.images[index].src});')
+                            // /GRID ITERATOR 2
+
+                            // 2X PARALLAX IMAGES RIGHT
+                            .para-box.parallax__group   
+                                .image-box.right(style='background-image: url(#{result.hero});')
+                                    .image-right
+                                        //- p.caption.caption--2 #{result.description_long_2}
+                                .image-box.right.image-box--bottom(style='background-image: url(#{result.hero});')
+                                    .image-right
+                                blockquote.right.parallax__layer.parallax__layer--fore #{result.pull_quotes[0]}
+
+                            #video-frame
+                                iframe(src="//player.vimeo.com/video/95969058" width="1600" height="1000" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
+
+                            .big-moment-2.parallax__group  
+                                .big-moment-2-color(style='background-image: url(#{result.images[index].src});')
+                                .img-box.parallax__layer.parallax__layer--fore(style='background-image: url(#{result.images[index].src});')
+                                p.caption #{result.description_long_2}
+
+                            // 2X PARALLAX IMAGES LEFT
+                            .para-box
+                                .image-box.image-box--center(style='background-image: url(#{result.hero});')
+                                p.caption.center-caption #{result.description_long_2}
+
+                            .big-moment-3
+                                each image, index in result.images
+                                    img.big-moment-3-color(src = "#{result.images[index].src}")
+
+                            
+                            .close
+                                svg.clothes-line
+                                    line(x1="0" y1="0" x2="25" y2="0" stroke-linecap="round")
+
+                // /PROJECT ITERATOR
+        // /WORKS SECTION
+
+
         //FEATURE SECTION
         section#feature.feature.section
             #feature-wrapper
@@ -120,114 +227,6 @@ block content
 
         // /FEATURE SECTION  
 
-
-        //WORKS SECTION
-        section#works.section&attributes({'data-inproject': false})
-            // PROJECT ITERATOR
-            each result, index in case_studies
-
-                .case-study.case-study-view.parallax&attributes({'data-inproject': true}, {'data-project': index}, {'id': result.route})
-                    // PROJECT OVERVIEW
-                    .filler-content
-                        //- .scroll-arrow
-                            //- p Scroll Down 
-                            <i class="fa  fa-angle-down fa-2x"></i>    
-                    .case-study-overview
-                        .description
-                            p - #{result.year} -
-                            h2 #{result.name}
-                            p #{result.description_short}
-                        .hero-box
-                            .overlay
-                            .hero(style='background-image: url(#{result.hero});')
-                    // /PROJECT OVERVIEW
-                    .case-study-contents.parallax__group
-                        .case-study-intro.cf
-                            .main-description 
-                                p #{result.description_long}
-                            ul.meta-data
-                                li Client
-                                li #{result.meta.Client}
-                                li Year
-                                li #{result.meta.Year}
-                                li Role
-                                li #{result.meta.Role}
-                                li Team
-                                li #{result.meta.Team}
-                                li Discipline
-                                li #{result.meta.Discipline}
-                                li Medium
-                                li #{result.meta.Medium}
-                                li Technologies
-                                li #{result.meta.Technologies}
-                                li Duration
-                                li #{result.meta.Duration}
-
-                        // 2X PARALLAX IMAGES LEFT
-                        .para-box.parallax__group
-                            blockquote.left.parallax__layer.parallax__layer--fore #{result.pull_quotes[0]}
-                            .image-box(style='background-image: url(#{result.hero});')
-                                .image-left
-                            .image-box.image-box--bottom(style='background-image: url(#{result.hero});')
-                                .image-left
-                                    //- p.caption #{result.description_long_2}
-
-                        // GRID ITERATOR
-                        #grid-one.image-grid-wrapper
-                            #grid-one-slider.grid-slider.slider-transition
-                                each image, index in result.images
-                                        img.big-moment-3-color(src = "#{result.images[index].src}")
-                            each image, index in result.images
-                                .image-grid-container.bounce&attributes({'data-slide': index})
-                                    .image-grid(style='background-image: url(#{result.images[index].src});')
-                        // /GRID ITERATOR
-
-                        .big-moment-1.parallax__group
-                            .big-moment-1-color.parallax__layer--back(style='background-image: url(#{result.images[index].src});')
-
-                        // GRID ITERATOR 2
-                        #grid-two.image-grid-wrapper
-                            #grid-two-slider.grid-slider.slider-transition
-                                each image, index in result.images
-                                        img.big-moment-3-color(src = "#{result.images[index].src}")
-                            each image, index in result.images
-                                .image-grid-container.bounce&attributes({'data-slide': index})
-                                    .image-grid(style='background-image: url(#{result.images[index].src});')
-                        // /GRID ITERATOR 2
-
-                        // 2X PARALLAX IMAGES RIGHT
-                        .para-box.parallax__group   
-                            .image-box.right(style='background-image: url(#{result.hero});')
-                                .image-right
-                                    //- p.caption.caption--2 #{result.description_long_2}
-                            .image-box.right.image-box--bottom(style='background-image: url(#{result.hero});')
-                                .image-right
-                            blockquote.right.parallax__layer.parallax__layer--fore #{result.pull_quotes[0]}
-
-                        #video-frame
-                            iframe(src="//player.vimeo.com/video/95969058" width="1600" height="1000" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
-
-                        .big-moment-2.parallax__group  
-                            .big-moment-2-color(style='background-image: url(#{result.images[index].src});')
-                            .img-box.parallax__layer.parallax__layer--fore(style='background-image: url(#{result.images[index].src});')
-                            p.caption #{result.description_long_2}
-
-                        // 2X PARALLAX IMAGES LEFT
-                        .para-box
-                            .image-box.image-box--center(style='background-image: url(#{result.hero});')
-                            p.caption.center-caption #{result.description_long_2}
-
-                        .big-moment-3
-                            each image, index in result.images
-                                img.big-moment-3-color(src = "#{result.images[index].src}")
-
-                        
-                        .close
-                            svg.clothes-line
-                                line(x1="0" y1="0" x2="25" y2="0" stroke-linecap="round")
-
-            // /PROJECT ITERATOR
-        // /WORKS SECTION
 
         //CONTACT PAGE
         section#contact.section&attributes({'data-inproject': false})

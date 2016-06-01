@@ -63,34 +63,28 @@ $(document).ready(function() {
 
     // Center In
 
-    $('.case-study-overview').alwaysCenterIn(window, { top: "-3%" });
+    // $('.case-study-overview').alwaysCenterIn(window, { top: "-3%" });
     $('#pagination').alwaysCenterIn(window, { direction: 'vertical' });
     // $('#bios-content').alwaysCenterIn('#bios', { top: "-3%" });
 
-    // Open Project
-    $('.case-study-overview').click(function(){
-        open = !open;
-
-        !open ? closeProject() : openProject(); 
-
-    });
-
-    function openProject() {
+    function openProject(el) {
         $('#pagination').fadeToggle(1000);
         $('#arrow').fadeToggle(1000);
-        $('.case-study-contents').fadeToggle(1000);
         $('body').addClass('project-open');
 
-        let bottomSlick = $('.big-moment-3');
+        el = "#" + el;
+        $(el).find('.case-study-contents').fadeToggle(1000);
+
+        let bottomSlick = $(el).find('.big-moment-3');
 
         // Initialize Slick object 
         if (!bottomSlick.hasClass('slick-initialized')) { 
-            addSlick($('.big-moment-3'), true);
+            addSlick(bottomSlick, true);
         };
 
         
-        $('.case-study-overview').velocity("scroll", { 
-            container: $('.case-study-view'),
+        $(el).find('.case-study-overview').velocity("scroll", { 
+            container: $(el).find('.case-study-view'),
             duration:  800,
             delay:     250,
             offset:    '800px',
@@ -203,6 +197,22 @@ $(document).ready(function() {
     $('#nav-trigger').click(function() {
         let e = document.getElementById("nav-trigger");
         $("body").toggleClass("nav-open");
+
+    });
+
+
+    // --------------------------------------
+    // Works Interaction
+
+    $('.case-study').click(function(e) {
+        // Navigate
+        let el = e.currentTarget.id;
+        navigateScroll(el);
+
+        // Open Project
+        open = !open;
+
+        !open ? closeProject(el) : openProject(el); 
 
     });
     
@@ -372,31 +382,6 @@ $(document).ready(function() {
             stickyfill.add(bios_title);
 
     }
-
-    // let waypoint_bios = new Waypoint.Sticky({
-    //     element: bios_title,
-    //     wrapper: '<div class="article-sticky-wrapper" />',
-    //     stuckClass: 'sticky',
-    //     offset: '50%',
-    //     handler: function(direction) {
-    //         if (direction == 'down') {
-    //             // when scrolling down
-    //             // replace pos:fixed with absolute and set top value to
-    //             // the distance from $stopEl to viewport top minus the 
-    //             // height of the stickyElement 
-    //             let footerOffset = $stopEl.offset();
-    //             $bios_title.css({
-    //                 position: 'absolute',
-    //                 top: footerOffset.top - $bios_title.outerHeight()
-    //             });
-    //         } else if (direction == 'up') {
-    //         // remove the inline styles so sticky styles apply again
-    //         $bios_title.attr('style', '');
-    //         }
-    //     },
-    // });
-
-
 
 });
 
