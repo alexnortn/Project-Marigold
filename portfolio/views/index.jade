@@ -111,7 +111,7 @@ block content
         //WORKS SECTION
         section#works.section&attributes({'data-inproject': false})
             #works-wrapper
-                // PROJECT ITERATOR
+                // CASE STUDY ITERATOR
                 each result, index in case_studies
 
                     .case-study.case-study-view.parallax&attributes({'data-inproject': true}, {'data-project': index}, {'id': result.route})
@@ -213,8 +213,23 @@ block content
                                 svg.clothes-line
                                     line(x1="0" y1="0" x2="25" y2="0" stroke-linecap="round")
 
-                // /PROJECT ITERATOR
-        // /WORKS SECTION
+                // /CASE STUDY ITERATOR
+
+
+                //SELECT WORK SECTION
+                section#select-work.select-work.section
+                    #select-work-wrapper
+                        h4 Selected Works
+                        // SELECT-WORK ITERATOR
+                        each result, index in feature
+                            li(style='background-image: url(#{result.logo});')
+                                //- p #{result.feature}
+                        // /SELECT-WORK ITERATOR
+
+                // /SELECT WORK SECTION 
+
+
+        // /WORKS SECTION 
 
 
         //FEATURE SECTION

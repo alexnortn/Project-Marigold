@@ -77,7 +77,7 @@
                 ]
             }
         ],
-        "selected_work" : [
+        "select_work" : [
             {
                 "route" :"eyewire",
                 "name"  : "Eyewire",
