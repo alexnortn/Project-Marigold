@@ -224,7 +224,8 @@ block content
                         ul
                             each result, index in select_work
                                 li
-                                    .select-work-img(style='background-image: url(#{result.images[0].src});')
+                                    .select-work-img-container
+                                        .select-work-img(style='background-image: url(#{result.images[0].src});')
                                     h3 #{result.name}
                         // /SELECT-WORK ITERATOR
 
