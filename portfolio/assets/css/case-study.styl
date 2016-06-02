@@ -45,6 +45,7 @@ $F-padding = 15px
 .case-study
 	width: 100%
 	height: 85vh
+	min-height: 1000px
 	display: flex
 	justify-content: center
 	top: 0
@@ -53,11 +54,14 @@ $F-padding = 15px
 .case-study-overview 
 	width: 100%
 	height: 65vh
+	min-height: 600px
 	position: absolute
 	left: 0
+	z-index: 1
+	display: flex
+	flex-direction: column
 	box-shadow: 0 5px 3px rgba(0, 0, 0, 0)
 	transition: all 250ms
-	z-index: 1
 	
 
 .case-study-view 
@@ -162,17 +166,19 @@ $F-padding = 15px
 
 .description 
 	width: 300px
-	height: 300px	
-	padding: 50px 40px 30px 40px
+	height: 300px
+	min-width: 300px
+	min-height: 300px	
+	padding: 50px 50px 30px 50px
 	margin-left: 7.5%
 	position: absolute
 	bottom: -15%
+	order: inherit
 	z-index: 2
 	
 	background-color: $WHITE_BG
 	
-	border-bottom-right-radius: 50px
-	border-bottom-left-radius: 50px
+	border-radius: 50px
 	box-shadow: 0 0 100px rgba(0, 0, 0, 0.18)
 
 	display: flex
@@ -333,6 +339,74 @@ $F-padding = 15px
 	bottom: 0
 	width: 100%
 	background-size: 100% auto
+	
+
+/*
+ *	Media Queries
+ */
+ 
+
+/*---------------------------------------------------------------*/
+/* Breakpoint 1 | Medium Screen */
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen and (max-width: 1000px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)		
+	.description 
+		margin-left: auto
+		margin-right: auto
+		position: relative
+		order: 2
+		bottom: 50%
+		
+	.hero-box
+		display: table
+		
+
+/* ----------- Retina Screens ----------- */
+@media screen and (max-width: 1000px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
+	.description 
+		margin-left: auto
+		margin-right: auto
+		position: relative
+		order: 2
+		bottom: 50%
+		
+	.hero-box
+		display: table
+	
+		
+
+//---------------------------------------------------------------
+// Breakpoint 2 | Phablet // iPhone 6s
+// @media only screen and (max-device-width: 414px) and (min-resolution: 2dppx)
+// 	.bios-title
+// 		top: 14%
+// 		width: 75%
+// 		height: 250px
+
+// 	.bios-content 
+// 		max-width: 450px
+// 		min-width: 300px
+// 		width: 100%
+		
+// 	.bios-content img
+// 		clip-path: inset(0 0 30% 0)
+// 		filter: opacity(50%)
+		
+// 	.copy
+// 		position: relative
+// 		left: 0
+// 		border-left: none
+// 		padding-left: 0
+// 		margin-top: 25px
+		
+// 	.body-copy
+// 		font-size: 16px
+
+// 	#bios-wrapper
+// 		min-width: 300px
+// 		width: 90% 
+
 
 
 
