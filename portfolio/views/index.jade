@@ -119,9 +119,11 @@ block content
                         //- .filler-content
                         .case-study-overview
                             .description
-                                p - #{result.year} -
-                                h2 #{result.name}
-                                p #{result.description_short}
+                                .description-wrapper
+                                    h3 #{result.project_type}
+                                    h2 #{result.name}
+                                    hr
+                                    p #{result.description_short}
                             .hero-box
                                 .overlay
                                 .hero(style='background-image: url(#{result.hero});')
