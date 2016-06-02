@@ -219,12 +219,13 @@ block content
                 //SELECT WORK SECTION
                 #select-work.select-work
                     #select-work-wrapper
-                        h4 Selected Works
+                        h3 Selected Works
                         // SELECT-WORK ITERATOR
                         ul
                             each result, index in select_work
-                                li(style='background-image: url(#{result.images[0].src});')
-                                    //- p #{result.feature}
+                                li
+                                    .select-work-img(style='background-image: url(#{result.images[0].src});')
+                                    h3 #{result.name}
                         // /SELECT-WORK ITERATOR
 
                 // /SELECT WORK SECTION 
@@ -236,7 +237,7 @@ block content
         //FEATURE SECTION
         section#feature.feature
             #feature-wrapper
-                h4 Feature & Collaboration
+                h3 Feature & Collaboration
                 ul
                     // FEATURE ITERATOR
                     each result, index in feature

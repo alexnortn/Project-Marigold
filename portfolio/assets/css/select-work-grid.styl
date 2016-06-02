@@ -19,8 +19,8 @@ $F-padding = 15px
 
 #select-work 
 	width: 100%
-	padding-top: 25%
-	padding-bottom: 25%
+	padding-top: 15%
+	padding-bottom: 15%
 	
 
 #select-work-wrapper
@@ -55,9 +55,13 @@ $F-padding = 15px
 	width: 50px
 	height: 50px
 	margin: 25px
+	
+	padding-bottom: 100px
+	border-bottom-right-radius: 25px
+	border-bottom-left-radius: 25px
+	box-shadow: 0 0 100px rgba(0, 0, 0, 0.18)
 
 	line-height: 150px
-	color: white
 	font-weight: bold
 	font-size: 3em
 	text-align: center
@@ -67,6 +71,17 @@ $F-padding = 15px
 	background-attachment: scroll
 	background-size: cover   
 	background-position: center 
+	background-color: $WHITE_BG
+	
+	
+.select-work li:hover
+	box-shadow: 0 0px 50px rgba(0, 0, 0, 0.18)
+	
+.select-work li h3
+	margin-top: 40px
+	font-size: 18px
+	text-align: center
+	line-height: 1em
 	
 
 .select-work img 
@@ -81,6 +96,10 @@ $F-padding = 15px
 
 .select-work img
 	clip-path: none
+	
+.select-work-img
+	width: 100%
+	height: 100%
 
 
 /*
@@ -183,13 +202,13 @@ $F-padding = 15px
 /* Breakpoint 4 | Tiny Screen */
 
 /* ----------- Non-Retina Screens ----------- */
-@media screen and (max-width: 600px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)	
+@media screen and (max-width: 750px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)	
 	#select-work-wrapper
 		min-width: 300px
 		width: 75%
 		
 	.select-work li
-		width: 50vw
+		width: 70vw 
 		height: @width
 	
 	.select-work ul
@@ -199,13 +218,13 @@ $F-padding = 15px
 		
 
 /* ----------- Retina Screens ----------- */
-@media screen and (max-width: 600px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
+@media screen and (max-width: 750px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
 	#select-work-wrapper
 		min-width: 300px
 		width: 75%
 		
 	.select-work li
-		width: 50vw
+		width: 70vw 
 		height: @width
 	
 	.select-work ul
