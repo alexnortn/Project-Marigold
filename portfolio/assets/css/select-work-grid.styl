@@ -55,6 +55,7 @@ $F-padding = 15px
 	width: 50px
 	height: 50px
 	margin: 25px
+	margin-bottom: 35px
 	
 	padding-bottom: 100px
 	border-bottom-right-radius: 25px
@@ -81,6 +82,9 @@ $F-padding = 15px
 .select-work li:hover .select-work-img
 	transform:scale(1.03)
 	
+.select-work li:hover .select-work-description
+	opacity: 1
+	
 	
 .select-work li h3
 	margin-top: 40px
@@ -106,6 +110,8 @@ $F-padding = 15px
 .select-work-img-container
 	width: 100%
 	height: 100%
+	position: relative
+	display: block
 	overflow: hidden
 
 	
@@ -114,6 +120,34 @@ $F-padding = 15px
 	height: 100%
 	transition-timing-function: ease-in-out
 	transition: all 500ms
+	
+
+.select-work-description
+	position: absolute
+	display: block
+	width: 100%
+	height: 100%
+	z-index: 1
+	opacity: 0
+	background-color: $WHITE_BG
+	padding: 15px
+	align-self: center
+	transition: all 250ms ease-out
+	
+
+.select-work h5
+	margin-top: 12vh
+	transition: all 100ms ease-in-out
+	
+
+.select-work h5:hover
+	color: $GREY
+	cursor: pointer
+	
+
+.select-work h5:active
+	color: $BLACK
+	cursor: pointer
 
 
 /*
