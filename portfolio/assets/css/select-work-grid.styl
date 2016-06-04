@@ -124,14 +124,15 @@ $F-padding = 15px
 
 .select-work-description
 	position: absolute
-	display: block
-	width: 100%
+	display: flex
 	height: 100%
 	z-index: 1
 	opacity: 0
 	background-color: $WHITE_BG
-	padding: 15px
-	align-self: center
+	background-clip: padding-box
+	box-sizing: border-box
+	border: 10px solid rgba(0 0 0 0)
+	align-items: center
 	transition: all 250ms ease-out
 	
 
