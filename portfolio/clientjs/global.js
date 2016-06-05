@@ -392,11 +392,10 @@ $(document).ready(function() {
     // Mobile
 
     if (_mobile) {
-        
-        // Truncate Bios section
-        let copy = $('#self-long'); // Access long description
-            copy.hide();
-
+        $('#bios-more').click(function() {
+            $(this).velocity("fadeOut", { duration: 500 });
+            $('#self-long').velocity("fadeIn", { duration: 500 });
+        });
     }
 
 });

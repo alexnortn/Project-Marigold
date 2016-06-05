@@ -172,6 +172,20 @@ $StickyOffset = 40vh
 	margin-top: 0
 	
 
+.copy h5
+	display: none
+	
+
+.copy h5:hover
+	color: $GREY
+	cursor: pointer
+	
+
+.copy h5:active
+	color: $BLACK
+	cursor: pointer
+	
+
 #bios a
 	font-family: Circular-Bold
 	font-size: 12px
@@ -259,6 +273,10 @@ $StickyOffset = 40vh
 		width: 75% 
 		
 
+	#self-long
+		display: block
+		
+
 //---------------------------------------------------------------
 // Breakpoint 2 | Phablet // iPhone 6s
 @media only screen and (max-device-width: 414px) and (min-resolution: 2dppx)
@@ -280,11 +298,19 @@ $StickyOffset = 40vh
 		position: relative
 		left: 0
 		border-left: none
+		text-align: center
 		padding-left: 0
 		margin-top: 0
 		
 	.body-copy
 		font-size: 16px
+		
+	.copy h5
+		display: inline-block
+		margin-top: 50px
+		
+	#self-long
+		display: none
 
 	#bios-wrapper
 		min-width: 300px
