@@ -391,12 +391,15 @@ $(document).ready(function() {
     // --------------------------------------
     // Mobile
 
-    if (_mobile) {
-        $('#bios-more').click(function() {
-            $(this).velocity("fadeOut", { duration: 500 });
-            $('#self-long').velocity("fadeIn", { duration: 500 });
-        });
-    }
+    $('#bios-more').click(function() {
+        $(this).velocity("fadeOut", { duration: 500 });
+        $('#self-long').velocity("fadeIn", { duration: 500 });
+    });
+
+    $('#select-more').click(function() {
+        $(this).velocity("fadeOut", { duration: 500 });
+        $('#select-work li:nth-child(n+8)').velocity("fadeIn", { duration: 500 });
+    });
 
 });
 
