@@ -44,7 +44,7 @@ $F-padding = 15px
 	width: 100%
 	margin-left: auto
 	margin-right: auto
-	margin-top: 5%
+	margin-top: 10%
 	position: relative
 	display: flex
 	flex-flow: row wrap
@@ -124,16 +124,38 @@ $F-padding = 15px
 
 .select-work-description
 	position: absolute
-	display: flex
+	width: 100%
 	height: 100%
+	padding: 15px
 	z-index: 1
 	opacity: 0
+	
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	
 	background-color: $WHITE_BG
 	background-clip: padding-box
 	box-sizing: border-box
 	border: 10px solid rgba(0 0 0 0)
-	align-items: center
 	transition: all 250ms ease-out
+	
+
+.select-work-description p
+	max-width: 250px
+	font-family: Chronicle-Semitalic, italic
+	font-size: 16px
+	
+.select-work-description hr
+	width: 15px	
+	height: 2px
+	margin-top: 10px
+	margin-bottom: 10px
+	border: none
+	color: $BLACK
+	background-color: $BLACK
+	
 	
 
 .select-work h5
@@ -214,7 +236,7 @@ $F-padding = 15px
 /* Breakpoint 3 | Small Screen */
 
 /* ----------- Non-Retina Screens ----------- */
-@media screen and (max-width: 1000px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)	
+@media screen and (max-width: 1200px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)	
 	#select-work-wrapper
 		min-width: 500px
 		width: 75%
@@ -230,7 +252,7 @@ $F-padding = 15px
 		
 
 /* ----------- Retina Screens ----------- */
-@media screen and (max-width: 1000px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
+@media screen and (max-width: 1200px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
 	#select-work-wrapper
 		min-width: 500px
 		width: 75%
