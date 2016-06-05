@@ -102,9 +102,10 @@ block content
                 #bios-content.bios-content
                     img(src = "/images/self.jpg" alt = "Alex Norton Portrait")
                     .copy
-                        q !{bios_text.description_short}
+                        q !{bios_text.description_pull}
                         h4 About
-                        p.tamer.body-copy !{bios_text.description_long}
+                        p#self-short.tamer.body-copy !{bios_text.description_short}
+                        p#self-long.tamer.body-copy !{bios_text.description_long}
         // /BIOS SECTION  
 
 

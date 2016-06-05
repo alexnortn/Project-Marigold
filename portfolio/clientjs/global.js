@@ -45,8 +45,6 @@ $(document).ready(function() {
         return check;
     })(); // Call immediately
 
-    console.log(_mobile);
-
     // Set Greeting
     setGreeting();
 
@@ -248,8 +246,9 @@ $(document).ready(function() {
 
 
 
-
+    // --------------------------------------
     // Image-Grid Overlay
+
     $('.image-grid-container').click(function() {
         
         let containerId    = '#' + $(this).parent().attr('id'),  
@@ -385,6 +384,18 @@ $(document).ready(function() {
             console.log('add sticky');
             stickyfill.rebuild();
             stickyfill.add(bios_title);
+
+    }
+
+
+    // --------------------------------------
+    // Mobile
+
+    if (_mobile) {
+        
+        // Truncate Bios section
+        let copy = $('#self-long'); // Access long description
+            copy.hide();
 
     }
 
