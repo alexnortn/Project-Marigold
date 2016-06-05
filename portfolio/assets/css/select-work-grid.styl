@@ -93,6 +93,10 @@ $F-padding = 15px
 	line-height: 1em
 	
 
+.select-work li:first-child // Hide the case study filler on desktop
+	display: none
+	
+
 .select-work img 
 	width: 0
 
@@ -147,6 +151,7 @@ $F-padding = 15px
 	font-family: Chronicle-Semitalic, italic
 	font-size: 16px
 	
+
 .select-work-description hr
 	width: 15px	
 	height: 2px
@@ -156,10 +161,10 @@ $F-padding = 15px
 	color: $BLACK
 	background-color: $BLACK
 	
-	
 
 .select-work h5
-	margin-top: 12vh
+	margin-top: 75px
+	margin-bottom: 75px
 	transition: all 100ms ease-in-out
 	
 
@@ -314,6 +319,9 @@ $F-padding = 15px
 	.select-work li
 		width: 85vw 
 		height: @width
+		
+	.select-work li:first-child // Hide the case study filler on desktop
+		display: list-item
 		
 	.select-work ul
 		max-width: 500px
