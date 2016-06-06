@@ -57,12 +57,13 @@ $F-padding = 15px
 	display: flex
 	flex-direction: column
 	justify-content: flex-start
+	align-items: baseline
 	flex: 1 100%
 		
 
 .contact .shout-out
 	max-width: 450px
-	margin-right: 45px
+	margin-right: 75px
 	flex: 2 0px
 	order: 1
 	
@@ -74,6 +75,8 @@ $F-padding = 15px
 
 .contact h1
 	font-size: 42px
+	margin-bottom: 15px
+	align-self: auto
 	flex-grow: 1
 	
 
@@ -85,6 +88,8 @@ $F-padding = 15px
 	border-top: 1px solid $WHITE
 	padding-top: 5px
 	margin-bottom: 50px
+	margin-right: 0
+	width: auto
 	align-self: flex-end
 	order: 3
 	
@@ -179,6 +184,9 @@ $F-padding = 15px
 	#contact
 		padding-top: 75px
 		
+	.contact .shout-out
+		margin-right: 25px
+		
 	.contact h1
 		font-size: 36px
 		
@@ -195,6 +203,9 @@ $F-padding = 15px
 	#contact
 		padding-top: 75px
 		
+	.contact .shout-out
+		margin-right: 25px
+		
 	.contact h1
 		font-size: 36px
 		
@@ -207,15 +218,15 @@ $F-padding = 15px
 
 
 /*---------------------------------------------------------------*/
-/* Breakpoint 2 | Tiny Screen */
+/* Breakpoint 2 | Tiny Screen || iPad */
 
 /* ----------- Non-Retina Screens ----------- */
-@media screen and (max-width: 750px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)	
+@media screen and (max-width: 768px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)	
 	#contact 
 		height: 45vh
 
 	.contact .shout-out
-		margin-right: 50px
+		margin-right: 45px
 		max-width: 375px
 		flex: 1 0px
 		
@@ -235,12 +246,12 @@ $F-padding = 15px
 		
 
 /* ----------- Retina Screens ----------- */
-@media screen and (max-width: 750px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
+@media screen and (max-width: 768px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
 	#contact 
 		height: 45vh
 
 	.contact .shout-out
-		margin-right: 50px
+		margin-right: 45px
 		max-width: 375px
 		flex: 1 0px
 		
@@ -257,6 +268,39 @@ $F-padding = 15px
 		margin-bottom: 15px
 		align-self: stretch
 		flex-grow: 0
+		
+
+//---------------------------------------------------------------
+// Breakpoint 3 | Phablet // iPhone 6s
+@media only screen and (max-device-width: 414px) and (min-resolution: 2dppx)
+	#contact
+		height: 100vh
+
+	#contact-wrapper
+		min-width: 300px
+		width: 90% 
+		flex-flow: column wrap
+		
+	.contact .shout-out,
+	.contact .cta
+		display: block
+		flex-grow: initial
+		max-height: none
+		
+	.contact .shout-out
+		margin-bottom: 15px
+		
+	.contact h1
+		max-height: none
+		font-size: 42px
+		
+	.contact .copywrite
+		position: absolute
+		bottom: 0
+		margin-right: auto
+		width: 100%
+		flex-grow: 0
+		align-self: flex-end
 		
 
 
