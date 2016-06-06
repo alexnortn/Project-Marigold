@@ -378,10 +378,8 @@ $(document).ready(function() {
         let bios_title = $('#bios-title')[0];
         if (_mobile || window.innerWidth < 1000) {
             stickyfill.remove(bios_title);
-            console.log('remove sticky');
             return;
         }
-            console.log('add sticky');
             stickyfill.rebuild();
             stickyfill.add(bios_title);
 

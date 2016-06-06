@@ -167,8 +167,8 @@ $F-padding = 15px
 	
 
 .select-work h5
-	margin-top: 75px
-	margin-bottom: 75px
+	margin-top: 125px
+	margin-bottom: 125px
 	transition: all 100ms ease-in-out
 	
 
@@ -192,8 +192,6 @@ $F-padding = 15px
 
 /* ----------- Non-Retina Screens ----------- */
 @media screen and (min-width: 1500px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)
-	
-	
 	.select-work li
 		width: 20vw
 		height: @width
@@ -204,7 +202,7 @@ $F-padding = 15px
 		
 
 /* ----------- Retina Screens ----------- */
-@media screen and (min-width: 1500px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
+@media screen and (min-width: 1500px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)		
 	.select-work li
 		width: 20vw
 		height: @width
@@ -219,7 +217,7 @@ $F-padding = 15px
 /* Breakpoint 2 | Medium Screen */
 
 /* ----------- Non-Retina Screens ----------- */
-@media screen and (max-width: 1500px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)	
+@media screen and (max-width: 1500px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)		
 	.select-work li
 		width: 20vw
 		height: @width
@@ -230,7 +228,7 @@ $F-padding = 15px
 		
 
 /* ----------- Retina Screens ----------- */
-@media screen and (max-width: 1500px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
+@media screen and (max-width: 1500px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)	
 	.select-work li
 		width: 20vw
 		height: @width
@@ -279,10 +277,10 @@ $F-padding = 15px
 
 
 /*---------------------------------------------------------------*/
-/* Breakpoint 4 | Tiny Screen */
+/* Breakpoint 4 | Tiny Screen || iPad */
 
 /* ----------- Non-Retina Screens ----------- */
-@media screen and (max-width: 750px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)	
+@media screen and (max-width: 768px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)	
 	#select-work-wrapper
 		min-width: 300px
 		width: 75%
@@ -294,11 +292,14 @@ $F-padding = 15px
 	.select-work ul
 		max-width: 600px
 		min-width: 300px
+		
+	.select-work li:first-child // Hide the case study filler on desktop
+		display: list-item
 		
 		
 
 /* ----------- Retina Screens ----------- */
-@media screen and (max-width: 750px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
+@media screen and (max-width: 768px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
 	#select-work-wrapper
 		min-width: 300px
 		width: 75%
@@ -310,6 +311,9 @@ $F-padding = 15px
 	.select-work ul
 		max-width: 600px
 		min-width: 300px
+		
+	.select-work li:first-child // Hide the case study filler on desktop
+		display: list-item
 		
 		
 
@@ -323,9 +327,6 @@ $F-padding = 15px
 	.select-work li
 		width: 85vw 
 		height: @width
-		
-	.select-work li:first-child // Hide the case study filler on desktop
-		display: list-item
 		
 	.select-work ul
 		max-width: 500px

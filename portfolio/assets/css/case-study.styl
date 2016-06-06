@@ -374,10 +374,27 @@ $F-padding = 15px
 	.hero-box
 		display: table
 	
+
+
+/*---------------------------------------------------------------*/
+/* Breakpoint 2 | Tiny Screen || iPad */
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen and (max-width: 768px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)	
+	.case-study
+		display: none // No case studies on mobile
+		
 		
 
+/* ----------- Retina Screens ----------- */
+@media screen and (max-width: 768px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
+	.case-study
+		display: none // No case studies on mobile
+		
+
+
 //---------------------------------------------------------------
-// Breakpoint 2 | Phablet // iPhone 6s
+// Breakpoint 3 | Phablet // iPhone 6s
 @media only screen and (max-device-width: 414px) and (min-resolution: 2dppx)
 		
 	.case-study

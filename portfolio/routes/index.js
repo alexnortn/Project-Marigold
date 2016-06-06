@@ -13,7 +13,8 @@ let fs = require('fs'),
     welcome_text,
     feature,
     select_work,
-    case_studies;
+    case_studies,
+    contact;
 
 // Read the file and send to the callback
 fs.readFile('./clientjs/content.json', handleFile)
@@ -29,6 +30,7 @@ function handleFile(err, data) {
     feature = contents.feature;
     bios_text = contents.bios_text;
     welcome_text = contents.welcome_text;
+    contact = contents.contact;
 }
 
 /* GET home page. */
@@ -38,6 +40,7 @@ router.get('/', function(req, res, next) {
   	case_studies: case_studies,
     select_work: select_work,
     welcome_text: welcome_text,
+    contact: contact,
     feature: feature,
     bios_text: bios_text
   });

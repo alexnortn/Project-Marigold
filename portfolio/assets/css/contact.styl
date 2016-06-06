@@ -1,0 +1,290 @@
+/*
+
+contact section
+
+*/
+
+@require 'color.styl'
+@require 'type.styl'
+
+
+/* -------------------------------------- */
+/* Variables */
+
+$Margins = 100px
+$F-padding = 15px
+
+/* -------------------------------------- */
+/* Elements */
+
+#contact 
+	width: 100%
+	height: 40vh
+	padding-top: 50px
+	background-color: $BLACK_BG
+	
+
+#contact-wrapper
+	max-width: 1200px
+	min-width: 650px
+	width: 75% 
+	position: relative
+	margin-left: auto
+	margin-right: auto
+	text-align: center
+	display: flex
+	flex-flow: row wrap
+	align-items: stretch
+	
+
+.contact h1
+	color: $WHITE
+
+
+.contact p 
+	color: $WHITE
+	text-align: left
+	font-family: Circular-Roman, sans
+	font-size: 14px
+	line-height: 1.75em
+	letter-spacing: 0
+	
+	
+.contact .shout-out,
+.contact .cta,
+.contact .copywrite
+	max-height: 225px
+	display: flex
+	flex-direction: column
+	justify-content: flex-start
+	flex: 1 100%
+		
+
+.contact .shout-out
+	max-width: 450px
+	margin-right: 75px
+	flex: 2 0px
+	order: 1
+	
+
+.contact .cta
+	flex: 1 0px
+	order: 2
+	
+
+.contact h1
+	flex-grow: 1
+	
+
+.contact .cta p 
+	bottom: 0
+	
+
+.contact .copywrite
+	border-top: 1px solid $WHITE
+	padding-top: 5px
+	order: 3
+	
+
+.contact .copywrite p 
+	font-size: 12px
+	
+
+.contact li
+	width: 50px
+	height: 50px
+	margin: 25px
+
+	line-height: 150px
+	color: white
+	font-weight: bold
+	font-size: 3em
+	text-align: center
+	transition: all 250ms ease-in-out
+	
+	background-repeat: no-repeat
+	background-attachment: scroll
+	background-size: cover   
+	background-position: center 
+	
+
+.contact img 
+	width: 0
+
+
+.contact button:hover 
+	cursor: pointer
+	background-color: #404040
+	border-color: #404040
+	
+
+.contact img
+	clip-path: none
+	
+
+// --------------------------------------
+//  Social buttons
+
+.contact .contact-social 
+	color: $WHITE
+	position: absolute
+	top: 75px
+	text-align: left
+	word-spacing: 15px	
+
+
+.contact .contact-social i
+	margin-left: 15px
+	padding: 5px
+	
+
+.contact .contact-social a:first-child i
+	margin-left: 0
+	
+
+// --------------------------------------
+// Links
+
+.contact a
+	color: $WHITE
+	text-decoration: none
+	border-bottom: none
+	transition: border-bottom 100ms ease-in-out
+
+
+.contact a:hover
+	cursor: pointer
+	
+
+.contact a // Open social links in new tabs
+	target-name: _new
+	target-new: _tab
+
+
+/*
+ *	Media Queries
+ */
+ 
+
+// /*---------------------------------------------------------------*/
+// /* Breakpoint 1 | Medium Screen */
+
+// /* ----------- Non-Retina Screens ----------- */
+// @media screen and (min-width: 1500px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)	
+// 	.contact li
+// 		width: 100px
+// 		height: @width
+		
+// 	.contact ul
+// 		max-width: 1000px
+// 		min-width: 850px
+		
+
+// /* ----------- Retina Screens ----------- */
+// @media screen and (min-width: 1500px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
+// 	.contact li
+// 		width: 100px
+// 		height: @width
+		
+// 	.contact ul
+// 		max-width: 1000px
+// 		min-width: 850px
+ 
+
+
+//  /*---------------------------------------------------------------*/
+// /* Breakpoint 2 | Medium Screen */
+
+// /* ----------- Non-Retina Screens ----------- */
+// @media screen and (max-width: 1500px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)	
+// 	.contact li
+// 		width: 75px
+// 		height: @width
+		
+// 	.contact ul
+// 		max-width: 850px
+// 		min-width: 750px
+		
+
+// /* ----------- Retina Screens ----------- */
+// @media screen and (max-width: 1500px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
+// 	.contact li
+// 		width: 75px
+// 		height: @width
+		
+// 	.contact ul
+// 		max-width: 850px
+// 		min-width: 750px
+
+ 
+
+// /*---------------------------------------------------------------*/
+// /* Breakpoint 3 | Small Screen */
+
+// /* ----------- Non-Retina Screens ----------- */
+// @media screen and (max-width: 1000px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)	
+// 	#contact-wrapper
+// 		min-width: 500px
+// 		width: 75% 
+	
+// 	.contact ul
+// 		max-width: 624px
+// 		min-width: 500px
+		
+		
+
+// /* ----------- Retina Screens ----------- */
+// @media screen and (max-width: 1000px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
+// 	#contact-wrapper
+// 		min-width: 500px
+// 		width: 75% 
+	
+// 	.contact ul
+// 		max-width: 624px
+// 		min-width: 500px
+		
+
+
+// /*---------------------------------------------------------------*/
+// /* Breakpoint 4 | Tiny Screen */
+
+// /* ----------- Non-Retina Screens ----------- */
+// @media screen and (max-width: 600px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)	
+// 	#contact-wrapper
+// 		min-width: 500px
+// 		width: 75% 
+	
+// 	.contact ul
+// 		max-width: 400px
+// 		min-width: 300px
+		
+		
+
+// /* ----------- Retina Screens ----------- */
+// @media screen and (max-width: 600px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
+// 	#contact-wrapper
+// 		min-width: 500px
+// 		width: 75% 
+	
+// 	.contact ul
+// 		max-width: 400px
+// 		min-width: 300px
+		
+		
+
+// //---------------------------------------------------------------
+// // Breakpoint 5 | Phablet // iPhone 6s
+// @media only screen and (max-device-width: 414px) and (min-resolution: 2dppx)
+// 	#contact-wrapper
+// 		min-width: 300px
+// 		width: 90% 
+		
+// 	.contact li
+// 		width: 35px
+// 		height: @width
+
+		
+
+
+
+	
