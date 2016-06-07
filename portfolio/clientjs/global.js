@@ -363,12 +363,21 @@ $(document).ready(function() {
     // --------------------------------------
     // Widow Tamer
 
-    wt.fix({
-        elements: '.tamer',
-        chars: 14,
-        method: 'letter-spacing',
-        event: 'resize'
-    });
+    if (_mobile) {
+        wt.fix({
+            elements: '.tamer',
+            chars: 14,
+            method: 'letter-spacing',
+            event: 'orientationchange'
+        });
+    } else {
+        wt.fix({
+            elements: '.tamer',
+            chars: 14,
+            method: 'letter-spacing',
+            event: 'resize'
+        });
+    }
 
 
     // --------------------------------------
