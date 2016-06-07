@@ -165,15 +165,33 @@ let glyph = function (p) {
 		p.clear();
 		// motionBlur();
 
-		if (_options.mobile) {
+		// --------------------------------------
+    	// Mobile
+
+    		/*
+
+    		The following functions allow for fluid interactions on mobile.
+    		However, due to performace limitations, we'll keep the fluidity
+    		strictly to desktop.
+
 			setRotation();
 			displayPhys();
+
+			*/
+
+
+		if (_options.mobile) {
+
+
+
+			return; // No more, no more
 		}
 
 		// Draw the bezier Shapes 
 		drawBasicA();
 		drawBasicN();
 
+		// Set rendermode. Fluid | Perlin | Debug
 		_renderMan.render(_renderMode);
 
 	}
