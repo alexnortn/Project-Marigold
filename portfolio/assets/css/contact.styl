@@ -274,8 +274,8 @@ $F-padding = 15px
 // Breakpoint 3 | Phablet // iPhone 6s
 @media only screen and (max-device-width: 414px) and (min-resolution: 2dppx)
 	#contact
-		height: 100vh
-		max-height: 650px
+		height: 120vh
+		max-height: none
 
 	#contact-wrapper
 		min-width: 300px
@@ -285,6 +285,7 @@ $F-padding = 15px
 	.contact .shout-out
 		display: block
 		flex-grow: initial
+		max-width: 300px
 		max-height: none
 		margin-bottom: 20px
 		margin-right: 0
@@ -319,7 +320,6 @@ $F-padding = 15px
 @media only screen and (max-device-width: 320px) and (min-resolution: 2dppx)
 	#contact
 		height: 120vh
-		max-height: 650px
 		padding-top: 50px
 		
 	#contact-wrapper
