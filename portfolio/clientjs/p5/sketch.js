@@ -66,6 +66,7 @@ let glyph = function (p) {
 		aCenterOffset,
 		clockBool,
 		bigGlyph,
+		glyph_img,
 		aVerts = [],
 		aCounterVerts = [],
 		nVerts = [];
@@ -81,8 +82,9 @@ let glyph = function (p) {
 
 	let nudgeAttractor; 
 
+	// Resolve before sketch runs
 	p.preload = function() {
-		// vertices = p.loadJSON("clientjs/p5/data/verts.json");
+		glyph_img = p.loadImage("../images/logo-main.png");
 	}
 
 	p.setup = function() {
@@ -182,8 +184,7 @@ let glyph = function (p) {
 
 		if (_options.mobile) {
 
-
-
+			p.image(glyph_img, 0, 0, 500, 500);
 			return; // No more, no more
 		}
 
@@ -193,6 +194,7 @@ let glyph = function (p) {
 
 		// Set rendermode. Fluid | Perlin | Debug
 		_renderMan.render(_renderMode);
+
 
 	}
 
@@ -664,9 +666,9 @@ let glyph = function (p) {
 		if (w < 450) {
 			dynamicScale = 3; 				// Mobile Screen			
 		} else if ((w < 1000) || (h < 750)) {
-			dynamicScale = 1.5;  			// Small Screen
+			dynamicScale = 2;  			// Small Screen
 		} else {
-			dynamicScale = 1.25; 			// Big Screen
+			dynamicScale = 1.35; 			// Big Screen
 		}
 
 		scaleFactor = w / (1920 / dynamicScale);
