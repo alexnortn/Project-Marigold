@@ -22,6 +22,8 @@ let _options = {
 	height: 100,
 	anchor: null,
 	mobile: false,
+	phone: false,
+	tablet: false,
 };
 
 let _canvas = $.Deferred();
@@ -88,6 +90,9 @@ let glyph = function (p) {
 			y: 0,
 			x_offset: 0,
 			y_offset: 0,
+			dynamic: {},
+			lock: {},
+			spring: {},
 			width: 100,
 			height: 100
 		};
@@ -133,21 +138,38 @@ let glyph = function (p) {
 		center = p.createVector(w/2, h/2);
 		glyphCenter = p.createVector();
 		aCenterOffset = p.createVector();
+
 		centerGlyph(vertices);
 		findCenter();
 
-		// Load the arrays
-		loadArrays(vertices);
+		// --------------------------------------
+	    // Mobile Glyph
 
+		if (_options.mobile) {
 
-		// Initiate the physics world
-		physInit();
+	    	if (_options.phone) {
+	    		// 10% height to offset element with respect to header
+	    		glyph_obj.y_offset = (p.height * 0.05);
+	    	}
 
-		let nudgeStrength;
+	    	if (_options.tablet) {
 
-		_options.mobile
-			? nudgeStrength = 0.05
-			: nudgeStrength = 0.1;
+	    	}
+	    	
+	    	glyph_obj.height = p.height * 0.5;
+	    	glyph_obj.width = glyph_obj.height; 
+	    	glyph_obj.x = (p.width - glyph_obj.width) / 2;
+	    	glyph_obj.y = (p.height - glyph_obj.height) / 2 + glyph_obj.y_offset;
+
+	    	physInitMobile(); // Initiate the physics world
+			
+			return;
+		}
+
+		loadArrays(vertices); 	// Load the arrays
+		physInit(); 			// Initiate the physics world
+
+		let nudgeStrength = 0.1;
 
 		// Make our Attractor Object
 		nudgeAttractor = new Attractor({
@@ -168,25 +190,6 @@ let glyph = function (p) {
 
 		_bounce = scrollAccumulator();
 
-
-		// --------------------------------------
-    	// Mobile Glyph
-
-    	
-    	if (_options.phone) {
-    		// 10% height to offset element with respect to header
-    		glyph_obj.y_offset = (p.height * 0.05);
-    	}
-
-    	if (_options.tablet) {
-
-    	}
-    	
-    	glyph_obj.height = p.height * 0.5;
-    	glyph_obj.width = glyph_obj.height; 
-    	glyph_obj.x = (p.width - glyph_obj.width) / 2;
-    	glyph_obj.y = (p.height - glyph_obj.height) / 2 + glyph_obj.y_offset;
-
 	}
 
 	p.draw = function() {
@@ -194,9 +197,7 @@ let glyph = function (p) {
 		// Update the physics world
 		physics.update();
 
-		// p.background(255);
 		p.clear();
-		// motionBlur();
 
 		// --------------------------------------
     	// Mobile
@@ -215,10 +216,19 @@ let glyph = function (p) {
 
 		if (_options.mobile) {
 
+			setRotation(); // Handle Gyroscopic goodness
+
+			console.log(glyph_obj.dynamic.position);
+			console.log(glyph_obj.lock.position);
+
+			// Glyph image related to physics sim
+			let x_off = center.x - glyph_obj.dynamic.position.x,
+				y_off = center.y - glyph_obj.dynamic.position.y;
+
 			p.image(
 				glyph_obj.img,
-				glyph_obj.x,
-				glyph_obj.y,
+				glyph_obj.x + x_off,
+				glyph_obj.y + y_off,
 				glyph_obj.width,
 				glyph_obj.height
 			);
@@ -605,6 +615,56 @@ let glyph = function (p) {
 		}
 	}
 
+	function physInitMobile() {
+
+		// Set up Physics environment
+		physics = new toxi.physics2d.VerletPhysics2D(); // Initialize the physics
+		physics.setDrag (0.01);
+			gravityStrength = new toxi.geom.Vec2D(0,0.5);
+			gravity = new toxi.physics2d.behaviors.GravityBehavior(gravityStrength); // Set up Gravity
+		physics.addBehavior(gravity);
+
+		// Set the world's bounding box
+		physics.setWorldBounds(
+			new toxi.geom.Rect(
+				0,
+				0,
+				p.width*1.25,
+				p.height*1.25
+			)
+		);
+
+		let springStrength = 0.00035,
+				springLength   = 0.05;
+
+		// ToxiParticle: Centroid
+		glyph_obj.lock = 
+			new Particle ({
+				position: new toxi.geom.Vec2D(center.x, center.y),
+				p: p,
+			});
+
+		glyph_obj.lock.lock();
+
+		glyph_obj.dynamic = 
+			new Particle ({
+				position: new toxi.geom.Vec2D(center.x, center.y),
+				p: p,
+			});
+
+		glyph_obj.spring =
+			new toxi.physics2d.VerletSpring2D(
+				glyph_obj.lock,
+				glyph_obj.dynamic,
+				springLength,
+				springStrength
+			);
+		
+		physics.addParticle(glyph_obj.lock);
+		physics.addParticle(glyph_obj.dynamic);
+		physics.addSpring(glyph_obj.spring);
+
+	}
 
 	// Reset the physics simulation
 	function physEmpty() {
