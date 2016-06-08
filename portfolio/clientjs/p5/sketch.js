@@ -218,12 +218,22 @@ let glyph = function (p) {
 
 			setRotation(); // Handle Gyroscopic goodness
 
-			console.log(glyph_obj.dynamic.position);
-			console.log(glyph_obj.lock.position);
+			// console.log(glyph_obj.dynamic.position);
+			// console.log(glyph_obj.lock.position);
 
 			// Glyph image related to physics sim
-			let x_off = center.x - glyph_obj.dynamic.position.x,
-				y_off = center.y - glyph_obj.dynamic.position.y;
+			let x_off = center.x - glyph_obj.dynamic.x,
+				y_off = center.y - glyph_obj.dynamic.y;
+
+			// Debug Mobile Physics
+			/*
+				p.strokeWeight(2);
+				p.stroke(0,0,0);
+				p.line(glyph_obj.lock.x, glyph_obj.lock.y, glyph_obj.dynamic.x, glyph_obj.dynamic.y);
+				p.fill(0,0,0);
+				p.ellipse(glyph_obj.lock.x, glyph_obj.lock.y,5,5);
+				p.ellipse(glyph_obj.dynamic.x, glyph_obj.dynamic.y,5,5);
+			*/
 
 			p.image(
 				glyph_obj.img,
@@ -539,79 +549,80 @@ let glyph = function (p) {
 
 			// Make our ToxiParticles for 'a'
 			for (let i in aVerts) {
-					aLockVert.push(
-						new Particle ({
-							position: new toxi.geom.Vec2D(aVerts[i].x, aVerts[i].y),
-							p: p,
-						})
-					);
-					aLockVert[i].lock();
-					aSpringVert.push(
-						new Particle ({
-							position: new toxi.geom.Vec2D(aVerts[i].x, aVerts[i].y),
-							p: p,
-						})
-					);
-					aSpringArr.push(
-						new toxi.physics2d.VerletSpring2D(aLockVert[i], aSpringVert[i],springLength, springStrength)
-					);
-							physics.addParticle(aLockVert[i]);
-							physics.addParticle(aSpringVert[i]);
-							physics.addSpring(aSpringArr[i]);
-		}
+				aLockVert.push(
+					new Particle ({
+						position: new toxi.geom.Vec2D(aVerts[i].x, aVerts[i].y),
+						p: p,
+					})
+				);
+				aLockVert[i].lock();
+				aSpringVert.push(
+					new Particle ({
+						position: new toxi.geom.Vec2D(aVerts[i].x, aVerts[i].y),
+						p: p,
+					})
+				);
+				aSpringArr.push(
+					new toxi.physics2d.VerletSpring2D(aLockVert[i], aSpringVert[i],springLength, springStrength)
+				);
+				
+				physics.addParticle(aLockVert[i]);
+				physics.addParticle(aSpringVert[i]);
+				physics.addSpring(aSpringArr[i]);
+	}
 
 		// Make our ToxiParticles for 'a counter'
-		for(let i in aCounterVerts) {
-				aCounterLockVert.push(
-					new Particle ({
-						position: new toxi.geom.Vec2D(aCounterVerts[i].x, aCounterVerts[i].y),
-						p: p,
-					})
-				);
+		for (let i in aCounterVerts) {
+			aCounterLockVert.push(
+				new Particle ({
+					position: new toxi.geom.Vec2D(aCounterVerts[i].x, aCounterVerts[i].y),
+					p: p,
+				})
+			);
 
-				aCounterLockVert[i].lock();
+			aCounterLockVert[i].lock();
 
-				aCounterSpringVert.push(
-					new Particle ({
-						position: new toxi.geom.Vec2D(aCounterVerts[i].x, aCounterVerts[i].y),
-						p: p,
-					})
-				);
+			aCounterSpringVert.push(
+				new Particle ({
+					position: new toxi.geom.Vec2D(aCounterVerts[i].x, aCounterVerts[i].y),
+					p: p,
+				})
+			);
 
-				aCounterSpringArr.push(
-					new toxi.physics2d.VerletSpring2D(aCounterLockVert[i], aCounterSpringVert[i],springLength, springStrength)
-				);
+			aCounterSpringArr.push(
+				new toxi.physics2d.VerletSpring2D(aCounterLockVert[i], aCounterSpringVert[i],springLength, springStrength)
+			);
 
-				physics.addParticle(aCounterLockVert[i]);
-				physics.addParticle(aCounterSpringVert[i]);
-				physics.addSpring(aCounterSpringArr[i]);
+			physics.addParticle(aCounterLockVert[i]);
+			physics.addParticle(aCounterSpringVert[i]);
+			physics.addSpring(aCounterSpringArr[i]);
 		}
 
 		// Make our ToxiParticles for 'N'
 		for (let i in nVerts) {
-				nLockVert.push(
-					new Particle ({
-						position: new toxi.geom.Vec2D(nVerts[i].x, nVerts[i].y),
-						p: p
-					})
-				);
-				
-				nLockVert[i].lock();
+			nLockVert.push(
+				new Particle ({
+					position: new toxi.geom.Vec2D(nVerts[i].x, nVerts[i].y),
+					p: p
+				})
+			);
+			
+			nLockVert[i].lock();
 
-				nSpringVert.push(
-					new Particle({
-						position: new toxi.geom.Vec2D(nVerts[i].x, nVerts[i].y),
-						p: p,
-					})
-				);
-				
-				nSpringArr.push(
-					new toxi.physics2d.VerletSpring2D(nLockVert[i], nSpringVert[i],springLength, springStrength)
-				);
-				
-				physics.addParticle(nLockVert[i]);
-				physics.addParticle(nSpringVert[i]);
-				physics.addSpring(nSpringArr[i]);
+			nSpringVert.push(
+				new Particle({
+					position: new toxi.geom.Vec2D(nVerts[i].x, nVerts[i].y),
+					p: p,
+				})
+			);
+			
+			nSpringArr.push(
+				new toxi.physics2d.VerletSpring2D(nLockVert[i], nSpringVert[i],springLength, springStrength)
+			);
+			
+			physics.addParticle(nLockVert[i]);
+			physics.addParticle(nSpringVert[i]);
+			physics.addSpring(nSpringArr[i]);
 		}
 	}
 
@@ -985,14 +996,16 @@ let glyph = function (p) {
 	}
 
 	function setRotation() { // If mobile, set the relative orientation of the gravity vector
-		physics.removeBehavior(gravity);
+		if (p.frameCount % 5 === 0) { // For the sake of batteries
+			physics.removeBehavior(gravity);
 
-		gravityStrength.y = p.map(p.rotationX, -180, 180, -0.5, 0.5); // For some Reason they are reversed
-		gravityStrength.x = p.map(p.rotationY, -90, 90, -0.5, 0.5);
+			gravityStrength.y = p.map(p.rotationX, -180, 180, -0.5, 0.5); // For some Reason they are reversed
+			gravityStrength.x = p.map(p.rotationY, -90, 90, -0.5, 0.5);
 
-		gravity = new toxi.physics2d.behaviors.GravityBehavior(gravityStrength); // Re-initialize gravity
-		
-		physics.addBehavior(gravity);
+			gravity = new toxi.physics2d.behaviors.GravityBehavior(gravityStrength); // Re-initialize gravity
+			
+			physics.addBehavior(gravity);
+		}
 	}
 
 	function motionBlur() {
