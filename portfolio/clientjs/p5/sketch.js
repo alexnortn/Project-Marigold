@@ -66,7 +66,6 @@ let glyph = function (p) {
 		aCenterOffset,
 		clockBool,
 		bigGlyph,
-		glyph_img,
 		aVerts = [],
 		aCounterVerts = [],
 		nVerts = [];
@@ -80,11 +79,24 @@ let glyph = function (p) {
 	let _renderMode,
 		_renderMan;
 
+	var car = {type:"Fiat", model:"500", color:"white"};
+
+	let glyph_obj = 
+		{
+			img: [],
+			x: 0,
+			y: 0,
+			x_offset: 0,
+			y_offset: 0,
+			width: 100,
+			height: 100
+		};
+
 	let nudgeAttractor; 
 
 	// Resolve before sketch runs
 	p.preload = function() {
-		glyph_img = p.loadImage("../images/logo-main.png");
+		glyph_obj.img = p.loadImage("../images/logo-main.png");
 	}
 
 	p.setup = function() {
@@ -156,6 +168,25 @@ let glyph = function (p) {
 
 		_bounce = scrollAccumulator();
 
+
+		// --------------------------------------
+    	// Mobile Glyph
+
+    	
+    	if (_options.phone) {
+    		// 10% height to offset element with respect to header
+    		glyph_obj.y_offset = (p.height * 0.05);
+    	}
+
+    	if (_options.tablet) {
+
+    	}
+    	
+    	glyph_obj.height = p.height * 0.5;
+    	glyph_obj.width = glyph_obj.height; 
+    	glyph_obj.x = (p.width - glyph_obj.width) / 2;
+    	glyph_obj.y = (p.height - glyph_obj.height) / 2 + glyph_obj.y_offset;
+
 	}
 
 	p.draw = function() {
@@ -184,7 +215,14 @@ let glyph = function (p) {
 
 		if (_options.mobile) {
 
-			p.image(glyph_img, 0, 0, 500, 500);
+			p.image(
+				glyph_obj.img,
+				glyph_obj.x,
+				glyph_obj.y,
+				glyph_obj.width,
+				glyph_obj.height
+			);
+
 			return; // No more, no more
 		}
 
@@ -1017,6 +1055,8 @@ let glyph = function (p) {
 
 module.exports.init = function (args = {}) {
 	_options.mobile = args.mobile;
+	_options.phone = args.phone;
+	_options.tablet = args.tablet;
 
 	_canvas = $.Deferred();
 

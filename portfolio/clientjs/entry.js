@@ -16,7 +16,6 @@ require('./global.js');
 let GLYPH = require('./p5/sketch.js');
 let _mobile = false; // Boolean for mobile devices
 
-
 // Activation Function
 $(document).ready(function () {
 
@@ -25,16 +24,26 @@ $(document).ready(function () {
         _mobile = true;
     }
 
-	activateGlyph(_mobile);
+    let phone = isMobile.phone
+    	? true
+		: false;
+
+    let tablet = isMobile.tablet
+    	? true
+    	: false;
+
+	activateGlyph(_mobile, phone, tablet);
 
 });
 
 
 // Instantiate the Glyph simulation
-function activateGlyph(mobile) {
+function activateGlyph(mobile, phone, tablet) {
 	
 	GLYPH.init({
 		mobile: mobile,
+		phone: phone,
+		tablet: tablet,
 	});
 
 	GLYPH.canvas().done(function (canvas) {
