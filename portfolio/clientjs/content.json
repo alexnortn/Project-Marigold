@@ -80,6 +80,8 @@
         "select_work" : [
             {
                 "route" :"brainvr",
+                "preview" :"brainvr-preview",
+                "project" :"brainvr-project",
                 "name"  : "BrainVr",
                 "year"  : "2016",
                 "medium": [
@@ -154,6 +156,8 @@
             },
             {
                 "route" :"eyewire",
+                "preview" :"eyewire-preview",
+                "project" :"eyewire-project",
                 "name"  : "Eyewire",
                 "year"  : "2014",
                 "medium": [
@@ -228,6 +232,8 @@
             },
             {
                 "route" :"convolve",
+                "preview" :"convolve-preview",
+                "project" :"convolve-project",
                 "name"  : "Convolve",
                 "year"  : "2014",
                 "medium": [
@@ -302,6 +308,8 @@
             },
             {
                 "route" :"dig",
+                "preview" :"dig-preview",
+                "project" :"dig-project",
                 "name"  : "DiG",
                 "year"  : "2014",
                 "medium": [
@@ -376,6 +384,8 @@
             },
             {
                 "route" :"muwu",
+                "preview" :"muwu-preview",
+                "project" :"muwu-project",
                 "name"  : "MuWu",
                 "year"  : "2014",
                 "medium": [
@@ -450,6 +460,8 @@
             },
             {
                 "route" :"das",
+                "preview" :"das-preview",
+                "project" :"das-project",
                 "name"  : "DAS",
                 "year"  : "2014",
                 "medium": [
@@ -524,6 +536,8 @@
             },
             {
                 "route" :"olympics",
+                "preview" :"olympics-preview",
+                "project" :"olympics-project",
                 "name"  : "Olympics",
                 "year"  : "2014",
                 "medium": [
@@ -598,6 +612,8 @@
             },
             {
                 "route" :"dig",
+                "preview" :"dig-preview",
+                "project" :"dig-project",
                 "name"  : "More1",
                 "year"  : "2014",
                 "medium": [
