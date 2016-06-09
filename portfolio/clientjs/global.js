@@ -153,7 +153,7 @@ $(document).ready(function() {
     // --------------------------------------
     // Works Interaction
 
-    $('.case-study').click(function(evt) {   // Open Case Study
+    $('.case-study-view').one( "click", function(evt) {   // Open Case Study | Use .one to avoid bubbling
         let elem = evt.currentTarget.id;  // Navigate
         scrollTo(elem);
         
@@ -162,18 +162,16 @@ $(document).ready(function() {
         !open
             ? closeProject(elem, evt)
             : openProject(elem, evt); 
-
     });
 
-    $('.select-work-item').click(function(evt) {   // Open Project
+    $('.select-work-item').one( "click", function(evt) {   // Open Project | Use .one to avoid bubbling
         let elem = evt.currentTarget.id;  // Navigate
 
         open = !open; // Open Project
 
         !open
             ? closeProject(elem, evt)
-            : openProject(elem, evt); 
-        
+            : openProject(elem, evt);     
     });
 
     function openProject(elem, evt) {
