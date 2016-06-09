@@ -218,7 +218,7 @@ block content
                 // /CASE STUDY ITERATOR
 
 
-                //SELECT WORK SECTION
+                //SELECT WORK GRID SECTION
                 #select-work.select-work
                     #select-work-wrapper
                         h3 Selected Works
@@ -235,7 +235,29 @@ block content
                         // /SELECT-WORK ITERATOR
                         h5#select-more { more }
 
-                // /SELECT WORK SECTION 
+                // /SELECT WORK GRID SECTION 
+
+
+                //- //PROJECTS
+                //- #project.project
+                //-     #project-wrapper
+                //-         h3 Selected Works
+                //-         // SELECT-WORK ITERATOR
+                //-         ul
+                //-             each result, index in select_work
+                //-                 li.project-item&attributes({'data-inproject': true}, {'data-project': index}, {'id': result.route})
+                //-                     .project-img-container
+                //-                         .project-description
+                //-                             p.tamer #{result.description_short}
+                //-                             hr
+                //-                         .project-img(style='background-image: url(#{result.images[0].src});')
+                //-                     h3 #{result.name}
+                //-         // /SELECT-WORK ITERATOR
+                //-         h5#select-more { more }
+
+                //- // /PROJECTS 
+
+
 
 
         // /WORKS SECTION 

@@ -152,8 +152,12 @@ $(document).ready(function() {
 
     // --------------------------------------
     // Works Interaction
+    
+    $(".case-study-view .case-study-contents").click(function(evt) {
+        evt.stopPropagation(); // keep child elements from toggling case-study
+    });
 
-    $('.case-study-view').one( "click", function(evt) {   // Open Case Study | Use .one to avoid bubbling
+    $('.case-study-view').click(function(evt) {   // Open Case Study
         let elem = evt.currentTarget.id;  // Navigate
         scrollTo(elem);
         
@@ -164,7 +168,7 @@ $(document).ready(function() {
             : openProject(elem, evt); 
     });
 
-    $('.select-work-item').one( "click", function(evt) {   // Open Project | Use .one to avoid bubbling
+    $('.select-work-item').click(function(evt) {   // Open Project
         let elem = evt.currentTarget.id;  // Navigate
 
         open = !open; // Open Project
@@ -201,6 +205,8 @@ $(document).ready(function() {
             });
         }
         else if (work_type === "select-work-item") {
+            // Need to find an element by unique id
+            // Need to make project iterator for these sections
             $(elem).find('.case-study-contents')
                    .fadeToggle(1000);
             $(elem).find('.case-study-view')
@@ -237,9 +243,9 @@ $(document).ready(function() {
     }
 
     // Get Event Target
-    function getEventTarget(e) {
-        e = e || window.event;
-        return e.target || e.srcElement; 
+    function getEventTarget(evt) {
+        evt = evt || window.event;
+        return evt.target || evt.srcElement; 
     }
 
     // Navigation
