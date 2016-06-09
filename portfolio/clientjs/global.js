@@ -59,60 +59,7 @@ $(document).ready(function() {
     $('body').addClass('loading');
 
     // Center In
-
-    // $('.case-study-overview').alwaysCenterIn(window, { top: "-3%" });
     $('#pagination').alwaysCenterIn(window, { direction: 'vertical' });
-    // $('#bios-content').alwaysCenterIn('#bios', { top: "-3%" });
-
-    function openProject(el) {
-        $('#pagination').fadeToggle(1000);
-        $('#arrow').fadeToggle(1000);
-        $('body').addClass('project-open');
-
-        el = "#" + el;
-        $(el).find('.case-study-contents').fadeToggle(1000);
-        $(el).addClass('case-study-open');
-
-        let bottomSlick = $(el).find('.big-moment-3');
-
-        // Initialize Slick object 
-        if (!bottomSlick.hasClass('slick-initialized')) { 
-            addSlick(bottomSlick, true);
-        };
-
-        
-        $(el).find('.case-study-overview').velocity("scroll", { 
-            container: $(el).find('.case-study-view'),
-            duration:  800,
-            delay:     250,
-            offset:    '800px',
-            mobileHA:  false
-        });
-        
-
-        // Size the video properly please
-        videoSize();
-    }
-
-    function closeProject(el) {
-        $('#pagination').fadeToggle('slow');
-        $('#arrow').fadeToggle('slow');
-
-        el = "#" + el;
-        $(el).find('.case-study-contents').fadeOut('slow', function() {
-            $('body').removeClass('project-open');
-            $(el).removeClass('case-study-open');
-            console.log('faded');
-        });
-
-        open = false;
-    };
-
-
-    // Close Project
-    $('.close').click(function() {
-        closeProject();
-    });
 
     // Find all Vimeo videos
     let $allVideos = $("iframe[src^='//player.vimeo.com'], iframe[src^='//www.youtube.com']"),
@@ -141,10 +88,10 @@ $(document).ready(function() {
         // Resize all videos according to their own aspect ratio
         $allVideos.each(function() {
 
-            let $el = $(this);
-            $el
+            let $elem = $(this);
+            $elem
               .width(newWidth)
-              .height(newWidth * $el.data('aspectRatio'));
+              .height(newWidth * $elem.data('aspectRatio'));
 
         });
 
@@ -206,16 +153,83 @@ $(document).ready(function() {
     // --------------------------------------
     // Works Interaction
 
-    $('.case-study-overview').click(function(e) {
-        // Navigate
-        let el = e.currentTarget.parentElement.id;
-        navigateScroll(el);
+    $('.case-study').click(function(evt) {   // Open Case Study
+        let elem = evt.currentTarget.id;  // Navigate
+        scrollTo(elem);
+        
+        open = !open; // Case Study
 
-        // Open Project
-        open = !open;
+        !open
+            ? closeProject(elem, evt)
+            : openProject(elem, evt); 
 
-        !open ? closeProject(el) : openProject(el); 
+    });
 
+    $('.select-work-item').click(function(evt) {   // Open Project
+        let elem = evt.currentTarget.id;  // Navigate
+
+        open = !open; // Open Project
+
+        !open
+            ? closeProject(elem, evt)
+            : openProject(elem, evt); 
+        
+    });
+
+    function openProject(elem, evt) {
+        $('#pagination').fadeToggle(1000);
+        $('body').addClass('project-open');
+
+        let work_type = evt.currentTarget.classList[0];
+        elem = "#" + elem;
+
+        if (work_type === "case-study") {
+
+            $(elem).find('.case-study-contents')
+                   .fadeToggle(1000);
+            $(elem).addClass('case-study-open');
+
+            let bottomSlick = $(elem).find('.big-moment-3');
+            if (!bottomSlick.hasClass('slick-initialized')) { 
+                addSlick(bottomSlick, true);
+            };
+
+             $(elem).find('.case-study-overview').velocity("scroll", { 
+                container: $(elem).find('.case-study-view'),
+                duration:  800,
+                delay:     250,
+                offset:    '800px',
+                mobileHA:  false
+            });
+        }
+        else if (work_type === "select-work-item") {
+            $(elem).find('.case-study-contents')
+                   .fadeToggle(1000);
+            $(elem).find('.case-study-view')
+                   .addClass('case-study-open');
+
+        }
+        
+        videoSize(); // Size the video accordingly
+    }
+
+    function closeProject(elem, evt) {
+        $('#pagination').fadeToggle('slow');
+
+        elem = "#" + elem;
+        $(elem).find('.case-study-contents').fadeOut('slow', function() {
+            $('body').removeClass('project-open');
+            $(elem).removeClass('case-study-open');
+            console.log('faded');
+        });
+
+        open = false;
+    };
+
+
+    // Close Project
+    $('.close').click(function() {
+        closeProject();
     });
     
 
@@ -240,7 +254,7 @@ $(document).ready(function() {
             _sectionCurrent = $(".case-study-view").attr('id');
         }
 
-        navigateScroll(_sectionCurrent); // Navigate
+        scrollTo(_sectionCurrent); // Navigate
     });
 
 
@@ -326,7 +340,7 @@ $(document).ready(function() {
         _sectionCurrent = $(this).attr("data-sectionId");
 
         // Navigate
-        navigateScroll(_sectionCurrent);
+        scrollTo(_sectionCurrent);
 
     });
 
@@ -337,7 +351,7 @@ $(document).ready(function() {
         if (open) closeProject();
 
         _sectionCurrent = "web-lab"; // Set #web-lab as current
-        navigateScroll(_sectionCurrent); // Navigate
+        scrollTo(_sectionCurrent); // Navigate
 
     });
 
@@ -348,13 +362,13 @@ $(document).ready(function() {
         closeNav() // Close nav
 
         _sectionCurrent = "web-lab"; // Set #web-lab as current
-        navigateScroll(_sectionCurrent); // Navigate
+        scrollTo(_sectionCurrent); // Navigate
 
     });
 
     $('.scroll-arrow').click(function() {
         _sectionCurrent = "bios"; // Set #bios as current
-        navigateScroll(_sectionCurrent); // Navigate
+        scrollTo(_sectionCurrent); // Navigate
         $(this).velocity("fadeOut", { duration: 250 }); // Fade it out | They get it
     });
 
@@ -566,7 +580,7 @@ function hashChanged() {
 };
 
 // Navigate with velocity
-function navigateScroll(_sectionCurrent) {
+function scrollTo(_sectionCurrent) {
 
     let nav = "#" + _sectionCurrent;
     // Scroll navigate, call setHash when finished moveing
@@ -642,10 +656,9 @@ function centerOffest(scrollInId, scrollToId) {
 function setGreeting() {
 
     // Get current time
-    let d = new Date();
-    let n = d.getHours();
-
-    let greeting;
+    let d = new Date(),
+        n = d.getHours(),
+        greeting;
 
     if ((n < 11) && (n > 4)) {
         greeting = "Good Morning ";

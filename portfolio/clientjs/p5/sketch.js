@@ -196,53 +196,10 @@ let glyph = function (p) {
 
 		// Update the physics world
 		physics.update();
-
 		p.clear();
 
-		// --------------------------------------
-    	// Mobile
-
-    		/*
-
-    		The following functions allow for fluid interactions on mobile.
-    		However, due to performace limitations, we'll keep the fluidity
-    		strictly to desktop.
-
-			setRotation();
-			displayPhys();
-
-			*/
-
-
 		if (_options.mobile) {
-
-			setRotation(); // Handle Gyroscopic goodness
-
-			// console.log(glyph_obj.dynamic.position);
-			// console.log(glyph_obj.lock.position);
-
-			// Glyph image related to physics sim
-			let x_off = center.x - glyph_obj.dynamic.x,
-				y_off = center.y - glyph_obj.dynamic.y;
-
-			// Debug Mobile Physics
-			/*
-				p.strokeWeight(2);
-				p.stroke(0,0,0);
-				p.line(glyph_obj.lock.x, glyph_obj.lock.y, glyph_obj.dynamic.x, glyph_obj.dynamic.y);
-				p.fill(0,0,0);
-				p.ellipse(glyph_obj.lock.x, glyph_obj.lock.y,5,5);
-				p.ellipse(glyph_obj.dynamic.x, glyph_obj.dynamic.y,5,5);
-			*/
-
-			p.image(
-				glyph_obj.img,
-				glyph_obj.x + x_off,
-				glyph_obj.y + y_off,
-				glyph_obj.width,
-				glyph_obj.height
-			);
-
+			mobile_physics();
 			return; // No more, no more
 		}
 
@@ -255,6 +212,53 @@ let glyph = function (p) {
 
 
 	}
+	
+	// --------------------------------------
+    // Mobile + Tablet
+
+	function mobile_physics() {
+
+		/*
+
+		The following functions allow for fluid interactions on mobile.
+		However, due to performace limitations, we'll keep the fluidity
+		strictly to desktop.
+
+		setRotation();
+		displayPhys();
+
+		*/
+
+		setRotation(); // Handle Gyroscopic goodness
+
+		// console.log(glyph_obj.dynamic.position);
+		// console.log(glyph_obj.lock.position);
+
+		// Glyph image related to physics sim
+		let x_off = center.x - glyph_obj.dynamic.x,
+			y_off = center.y - glyph_obj.dynamic.y;
+
+		// Debug Mobile Physics
+		/*
+			p.strokeWeight(2);
+			p.stroke(0,0,0);
+			p.line(glyph_obj.lock.x, glyph_obj.lock.y, glyph_obj.dynamic.x, glyph_obj.dynamic.y);
+			p.fill(0,0,0);
+			p.ellipse(glyph_obj.lock.x, glyph_obj.lock.y,5,5);
+			p.ellipse(glyph_obj.dynamic.x, glyph_obj.dynamic.y,5,5);
+		*/
+
+		p.image(
+			glyph_obj.img,
+			glyph_obj.x + x_off,
+			glyph_obj.y + y_off,
+			glyph_obj.width,
+			glyph_obj.height
+		);
+	}
+
+	// --------------------------------------
+    // Desktop
 
 	function windowResized() {
 		p.resizeCanvas(p.windowWidth, p.windowHeight);
@@ -1120,11 +1124,8 @@ let glyph = function (p) {
 
 }
 
-	/*
-				Module Exports
-				/////////////////////////////////////////////////////////////////////////////////////////
-	*/
-
+// --------------------------------------
+// Module Exports
 
 module.exports.init = function (args = {}) {
 	_options.mobile = args.mobile;

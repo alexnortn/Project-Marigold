@@ -116,7 +116,7 @@ block content
                 // CASE STUDY ITERATOR
                 each result, index in case_studies
 
-                    .case-study.case-study-view.parallax&attributes({'data-inproject': true}, {'data-project': index}, {'id': result.route})
+                    .case-study.case-study-view.parallax&attributes({'data-inproject': true}, {'data-casestudy': index}, {'id': result.route})
                         // PROJECT OVERVIEW
                         //- .filler-content
                         .case-study-overview
@@ -225,7 +225,7 @@ block content
                         // SELECT-WORK ITERATOR
                         ul
                             each result, index in select_work
-                                li
+                                li.select-work-item&attributes({'data-inproject': true}, {'data-project': index}, {'id': result.route})
                                     .select-work-img-container
                                         .select-work-description
                                             p.tamer #{result.description_short}
