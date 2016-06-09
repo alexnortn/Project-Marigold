@@ -205,12 +205,8 @@ $(document).ready(function() {
             });
         }
         else if (work_type === "select-work-item") {
-            // Need to find an element by unique id
-            // Need to make project iterator for these sections
             let project = evt.currentTarget.dataset.project; // Find project
                 project = "#" + project; // Make ID
-
-                alert(project);
             
             $(project).fadeToggle(1000);
         }
