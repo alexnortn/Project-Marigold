@@ -114,6 +114,7 @@ $StickyOffset = 20vh
 	width 100%
 	position relative
 	padding-top 100px
+	transition padding-top 250ms
 	
 
 .hero-box 
@@ -121,7 +122,7 @@ $StickyOffset = 20vh
 	width 100%
 	height 100%
 	transition-timing-function ease-in-out
-	transition margin-top 1s
+	transition margin-top 1000ms
 	
 
 /* -------------------------------------- */
@@ -287,13 +288,13 @@ p.center-caption
 .description h2 
 	margin-bottom 7.5px
 	text-align center
+	color $BLACK_Q
 	
 .description hr
 	width 25px	
 	height 4px
 	border none
-	color $BLACK
-	background-color $BLACK
+	background-color $GRAY
 
 
 .description p
@@ -405,8 +406,8 @@ p.center-caption
 .img-box 
 	position relative
 	float right
-	width 400px
-	height 500px
+	width 30vw
+	height 40vw
 	margin-right 200px
 	background-color red
 	bottom -250px
@@ -608,7 +609,7 @@ p.center-caption
 
 .big-moment-2 .img-box 
 	position relative
-	margin-right auto
+	margin-right 15%
 	float right
 	top -300px
 
@@ -669,10 +670,13 @@ p.center-caption
 		margin-right auto
 		position relative
 		order 2
-		bottom 35%
+		bottom 50%
 		
 	.hero-box
 		display table
+		
+	.case-study-intro 
+		padding-top 200px
 		
 
 /* ----------- Retina Screens ----------- */
@@ -682,10 +686,13 @@ p.center-caption
 		margin-right auto
 		position relative
 		order 2
-		bottom 35%
+		bottom 50%
 		
 	.hero-box
 		display table
+		
+	.case-study-intro 
+		padding-top 200px
 	
 
 

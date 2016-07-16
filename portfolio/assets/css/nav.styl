@@ -28,19 +28,19 @@ Navigation Elements
 
 
 .pagination-active 
-	background-color: black
+	background-color: $BLACK_BG
 
 
 .pagination:hover 
-	background-color: black
+	background-color: $BLACK_BG
 	border: 1px solid rgba(0,0,0,0)
 	cursor: pointer
 
 
 .pagination:active 
 	transform:scale(1.25,1.25)
-	background-color: white
-	border: 1px solid black	
+	background-color: $GRAY
+	border: 1px solid $BLACK_BG	
 
 
 #pagination 
@@ -131,7 +131,7 @@ Navigation Elements
 
 label[for="nav-trigger"] 
 	position: fixed
-	right: 5px
+	right: 0
 	top: 15px
 	width:  75px
 	height: 75px
@@ -146,10 +146,10 @@ label[for="nav-trigger"]:hover
 
 
 label[for="nav-trigger"] hr 
-	width: 25px	
+	width: 20px	
 	height: 2px
 	border: none
-	margin-bottom: 8px
+	margin-bottom: 0
 	opacity: 1
 	color: $BLACK
 	background-color: $BLACK
@@ -161,7 +161,7 @@ label[for="nav-trigger"] hr:first-child
 
 
 label[for="nav-trigger"] hr:nth-child(3) 
-	margin-top: -10px
+	margin-top: -2px
 
 
 .nav-trigger:checked + label hr:first-child 
