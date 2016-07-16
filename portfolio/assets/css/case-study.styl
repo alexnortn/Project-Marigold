@@ -113,7 +113,6 @@ $StickyOffset = 20vh
 .case-study-intro 
 	width 100%
 	position relative
-	padding-bottom 100px
 	padding-top 100px
 	
 
@@ -158,23 +157,20 @@ $StickyOffset = 20vh
 
 
 .para-box blockquote 
-	font-family "BerlingskeSerif-Regular"
-	font-size 40px
-	line-height 2em
 	position absolute
-	width 50%
+	width 40%
 	margin-left 50px
 	margin-top 14.5%
 
 
 .para-box blockquote.left 
 	text-align left
-	left 55%
+	left 45%
 
 
 .para-box blockquote.right 
 	text-align right
-	left 13%
+	left 5%
 	
 
 /* -------------------------------------- */
@@ -250,10 +246,13 @@ p.center-caption
 	font-size 18px
 	line-height 2em
 	letter-spacing 0
-	margin-bottom 75px 
 	
 .main-description q 
-	margin-top 0 
+	margin-top 0
+	margin-bottom 0
+	
+.main-description h4
+	margin-top 50px 
 	
 
 .description 
@@ -452,7 +451,8 @@ p.center-caption
 	margin-bottom 150px
 
 
-.image-grid-container 
+.image-grid-container
+	border-radius 20% 
 	position relative
 	display inline-block
 	width  12%
@@ -493,10 +493,10 @@ p.center-caption
 .active-grid::after 
 	content ""
 	position absolute
-	margin-top 15px
-	border-bottom 1px solid black
-	width 100%
-	margin-left -50%
+	margin-top 10px
+	border-bottom 3px solid $GRAY
+	width 35%
+	margin-left -20%
 
 
 .shrink-grid 
@@ -519,6 +519,7 @@ p.center-caption
 
 .image-grid 
 	width 100%
+	border-radius 20%
 	padding-bottom 100%
 	background-color green
 	background-position center
@@ -529,6 +530,16 @@ p.center-caption
 
 /* -------------------------------------- */
 /* Moments */
+
+
+.big-moment-0-color 
+	padding-top 50%
+	margin-top 150px
+	margin-bottom 150px
+	background-color Beige
+	bottom 0
+	width 100%
+	background-size 100% auto
 
 
 .big-moment-1 
