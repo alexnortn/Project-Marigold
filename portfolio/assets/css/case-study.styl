@@ -23,101 +23,106 @@ $StickyOffset = 20vh
 /* Elements */	
 	
 .case-study
-	width: 102%
-	height: 90vh
-	min-height: 750px
-	display: flex
-	justify-content: center
-	top: 0
+	width 102%
+	height 90vh
+	min-height 750px
+	display flex
+	justify-content center
+	top 0
 	
 
 .case-study-overview 
-	width: 100%
-	height: 70vh
-	min-height: 600px
-	position: absolute
-	left: 0
-	z-index: 1
-	display: flex
-	flex-direction: column
-	box-shadow: 0 5px 3px rgba(0, 0, 0, 0)
-	transition: all 250ms
+	width 100%
+	height 70vh
+	min-height 600px
+	position absolute
+	left 0
+	z-index 1
+	display flex
+	flex-direction column
+	box-shadow 0 5px 3px rgba(0, 0, 0, 0)
+	transition all 250ms
 	
 
 .case-study-view 
-	position: relative
-	overflow: hidden
-	transition: all 250ms ease-in-out
+	position relative
+	overflow hidden
+	transition all 250ms ease-in-out
 	
 .case-study-open
-	height: 100vh
-	overflow-y: visible
-	top: 85px
+	height 100vh
+	overflow-y visible
+	top 85px
+	background-color $WHITE_BG
+	z-index 100
+	
+.case-study-resize
+	position fixed // On resize?
 
 
 .case-study-overview:hover 
 	/*box-shadow: 0 10px 15px rgba(0, 0, 0, 0.18)*/
-	cursor: pointer
+	cursor pointer
 
 
 .case-study-overview:hover .overlay 
-	background-color: rgba(255,255,255,0.15)
+	background-color rgba(255,255,255,0.15)
 
 
 .case-study-overview:hover .hero 
-	transform:scale(1.03)
+	transform scale(1.03)
 
 
 .case-study-overview:hover .description 
-	box-shadow: 0 0px 50px rgba(0, 0, 0, 0.18)
+	box-shadow 0 0px 50px rgba(0, 0, 0, 0.18)
 
 
 .case-study-page 
-	width: 100%
-	height: 100%
-	position: relative
-	display: block
+	width 100%
+	height 100%
+	position relative
+	display block
 	
 
 .case-study-box 
-	width: 100%
-	height: 100%
-	display: block
-	position: relative
-	z-index: -1
-	display: block
-	/*overflow: hidden*/
+	width 100%
+	height 100%
+	display block
+	position relative
+	z-index -1
+	display block
+	/*overflow hidden*/
 		
 
 .case-study-contents 
-	width: 85%
-	max-width: 1200px
-	min-width: 650px
-	position: relative
-	margin-left: auto
-	margin-right: auto
-	margin-top: 85vh
-	display: none
+	width 85%
+	max-width 1200px
+	min-width 650px
+	position relative
+	margin-left auto
+	margin-right auto
+	margin-top 85vh
+	display none
 	
 
 .case-study-contents h1 
-	text-align: center
-	padding: 30px
+	text-align center
+	padding 30px
 	
 
 .case-study-intro 
-	width: 100%
-	position: relative
-	padding-bottom: 100px
-	padding-top: 100px
+	width 100%
+	position relative
+	padding-bottom 100px
+	padding-top 100px
 	
 
 .hero-box 
-	overflow: hidden
-	width: 100%
-	height: 100%
-	transition-timing-function: ease-in-out
-	transition: margin-top 1s
+	overflow hidden
+	width 100%
+	height 100%
+	transition-timing-function ease-in-out
+	transition margin-top 1s
 	
 
 /* -------------------------------------- */
@@ -125,19 +130,19 @@ $StickyOffset = 20vh
 	
 
 .hero-box-entry 
-	margin-top: 100px
+	margin-top 100px
 
 
 .hero 
-	overflow: hidden
-	width: 100%
-	height: 100%
-	background-repeat: no-repeat
-	background-attachment: scroll
-	background-size: cover   
-	background-position: center 
-	transition-timing-function: ease-in-out
-	transition: all 1s
+	overflow hidden
+	width 100%
+	height 100%
+	background-repeat no-repeat
+	background-attachment scroll
+	background-size cover   
+	background-position center 
+	transition-timing-function ease-in-out
+	transition all 1s
 	
 
 /* -------------------------------------- */
@@ -145,31 +150,31 @@ $StickyOffset = 20vh
 	
 
 .para-box 
-	/*height: 880px*/
+	/*height 880px*/
 
 
 .parabox .image-box:last-of-type 
-	margin-bottom: 125px
+	margin-bottom 125px
 
 
 .para-box blockquote 
-	font-family: "BerlingskeSerif-Regular"
-	font-size: 40px
-	line-height: 2em
-	position: absolute
-	width: 50%
-	margin-left: 50px
-	margin-top: 14.5%
+	font-family "BerlingskeSerif-Regular"
+	font-size 40px
+	line-height 2em
+	position absolute
+	width 50%
+	margin-left 50px
+	margin-top 14.5%
 
 
 .para-box blockquote.left 
-	text-align: left
-	left: 55%
+	text-align left
+	left 55%
 
 
 .para-box blockquote.right 
-	text-align: right
-	left: 13%
+	text-align right
+	left 13%
 	
 
 /* -------------------------------------- */
@@ -177,26 +182,26 @@ $StickyOffset = 20vh
 
 
 p.center-caption 
-	margin-left: auto
-	margin-right: auto
-	display: block
-	width: 500px
-	margin-bottom: 150px
-	padding-top: 25px
-	border-top: 1px dotted black
-	text-align: center
+	margin-left auto
+	margin-right auto
+	display block
+	width 500px
+	margin-bottom 150px
+	padding-top 25px
+	border-top 1px dotted black
+	text-align center
 
 
 .caption 
-	font-size: 12px
-	line-height: 2em
-	margin-top: 25px
-	width: 300px
-	text-align: left
-	position: relative
-	display: inline-block
-	text-align: justify
-	text-justify: inter-word
+	font-size 12px
+	line-height 2em
+	margin-top 25px
+	width 300px
+	text-align left
+	position relative
+	display inline-block
+	text-align justify
+	text-justify inter-word
 
 
 /* -------------------------------------- */
@@ -204,131 +209,131 @@ p.center-caption
 	
 
 .meta-data 
-	top: $StickyOffset
-	height: 500px
+	top $StickyOffset
+	height 500px
 
-	float: right
-	border-left: 1px solid $GRAY
-	padding: 20px 75px 0 35px
+	float right
+	border-left 1px solid $GRAY
+	padding 20px 75px 0 35px
 
 
 .meta-data li:nth-child(odd) 
-	font-family: BerlingskeSans-Bold
-	letter-spacing: 3px
-	text-transform: uppercase
-	font-size: 10px
-	line-height: 2em
-	color: black
+	font-family BerlingskeSans-Bold
+	letter-spacing 3px
+	text-transform uppercase
+	font-size 10px
+	line-height 2em
+	color black
 
 
 .meta-data li:nth-child(even) 
-	font-family: BerlingskeSans-Regular
-	font-size: 12px
-	letter-spacing: 0px
-	margin-bottom: 20px
+	font-family BerlingskeSans-Regular
+	font-size 12px
+	letter-spacing 0px
+	margin-bottom 20px
 
 	
 /* -------------------------------------- */
 /* Description Box */
 
 .main-description 
-	width: 50%
-	float: right
-	border-left: 1px solid $GRAY
-	position: relative
-	display: block
-	padding: 0 0 30px 35px
+	width 50%
+	float right
+	border-left 1px solid $GRAY
+	position relative
+	display block
+	padding 0 0 30px 35px
 	
 .main-description p 
-	text-align: left
-	font-family: Chronicle-Roman, serif
-	font-size: 18px
-	line-height: 2em
-	letter-spacing: 0
-	margin-bottom: 75px 
+	text-align left
+	font-family Chronicle-Roman, serif
+	font-size 18px
+	line-height 2em
+	letter-spacing 0
+	margin-bottom 75px 
 	
 .main-description q 
 	margin-top 0 
 	
 
 .description 
-	width: 300px
-	height: 300px
-	min-width: 300px
-	min-height: 300px	
-	padding: 50px 50px 30px 50px
-	margin-left: 7.5%
-	position: absolute
-	bottom: -15%
-	order: inherit
-	z-index: 2
+	width 300px
+	height 300px
+	min-width 300px
+	min-height 300px	
+	padding 50px 50px 30px 50px
+	margin-left 7.5%
+	position absolute
+	bottom -15%
+	order inherit
+	z-index 2
 	
-	background-color: $WHITE_BG
+	background-color $WHITE_BG
 	
-	border-radius: 50px
-	box-shadow: 0 0 100px rgba(0, 0, 0, 0.18)
+	border-radius 50px
+	box-shadow 0 0 100px rgba(0, 0, 0, 0.18)
 
-	display: flex
-	flex-direction: column
-	justify-content: center
+	display flex
+	flex-direction column
+	justify-content center
 	
-	transition: all 250ms
+	transition all 250ms
 
 
 .description h3 
-	margin-bottom: 10px
-	text-align: center
+	margin-bottom 10px
+	text-align center
 
 
 .description h2 
-	margin-bottom: 7.5px
-	text-align: center
+	margin-bottom 7.5px
+	text-align center
 	
 .description hr
-	width: 25px	
-	height: 4px
-	border: none
-	color: $BLACK
-	background-color: $BLACK
+	width 25px	
+	height 4px
+	border none
+	color $BLACK
+	background-color $BLACK
 
 
 .description p
-	font-family: Chronicle-Italic
-	margin-top: 40px
-	text-align: center
-	align-self: flex-end
+	font-family Chronicle-Italic
+	margin-top 40px
+	text-align center
+	align-self flex-end
 
 
 .description .social 
-	width: 75%
-	bottom: 30px
-	position: absolute
-	border-top: 1.25px dotted black
-	padding:  25px 0 0 0
+	width 75%
+	bottom 30px
+	position absolute
+	border-top 1.25px dotted black
+	padding  25px 0 0 0
 	
 
 .description-wrapper
-	align-self: center
+	align-self center
 	
 
 .pull-left p 
-	text-align: center
-	line-height: 1.5em
-	padding: 0 75px 25px 75px
+	text-align center
+	line-height 1.5em
+	padding 0 75px 25px 75px
 
 
 .pull-left h1 
-	font-family: Freight-Text-Italic
+	font-family Freight-Text-Italic
 
 
 .pull-left 
-	display: inline-block
-	width: 40%
-	float: right
-	position: relative
-	margin-right: 45px
-	padding-top: 28px
-	padding-bottom: 30px
+	display inline-block
+	width 40%
+	float right
+	position relative
+	margin-right 45px
+	padding-top 28px
+	padding-bottom 30px
 
 
 /* -------------------------------------- */
@@ -336,76 +341,76 @@ p.center-caption
 
 
 .image-box 
-	width: 50%
-	padding-bottom: 30%
-	margin-bottom: 50px
-	display: block
-	float: left
-	clear: both
+	width 50%
+	padding-bottom 30%
+	margin-bottom 50px
+	display block
+	float left
+	clear both
 
 
 .image-left.caption.caption--2 p 
-	left: 20%
+	left 20%
 
 
 .overlay-background 
-	width: 100%
-	height: 100%
-	background-color: white
-	opacity: 0.75
+	width 100%
+	height 100%
+	background-color white
+	opacity 0.75
 
 
 .overlay-background:h$GREY
-	cursor:url("../images/assets/xx.png"), auto
+	cursor url("../images/assets/xx.png"), auto
 
 
 .image-box.right 
-	float: right
+	float right
 
 
 .image-left 
-	width: 100%
-	height: 100%
+	width 100%
+	height 100%
 
 
 .image-box--bottom 
-	margin-bottom: 125px
+	margin-bottom 125px
 
 
 .image-box--center 
-	clear: none
-	float: none
-	position: relative
-	margin-left: auto
-	margin-right: auto
+	clear none
+	float none
+	position relative
+	margin-left auto
+	margin-right auto
 	
 
 .image-left p 
-	border-top: 1.25px dotted black
-	padding-top: 1.5em
-	position: absolute
-	left: 50%
-	margin-left: 50px
-	margin-top: 0
+	border-top 1.25px dotted black
+	padding-top 1.5em
+	position absolute
+	left 50%
+	margin-left 50px
+	margin-top 0
 
 
 .image-right p 
-	border-top: 1.25px dotted black
-	padding-top: 1.5em
-	position: absolute
-	left: 20%
-	margin-left: 50px
-	margin-top: 0
+	border-top 1.25px dotted black
+	padding-top 1.5em
+	position absolute
+	left 20%
+	margin-left 50px
+	margin-top 0
 	
 
 .img-box 
-	position: relative
-	float: right
-	width: 400px
-	height: 500px
-	margin-right: 200px
-	background-color: red
-	bottom: -250px
+	position relative
+	float right
+	width 400px
+	height 500px
+	margin-right 200px
+	background-color red
+	bottom -250px
 	
 
 /* -------------------------------------- */
@@ -413,113 +418,113 @@ p.center-caption
 	
 
 .image-grid-overlay 
-	width: 100%
-	height: 100%
-	position: absolute
-	z-index: 100
-	display: none
+	width 100%
+	height 100%
+	position absolute
+	z-index 100
+	display none
 
 
 .grid-slider 
-	width: 10%
-	height: auto
-	margin-bottom: 50px
-	position: relative
-	margin-left: auto
-	margin-right: auto
-	display: none
-	transition: all ease-in-out 500ms
-	transform: translateZ(0)
+	width 10%
+	height auto
+	margin-bottom 50px
+	position relative
+	margin-left auto
+	margin-right auto
+	display none
+	transition all ease-in-out 500ms
+	transform translateZ(0)
 
 
 .active-grid-slider 
-	width: 100%
-	transform: scale(0.85)
-	margin-bottom: 0
+	width 100%
+	transform scale(0.85)
+	margin-bottom 0
 
 
 .image-grid-wrapper 
-	clear: both
-	position: relative
-	display: block
-	text-align: center
-	margin-top: 100px
-	margin-bottom: 150px
+	clear both
+	position relative
+	display block
+	text-align center
+	margin-top 100px
+	margin-bottom 150px
 
 
 .image-grid-container 
-	position: relative
-	display: inline-block
-	width:  12%
-	/*padding-bottom: 25%*/
-	margin: 15px
-	box-shadow: 0 0px 10px rgba(0, 0, 0, 0) 
-	transition: all ease-in-out 250ms
+	position relative
+	display inline-block
+	width  12%
+	/*padding-bottom 25%*/
+	margin 15px
+	box-shadow 0 0px 10px rgba(0, 0, 0, 0) 
+	transition all ease-in-out 250ms
 
 
 .slider-transition 
-	margin-bottom: -55%
-	top: -275px
-	transform: scale(0.15)
-	z-index: 0
-	opacity: 0
+	margin-bottom -55%
+	top -275px
+	transform scale(0.15)
+	z-index 0
+	opacity 0
 	
 
 .bounce 
-	transition: all ease-in-out 250ms
+	transition all ease-in-out 250ms
 
 
 .bounce:hover 
-	box-shadow: 0 15px 10px rgba(0, 0, 0, 0.18) 
-	cursor: pointer
-	transform: translateY(-15px)
+	box-shadow 0 15px 10px rgba(0, 0, 0, 0.18) 
+	cursor pointer
+	transform translateY(-15px)
 
 
 .bounce-sm 
-	transition: all ease-in-out 250ms
+	transition all ease-in-out 250ms
 
 
 .bounce-sm:hover 
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.18) 
-	cursor: pointer
-	transform: translateY(-5px)
+	box-shadow 0 5px 10px rgba(0, 0, 0, 0.18) 
+	cursor pointer
+	transform translateY(-5px)
 
 
 .active-grid::after 
-	content: ""
-	position: absolute
-	margin-top: 15px
-	border-bottom: 1px solid black
-	width: 100%
-	margin-left: -50%
+	content ""
+	position absolute
+	margin-top 15px
+	border-bottom 1px solid black
+	width 100%
+	margin-left -50%
 
 
 .shrink-grid 
-	width:  4%
-	margin: 10px
+	width  4%
+	margin 10px
 
 
 .image-cross 
-	position: absolute
-	display: inline-block
-	width:  50px
-	height: 50px
-	top: 36%
-	left: 36%
-	border-radius: 100%
-	border: 1px solid black
-	opacity: 0
-	transition: all ease-in-out 250ms
+	position absolute
+	display inline-block
+	width  50px
+	height 50px
+	top 36%
+	left 36%
+	border-radius 100%
+	border 1px solid black
+	opacity 0
+	transition all ease-in-out 250ms
 
 
 .image-grid 
-	width: 100%
-	padding-bottom: 100%
-	background-color: green
-	background-position: center
-	background-repeat: no-repeat
-	background-size: cover
-	transition: all ease-in-out 250ms
+	width 100%
+	padding-bottom 100%
+	background-color green
+	background-position center
+	background-repeat no-repeat
+	background-size cover
+	transition all ease-in-out 250ms
 	
 
 /* -------------------------------------- */
@@ -527,115 +532,115 @@ p.center-caption
 
 
 .big-moment-1 
-	margin-bottom: 150px
-	display: block
-	width: 100%
-	height: 750px
-	position: relative
-	text-align: center
+	margin-bottom 150px
+	display block
+	width 100%
+	height 750px
+	position relative
+	text-align center
 	
 
 .big-moment-1 h1 
-	padding-top: 15%
+	padding-top 15%
 
 
 .big-moment-1:hover .center 
-	opacity: 1
+	opacity 1
 
 
 .big-moment-1 
-	display: block
-	width: 175%
-	left: -35%
-	height: 750px
-	position: relative
-	text-align: center
-	border-top: 1200px
-	margin-top: -1200px
-	border-bottom: 1000px
-	margin-bottom: -950px
-	border-style: solid
-	border-color: $WHITE_BG
-	z-index: -1
-	transition-timing-function: linear
-	transition: all 0.5s
+	display block
+	width 175%
+	left -35%
+	height 750px
+	position relative
+	text-align center
+	border-top 1200px
+	margin-top -1200px
+	border-bottom 1000px
+	margin-bottom -950px
+	border-style solid
+	border-color $WHITE_BG
+	z-index -1
+	transition-timing-function linear
+	transition all 0.5s
 
 
 .big-moment-1:hover img 
-	margin-top: 90px
+	margin-top 90px
 
 
 .big-moment-1-color 
-	background-repeat: no-repeat
-	background-attachment: scroll
-	background-size: cover
-	background-position: left
-	background-color: Beige
-	position: absolute
-	left: -20%
-	right: -20%
-	top: 0
-	height: 125%
-	margin-top: -225px
+	background-repeat no-repeat
+	background-attachment scroll
+	background-size cover
+	background-position left
+	background-color Beige
+	position absolute
+	left -20%
+	right -20%
+	top 0
+	height 125%
+	margin-top -225px
 	
 
 .big-moment-2 
-	margin-top:    100px
-	margin-bottom: 350px
-	display: block
-	width: 100%
-	clear: both
-	/*background-color: red*/
-	position: relative
-	text-align: center
+	margin-top    100px
+	margin-bottom 350px
+	display block
+	width 100%
+	clear both
+	/*background-color red*/
+	position relative
+	text-align center
 
 
 .big-moment-2 .img-box 
-	position: relative
-	margin-right: auto
-	float: right
-	top: -300px
+	position relative
+	margin-right auto
+	float right
+	top -300px
 
 
 .big-moment-2-color 
-	padding-top: 50%
-	background-color: Beige
-	bottom: 0
-	width: 100%
-	background-size: 100% auto
+	padding-top 50%
+	background-color Beige
+	bottom 0
+	width 100%
+	background-size 100% auto
 
 
 .big-moment-2 p.caption 
-	font-size: 12px
-	line-height: 2em
-	margin-top: 25px
-	left: 10%
-	width: 300px
-	bottom: -80px
-	text-align: left
-	position: absolute
-	display: inline-block
-	text-align: justify
-	text-justify: inter-word
-	background-color: $WHITE_BG
-	padding: 40px 30px 15px 30px
-	box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.18) 
+	font-size 12px
+	line-height 2em
+	margin-top 25px
+	left 10%
+	width 300px
+	bottom -80px
+	text-align left
+	position absolute
+	display inline-block
+	text-align justify
+	text-justify inter-word
+	background-color $WHITE_BG
+	padding 40px 30px 15px 30px
+	box-shadow 0 -10px 15px rgba(0, 0, 0, 0.18) 
 
 
 .big-moment-3 
-	margin-top:    100px
-	display: block
-	width: 100%
-	clear: both
-	position: relative
-	text-align: center
+	margin-top    100px
+	display block
+	width 100%
+	clear both
+	position relative
+	text-align center
 
 
 .big-moment-3-color 
-	height: 100%
-	bottom: 0
-	width: 100%
-	background-size: 100% auto
+	height 100%
+	bottom 0
+	width 100%
+	background-size 100% auto
 	
 
 /*
@@ -649,27 +654,27 @@ p.center-caption
 /* ----------- Non-Retina Screens ----------- */
 @media screen and (max-width: 1000px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)		
 	.description 
-		margin-left: auto
-		margin-right: auto
-		position: relative
-		order: 2
-		bottom: 35%
+		margin-left auto
+		margin-right auto
+		position relative
+		order 2
+		bottom 35%
 		
 	.hero-box
-		display: table
+		display table
 		
 
 /* ----------- Retina Screens ----------- */
 @media screen and (max-width: 1000px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
 	.description 
-		margin-left: auto
-		margin-right: auto
-		position: relative
-		order: 2
-		bottom: 35%
+		margin-left auto
+		margin-right auto
+		position relative
+		order 2
+		bottom 35%
 		
 	.hero-box
-		display: table
+		display table
 	
 
 
@@ -679,14 +684,14 @@ p.center-caption
 /* ----------- Non-Retina Screens ----------- */
 @media screen and (max-width: 768px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)	
 	.case-study
-		display: none // No case studies on mobile
+		display none // No case studies on mobile
 		
 		
 
 /* ----------- Retina Screens ----------- */
 @media screen and (max-width: 768px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
 	.case-study
-		display: none // No case studies on mobile
+		display none // No case studies on mobile
 		
 
 
@@ -695,7 +700,7 @@ p.center-caption
 @media only screen and (max-device-width: 414px) and (min-resolution: 2dppx)
 		
 	.case-study
-		display: none // No case studies on mobile
+		display none // No case studies on mobile
 		
 
 
@@ -706,32 +711,32 @@ p.center-caption
 
 
 // 	.bios-title
-// 		top: 14%
-// 		width: 75%
-// 		height: 250px
+// 		top 14%
+// 		width 75%
+// 		height 250px
 
 // 	.bios-content 
-// 		max-width: 450px
-// 		min-width: 300px
-// 		width: 100%
+// 		max-width 450px
+// 		min-width 300px
+// 		width 100%
 		
 // 	.bios-content img
-// 		clip-path: inset(0 0 30% 0)
-// 		filter: opacity(50%)
+// 		clip-path inset(0 0 30% 0)
+// 		filter opacity(50%)
 		
 // 	.copy
-// 		position: relative
-// 		left: 0
-// 		border-left: none
-// 		padding-left: 0
-// 		margin-top: 25px
+// 		position relative
+// 		left 0
+// 		border-left none
+// 		padding-left 0
+// 		margin-top 25px
 		
 // 	.body-copy
-// 		font-size: 16px
+// 		font-size 16px
 
 // 	#bios-wrapper
-// 		min-width: 300px
-// 		width: 90% 
+// 		min-width 300px
+// 		width 90% 
 
 
 

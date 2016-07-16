@@ -241,44 +241,44 @@ block content
                 // /SELECT WORK GRID SECTION
 
 
-                // PROJECT ITERATOR
-                each result, index in select_work
-                    .project.project-view.parallax&attributes({'data-inproject': true}, {'data-project': index}, {'id': result.project})
-                        // PROJECT OVERVIEW
-                        .project-overview
-                            .description
-                                .description-wrapper
-                                    h3 #{result.project_type}
-                                    h2 #{result.name}
-                                    hr
-                                    p #{result.description_short}
-                            .hero-box
-                                .overlay
-                                .hero(style='background-image: url(#{result.hero});')
-                        // /PROJECT OVERVIEW
-                        .project-contents.parallax__group
-                            .project-intro.cf
-                                .main-description 
-                                    p #{result.description_long}
-                                ul.meta-data
-                                    li Client
-                                    li #{result.meta.Client}
-                                    li Year
-                                    li #{result.meta.Year}
-                                    li Role
-                                    li #{result.meta.Role}
-                                    li Team
-                                    li #{result.meta.Team}
-                                    li Discipline
-                                    li #{result.meta.Discipline}
-                                    li Medium
-                                    li #{result.meta.Medium}
-                                    li Technologies
-                                    li #{result.meta.Technologies}
-                                    li Duration
-                                    li #{result.meta.Duration}
+                //- // PROJECT ITERATOR
+                //- each result, index in select_work
+                //-     .project.project-view.parallax&attributes({'data-inproject': true}, {'data-project': index}, {'id': result.project})
+                //-         // PROJECT OVERVIEW
+                //-         .project-overview
+                //-             .description
+                //-                 .description-wrapper
+                //-                     h3 #{result.project_type}
+                //-                     h2 #{result.name}
+                //-                     hr
+                //-                     p #{result.description_short}
+                //-             .hero-box
+                //-                 .overlay
+                //-                 .hero(style='background-image: url(#{result.hero});')
+                //-         // /PROJECT OVERVIEW
+                //-         .project-contents.parallax__group
+                //-             .project-intro.cf
+                //-                 .main-description 
+                //-                     p #{result.description_long}
+                //-                 ul.meta-data
+                //-                     li Client
+                //-                     li #{result.meta.Client}
+                //-                     li Year
+                //-                     li #{result.meta.Year}
+                //-                     li Role
+                //-                     li #{result.meta.Role}
+                //-                     li Team
+                //-                     li #{result.meta.Team}
+                //-                     li Discipline
+                //-                     li #{result.meta.Discipline}
+                //-                     li Medium
+                //-                     li #{result.meta.Medium}
+                //-                     li Technologies
+                //-                     li #{result.meta.Technologies}
+                //-                     li Duration
+                //-                     li #{result.meta.Duration}
 
-                // /PROJECT ITERATOR
+                //- // /PROJECT ITERATOR
 
 
 

@@ -95,6 +95,11 @@ $(document).ready(function() {
 
         });
 
+        // Hack to keep case study section from getting out of sync
+        if (open) {
+            $('.case-study').addClass('case-study-resize');
+        }
+
         stickyUpdate();
 
     // Kick off one resize to fix all videos on page load
@@ -223,6 +228,8 @@ $(document).ready(function() {
             $(elem).removeClass('case-study-open');
             console.log('faded');
         });
+
+        $('.case-study').removeClass('case-study-resize');
 
         open = false;
     };
