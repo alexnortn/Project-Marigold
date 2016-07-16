@@ -96,7 +96,7 @@ block content
         //BIOS SECTION
         section#bios.section&attributes({'data-inproject': false})
             #bios-wrapper
-                #bios-title.bios-title
+                #bios-title.bios-title.sticky
                     img(src = "/images/name.svg" alt = "Alex Norton")
                     p#bios-title-p !{bios_text.title}
                 #bios-content.bios-content
@@ -134,9 +134,9 @@ block content
                                 .main-description 
                                     q !{bios_text.description_pull}
                                     h4 Brief
-                                    p #{result.description_long}
+                                    p.tamer #{result.description_long}
                                     h4 Process
-                                    p #{result.description_long}
+                                    p.tamer #{result.description_long}
                                 ul.meta-data
                                     li Client
                                     li #{result.meta.Client}
