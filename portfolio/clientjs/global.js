@@ -398,13 +398,18 @@ $(document).ready(function() {
     // Sticky Elements
 
     function stickyUpdate() {
-        let bios_title = $('#bios-title')[0];
+        let bios_title = $('#bios-title')[0],
+            meta_block = $('.meta-data');
+        
         if (_mobile || window.innerWidth < 1000) {
-            stickyfill.remove(bios_title);
+            stickyfill.kill();
             return;
         }
-            stickyfill.rebuild();
-            stickyfill.add(bios_title);
+
+        stickyfill.add(bios_title);
+        stickyfill.rebuild();
+        stickyfill.add(meta_block);
+        stickyfill.remove(meta_block);
 
     }
 

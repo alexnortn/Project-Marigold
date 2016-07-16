@@ -15,6 +15,7 @@ case study
 
 $Margins = 100px
 $F-padding = 15px
+$StickyOffset = 20vh
 
 // @extend .module-font
 
@@ -203,7 +204,9 @@ p.center-caption
 	
 
 .meta-data 
-	position: relative
+	position: sticky
+	top: $StickyOffset
+
 	float: right
 	border-left: 1px solid $BLACK
 	padding: 20px 75px 0 35px
