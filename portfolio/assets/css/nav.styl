@@ -302,6 +302,7 @@ header
 	letter-spacing: 3px
 	line-height: 2em
 	text-align: right
+	transition font-size 250ms
 	
 
 .pagination::before
@@ -530,10 +531,24 @@ header
 		bottom: 3%
 		animation: arrow-animate-mobile 1s ease-in-out 2s infinite
 		transition: transform 250ms
+		
 
 
 //---------------------------------------------------------------
-// Breakpoint 5 | Medium Mobile // iPhone 5s, 5, 4
+// Breakpoint 1 | Medium Screen
+
+@media screen and (max-height: 800px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)
+	.nav ul
+		font-size 45px
+		
+
+		
+@media screen and (max-height: 800px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
+	.nav ul
+		font-size 45px
+
+//---------------------------------------------------------------
+// Breakpoint 2 | Medium Mobile // iPhone 5s, 5, 4
 @media only screen and (max-device-width: 320px) and (min-resolution: 2dppx)
 	.nav-content
 		right: 50px
