@@ -22,7 +22,7 @@ let velocity    = require('velocity-animate'),
 // Userlist data array for filling in info box
 let userListData = [],
     projects,
-    open = false,
+    case_study_open = false,
     menu = false,
     active_project_id;
 
@@ -97,7 +97,7 @@ $(document).ready(function() {
         });
 
         // Hack to keep case study section from getting out of sync
-        if (open) {
+        if (case_study_open) {
             $('.case-study').addClass('case-study-resize');
         }
 
@@ -167,24 +167,24 @@ $(document).ready(function() {
         let elem = evt.currentTarget.id;  // Navigate
         scrollTo(elem);
         
-        open = !open; // Case Study
+        case_study_open = !case_study_open; // Case Study
 
-        !open
-            ? closeProject(elem, evt)
-            : openProject(elem, evt); 
+        !case_study_open
+            ? closeCasestudy(elem, evt)
+            : openCasestudy(elem, evt); 
     });
 
     $('.select-work-item').click(function(evt) {   // Open Project
         let elem = evt.currentTarget.id;  // Navigate
 
-        open = !open; // Open Project
+        case_study_open = !case_study_open; // Open Project
 
-        !open
-            ? closeProject(elem, evt)
-            : openProject(elem, evt);     
+        !case_study_open
+            ? closeCasestudy(elem, evt)
+            : openCasestudy(elem, evt);     
     });
 
-    function openProject(elem, evt) {
+    function openCasestudy(elem, evt) {
         $('#pagination').fadeToggle(1000);
         $('body').addClass('project-open');
 
@@ -220,9 +220,9 @@ $(document).ready(function() {
         videoSize(); // Size the video accordingly
     }
 
-    // No element pass, there is only one active-project class --> remove it
-    // When you open project, actually log globally
-    function closeProject(evt) {
+    // Make this more generalizable?
+    // Close casestudy vs close project?
+    function closeCasestudy(evt) {
         $('#pagination').fadeToggle('slow');
 
         $(active_project_id).find('.case-study-contents').fadeOut('slow', function() {
@@ -233,13 +233,13 @@ $(document).ready(function() {
 
         $('.case-study').removeClass('case-study-resize');
 
-        open = false;
+        case_study_open = false;
     };
 
 
     // Close Project
     $('.close').click(function() {
-        closeProject();
+        closeCasestudy();
     });
     
 
@@ -259,6 +259,11 @@ $(document).ready(function() {
         let target = getEventTarget(event);
         _sectionCurrent = target.getAttribute('data-nav'); // Get target id from data attr
         closeNav(); // Close Section
+
+        if (case_study_open) {
+            case_study_open = !case_study_open; // Case Study
+            closeCasestudy();
+        }
 
         if (_sectionCurrent == "works") {
             _sectionCurrent = $(".case-study-view").attr('id');
@@ -358,9 +363,9 @@ $(document).ready(function() {
     $('#logo').click(function(){
         
         //  Close current project
-        if (open) {
-            open = !open; // Case Study
-            closeProject();
+        if (case_study_open) {
+            case_study_open = !case_study_open; // Case Study
+            closeCasestudy();
         }
 
         _sectionCurrent = "web-lab"; // Set #web-lab as current
@@ -371,7 +376,7 @@ $(document).ready(function() {
     // Header navigation --> Go Home (clicking 'a' sends the users to /#bios)
     $('#logo-header').click(function(){
         
-        if (open) closeProject(); //  Close current project
+        if (case_study_open) closeCasestudy(); //  Close current project
         closeNav() // Close nav
 
         _sectionCurrent = "web-lab"; // Set #web-lab as current
