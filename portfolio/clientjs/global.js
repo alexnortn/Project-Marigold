@@ -433,6 +433,11 @@ $(document).ready(function() {
     // --------------------------------------
     // Mobile
 
+    // Hide Case study option
+    if (_mobile) {
+        $('.case-study').addClass('hidden');
+    }
+
     /*
         Alternative check for mobile devices
 

@@ -14,211 +14,214 @@ Style Guide
 
 
 body 
-	color: $BLACK
-	font-size: 12px
-	height: 100%
-	overflow-y: visible
-	overflow-x: hidden
-	margin: 0
-	width: 100%
-	background-color: $WHITE_BG
-	position: absolute
-	letter-spacing: .01rem
-	opacity: 0
-	transition: opacity ease-in-out 1000ms
+	color $BLACK
+	font-size 12px
+	height 100%
+	overflow-y visible
+	overflow-x hidden
+	margin 0
+	width 100%
+	background-color $WHITE_BG
+	position absolute
+	letter-spacing .01rem
+	opacity 0
+	transition opacity ease-in-out 1000ms
 
 body::selection 
-	background: $GREY
+	background $GREY
 
 
 div::selection 
-	background: $GREY
+	background $GREY
 	
 section
-	display: flex
+	display flex
 
 
 h2 
-	font-family: 'Circular-Bold'
-	font-size: 35px
-	letter-spacing: 5px
+	font-family 'Circular-Bold'
+	font-size 35px
+	letter-spacing 5px
 
 
 h2::selection 
-	background: $GREY
+	background $GREY
 
 
 h1 
-	font-family: 'Circular-Bold'
-	/*text-transform: uppercase*/
-	font-weight: 300
-	font-size: 30px
-	/*letter-spacing: 5px*/
-	line-height: 1.5em
+	font-family 'Circular-Bold'
+	/*text-transform uppercase*/
+	font-weight 300
+	font-size 30px
+	/*letter-spacing 5px*/
+	line-height 1.5em
 
 
 h1::selection 
-	background: $GREY
+	background $GREY
 
 
 p 
-	font-family: 'Chronicle-Roman'
-	text-rendering: optimizeLegibility
+	font-family 'Chronicle-Roman'
+	text-rendering optimizeLegibility
 
 
 p::selection 
-	background: $GREY
+	background $GREY
 
 
 strong::selection 
-	background: $GREY
+	background $GREY
 
 
 a 
-  color: #00B7FF
+  color #00B7FF
 
 
 a::selection 
-	background: $GREY
+	background $GREY
 
 
 strong 
-	font-family: 'Circular-Bold', sans-serif
+	font-family 'Circular-Bold', sans-serif
 
 
 .loading 
-	opacity: 1
+	opacity 1
 
 
 .boost-space 
-	line-height: 3em
+	line-height 3em
 	
 
 #wrapper
-	width: 100%
-	height: 100%
-	display: flex
+	width 100%
+	height 100%
+	display flex
+	
+.hidden
+	display none
 
 
 .section-prev 
-	padding: 30px
-	position: absolute
-	left: 0
-	text-align: left
-	margin-left: 2%
-	display: inline-block
-	width: 20%
+	padding 30px
+	position absolute
+	left 0
+	text-align left
+	margin-left 2%
+	display inline-block
+	width 20%
 
 
 .section-prev:hover 
-	cursor: pointer
+	cursor pointer
 
 
 .section-prev i 
-	display: inline-block
-	position: relative
-	padding-right: 10px
-	margin-top: 1px
-	color: white
+	display inline-block
+	position relative
+	padding-right 10px
+	margin-top 1px
+	color white
 
 
 .section-current 
-	padding: 30px
-	position: relative
-	margin-right: auto
-	margin-left: auto
-	text-align: center
-	display: inline-block
+	padding 30px
+	position relative
+	margin-right auto
+	margin-left auto
+	text-align center
+	display inline-block
 
 
 .section-next 
-	padding: 30px
-	position: absolute
-	right: 0
-	margin-right: 2%
-	text-align: right
-	display: inline-block
-	width: 20%
+	padding 30px
+	position absolute
+	right 0
+	margin-right 2%
+	text-align right
+	display inline-block
+	width 20%
 
 
 .section-next:hover 
-	cursor: pointer
+	cursor pointer
 
 
 .section-next i 
-	display: inline-block
-	position: relative
-	padding-left: 5px
-	margin-top: 1px
-	color: white
+	display inline-block
+	position relative
+	padding-left 5px
+	margin-top 1px
+	color white
 
 
 .qt-opacity 
-	opacity: 0.25
-	cursor: default
+	opacity 0.25
+	cursor default
 
 
 p#interests 
-	font-family: BerlingskeSans-Bold, sans-serif
-	text-rendering: geometricPrecision
-	letter-spacing: 2px
-	font-size: 12px
+	font-family BerlingskeSans-Bold, sans-serif
+	text-rendering geometricPrecision
+	letter-spacing 2px
+	font-size 12px
 
 
 p.describe 
-	font-family: BerlingskeSansRegular, sans-serif
-	text-rendering: geometricPrecision
-	letter-spacing: 0px
-	font-size: 12px
-	width: 450px
-	line-height: 2em
-	padding: 40px
+	font-family BerlingskeSansRegular, sans-serif
+	text-rendering geometricPrecision
+	letter-spacing 0px
+	font-size 12px
+	width 450px
+	line-height 2em
+	padding 40px
 
 
 p.directions 
-	padding-left: 15px
-	text-decoration: none
+	padding-left 15px
+	text-decoration none
 
 
 #content-wrapper 
-	/*display: none*/
-	width: 100%
-	height: 100%
-	position: relative
-	display: block
+	/*display none*/
+	width 100%
+	height 100%
+	position relative
+	display block
 
 
 .overlay 
-	width: 100%
-	height: 100%
-	display: block
-	position: absolute
-	background-color: rgba(255,255,255,0)
-	transition: background-color 1s ease-in-out
+	width 100%
+	height 100%
+	display block
+	position absolute
+	background-color rgba(255,255,255,0)
+	transition background-color 1s ease-in-out
 
 
 .bottom-rule 
-	width: 20%
-	margin-left: auto
-	margin-right: auto
-	position: relative
-	border-bottom: solid 5px rgb(100,100,100)
+	width 20%
+	margin-left auto
+	margin-right auto
+	position relative
+	border-bottom solid 5px rgb(100,100,100)
 
 
 .top-rule 
-	width: 20%
-	margin-top: 200px
-	margin-left: auto
-	margin-right: auto
-	position: relative
-	border-top: solid 5px rgb(100,100,100)
+	width 20%
+	margin-top 200px
+	margin-left auto
+	margin-right auto
+	position relative
+	border-top solid 5px rgb(100,100,100)
 
 
 .content-wrapper 
-	width: 75%
-	margin-left: auto
-	margin-right: auto
-	position: relative
+	width 75%
+	margin-left auto
+	margin-right auto
+	position relative
 
 
 /*
@@ -229,12 +232,12 @@ p.directions
 
 .cf:before,
 .cf:after 
-	content: " " /* 1 */
-	display: table /* 2 */
+	content " " /* 1 */
+	display table /* 2 */
 
 
 .cf:after 
-	clear: both
+	clear both
 
 
 /*
@@ -244,59 +247,59 @@ p.directions
 */
 
 .plus_plus_plus
-	z-index: 1000
+	z-index 1000
 
 
 .plus_plus
-	z-index: 999
+	z-index 999
 	
 
 .plus
-	z-index: 998
+	z-index 998
 	
 
 .center 
-	position: relative
-	font-family: Vaud-Bold
-	font-size: 50px
-	color: rgba(50,50,50,1)
-	opacity: 0
-	z-index: 10
-	transition-timing-function: ease-in-out
-	transition: all .5s
+	position relative
+	font-family Vaud-Bold
+	font-size 50px
+	color rgba(50,50,50,1)
+	opacity 0
+	z-index 10
+	transition-timing-function ease-in-out
+	transition all .5s
 
 
 .white 
-	width: 100%
-	background-color: $WHITE
+	width 100%
+	background-color $WHITE
 	
 
 #video-frame 
-	width: 100%
-	height: auto
-	margin-left: auto
-	margin-right: auto
-	margin-top: 100px
-	margin-bottom: 100px
-	text-align: center
+	width 100%
+	height auto
+	margin-left auto
+	margin-right auto
+	margin-top 100px
+	margin-bottom 100px
+	text-align center
 
 
 .clothes-line 
-	width: 25px
-	height: 5px
-	text-align: center
-	margin-top: 50%
+	width 25px
+	height 5px
+	text-align center
+	margin-top 50%
 	
 .sticky
-	position: sticky
+	position sticky
 
 
 // SVG stuff
 
 line 
-	stroke: rgb(218,218,218)
-	stroke-width: 10px
-	stroke-linecap: round
+	stroke rgb(218,218,218)
+	stroke-width 10px
+	stroke-linecap round
 						
 
 
