@@ -23,7 +23,8 @@ let velocity    = require('velocity-animate'),
 let userListData = [],
     projects,
     open = false,
-    menu = false;
+    menu = false,
+    active_project_id;
 
 let _sections = $('.section'),
     _sectionCurrent;
@@ -188,21 +189,21 @@ $(document).ready(function() {
         $('body').addClass('project-open');
 
         let work_type = evt.currentTarget.classList[0];
-        elem = "#" + elem;
+        active_project_id = "#" + elem;
 
         if (work_type === "case-study") {
 
-            $(elem).find('.case-study-contents')
+            $(active_project_id).find('.case-study-contents')
                    .fadeToggle(1000);
-            $(elem).addClass('case-study-open');
+            $(active_project_id).addClass('case-study-open');
 
-            let bottomSlick = $(elem).find('.big-moment-3');
+            let bottomSlick = $(active_project_id).find('.big-moment-3');
             if (!bottomSlick.hasClass('slick-initialized')) { 
                 addSlick(bottomSlick, true);
             };
 
-             $(elem).find('.case-study-overview').velocity("scroll", { 
-                container: $(elem).find('.case-study-view'),
+             $(active_project_id).find('.case-study-overview').velocity("scroll", { 
+                container: $(active_project_id).find('.case-study-view'),
                 duration:  800,
                 delay:     250,
                 offset:    '800px',
@@ -219,13 +220,14 @@ $(document).ready(function() {
         videoSize(); // Size the video accordingly
     }
 
-    function closeProject(elem, evt) {
+    // No element pass, there is only one active-project class --> remove it
+    // When you open project, actually log globally
+    function closeProject(evt) {
         $('#pagination').fadeToggle('slow');
 
-        elem = "#" + elem;
-        $(elem).find('.case-study-contents').fadeOut('slow', function() {
+        $(active_project_id).find('.case-study-contents').fadeOut('slow', function() {
             $('body').removeClass('project-open');
-            $(elem).removeClass('case-study-open');
+            $(active_project_id).removeClass('case-study-open');
             console.log('faded');
         });
 
@@ -356,7 +358,10 @@ $(document).ready(function() {
     $('#logo').click(function(){
         
         //  Close current project
-        if (open) closeProject();
+        if (open) {
+            open = !open; // Case Study
+            closeProject();
+        }
 
         _sectionCurrent = "web-lab"; // Set #web-lab as current
         scrollTo(_sectionCurrent); // Navigate
