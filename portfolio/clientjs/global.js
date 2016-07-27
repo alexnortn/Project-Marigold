@@ -195,7 +195,7 @@ $(document).ready(function() {
 
             $(active_project_id).find('.case-study-contents')
                    .fadeToggle(1000);
-            $(active_project_id).addClass('case-study-open');
+            $(active_project_id).addClass('case-study-open sticky');
 
             let bottomSlick = $(active_project_id).find('.big-moment-3');
             if (!bottomSlick.hasClass('slick-initialized')) { 
@@ -216,7 +216,8 @@ $(document).ready(function() {
             
             $(project).fadeToggle(1000);
         }
-        
+
+        stickyUpdate();        
         videoSize(); // Size the video accordingly
     }
 
@@ -227,13 +228,16 @@ $(document).ready(function() {
 
         $(active_project_id).find('.case-study-contents').fadeOut('slow', function() {
             $('body').removeClass('project-open');
-            $(active_project_id).removeClass('case-study-open');
+            $(active_project_id).removeClass('case-study-open sticky');
             console.log('faded');
         });
 
         $('.case-study').removeClass('case-study-resize');
 
         case_study_open = false;
+
+        stickyfill.remove($(active_project_id)[0]);
+
     };
 
 
@@ -416,6 +420,8 @@ $(document).ready(function() {
 
     function stickyUpdate() {
         let stickyElements = $('.sticky');
+
+        stickyfill.kill(); // --> Reset
         
         if (_mobile || window.innerWidth < 1000) {
             stickyfill.kill();

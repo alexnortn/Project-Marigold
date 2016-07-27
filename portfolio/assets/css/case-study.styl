@@ -15,7 +15,8 @@ case study
 
 $Margins = 100px
 $F-padding = 15px
-$StickyOffset = 20vh
+$StickyOffsetMeta = 20vh
+$StickyOffsetCase = 100px
 
 // @extend .module-font
 
@@ -44,7 +45,8 @@ $StickyOffset = 20vh
 	transition all 250ms
 	
 
-.case-study-view 
+.case-study-view
+	top $StickyOffsetCase
 	position relative
 	overflow hidden
 	transition all 250ms ease-in-out
@@ -212,7 +214,7 @@ p.center-caption
 	
 
 .meta-data 
-	top $StickyOffset
+	top $StickyOffsetMeta
 	height 500px
 
 	float right
@@ -382,7 +384,7 @@ p.center-caption
 
 
 .image-box--bottom 
-	margin-bottom 125px
+	margin-bottom 150px
 
 
 .image-box--center 
@@ -605,7 +607,7 @@ p.center-caption
 	
 
 .big-moment-2 
-	margin-top    100px
+	margin-top 150px
 	margin-bottom 30%
 	display block
 	width 100%
@@ -643,7 +645,7 @@ p.center-caption
 	left 10%
 	width 20vw
 	min-width 225px
-	max-width 400px
+	max-width 350px
 	bottom -25%
 	text-align left
 	position absolute
@@ -651,12 +653,13 @@ p.center-caption
 	text-align justify
 	text-justify inter-word
 	background-color $WHITE_BG
-	padding 5vw
+	padding 3.5vw
 	box-shadow 0 -10px 15px rgba(0, 0, 0, 0.18) 
 
 
 .big-moment-3 
-	margin-top    100px
+	margin-top 100px
+	padding-bottom 250px
 	display block
 	width 100%
 	clear both
@@ -669,6 +672,9 @@ p.center-caption
 	bottom 0
 	width 100%
 	background-size 100% auto
+	
+.big-moment-3 ul.slick-dots
+	position initial
 	
 
 /*
