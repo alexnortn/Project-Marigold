@@ -27,7 +27,7 @@ let userListData = [],
 
 let _sections = $('.section'),
     _sectionCurrent,
-    _active_project_id;
+    _caseStudySupport;
 
 let stickyfill = Stickyfill();
 // let widowtamer = WidowTamer();
@@ -57,6 +57,8 @@ $(document).ready(function() {
     hashRoute();
     hashChanged();
 
+    _caseStudySupport = caseStudySupport(); // Set up case study support
+
     $('body').addClass('loading');
 
     // Center In
@@ -84,16 +86,14 @@ $(document).ready(function() {
     // When the window is resized some fancy ui positioning
     $(window).resize(function() {
 
-            newWidth = $fluidEl.width();
+        newWidth = $fluidEl.width();
 
         // Resize all videos according to their own aspect ratio
         $allVideos.each(function() {
-
             let $elem = $(this);
             $elem
               .width(newWidth)
               .height(newWidth * $elem.data('aspectRatio'));
-
         });
 
         // Hack to keep case study section from getting out of sync
@@ -381,39 +381,40 @@ $(document).ready(function() {
         let elem = evt.currentTarget.id;  // Navigate
         animation.scrollToVelocity(elem);
 
-        $('.case-study').hasClass('case-study-open')
+        $(this).hasClass('case-study-open')
             ? closeCasestudy(elem, evt)
             : openCasestudy(elem, evt); 
     });
 
-    $('.select-work-item').click(function(evt) {   // Open Project
-        let elem = evt.currentTarget.id;  // Navigate
+    // $('.select-work-item').click(function(evt) {   // Open Project
+    //     let elem = evt.currentTarget.id;  // Navigate
 
-        $('.case-study').hasClass('case-study-open')
-            ? openCasestudy(elem, evt)
-            : closeCasestudy(elem, evt);     
-    });
+    //     $('.case-study').hasClass('case-study-open')
+    //         ? openCasestudy(elem, evt)
+    //         : closeCasestudy(elem, evt);     
+    // });
 
     function openCasestudy(elem, evt) {
         $('#pagination').fadeToggle(1000);
         $('body').addClass('project-open');
 
         let work_type = evt.currentTarget.classList[0];
-        _active_project_id = "#" + elem;
+        elem = "#" + elem;
+
+        _caseStudySupport.addListener($(elem)); // Set up case study sticky listener
 
         if (work_type === "case-study") {
 
-            $(_active_project_id).find('.case-study-contents')
-                   .fadeToggle(1000);
-            $(_active_project_id).addClass('case-study-open');
+            $(elem).find('.case-study-contents').fadeToggle(1000);
+            $(elem).addClass('case-study-open');
 
-            let bottomSlick = $(_active_project_id).find('.big-moment-3');
+            let bottomSlick = $(elem).find('.big-moment-3');
             if (!bottomSlick.hasClass('slick-initialized')) { 
                 addSlick(bottomSlick, true);
             };
 
-             $(_active_project_id).find('.case-study-overview').velocity("scroll", { 
-                container: $(_active_project_id).find('.case-study-view'),
+             $(elem).find('.case-study-overview').velocity("scroll", { 
+                container: $(elem).find('.case-study-view'),
                 duration:  800,
                 delay:     250,
                 offset:    '800px',
@@ -434,11 +435,15 @@ $(document).ready(function() {
     // Make this more generalizable?
     // Close casestudy vs close project?
     function closeCasestudy(evt) {
+        let elem = $('.case-study-open');
+
         $('#pagination').fadeToggle('slow');
 
-        $(_active_project_id).find('.case-study-contents').fadeOut('slow', function() {
-            $('body').removeClass('project-open');
-            $(_active_project_id).removeClass('case-study-open');
+        _caseStudySupport.removeListener(elem); // Set up case study sticky listener
+        
+        elem.find('.case-study-contents').fadeOut('slow', function() { // Eh kind of wordy
+                $('body').removeClass('project-open');
+                $(this).removeClass('case-study-open');
         });
 
         $('.case-study').removeClass('case-study-resize');
@@ -450,94 +455,95 @@ $(document).ready(function() {
     $('.close').click(function() {
         closeCasestudy();
     });    
-    
+
 
     // --------------------------------------
-    // Raw JS Class Shim
+    // Case Study Support
 
-    function hasClass(el, className) {
-        if (el.classList) {
-            return el.classList.contains(className);
-        }
-        else {
-            return !!el.className.match(new RegExp('(\\s|^)' + className + '(\\s|$)'));    
-        }
-    }
+    function caseStudySupport() {
+        let last_known_scroll_position = 0,
+            last_known_scroll_position1 = 0,
+            ticking = false,
+            scrollThreshold = 0;
 
-    function addClass(el, className) {
-        if (el.classList) {
-            el.classList.add(className);
-        }
-        else if (!hasClass(el, className)) {
-            el.className += " " + className;
-        }
-    }
+        // Set height offset for sticky
+        function updateThreshold() {
+            /*
+                Whatever it takes to make this equal 86%
+                (element.scrollTop / element.scrollHeight) * 100;
 
-    function removeClass(el, className) {
-        if (el.classList) {
-            el.classList.remove(className);
+                find 86% of new height
+                calculate doc.bod.scrollTop, there
+
+                Pass in jQuery object?
+
+            */
+            // let scrollPercent = (element.scrollTop / element.scrollHeight) * 100;
+            // scrollThreshold = document.body.scrollTop;
         }
-        else if (hasClass(el, className)) {
-            let reg = new RegExp('(\\s|^)' + className + '(\\s|$)');
-            el.className=el.className.replace(reg, ' ');
-        }
-    }
 
-    // --------------------------------------
-    // Performant Scroll Listerner
-
-    let last_known_scroll_position = 0;
-    let last_known_scroll_position1 = 0;
-    let ticking = false;
-    let scrollThreshold = 1e10;
-
-    function scrollChecker(element) {
-        if (element.classList.contains('case-study-open')) {
-            let scrollPercent = (element.scrollTop / element.scrollHeight) * 100;
+        function scrollCheckerEnter($element) {
+            let scrollPercent = ($element.scrollTop() / $element.prop("scrollHeight")) * 100;
 
             if (scrollPercent >= 86) { // Experimentally Determined
-                addClass(element, 'case-study-sticky');
-                removeClass(document.body, 'project-open');
-                scrollThreshold = document.body.scrollTop;
+                $element.addClass('case-study-sticky');
+                $('body').removeClass('project-open');
+                scrollThreshold = $('body').scrollTop();
             }
         }
-    }
 
-    function scrollChecker1(element, scroll_pos, threshold) {
-        if (element.classList.contains('case-study-open')) {
+        function scrollCheckerExit($element, scroll_pos, threshold) {
             if (scroll_pos <= threshold) { // Re-Enter Project upwards
-                removeClass(element, 'case-study-sticky');
-                addClass(document.body, 'project-open');
+                $element.removeClass('case-study-sticky');
+                $('body').addClass('project-open');
             }
         }
+
+        // Scroll listener for Case Study
+        function addListener($element) {
+            $element.scroll(function(evt) { // Search for case-study with open class
+                last_known_scroll_position = window.scrollY;
+                if (!ticking) {
+                    window.requestAnimationFrame(function() {
+                        scrollCheckerEnter($element);
+                        ticking = false;
+                    });
+                }
+                ticking = true;
+            });
+
+            // Scroll event listener for window
+            $(window).scroll(function(evt) {
+                last_known_scroll_position1 = window.scrollY;
+                if (!ticking) {
+                    window.requestAnimationFrame(function() {
+                        scrollCheckerExit($element, last_known_scroll_position1, scrollThreshold);
+                        ticking = false;
+                    });
+                }
+                ticking = true;
+            });
+        }
+
+        function removeListener($element) {
+            // // Remove event listener <resize> project close
+            // $element.removeEventListener('resize', function(evt) {
+            //     scrollCheckerExit($element, last_known_scroll_position, scrollThreshold);
+            // });
+
+            // Remove Scroll event listener for element
+            $element.off();
+
+            // Remove Scroll event listener for window
+            $(window).off();
+        }
+
+        return {
+            addListener: addListener,
+            removeListener: removeListener,
+            updateThreshold: updateThreshold,
+        };
     }
-
-    // Scroll listener for Case Study
-    let case_study = document.getElementsByClassName('case-study');
-        case_study = case_study.length > 1 ? case_study.length = 1 : case_study = case_study;
-
-    case_study[0].addEventListener('scroll', function(evt) {
-        last_known_scroll_position = window.scrollY;
-        if (!ticking) {
-            window.requestAnimationFrame(function() {
-                scrollChecker(case_study[0]);
-                ticking = false;
-            });
-        }
-        ticking = true;
-    });
-
-    // Scroll event listener for window
-    window.addEventListener('scroll', function(evt) {
-        last_known_scroll_position1 = window.scrollY;
-        if (!ticking) {
-            window.requestAnimationFrame(function() {
-                scrollChecker1(case_study[0], last_known_scroll_position1, scrollThreshold);
-                ticking = false;
-            });
-        }
-        ticking = true;
-    });
 });
 
 // Functions =============================================================
