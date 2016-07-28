@@ -372,19 +372,6 @@ $(document).ready(function() {
 
     // --------------------------------------
     // Works Interaction
-    
-    $(".case-study-view .case-study-contents").click(function(evt) {
-        evt.stopPropagation(); // keep child elements from toggling case-study
-    });
-
-    $('.case-study-view').click(function(evt) {   // Open Case Study
-        let elem = evt.currentTarget.id;  // Navigate
-        animation.scrollToVelocity(elem);
-
-        $(this).hasClass('case-study-open')
-            ? closeCasestudy(elem, evt)
-            : openCasestudy(elem, evt); 
-    });
 
     // $('.select-work-item').click(function(evt) {   // Open Project
     //     let elem = evt.currentTarget.id;  // Navigate
@@ -443,7 +430,7 @@ $(document).ready(function() {
         
         elem.find('.case-study-contents').fadeOut('slow', function() { // Eh kind of wordy
                 $('body').removeClass('project-open');
-                $(this).removeClass('case-study-open');
+                $('.case-study').removeClass('case-study-open');
         });
 
         $('.case-study').removeClass('case-study-resize');
@@ -466,6 +453,8 @@ $(document).ready(function() {
             ticking = false,
             scrollThreshold = 0;
 
+            setup();
+
         // Set height offset for sticky
         function updateThreshold() {
             /*
@@ -480,6 +469,21 @@ $(document).ready(function() {
             */
             // let scrollPercent = (element.scrollTop / element.scrollHeight) * 100;
             // scrollThreshold = document.body.scrollTop;
+        }
+
+        function setup() {
+            $(".case-study-view .case-study-contents").click(function(evt) {
+                evt.stopPropagation(); // keep child elements from toggling case-study
+            });
+
+            $('.case-study-view').click(function(evt) {   // Open Case Study
+                let elem = evt.currentTarget.id;  // Navigate
+                animation.scrollToVelocity(elem);
+
+                $(this).hasClass('case-study-open')
+                    ? closeCasestudy(elem, evt)
+                    : openCasestudy(elem, evt); 
+            });
         }
 
         function scrollCheckerEnter($element) {
@@ -536,6 +540,8 @@ $(document).ready(function() {
 
             // Remove Scroll event listener for window
             $(window).off();
+
+            setup();
         }
 
         return {
