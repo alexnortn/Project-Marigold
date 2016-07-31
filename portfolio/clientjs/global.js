@@ -455,22 +455,6 @@ $(document).ready(function() {
 
             setup();
 
-        // Set height offset for sticky
-        function updateThreshold() {
-            /*
-                Whatever it takes to make this equal 86%
-                (element.scrollTop / element.scrollHeight) * 100;
-
-                find 86% of new height
-                calculate doc.bod.scrollTop, there
-
-                Pass in jQuery object?
-
-            */
-            // let scrollPercent = (element.scrollTop / element.scrollHeight) * 100;
-            // scrollThreshold = document.body.scrollTop;
-        }
-
         function setup() {
             $(".case-study-view .case-study-contents").click(function(evt) {
                 evt.stopPropagation(); // keep child elements from toggling case-study
@@ -547,7 +531,6 @@ $(document).ready(function() {
         return {
             addListener: addListener,
             removeListener: removeListener,
-            updateThreshold: updateThreshold,
         };
     }
 });
@@ -608,7 +591,7 @@ function hashRoute() {
     let changed = false;
     let currentHash = null;
 
-    $(window).scroll(function () {
+    $(document).scroll(function () {
         let newTop = $(document).scrollTop();
        
         changed = newTop != top;
@@ -655,14 +638,11 @@ function hashRoute() {
 function toggleLogo(loc) {
     let header = $('#header');
 
-    if (loc == "#web-lab") {
-        if (header.css('display') == 'block') {    
-            header.velocity("fadeOut", { duration: 250 });
-        }
+    if (loc === "#web-lab") { 
+        console.log('hide');
+        header.removeClass('header-open');
     } else {
-        if (header.css('display') == 'none') {    
-            header.velocity("fadeIn", { duration: 500 });
-        }
+        header.addClass('header-open');
     }
 }
 

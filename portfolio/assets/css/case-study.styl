@@ -34,7 +34,7 @@ $StickyOffsetCase = 100px
 
 .case-study-overview 
 	width 100%
-	height 70vh
+	height 60vh
 	min-height 600px
 	position absolute
 	left 0
@@ -462,7 +462,7 @@ p.center-caption
 	position relative
 	display block
 	text-align center
-	margin-top 100px
+	margin-top 150px
 	margin-bottom 150px
 
 
@@ -555,15 +555,6 @@ p.center-caption
 	bottom 0
 	width 100%
 	background-size 100% auto
-
-
-.big-moment-1 
-	margin-bottom 150px
-	display block
-	width 100%
-	height 750px
-	position relative
-	text-align center
 	
 
 .big-moment-1 h1 
@@ -578,13 +569,13 @@ p.center-caption
 	display block
 	width 175%
 	left -35%
-	height 750px
+	height 70vh
 	position relative
 	text-align center
-	border-top 1200px
-	margin-top -1200px
-	border-bottom 1000px
-	margin-bottom -950px
+	border-top 130vh
+	margin-top -130vh
+	border-bottom 100vh
+	margin-bottom -100vh
 	border-style solid
 	border-color $WHITE_BG
 	z-index -1
@@ -715,7 +706,7 @@ p.center-caption
 		display table
 		
 	.case-study-intro 
-		padding-top 200px
+		padding-top 325px
 		
 	.case-study-contents blockquote
 		font-size 45px
@@ -725,6 +716,12 @@ p.center-caption
 		
 	p.center-caption
 		width 65%
+		
+	.case-study
+		min-height 850px
+		
+	.big-moment-1 
+		height 80vh
 		
 
 /* ----------- Retina Screens ----------- */
@@ -740,7 +737,7 @@ p.center-caption
 		display table
 		
 	.case-study-intro 
-		padding-top 200px
+		padding-top 325px
 		
 	.case-study-contents blockquote
 		font-size 45px
@@ -750,23 +747,28 @@ p.center-caption
 		
 	p.center-caption
 		width 65%
-	
+		
+	.case-study
+		min-height 850px
+		
+	.big-moment-1 
+		height 80vh	
 
 
 /*---------------------------------------------------------------*/
 /* Breakpoint 2 | Tiny Screen || iPad */
 
-/* ----------- Non-Retina Screens ----------- */
+// /* ----------- Non-Retina Screens ----------- */
 // @media screen and (max-width: 768px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)	
 // 	.case-study
-// 		display none // No case studies on mobile
+// 		min-height 850px
 		
 		
 
 // /* ----------- Retina Screens ----------- */
 // @media screen and (max-width: 768px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
 // 	.case-study
-// 		display none // No case studies on mobile
+// 		min-height 850px
 		
 
 
