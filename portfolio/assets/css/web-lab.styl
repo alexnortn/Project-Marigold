@@ -12,129 +12,131 @@ require('color.styl')
 // General Elements
 
 #web-lab 
-	width: 100%
-	height: 100%
+	width 100%
+	height 100%
 	
 
 #greeting 
-	position: absolute
-	display: inline-block
-	margin-top: 35px
-	margin-left: 35px
+	position absolute
+	display inline-block
+	margin-top 35px
+	margin-left 35px
 
 	
 // --------------------------------------	
 // General interactive style
 .button
-	position: relative
-	display: flex
-	align-items: center
-	justify-content: center
-	user-select: none 
-	width: 50px
-	height: 50px
-	border: 1px solid rgba(35 35 35 1)
-	background-color: transparent
-	border-radius: 3px
-	transition: border ease 250ms
+	position relative
+	display flex
+	align-items center
+	justify-content center
+	user-select none 
+	width 50px
+	height 50px
+	border 1px solid rgba(35 35 35 1)
+	background-color transparent
+	border-radius 3px
+	transition border ease 250ms
 	
 
 .button:hover
-	cursor: pointer
+	cursor pointer
 	
 
 #web-lab ul
-	list-style: none
+	list-style none
 	
 
 #web-lab input
-	visibility: hidden
+	visibility hidden
 	
 
 .lab-menu label
-	cursor: pointer
-	transition: color 100ms ease
+	cursor pointer
+	transition color 100ms ease
 	
 
 // --------------------------------------
 // f(x) styles
 
-#lab-options
-	position: fixed
-	display: flex
-	align-items: center
-	user-select: none
-	left: 35px
-	bottom: 35px
-	width: 400px
-	height: 50px;
+.lab-options
+	position fixed
+	display flex
+	align-items center
+	user-select none
+	left 35px
+	bottom 35px
+	width 400px
+	height 50px;
+	opacity 0 
+	transition opacity 250ms ease-in-out
 	
 
 .lab-options-element
-	position: absolute
-	clip: rect(0,0,0,0)
+	position absolute
+	clip rect(0,0,0,0)
 	
 
 label[for="lab-options-element"]
-	float: left
+	float left
 		
 
 label[for="lab-options-element"] p 
-	font-family: Chronicle-Semitalic
-	letter-spacing: 1px
-	display: block
-	font-size: 12px
-	color: $BLACK
-	align-self: center
-	text-align: center    
-	transition: color ease 250ms
+	font-family Chronicle-Semitalic
+	letter-spacing 1px
+	display block
+	font-size 12px
+	color $BLACK
+	align-self center
+	text-align center    
+	transition color ease 250ms
 
 
 .lab-options-element:checked ~ .lab-menu
-	opacity: 1
+	opacity 1
 	
 
 .lab-options-element:checked + label
-	border: 1px solid rgba(35 35 35 0)
-	cursor: pointer
+	border 1px solid rgba(35 35 35 0)
+	cursor pointer
 	
 
 .lab-menu
-	display: inline
-	text-align: left
-	opacity: 0
+	display inline
+	text-align left
+	opacity 0
 	float left
-	width: 80%
-	transition: opacity ease 250ms
+	width 80%
+	transition opacity ease 250ms
 	
 	
 .lab-menu ul li
-	display: inline-block
-	padding-left: 10px
-	padding-right: 10px
-	border-left: 1px solid $GREY
-	transition: color ease 100ms
+	display inline-block
+	padding-left 10px
+	padding-right 10px
+	border-left 1px solid $GREY
+	transition color ease 100ms
 	
 
 .lab-menu ul li label
-	font-family: Circular-Bold
-	font-size: 12px
-	text-transform: uppercase
-	letter-spacing: 3px
-	color: $GREY
+	font-family Circular-Bold
+	font-size 12px
+	text-transform uppercase
+	letter-spacing 3px
+	color $GREY
 	
 
 .lab-menu label:hover
-	cursor: pointer
-	color: $BLACK
+	cursor pointer
+	color $BLACK
 	
 
 .lab-menu input + label
-	color: $GREY
+	color $GREY
 	
 
 .lab-menu input:checked + label
-	color: $BLACK
+	color $BLACK
 	
 	
 	
@@ -142,68 +144,74 @@ label[for="lab-options-element"] p
 // --------------------------------------
 // ? styles
 
-#lab-what
-	position: fixed
-	display: flex
-	flex-direction: row
-	justify-content: flex-end
-	align-items: flex-end
-	align-items: center
-	right: 25px // Scroll Bar ~10px
-	bottom: 35px
-	width: 400px
-	height: 50px;
+.lab-what
+	position fixed
+	display flex
+	flex-direction row
+	justify-content flex-end
+	align-items flex-end
+	align-items center
+	right 25px // Scroll Bar ~10px
+	bottom 35px
+	width 400px
+	height 50px
+	opacity 0
+	transition opacity 250ms ease-in-out
 	
 
 .lab-what-element
-	position: absolute
-	clip: rect(0,0,0,0)
+	position absolute
+	clip rect(0,0,0,0)
 	
 
 label[for="lab-what-element"]
-	align-self: flex-end
-	order: 1
+	align-self flex-end
+	order 1
 		
 
 label[for="lab-what-element"] p 
-	font-family: Circular-Bold
-	display: block
-	font-size: 12px
-	color: $BLACK
-	align-self: center
-	text-align: center    
-	transition: color ease 250ms
+	font-family Circular-Bold
+	display block
+	font-size 12px
+	color $BLACK
+	align-self center
+	text-align center    
+	transition color ease 250ms
 
 
 .lab-what-element:checked ~ .lab-details
-	opacity: 1
+	opacity 1
 	
 
 .lab-what-element:checked + label
-	border: 1px solid rgba(35 35 35 0)
-	cursor: pointer
+	border 1px solid rgba(35 35 35 0)
+	cursor pointer
 	
 
 .lab-details
-	align-self: center
-	order: 0
-	display: inline
-	text-align: right
-	padding-right: 15px
-	border-right: 1px solid $BLACK
-	opacity: 0
+	align-self center
+	order 0
+	display inline
+	text-align right
+	padding-right 15px
+	border-right 1px solid $BLACK
+	opacity 0
 	float right
-	width: 60%
-	transition: opacity ease 250ms
+	width 60%
+	transition opacity 250ms ease-in-out
 	
 	
 .lab-details p
-	font-size: 12px
-	font-family: Circular-Roman
-	line-height: 1.5em
-	color: $BLACK
-	display: inline-block
-	transition: color ease 100ms
+	font-size 12px
+	font-family Circular-Roman
+	line-height 1.5em
+	color $BLACK
+	display inline-block
+	transition color ease 100ms
+	
+
+.lab-open
+	opacity 1
 	
 
 
@@ -215,25 +223,25 @@ label[for="lab-what-element"] p
 // Breakpoint 1 | iPad			
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px)
 	.lab-menu ul li
-		padding-left: 5px
-		padding-right: 5px
+		padding-left 5px
+		padding-right 5px
 		
-	#lab-options
-		visibility: hidden
+	.lab-options
+		visibility hidden
 
 
 //---------------------------------------------------------------
 // Breakpoint 2 | Phablet // iPhone 6s+
 @media only screen and (max-device-width: 414px) and (min-resolution: 2dppx)
-	#lab-what
-		visibility: hidden
+	.lab-what
+		visibility hidden
 		
-	#lab-options
-		visibility: hidden
+	.lab-options
+		visibility hidden
 		
 	#greeting
-		margin-top: 25px
-		margin-left: 25px
+		margin-top 25px
+		margin-left 25px
 		
 
 

@@ -108,14 +108,7 @@ $(document).ready(function() {
 
     // Check current position relative to top of page
     $(window).scroll(function () {
-        let scrollTop = $(document).scrollTop();
-       
-        setTimeout(function() {
-            toggleGlyphControls(scrollTop);    
-        }, 100);
-
         $('.scroll-arrow').velocity("fadeOut", { duration: 250 }); // Fade it out | They get it
-        
     });
 
     function videoSize() {
@@ -639,7 +632,6 @@ function toggleLogo(loc) {
     let header = $('#header');
 
     if (loc === "#web-lab") { 
-        console.log('hide');
         header.removeClass('header-open');
     } else {
         header.addClass('header-open');
@@ -647,20 +639,14 @@ function toggleLogo(loc) {
 }
 
 // Toggle visibility of Glyph Controls
-function toggleGlyphControls(scrollTop) {
-    let lab_options = $('#lab-options');
-    let lab_what = $('#lab-what');
+function toggleGlyphControls(loc) {
 
-    if (scrollTop > 100) {
-        if (lab_what.css('display') === 'flex') {    
-            lab_options.velocity("fadeOut", { duration: 250 });
-            lab_what.velocity("fadeOut", { duration: 250 });
-        }
+    if (loc === "#web-lab") { 
+        $('.lab-options').addClass('lab-open');
+        $('.lab-what').addClass('lab-open');
     } else {
-        if (lab_what.css('display') === 'none') {    
-            lab_options.velocity("fadeIn", { duration: 250, display: 'flex' });
-            lab_what.velocity("fadeIn", { duration: 250, display: 'flex'  });
-        }
+        $('.lab-options').removeClass('lab-open');
+        $('.lab-what').removeClass('lab-open');
     }
 }
 
@@ -669,6 +655,7 @@ function hashChanged() {
     let loc = window.location.hash;
 
     toggleLogo(loc); // Check the logo visibility
+    toggleGlyphControls(loc) // Check weblab control visibility
 
     let sectionUpdate = String(loc).slice(1);
 
@@ -732,8 +719,7 @@ function navSlick(_id) {
 
 function centerOffest(scrollInId, scrollToId) {
 
-    let scrollTop     = scrollInId.scrollTop(),
-        elementOffset = scrollToId.offset().top,
+    let elementOffset = scrollToId.offset().top,
         distance      = (elementOffset - scrollTop),
         middle        = distance - $(scrollInId).height()/2;
 
