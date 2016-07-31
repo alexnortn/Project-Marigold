@@ -466,7 +466,7 @@ $(document).ready(function() {
         function scrollCheckerEnter($element) {
             let scrollPercent = ($element.scrollTop() / $element.prop("scrollHeight")) * 100;
 
-            if (scrollPercent >= 86) { // Experimentally Determined
+            if (scrollPercent >= 88) { // Experimentally Determined
                 $element.addClass('case-study-sticky');
                 $('body').removeClass('project-open');
                 scrollThreshold = $('body').scrollTop();
