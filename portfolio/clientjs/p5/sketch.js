@@ -231,9 +231,6 @@ let glyph = function (p) {
 
 		setRotation(); // Handle Gyroscopic goodness
 
-		// console.log(glyph_obj.dynamic.position);
-		// console.log(glyph_obj.lock.position);
-
 		// Glyph image related to physics sim
 		let x_off = center.x - glyph_obj.dynamic.x,
 			y_off = center.y - glyph_obj.dynamic.y;
@@ -1031,9 +1028,6 @@ let glyph = function (p) {
 			       .height(window.innerHeight);
 
 	    glyphOp = 0; // Fade glyph in each resize to avoid jumpiness
-
-     	console.log("window resized")
-     	console.log($("#glyph").width());
 
      	windowResized();	
   

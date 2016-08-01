@@ -216,9 +216,6 @@ $(document).ready(function() {
                     function(e) {
 
                         let scrollInId = $('.case-study-view');
-                        //     animation.scrollToVelocity = -centerOffest(scrollInId, overlaySlider);
-
-                        //     console.log('animation.scrollToVelocity' + animation.scrollToVelocity );
 
                         $(this).velocity("scroll", { 
                             container: scrollInId,
@@ -443,10 +440,17 @@ $(document).ready(function() {
     function caseStudySupport() {
         let last_known_scroll_position = 0,
             last_known_scroll_position1 = 0,
+            last_known_scroll_position2 = 0,
             ticking = false,
+            startingYpos = 0,
+            state = false,
             scrollThreshold = 0;
 
             setup();
+
+        function updateThreshold($element) {
+            $($element).offset().top - $element.prop("scrollHeight");
+        }
 
         function setup() {
             $(".case-study-view .case-study-contents").click(function(evt) {
@@ -466,23 +470,41 @@ $(document).ready(function() {
         function scrollCheckerEnter($element) {
             let scrollPercent = ($element.scrollTop() / $element.prop("scrollHeight")) * 100;
 
-            if (scrollPercent >= 88) { // Experimentally Determined
+            if (scrollPercent >= 87 && !state) { // Experimentally Determined
                 $element.addClass('case-study-sticky');
                 $('body').removeClass('project-open');
                 scrollThreshold = $('body').scrollTop();
+                state = true;
             }
         }
 
         function scrollCheckerExit($element, scroll_pos, threshold) {
-            if (scroll_pos <= threshold) { // Re-Enter Project upwards
+            if (scroll_pos <= threshold && state) { // Re-Enter Project upwards
                 $element.removeClass('case-study-sticky');
                 $('body').addClass('project-open');
+                state = false;
             }
         }
 
         // Scroll listener for Case Study
         function addListener($element) {
+
+            window.setTimeout(function() {
+                startingYpos = window.pageYOffset;
+            }, 1500);
+
             $element.scroll(function(evt) { // Search for case-study with open class
+                last_known_scroll_position = window.scrollY;
+                if (!ticking) {
+                    window.requestAnimationFrame(function() {
+                        scrollCheckerEnter($element);
+                        ticking = false;
+                    });
+                }
+                ticking = true;
+            });
+
+            $(window).resize(function(evt) { // Search for case-study with open class // on resize
                 last_known_scroll_position = window.scrollY;
                 if (!ticking) {
                     window.requestAnimationFrame(function() {
@@ -523,6 +545,7 @@ $(document).ready(function() {
 
         return {
             addListener: addListener,
+            updateThreshold: updateThreshold,
             removeListener: removeListener,
         };
     }

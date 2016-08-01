@@ -131,7 +131,7 @@ Navigation Elements
 
 label[for="nav-trigger"] 
 	position fixed
-	right 0
+	left 92vw
 	top 15px
 	width  75px
 	height 75px
@@ -208,7 +208,7 @@ nav a
 	color $WHITE
 	text-decoration none
 	border-bottom none
-	transition border-bottom 100ms ease-in-out
+	transition all 100ms ease-in-out
 
 
 nav li a:hover
@@ -331,6 +331,10 @@ header
 
 .pagination:hover::before
 	opacity 1
+	
+.pagination:hover
+	background-color $BLACK
+	cursor pointer
 	
 	
 .pagination-active-before::before
