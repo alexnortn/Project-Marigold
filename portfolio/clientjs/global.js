@@ -301,12 +301,14 @@ $(document).ready(function() {
             event: 'orientationchange'
         });
     } else {
-        wt.fix({
-            elements: '.tamer',
-            chars: 14,
-            method: 'letter-spacing',
-            event: 'resize'
-        });
+        if (window.innerWidth > 400) {
+            wt.fix({
+                elements: '.tamer',
+                chars: 14,
+                method: 'letter-spacing',
+                event: 'resize'
+            });
+        }
     }
 
 
@@ -530,12 +532,12 @@ $(document).ready(function() {
 
         function removeListener($element) {
             // Remove Scroll event listener for element
-            $element.off();
+            // $element.off();
 
             // Remove Scroll event listener for window
-            $(window).off();
+            // $(window).off();
 
-            setup();
+            // setup();
         }
 
         return {

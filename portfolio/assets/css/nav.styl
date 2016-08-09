@@ -131,7 +131,7 @@ Navigation Elements
 
 label[for="nav-trigger"] 
 	position fixed
-	left 92vw
+	right 0
 	top 15px
 	width  75px
 	height 75px
@@ -201,6 +201,8 @@ label[for="nav-trigger"] hr:nth-child(3)
 	position fixed
 	height 80%
 	
+	transition all 250ms ease-in-out
+	
 
 // Links
 
@@ -254,7 +256,7 @@ header
 	z-index 100
 	float left
 	position fixed
-	margin-top 25px
+	// margin-top 25px
 	margin-left 10px
 	display inline-block
 
@@ -431,6 +433,9 @@ header
 	.nav ul
 		font-size 48px
 		letter-spacing 2.5px
+	
+	.nav-content
+		right 50px	
 		
 
 /* ----------- Retina Screens ----------- */
@@ -438,6 +443,9 @@ header
 	.nav ul
 		font-size 48px
 		letter-spacing 2.5px
+	
+	.nav-content
+		right 50px		
  
 
 //---------------------------------------------------------------
@@ -477,6 +485,9 @@ header
 		bottom 3.5%
 		animation arrow-animate-mobile 1s ease-in-out 2s infinite
 		transition transform 250ms
+		
+	.nav-content
+		right 50px
 		
 	label[for="nav-trigger"] 
 		right 25px

@@ -717,7 +717,7 @@ let glyph = function (p) {
 		w = p.windowWidth;
 		h = p.windowHeight;
 		
-		w < 450
+		w < 450 && _options.mobile
 			? center.set(w/2, h/1.5)
 			: center.set(w/2, h/2);
 
@@ -772,16 +772,19 @@ let glyph = function (p) {
 
 	function scaleFunc(w,h) {
 		let dynamicScale;
+		let scalar = w > h 
+			? h 
+			: w;
 
-		if (w < 450) {
+		if (scalar < 450 && _options.mobile) {
 			dynamicScale = 3; 				// Mobile Screen			
-		} else if ((w < 1000) || (h < 750)) {
-			dynamicScale = 2;  			// Small Screen
+		} else if (scalar < 1000) {
+			dynamicScale = 1.75;  			// Small Screen
 		} else {
-			dynamicScale = 1.35; 			// Big Screen
+			dynamicScale = 1.5; 			// Big Screen
 		}
 
-		scaleFactor = w / (1920 / dynamicScale);
+		scaleFactor = scalar / (1920 / dynamicScale);
 	}
 
 	// FlowField Attractors
