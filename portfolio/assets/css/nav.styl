@@ -591,9 +591,34 @@ header
 	.nav ul
 		font-size 45px
 
-//---------------------------------------------------------------
-// Breakpoint 2 | Medium Mobile // iPhone 5s, 5, 4
-@media only screen and (max-device-width: 320px) and (min-resolution: 2dppx)
+
+		
+/*---------------------------------------------------------------*/
+/* Breakpoint 2 | Tiny Screen && Mobile */
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen and (max-width: 500px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)	
+	.nav-content
+		right 50px
+		top 115px
+	
+
+	.nav ul
+		font-size 30px
+	
+
+	.social
+		margin-top 15px	
+
+
+	.social i
+		margin-left 5px
+		padding 5px 
+		
+		
+
+/* ----------- Retina Screens ----------- */
+@media screen and (max-width: 500px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
 	.nav-content
 		right 50px
 		top 115px
