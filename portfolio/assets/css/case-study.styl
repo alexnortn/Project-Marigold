@@ -340,6 +340,8 @@ p.center-caption
 
 .description-wrapper
 	align-self center
+	display flex
+	flex-direction column
 	
 
 .pull-left p 
@@ -815,6 +817,12 @@ p.center-caption
 	.para-box.parallax__group blockquote
 		display none
 		
+	.big-moment-2.parallax__group .img-box
+		display none
+		
+	.big-moment-2.parallax__group .caption
+		display none
+		
 		
 
 /* ----------- Retina Screens ----------- */
@@ -854,6 +862,12 @@ p.center-caption
 	.para-box.parallax__group blockquote
 		display none
 		
+	.big-moment-2.parallax__group .img-box
+		display none
+		
+	.big-moment-2.parallax__group .caption
+		display none
+		
 /*---------------------------------------------------------------*/
 /* Breakpoint 3 | Tiny Screen */
 
@@ -861,6 +875,14 @@ p.center-caption
 @media screen and (max-width: 500px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)	
 	.meta-data ul
 		width 50%
+	
+	.description	
+		padding 25px 25px 15px
+		
+	.description p 
+		width 75%
+		margin-top 15px
+		align-self center
 		
 		
 
@@ -868,6 +890,14 @@ p.center-caption
 @media screen and (max-width: 500px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
 	.meta-data ul
 		width 50%
+		
+	.description	
+		padding 25px 25px 15px
+		
+	.description p 
+		width 75%
+		margin-top 15px
+		align-self center
 
 
 
