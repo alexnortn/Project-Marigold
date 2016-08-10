@@ -303,9 +303,53 @@ $StickyOffset = 40vh
 		width 75% 
 		
 
-//---------------------------------------------------------------
-// Breakpoint 2 | Phablet // iPhone 6s
-@media only screen and (max-device-width: 414px) and (min-resolution: 2dppx)
+
+/*---------------------------------------------------------------*/
+/* Breakpoint 2 | Tiny Screen && Mobile */
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen and (max-width: 500px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)	
+	.bios-title
+		top 250px
+		width 75%
+		height 250px
+
+	.bios-content 
+		max-width 450px
+		min-width 300px
+		width 100%
+		
+	.bios-content img
+		clip-path inset(0 0 30% 0)
+		filter opacity(50%)
+		height 475px
+		
+	.copy
+		position relative
+		left 0
+		border-left none
+		text-align center
+		padding-left 0
+		margin-top 0	
+		
+	.body-copy
+		font-size 16px
+		
+	.copy h5
+		display inline-block
+		margin-top 75px
+		
+	#self-long
+		display none
+
+	#bios-wrapper
+		min-width 300px
+		width 90% 
+		
+		
+
+/* ----------- Retina Screens ----------- */
+@media screen and (max-width: 500px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
 	.bios-title
 		top 250px
 		width 75%
