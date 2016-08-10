@@ -781,7 +781,7 @@ let glyph = function (p) {
 		} else if (scalar < 1000) {
 			dynamicScale = 1.75;  			// Small Screen
 		} else {
-			dynamicScale = 1.5; 			// Big Screen
+			dynamicScale = 2; 			// Big Screen
 		}
 
 		scaleFactor = scalar / (1920 / dynamicScale);

@@ -487,6 +487,9 @@ $(document).ready(function() {
                 state = false;
             }
         }
+        function parallaxChecker(element) {
+            // if (window.innnerWidth < )
+        }
 
         // Scroll listener for Case Study
         function addListener($element) {
@@ -511,6 +514,7 @@ $(document).ready(function() {
                 if (!ticking) {
                     window.requestAnimationFrame(function() {
                         scrollCheckerEnter($element);
+                        parallaxChecker($element);
                         ticking = false;
                     });
                 }

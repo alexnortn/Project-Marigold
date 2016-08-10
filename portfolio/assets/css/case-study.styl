@@ -42,6 +42,7 @@ $StickyOffsetCase = 100px
 	display flex
 	flex-direction column
 	box-shadow 0 5px 3px rgba(0, 0, 0, 0)
+	
 	transition all 250ms
 	
 
@@ -49,6 +50,7 @@ $StickyOffsetCase = 100px
 	top $StickyOffsetCase
 	position relative
 	overflow hidden
+	
 	transition all 250ms ease-in-out
 	
 .case-study-open
@@ -101,12 +103,12 @@ $StickyOffsetCase = 100px
 .case-study-contents 
 	width 85%
 	max-width 1200px
-	min-width 650px
 	position relative
 	margin-left auto
 	margin-right auto
 	margin-top 85vh
 	display none
+	
 	transition margin-top 250ms ease-in-out
 	
 
@@ -116,9 +118,13 @@ $StickyOffsetCase = 100px
 	
 
 .case-study-intro 
+	display flex
+	flex-direction row
+	
 	width 100%
 	position relative
 	padding-top 100px
+	
 	transition padding-top 250ms
 	
 
@@ -126,6 +132,7 @@ $StickyOffsetCase = 100px
 	overflow hidden
 	width 100%
 	height 100%
+	
 	transition-timing-function ease-in-out
 	transition margin-top 1000ms
 	
@@ -219,8 +226,11 @@ p.center-caption
 .meta-data 
 	top $StickyOffsetMeta
 	height 500px
+	
+	display flex
+	flex-direction column
+	order 1
 
-	float right
 	border-left 1px solid $GRAY
 	padding 20px 75px 0 35px
 	
@@ -228,18 +238,20 @@ p.center-caption
 	color $BLACK_Q
 
 
-.meta-data li:nth-child(odd) 
-	font-family Circular-Bold
-	font-size 12px
-	line-height 2.5em
+.meta-data ul li:nth-child(odd) 
+	font-family Circular-Roman
+	font-size 8px
+	text-transform uppercase
+	line-height 3em
 	letter-spacing 1px
 	text-align left
+	color $GREY
 
 
-.meta-data li:nth-child(even) 
+.meta-data ul li:nth-child(even) 
 	font-family Circular-Roman
 	font-size 12px
-	letter-spacing 0.25px
+	letter-spacing .25px
 	margin-bottom 15px
 
 	
@@ -248,11 +260,12 @@ p.center-caption
 
 .main-description 
 	width 50%
-	float right
 	border-left 1px solid $GRAY
 	position relative
 	display block
 	padding 0 0 30px 35px
+	
+	order 2
 	
 .main-description p 
 	text-align left
@@ -470,8 +483,7 @@ p.center-caption
 	position relative
 	display inline-block
 	width  12%
-	/*padding-bottom 25%*/
-	margin 15px
+	margin 2%
 	box-shadow 0 0px 10px rgba(0, 0, 0, 0) 
 	transition all ease-in-out 250ms
 
@@ -764,20 +776,99 @@ p.center-caption
 
 
 /*---------------------------------------------------------------*/
-/* Breakpoint 2 | Tiny Screen || iPad */
+/* Breakpoint 2 | Small Screen || iPad */
 
-// /* ----------- Non-Retina Screens ----------- */
-// @media screen and (max-width: 768px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)	
-// 	.case-study
-// 		min-height 850px
+/* ----------- Non-Retina Screens ----------- */
+@media screen and (max-width: 768px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)	
+	.case-study-intro 
+		flex-direction column
+		
+	.main-description
+		padding 0
+		width 100%
+		border-left none
+		
+	.meta-data
+		flex-direction row
+		flex-wrap wrap
+		
+		border-radius 10px 10px 0 0
+		border 1px solid $GREY_BG
+		border-top 10px solid $GREY_BG
+		border-right none
+		padding initial
+		height auto
+		margin-bottom 75px
+		
+	.meta-data ul
+		width 25%
+		padding 15px
+		padding-bottom 5px
+		box-sizing border-box
+		border-right 1px solid $GREY_BG
+		border-top 1px solid $GREY_BG
+		
+	.image-box
+		width 100%
+		padding-bottom 70%
+	
+	.para-box.parallax__group blockquote
+		display none
 		
 		
 
-// /* ----------- Retina Screens ----------- */
-// @media screen and (max-width: 768px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
-// 	.case-study
-// 		min-height 850px
+/* ----------- Retina Screens ----------- */
+@media screen and (max-width: 768px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
+	.case-study-intro 
+		flex-direction column
 		
+	.main-description
+		padding 0
+		width 100%
+		border-left none
+		
+	.meta-data
+		flex-direction row
+		flex-wrap wrap
+		
+		border-radius 10px 10px 0 0
+		border 1px solid $GREY_BG
+		border-top 10px solid $GREY_BG
+		border-right none
+		padding initial
+		height auto
+		margin-bottom 75px
+		
+	.meta-data ul
+		width 25%
+		padding 15px
+		padding-bottom 5px
+		box-sizing border-box
+		border-right 1px solid $GREY_BG
+		border-top 1px solid $GREY_BG
+		
+	.image-box
+		width 100%
+		padding-bottom 70%
+		
+	.para-box.parallax__group blockquote
+		display none
+		
+/*---------------------------------------------------------------*/
+/* Breakpoint 3 | Tiny Screen */
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen and (max-width: 500px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)	
+	.meta-data ul
+		width 50%
+		
+		
+
+/* ----------- Retina Screens ----------- */
+@media screen and (max-width: 500px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
+	.meta-data ul
+		width 50%
+
 
 
 // //---------------------------------------------------------------

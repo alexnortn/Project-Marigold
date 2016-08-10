@@ -137,23 +137,31 @@ block content
                                     p.tamer #{result.description_long}
                                     h4 Process
                                     p.tamer #{result.description_long}
-                                ul.meta-data
-                                    li Client
-                                    li #{result.meta.Client}
-                                    li Year
-                                    li #{result.meta.Year}
-                                    li Role
-                                    li #{result.meta.Role}
-                                    li Team
-                                    li #{result.meta.Team}
-                                    li Discipline
-                                    li #{result.meta.Discipline}
-                                    li Medium
-                                    li #{result.meta.Medium}
-                                    li Technologies
-                                    li #{result.meta.Technologies}
-                                    li Duration
-                                    li #{result.meta.Duration}
+                                .meta-data
+                                    ul
+                                        li Client
+                                        li #{result.meta.Client}
+                                    ul
+                                        li Year
+                                        li #{result.meta.Year}
+                                    ul
+                                        li Role
+                                        li #{result.meta.Role}
+                                    ul
+                                        li Team
+                                        li #{result.meta.Team}
+                                    ul
+                                        li Discipline
+                                        li #{result.meta.Discipline}
+                                    ul
+                                        li Medium
+                                        li #{result.meta.Medium}
+                                    ul
+                                        li Technologies
+                                        li #{result.meta.Technologies}
+                                    ul
+                                        li Duration
+                                        li #{result.meta.Duration}
 
                             // BIG MOMENT 0
                             .big-moment-0-color(style='background-image: url(#{result.images[index].src});')
