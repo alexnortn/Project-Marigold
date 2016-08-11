@@ -98,7 +98,7 @@ $(document).ready(function() {
 
         // Hack to keep case study section from getting out of sync
         if ($('.case-study').hasClass('case-study-open')) {
-            $('.case-study').addClass('case-study-resize');
+            // $('.case-study').addClass('case-study-resize');
         }
 
         stickyUpdate();
@@ -443,9 +443,10 @@ $(document).ready(function() {
             last_known_scroll_position1 = 0,
             last_known_scroll_position2 = 0,
             ticking = false,
-            startingYpos = 0,
+            initialOffset = 0,
+            currentOffset = 0,
             state = false,
-            scrollThreshold = 0;
+            scrollThreshold;
 
             setup();
 
@@ -472,6 +473,8 @@ $(document).ready(function() {
             let scrollPercent = ($element.scrollTop() / $element.prop("scrollHeight")) * 100;
 
             if (scrollPercent >= 88 && !state) { // Experimentally Determined
+                console.log('pop out');
+                console.log($element);
                 $element.addClass('case-study-sticky');
                 $('body').removeClass('project-open');
                 scrollThreshold = $('body').scrollTop();
@@ -481,21 +484,26 @@ $(document).ready(function() {
 
         function scrollCheckerExit($element, scroll_pos, threshold) {
             if (scroll_pos <= threshold && state) { // Re-Enter Project upwards
+
+                currentOffset = $element[0].getBoundingClientRect().top; // js not jQuery [ 0 ]
+
+                console.log('pop in');
+
+                window.scrollTo(0, initialOffset);
+
                 $element.removeClass('case-study-sticky');
                 $('body').addClass('project-open');
                 state = false;
             }
-        }
-        function parallaxChecker(element) {
-            // if (window.innnerWidth < )
         }
 
         // Scroll listener for Case Study
         function addListener($element) {
 
             window.setTimeout(function() {
-                startingYpos = window.pageYOffset;
-            }, 0);
+                initialOffset = window.scrollY;
+                console.log('window enter top ' +    window.scrollY); // Rename?
+            }, 1000);
 
             $element.scroll(function(evt) { // Search for case-study with open class
                 last_known_scroll_position = window.scrollY;
@@ -510,10 +518,21 @@ $(document).ready(function() {
 
             $(window).resize(function(evt) { // Search for case-study with open class // on resize
                 last_known_scroll_position = window.scrollY;
+                
+                window.setTimeout(function() {
+                    $element.addClass('case-study-sticky');
+                    $('body').removeClass('project-open');
+                        let elementOffset = $element[0].getBoundingClientRect().top;
+                        window.scrollTo(0, initialOffset + elementOffset);
+                        console.log('elementOffset ' + elementOffset); // Rename?
+                        console.log('initialOffset ' + initialOffset); // Rename?
+                    $element.removeClass('case-study-sticky');
+                    $('body').addClass('project-open');
+                }, 1000);
+                
                 if (!ticking) {
                     window.requestAnimationFrame(function() {
                         scrollCheckerEnter($element);
-                        parallaxChecker($element);
                         ticking = false;
                     });
                 }
