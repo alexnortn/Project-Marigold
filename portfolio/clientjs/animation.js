@@ -5,6 +5,6 @@ let velocity    = require('velocity-animate'),
 // Navigate with velocity   
 module.exports.scrollToVelocity = function (_sectionCurrent) {
     let nav = "#" + _sectionCurrent;
-    // Scroll navigate, call setHash when finished moveing
+    // Scroll navigate, call setHash when finished moving
     $(nav).velocity("scroll", { duration: 750, easing: "ease-in-out" });
 };
