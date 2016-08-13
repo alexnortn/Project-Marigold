@@ -1,0 +1,11 @@
+branch-defaults:
+  beta:
+    environment: Marigold-dev
+    group_suffix: null
+global:
+  application_name: Marigold
+  default_ec2_keyname: marigold
+  default_platform: Node.js
+  default_region: us-east-1
+  profile: eb-cli
+  sc: git

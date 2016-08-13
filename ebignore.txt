@@ -1,4 +1,0 @@
-# Marigold ebignore file #
-###################
-
-node_modules/
