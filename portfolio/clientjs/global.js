@@ -522,16 +522,12 @@ $(document).ready(function() {
             }
         }
 
-        function scrollCheckerExit($element, scroll_pos, threshold) { // This is the problem, right here
-            if (scroll_pos < threshold && state) { // Re-Enter Project upwards
+        function scrollCheckerExit($element, scroll_pos, threshold) { // Re-Enter Project upwards
+            if (scroll_pos < threshold && state) {
 
                 console.log('pop in');
 
                 window.scrollTo(0, cs_offset);
-
-                // window.setTimeout(function() {
-                //     updateScale();
-                // }, 100);
 
                 $element.removeClass('case-study-sticky');
                 $('body').addClass('project-open');
