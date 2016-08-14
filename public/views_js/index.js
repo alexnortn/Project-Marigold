@@ -238,7 +238,7 @@ pug_html = pug_html + "\u003Cp class=\"tamer body-copy\" id=\"self-long\"\u003E"
 ;pug_debug_line = 107;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
 pug_html = pug_html + (null == (pug_interp = bios_text.description_long) ? "" : pug_interp) + "\u003C\u002Fp\u003E";
 ;pug_debug_line = 108;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
-pug_html = pug_html + "\u003Ca id=\"resume\" href=\"\u002Fimages\u002FNorton-Alex-Resume.pdf\"\u003E";
+pug_html = pug_html + "\u003Ca id=\"resume\" href=\"\u002Fimages\u002FNorton-Alex-Resume.pdf\" target=\"_blank\"\u003E";
 ;pug_debug_line = 108;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
 pug_html = pug_html + "Résumé\u003C\u002Fa\u003E";
 ;pug_debug_line = 109;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
