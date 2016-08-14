@@ -315,7 +315,7 @@ pug_html = pug_html + (pug_escape(null == (pug_interp = contact.cta) ? "" : pug_
 ;pug_debug_line = 321;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
 pug_html = pug_html + "\u003Cdiv class=\"contact-social\"\u003E";
 ;pug_debug_line = 322;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
-pug_html = pug_html + "\u003Ca href=\"google.com\"\u003E";
+pug_html = pug_html + "\u003Ca href=\"mailto:alexnortn@gmail.com\"\u003E";
 ;pug_debug_line = 323;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
 pug_html = pug_html + "\u003Ci class=\"fa fa-envelope fa-2x\"\u003E\u003C\u002Fi\u003E\u003C\u002Fa\u003E";
 ;pug_debug_line = 324;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
