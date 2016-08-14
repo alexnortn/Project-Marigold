@@ -793,7 +793,8 @@
     },
     "welcome_text": {
         "greeting_text": "I'm Alex Norton",
-        "discipline_text": "designer, researcher, <br> creative coder",
+        "discipline_text": "designer, researcher,",
+        "discipline_text_2": "creative coder",
         "greeting_morning": "Good Morning, ",
         "greeting_afternoon": "Good Afternoon, ",
         "greeting_evening": "Good Evening, "

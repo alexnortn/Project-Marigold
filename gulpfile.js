@@ -4,7 +4,7 @@
 
 let argv = require('yargs').argv,
     gulp = require('gulp'),
-    jade = require('gulp-jade'), 
+    pug = require('gulp-pug'), 
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
     stylus = require('gulp-stylus'),
@@ -39,7 +39,7 @@ let BASEURL = argv.production
 
 gulp.task('default', ['build']);
 
-gulp.task('build', [ 'images', 'js', 'css', 'fonts', 'plugins' ]);
+gulp.task('build', [ 'images', 'js', 'pug', 'css', 'fonts', 'plugins' ]);
 
 
 gulp.task('images', [ ], function () {
@@ -58,13 +58,16 @@ gulp.task('clean', function () {
     ]);
 });
 
-// Compile Jade --> HTML
-// gulp.task('jade', function() {
-//     return gulp.src('views/**/*.jade')
-//         .pipe(jade())
-//         .pipe(gulp.dest('./public/views'))
-// });
-
+// Compile pug --> HTML
+gulp.task('pug', function() {
+    return gulp.src('views/**/*.pug')
+        .pipe(pug({
+            client: true,
+        }))
+        // replace the function definition
+        .pipe(replace('function template(locals)', 'module.exports = function(locals, pug)'))
+        .pipe(gulp.dest('./public/views_js'))
+});
 
 gulp.task('js', function () {
     let b = browserify({
@@ -146,4 +149,8 @@ gulp.task('watch', function () {
         'clientjs/**',
         'components/**'
     ], [ 'js' ]);
+
+    gulp.watch([
+        'views/**',
+    ], [ 'pug' ]);
 });

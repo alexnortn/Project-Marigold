@@ -3,11 +3,12 @@
 "use strict";
 
 let express = require('express'),
-    path = require('path'),
     favicon = require('serve-favicon'),
     logger = require('morgan'),
     cookieParser = require('cookie-parser'),
     bodyParser = require('body-parser'),
+	runtime = require('pug-runtime'),
+    path = require('path'),
     http = require('http');
 
 let routes = require('./routes/index');
@@ -15,14 +16,20 @@ let users = require('./routes/users');
 
 let app = express();
 
-// all environments
+// All environments
 var PORT = process.env.PORT || 9001;
 
 app.set('port', PORT);
 
+// // Define custom template engine
+// app.engine('js', function (filePath, options, callback) {
+//   let data = require(filePath)(options, pug);
+//   callback(null, data);
+// });
+
 // view engine setup
+app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));

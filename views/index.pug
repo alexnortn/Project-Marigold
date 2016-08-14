@@ -1,0 +1,336 @@
+extends layout
+
+block content
+
+    // NAV MENU
+    input(type="checkbox" id="nav-trigger" class="nav-trigger")
+    label(for="nav-trigger").plus_plus_plus
+        hr
+        hr
+        hr
+        hr
+    
+    nav.nav.plus_plus
+        .header
+            #logo-header
+                img(src = "/images/logo.svg" alt = "main logo")
+        .nav-content
+            ul#web-lab-nav
+                li
+                    a(href="#web-lab")&attributes({'data-nav': "web-lab"}) Web Lab
+                li
+                    a(href="#bios")&attributes({'data-nav': "bios"}) Bios
+                li
+                    a(href="#works")&attributes({'data-nav': "works"}) Works
+                li
+                    a(href="#contact")&attributes({'data-nav': "contact"}) Contact
+            .social
+                a(href='google.com')
+                    i.fa.fa-envelope.fa-2x
+                a(href='https://twitter.com/alexnortn' target="_blank")
+                    i.fa.fa-twitter.fa-2x
+                a(href='google.com')
+                    i.fa.fa-vimeo-square.fa-2x
+                a(href='https://github.com/alexnortn' target="_blank")
+                    i.fa.fa-github.fa-2x
+                a(href='google.com')
+                    i.fa.fa-behance-square.fa-2x
+    // /NAV MENU
+
+
+    // PAGINATION | INJECTED
+    #pagination.plus
+    // /PAGINATION
+
+
+    // HEADER
+    header#header.plus
+        #logo
+            img(src = "/images/logo.svg" alt = "main logo")
+
+    // /HEADER  
+
+
+    // SITE content
+    #content-wrapper
+
+        // INTERACTIVE PAGE
+        section#web-lab.section&attributes({'data-inproject': true})
+            summary#greeting.plus
+                p
+                p=welcome_text.greeting_text
+                p=welcome_text.discipline_text
+                p=welcome_text.discipline_text_2
+
+            .lab-options.plus
+                input(type="checkbox" id="lab-options-element" class="lab-options-element")
+                label(for="lab-options-element").button
+                    p f(x)
+                .lab-menu
+                    ul
+                        li
+                            input(type="radio" name="lab-radio" id="fluid-radio" class="lab-radio" value="1" checked="checked")
+                            label(for="fluid-radio") Fluid
+                        li
+                            input(type="radio" name="lab-radio" id="perlin-radio" class="lab-radio" value="2")
+                            label(for="perlin-radio") Perlin
+                        li
+                            input(type="radio" name="lab-radio" id="debug-radio" class="lab-radio" value="3") 
+                            label(for="debug-radio") Debug
+
+
+            .lab-what.plus
+                input(type="checkbox" id="lab-what-element" class="lab-what-element")
+                label(for="lab-what-element").button
+                    p ?
+                .lab-details
+                    p Glyph simulation rendered using p5js<br>Physics applied using toxiclibs
+
+            .scroll-arrow.plus_plus
+                <i class="fa  fa-angle-down fa-2x"></i>           
+
+        // /INTERACTIVE
+
+
+        //BIOS SECTION
+        section#bios.section&attributes({'data-inproject': false})
+            #bios-wrapper
+                #bios-title.bios-title.sticky
+                    img(src = "/images/name.svg" alt = "Alex Norton")
+                    p#bios-title-p !{bios_text.title}
+                #bios-content.bios-content
+                    img(src = "/images/self.jpg" alt = "Alex Norton Portrait")
+                    .copy
+                        q !{bios_text.description_pull}
+                        h4 About
+                        p#self-short.tamer.body-copy !{bios_text.description_short}
+                        p#self-long.tamer.body-copy !{bios_text.description_long}
+                        h5#bios-more { more }
+        // /BIOS SECTION  
+
+
+        //WORKS SECTION
+        section#works.section&attributes({'data-inproject': false})
+            #works-wrapper
+                // CASE STUDY ITERATOR
+                each result, index in case_studies
+                    .case-study.case-study-view.parallax&attributes({'data-inproject': true}, {'data-casestudy': index}, {'id': result.route})
+                        // CASE STUDY OVERVIEW
+                        //- .filler-content
+                        .case-study-overview
+                            .description
+                                .description-wrapper
+                                    h3=result.project_type
+                                    h2=result.name
+                                    hr
+                                    p=result.description_short
+                            .hero-box
+                                .overlay
+                                .hero(style=`background-image: url(${result.hero})`)
+                        // /CASE STUDY OVERVIEW
+                        .case-study-contents.parallax__group
+                            .case-study-intro.cf
+                                .main-description 
+                                    q=bios_text.description_pull
+                                    h4 Brief
+                                    p.tamer=result.description_long
+                                    h4 Process
+                                    p.tamer=result.description_long
+                                .meta-data
+                                    ul
+                                        li Client
+                                        li=result.meta.Client
+                                    ul
+                                        li Year
+                                        li=result.meta.Year
+                                    ul
+                                        li Role
+                                        li=result.meta.Role
+                                    ul
+                                        li Team
+                                        li=result.meta.Team
+                                    ul
+                                        li Discipline
+                                        li=result.meta.Discipline
+                                    ul
+                                        li Medium
+                                        li=result.meta.Medium
+                                    ul
+                                        li Technologies
+                                        li=result.meta.Technologies
+                                    ul
+                                        li Duration
+                                        li=result.meta.Duration
+
+                            // BIG MOMENT 0
+                            .big-moment-0-color(style=`background-image: url(${result.images[index].src})`)
+
+                            // 2X PARALLAX IMAGES LEFT
+                            .para-box.parallax__group
+                                blockquote.left.parallax__layer.parallax__layer--fore=result.pull_quotes[0]
+                                .image-box(style=`background-image: url(${result.hero})`)
+                                    .image-left
+                                .image-box.image-box--bottom(style=`background-image: url(${result.hero})`)
+                                    .image-left
+                                        //- p.caption #{result.description_long_2}
+
+                            // GRID ITERATOR
+                            #grid-one.image-grid-wrapper
+                                #grid-one-slider.grid-slider.slider-transition
+                                    each image, index in result.images
+                                            img.big-moment-3-color(src=`${result.images[index].src}`)
+                                each image, index in result.images
+                                    .image-grid-container.bounce&attributes({'data-slide': index})
+                                        .image-grid(style=`background-image: url(${result.images[index].src})`)
+                            // /GRID ITERATOR
+
+                            // Hard coded index, what was I thinking?
+                            .big-moment-1.parallax__group
+                                .big-moment-1-color.parallax__layer--back(style=`background-image: url(${result.images[0].src})`) 
+
+                            // GRID ITERATOR 2
+                            #grid-two.image-grid-wrapper
+                                #grid-two-slider.grid-slider.slider-transition
+                                    each image, index in result.images
+                                            img.big-moment-3-color(src = `${result.images[index].src}`)
+                                each image, index in result.images
+                                    .image-grid-container.bounce&attributes({'data-slide': index})
+                                        .image-grid(style=`background-image: url(${result.images[index].src})`)
+                            // /GRID ITERATOR 2
+
+                            // 2X PARALLAX IMAGES RIGHT
+                            .para-box.parallax__group   
+                                .image-box.right(style=`background-image: url(${result.hero})`)
+                                    .image-right
+                                        //- p.caption.caption--2 #{result.description_long_2}
+                                .image-box.right.image-box--bottom(style=`background-image: url(${result.hero})`)
+                                    .image-right
+                                blockquote.right.parallax__layer.parallax__layer--fore=result.pull_quotes[0]
+
+                            #video-frame
+                                iframe(src="//player.vimeo.com/video/95969058" width="1600" height="1000" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
+
+                            .big-moment-2.parallax__group  
+                                .big-moment-2-color(style=`background-image: url(${result.images[0].src})`)
+                                .img-box.parallax__layer.parallax__layer--fore(style=`background-image: url(${result.images[0].src})`)
+                                p.caption=result.description_long_2
+
+                            // 2X PARALLAX IMAGES LEFT
+                            .para-box
+                                .image-box.image-box--center(style=`background-image: url(${result.hero})`)
+                                p.caption.center-caption=result.description_long_2
+
+                            .big-moment-3
+                                each image, index in result.images
+                                    img.big-moment-3-color(src = `${result.images[index].src}`)
+
+
+                // /CASE STUDY ITERATOR
+
+
+                //SELECT WORK GRID SECTION
+                #select-work.select-work
+                    #select-work-wrapper
+                        h3 Selected Works
+                        // SELECT-WORK ITERATOR
+                        ul
+                            each result, index in select_work
+                                li.select-work-item&attributes({'data-inproject': true}, {'data-projectIndex': index}, {'data-project': result.project}, {'id': result.preview})
+                                    .select-work-img-container
+                                        .select-work-description
+                                            p.tamer=result.description_short
+                                            hr
+                                        .select-work-img(style=`background-image: url(${result.images[0].src})`)
+                                    h3 #{result.name}
+                        // /SELECT-WORK ITERATOR
+                        h5#select-more { more }
+
+                // /SELECT WORK GRID SECTION
+
+
+                //- // PROJECT ITERATOR
+                //- each result, index in select_work
+                //-     .project.project-view.parallax&attributes({'data-inproject': true}, {'data-project': index}, {'id': result.project})
+                //-         // PROJECT OVERVIEW
+                //-         .project-overview
+                //-             .description
+                //-                 .description-wrapper
+                //-                     h3 #{result.project_type}
+                //-                     h2 #{result.name}
+                //-                     hr
+                //-                     p #{result.description_short}
+                //-             .hero-box
+                //-                 .overlay
+                //-                 .hero(style='background-image: url(#{result.hero})')
+                //-         // /PROJECT OVERVIEW
+                //-         .project-contents.parallax__group
+                //-             .project-intro.cf
+                //-                 .main-description 
+                //-                     p #{result.description_long}
+                //-                 ul.meta-data
+                //-                     li Client
+                //-                     li #{result.meta.Client}
+                //-                     li Year
+                //-                     li #{result.meta.Year}
+                //-                     li Role
+                //-                     li #{result.meta.Role}
+                //-                     li Team
+                //-                     li #{result.meta.Team}
+                //-                     li Discipline
+                //-                     li #{result.meta.Discipline}
+                //-                     li Medium
+                //-                     li #{result.meta.Medium}
+                //-                     li Technologies
+                //-                     li #{result.meta.Technologies}
+                //-                     li Duration
+                //-                     li #{result.meta.Duration}
+
+                //- // /PROJECT ITERATOR
+
+
+
+
+        // /WORKS SECTION 
+
+
+        //FEATURE SECTION
+        
+        section#feature.feature
+            #feature-wrapper
+                h3 Feature & Collaboration
+                ul
+                    // FEATURE ITERATOR
+                    each result, index in feature
+                        li(style=`background-image: url(${result.logo})`)
+                            //- p #{result.feature}
+
+        // /FEATURE SECTION  
+
+
+        //CONTACT PAGE
+        section#contact.contact.section&attributes({'data-inproject': false})
+            
+            // CONTACT BOX
+            #contact-wrapper
+                .shout-out
+                    h1=contact.shout_out
+                    p=contact.shout_out_sub
+                .cta
+                    h1=contact.cta
+                    .contact-social
+                        a(href='google.com')
+                            i.fa.fa-envelope.fa-2x
+                        a(href='https://twitter.com/alexnortn' target="_blank")
+                            i.fa.fa-twitter.fa-2x
+                        a(href='https://github.com/alexnortn' target="_blank")
+                            i.fa.fa-github.fa-2x
+                    p=contact.email
+                    p=contact.phone
+                .copywrite
+                    p=contact.copywrite
+
+        // /CONTACT BOX
+
+        // /CONTACT PAGE   
+
+    // /SITE CONTENT
