@@ -108,6 +108,20 @@ $StickyOffset = 40vh
 	text-align center
 	align-self center
 	
+#bios-more
+	display none
+	
+#resume
+	display inline-block
+	margin-top 25px
+	margin-bottom 25px
+	color $GREY
+	
+#resume:hover
+	cursor pointer
+	color $DARK_GRAY
+	border-color $DARK_GRAY
+	
 
 .bios-title
 	top $StickyOffset
@@ -198,17 +212,17 @@ $StickyOffset = 40vh
 	text-transform uppercase
 	letter-spacing 3px
 	text-align left
-	color $BLACK
+	color $GREY
 	padding-bottom 2px
-	border-color $BLACK
+	border-color $GREY
 	border-bottom 1px solid
 	transition all 100ms
 	
 
 #bios a:hover
 	cursor pointer
-	color $GREY
-	border-color $GREY
+	color $DARK_GRAY
+	border-color $DARK_GRAY
 	
 
 #self-long
@@ -262,7 +276,10 @@ $StickyOffset = 40vh
 		
 	#bios-wrapper
 		min-width 500px
-		width 75% 
+		width 75%
+		
+	#bios-more
+		display block 
 		
 
 /* ----------- Retina Screens ----------- */
@@ -301,7 +318,10 @@ $StickyOffset = 40vh
 
 	#bios-wrapper
 		min-width 500px
-		width 75% 
+		width 75%
+		
+	#bios-more
+		display block 
 		
 
 
