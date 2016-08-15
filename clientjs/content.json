@@ -702,85 +702,87 @@
             "feature": "MIT Media Lab",
             "project": "BrainVR",
             "logo": "images/media-lab-logo.png",
-            "project-thum": "images/lamp-sm-0.jpg",
-            "caption": "Side view of Gestural Lamp."
+            "caption": "See the brain in new dimensions.",
+            "link": "http://brainvr.media.mit.edu/"
         },
         {
             "feature": "MIT",
             "project": "Eyewire",
             "logo": "images/mit-logo.png",
-            "project-thum": "images/lamp-sm-0.jpg",
-            "caption": "Side view of Gestural Lamp."
+            "caption": "Play a game to map the brain.",
+            "link": "http://eyewire.org/explore/"
         },
         {
             "feature": "TED",
             "project": "Neurons & Space",
             "logo": "images/ted-logo.png",
-            "project-thum": "images/lamp-sm-0.jpg",
-            "caption": "Side view of Gestural Lamp."
+            "caption": "What if you could see ideas worth spreading?",
+            "link": "http://blogs.microsoft.com/next/2014/03/19/at-ted-worldwide-telescope-uses-oculus-rift-to-let-attendees-experience-the-universe/#sm.0001jugbv418cqf6hyy9leuzw0r30"
         },
         {
             "feature": "Wired",
             "project": "Eyewire",
             "logo": "images/wired-logo.png",
-            "project-thum": "images/lamp-sm-0.jpg",
-            "caption": "Side view of Gestural Lamp."
+            "caption": "A videogame that recruits players to map the brain.",
+            "link": "http://www.wired.com/2013/08/a-video-game-that-lets-you-be-a-neuroscientist/"
         },
         {
             "feature": "NY Times",
             "project": "Eyewire",
             "logo": "images/nytimes-logo.png",
-            "project-thum": "images/lamp-sm-0.jpg",
-            "caption": "Side view of Gestural Lamp."
+            "caption": "How the brain's wiring makes you, you.",
+            "link": "http://www.nytimes.com/2014/05/27/science/all-circuits-are-busy.html"
         },
         {
             "feature": "Nature",
             "project": "Eyewire",
             "logo": "images/nature-logo.png",
-            "project-thum": "images/lamp-sm-0.jpg",
-            "caption": "Side view of Gestural Lamp."
+            "caption": "Space–time wiring specificity supports direction selectivity in the retina.",
+            "link": "http://www.nature.com/nature/journal/v509/n7500/full/nature13240.html"
         },
         {
             "feature": "FastCo Design",
             "project": "Neurons & Space",
             "logo": "images/fastco-design-logo.png",
-            "project-thum": "images/lamp-sm-0.jpg",
-            "caption": "Side view of Gestural Lamp."
+            "caption": "Virtual reality is here, and brands of all stripes are embracing the tech.",
+            "link": "http://www.fastcompany.com/3062792/second-shift/patagonias-ceo-explains-how-to-make-onsite-child-care-pay-for-itself"
         },
         {
             "feature": "Times Square Arts Allience",
             "project": "Scales of Complexity",
             "logo": "images/times-square-logo.png",
-            "project-thum": "images/lamp-sm-0.jpg",
-            "caption": "Side view of Gestural Lamp."
+            "caption": "Eyewire takes over Times Square for an entire month",
+            "link": "http://www.timessquarenyc.org/times-square-arts/media/press-releases/noah-hutton-brain-city/index.aspx"
         },
         {
             "feature": "Tribeca Film Festival",
             "project": "BrainVR",
             "logo": "images/tribeca-logo.png",
-            "project-thum": "images/lamp-sm-0.jpg",
-            "caption": "Side view of Gestural Lamp."
+            "caption": "Explore the brain in new dimensions.",
+            "link": "http://blog.eyewire.org/brainvr-at-tribeca/"
         },
         {
             "feature": "TEDx",
             "project": "A Game to Map the Brain",
             "logo": "images/tedx-logo.png",
             "project-thum": "images/tedx-logo.png",
-            "caption": "Side view of Gestural Lamp."
+            "caption": "Introducing a game to map the brain.",
+            "link": "https://www.youtube.com/watch?v=bwcuhbj2rSI"
         },
         {
             "feature": "Fast Company",
             "project": "Eyewire",
             "logo": "images/fastco-logo.png",
             "project-thum": "images/fastco-logo.png",
-            "caption": "Side view of Gestural Lamp."
+            "caption": "VR is here and with it, scientific visualizations.",
+            "link": "http://www.fastcompany.com/3062792/second-shift/patagonias-ceo-explains-how-to-make-onsite-child-care-pay-for-itself"
         },
         {
             "feature": "Forbes",
             "project": "BrainVR",
             "logo": "images/forbes-logo.png",
-            "project-thum": "images/lamp-sm-0.jpg",
-            "caption": "Side view of Gestural Lamp."
+            "caption": "70,000 gamers are playing a game to map the brain.",
+            "link": "http://www.forbes.com/sites/singularity/2013/08/19/70000-have-played-eyewire-game-that-trains-computers-to-map-the-brain/#7073a6f8ad9b"
         }
     ],
     "contact": {

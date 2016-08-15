@@ -270,7 +270,9 @@ if ('number' == typeof pug_obj0.length) {
     var result = pug_obj0[index];
 
 ;pug_debug_line = 305;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
-pug_html = pug_html + "\u003Cli" + (pug_attr("style", pug_style(`background-image: url(${result.logo})`), true, true)) + "\u003E\u003C\u002Fli\u003E";
+pug_html = pug_html + "\u003Cli" + (pug_attr("style", pug_style(`background-image: url(${result.logo})`), true, true)) + "\u003E";
+;pug_debug_line = 306;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
+pug_html = pug_html + "\u003Ca" + (pug_attr("href", `${result.link}`, true, true)+" target=\"_blank\"") + "\u003E\u003C\u002Fa\u003E\u003C\u002Fli\u003E";
   }
 
 } else {
@@ -280,7 +282,9 @@ pug_html = pug_html + "\u003Cli" + (pug_attr("style", pug_style(`background-imag
     var result = pug_obj0[index];
 
 ;pug_debug_line = 305;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
-pug_html = pug_html + "\u003Cli" + (pug_attr("style", pug_style(`background-image: url(${result.logo})`), true, true)) + "\u003E\u003C\u002Fli\u003E";
+pug_html = pug_html + "\u003Cli" + (pug_attr("style", pug_style(`background-image: url(${result.logo})`), true, true)) + "\u003E";
+;pug_debug_line = 306;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
+pug_html = pug_html + "\u003Ca" + (pug_attr("href", `${result.link}`, true, true)+" target=\"_blank\"") + "\u003E\u003C\u002Fa\u003E\u003C\u002Fli\u003E";
   }
 
 }
