@@ -85,6 +85,15 @@ $(document).ready(function() {
 
     // When the window is resized some fancy ui positioning
     $(window).resize(function() {
+        let timer;
+
+        clearTimeout(timer);
+
+        $('#wrapper').addClass('resize-window');
+        
+        timer = setTimeout(function() {
+            $('#wrapper').removeClass('resize-window');
+        }, 500);
 
         newWidth = $fluidEl.width();
 
@@ -94,7 +103,7 @@ $(document).ready(function() {
             $elem
               .width(newWidth)
               .height(newWidth * $elem.data('aspectRatio'));
-        });
+        }); // Kick off one resize to fix all videos on page load ??
 
         // Hack to keep case study section from getting out of sync
         if ($('.case-study').hasClass('case-study-open')) {
@@ -103,8 +112,7 @@ $(document).ready(function() {
 
         stickyUpdate();
 
-    // Kick off one resize to fix all videos on page load
-    }).resize();
+    });
 
     // Check current position relative to top of page
     $(window).scroll(function () {
