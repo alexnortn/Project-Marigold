@@ -346,7 +346,7 @@ let glyph = function (p) {
 			p.bezierVertex(aSpringVert[49].x, aSpringVert[49].y, aSpringVert[50].x, aSpringVert[50].y, aSpringVert[51].x, aSpringVert[51].y);
 			p.bezierVertex(aSpringVert[52].x, aSpringVert[52].y, aSpringVert[53].x, aSpringVert[53].y, aSpringVert[54].x, aSpringVert[54].y);
 		p.endShape(p.CLOSE);
-		p.fill(244);
+		p.fill('#f4f4f4');
 		p.beginShape();
 		p.vertex(aCounterSpringVert[0].x, aCounterSpringVert[0].y);
 		p.vertex(aCounterSpringVert[1].x, aCounterSpringVert[1].y);
@@ -1061,13 +1061,20 @@ let glyph = function (p) {
 
 	// Deal with resize events
 	window.onresize = function() { 
+		let timer;
+
+		clearTimeout(timer);
+
 		$("#glyph").width(window.innerWidth)
 			       .height(window.innerHeight);
 
 	    glyphOp = 0; // Fade glyph in each resize to avoid jumpiness
 
-     	windowResized();	
-  
+	    windowResized();
+        
+        timer = setTimeout(function() {
+    		windowResized();
+        }, 250);  
 	}
 
 	// Web Lab interation states	
