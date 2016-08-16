@@ -1061,13 +1061,20 @@ let glyph = function (p) {
 
 	// Deal with resize events
 	window.onresize = function() { 
+		let timer;
+
+		clearTimeout(timer);
+
 		$("#glyph").width(window.innerWidth)
 			       .height(window.innerHeight);
 
 	    glyphOp = 0; // Fade glyph in each resize to avoid jumpiness
 
-     	windowResized();	
-  
+	    windowResized();
+        
+        timer = setTimeout(function() {
+    		windowResized();
+        }, 250);  
 	}
 
 	// Web Lab interation states	
