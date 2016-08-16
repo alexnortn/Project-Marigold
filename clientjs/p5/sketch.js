@@ -78,6 +78,9 @@ let glyph = function (p) {
 		_force  = $.Deferred(),
 		_bounce = $.Deferred();
 
+	let _slow = false,
+		_slowFn;
+
 	let _renderMode,
 		_renderMan;
 
@@ -141,6 +144,8 @@ let glyph = function (p) {
 
 		centerGlyph(vertices);
 		findCenter();
+
+		initPerformanceTest();
 
 		// --------------------------------------
 	    // Mobile Glyph
@@ -212,6 +217,19 @@ let glyph = function (p) {
 
 
 	}
+
+	// Check framerate interval
+	function initPerformanceTest() {
+		_slowFn = setInterval(testPerformance, 1000);
+	}
+
+	function testPerformance() {
+		_slow = p.frameRate() < 20
+			? true
+			: false;
+
+		console.log(_slow + ' ' + p.frameRate());
+	}
 	
 	// --------------------------------------
     // Mobile + Tablet
@@ -277,27 +295,36 @@ let glyph = function (p) {
 	function drawBezier(vertices) {
 
 		p.beginShape();
-		for (let i = 0; i < vertices.a_vertex.length; i++) {
-		if(vertices.a_vertex[i].vertexType == true) {
-			p.p.bezierVertex(
-			vertices.a_vertex[i].x, vertices.a_vertex[i].y,
-			vertices.a_vertex[i++].x, vertices.a_vertex[i].y,
-			vertices.a_vertex[i++].x, vertices.a_vertex[i].y
-			);
-		} else {
-			p.vertex(vertices.a_vertex[i].x, vertices.a_vertex[i].y);
-		}
-		}
+			for (let i = 0; i < vertices.a_vertex.length; i++) {
+				if (vertices.a_vertex[i].vertexType == true) {
+					p.p.bezierVertex(
+					vertices.a_vertex[i].x, vertices.a_vertex[i].y,
+					vertices.a_vertex[i++].x, vertices.a_vertex[i].y,
+					vertices.a_vertex[i++].x, vertices.a_vertex[i].y
+					);
+				} 
+				else {
+					p.vertex(vertices.a_vertex[i].x, vertices.a_vertex[i].y);
+				}
+			}
 		p.endShape(p.CLOSE);
-
 	}
 
-	function drawBasicA(){
+	function drawBasicA() {
 		let fadeSpeed = 2;
 		if (glyphOp < 255) glyphOp += fadeSpeed;
-		// p.stroke(1);
-		p.noStroke();
-		p.fill(35,35,35,glyphOp);
+		
+		// If framerate is slow, draw outline, else fill glyph
+		if (_slow) {
+			p.noFill();
+			p.strokeWeight(1);
+			p.stroke(35,35,35,glyphOp);
+		} 
+		else {
+			p.noStroke();
+			p.fill(35,35,35,glyphOp);
+		}
+
 		p.beginShape();
 			p.vertex(aSpringVert[0].x, aSpringVert[0].y);
 			p.vertex(aSpringVert[1].x, aSpringVert[1].y);
@@ -332,12 +359,21 @@ let glyph = function (p) {
 		p.endShape(p.CLOSE);
 	}
 
-	function drawBasicN(){
+	function drawBasicN() {
 		let fadeSpeed = 2;
 		if (glyphOp < 255) glyphOp += fadeSpeed;
-		// p.stroke(1);
-		p.noStroke();
-		p.fill(35,35,35,glyphOp);
+		
+		// If framerate is slow, draw outline, else fill glyph
+		if (_slow) {
+			p.noFill();
+			p.strokeWeight(1);
+			p.stroke(35,35,35,glyphOp);
+		} 
+		else {
+			p.noStroke();
+			p.fill(35,35,35,glyphOp);
+		}
+
 		p.beginShape();
 			p.vertex(nSpringVert[0].x, nSpringVert[0].y);
 			p.vertex(nSpringVert[1].x, nSpringVert[1].y);
