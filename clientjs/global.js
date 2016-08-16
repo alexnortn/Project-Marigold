@@ -57,6 +57,8 @@ $(document).ready(function() {
     hashRoute();
     hashChanged();
 
+    stickyUpdate();
+
     _caseStudySupport = caseStudySupport(); // Set up case study support
 
     $('body').addClass('loading');
