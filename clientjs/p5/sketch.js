@@ -227,8 +227,6 @@ let glyph = function (p) {
 		_slow = p.frameRate() < 20
 			? true
 			: false;
-
-		console.log(_slow + ' ' + p.frameRate());
 	}
 	
 	// --------------------------------------
