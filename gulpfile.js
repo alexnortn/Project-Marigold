@@ -4,12 +4,13 @@
 
 let argv = require('yargs').argv,
     gulp = require('gulp'),
-    pug = require('gulp-pug'), 
+    bower = require('gulp-bower'),
     concat = require('gulp-concat'),
-    uglify = require('gulp-uglify'),
-    stylus = require('gulp-stylus'),
-    replace = require('gulp-replace'),
     include = require('gulp-include'),
+    pug = require('gulp-pug'), 
+    replace = require('gulp-replace'),
+    stylus = require('gulp-stylus'),
+    uglify = require('gulp-uglify'),
     browserify = require('browserify'),
     cleanCss = require('gulp-clean-css'),
     autoprefixer = require('gulp-autoprefixer'),
@@ -39,7 +40,7 @@ let BASEURL = argv.production
 
 gulp.task('default', ['build']);
 
-gulp.task('build', [ 'images', 'js', 'pug', 'css', 'fonts', 'plugins' ]);
+gulp.task('build', [ 'images', 'js', 'pug', 'css', 'fonts', 'plugins', 'bower' ]);
 
 
 gulp.task('images', [ ], function () {
@@ -56,6 +57,10 @@ gulp.task('clean', function () {
     del([   
         './public/**'
     ]);
+});
+
+gulp.task('bower', function() {
+  return bower();
 });
 
 // Compile pug --> HTML
