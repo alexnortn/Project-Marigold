@@ -59,8 +59,9 @@ gulp.task('clean', function () {
     ]);
 });
 
-gulp.task('bower', function() {
-  return bower();
+gulp.task('bower', function () {
+    return gulp.src('bower_components/**')
+        .pipe(gulp.dest('public/bower_components/'));
 });
 
 // Compile pug --> HTML

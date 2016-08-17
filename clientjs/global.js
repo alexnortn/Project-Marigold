@@ -18,7 +18,17 @@ let velocity    = require('velocity-animate'),
     slick       = require('slick-carousel'),
     Stickyfill  = require('stickyfill'),
     isMobile    = require('ismobilejs'),
-    animation = require('./animation.js');
+    animation   = require('./animation.js');
+
+// Bower Dependencies
+let bower_url = '../bower_components/';
+
+/*
+* let unveil = bower_url + 'jquery-unveil';
+*   unveil = require(unveil);
+*/
+
+    console.log(unveil);
 
 // Userlist data array for filling in info box
 let userListData = [],
