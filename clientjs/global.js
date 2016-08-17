@@ -28,8 +28,6 @@ let bower_url = '../bower_components/';
 *   unveil = require(unveil);
 */
 
-    console.log(unveil);
-
 // Userlist data array for filling in info box
 let userListData = [],
     projects,
