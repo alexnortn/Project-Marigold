@@ -18,15 +18,11 @@ let velocity    = require('velocity-animate'),
     slick       = require('slick-carousel'),
     Stickyfill  = require('stickyfill'),
     isMobile    = require('ismobilejs'),
+    unveil      = require('../node_modules/unveil2/src/jquery.unveil2.js'),
     animation   = require('./animation.js');
 
 // Bower Dependencies
 let bower_url = '../bower_components/';
-
-/*
-* let unveil = bower_url + 'jquery-unveil';
-*   unveil = require(unveil);
-*/
 
 // Userlist data array for filling in info box
 let userListData = [],
@@ -191,6 +187,21 @@ $(document).ready(function() {
         }
 
         animation.scrollToVelocity(_sectionCurrent); // Navigate
+    });
+
+
+    // --------------------------------------
+    // Lazy Load Images --> Unveil2
+
+    $('img').unveil({
+        offset: 200,
+        throttle: 200,
+        placeholder: 'http://placehold.it/500x300',
+    });
+    $('.img-load').unveil({
+        offset: 200,
+        throttle: 200,
+        placeholder: 'http://placehold.it/500x300',
     });
 
 

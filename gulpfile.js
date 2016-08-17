@@ -4,7 +4,6 @@
 
 let argv = require('yargs').argv,
     gulp = require('gulp'),
-    bower = require('gulp-bower'),
     concat = require('gulp-concat'),
     include = require('gulp-include'),
     pug = require('gulp-pug'), 
@@ -40,7 +39,7 @@ let BASEURL = argv.production
 
 gulp.task('default', ['build']);
 
-gulp.task('build', [ 'images', 'js', 'pug', 'css', 'fonts', 'plugins', 'bower' ]);
+gulp.task('build', [ 'images', 'js', 'pug', 'css', 'fonts', 'plugins']);
 
 
 gulp.task('images', [ ], function () {
@@ -57,11 +56,6 @@ gulp.task('clean', function () {
     del([   
         './public/**'
     ]);
-});
-
-gulp.task('bower', function () {
-    return gulp.src('bower_components/**')
-        .pipe(gulp.dest('public/bower_components/'));
 });
 
 // Compile pug --> HTML

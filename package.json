@@ -39,6 +39,7 @@
     "stickyfill": "^1.1.1",
     "stylus": "^0.52.4",
     "toxiclibsjs": "^0.3.1",
+    "unveil2": "^2.0.5",
     "velocity-animate": "^1.2.3",
     "velocity-ui-pack": "^1.2.2",
     "watchify": "^3.6.0"
@@ -50,7 +51,6 @@
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^2.3.1",
     "gulp-babel": "^5.2.0",
-    "gulp-bower": "0.0.13",
     "gulp-browserify": "^0.5.1",
     "gulp-clean-css": "^2.0.6",
     "gulp-concat": "^2.6.0",

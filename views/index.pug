@@ -127,7 +127,7 @@ block content
                                     p=result.description_short
                             .hero-box
                                 .overlay
-                                .hero(style=`background-image: url(${result.hero})`)
+                                .hero.img-load(style=`background-image: url(${result.hero})`)
                         // /CASE STUDY OVERVIEW
                         .case-study-contents.parallax__group
                             .case-study-intro.cf
@@ -164,14 +164,14 @@ block content
                                         li=result.meta.Duration
 
                             // BIG MOMENT 0
-                            .big-moment-0-color(style=`background-image: url(${result.images[index].src})`)
+                            .big-moment-0-color.img-load(style=`background-image: url(${result.images[index].src})`)
 
                             // 2X PARALLAX IMAGES LEFT
                             .para-box.parallax__group
                                 blockquote.left.parallax__layer.parallax__layer--fore=result.pull_quotes[0]
-                                .image-box(style=`background-image: url(${result.hero})`)
+                                .image-box.img-load(style=`background-image: url(${result.hero})`)
                                     .image-left
-                                .image-box.image-box--bottom(style=`background-image: url(${result.hero})`)
+                                .image-box.image-box--bottom.img-load(style=`background-image: url(${result.hero})`)
                                     .image-left
                                         //- p.caption #{result.description_long_2}
 
@@ -182,12 +182,12 @@ block content
                                             img.big-moment-3-color(src=`${result.images[index].src}`)
                                 each image, index in result.images
                                     .image-grid-container.bounce&attributes({'data-slide': index})
-                                        .image-grid(style=`background-image: url(${result.images[index].src})`)
+                                        .image-grid.img-load(style=`background-image: url(${result.images[index].src})`)
                             // /GRID ITERATOR
 
                             // Hard coded index, what was I thinking?
                             .big-moment-1.parallax__group
-                                .big-moment-1-color.parallax__layer--back(style=`background-image: url(${result.images[0].src})`) 
+                                .big-moment-1-color.parallax__layer--back.img-load(style=`background-image: url(${result.images[0].src})`) 
 
                             // GRID ITERATOR 2
                             #grid-two.image-grid-wrapper
@@ -196,15 +196,15 @@ block content
                                             img.big-moment-3-color(src = `${result.images[index].src}`)
                                 each image, index in result.images
                                     .image-grid-container.bounce&attributes({'data-slide': index})
-                                        .image-grid(style=`background-image: url(${result.images[index].src})`)
+                                        .image-grid.img-load(style=`background-image: url(${result.images[index].src})`)
                             // /GRID ITERATOR 2
 
                             // 2X PARALLAX IMAGES RIGHT
                             .para-box.parallax__group   
-                                .image-box.right(style=`background-image: url(${result.hero})`)
+                                .image-box.right.img-load(style=`background-image: url(${result.hero})`)
                                     .image-right
                                         //- p.caption.caption--2 #{result.description_long_2}
-                                .image-box.right.image-box--bottom(style=`background-image: url(${result.hero})`)
+                                .image-box.right.image-box--bottom.img-load(style=`background-image: url(${result.hero})`)
                                     .image-right
                                 blockquote.right.parallax__layer.parallax__layer--fore=result.pull_quotes[0]
 
@@ -212,13 +212,13 @@ block content
                                 iframe(src="//player.vimeo.com/video/95969058" width="1600" height="1000" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
 
                             .big-moment-2.parallax__group  
-                                .big-moment-2-color(style=`background-image: url(${result.images[0].src})`)
-                                .img-box.parallax__layer.parallax__layer--fore(style=`background-image: url(${result.images[0].src})`)
+                                .big-moment-2-color.img-load(style=`background-image: url(${result.images[0].src})`)
+                                .img-box.parallax__layer.parallax__layer--fore.img-load(style=`background-image: url(${result.images[0].src})`)
                                 p.caption=result.description_long_2
 
                             // 2X PARALLAX IMAGES LEFT
                             .para-box
-                                .image-box.image-box--center(style=`background-image: url(${result.hero})`)
+                                .image-box.image-box--center.img-load(style=`background-image: url(${result.hero})`)
                                 p.caption.center-caption=result.description_long_2
 
                             .big-moment-3
@@ -241,7 +241,7 @@ block content
                                         .select-work-description
                                             p.tamer=result.description_short
                                             hr
-                                        .select-work-img(style=`background-image: url(${result.images[0].src})`)
+                                        .select-work-img.img-load(style=`background-image: url(${result.images[0].src})`)
                                     h3 #{result.name}
                         // /SELECT-WORK ITERATOR
                         h5#select-more { more }
@@ -262,7 +262,7 @@ block content
                 //-                     p #{result.description_short}
                 //-             .hero-box
                 //-                 .overlay
-                //-                 .hero(style='background-image: url(#{result.hero})')
+                //-                 .hero.img-load(style='background-image: url(#{result.hero})')
                 //-         // /PROJECT OVERVIEW
                 //-         .project-contents.parallax__group
                 //-             .project-intro.cf
@@ -302,7 +302,7 @@ block content
                 ul
                     // FEATURE ITERATOR
                     each result, index in feature
-                        li(style=`background-image: url(${result.logo})`)
+                        li.img-load(style=`background-image: url(${result.logo})`)
                             a(href=`${result.link}` target="_blank")
 
         // /FEATURE SECTION  
