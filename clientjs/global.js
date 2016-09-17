@@ -87,16 +87,6 @@ $(document).ready(function() {
 
     // When the window is resized some fancy ui positioning
     $(window).resize(function() {
-        let timer;
-
-        clearTimeout(timer);
-
-        $('#wrapper').addClass('resize-window');
-        
-        timer = setTimeout(function() {
-            $('#wrapper').removeClass('resize-window');
-        }, 500);
-
         newWidth = $fluidEl.width();
 
         // Resize all videos according to their own aspect ratio
@@ -113,6 +103,20 @@ $(document).ready(function() {
         }
 
         stickyUpdate();
+
+        if (_mobile) { // Disable blur effect on mobile devices + tablets
+            return;
+        }
+
+        let timer;
+
+        clearTimeout(timer);
+
+        $('#wrapper').addClass('resize-window');
+        
+        timer = setTimeout(function() {
+            $('#wrapper').removeClass('resize-window');
+        }, 500);
 
     });
 
