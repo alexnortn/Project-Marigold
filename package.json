@@ -68,7 +68,8 @@
     "run-sequence": "^1.1.5",
     "should": "^7.1.1",
     "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.1.0"
+    "vinyl-source-stream": "^1.1.0",
+    "yargs": "~5.0.0"
   },
   "browserify-shim": {
     "jquery": "$"
