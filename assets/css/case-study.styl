@@ -105,7 +105,7 @@ $StickyOffsetCase = 100px
 
 .case-study-contents 
 	width 85%
-	max-width 1200px
+	max-width 1275px // In accordance with big-moment-1 85vw sizing
 	position relative
 	margin-left auto
 	margin-right auto
@@ -585,8 +585,8 @@ p.center-caption
 
 .big-moment-1 
 	display block
-	width 175%
-	left -35%
+	width 100vw
+	left calc((100vw - 1275px) / -2) // 1200~ Max contents relative width
 	height 70vh
 	position relative
 	text-align center
@@ -612,8 +612,8 @@ p.center-caption
 	background-position left
 	background-color Beige
 	position absolute
-	left -20%
-	right -20%
+	left 0
+	right 0
 	top 0
 	height 125%
 	margin-top -225px
@@ -701,11 +701,17 @@ p.center-caption
 @media screen and (max-width: 1500px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)
 	.case-study-contents blockquote
 		font-size 48px	
+	
+	.big-moment-1	
+		left calc((100vw - 85vw) / -2) // 85~ Contents relative width
 
 /* ----------- Retina Screens ----------- */
 @media screen and (max-width: 1500px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
 	.case-study-contents blockquote
 		font-size 48px	
+	
+	.big-moment-1	
+		left calc((100vw - 85vw) / -2) // 85~ Contents relative width
  
 
 /*---------------------------------------------------------------*/
