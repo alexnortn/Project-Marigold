@@ -611,10 +611,10 @@
                 ]
             },
             {
-                "route" :"dig",
-                "preview" :"dig-preview",
-                "project" :"dig-project",
-                "name"  : "More1",
+                "route" :"msty",
+                "preview" :"msty-preview",
+                "project" :"msty-project",
+                "name"  : "MSTY",
                 "year"  : "2014",
                 "medium": [
                     "Paper",

@@ -397,6 +397,54 @@ header
 	
 
 // --------------------------------------
+// Next/Prev-Arrow
+
+.arrow
+	position fixed
+	width 75px
+	height 80vh
+	top 10%
+	
+	// border 0 solid $GREY_BG
+	
+	display flex
+	align-items center
+	justify-content center
+	
+	transition all 250ms ease-in-out
+	
+
+.arrow.disabled
+	opacity 0.15
+	pointer-events none
+	
+
+.arrow.left
+	left 1.25vw
+	
+
+.arrow.right
+	right 1.25vw
+	
+
+.arrow.left:hover
+	left 1vw
+	
+
+.arrow.right:hover
+	right 1vw
+	
+
+.arrow:hover
+	cursor pointer
+	// border 1px solid $GREY_BG
+	
+
+.arrow:active
+	opacity 0.5	
+	
+
+// --------------------------------------
 //  Scrollbar
 
 ::-webkit-scrollbar

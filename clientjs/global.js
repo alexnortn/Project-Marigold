@@ -203,6 +203,34 @@ $(document).ready(function() {
 
             console.log(projects[0]);
 
+        function updateCurrentProject(index) {
+            return  '#' + projects[index].id;
+        }
+
+        function updateArrow() {
+
+            console.log(current_index);
+            console.log(projects.length);
+
+            if (current_index >= projects.length - 1) {
+                $('#next').addClass('disabled');
+                console.log('end');
+            }
+            else {
+                $('#next').removeClass('disabled');
+                console.log('not end');
+            }
+
+            if (current_index <= 0) {
+                $('#prev').addClass('disabled');
+                console.log('zero');
+            }
+            else {
+                $('#prev').removeClass('disabled');
+                console.log('not zero');
+            }
+        }
+
         $('.select-work-item').click(function(evt) {
             if (openState) {
                 return;
@@ -215,6 +243,8 @@ $(document).ready(function() {
                     current_index = index;
                 }
             });
+
+            updateArrow();
 
             project_id = "#" + project_id;
 
@@ -237,9 +267,42 @@ $(document).ready(function() {
                 $('.project-transition').velocity("fadeOut", { duration: 500 });
                                         // .then(function(elem) { $(elem).remove(); });
                 $(project_id).velocity("scroll", { axis: "x", duration: 0, container: container });
-            }, 500);        
+            }, 500);       
+
+            $('#select-work li:nth-child(n+8)').velocity("fadeIn", { duration: 500 }); // FadeIn extra stuff, hack for now 
 
             openState = true;
+
+        });
+
+        // Scroll to previous project
+        $('#prev').click(function(evt) {
+            if (!openState) {
+                return;
+            }
+
+            if (current_index >= 1) {
+                current_index--;
+                project_id = updateCurrentProject(current_index);
+
+                $(project_id).velocity("scroll", { axis: "x", duration: 750, container: container, easing: 'ease-in-out' });
+                updateArrow();
+            }
+        });
+
+        // Scroll to next project
+        $('#next').click(function(evt) {
+            if (!openState) {
+                return;
+            }
+
+            if (current_index < projects.length - 1) {
+                current_index++;
+                project_id = updateCurrentProject(current_index);
+                
+                $(project_id).velocity("scroll", { axis: "x", duration: 750, container: container, easing: 'ease-in-out' });
+                updateArrow();
+            }
 
         });
 
