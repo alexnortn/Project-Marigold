@@ -116,11 +116,11 @@ $(document).ready(function() {
 
         clearTimeout(timer);
 
-        $('#wrapper').addClass('resize-window');
+        // $('#wrapper').addClass('resize-window');
         
-        timer = setTimeout(function() {
-            $('#wrapper').removeClass('resize-window');
-        }, 500);
+        // timer = setTimeout(function() {
+        //     $('#wrapper').removeClass('resize-window');
+        // }, 500);
 
     });
 
@@ -195,12 +195,28 @@ $(document).ready(function() {
 
     // Project Grid Handlers
     (function() { // For lexical scoping
-        let openState = false;
+        let openState = false,
+            current_index = 0,
+            container = $('.project-container'),
+            projects = $('.project-view').toArray(),
+            project_id;
+
+            console.log(projects[0]);
 
         $('.select-work-item').click(function(evt) {
             if (openState) {
                 return;
             }
+
+            project_id = $(this).attr('data-project');
+
+            projects.forEach(function(project_item, index) {
+                if (project_item.id === project_id) {
+                    current_index = index;
+                }
+            });
+
+            project_id = "#" + project_id;
 
             $('#fx-container').removeClass('hidden');
 
@@ -217,14 +233,25 @@ $(document).ready(function() {
             setTimeout(function() {
                 $('body').addClass('project-open');             // Corresponds to precise animation time on transition effect, 
                 $('.project-container').addClass('visible');    // using setTimeout as transition callbacks are unreliable.
-                $('.project-transition').velocity("fadeOut", { duration: 500 })
-                                        .then(function(elem) { $(elem).remove(); });
-
-
+                $('#fx-container').addClass('opaque');
+                $('.project-transition').velocity("fadeOut", { duration: 500 });
+                                        // .then(function(elem) { $(elem).remove(); });
+                $(project_id).velocity("scroll", { axis: "x", duration: 0, container: container });
             }, 500);        
 
             openState = true;
 
+        });
+
+        // Resize
+        $(window).resize(function(evt) {
+            let timer;
+
+            clearTimeout(timer);
+            
+            timer = setTimeout(function() {
+                $(project_id).velocity("scroll", { axis: "x", duration: 0, container: container }); 
+            }, 500);
         });
 
     }());

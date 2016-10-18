@@ -5,7 +5,7 @@ block content
         // PROJECT ITERATOR
         .project-container
             each result, index in select_work
-                .project.project-view.parallax&attributes({'data-inproject': false}, {'data-project': index}, {'id': result.project})
+                .project.project-view.parallax&attributes({'data-inproject': false}, {'data-projectIndex': index}, {'id': result.project})
                     // PROJECT OVERVIEW
                     .project-overview
                         .description

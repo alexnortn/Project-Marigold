@@ -48,7 +48,7 @@ if ('number' == typeof pug_obj0.length) {
     var result = pug_obj0[index];
 
 ;pug_debug_line = 8;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
-pug_html = pug_html + "\u003Cdiv" + (pug_attrs(pug_merge([{"class": "project project-view parallax"},{'data-inproject': false}, {'data-project': index}, {'id': result.project}]), true)) + "\u003E";
+pug_html = pug_html + "\u003Cdiv" + (pug_attrs(pug_merge([{"class": "project project-view parallax"},{'data-inproject': false}, {'data-projectIndex': index}, {'id': result.project}]), true)) + "\u003E";
 ;pug_debug_line = 9;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
 pug_html = pug_html + "\u003C!-- PROJECT OVERVIEW--\u003E";
 ;pug_debug_line = 10;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
@@ -166,7 +166,7 @@ pug_html = pug_html + (pug_escape(null == (pug_interp = result.meta.Duration) ? 
     var result = pug_obj0[index];
 
 ;pug_debug_line = 8;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
-pug_html = pug_html + "\u003Cdiv" + (pug_attrs(pug_merge([{"class": "project project-view parallax"},{'data-inproject': false}, {'data-project': index}, {'id': result.project}]), true)) + "\u003E";
+pug_html = pug_html + "\u003Cdiv" + (pug_attrs(pug_merge([{"class": "project project-view parallax"},{'data-inproject': false}, {'data-projectIndex': index}, {'id': result.project}]), true)) + "\u003E";
 ;pug_debug_line = 9;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
 pug_html = pug_html + "\u003C!-- PROJECT OVERVIEW--\u003E";
 ;pug_debug_line = 10;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
