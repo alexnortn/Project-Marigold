@@ -21,6 +21,11 @@ $F-padding = 15px
 /* -------------------------------------- */
 /* Elements */
 
+#fx-container
+	z-index 995
+	transition all 500ms ease-in-out
+	
+
 .project-open
 	overflow-y hidden
 	
@@ -30,14 +35,23 @@ $F-padding = 15px
 	height 100vh
 	
 
+.project-full
+	width 85vw
+	max-width 1200px
+	height 100vh
+	
+
 .fixed
 	position fixed
 	left 0
 	top 0
 	
-#fx-container
-	z-index 995
-	pointer-events none
+.shadow
+	box-shadow 0 0 100px rgba(0, 0, 0, 0.18)
+	
+.opaque
+	background-color $WHITE_BG
+	opacity 1
 	
 
 #works
@@ -66,8 +80,6 @@ $F-padding = 15px
 	height 0 
 	margin 0
 	border-radius 100%
-	background-image  radial-gradient(16px at 60px 50% , $WHITE_BG 0%, $WHITE_BG 14px, rgba(0, 0, 0, 0.3) 18px, rgba(0, 0, 0, 0) 19px); 
-	background  no-repeat center center fixed
 	background-color $WHITE_BG
 	transition all 500ms ease-out
 	
