@@ -217,10 +217,9 @@ $(document).ready(function() {
             setTimeout(function() {
                 $('body').addClass('project-open');             // Corresponds to precise animation time on transition effect, 
                 $('.project-container').addClass('visible');    // using setTimeout as transition callbacks are unreliable.
-                $('.project-transition').fadeOut('fast', function() {
-                    $(this).remove();
-                });
-            }, 500);                             
+                $('.project-transition').velocity("fadeOut", { duration: 500 })
+                    then(function(elem) { $(elem).remove(); });
+            }, 500);                         
 
             openState = true;
 
