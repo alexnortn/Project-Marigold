@@ -215,10 +215,33 @@ $(document).ready(function() {
         let current_index = 0,
             container = $('.project-container'),
             projects = $('.project-view').toArray(),
+            scrollHandler,
             project_id;
 
-        function updateCurrentProject(index) {
-            return  '#' + projects[index].id;
+        function updateCurrentProject(index, current_id) {
+            let new_id = '#' + projects[index].id;
+
+            updateProjectHandlers(current_id, new_id);
+
+            return new_id;
+        }
+
+        function updateProjectHandlers(current_id, new_id) {
+
+            if (scrollHandler) {
+                $(current_id).off("scroll", scrollHandler);
+            }
+
+            scrollHandler = function() {
+                if ($(new_id).scrollTop() > 0) {
+                    $('.arrow-container').addClass('arrow-bottom');
+                }
+                else {
+                    $('.arrow-container').removeClass('arrow-bottom');   
+                }
+            }
+
+            $(new_id).scroll(scrollHandler);
         }
 
         function updateArrow() {
@@ -247,6 +270,7 @@ $(document).ready(function() {
             projects.forEach(function(project_item, index) {
                 if (project_item.id === project_id) {
                     current_index = index;
+                    updateCurrentProject(current_index, project_id);
                 }
             });
 
@@ -286,7 +310,7 @@ $(document).ready(function() {
 
             if (current_index >= 1) {
                 current_index--;
-                project_id = updateCurrentProject(current_index);
+                project_id = updateCurrentProject(current_index, project_id);
 
                 $('.arrow-container').removeClass('dip-to-white');
                 
@@ -307,7 +331,7 @@ $(document).ready(function() {
 
             if (current_index < projects.length - 1) {
                 current_index++;
-                project_id = updateCurrentProject(current_index);
+                project_id = updateCurrentProject(current_index, project_id);
 
                 $('.arrow-container').removeClass('dip-to-white');
                 
@@ -909,11 +933,11 @@ function toggleLogo(loc) {
 function toggleGlyphControls(loc) {
 
     if (loc === "#web-lab") { 
-        $('.lab-options').addClass('lab-open');
-        $('.lab-what').addClass('lab-open');
+        $('.lab-options').velocity("fadeIn", { duration: 250 });
+        $('.lab-what').velocity("fadeIn", { duration: 250 });
     } else {
-        $('.lab-options').removeClass('lab-open');
-        $('.lab-what').removeClass('lab-open');
+        $('.lab-options').velocity("fadeOut", { duration: 250 });
+        $('.lab-what').velocity("fadeOut", { duration: 250 });
     }
 }
 
