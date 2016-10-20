@@ -239,6 +239,15 @@ $(document).ready(function() {
                 else {
                     $('.arrow-container').removeClass('arrow-bottom');   
                 }
+
+                // if ($(new_id).outerHeight() - $(new_id).scrollTop() < 100) {
+                //     $('.arrow-center').velocity("fadeIn", { duration: 100, display: "flex" });
+                // }
+                // else {
+                //     $('.arrow-center').velocity("fadeOut", { duration: 100 });   
+                // }
+
+                console.log($(new_id).scrollTop());
             }
 
             $(new_id).scroll(scrollHandler);
@@ -278,7 +287,7 @@ $(document).ready(function() {
 
             project_id = "#" + project_id;
 
-            $('#fx-container').velocity("fadeIn", { duration: 500 });
+            $('#fx-container').velocity("fadeIn", { duration: 500, display: "flex" });
 
             $("<div></div>")
                 .addClass('open-transition-start project-transition')
@@ -313,12 +322,14 @@ $(document).ready(function() {
                 project_id = updateCurrentProject(current_index, project_id);
 
                 $('.arrow-container').removeClass('dip-to-white');
+                // $('.project-container').removeClass('dip-to-white');
                 
                 $(project_id).velocity("scroll", { axis: "x", duration: 750, container: container, easing: 'ease-in-out' });
                 updateArrow();
 
                 setTimeout(function() {
                     $('.arrow-container').addClass('dip-to-white');
+                    // $('.project-container').addClass('dip-to-white');
                 }, 0);
             }
         });
@@ -334,13 +345,14 @@ $(document).ready(function() {
                 project_id = updateCurrentProject(current_index, project_id);
 
                 $('.arrow-container').removeClass('dip-to-white');
-                
+                // $('.project-container').removeClass('dip-to-white');                
             
                 $(project_id).velocity("scroll", { axis: "x", duration: 750, container: container, easing: 'ease-in-out' });
                 updateArrow();
 
                 setTimeout(function() {
                     $('.arrow-container').addClass('dip-to-white');
+                    // $('.project-container').addClass('dip-to-white');
                 }, 0);
             }
         });
@@ -933,8 +945,8 @@ function toggleLogo(loc) {
 function toggleGlyphControls(loc) {
 
     if (loc === "#web-lab") { 
-        $('.lab-options').velocity("fadeIn", { duration: 250 });
-        $('.lab-what').velocity("fadeIn", { duration: 250 });
+        $('.lab-options').velocity("fadeIn", { duration: 250, display: "flex" });
+        $('.lab-what').velocity("fadeIn", { duration: 250, display: "flex" });
     } else {
         $('.lab-options').velocity("fadeOut", { duration: 250 });
         $('.lab-what').velocity("fadeOut", { duration: 250 });
