@@ -284,6 +284,9 @@ $(document).ready(function() {
                 }
             });
 
+            // Close casestudy
+            closeCasestudy();
+
             updateArrow();
 
             project_id = "#" + project_id;
