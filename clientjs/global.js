@@ -200,12 +200,16 @@ $(document).ready(function() {
 
     // Close overlay project
     function closeProject() {
-        $('#fx-container').velocity("fadeOut", { duration: 100 });
-        $('#fx-container').removeClass('opaque');
+        $('#fx-container').velocity("fadeOut", { duration: 250 });
 
-        $('.project-transition').remove();
-        $('.project-container').removeClass('visible');
-        $('body').removeClass('project-open');
+        setTimeout(function() {
+            $('#fx-container').removeClass('opaque');
+            $('.project-transition').remove();
+            $('.project-container').removeClass('visible');
+            $('.arrow-container').removeClass('arrow-bottom');
+            $('body').removeClass('project-open');
+        }, 250);
+
         $('#pagination').fadeToggle(500); // Fade Out Pagination
         openProjectState = false;
     }
@@ -226,6 +230,10 @@ $(document).ready(function() {
             return new_id;
         }
 
+        function resetProjectControls() {
+            $('.arrow-container').removeClass('arrow-bottom');
+        }
+
         function updateProjectHandlers(current_id, new_id) {
 
             if (scrollHandler) {
@@ -237,17 +245,8 @@ $(document).ready(function() {
                     $('.arrow-container').addClass('arrow-bottom');
                 }
                 else {
-                    $('.arrow-container').removeClass('arrow-bottom');   
+                    $('.arrow-container').removeClass('arrow-bottom');
                 }
-
-                // if ($(new_id).outerHeight() - $(new_id).scrollTop() < 100) {
-                //     $('.arrow-center').velocity("fadeIn", { duration: 100, display: "flex" });
-                // }
-                // else {
-                //     $('.arrow-center').velocity("fadeOut", { duration: 100 });   
-                // }
-
-                console.log($(new_id).scrollTop());
             }
 
             $(new_id).scroll(scrollHandler);
@@ -323,8 +322,12 @@ $(document).ready(function() {
 
                 $('.arrow-container').removeClass('dip-to-white');
                 // $('.project-container').removeClass('dip-to-white');
+
+                resetProjectControls();
                 
-                $(project_id).velocity("scroll", { axis: "x", duration: 750, container: container, easing: 'ease-in-out' });
+                $(project_id).scrollTop(0)     // Reset project scroll                        
+                $(project_id).velocity("scroll", { axis: "x", duration: 750, container: container, easing: 'ease-in-out' }); // Scroll to next project
+                
                 updateArrow();
 
                 setTimeout(function() {
@@ -345,9 +348,13 @@ $(document).ready(function() {
                 project_id = updateCurrentProject(current_index, project_id);
 
                 $('.arrow-container').removeClass('dip-to-white');
-                // $('.project-container').removeClass('dip-to-white');                
-            
-                $(project_id).velocity("scroll", { axis: "x", duration: 750, container: container, easing: 'ease-in-out' });
+                // $('.project-container').removeClass('dip-to-white');
+
+                resetProjectControls();
+
+                $(project_id).scrollTop(0)     // Reset project scroll             
+                $(project_id).velocity("scroll", { axis: "x", duration: 750, container: container, easing: 'ease-in-out' }); // Scroll to next project
+                
                 updateArrow();
 
                 setTimeout(function() {
@@ -355,6 +362,16 @@ $(document).ready(function() {
                     // $('.project-container').addClass('dip-to-white');
                 }, 0);
             }
+        });
+
+        // Scroll to next project
+        $('#close').click(function(evt) {
+            if (!openProjectState) {
+                return;
+            }
+
+            closeProject();
+
         });
 
         // Resize
