@@ -437,15 +437,70 @@ $StickyOffsetMeta = 20vh
 
 /* ----------- Non-Retina Screens ----------- */
 @media screen and (max-width: 768px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)	
-	.case-study-intro 
+	.project-intro 
 		flex-direction column
+		padding-top 50px
+		
+	.meta-data
+		flex-direction row
+		flex-wrap wrap
+		
+		border-radius 10px 10px 0 0
+		border 1px solid $GREY_BG
+		border-top 10px solid $GREY_BG
+		border-right none
+		padding initial
+		height auto
+		margin-bottom 75px
+		
+	.meta-data ul
+		width 25%
+		padding 15px
+		padding-bottom 5px
+		box-sizing border-box
+		border-right 1px solid $GREY_BG
+		border-top 1px solid $GREY_BG
 		
 		
 
 /* ----------- Retina Screens ----------- */
 @media screen and (max-width: 768px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
-	.case-study-intro 
+	.project-intro 
 		flex-direction column
+		padding-top 50px
+		
+	.meta-data
+		flex-direction row
+		flex-wrap wrap
+		
+		border-radius 10px 10px 0 0
+		border 1px solid $GREY_BG
+		border-top 10px solid $GREY_BG
+		border-right none
+		padding initial
+		height auto
+		margin-bottom 75px
+		
+	.meta-data ul
+		width 25%
+		padding 15px
+		padding-bottom 5px
+		box-sizing border-box
+		border-right 1px solid $GREY_BG
+		border-top 1px solid $GREY_BG
+		
+
+
+/* ----------- Retina Screens ----------- */
+@media screen and (max-width: 500px) and (min-resolution: 2dppx) and (min-resolution: 96dpi)
+	.meta-data ul
+		width 50%
+		
+
+/* ----------- Retina Screens ----------- */
+@media screen and (max-width: 500px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
+	.meta-data ul
+		width 50%
 		
 
 

@@ -1,19 +1,20 @@
 extends layout
 
 block content
-    #fx-container.full.fixed.hidden
-        #prev.arrow-container.left.plus_plus
-            p Prev Project
-            .arrow.left
-                <i class="fa  fa-angle-left fa-2x"></i>    
-        #next.arrow-container.right.plus_plus
-            p Next Project
-            .arrow.right
-                <i class="fa  fa-angle-right fa-2x"></i>
-        #close.arrow-container.arrow-center.plus_plus
-            p Close Project
-            .arrow.arrow-center-within
-                <i class="fa  fa-close fa-2x"></i>    
+    #fx-container.full.fixed.passive
+        .arrow-container-main.hidden
+            #prev.arrow-container.left.plus_plus
+                p Prev Project
+                .arrow.left
+                    <i class="fa  fa-angle-left fa-2x"></i>    
+            #next.arrow-container.right.plus_plus
+                p Next Project
+                .arrow.right
+                    <i class="fa  fa-angle-right fa-2x"></i>
+            #close.arrow-container.arrow-center.plus_plus
+                p Close Project
+                .arrow.arrow-center-within
+                    <i class="fa  fa-close fa-2x"></i>    
         // PROJECT ITERATOR
         .project-container
             each result, index in select_work

@@ -200,10 +200,12 @@ $(document).ready(function() {
 
     // Close overlay project
     function closeProject() {
-        $('#fx-container').velocity("fadeOut", { duration: 250 });
+        $('.arrow-container-main').velocity("fadeOut", { duration: 250 });
 
         setTimeout(function() {
-            $('#fx-container').removeClass('opaque');
+            $('#fx-container')
+                .removeClass('opaque')
+                .addClass('passive');
             $('.project-transition').remove();
             $('.project-container').removeClass('visible');
             $('.arrow-container').removeClass('arrow-bottom');
@@ -286,7 +288,8 @@ $(document).ready(function() {
 
             project_id = "#" + project_id;
 
-            $('#fx-container').velocity("fadeIn", { duration: 500, display: "flex" });
+            $('#fx-container').removeClass('passive');
+            $('.arrow-container-main').velocity("fadeIn", { duration: 500, display: "flex" });
 
             $("<div></div>")
                 .addClass('open-transition-start project-transition')
