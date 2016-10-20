@@ -245,9 +245,11 @@ $(document).ready(function() {
             scrollHandler = function() {
                 if ($(new_id).scrollTop() > 0) {
                     $('.arrow-container').addClass('arrow-bottom');
+                    $('#prev').addClass('arrow-left-alt');
                 }
                 else {
                     $('.arrow-container').removeClass('arrow-bottom');
+                    $('#prev').removeClass('arrow-left-alt');
                 }
             }
 
