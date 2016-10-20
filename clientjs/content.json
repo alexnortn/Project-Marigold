@@ -83,6 +83,7 @@
                 "preview" :"brainvr-preview",
                 "project" :"brainvr-project",
                 "name"  : "BrainVr",
+                "project_type"  : "Project",
                 "year"  : "2016",
                 "medium": [
                     "Paper",
@@ -159,6 +160,7 @@
                 "preview" :"eyewire-preview",
                 "project" :"eyewire-project",
                 "name"  : "Eyewire",
+                "project_type"  : "Project",
                 "year"  : "2014",
                 "medium": [
                     "Paper",
@@ -235,6 +237,7 @@
                 "preview" :"convolve-preview",
                 "project" :"convolve-project",
                 "name"  : "Convolve",
+                "project_type"  : "Project",
                 "year"  : "2014",
                 "medium": [
                     "Paper",
@@ -311,6 +314,7 @@
                 "preview" :"dig-preview",
                 "project" :"dig-project",
                 "name"  : "DiG",
+                "project_type"  : "Project",
                 "year"  : "2014",
                 "medium": [
                     "Paper",
@@ -387,6 +391,7 @@
                 "preview" :"muwu-preview",
                 "project" :"muwu-project",
                 "name"  : "MuWu",
+                "project_type"  : "Project",
                 "year"  : "2014",
                 "medium": [
                     "Paper",
@@ -463,6 +468,7 @@
                 "preview" :"das-preview",
                 "project" :"das-project",
                 "name"  : "DAS",
+                "project_type"  : "Project",
                 "year"  : "2014",
                 "medium": [
                     "Paper",
@@ -539,6 +545,7 @@
                 "preview" :"olympics-preview",
                 "project" :"olympics-project",
                 "name"  : "Olympics",
+                "project_type"  : "Project",
                 "year"  : "2014",
                 "medium": [
                     "Paper",
@@ -615,6 +622,7 @@
                 "preview" :"msty-preview",
                 "project" :"msty-project",
                 "name"  : "MSTY",
+                "project_type"  : "Project",
                 "year"  : "2014",
                 "medium": [
                     "Paper",
