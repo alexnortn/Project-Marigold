@@ -37,7 +37,7 @@ $F-padding = 15px
 	overflow-y hidden
 	opacity 0
 	height 102%
-	width 85%
+	width 100%
 	position relative
 	margin-left auto
 	margin-right auto
@@ -85,23 +85,6 @@ $F-padding = 15px
 	transition all 250ms	
 
 
-.project-overview:hover 
-	/*box-shadow: 0 10px 15px rgba(0, 0, 0, 0.18)*/
-	cursor pointer
-
-
-.project-overview:hover .overlay 
-	background-color rgba(255,255,255,0.15)
-
-
-.project-overview:hover .hero 
-	transform scale(1.03)
-
-
-.project-overview:hover .description 
-	box-shadow 0 0px 50px rgba(0, 0, 0, 0.18)
-
-
 .project-page 
 	width 100%
 	height 100%
@@ -120,7 +103,7 @@ $F-padding = 15px
 		
 
 .project-contents 
-	width 100%
+	width 75%
 	max-width 1200px
 	min-width 650px
 	position relative
@@ -231,6 +214,11 @@ $F-padding = 15px
 
 .description-wrapper
 	align-self center
+	
+
+// Project (non case-study)
+.project-overview .description
+	margin-left 15%
 	
 
 

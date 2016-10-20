@@ -399,49 +399,102 @@ header
 // --------------------------------------
 // Next/Prev-Arrow
 
-.arrow
+.arrow-container
 	position fixed
+	top 66.5%
+	
 	width 75px
-	height 20vh
-	top 35%
+	height @width
+	border-radius 35px
 	
-	// border 0 solid $GREY_BG
+	overflow hidden
 	
-	display flex
-	align-items center
-	justify-content center
+	background-color $WHITE_BG
+	box-shadow 0 0 50px rgba(0 0 0 0.18)
 	
 	transition all 250ms ease-in-out
 	
 
-.arrow.disabled
+.arrow-container p
+	font-family Circular-Bold
+	font-size 12px
+	text-transform uppercase
+	letter-spacing 3px
+	
+	position absolute
+	width 250px
+	top 29px
+	
+	margin-left 10px
+
+	opacity 0
+	transition ease 250ms all	
+	
+
+.arrow-container.left p
+	right 15px
+	text-align right
+	
+
+.arrow-container.right p
+	left 15px
+	text-align left
+	
+
+.arrow-container.disabled
 	opacity 0.15
 	pointer-events none
 	
 
+.arrow-container.left
+	left 50px
+	
+
+.arrow-container.right
+	right 50px
+	
+
+.arrow-container.left:hover
+	left 45px
+	
+
+.arrow-container.right:hover
+	right 45px
+	
+
+.arrow-container:hover
+	cursor pointer
+	width 250px
+	
+.arrow-container:hover p
+	opacity 1
+	
+
+.arrow-container:active
+	opacity 0.5	
+	
+
+.arrow
+	display flex
+	align-items center
+	justify-content center
+	
+	background-color WHITE_BG
+	
+	width 75px
+	height @width
+	border-radius 100%
+	position absolute
+	background-color none
+	
+
 .arrow.left
-	left 1.25vw
+	left 0
 	
 
 .arrow.right
-	right 1.25vw
+	right 0
 	
-
-.arrow.left:hover
-	left 1vw
-	
-
-.arrow.right:hover
-	right 1vw
-	
-
-.arrow:hover
-	cursor pointer
-	// border 1px solid $GREY_BG
-	
-
-.arrow:active
-	opacity 0.5	
 	
 
 // --------------------------------------
