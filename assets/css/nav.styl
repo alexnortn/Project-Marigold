@@ -229,31 +229,32 @@ nav .social a // Open social links in new tabs
 // --------------------------------------
 // Header
 	
-header
-	display flex
-	flex-direction row
-	justify-content flex-start
-	align-items center
-	width: 102%
-	height: 100px
-	background-color $WHITE_BG
-	box-shadow 0 0 100px rgba(0 0 0 0.18)
-	position: fixed
-	top: 0
-	left: 0
-	opacity 0
-	transition opacity 250ms ease-in-out
-	
-.header-open
-	opacity 1
+#header
+	box-shadow 0 0 100px rgba(0 0 0 0.1)
 
 
 .header
+	display flex
+	align-items center
+	flex-direction row
+	justify-content flex-start
+	
+	position fixed
+	left: 0
+	top 0
+	
+	opacity 0
+	
 	width 102%
 	height 100px
+	
 	background-color $WHITE_BG
-	position fixed
-	top 0
+	
+	transition all 250ms ease-in-out
+	
+
+.header-open
+	opacity 1
 	
 
 #logo 
@@ -284,25 +285,6 @@ header
 	line-height 1.5em
 	position relative
 	transform rotate(-90deg)
-	
-
-#logo-header 
-	float left
-	position fixed
-	margin-top 25px
-	margin-left 10px 
-	
-
-#logo-header:hover
-	cursor pointer
-
-
-#logo-header img 
-	width 45px
-	position relative
-	display block
-	margin-left 25px
-	opacity 0.8
 	
 
 // --------------------------------------
@@ -745,13 +727,35 @@ header
 	.nav ul
 		font-size 45px
 		
+	#header
+		box-shadow 0 0 50px rgba(0 0 0 0.1)
+		
+	.header
+		height 75px
+		
+	#logo img 
+		width 30px
+		
+	label[for="nav-trigger"] 
+		top 3px
+		
 
 		
 @media screen and (max-height: 800px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
 	.nav ul
 		font-size 45px
+		
+	#header
+		box-shadow 0 0 50px rgba(0 0 0 0.1)
 
-
+	.header
+		height 75px
+		
+	#logo img 
+		width 30px
+		
+	label[for="nav-trigger"] 
+		top 3px
 		
 /*---------------------------------------------------------------*/
 /* Breakpoint 2 | Tiny Screen && Mobile */
