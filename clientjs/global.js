@@ -288,8 +288,14 @@ $(document).ready(function() {
                 current_index--;
                 project_id = updateCurrentProject(current_index);
 
+                $('.arrow-container').removeClass('dip-to-white');
+                
                 $(project_id).velocity("scroll", { axis: "x", duration: 750, container: container, easing: 'ease-in-out' });
                 updateArrow();
+
+                setTimeout(function() {
+                    $('.arrow-container').addClass('dip-to-white');
+                }, 0);
             }
         });
 
@@ -302,9 +308,16 @@ $(document).ready(function() {
             if (current_index < projects.length - 1) {
                 current_index++;
                 project_id = updateCurrentProject(current_index);
+
+                $('.arrow-container').removeClass('dip-to-white');
                 
+            
                 $(project_id).velocity("scroll", { axis: "x", duration: 750, container: container, easing: 'ease-in-out' });
                 updateArrow();
+
+                setTimeout(function() {
+                    $('.arrow-container').addClass('dip-to-white');
+                }, 0);
             }
         });
 
@@ -669,7 +682,6 @@ $(document).ready(function() {
             let scrollPercent = ($element.scrollTop() / $element.prop("scrollHeight")) * 100;
 
             if (scrollPercent > thresholdPercent && !state) {
-                    console.log('pop out');
                 $element.addClass('case-study-sticky');
                 $element.removeClass('case-study-resize');
                 $('body').removeClass('project-open');
@@ -685,9 +697,6 @@ $(document).ready(function() {
 
         function scrollCheckerExit($element, scroll_pos, threshold) { // Re-Enter Project upwards
             if (scroll_pos < threshold && state) {
-
-                console.log('pop in');
-
                 window.scrollTo(0, cs_offset);
 
                 $element.removeClass('case-study-sticky');
@@ -708,15 +717,11 @@ $(document).ready(function() {
                             Math.abs( $('#works')[0].getBoundingClientRect().top));
 
                 initial_offset = cs_offset;
-
-                console.log('window enter top ' +    window.scrollY); // Rename?
-                console.log('window enter cs ' +    cs_offset); // Rename?
             }, 1000);
 
             setScrollPercent();
 
             if (listen) {
-                console.log('return');
                 return;
             }
 

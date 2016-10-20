@@ -6,6 +6,7 @@ Navigation Elements
 
 @require 'color.styl'
 @require 'type.styl'
+@require 'animations.styl'
 
 
 // Body Influence
@@ -401,16 +402,16 @@ header
 
 .arrow-container
 	position fixed
-	top 66.5%
+	top 67.25%
 	
-	width 75px
+	width 60px
 	height @width
-	border-radius 35px
+	border-radius 30px
 	
 	overflow hidden
 	
 	background-color $WHITE_BG
-	box-shadow 0 0 50px rgba(0 0 0 0.18)
+	box-shadow 0 0 25px rgba(0 0 0 0.1)
 	
 	transition all 250ms ease-in-out
 	
@@ -422,8 +423,8 @@ header
 	letter-spacing 3px
 	
 	position absolute
-	width 250px
-	top 29px
+	width 225px
+	top 20px
 	
 	margin-left 10px
 
@@ -464,14 +465,14 @@ header
 
 .arrow-container:hover
 	cursor pointer
-	width 250px
+	width 225px
 	
 .arrow-container:hover p
 	opacity 1
 	
 
-.arrow-container:active
-	opacity 0.5	
+// .arrow-container:active
+// 	opacity 0.5	
 	
 
 .arrow
@@ -481,7 +482,7 @@ header
 	
 	background-color WHITE_BG
 	
-	width 75px
+	width 60px
 	height @width
 	border-radius 100%
 	position absolute
@@ -532,7 +533,7 @@ header
 // Breakpoint 1 | Medium Screen
 
 /* ----------- Non-Retina Screens ----------- */
-@media screen and (max-width: 1000px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)		
+@media screen and (max-width: 1150px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)		
 	.nav ul
 		font-size 48px
 		letter-spacing 2.5px
@@ -540,15 +541,27 @@ header
 	.nav-content
 		right 50px	
 		
+	.arrow-container:hover
+		width 60px
+		
+	.arrow-container:hover p
+		opacity 0
+		
 
 /* ----------- Retina Screens ----------- */
-@media screen and (max-width: 1000px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
+@media screen and (max-width: 1150px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
 	.nav ul
 		font-size 48px
 		letter-spacing 2.5px
 	
 	.nav-content
-		right 50px		
+		right 50px	
+		
+	.arrow-container:hover
+		width 60px
+		
+	.arrow-container:hover p
+		opacity 0
  
 
 //---------------------------------------------------------------

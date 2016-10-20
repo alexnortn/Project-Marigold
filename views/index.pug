@@ -3,7 +3,7 @@ extends layout
 block content
     #fx-container.full.fixed.hidden
         #prev.arrow-container.left.plus_plus
-            p Previous Project
+            p Prev Project
             .arrow.left
                 <i class="fa  fa-angle-left fa-2x"></i>    
         #next.arrow-container.right.plus_plus
@@ -28,25 +28,37 @@ block content
                     // /PROJECT OVERVIEW
                     .project-contents.parallax__group
                         .project-intro.cf
-                            .main-description 
-                                p #{result.description_long}
-                            ul.meta-data
-                                li Client
-                                li #{result.meta.Client}
-                                li Year
-                                li #{result.meta.Year}
-                                li Role
-                                li #{result.meta.Role}
-                                li Team
-                                li #{result.meta.Team}
-                                li Discipline
-                                li #{result.meta.Discipline}
-                                li Medium
-                                li #{result.meta.Medium}
-                                li Technologies
-                                li #{result.meta.Technologies}
-                                li Duration
-                                li #{result.meta.Duration}
+                                .main-description 
+                                    q=bios_text.description_pull
+                                    h4 Brief
+                                    p.tamer=result.description_long
+                                    h4 Process
+                                    p.tamer=result.description_long
+                                .meta-data
+                                    ul
+                                        li Client
+                                        li=result.meta.Client
+                                    ul
+                                        li Year
+                                        li=result.meta.Year
+                                    ul
+                                        li Role
+                                        li=result.meta.Role
+                                    ul
+                                        li Team
+                                        li=result.meta.Team
+                                    ul
+                                        li Discipline
+                                        li=result.meta.Discipline
+                                    ul
+                                        li Medium
+                                        li=result.meta.Medium
+                                    ul
+                                        li Technologies
+                                        li=result.meta.Technologies
+                                    ul
+                                        li Duration
+                                        li=result.meta.Duration
 
             // /PROJECT ITERATOR
 
@@ -179,7 +191,7 @@ block content
                                 .hero.img-load(style=`background-image: url(${result.hero})`)
                         // /CASE STUDY OVERVIEW
                         .case-study-contents.parallax__group
-                            .case-study-intro.cf
+                            .project-intro.cf
                                 .main-description 
                                     q=bios_text.description_pull
                                     h4 Brief
