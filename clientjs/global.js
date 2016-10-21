@@ -31,7 +31,8 @@ let userListData = [],
 
 let _sections = $('.section'),
     _sectionCurrent,
-    _caseStudySupport;
+    _caseStudySupport,
+    _$projectCurrentContents;
 
 let stickyfill = Stickyfill();
 // let widowtamer = WidowTamer();
@@ -76,8 +77,12 @@ $(document).ready(function() {
     $('#pagination').alwaysCenterIn(window, { direction: 'vertical' });
 
     // Set video size + aspect ratio
-    function setupVideo(width) {
-        let height =  width * 9/16;
+    function setupVideo($elem = null) {
+        if ($elem === null) {
+            $elem = _$projectCurrentContents;
+        }
+
+        let height =  $elem.innerWidth() * 9/16;
             height = height + "px";
 
             console.log(height);
@@ -94,6 +99,7 @@ $(document).ready(function() {
         }
 
         stickyUpdate();
+        setupVideo();
 
         if (_mobile) { // Disable blur effect on mobile devices + tablets
             return;
@@ -248,8 +254,8 @@ $(document).ready(function() {
 
             project_id = $(this).attr('data-project');
 
-            let innerWidth = $(project_id).find('.contents').innerWidth();
-            setupVideo(innerWidth); // Resize Video players
+            _$projectCurrentContents = $(project_id).find('.contents');
+            setupVideo(_$projectCurrentContents); // Resize Video players
 
             projects.forEach(function(project_item, index) {
                 if (project_item.id === project_id) {
@@ -586,8 +592,8 @@ $(document).ready(function() {
         let work_type = evt.currentTarget.classList[0];
         elem = "#" + elem;
 
-        let innerWidth = $(elem).find('.contents').innerWidth();
-        setupVideo(innerWidth); // Resize Video players
+        _$projectCurrentContents = $(elem).find('.contents');
+        setupVideo(_$projectCurrentContents); // Resize Video players
 
 
         _caseStudySupport.addListener($(elem)); // Set up case study sticky listener
