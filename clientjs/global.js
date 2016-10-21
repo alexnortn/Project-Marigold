@@ -32,14 +32,15 @@ let userListData = [],
 let _sections = $('.section'),
     _sectionCurrent,
     _caseStudySupport,
-    _$projectCurrentContents;
+    _$projectCurrentContents = null;
 
 let stickyfill = Stickyfill();
 // let widowtamer = WidowTamer();
 
 let _mobile;
 
-let openProjectState = false,
+let _projectCurrentId,
+    _openProjectState = false,
     _closeProject;
 
 
@@ -79,13 +80,15 @@ $(document).ready(function() {
     // Set video size + aspect ratio
     function setupVideo($elem = null) {
         if ($elem === null) {
+            if (_$projectCurrentContents === null) {
+                return;
+            }
+
             $elem = _$projectCurrentContents;
         }
 
-        let height =  $elem.innerWidth() * 9/16;
+        let height =  $('.contents').innerWidth() * 9/16;
             height = height + "px";
-
-            console.log(height);
 
             $('.video-settings').css('height', height);
     }
@@ -188,7 +191,7 @@ $(document).ready(function() {
         }, 250);
 
         $('#pagination').fadeToggle(500); // Fade Out Pagination
-        openProjectState = false;
+        _openProjectState = false;
     }
 
     // Project Grid Handlers
@@ -248,14 +251,11 @@ $(document).ready(function() {
         }
 
         $('.select-work-item').click(function(evt) {
-            if (openProjectState) {
+            if (_openProjectState) {
                 return;
             }
 
             project_id = $(this).attr('data-project');
-
-            _$projectCurrentContents = $(project_id).find('.contents');
-            setupVideo(_$projectCurrentContents); // Resize Video players
 
             projects.forEach(function(project_item, index) {
                 if (project_item.id === project_id) {
@@ -289,16 +289,20 @@ $(document).ready(function() {
                 $('.project-container').addClass('visible');    // using setTimeout as transition callbacks are unreliable.
                 $('#fx-container').addClass('opaque');
                 $('.project-transition').velocity("fadeOut", { duration: 500 });
+                
+                _$projectCurrentContents = $(project_id).find('.contents');
+                setupVideo(_$projectCurrentContents); // Resize Video players
+
                 $(project_id).velocity("scroll", { axis: "x", duration: 0, container: container });
             }, 500);       
 
-            openProjectState = true;
+            _openProjectState = true;
 
         });
  
         // Scroll to previous project
         $('#prev').click(function(evt) {
-            if (!openProjectState) {
+            if (!_openProjectState) {
                 return;
             }
 
@@ -325,7 +329,7 @@ $(document).ready(function() {
 
         // Scroll to next project
         $('#next').click(function(evt) {
-            if (!openProjectState) {
+            if (!_openProjectState) {
                 return;
             }
 
@@ -352,7 +356,7 @@ $(document).ready(function() {
 
         // Scroll to next project
         $('#close').click(function(evt) {
-            if (!openProjectState) {
+            if (!_openProjectState) {
                 return;
             }
 
@@ -378,12 +382,12 @@ $(document).ready(function() {
     // Lazy Load Images --> Unveil2
 
     $('img').unveil({
-        offset: 200,
+        offset: 800,
         throttle: 200,
         placeholder: 'http://placehold.it/500x300',
     });
     $('.img-load').unveil({
-        offset: 200,
+        offset: 800,
         throttle: 200,
         placeholder: 'http://placehold.it/500x300',
     });
@@ -586,16 +590,23 @@ $(document).ready(function() {
     // });
 
     function openCasestudy(elem, evt) {
-        $('#pagination').fadeToggle(1000);
         $('body').addClass('project-open');
+
+        // if (_openProjectState) {
+        //     closeCasestudy(false); // Do not toggle pagination
+        // } else  {
+        //     $('#pagination').fadeToggle(1000);
+        // }
 
         let work_type = evt.currentTarget.classList[0];
         elem = "#" + elem;
 
+        _projectCurrentId = elem;
+
         _$projectCurrentContents = $(elem).find('.contents');
         setupVideo(_$projectCurrentContents); // Resize Video players
 
-
+        _caseStudySupport.reset();
         _caseStudySupport.addListener($(elem)); // Set up case study sticky listener
 
         if (work_type === "case-study") {
@@ -623,15 +634,19 @@ $(document).ready(function() {
             $(project).fadeToggle(1000);
         }
 
+        _openProjectState = true;
+
         stickyUpdate();        
     }
 
     // Make this more generalizable?
     // Close casestudy vs close project?
-    function closeCasestudy(evt) {
+    function closeCasestudy(togglePagination = true) {
         let elem = $('.case-study-open');
 
-        $('#pagination').fadeToggle('slow');
+        if (togglePagination) {
+            $('#pagination').fadeToggle('slow');
+        }
 
         _caseStudySupport.removeListener(elem); // Set up case study sticky listener
         
@@ -641,6 +656,8 @@ $(document).ready(function() {
         });
 
         $('.case-study').removeClass('case-study-resize');
+
+        _openProjectState = false;
 
     };
 
@@ -655,18 +672,19 @@ $(document).ready(function() {
     // Case Study Support
 
     function caseStudySupport() {
-        let last_known_scroll_position = 0,
-            last_known_scroll_position1 = 0,
-            last_known_scroll_position2 = 0,
-            ticking = false,
-            cs_offset = 0,
-            initial_offset = 0,
-            state = false,
-            listen = false,
+        let last_known_scroll_position,
+            last_known_scroll_position1,
+            last_known_scroll_position2,
+            ticking,
+            cs_offset,
+            initial_offset,
+            state,
+            listen,
             timer,
             thresholdPercent,
             scrollThreshold;
 
+            reset();
             setup();
 
         function updateThreshold($element) {
@@ -687,7 +705,7 @@ $(document).ready(function() {
 
         }
 
-        function setScrollPercent() {
+        function setScrollPercent() { // Sus AF
             if (window.innerWidth > 1200) {
                 thresholdPercent = 88;
             }
@@ -703,7 +721,7 @@ $(document).ready(function() {
         }
 
         function setup() {
-            
+
             setScrollPercent();
 
             $(".case-study-view .case-study-contents").click(function(evt) {
@@ -712,6 +730,7 @@ $(document).ready(function() {
 
             $('.case-study-view').click(function(evt) {   // Open Case Study
                 let elem = evt.currentTarget.id;  // Navigate
+                
                 animation.scrollToVelocity(elem);
 
                 $(this).hasClass('case-study-open')
@@ -722,6 +741,8 @@ $(document).ready(function() {
 
         function scrollCheckerEnter($element) {
             let scrollPercent = ($element.scrollTop() / $element.prop("scrollHeight")) * 100;
+
+            console.log(scrollPercent);
 
             if (scrollPercent > thresholdPercent && !state) {
                 $element.addClass('case-study-sticky');
@@ -735,6 +756,18 @@ $(document).ready(function() {
                 }, 100);
 
             }
+        }
+
+        function reset() {
+            // Reset Vars
+            last_known_scroll_position = 0;
+            last_known_scroll_position1 = 0;
+            last_known_scroll_position2 = 0;
+            ticking = false;
+            cs_offset = 0;
+            initial_offset = 0;
+            state = false;
+            listen = false;
         }
 
         function scrollCheckerExit($element, scroll_pos, threshold) { // Re-Enter Project upwards
@@ -833,6 +866,7 @@ $(document).ready(function() {
             updateThreshold: updateThreshold,
             removeListener: removeListener,
             setup: setup,
+            reset: reset,
         };
     }
 });
@@ -972,7 +1006,7 @@ function hashChanged() {
     paginationUpdate(sectionUpdate);
 
     // Close project overlay if open
-    if (openProjectState) {
+    if (_openProjectState) {
         _closeProject();
     }
 
