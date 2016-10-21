@@ -75,36 +75,18 @@ $(document).ready(function() {
     // Center In
     $('#pagination').alwaysCenterIn(window, { direction: 'vertical' });
 
-    // Find all Vimeo videos
-    let $allVideos = $("iframe[src^='//player.vimeo.com'], iframe[src^='//www.youtube.com']"),
+    // Set video size + aspect ratio
+    function setupVideo(width) {
+        let height =  width * 9/16;
+            height = height + "px";
 
-    // The element that is fluid width
-    $fluidEl = $("#video-frame");
-    let newWidth = $fluidEl.width();
+            console.log(height);
 
-    // Figure out and save aspect ratio for each video
-    $allVideos.each(function() {
-
-        $(this)
-            .data('aspectRatio', this.height / this.width)
-
-                // and remove the hard coded width/height
-                .removeAttr('height')
-            .removeAttr('width');
-
-    });
+            $('.video-settings').css('height', height);
+    }
 
     // When the window is resized some fancy ui positioning
     $(window).resize(function() {
-        newWidth = $fluidEl.width();
-
-        // Resize all videos according to their own aspect ratio
-        $allVideos.each(function() {
-            let $elem = $(this);
-            $elem
-              .width(newWidth)
-              .height(newWidth * $elem.data('aspectRatio'));
-        }); // Kick off one resize to fix all videos on page load ??
 
         // Hack to keep case study section from getting out of sync
         if ($('.case-study').hasClass('case-study-open')) {
@@ -121,6 +103,8 @@ $(document).ready(function() {
 
         clearTimeout(timer);
 
+        // setupVideo();
+
         // $('#wrapper').addClass('resize-window');
         
         // timer = setTimeout(function() {
@@ -133,21 +117,6 @@ $(document).ready(function() {
     $(window).scroll(function () {
         $('.scroll-arrow').velocity("fadeOut", { duration: 250 }); // Fade it out | They get it
     });
-
-    function videoSize() {
-
-            newWidth = $fluidEl.width();
-
-        // Resize all videos according to their own aspect ratio
-        $allVideos.each(function() {
-
-            let $el = $(this);
-            $el
-              .width(newWidth)
-              .height(newWidth * $el.data('aspectRatio'));
-
-        });
-    };
 
     // --------------------------------------
     // Event Handlers
@@ -278,6 +247,9 @@ $(document).ready(function() {
             }
 
             project_id = $(this).attr('data-project');
+
+            let innerWidth = $(project_id).find('.contents').innerWidth();
+            setupVideo(innerWidth); // Resize Video players
 
             projects.forEach(function(project_item, index) {
                 if (project_item.id === project_id) {
@@ -614,6 +586,10 @@ $(document).ready(function() {
         let work_type = evt.currentTarget.classList[0];
         elem = "#" + elem;
 
+        let innerWidth = $(elem).find('.contents').innerWidth();
+        setupVideo(innerWidth); // Resize Video players
+
+
         _caseStudySupport.addListener($(elem)); // Set up case study sticky listener
 
         if (work_type === "case-study") {
@@ -642,7 +618,6 @@ $(document).ready(function() {
         }
 
         stickyUpdate();        
-        videoSize(); // Size the video accordingly
     }
 
     // Make this more generalizable?

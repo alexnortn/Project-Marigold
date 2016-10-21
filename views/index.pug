@@ -31,7 +31,7 @@ block content
                             .overlay
                             .hero.img-load(style=`background-image: url(${result.hero})`)
                     // /PROJECT OVERVIEW
-                    .project-contents.parallax__group
+                    .project-contents.parallax__group.contents
                         .project-intro.cf
                                 .main-description 
                                     q=bios_text.description_pull
@@ -198,7 +198,7 @@ block content
                                 .overlay
                                 .hero.img-load(style=`background-image: url(${result.hero})`)
                         // /CASE STUDY OVERVIEW
-                        .case-study-contents.parallax__group
+                        .case-study-contents.parallax__group.contents
                             .project-intro.cf
                                 .main-description 
                                     q=bios_text.description_pull
@@ -245,13 +245,13 @@ block content
                                         //- p.caption #{result.description_long_2}
 
                             // GRID ITERATOR
-                            #grid-one.image-grid-wrapper
-                                #grid-one-slider.grid-slider.slider-transition
-                                    each image, index in result.images
-                                            img.big-moment-3-color(src=`${result.images[index].src}`)
-                                each image, index in result.images
-                                    .image-grid-container.bounce&attributes({'data-slide': index})
-                                        .image-grid.img-load(style=`background-image: url(${result.images[index].src})`)
+                            .grid-one.image-grid-wrapper
+                                .grid-one-slider.grid-slider.slider-transition
+                                    each image, i in result.images
+                                        img.big-moment-3-color(src=`${result.images[i].src}`)
+                                each image, i in result.images
+                                    .image-grid-container.bounce&attributes({'data-slide': i})
+                                        .image-grid.img-load(style=`background-image: url(${result.images[i].src})`)
                             // /GRID ITERATOR
 
                             // Hard coded index, what was I thinking?
@@ -259,13 +259,13 @@ block content
                                 .big-moment-1-color.parallax__layer--back.img-load(style=`background-image: url(${result.images[0].src})`) 
 
                             // GRID ITERATOR 2
-                            #grid-two.image-grid-wrapper
-                                #grid-two-slider.grid-slider.slider-transition
-                                    each image, index in result.images
-                                            img.big-moment-3-color(src = `${result.images[index].src}`)
-                                each image, index in result.images
-                                    .image-grid-container.bounce&attributes({'data-slide': index})
-                                        .image-grid.img-load(style=`background-image: url(${result.images[index].src})`)
+                            .grid-two.image-grid-wrapper
+                                .grid-two-slider.grid-slider.slider-transition
+                                    each image, i in result.images
+                                            img.big-moment-3-color(src = `${result.images[i].src}`)
+                                each image, i in result.images
+                                    .image-grid-container.bounce&attributes({'data-slide': i})
+                                        .image-grid.img-load(style=`background-image: url(${result.images[i].src})`)
                             // /GRID ITERATOR 2
 
                             // 2X PARALLAX IMAGES RIGHT
@@ -277,8 +277,8 @@ block content
                                     .image-right
                                 blockquote.right.parallax__layer.parallax__layer--fore=result.pull_quotes[0]
 
-                            #video-frame
-                                iframe(src="//player.vimeo.com/video/95969058" width="1600" height="1000" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
+                            .video-frame
+                                iframe.video-settings(src = `${result.videos[0].src}` frameborder="0" allowfullscreen)
 
                             .big-moment-2.parallax__group  
                                 .big-moment-2-color.img-load(style=`background-image: url(${result.images[0].src})`)
@@ -291,8 +291,8 @@ block content
                                 p.caption.center-caption=result.description_long_2
 
                             .big-moment-3
-                                each image, index in result.images
-                                    img.big-moment-3-color(src = `${result.images[index].src}`)
+                                each image, i in result.images
+                                    img.big-moment-3-color(src = `${result.images[i].src}`)
 
 
                 // /CASE STUDY ITERATOR
