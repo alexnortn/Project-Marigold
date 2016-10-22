@@ -87,10 +87,17 @@ $(document).ready(function() {
             $elem = _$projectCurrentContents;
         }
 
-        let height =  $('.contents').innerWidth() * 9/16;
+        let width =  $elem.innerWidth(),
+            height =  width * 9/16;
+            
+            width = width + "px";
             height = height + "px";
 
+            $('.video-frame').css('width', width)
+                             .css('height', height);
+
             $('.video-settings').css('height', height);
+
     }
 
     // When the window is resized some fancy ui positioning
@@ -578,28 +585,22 @@ $(document).ready(function() {
         $('#select-work li:nth-child(n+8)').velocity("fadeIn", { duration: 500 });
     });
 
-    // --------------------------------------
-    // Works Interaction
-
-    // $('.select-work-item').click(function(evt) {   // Open Project
-    //     let elem = evt.currentTarget.id;  // Navigate
-
-    //     $('.case-study').hasClass('case-study-open')
-    //         ? openCasestudy(elem, evt)
-    //         : closeCasestudy(elem, evt);     
-    // });
 
     function openCasestudy(elem, evt) {
-        $('body').addClass('project-open');
 
-        // if (_openProjectState) {
-        //     closeCasestudy(false); // Do not toggle pagination
-        // } else  {
-        //     $('#pagination').fadeToggle(1000);
-        // }
+        if (_openProjectState) {
+            closeCasestudyFast();
+        }
+        else  {
+            $('#pagination').fadeToggle(1000);
+        }
 
         let work_type = evt.currentTarget.classList[0];
         elem = "#" + elem;
+
+        if ( $(elem).hasClass('case-study-sticky') ) {
+            $(elem).removeClass('case-study-sticky');
+        }
 
         _projectCurrentId = elem;
 
@@ -641,17 +642,26 @@ $(document).ready(function() {
 
     // Make this more generalizable?
     // Close casestudy vs close project?
-    function closeCasestudy(togglePagination = true) {
-        let elem = $('.case-study-open');
+    function closeCasestudy(elem) {
+        elem = "#" + elem;
+        let $elem = $(elem);
 
-        if (togglePagination) {
-            $('#pagination').fadeToggle('slow');
-        }
+        _caseStudySupport.removeListener($elem); // Set up case study sticky listener
 
-        _caseStudySupport.removeListener(elem); // Set up case study sticky listener
+        $('#pagination').fadeToggle('slow');
+
+        // Reset Case-Study
+        $elem.find('.case-study-overview').velocity("scroll", { 
+            container: $elem.find('.case-study-view'),
+            duration:  0,
+            delay:     0,
+            offset:    '0px',
+            mobileHA:  false
+        });
+
+        $('body').removeClass('project-open');
         
-        elem.find('.case-study-contents').fadeOut('slow', function() { // Eh kind of wordy
-                $('body').removeClass('project-open');
+        $elem.find('.case-study-contents').fadeOut('slow', function() { // Eh kind of wordy
                 $('.case-study').removeClass('case-study-open');
         });
 
@@ -659,6 +669,25 @@ $(document).ready(function() {
 
         _openProjectState = false;
 
+    };
+
+    function closeCasestudyFast() {
+        let elem = $('.case-study-open');
+
+        _caseStudySupport.removeListener(elem); // Set up case study sticky listener
+
+        // Reset Case-Study
+        $(elem).find('.case-study-overview').velocity("scroll", { 
+            container: $(elem).find('.case-study-view'),
+            duration:  0,
+            delay:     0,
+            offset:    '200px',
+            mobileHA:  false
+        });
+        
+        $(elem).find('.case-study-contents').css('display', 'none');
+        
+        $('.case-study').removeClass('case-study-open case-study-resize');
     };
 
 
@@ -730,19 +759,21 @@ $(document).ready(function() {
 
             $('.case-study-view').click(function(evt) {   // Open Case Study
                 let elem = evt.currentTarget.id;  // Navigate
-                
+
                 animation.scrollToVelocity(elem);
 
-                $(this).hasClass('case-study-open')
-                    ? closeCasestudy(elem, evt)
-                    : openCasestudy(elem, evt); 
+                if ($(this).hasClass('case-study-open')) {
+                    closeCasestudy(elem, evt);
+                }
+                else {
+                    $('body').addClass('project-open');
+                    openCasestudy(elem, evt); 
+                }
             });
         }
 
         function scrollCheckerEnter($element) {
             let scrollPercent = ($element.scrollTop() / $element.prop("scrollHeight")) * 100;
-
-            console.log(scrollPercent);
 
             if (scrollPercent > thresholdPercent && !state) {
                 $element.addClass('case-study-sticky');
@@ -1165,4 +1196,124 @@ $.fn.appendAttr = function(attrName, suffix) {
         return val + suffix;
     });
     return this;
+};
+
+// scrollTo
+
+/* sigmoidFactory
+*
+* Generate an ease-in-out function with desired steepness.
+* https://medium.com/analytic-animations/ease-in-out-the-sigmoid-factory-c5116d8abce9#.riq7ob6tj
+* 
+* Required:
+*   k: (float != 0), sharpness of ease
+*
+* Return: f(t), t in 0..1
+*/
+function sigmoidFactory(k) {
+    function base(t) {
+        return 1 / (1 + Math.exp(-k * t)) - 0.5;
+    }
+
+    var correction = 0.5 / base(1);
+
+    return function (t) {
+        t = clamp(t, 0, 1);
+        return correction * base(2 * t - 1) + 0.5;
+    };
+}
+
+function clamp(val, lower, upper) {
+    return Math.max(Math.min(val, upper), lower);
+}
+
+function Deferred(fn) {
+    fn = fn || function () {};
+
+    var res = void 0,
+        rej = void 0;
+
+    var p = new Promise(function (resolve, reject) {
+        fn(resolve, reject);
+
+        res = resolve;
+        rej = reject;
+    });
+
+    p.resolve = res;
+    p.reject = rej;
+
+    return p;
+}
+
+/* scrollTo
+ *
+ * Smoothly scrolls to a particular element.
+ *
+ * Required:
+ *   [0] target: The element to scroll to
+ *
+ * Optional:
+ *     msec: defaults to 250 msec
+ *     easing: defaults to ease-in-out-cubic
+ *     offset: extra offset in pixels
+ *
+ * Return: void
+ */
+function scrollTo(container, target, options) {
+    if (target === null) {
+        target = container;
+    }
+
+    if (options === undefined || typeof options === 'function') {
+        options = {};
+    }
+
+    var msec = options.msec || 250;
+    var easing = options.easing || sigmoidFactory(6);
+    var offset = options.offset || 0;
+
+    var position_offset = target.offsetTop - container.offsetTop + offset;
+
+    if (position_offset === 0) {
+        return Promise.resolve();
+    }
+
+    var distance_traveled = 0;
+    var start_pos = container.scrollTop;
+
+    var req;
+
+    var deferred = Deferred();
+
+    deferred.then(function () {
+        container.scrollTop = start_pos + position_offset;
+    }, function () {
+        if (req) {
+            cancelAnimationFrame(req);
+        }
+    });
+
+    var start_time = window.performance.now();
+
+    function animate() {
+        var now = window.performance.now();
+        var t = (now - start_time) / msec;
+
+        if (t >= 1) {
+            deferred.resolve();
+            return;
+        }
+
+        var proportion = easing(t);
+
+        distance_traveled = proportion * position_offset;
+        container.scrollTop = start_pos + distance_traveled;
+
+        req = requestAnimationFrame(animate);
+    }
+
+    req = requestAnimationFrame(animate);
+
+    return deferred;
 };
