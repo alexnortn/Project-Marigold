@@ -2,6 +2,8 @@ extends layout
 
 block content
     #fx-container.full.fixed.passive
+        
+        // ARROW INTERACTION CONTAINER
         .arrow-container-main.hidden
             #prev.arrow-container.left.plus_plus
                 p Prev Project
@@ -14,13 +16,117 @@ block content
             #close.arrow-container.arrow-center.plus_plus
                 p Close Project
                 .arrow.arrow-center-within
-                    <i class="fa  fa-close fa-2x"></i>    
+                    <i class="fa  fa-close fa-2x"></i>
+        // /ARROW INTERACTION CONTAINER
+
+        // CASE STUDY ITERATOR
+        .endeavor-container.case-study-container
+            each result, index in case_studies
+                .endeavor.case-study-view.parallax&attributes( {'data-inproject': false}, {'data-projectIndex': i}, {'data-project': result.route}, {'id': result.route} )
+                    // CASE STUDY OVERVIEW
+                    .endeavor-overview
+                        .description
+                            .description-wrapper
+                                h3=result.project_type
+                                h2=result.name
+                                hr
+                                p=result.description_short
+                        .hero-box
+                            .overlay
+                            .hero.img-load(style=`background-image: url(${result.hero})`)
+                    // /CASE STUDY OVERVIEW
+                    .endeavor-contents.parallax__group.contents
+                        .project-intro.cf
+                            .main-description 
+                                q=bios_text.description_pull
+                                h4 Brief
+                                p.tamer=result.description_long
+                                h4 Process
+                                p.tamer=result.description_long
+                            .meta-data
+                                ul
+                                    li Client
+                                    li=result.meta.Client
+                                ul
+                                    li Year
+                                    li=result.meta.Year
+                                ul
+                                    li Role
+                                    li=result.meta.Role
+                                ul
+                                    li Team
+                                    li=result.meta.Team
+                                ul
+                                    li Discipline
+                                    li=result.meta.Discipline
+                                ul
+                                    li Medium
+                                    li=result.meta.Medium
+                                ul
+                                    li Technologies
+                                    li=result.meta.Technologies
+                                ul
+                                    li Duration
+                                    li=result.meta.Duration
+                        // BIG MOMENT 0
+                        .big-moment-0-color.img-load(style=`background-image: url(${result.images[index].src})`)
+                        // 2X PARALLAX IMAGES LEFT
+                        .para-box.parallax__group
+                            blockquote.left.parallax__layer.parallax__layer--fore=result.pull_quotes[0]
+                            .image-box.img-load(style=`background-image: url(${result.hero})`)
+                                .image-left
+                            .image-box.image-box--bottom.img-load(style=`background-image: url(${result.hero})`)
+                                .image-left
+                                    //- p.caption #{result.description_long_2}
+                        // GRID ITERATOR
+                        .grid-one.image-grid-wrapper
+                            .grid-one-slider.grid-slider.slider-transition
+                                each image, i in result.images
+                                    img.big-moment-3-color(src=`${result.images[i].src}`)
+                            each image, i in result.images
+                                .image-grid-container.bounce&attributes({'data-slide': i})
+                                    .image-grid.img-load(style=`background-image: url(${result.images[i].src})`)
+                        // /GRID ITERATOR
+                        // Hard coded index, what was I thinking?
+                        .big-moment-1.parallax__group
+                            .big-moment-1-color.parallax__layer--back.img-load(style=`background-image: url(${result.images[0].src})`) 
+                        // GRID ITERATOR 2
+                        .grid-two.image-grid-wrapper
+                            .grid-two-slider.grid-slider.slider-transition
+                                each image, i in result.images
+                                        img.big-moment-3-color(src = `${result.images[i].src}`)
+                            each image, i in result.images
+                                .image-grid-container.bounce&attributes({'data-slide': i})
+                                    .image-grid.img-load(style=`background-image: url(${result.images[i].src})`)
+                        // /GRID ITERATOR 2
+                        // 2X PARALLAX IMAGES RIGHT
+                        .para-box.parallax__group   
+                            .image-box.right.img-load(style=`background-image: url(${result.hero})`)
+                                .image-right
+                                    //- p.caption.caption--2 #{result.description_long_2}
+                            .image-box.right.image-box--bottom.img-load(style=`background-image: url(${result.hero})`)
+                                .image-right
+                            blockquote.right.parallax__layer.parallax__layer--fore=result.pull_quotes[0]
+                        iframe.video-settings(src = `${result.videos[0].src}` frameborder="0" allowfullscreen)
+                        .big-moment-2.parallax__group  
+                            .big-moment-2-color.img-load(style=`background-image: url(${result.images[0].src})`)
+                            .img-box.parallax__layer.parallax__layer--fore.img-load(style=`background-image: url(${result.images[0].src})`)
+                            p.caption=result.description_long_2
+                        // 2X PARALLAX IMAGES LEFT
+                        .para-box
+                            .image-box.image-box--center.img-load(style=`background-image: url(${result.hero})`)
+                            p.caption.center-caption=result.description_long_2
+                        .big-moment-3
+                            each image, i in result.images
+                                img.big-moment-3-color(src = `${result.images[i].src}`)
+                        .end-pad
+
         // PROJECT ITERATOR
-        .project-container
+        .endeavor-container.project-container
             each result, index in select_work
-                .project.project-view.parallax&attributes({'data-inproject': false}, {'data-projectIndex': index}, {'id': result.project})
+                .endeavor.endeavor-view.project-view.parallax&attributes({'data-inproject': false}, {'data-projectIndex': index}, {'id': result.route})
                     // PROJECT OVERVIEW
-                    .project-overview
+                    .endeavor-overview
                         .description
                             .description-wrapper
                                 h3 #{result.project_type}
@@ -31,8 +137,8 @@ block content
                             .overlay
                             .hero.img-load(style=`background-image: url(${result.hero})`)
                     // /PROJECT OVERVIEW
-                    .project-contents.parallax__group.contents
-                        .project-intro.cf
+                    .endeavor-contents.parallax__group.contents
+                        .endeavor-intro.cf
                                 .main-description 
                                     q=bios_text.description_pull
                                     h4 Brief
@@ -69,9 +175,7 @@ block content
                         .big-moment-0-color.img-load(style=`background-image: url(${result.images[0].src})`)
                         iframe.video-settings(src = `${result.videos[0].src}` frameborder="0" allowfullscreen)
                         .end-pad
-
-            // /PROJECT ITERATOR
-
+        // /PROJECT ITERATOR
 
     // NAV MENU
     input(type="checkbox" id="nav-trigger" class="nav-trigger")
@@ -185,10 +289,9 @@ block content
         section#works.section&attributes({'data-inproject': false})
             #works-wrapper
                 // CASE STUDY ITERATOR
-                each result, index in case_studies
-                    .case-study.case-study-view.parallax&attributes({'data-inproject': true}, {'data-casestudy': index}, {'id': result.route})
+                each result, i in case_studies
+                    .case-study.case-study-window.item.case-study-item&attributes( {'data-inproject': false}, {'data-projectIndex': i}, {'data-project': result.route},  {'id': result.preview} )
                         // CASE STUDY OVERVIEW
-                        //- .filler-content
                         .case-study-overview
                             .description
                                 .description-wrapper
@@ -200,106 +303,7 @@ block content
                                 .overlay
                                 .hero.img-load(style=`background-image: url(${result.hero})`)
                         // /CASE STUDY OVERVIEW
-                        .case-study-contents.parallax__group.contents
-                            .project-intro.cf
-                                .main-description 
-                                    q=bios_text.description_pull
-                                    h4 Brief
-                                    p.tamer=result.description_long
-                                    h4 Process
-                                    p.tamer=result.description_long
-                                .meta-data
-                                    ul
-                                        li Client
-                                        li=result.meta.Client
-                                    ul
-                                        li Year
-                                        li=result.meta.Year
-                                    ul
-                                        li Role
-                                        li=result.meta.Role
-                                    ul
-                                        li Team
-                                        li=result.meta.Team
-                                    ul
-                                        li Discipline
-                                        li=result.meta.Discipline
-                                    ul
-                                        li Medium
-                                        li=result.meta.Medium
-                                    ul
-                                        li Technologies
-                                        li=result.meta.Technologies
-                                    ul
-                                        li Duration
-                                        li=result.meta.Duration
-
-                            // BIG MOMENT 0
-                            .big-moment-0-color.img-load(style=`background-image: url(${result.images[index].src})`)
-
-                            // 2X PARALLAX IMAGES LEFT
-                            .para-box.parallax__group
-                                blockquote.left.parallax__layer.parallax__layer--fore=result.pull_quotes[0]
-                                .image-box.img-load(style=`background-image: url(${result.hero})`)
-                                    .image-left
-                                .image-box.image-box--bottom.img-load(style=`background-image: url(${result.hero})`)
-                                    .image-left
-                                        //- p.caption #{result.description_long_2}
-
-                            // GRID ITERATOR
-                            .grid-one.image-grid-wrapper
-                                .grid-one-slider.grid-slider.slider-transition
-                                    each image, i in result.images
-                                        img.big-moment-3-color(src=`${result.images[i].src}`)
-                                each image, i in result.images
-                                    .image-grid-container.bounce&attributes({'data-slide': i})
-                                        .image-grid.img-load(style=`background-image: url(${result.images[i].src})`)
-                            // /GRID ITERATOR
-
-                            // Hard coded index, what was I thinking?
-                            .big-moment-1.parallax__group
-                                .big-moment-1-color.parallax__layer--back.img-load(style=`background-image: url(${result.images[0].src})`) 
-
-                            // GRID ITERATOR 2
-                            .grid-two.image-grid-wrapper
-                                .grid-two-slider.grid-slider.slider-transition
-                                    each image, i in result.images
-                                            img.big-moment-3-color(src = `${result.images[i].src}`)
-                                each image, i in result.images
-                                    .image-grid-container.bounce&attributes({'data-slide': i})
-                                        .image-grid.img-load(style=`background-image: url(${result.images[i].src})`)
-                            // /GRID ITERATOR 2
-
-                            // 2X PARALLAX IMAGES RIGHT
-                            .para-box.parallax__group   
-                                .image-box.right.img-load(style=`background-image: url(${result.hero})`)
-                                    .image-right
-                                        //- p.caption.caption--2 #{result.description_long_2}
-                                .image-box.right.image-box--bottom.img-load(style=`background-image: url(${result.hero})`)
-                                    .image-right
-                                blockquote.right.parallax__layer.parallax__layer--fore=result.pull_quotes[0]
-
-                            iframe.video-settings(src = `${result.videos[0].src}` frameborder="0" allowfullscreen)
-
-                            .big-moment-2.parallax__group  
-                                .big-moment-2-color.img-load(style=`background-image: url(${result.images[0].src})`)
-                                .img-box.parallax__layer.parallax__layer--fore.img-load(style=`background-image: url(${result.images[0].src})`)
-                                p.caption=result.description_long_2
-
-                            // 2X PARALLAX IMAGES LEFT
-                            .para-box
-                                .image-box.image-box--center.img-load(style=`background-image: url(${result.hero})`)
-                                p.caption.center-caption=result.description_long_2
-
-                            .big-moment-3
-                                each image, i in result.images
-                                    img.big-moment-3-color(src = `${result.images[i].src}`)
-
-                            .end-pad
-
-
                 // /CASE STUDY ITERATOR
-
 
                 //SELECT WORK GRID SECTION
                 #select-work.select-work
@@ -307,8 +311,8 @@ block content
                         h3 Selected Works
                         // SELECT-WORK ITERATOR
                         ul
-                            each result, index in select_work
-                                li.select-work-item&attributes({'data-inproject': true}, {'data-projectIndex': index}, {'data-project': result.project}, {'id': result.preview})
+                            each result, i in select_work
+                                li.select-work-item.item.project-item&attributes( {'data-inproject': false}, {'data-projectIndex': i}, {'data-project': result.route}, {'id': result.preview} )
                                     .select-work-img-container
                                         .select-work-description
                                             p.tamer=result.description_short

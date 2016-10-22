@@ -1,6 +1,6 @@
 /*
 
-Project Sections
+Endeavor Sections
 
 */
 
@@ -30,7 +30,7 @@ $StickyOffsetMeta = 20vh
 /* -------------------------------------- */
 /* Elements */
 
-.project-container
+.endeavor-container
 	display none
 	background-color $WHITE_BG
 	overflow-x hidden
@@ -39,8 +39,6 @@ $StickyOffsetMeta = 20vh
 	height 102%
 	width 100%
 	position relative
-	margin-left auto
-	margin-right auto
     
 	transition all 250ms
 	
@@ -55,7 +53,7 @@ $StickyOffsetMeta = 20vh
 	display none
 	
 	
-.project
+.endeavor
 	min-width 102%
 	height 100vh
 	min-height 750px
@@ -67,13 +65,7 @@ $StickyOffsetMeta = 20vh
 	justify-content center
 	
 
-.project-view 
-	position relative
-	// overflow hidden
-	transition all 250ms ease-in-out
-	
-
-.project-overview 
+.endeavor-overview 
 	width 100%
 	height 70vh
 	min-height 600px
@@ -86,14 +78,14 @@ $StickyOffsetMeta = 20vh
 	transition all 250ms	
 
 
-.project-page 
+.endeavor-page 
 	width 100%
 	height 100%
 	position relative
 	display block
 	
 
-.project-box 
+.endeavor-box 
 	width 100%
 	height 100%
 	display block
@@ -103,7 +95,7 @@ $StickyOffsetMeta = 20vh
 	/*overflow hidden*/
 		
 
-.project-contents 
+.endeavor-contents 
 	width 75%
 	max-width 1200px
 	// min-width 500px
@@ -113,12 +105,12 @@ $StickyOffsetMeta = 20vh
 	margin-top 85vh
 
 
-.project-contents h1 
+.endeavor-contents h1 
 	text-align center
 	padding 30px
 	
 
-.project-intro 
+.endeavor-intro 
 	display flex
 	flex-direction row
 	justify-content flex-end
@@ -175,7 +167,7 @@ $StickyOffsetMeta = 20vh
 /* Description Box */
 	
 
-.project .description 
+.endeavor .description 
 	width 300px
 	height 300px
 	min-width 300px
@@ -199,16 +191,16 @@ $StickyOffsetMeta = 20vh
 	transition all 250ms
 
 
-.project .description h3 
+.endeavor .description h3 
 	margin-bottom 10px
 	text-align center
 
 
-.project .description h2 
+.endeavor .description h2 
 	margin-bottom 7.5px
 	text-align center
 	
-.project .description hr
+.endeavor .description hr
 	width 25px	
 	height 4px
 	border none
@@ -216,14 +208,14 @@ $StickyOffsetMeta = 20vh
 	background-color $BLACK
 
 
-.project .description p
+.endeavor .description p
 	font-family Chronicle-Semitalic 
 	margin-top 40px
 	text-align center
 	align-self flex-end
 
 
-.project .description .social 
+.endeavor .description .social 
 	width 75%
 	bottom 30px
 	position absolute
@@ -235,8 +227,8 @@ $StickyOffsetMeta = 20vh
 	align-self center
 	
 
-// Project (non case-study)
-.project-overview .description
+// endeavor (non case-study)
+.endeavor-overview .description
 	margin-left 15%
 	
 
@@ -404,41 +396,41 @@ $StickyOffsetMeta = 20vh
 
 /* ----------- Non-Retina Screens ----------- */
 @media screen and (max-width: 1000px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)		
-	.project .description 
+	.endeavor .description 
 		margin-left auto
 		margin-right auto
 		position relative
 		order 2
 		bottom 35%
 		
-	.project-intro 
+	.endeavor-intro 
 		padding-top 325px
 		
 	.hero-box
 		display table
 		
-	// Project (non case-study)
-	.project-overview .description
+	// endeavor (non case-study)
+	.endeavor-overview .description
 		margin-left auto
 		
 
 /* ----------- Retina Screens ----------- */
 @media screen and (max-width: 1000px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
-	.project .description 
+	.endeavor .description 
 		margin-left auto
 		margin-right auto
 		position relative
 		order 2
 		bottom 35%
 		
-	.project-intro 
+	.endeavor-intro 
 		padding-top 325px
 		
 	.hero-box
 		display table
 		
-	// Project (non case-study)
-	.project-overview .description
+	// endeavor (non case-study)
+	.endeavor-overview .description
 		margin-left auto
 	
 
@@ -448,7 +440,7 @@ $StickyOffsetMeta = 20vh
 
 /* ----------- Non-Retina Screens ----------- */
 @media screen and (max-width: 768px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)	
-	.project-intro 
+	.endeavor-intro 
 		flex-direction column
 		padding-top 50px
 		
@@ -476,7 +468,7 @@ $StickyOffsetMeta = 20vh
 
 /* ----------- Retina Screens ----------- */
 @media screen and (max-width: 768px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
-	.project-intro 
+	.endeavor-intro 
 		flex-direction column
 		padding-top 50px
 		
@@ -519,7 +511,7 @@ $StickyOffsetMeta = 20vh
 // Breakpoint 3 | Phablet // iPhone 6s
 @media only screen and (max-device-width: 414px) and (min-resolution: 2dppx)
 		
-	.project
+	.endeavor
 		display none // No case studies on mobile
 		
 

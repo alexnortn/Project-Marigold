@@ -5,6 +5,7 @@
                 "route" :"brainvr-cs",
                 "name"  : "BrainVR",
                 "project_type"  : "Case Study",
+                "preview" :"brainvr-preview",
                 "year"  : "2014",
                 "medium": [
                     "Paper",
@@ -87,6 +88,7 @@
                 "route" :"museum-cs",
                 "name"  : "Museum",
                 "project_type"  : "Case Study",
+                "preview" :"museum-preview",
                 "year"  : "2016",
                 "medium": [
                     "Paper",
@@ -169,6 +171,7 @@
                 "route" :"explore-cs",
                 "name"  : "Explore",
                 "project_type"  : "Case Study",
+                "preview" :"museum-preview",
                 "year"  : "2016",
                 "medium": [
                     "Paper",
@@ -250,12 +253,11 @@
         ],
         "select_work" : [
             {
-                "route" :"brainvr",
-                "preview" :"brainvr-preview",
-                "project" :"brainvr-project",
+                "route" :"brainvr-project",
                 "name"  : "BrainVr",
                 "project_type"  : "Project",
                 "year"  : "2016",
+                "preview" :"brainvr-preview",
                 "medium": [
                     "Paper",
                     "Wood",
@@ -334,12 +336,11 @@
                 ]
             },
             {
-                "route" :"eyewire",
-                "preview" :"eyewire-preview",
-                "project" :"eyewire-project",
+                "route" :"eyewire-project",
                 "name"  : "Eyewire",
                 "project_type"  : "Project",
                 "year"  : "2014",
+                "preview" :"eyewire-preview",
                 "medium": [
                     "Paper",
                     "Wood",
@@ -418,12 +419,11 @@
                 ]
             },
             {
-                "route" :"convolve",
-                "preview" :"convolve-preview",
-                "project" :"convolve-project",
+                "route" :"convolve-project",
                 "name"  : "Convolve",
                 "project_type"  : "Project",
                 "year"  : "2014",
+                "preview" :"convolve-preview",
                 "medium": [
                     "Paper",
                     "Wood",
@@ -502,12 +502,11 @@
                 ]
             },
             {
-                "route" :"dig",
-                "preview" :"dig-preview",
-                "project" :"dig-project",
+                "route" :"dig-project",
                 "name"  : "DiG",
                 "project_type"  : "Project",
                 "year"  : "2014",
+                "preview" :"dig-preview",
                 "medium": [
                     "Paper",
                     "Wood",
@@ -586,12 +585,11 @@
                 ]
             },
             {
-                "route" :"muwu",
-                "preview" :"muwu-preview",
-                "project" :"muwu-project",
+                "route" :"muwu-project",
                 "name"  : "MuWu",
                 "project_type"  : "Project",
                 "year"  : "2014",
+                "preview" :"muwu-preview",
                 "medium": [
                     "Paper",
                     "Wood",
@@ -670,12 +668,11 @@
                 ]
             },
             {
-                "route" :"das",
-                "preview" :"das-preview",
-                "project" :"das-project",
+                "route" :"das-project",
                 "name"  : "DAS",
                 "project_type"  : "Project",
                 "year"  : "2014",
+                "preview" :"das-preview",
                 "medium": [
                     "Paper",
                     "Wood",
@@ -754,12 +751,11 @@
                 ]
             },
             {
-                "route" :"olympics",
-                "preview" :"olympics-preview",
-                "project" :"olympics-project",
+                "route" :"olympics-project",
                 "name"  : "Olympics",
                 "project_type"  : "Project",
                 "year"  : "2014",
+                "preview" :"olympics-preview",
                 "medium": [
                     "Paper",
                     "Wood",
@@ -838,12 +834,11 @@
                 ]
             },
             {
-                "route" :"msty",
-                "preview" :"msty-preview",
-                "project" :"msty-project",
+                "route" :"msty-project",
                 "name"  : "MSTY",
                 "project_type"  : "Project",
                 "year"  : "2014",
+                "preview" :"msty-preview",
                 "medium": [
                     "Paper",
                     "Wood",

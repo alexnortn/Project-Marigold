@@ -26,12 +26,12 @@ let bower_url = '../bower_components/';
 
 // Userlist data array for filling in info box
 let userListData = [],
+    case_studies,
     projects,
     menu = false;
 
 let _sections = $('.section'),
     _sectionCurrent,
-    _caseStudySupport,
     _$projectCurrentContents = null;
 
 let stickyfill = Stickyfill();
@@ -69,7 +69,6 @@ $(document).ready(function() {
 
     stickyUpdate();
 
-    _caseStudySupport = caseStudySupport(); // Set up case study support
     _closeProject = closeProject; // Set up close project global
 
     $('body').addClass('loading');
@@ -103,11 +102,6 @@ $(document).ready(function() {
     // When the window is resized some fancy ui positioning
     $(window).resize(function() {
 
-        // Hack to keep case study section from getting out of sync
-        if ($('.case-study').hasClass('case-study-open')) {
-            $('.case-study').addClass('case-study-resize');
-        }
-
         stickyUpdate();
         setupVideo();
 
@@ -118,8 +112,6 @@ $(document).ready(function() {
         let timer;
 
         clearTimeout(timer);
-
-        // setupVideo();
 
         // $('#wrapper').addClass('resize-window');
         
@@ -172,13 +164,7 @@ $(document).ready(function() {
         _sectionCurrent = target.getAttribute('data-nav'); // Get target id from data attr
         closeNav(); // Close Section
 
-        if ($('.case-study').hasClass('case-study-open')) {
-            closeCasestudy();
-        }
-
-        if (_sectionCurrent == "works") {
-            _sectionCurrent = $(".case-study-view").attr('id');
-        }
+        closeProject();
 
         animation.scrollToVelocity(_sectionCurrent); // Navigate
     });
@@ -191,10 +177,10 @@ $(document).ready(function() {
             $('#fx-container')
                 .removeClass('opaque')
                 .addClass('passive');
-            $('.project-transition').remove();
-            $('.project-container').removeClass('visible');
+            $('.endeavor-transition').remove();
+            $('.endeavor-container').removeClass('visible');
             $('.arrow-container').removeClass('arrow-bottom');
-            $('body').removeClass('project-open');
+            $('body').removeClass('endeavor-open');
         }, 250);
 
         $('#pagination').fadeToggle(500); // Fade Out Pagination
@@ -204,14 +190,15 @@ $(document).ready(function() {
     // Project Grid Handlers
     (function() { // For lexical scoping
         let current_index = 0,
-            container = $('.project-container'),
+            container,
+            case_studies = $('.case-study-view').toArray(),
             projects = $('.project-view').toArray(),
+            currents = [],
             scrollHandler,
             project_id;
 
         function updateCurrentProject(index, current_id) {
-            let new_id = '#' + projects[index].id;
-
+            let new_id = '#' + currents[index].id;
             updateProjectHandlers(current_id, new_id);
 
             return new_id;
@@ -242,7 +229,7 @@ $(document).ready(function() {
         }
 
         function updateArrow() {
-            if (current_index >= projects.length - 1) {
+            if (current_index >= currents.length - 1) {
                 $('#next').addClass('disabled');
             }
             else {
@@ -257,22 +244,28 @@ $(document).ready(function() {
             }
         }
 
-        $('.select-work-item').click(function(evt) {
+        $('.item').click(function(evt) {
             if (_openProjectState) {
                 return;
             }
 
             project_id = $(this).attr('data-project');
 
-            projects.forEach(function(project_item, index) {
+            if ($(evt.currentTarget).hasClass('case-study-item')) {
+                currents = case_studies;
+                container = $('.case-study-container');
+            } 
+            else if ($(evt.currentTarget).hasClass('project-item')) {
+                currents = projects;
+                container = $('.project-container');
+            }
+
+            currents.forEach(function(project_item, index) {
                 if (project_item.id === project_id) {
                     current_index = index;
                     updateCurrentProject(current_index, project_id);
                 }
             });
-
-            // Close casestudy
-            closeCasestudy();
 
             updateArrow();
 
@@ -292,8 +285,9 @@ $(document).ready(function() {
             }, 0);
 
             setTimeout(function() {
-                $('body').addClass('project-open');             // Corresponds to precise animation time on transition effect, 
-                $('.project-container').addClass('visible');    // using setTimeout as transition callbacks are unreliable.
+                $('body').addClass('endeavor-open');             // Corresponds to precise animation time on transition effect, 
+                container.addClass('visible');                  // using setTimeout as transition callbacks are unreliable.
+                
                 $('#fx-container').addClass('opaque');
                 $('.project-transition').velocity("fadeOut", { duration: 500 });
                 
@@ -340,7 +334,7 @@ $(document).ready(function() {
                 return;
             }
 
-            if (current_index < projects.length - 1) {
+            if (current_index < currents.length - 1) {
                 current_index++;
                 project_id = updateCurrentProject(current_index, project_id);
 
@@ -398,7 +392,6 @@ $(document).ready(function() {
         throttle: 200,
         placeholder: 'http://placehold.it/500x300',
     });
-
 
 
     // --------------------------------------
@@ -487,9 +480,7 @@ $(document).ready(function() {
     $('#logo').click(function(){
         
         //  Close current project
-        if ($('.case-study').hasClass('case-study-open')) {
-            closeCasestudy();
-        }
+        _closeProject();
 
         _sectionCurrent = "web-lab"; // Set #web-lab as current
         animation.scrollToVelocity(_sectionCurrent); // Navigate
@@ -561,7 +552,7 @@ $(document).ready(function() {
 
     // Hide Case study option
     if (_mobile) {
-        $('.case-study').addClass('hidden');
+        // $('.case-study').addClass('hidden');
     }
 
     /*
@@ -585,321 +576,11 @@ $(document).ready(function() {
         $('#select-work li:nth-child(n+8)').velocity("fadeIn", { duration: 500 });
     });
 
-
-    function openCasestudy(elem, evt) {
-
-        if (_openProjectState) {
-            closeCasestudyFast();
-        }
-        else  {
-            $('#pagination').fadeToggle(1000);
-        }
-
-        let work_type = evt.currentTarget.classList[0];
-        elem = "#" + elem;
-
-        if ( $(elem).hasClass('case-study-sticky') ) {
-            $(elem).removeClass('case-study-sticky');
-        }
-
-        _projectCurrentId = elem;
-
-        _$projectCurrentContents = $(elem).find('.contents');
-        setupVideo(_$projectCurrentContents); // Resize Video players
-
-        _caseStudySupport.reset();
-        _caseStudySupport.addListener($(elem)); // Set up case study sticky listener
-
-        if (work_type === "case-study") {
-
-            $(elem).find('.case-study-contents').fadeToggle(1000);
-            $(elem).addClass('case-study-open');
-
-            let bottomSlick = $(elem).find('.big-moment-3');
-            if (!bottomSlick.hasClass('slick-initialized')) { 
-                addSlick(bottomSlick, true);
-            };
-
-             $(elem).find('.case-study-overview').velocity("scroll", { 
-                container: $(elem).find('.case-study-view'),
-                duration:  800,
-                delay:     250,
-                offset:    '800px',
-                mobileHA:  false
-            });
-        }
-        else if (work_type === "select-work-item") {
-            let project = evt.currentTarget.dataset.project; // Find project
-                project = "#" + project; // Make ID
-            
-            $(project).fadeToggle(1000);
-        }
-
-        _openProjectState = true;
-
-        stickyUpdate();        
-    }
-
-    // Make this more generalizable?
-    // Close casestudy vs close project?
-    function closeCasestudy(elem) {
-        elem = "#" + elem;
-        let $elem = $(elem);
-
-        _caseStudySupport.removeListener($elem); // Set up case study sticky listener
-
-        $('#pagination').fadeToggle('slow');
-
-        // Reset Case-Study
-        $elem.find('.case-study-overview').velocity("scroll", { 
-            container: $elem.find('.case-study-view'),
-            duration:  0,
-            delay:     0,
-            offset:    '0px',
-            mobileHA:  false
-        });
-
-        $('body').removeClass('project-open');
-        
-        $elem.find('.case-study-contents').fadeOut('slow', function() { // Eh kind of wordy
-                $('.case-study').removeClass('case-study-open');
-        });
-
-        $('.case-study').removeClass('case-study-resize');
-
-        _openProjectState = false;
-
-    };
-
-    function closeCasestudyFast() {
-        let elem = $('.case-study-open');
-
-        _caseStudySupport.removeListener(elem); // Set up case study sticky listener
-
-        // Reset Case-Study
-        $(elem).find('.case-study-overview').velocity("scroll", { 
-            container: $(elem).find('.case-study-view'),
-            duration:  0,
-            delay:     0,
-            offset:    '200px',
-            mobileHA:  false
-        });
-        
-        $(elem).find('.case-study-contents').css('display', 'none');
-        
-        $('.case-study').removeClass('case-study-open case-study-resize');
-    };
-
-
     // Close Project
     $('.close').click(function() {
         closeCasestudy();
     });    
 
-
-    // --------------------------------------
-    // Case Study Support
-
-    function caseStudySupport() {
-        let last_known_scroll_position,
-            last_known_scroll_position1,
-            last_known_scroll_position2,
-            ticking,
-            cs_offset,
-            initial_offset,
-            state,
-            listen,
-            timer,
-            thresholdPercent,
-            scrollThreshold;
-
-            reset();
-            setup();
-
-        function updateThreshold($element) {
-            $($element).offset().top - $element.prop("scrollHeight");
-        }
-
-        function updateScale() {
-
-            setScrollPercent();
-
-            cs_offset = $('#bios').outerHeight(true) + 
-                        $('#web-lab').outerHeight(true) +
-                         + 200; // 200 Experimentally Determined
-
-            $('body').removeClass('project-open');
-               window.scrollTo(0, cs_offset);
-            $('body').addClass('project-open');
-
-        }
-
-        function setScrollPercent() { // Sus AF
-            if (window.innerWidth > 1200) {
-                thresholdPercent = 88;
-            }
-            else if (window.innerWidth > 750) {
-                thresholdPercent = 86;
-            }
-            else if (window.innerWidth < 750 && window.innerWidth > 550 ) {
-                thresholdPercent = 86;
-            }
-            else {
-                thresholdPercent = 84;
-            }
-        }
-
-        function setup() {
-
-            setScrollPercent();
-
-            $(".case-study-view .case-study-contents").click(function(evt) {
-                evt.stopPropagation(); // keep child elements from toggling case-study
-            });
-
-            $('.case-study-view').click(function(evt) {   // Open Case Study
-                let elem = evt.currentTarget.id;  // Navigate
-
-                animation.scrollToVelocity(elem);
-
-                if ($(this).hasClass('case-study-open')) {
-                    closeCasestudy(elem, evt);
-                }
-                else {
-                    $('body').addClass('project-open');
-                    openCasestudy(elem, evt); 
-                }
-            });
-        }
-
-        function scrollCheckerEnter($element) {
-            let scrollPercent = ($element.scrollTop() / $element.prop("scrollHeight")) * 100;
-
-            if (scrollPercent > thresholdPercent && !state) {
-                $element.addClass('case-study-sticky');
-                $element.removeClass('case-study-resize');
-                $('body').removeClass('project-open');
-
-                scrollThreshold = window.scrollY; // HMM --> It grabs this on the way out
-
-                window.setTimeout(function() {
-                    state = true;
-                }, 100);
-
-            }
-        }
-
-        function reset() {
-            // Reset Vars
-            last_known_scroll_position = 0;
-            last_known_scroll_position1 = 0;
-            last_known_scroll_position2 = 0;
-            ticking = false;
-            cs_offset = 0;
-            initial_offset = 0;
-            state = false;
-            listen = false;
-        }
-
-        function scrollCheckerExit($element, scroll_pos, threshold) { // Re-Enter Project upwards
-            if (scroll_pos < threshold && state) {
-                window.scrollTo(0, cs_offset);
-
-                $element.removeClass('case-study-sticky');
-                $('body').addClass('project-open');
-                
-                window.setTimeout(function() {
-                    state = false;
-                }, 100);
-            }
-        }
-
-        // Scroll listener for Case Study
-        function addListener($element) {
-
-            window.setTimeout(function() {
-                cs_offset = Math.ceil($('#bios').outerHeight(true) + 
-                                      $('#web-lab').outerHeight(true) + 
-                            Math.abs( $('#works')[0].getBoundingClientRect().top));
-
-                initial_offset = cs_offset;
-            }, 1000);
-
-            setScrollPercent();
-
-            if (listen) {
-                return;
-            }
-
-            $element.scroll(function(evt) { // Search for case-study with open class
-                last_known_scroll_position = window.scrollY;
-                if (!ticking) {
-                    window.requestAnimationFrame(function() {
-                        scrollCheckerEnter($element);
-                        ticking = false;
-                    });
-                }
-                ticking = true;
-            });
-
-            $(window).resize(function(evt) { // Search for case-study with open class // on resize
-                // last_known_scroll_position = window.scrollY;
-
-                if ($element.hasClass('case-study-open')) {                 
-                    if (!ticking) {
-                        window.requestAnimationFrame(function() {
-                            scrollCheckerEnter($element);
-                            setScrollPercent();
-
-                            clearTimeout(timer);
-                            
-                            timer = setTimeout(function() {
-                                updateScale();
-                            }, 50);
-                            ticking = false;
-                        });
-                    }
-                    ticking = true;
-                }
-            });
-
-            // Scroll event listener for window
-            $(window).scroll(function(evt) {
-                last_known_scroll_position1 = window.scrollY;
-
-                if ($element.hasClass('case-study-open')) {
-
-                    if (!ticking) {
-                        window.requestAnimationFrame(function() {
-                            scrollCheckerExit($element, last_known_scroll_position1, scrollThreshold);
-                            ticking = false;
-                        });
-                    }
-                    ticking = true;
-                }
-            });
-
-            listen = true;
-        }
-
-        function removeListener($element) {
-            // Remove Scroll event listener for element
-            // $element.off();
-
-            // Remove Scroll event listener for window
-            // $(window).off();
-
-            // setup();
-        }
-
-        return {
-            addListener: addListener,
-            updateThreshold: updateThreshold,
-            removeListener: removeListener,
-            setup: setup,
-            reset: reset,
-        };
-    }
 });
 
 // Functions =============================================================
