@@ -22,52 +22,52 @@ block content
         // CASE STUDY ITERATOR
         .endeavor-container.case-study-container
             each result, index in case_studies
-                .endeavor.case-study-view.parallax&attributes( {'data-inproject': false}, {'data-projectIndex': i}, {'data-project': result.route}, {'id': result.route} )
-                    // CASE STUDY OVERVIEW
+                .endeavor.endeavor-view.case-study-view.parallax&attributes({'data-inproject': false}, {'data-projectIndex': index}, {'id': result.route})
+                    // CASE-STUDY OVERVIEW
                     .endeavor-overview
                         .description
                             .description-wrapper
-                                h3=result.project_type
-                                h2=result.name
+                                h3 #{result.project_type}
+                                h2 #{result.name}
                                 hr
-                                p=result.description_short
+                                p #{result.description_short}
                         .hero-box
                             .overlay
                             .hero.img-load(style=`background-image: url(${result.hero})`)
-                    // /CASE STUDY OVERVIEW
-                    .endeavor-contents.parallax__group.contents
-                        .project-intro.cf
-                            .main-description 
-                                q=bios_text.description_pull
-                                h4 Brief
-                                p.tamer=result.description_long
-                                h4 Process
-                                p.tamer=result.description_long
-                            .meta-data
-                                ul
-                                    li Client
-                                    li=result.meta.Client
-                                ul
-                                    li Year
-                                    li=result.meta.Year
-                                ul
-                                    li Role
-                                    li=result.meta.Role
-                                ul
-                                    li Team
-                                    li=result.meta.Team
-                                ul
-                                    li Discipline
-                                    li=result.meta.Discipline
-                                ul
-                                    li Medium
-                                    li=result.meta.Medium
-                                ul
-                                    li Technologies
-                                    li=result.meta.Technologies
-                                ul
-                                    li Duration
-                                    li=result.meta.Duration
+                    // /CASE-STUDY OVERVIEW
+                    .endeavor-contents.case-study-contents.parallax__group.contents
+                        .endeavor-intro.cf
+                                .main-description 
+                                    q=bios_text.description_pull
+                                    h4 Brief
+                                    p.tamer=result.description_long
+                                    h4 Process
+                                    p.tamer=result.description_long
+                                .meta-data
+                                    ul
+                                        li Client
+                                        li=result.meta.Client
+                                    ul
+                                        li Year
+                                        li=result.meta.Year
+                                    ul
+                                        li Role
+                                        li=result.meta.Role
+                                    ul
+                                        li Team
+                                        li=result.meta.Team
+                                    ul
+                                        li Discipline
+                                        li=result.meta.Discipline
+                                    ul
+                                        li Medium
+                                        li=result.meta.Medium
+                                    ul
+                                        li Technologies
+                                        li=result.meta.Technologies
+                                    ul
+                                        li Duration
+                                        li=result.meta.Duration
                         // BIG MOMENT 0
                         .big-moment-0-color.img-load(style=`background-image: url(${result.images[index].src})`)
                         // 2X PARALLAX IMAGES LEFT
