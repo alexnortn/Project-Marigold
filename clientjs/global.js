@@ -254,6 +254,11 @@ $(document).ready(function() {
             if ($(evt.currentTarget).hasClass('case-study-item')) {
                 currents = case_studies;
                 container = $('.case-study-container');
+
+                let bottomSlick = container.find('.big-moment-3');
+                if (!bottomSlick.hasClass('slick-initialized')) { 
+                    addSlick(bottomSlick, true);
+                };
             } 
             else if ($(evt.currentTarget).hasClass('project-item')) {
                 currents = projects;
@@ -382,16 +387,16 @@ $(document).ready(function() {
     // --------------------------------------
     // Lazy Load Images --> Unveil2
 
-    $('img').unveil({
-        offset: 800,
-        throttle: 200,
-        placeholder: 'http://placehold.it/500x300',
-    });
-    $('.img-load').unveil({
-        offset: 800,
-        throttle: 200,
-        placeholder: 'http://placehold.it/500x300',
-    });
+    // $('img').unveil({
+    //     offset: 800,
+    //     throttle: 200,
+    //     placeholder: 'http://placehold.it/500x300',
+    // });
+    // $('.img-load').unveil({
+    //     offset: 800,
+    //     throttle: 200,
+    //     placeholder: 'http://placehold.it/500x300',
+    // });
 
 
     // --------------------------------------
@@ -399,13 +404,11 @@ $(document).ready(function() {
 
     $('.image-grid-container').click(function() {
         
-        let containerId    = '#' + $(this).parent().attr('id'),  
-            slickInitId    = containerId + "-slider",
-            overlaySlider  = $(slickInitId),
-            slideIndex     = $(this).data('slide');
+        let $containerClass    = $(this).parent(),  
+            $slickInitClass    = $containerClass.find('.grid-slider'),
+            slideIndex        = $(this).data('slide');
 
-
-        $(containerId)
+        $containerClass
             .children('.image-grid-container')
                 .removeClass("active-grid")
                 .addClass("bounce-sm");
@@ -415,18 +418,18 @@ $(document).ready(function() {
             .addClass("active-grid");
 
             
-        if (!overlaySlider.hasClass('slick-initialized')) {    
+        if (!$slickInitClass.hasClass('slick-initialized')) {    
             
-            $(containerId)
+            $containerClass
                 .children('.image-grid-container')
                     .removeClass("bounce")
                     .addClass('bounce-sm shrink-grid');
                 
-            overlaySlider.addClass('active-grid-slider');
+            $slickInitClass.addClass('active-grid-slider');
 
             // Add Slick slider with current parent id
-            addSlick(slickInitId, false);
-                $(slickInitId).removeClass('slider-transition');
+            addSlick($slickInitClass, false);
+                $slickInitClass.removeClass('slider-transition');
 
                 // Wait to calculate page offset until class transition ends
                 setTimeout(
@@ -443,21 +446,21 @@ $(document).ready(function() {
 
                 }, 500);
 
-            overlaySlider.slick('slickGoTo', slideIndex, true);   // Do not animate to first position
+            $slickInitClass.slick('slickGoTo', slideIndex, true);   // Do not animate to first position
 
         } else {
-            overlaySlider.slick('slickGoTo', slideIndex, false);  // Once loaded, animate to new position
+            $slickInitClass.slick('slickGoTo', slideIndex, false);  // Once loaded, animate to new position
         }
 
-        overlaySlider.on('swipe', function(event) {
+        $slickInitClass.on('swipe', function(event) {
             
-            $(containerId)
+            $containerClass
                 .children('.image-grid-container')
                     .removeClass("active-grid")
                     .addClass("bounce-sm");
 
-            let currentSlide = $(slickInitId).slick('slickCurrentSlide');
-            let activeSlide  = $(containerId)
+            let currentSlide = $slickInitClass.slick('slickCurrentSlide');
+            let activeSlide  = $containerClass
                                     .find("[data-slide='" + currentSlide + "']");
                 activeSlide
                     .addClass("active-grid")
@@ -753,26 +756,13 @@ function paginationUpdate(sectionUpdate) {
 
 
 // Setup for Slick slider plugin Grid #1
-function addSlick(_id, _dotsBool) {
+function addSlick($elem, _dotsBool) {
 
-    $(_id).slick({
+    $elem.slick({
         arrows:             false,
         dots:               _dotsBool,
         lazyLoad:           'progressive',
         adaptiveHeight:     true
-    });
-}
-
-function navSlick(_id) {
-
-    $(_id).slick({
-        arrows:             true,
-        dots:               false,
-        lazyLoad:           'progressive',
-        infinite:           false,
-        adaptiveHeight:     true,
-        vertical:           true,
-        verticalSwiping:    true
     });
 }
 

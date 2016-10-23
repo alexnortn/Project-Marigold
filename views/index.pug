@@ -79,8 +79,8 @@ block content
                                 .image-left
                                     //- p.caption #{result.description_long_2}
                         // GRID ITERATOR
-                        #grid-one.image-grid-wrapper
-                            #grid-one-slider.grid-slider.slider-transition
+                        .grid.image-grid-wrapper
+                            .grid-slider.slider-transition
                                 each image, i in result.images
                                     img.big-moment-3-color(src=`${result.images[i].src}`)
                             each image, i in result.images
@@ -91,8 +91,8 @@ block content
                         .big-moment-1.parallax__group
                             .big-moment-1-color.parallax__layer--back.img-load(style=`background-image: url(${result.images[0].src})`) 
                         // GRID ITERATOR 2
-                        #grid-two.image-grid-wrapper
-                            #grid-two-slider.grid-slider.slider-transition
+                        .grid.image-grid-wrapper
+                            .grid-slider.slider-transition
                                 each image, i in result.images
                                         img.big-moment-3-color(src = `${result.images[i].src}`)
                             each image, i in result.images
