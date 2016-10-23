@@ -258,8 +258,12 @@ $(document).ready(function() {
                 let bottomSlick = container.find('.big-moment-3');
                 if (!bottomSlick.hasClass('slick-initialized')) { 
                     addSlick(bottomSlick, true);
+                    bottomSlick.slick('slickNext');
+                    bottomSlick.slick('slickNext');
+                    bottomSlick.slick('slickNext');
+                    bottomSlick.slick('slickGoTo', 0, false);
                 };
-            } 
+            }
             else if ($(evt.currentTarget).hasClass('project-item')) {
                 currents = projects;
                 container = $('.project-container');
@@ -388,15 +392,16 @@ $(document).ready(function() {
     // Lazy Load Images --> Unveil2
 
     // $('img').unveil({
-    //     offset: 800,
-    //     throttle: 200,
+    //     offset: 400,
+    //     // throttle: 200,
     //     placeholder: 'http://placehold.it/500x300',
     // });
-    // $('.img-load').unveil({
-    //     offset: 800,
-    //     throttle: 200,
-    //     placeholder: 'http://placehold.it/500x300',
-    // });
+
+    $('.img-load').unveil({
+        offset: 400,
+        // throttle: 200,
+        placeholder: 'http://placehold.it/500x300',
+    });
 
 
     // --------------------------------------
@@ -760,6 +765,7 @@ function addSlick($elem, _dotsBool) {
 
     $elem.slick({
         arrows:             false,
+        autoplay:           true,
         dots:               _dotsBool,
         lazyLoad:           'progressive',
         adaptiveHeight:     true
