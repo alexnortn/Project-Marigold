@@ -463,7 +463,6 @@ $(document).ready(function() {
                     .addClass("active-grid")
                     .removeClass("bounce-sm");
         });
-
     });
 
     // Pagination event listener

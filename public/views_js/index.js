@@ -248,9 +248,9 @@ pug_html = pug_html + "\u003Cdiv class=\"image-left\"\u003E\u003C\u002Fdiv\u003E
 ;pug_debug_line = 81;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
 pug_html = pug_html + "\u003C!-- GRID ITERATOR--\u003E";
 ;pug_debug_line = 82;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
-pug_html = pug_html + "\u003Cdiv class=\"grid-one image-grid-wrapper\"\u003E";
+pug_html = pug_html + "\u003Cdiv class=\"image-grid-wrapper\" id=\"grid-one\"\u003E";
 ;pug_debug_line = 83;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
-pug_html = pug_html + "\u003Cdiv class=\"grid-one-slider grid-slider slider-transition\"\u003E";
+pug_html = pug_html + "\u003Cdiv class=\"grid-slider slider-transition\" id=\"grid-one-slider\"\u003E";
 ;pug_debug_line = 84;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
 // iterate result.images
 var pug_obj1 = result.images;
@@ -318,9 +318,9 @@ pug_html = pug_html + " \u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";
 ;pug_debug_line = 93;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
 pug_html = pug_html + "\u003C!-- GRID ITERATOR 2--\u003E";
 ;pug_debug_line = 94;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
-pug_html = pug_html + "\u003Cdiv class=\"grid-two image-grid-wrapper\"\u003E";
+pug_html = pug_html + "\u003Cdiv class=\"image-grid-wrapper\" id=\"grid-two\"\u003E";
 ;pug_debug_line = 95;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
-pug_html = pug_html + "\u003Cdiv class=\"grid-two-slider grid-slider slider-transition\"\u003E";
+pug_html = pug_html + "\u003Cdiv class=\"grid-slider slider-transition\" id=\"grid-two-slider\"\u003E";
 ;pug_debug_line = 96;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
 // iterate result.images
 var pug_obj3 = result.images;
@@ -621,9 +621,9 @@ pug_html = pug_html + "\u003Cdiv class=\"image-left\"\u003E\u003C\u002Fdiv\u003E
 ;pug_debug_line = 81;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
 pug_html = pug_html + "\u003C!-- GRID ITERATOR--\u003E";
 ;pug_debug_line = 82;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
-pug_html = pug_html + "\u003Cdiv class=\"grid-one image-grid-wrapper\"\u003E";
+pug_html = pug_html + "\u003Cdiv class=\"image-grid-wrapper\" id=\"grid-one\"\u003E";
 ;pug_debug_line = 83;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
-pug_html = pug_html + "\u003Cdiv class=\"grid-one-slider grid-slider slider-transition\"\u003E";
+pug_html = pug_html + "\u003Cdiv class=\"grid-slider slider-transition\" id=\"grid-one-slider\"\u003E";
 ;pug_debug_line = 84;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
 // iterate result.images
 var pug_obj6 = result.images;
@@ -691,9 +691,9 @@ pug_html = pug_html + " \u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";
 ;pug_debug_line = 93;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
 pug_html = pug_html + "\u003C!-- GRID ITERATOR 2--\u003E";
 ;pug_debug_line = 94;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
-pug_html = pug_html + "\u003Cdiv class=\"grid-two image-grid-wrapper\"\u003E";
+pug_html = pug_html + "\u003Cdiv class=\"image-grid-wrapper\" id=\"grid-two\"\u003E";
 ;pug_debug_line = 95;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
-pug_html = pug_html + "\u003Cdiv class=\"grid-two-slider grid-slider slider-transition\"\u003E";
+pug_html = pug_html + "\u003Cdiv class=\"grid-slider slider-transition\" id=\"grid-two-slider\"\u003E";
 ;pug_debug_line = 96;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
 // iterate result.images
 var pug_obj8 = result.images;
