@@ -2,19 +2,18 @@ extends layout
 
 block content
     #fx-container.full.fixed.passive
-        svg#svg-container
-        
+        svg#svg-container        
         // ARROW INTERACTION CONTAINER
-        .arrow-container-main.hidden
-            #prev.arrow-container.left.plus_plus
+        .arrow-container-main
+            #prev.arrow-container.left.plus_plus.transparent
                 p Prev Project
                 .arrow.left
                     <i class="fa  fa-angle-left fa-2x"></i>    
-            #next.arrow-container.right.plus_plus
+            #next.arrow-container.right.plus_plus.transparent
                 p Next Project
                 .arrow.right
                     <i class="fa  fa-angle-right fa-2x"></i>
-            #close.arrow-container.arrow-center.plus_plus
+            #close.arrow-container.arrow-center.plus_plus.transparent
                 p Close Project
                 .arrow.arrow-center-within
                     <i class="fa  fa-close fa-2x"></i>

@@ -193,17 +193,17 @@ $(document).ready(function() {
     function createCircle(_cx, _cy) {
         let svgNS = "http://www.w3.org/2000/svg";  
         let myCircle = document.createElementNS(svgNS, "circle");
-            myCircle.className = "transition-svg";
+            myCircle.setAttribute("class", "transition-svg");
             myCircle.setAttributeNS(null,"id", "mycircle");
             myCircle.setAttributeNS(null,"cx", _cx);
             myCircle.setAttributeNS(null,"cy", _cy);
-            myCircle.setAttributeNS(null,"r", 5);
+            myCircle.setAttributeNS(null,"r", 0);
             myCircle.setAttributeNS(null,"stroke", "none");
 
-        $('#svg-container').appendChild(myCircle);
+        document.getElementById("svg-container").appendChild(myCircle);
 
         return $('.transition-svg');
-    }     
+    }       
 
     // Project Grid Handlers
     (function() { // For lexical scoping
@@ -301,50 +301,48 @@ $(document).ready(function() {
 
             $('#fx-container').removeClass('passive');
 
+            createCircle(evt.clientX, evt.clientY)
+
             let $transitionSVG = createCircle(evt.clientX, evt.clientY);
-                $transitionSVG.addClass('open-transition-start')
 
             setTimeout(function() {
                 $('#pagination').velocity("fadeOut", { duration: 500 });
-                $transitionSVG.addClass('open-transition-end').onCSSTransitionEnd( function() {
-                    $('body').addClass('endeavor-open');
-                    container.addClass('visible');
 
-                    // if ( $('#fx-container').hasClass('opaque') ) {
-                    //     return;
-                    // } 
+                $.Velocity.animate( $transitionSVG, { r: 2000 }, { duration: 750 },  "ease-out" )
+                    .then(function(elements) {
+                        $('body').addClass('endeavor-open');
+                        container.addClass('flex-row');
+                        
+                        $(project_id).velocity("scroll", { axis: "x", duration: 0, container: container });
 
-                    // console.log('open end');
+                        container.addClass('visible');
                     
-                    // $('#fx-container').addClass('opaque').onCSSTransitionEnd( function() { 
+                        $('#fx-container').addClass('opaque').onCSSTransitionEnd( function() { 
 
-                    //     if (opaque) {
-                    //         return;
-                    //     }
+                            if (opaque) {
+                                return;
+                            }
 
-                    //     console.log('opaque end');
+                            /* Using Velocity's utility function... */
+                            $.Velocity.animate( $transitionSVG, "fadeOut", { duration: 500 } )
+                                /* Callback to fire once the animation is complete. */
+                                .then(function(elements) {
+                                    $('.arrow-container').removeClass('transparent');
+                                    
+                                    _$projectCurrentContents = $(project_id).find('.contents');
+                                    setupVideo(_$projectCurrentContents); // Resize Video players
 
-                    //     /* Using Velocity's utility function... */
-                    //     $.Velocity.animate($('.project-transition'), "fadeOut", { duration: 500 })
-                    //         /* Callback to fire once the animation is complete. */
-                    //         .then(function(elements) {
-                                
-                    //             console.log('fade-out end');
+                                    $transitionSVG.remove();
+                                })
+                                /* Callback to fire if an error occurs. */
+                                .catch(function(error) { 
+                                    console.log("Rejected.");
+                                });
 
-                    //             $('.arrow-container-main').velocity("fadeIn", { duration: 500, display: "flex" }); // wait
-                                
-                    //             _$projectCurrentContents = $(project_id).find('.contents');
-                    //             setupVideo(_$projectCurrentContents); // Resize Video players
+                            opaque = true;
 
-                    //             $(project_id).velocity("scroll", { axis: "x", duration: 0, container: container });
-                    //         })
-                    //         /* Callback to fire if an error occurs. */
-                    //         .catch(function(error) { console.log("Rejected."); });
-
-                    //     opaque = true;
-
-                    // });
-                });
+                        });
+                    });
             }, 0);
 
             _openProjectState = true;

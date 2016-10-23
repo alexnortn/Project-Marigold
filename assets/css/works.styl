@@ -18,6 +18,24 @@ $F-padding = 15px
 
 // @extend .module-font
 
+
+/* -------------------------------------- */
+/* SVG Elements */
+
+#svg-container
+	position absolute
+	left 0
+	top 0
+	width 100%
+	height 100%
+
+
+.transition-svg
+	opacity 1
+	fill $WHITE_BG
+		
+
+
 /* -------------------------------------- */
 /* DOM Elements */
 
@@ -86,33 +104,7 @@ $F-padding = 15px
 	
 	
 .project-transition
-	width 5px
-	height @width
-	display block
 	position absolute
-	opacity 0
-	
-
-.open-transition-end
-	opacity 1
-	transform scale(1000)
-	
-
-#svg-container
-	position relative
-	width 100%
-	height 100%
-	
-
-/* -------------------------------------- */
-/* SVG Elements */
-	
-
-.transition-svg
-	opacity 0 
-	fill $WHITE_BG
-	transition all 500ms ease-out
-		
 
 
 
