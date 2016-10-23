@@ -170,25 +170,6 @@ $(document).ready(function() {
         animation.scrollToVelocity(_sectionCurrent); // Navigate
     });
 
-    // Close overlay project
-    function closeProject() {
-        $('.arrow-container-main').velocity("fadeOut", { duration: 250 });
-
-        $('#fx-container').removeClass('opaque').onCSSTransitionEnd( function() {
-
-            $( this ).addClass('passive');
-
-            $('.endeavor-transition').remove();
-            $('.endeavor-container').removeClass('visible');
-
-            $('.arrow-container').removeClass('arrow-bottom');
-            $('body').removeClass('endeavor-open');
-
-            $('#pagination').fadeToggle(500); // Fade Out Pagination
-                _openProjectState = false;
-        });
-    }
-
     // Create SVG Circle
     function createCircle(_cx, _cy) {
         let svgNS = "http://www.w3.org/2000/svg";  
@@ -203,7 +184,38 @@ $(document).ready(function() {
         document.getElementById("svg-container").appendChild(myCircle);
 
         return $('.transition-svg');
-    }       
+    }      
+
+    // Close overlay project
+    function closeProject() {
+        let transition = false;
+
+        $('#fx-container').removeClass('opaque').onCSSTransitionEnd( function() {
+
+            if (transition) {
+                return;
+            }
+
+            $( this ).addClass('passive');
+
+            $('.endeavor-container').removeClass('visible')
+
+            setTimeout(function() {
+                $('.endeavor-container').removeClass('flex-row');
+            }, 1000);
+
+            $('.arrow-container').removeClass('arrow-bottom disabled')
+                                 .addClass('transparent');
+
+            $('body').removeClass('endeavor-open');
+
+            $('#pagination').fadeToggle(500); // Fade Out Pagination
+                _openProjectState = false;
+
+            transition = true;
+
+        });
+    } 
 
     // Project Grid Handlers
     (function() { // For lexical scoping
@@ -301,49 +313,42 @@ $(document).ready(function() {
 
             $('#fx-container').removeClass('passive');
 
-            createCircle(evt.clientX, evt.clientY)
+            createCircle(evt.clientX, evt.clientY);
 
             let $transitionSVG = createCircle(evt.clientX, evt.clientY);
 
-            setTimeout(function() {
-                $('#pagination').velocity("fadeOut", { duration: 500 });
+            $('#pagination').velocity("fadeOut", { duration: 500 });
 
-                $.Velocity.animate( $transitionSVG, { r: 2000 }, { duration: 750 },  "ease-out" )
-                    .then(function(elements) {
-                        $('body').addClass('endeavor-open');
-                        container.addClass('flex-row');
-                        
-                        $(project_id).velocity("scroll", { axis: "x", duration: 0, container: container });
-
-                        container.addClass('visible');
+            $.Velocity.animate( $transitionSVG, { r: 2000 }, { duration: 750 },  "ease-out" )
+                .then(function(elements) {
+                    $('body').addClass('endeavor-open');
                     
-                        $('#fx-container').addClass('opaque').onCSSTransitionEnd( function() { 
+                    container.addClass('flex-row');
+                        $(project_id).velocity("scroll", { axis: "x", duration: 0, container: container });
+                    container.addClass('visible');
+                
+                    $('#fx-container').addClass('opaque').onCSSTransitionEnd( function() { 
+                        if (opaque) {
+                            return;
+                        }
 
-                            if (opaque) {
-                                return;
-                            }
+                        $.Velocity.animate( $transitionSVG, "fadeOut", { duration: 500 } )
+                            .then(function(elements) {
+                                $('.arrow-container').removeClass('transparent');
+                                
+                                _$projectCurrentContents = $(project_id).find('.contents');
+                                setupVideo(_$projectCurrentContents); // Resize Video players
 
-                            /* Using Velocity's utility function... */
-                            $.Velocity.animate( $transitionSVG, "fadeOut", { duration: 500 } )
-                                /* Callback to fire once the animation is complete. */
-                                .then(function(elements) {
-                                    $('.arrow-container').removeClass('transparent');
-                                    
-                                    _$projectCurrentContents = $(project_id).find('.contents');
-                                    setupVideo(_$projectCurrentContents); // Resize Video players
+                                $transitionSVG.remove();
+                            })
+                            .catch(function(error) { 
+                                console.log("Rejected.");
+                            });
 
-                                    $transitionSVG.remove();
-                                })
-                                /* Callback to fire if an error occurs. */
-                                .catch(function(error) { 
-                                    console.log("Rejected.");
-                                });
+                        opaque = true;
 
-                            opaque = true;
-
-                        });
                     });
-            }, 0);
+                });
 
             _openProjectState = true;
 
