@@ -536,8 +536,8 @@
                     "Technologies" : "Processing / Pencils",
                     "Duration" : "Three Months"
                 },
-                "hero": "images/project/dig/dig-hero.jpg",
-                "preview": "images/project/dig/dig-preview.jpg",
+                "hero": "images/projects/dig/hi-res/dig-hero.jpg",
+                "preview": "images/projects/dig/hi-res/dig-preview.jpg",
                 "videos" : [
                     {
                         "name" : "DigProcess",
@@ -548,112 +548,112 @@
                 "images": [
                     {
                         "name": "hero",
-                        "src": "images/project/dig/dig-hero.jpg",
-                        "src-sm": "images/project/dig/dig-hero.jpg",
+                        "src": "images/projects/dig/hi-res/dig-hero.jpg",
+                        "src-sm": "images/projects/dig/hi-res/dig-hero.jpg",
                         "caption": "Dig hero image"
                     },
                     {
                         "brand" : [
                             {
                                 "name": "dig-gif",
-                                "src": "images/project/dig/dig-gif.gif",
-                                "src-sm": "images/project/dig/dig-gif.gif",
+                                "src": "images/projects/dig/hi-res/dig-gif.gif",
+                                "src-sm": "images/projects/dig/hi-res/dig-gif.gif",
                                 "caption": "Dig gif image"   
                             },
                             {
                                 "name": "dig-logo-black",
-                                "src": "images/project/dig/dig-logo-black.gif",
-                                "src-sm": "images/project/dig/dig-logo-black.gif",
+                                "src": "images/projects/dig/hi-res/dig-logo-black.gif",
+                                "src-sm": "images/projects/dig/hi-res/dig-logo-black.gif",
                                 "caption": "Dig gif image"   
                             },
                             {
                                 "name": "dig-logo-white",
-                                "src": "images/project/dig/dig-logo-white.gif",
-                                "src-sm": "images/project/dig/dig-logo-white.gif",
+                                "src": "images/projects/dig/hi-res/dig-logo-white.gif",
+                                "src-sm": "images/projects/dig/hi-res/dig-logo-white.gif",
                                 "caption": "Dig gif image"   
                             },
                             {
                                 "name": "dig-grid",
-                                "src": "images/project/dig/dig-grid.jpg",
-                                "src-sm": "images/project/dig/dig-grid.jpg",
+                                "src": "images/projects/dig/hi-res/dig-grid.jpg",
+                                "src-sm": "images/projects/dig/hi-res/dig-grid.jpg",
                                 "caption": "Dig gif image"   
                             },
                             {
                                 "name": "dig-poster-1",
-                                "src": "images/project/dig/dig-poster-1.jpg",
-                                "src-sm": "images/project/dig/dig-poster-1.jpg",
+                                "src": "images/projects/dig/hi-res/dig-poster-1.jpg",
+                                "src-sm": "images/projects/dig/hi-res/dig-poster-1.jpg",
                                 "caption": "Dig gif image"   
                             },
                             {
                                 "name": "dig-poster-2",
-                                "src": "images/project/dig/dig-poster-2.jpg",
-                                "src-sm": "images/project/dig/dig-poster-2.jpg",
+                                "src": "images/projects/dig/hi-res/dig-poster-2.jpg",
+                                "src-sm": "images/projects/dig/hi-res/dig-poster-2.jpg",
                                 "caption": "Dig gif image"   
                             },
                             {
                                 "name": "dig-poster-3",
-                                "src": "images/project/dig/dig-poster-3.jpg",
-                                "src-sm": "images/project/dig/dig-poster-3.jpg",
+                                "src": "images/projects/dig/hi-res/dig-poster-3.jpg",
+                                "src-sm": "images/projects/dig/hi-res/dig-poster-3.jpg",
                                 "caption": "Dig gif image"   
                             }
                         ],
                         "sector" : [
                             {
                                 "name": "dig-sector-1",
-                                "src": "images/project/dig/dig-sector-1.jpg",
-                                "src-sm": "images/project/dig/dig-sector-1.jpg",
+                                "src": "images/projects/dig/hi-res/dig-sector-1.jpg",
+                                "src-sm": "images/projects/dig/hi-res/dig-sector-1.jpg",
                                 "caption": "Dig gif image"   
                             },
                             {
                                 "name": "dig-sector-gif",
-                                "src": "images/project/dig/dig-sector-gif.gif",
-                                "src-sm": "images/project/dig/dig-sector-gif.gif",
+                                "src": "images/projects/dig/hi-res/dig-sector-gif.gif",
+                                "src-sm": "images/projects/dig/hi-res/dig-sector-gif.gif",
                                 "caption": "Dig gif image"   
                             }
                         ],
                         "process" : [
                             {
                                 "name": "dig-process-1",
-                                "src": "images/project/dig/dig-process-1.jpg",
-                                "src-sm": "images/project/dig/dig-process-1.jpg",
+                                "src": "images/projects/dig/hi-res/dig-process-1.jpg",
+                                "src-sm": "images/projects/dig/hi-res/dig-process-1.jpg",
                                 "caption": "Dig gif image"   
                             },
                             {
                                 "name": "dig-process-2",
-                                "src": "images/project/dig/dig-process-2.jpg",
-                                "src-sm": "images/project/dig/dig-process-2.jpg",
+                                "src": "images/projects/dig/hi-res/dig-process-2.jpg",
+                                "src-sm": "images/projects/dig/hi-res/dig-process-2.jpg",
                                 "caption": "Dig gif image"   
                             }
                         ],
                         "algo" : [
                             {
                                 "name": "dig-algo-1",
-                                "src": "images/project/dig/dig-algo-1.jpg",
-                                "src-sm": "images/project/dig/dig-algo-1.jpg",
+                                "src": "images/projects/dig/hi-res/dig-algo-1.jpg",
+                                "src-sm": "images/projects/dig/hi-res/dig-algo-1.jpg",
                                 "caption": "Dig gif image"   
                             },
                             {
                                 "name": "dig-algo-2",
-                                "src": "images/project/dig/dig-algo-2.jpg",
-                                "src-sm": "images/project/dig/dig-algo-2.jpg",
+                                "src": "images/projects/dig/hi-res/dig-algo-2.jpg",
+                                "src-sm": "images/projects/dig/hi-res/dig-algo-2.jpg",
                                 "caption": "Dig gif image"   
                             },
                             {
                                 "name": "dig-algo-3",
-                                "src": "images/project/dig/dig-algo-3.jpg",
-                                "src-sm": "images/project/dig/dig-algo-3.jpg",
+                                "src": "images/projects/dig/hi-res/dig-algo-3.jpg",
+                                "src-sm": "images/projects/dig/hi-res/dig-algo-3.jpg",
                                 "caption": "Dig gif image"   
                             },
                             {
                                 "name": "dig-algo-4",
-                                "src": "images/project/dig/dig-algo-4.jpg",
-                                "src-sm": "images/project/dig/dig-algo-4.jpg",
+                                "src": "images/projects/dig/hi-res/dig-algo-4.jpg",
+                                "src-sm": "images/projects/dig/hi-res/dig-algo-4.jpg",
                                 "caption": "Dig gif image"   
                             },
                             {
                                 "name": "dig-algo-5",
-                                "src": "images/project/dig/dig-algo-5.jpg",
-                                "src-sm": "images/project/dig/dig-algo-5.jpg",
+                                "src": "images/projects/dig/hi-res/dig-algo-5.jpg",
+                                "src-sm": "images/projects/dig/hi-res/dig-algo-5.jpg",
                                 "caption": "Dig gif image"   
                             }
                         ]

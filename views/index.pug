@@ -143,7 +143,7 @@ block content
                         .hero-box.hero-parallax.parallax__group
                             .hero.parallax__layer--back.img-load(style=`background-image: url(${result.hero})`)
                     // /PROJECT OVERVIEW
-                    .endeavor-contents.parallax__group.contents
+                    .endeavor-contents.case-study-contents.parallax__group.contents
                         .endeavor-intro.cf
                                 .main-description 
                                     q=bios_text.description_pull
@@ -296,45 +296,22 @@ block content
             #works-wrapper
                 // CASE STUDY ITERATOR
                 each result, i in case_studies
-                    .case-study.case-study-window.item.case-study-item&attributes( {'data-inproject': false}, {'data-projectIndex': i}, {'data-project': result.route},  {'id': result.preview} )
-                        // CASE STUDY OVERVIEW
-                        .case-study-overview
-                            .description
-                                .description-wrapper
-                                    h3=result.project_type
-                                    h2=result.name
-                                    hr
-                                    p=result.description_short
-                            .hero-box
-                                .hero.img-load(style=`background-image: url(${result.hero})`)
-                        // /CASE STUDY OVERVIEW
+                    +caseStudyPreview(result, i)
                 // /CASE STUDY ITERATOR
 
                 //SELECT WORK GRID SECTION
                 #select-work.select-work
                     #select-work-wrapper
                         h3 Selected Works
-                        // SELECT-WORK ITERATOR
                         ul
                             each result, i in select_work
-                                li.select-work-item.item.project-item&attributes( {'data-inproject': false}, {'data-projectIndex': i}, {'data-project': result.route}, {'id': result.preview} )
-                                    .select-work-img-container
-                                        .select-work-description
-                                            p.tamer=result.description_short
-                                            hr
-                                        .select-work-img.img-load(style=`background-image: url(${result.images[0].src})`)
-                                    h3 #{result.name}
-                        // /SELECT-WORK ITERATOR
+                                +projectPreview(result, i)
                         h5#select-more { more }
-
                 // /SELECT WORK GRID SECTION
-
-
         // /WORKS SECTION 
 
 
         //FEATURE SECTION
-        
         section#feature.feature
             #feature-wrapper
                 h3 Feature & Collaboration
@@ -343,7 +320,6 @@ block content
                     each result, index in feature
                         li.img-load(style=`background-image: url(${result.logo})`)
                             a(href=`${result.link}` target="_blank")
-
         // /FEATURE SECTION  
 
 

@@ -1,4 +1,75 @@
-mixin users(users, colour)
-  ul
+//- 
+
+    Alex Norton
+    a^N 
+    http://alexnortn.com
+
+    Pug Mixins for Modular Implementation
+
+
+//-  Test ~ Hello Mixin ~
+mixin users2(users, colour)
+    ul
     each user in users
-      li(class=colour)= user
+        li(class=colour)= user
+
+
+//-  Case-Study Preview
+    Requires: <result> <index> 
+        + route <scr/string>
+        + name-preview <string>
+        + project-type <string>
+        + project-name <string>
+        + project-description <string>
+        + project-image-preview <src>
+
+mixin caseStudyPreview(result, i)
+    .case-study.case-study-window.item.case-study-item&attributes( {'data-inproject': false}, {'data-projectIndex': i}, {'data-project': result.route},  {'id': result.preview} )
+        .case-study-overview
+            .description
+                .description-wrapper
+                    h3=result.project_type
+                    h2=result.name
+                    hr
+                    p=result.description_short
+            .hero-box
+                .hero.img-load(style=`background-image: url(${result.hero})`)
+
+
+//-  Project-Study Preview
+    Requires: <result> <index>
+        + route <scr/string>
+        + name-preview <string>
+        + project-name <string>
+        + project-description <string>
+        + project-image-preview <src>
+
+mixin projectPreview(result, i)
+    li.select-work-item.item.project-item&attributes( {'data-inproject': false}, {'data-projectIndex': i}, {'data-project': result.route}, {'id': result.preview} )
+        .select-work-img-container
+            .select-work-description
+                p.tamer=result.description_short
+                hr
+            .select-work-img.img-load(style=`background-image: url(${result.images[0].src})`)
+        h3 #{result.name}
+
+
+//-  Endeavor Header
+    Requires: <result> <index>
+        + route <scr/string>
+        + name-preview <string>
+        + project-name <string>
+        + project-description <string>
+        + project-image-preview <src>
+
+
+
+
+
+
+
+
+
+
+
+
