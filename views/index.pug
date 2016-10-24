@@ -1,6 +1,12 @@
 extends layout
 
 block content
+
+    - var users = ['alex', 'david', 'kevin'];
+    - var mixinName = 'users';
+
+    +#{mixinName}(users, 'blue')
+
     #fx-container.full.fixed.passive
         svg#svg-container        
         // ARROW INTERACTION CONTAINER

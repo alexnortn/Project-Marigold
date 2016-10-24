@@ -508,14 +508,14 @@
                 "year"  : "2014",
                 "preview" :"dig-preview",
                 "medium": [
-                    "Paper",
-                    "Wood",
-                    "Arduino"
+                    "Graphic Design",
+                    "Identity Systems",
+                    "Digital"
                 ],
                 "technique": [
-                    "Laser Cutter",
-                    "Wood Working",
-                    "Programing"
+                    "Processing",
+                    "Cellular Automata",
+                    "Generative Design"
                 ],
                 "description_short": "A traditional Japanese lamp that responds gesturally to weather phenomena.",
                 "description_long": "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know? When is a qualitative understanding of data sufficient? The lamp is also a sort of commentary on the current state of culture in Japan. It is no coincidence that the lamp resembles a tower crane. The lamp bridges the gap between traditional Japanese culture and Japan as a world-leading technological hub. The Lamp is a collaboration between Massart’s graphic design program and MIT’s Architectural Computation department. The following pages detail the CAD models and a bit of the building process for the first of the 3 proposed lamps, this is the smallest desk lamp. Further on there is a glimpse into the program written to aggregate weather sources as well as a web-interface designed to program + control the lamp.",
@@ -527,30 +527,136 @@
                     "This is the third big quote"
                 ],
                 "meta" : {
-                    "Client" : "Self (MIT)",
-                    "Year" : 2015,
+                    "Client" : "Eyewire, Princeton",
+                    "Year" : 2016,
                     "Role" : "Designer / Developer",
-                    "Team" : "N/A",
-                    "Discipline" : "Fabrication / Industrial Design",
-                    "Medium" : "Internet of Things / Wood",
-                    "Technologies" : "Arduino / Woodshop",
-                    "Duration" : "Two Months"
+                    "Team" : "Eyewire, Karl Catubig",
+                    "Discipline" : "Graphic Design / Computational Design",
+                    "Medium" : "Digital",
+                    "Technologies" : "Processing / Pencils",
+                    "Duration" : "Three Months"
                 },
-                "hero": "images/crystal-8.jpg",
-                "cut": "images/lamp-Out.png",
+                "hero": "images/project/dig/dig-hero.jpg",
+                "preview": "images/project/dig/dig-preview.jpg",
                 "videos" : [
                     {
-                        "name" : "MSTY",
-                        "src" : "https://www.youtube.com/embed/V2FqFHfjFaM",
-                        "caption" : "something" 
+                        "name" : "DigProcess",
+                        "src" : "https://youtu.be/p5DGhmvRtOA",
+                        "caption" : "Alex Norton DiG Programing Process." 
                     }
                 ],
                 "images": [
                     {
                         "name": "hero",
-                        "src": "images/crystal-8.jpg",
-                        "src-sm": "images/lamp-sm-0.jpg",
-                        "caption": "Side view of Gestural Lamp. "
+                        "src": "images/project/dig/dig-hero.jpg",
+                        "src-sm": "images/project/dig/dig-hero.jpg",
+                        "caption": "Dig hero image"
+                    },
+                    {
+                        "brand" : [
+                            {
+                                "name": "dig-gif",
+                                "src": "images/project/dig/dig-gif.gif",
+                                "src-sm": "images/project/dig/dig-gif.gif",
+                                "caption": "Dig gif image"   
+                            },
+                            {
+                                "name": "dig-logo-black",
+                                "src": "images/project/dig/dig-logo-black.gif",
+                                "src-sm": "images/project/dig/dig-logo-black.gif",
+                                "caption": "Dig gif image"   
+                            },
+                            {
+                                "name": "dig-logo-white",
+                                "src": "images/project/dig/dig-logo-white.gif",
+                                "src-sm": "images/project/dig/dig-logo-white.gif",
+                                "caption": "Dig gif image"   
+                            },
+                            {
+                                "name": "dig-grid",
+                                "src": "images/project/dig/dig-grid.jpg",
+                                "src-sm": "images/project/dig/dig-grid.jpg",
+                                "caption": "Dig gif image"   
+                            },
+                            {
+                                "name": "dig-poster-1",
+                                "src": "images/project/dig/dig-poster-1.jpg",
+                                "src-sm": "images/project/dig/dig-poster-1.jpg",
+                                "caption": "Dig gif image"   
+                            },
+                            {
+                                "name": "dig-poster-2",
+                                "src": "images/project/dig/dig-poster-2.jpg",
+                                "src-sm": "images/project/dig/dig-poster-2.jpg",
+                                "caption": "Dig gif image"   
+                            },
+                            {
+                                "name": "dig-poster-3",
+                                "src": "images/project/dig/dig-poster-3.jpg",
+                                "src-sm": "images/project/dig/dig-poster-3.jpg",
+                                "caption": "Dig gif image"   
+                            }
+                        ],
+                        "sector" : [
+                            {
+                                "name": "dig-sector-1",
+                                "src": "images/project/dig/dig-sector-1.jpg",
+                                "src-sm": "images/project/dig/dig-sector-1.jpg",
+                                "caption": "Dig gif image"   
+                            },
+                            {
+                                "name": "dig-sector-gif",
+                                "src": "images/project/dig/dig-sector-gif.gif",
+                                "src-sm": "images/project/dig/dig-sector-gif.gif",
+                                "caption": "Dig gif image"   
+                            }
+                        ],
+                        "process" : [
+                            {
+                                "name": "dig-process-1",
+                                "src": "images/project/dig/dig-process-1.jpg",
+                                "src-sm": "images/project/dig/dig-process-1.jpg",
+                                "caption": "Dig gif image"   
+                            },
+                            {
+                                "name": "dig-process-2",
+                                "src": "images/project/dig/dig-process-2.jpg",
+                                "src-sm": "images/project/dig/dig-process-2.jpg",
+                                "caption": "Dig gif image"   
+                            }
+                        ],
+                        "algo" : [
+                            {
+                                "name": "dig-algo-1",
+                                "src": "images/project/dig/dig-algo-1.jpg",
+                                "src-sm": "images/project/dig/dig-algo-1.jpg",
+                                "caption": "Dig gif image"   
+                            },
+                            {
+                                "name": "dig-algo-2",
+                                "src": "images/project/dig/dig-algo-2.jpg",
+                                "src-sm": "images/project/dig/dig-algo-2.jpg",
+                                "caption": "Dig gif image"   
+                            },
+                            {
+                                "name": "dig-algo-3",
+                                "src": "images/project/dig/dig-algo-3.jpg",
+                                "src-sm": "images/project/dig/dig-algo-3.jpg",
+                                "caption": "Dig gif image"   
+                            },
+                            {
+                                "name": "dig-algo-4",
+                                "src": "images/project/dig/dig-algo-4.jpg",
+                                "src-sm": "images/project/dig/dig-algo-4.jpg",
+                                "caption": "Dig gif image"   
+                            },
+                            {
+                                "name": "dig-algo-5",
+                                "src": "images/project/dig/dig-algo-5.jpg",
+                                "src-sm": "images/project/dig/dig-algo-5.jpg",
+                                "caption": "Dig gif image"   
+                            }
+                        ]
                     },
                     {
                         "name": "support_1",
