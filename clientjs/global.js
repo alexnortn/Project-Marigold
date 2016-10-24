@@ -17,6 +17,7 @@ let $ = require('jquery');
 let velocity    = require('velocity-animate'),
     velocity_ui = require('velocity-ui-pack'),
     slick       = require('slick-carousel'),
+    hammertime  = require('hammerjs'),
     Stickyfill  = require('stickyfill'),
     isMobile    = require('ismobilejs'),
     unveil      = require('../node_modules/unveil2/src/jquery.unveil2.js'),
@@ -274,14 +275,36 @@ $(document).ready(function() {
             }
         }
 
-        $('.item').click(function(evt) {
+        function workItemInteraction($elem, evt) {
+
             if (_openProjectState) {
                 return;
             }
 
-            project_id = $(this).attr('data-project');
+            // Testing for touch || click
+            let x_pos,
+                y_pos;
 
-            if ($(evt.currentTarget).hasClass('case-study-item')) {
+            let $currentTarget;
+
+            if (evt.type === "click") {
+                x_pos = evt.clientX;
+                y_pos = evt.clientY;
+
+                $currentTarget = $(evt.currentTarget);
+
+            }
+            else if (evt.pointerType === "touch") {
+                x_pos = evt.pointers[0].screenX;
+                y_pos = evt.pointers[0].screenY;
+
+                $currentTarget = $(evt.srcEvent.currentTarget);
+
+            }
+
+            project_id = $elem.attr('data-project');
+
+            if ($currentTarget.hasClass('case-study-item')) {
                 currents = case_studies;
                 container = $('.case-study-container');
 
@@ -294,7 +317,7 @@ $(document).ready(function() {
                                .slick('slickGoTo', 0, false);
                 };
             }
-            else if ($(evt.currentTarget).hasClass('project-item')) {
+            else if ($currentTarget.hasClass('project-item')) {
                 currents = projects;
                 container = $('.project-container');
             }
@@ -313,9 +336,7 @@ $(document).ready(function() {
 
             $('#fx-container').removeClass('passive');
 
-            createCircle(evt.clientX, evt.clientY);
-
-            let $transitionSVG = createCircle(evt.clientX, evt.clientY);
+            let $transitionSVG = createCircle(x_pos, y_pos);
 
             $('#pagination').velocity("fadeOut", { duration: 500 });
 
@@ -351,7 +372,22 @@ $(document).ready(function() {
                 });
 
             _openProjectState = true;
+        }
 
+        // --------------------------------------
+        // Project Event Handlers
+
+        $('.item').on('click', function(evt) {
+            workItemInteraction($(this), evt);
+        });
+
+        $('.item').each(function(){
+            var $this = $(this);
+            var hammertime = new Hammer(this);
+            hammertime.on("tap", function(evt) {
+                workItemInteraction($this, evt);
+                return false;
+            });
         });
  
         // Scroll to previous project
