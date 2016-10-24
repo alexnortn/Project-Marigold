@@ -101,18 +101,6 @@ $StickyOffsetCase = 100px
 	z-index -1
 	display block
 	/*overflow hidden*/
-		
-
-.case-study-contents 
-	width 85%
-	max-width 1275px // In accordance with big-moment-1 85vw sizing
-	
-	transition margin-top 250ms ease-in-out
-	
-
-.case-study-contents h1 
-	text-align center
-	padding 30px
 	
 
 /* -------------------------------------- */
@@ -616,18 +604,12 @@ p.center-caption
 /* Breakpoint 1 | Large Screen */
 
 /* ----------- Non-Retina Screens ----------- */
-@media screen and (max-width: 1500px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)
-	.case-study-contents blockquote
-		font-size 48px	
-	
+@media screen and (max-width: 1500px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)	
 	.big-moment-1	
 		left calc((100vw - 85vw) / -2) // 85~ Contents relative width
 
 /* ----------- Retina Screens ----------- */
-@media screen and (max-width: 1500px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
-	.case-study-contents blockquote
-		font-size 48px	
-	
+@media screen and (max-width: 1500px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)	
 	.big-moment-1	
 		left calc((100vw - 85vw) / -2) // 85~ Contents relative width
  
@@ -646,12 +628,6 @@ p.center-caption
 		
 	.case-study-overview 
 		height 60vh
-		
-	.case-study-contents
-		margin-top 60vh
-		
-	.case-study-contents blockquote
-		font-size 45px
 		
 	.big-moment-2 .img-box
 		top -250px
@@ -678,9 +654,6 @@ p.center-caption
 	.case-study-overview 
 		height 60vh
 		
-	.case-study-contents blockquote
-		font-size 45px
-		
 	.big-moment-2 .img-box
 		top -250px
 		
@@ -699,9 +672,6 @@ p.center-caption
 
 /* ----------- Non-Retina Screens ----------- */
 @media screen and (max-width: 768px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)		
-	.case-study-contents .project-intro 
-		padding-top 300px
-
 	.main-description
 		padding 0
 		width 100%
@@ -724,9 +694,6 @@ p.center-caption
 
 /* ----------- Retina Screens ----------- */
 @media screen and (max-width: 768px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)	
-	.case-study-contents .project-intro 
-		padding-top 300px
-
 	.main-description
 		padding 0
 		width 100%

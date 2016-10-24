@@ -98,13 +98,15 @@ box-shadow 0 5px 3px rgba(0, 0, 0, 0)
 		
 
 .endeavor-contents 
-	width 75%
-	max-width 1200px
+	width 85%
+	max-width 1275px // In accordance with big-moment-1 85vw sizing
 	// min-width 500px
 	position relative
 	margin-left auto
 	margin-right auto
 	margin-top 85vh
+	
+	transition margin-top 250ms ease-in-out
 
 
 .endeavor-contents h1 
@@ -396,6 +398,21 @@ box-shadow 0 5px 3px rgba(0, 0, 0, 0)
  */
  
 
+  /*---------------------------------------------------------------*/
+/* Breakpoint 0 | Large Screen */
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen and (max-width: 1500px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)
+	.endeavor-contents blockquote
+		font-size 48px
+		
+
+/* ----------- Retina Screens ----------- */
+@media screen and (max-width: 1500px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
+	.endeavor-contents blockquote
+		font-size 48px	
+		
+
 /*---------------------------------------------------------------*/
 /* Breakpoint 1 | Medium Screen */
 
@@ -407,6 +424,12 @@ box-shadow 0 5px 3px rgba(0, 0, 0, 0)
 		position relative
 		order 2
 		bottom 35%
+		
+	.endeavor-contents
+		margin-top 60vh
+		
+	.endeavor-contents blockquote
+		font-size 45px
 		
 	.endeavor-intro 
 		padding-top 325px
@@ -428,6 +451,12 @@ box-shadow 0 5px 3px rgba(0, 0, 0, 0)
 		order 2
 		bottom 35%
 		
+	.endeavor-contents
+		margin-top 60vh
+		
+	.endeavor-contents blockquote
+		font-size 45px
+		
 	.endeavor-intro 
 		padding-top 325px
 		
@@ -448,6 +477,9 @@ box-shadow 0 5px 3px rgba(0, 0, 0, 0)
 	.endeavor-intro 
 		flex-direction column
 		padding-top 50px
+		
+	.endeavor-contents .project-intro 
+		padding-top 300px
 		
 	.meta-data
 		flex-direction row
@@ -476,6 +508,9 @@ box-shadow 0 5px 3px rgba(0, 0, 0, 0)
 	.endeavor-intro 
 		flex-direction column
 		padding-top 50px
+		
+	.endeavor-contents .project-intro 
+		padding-top 300px
 		
 	.meta-data
 		flex-direction row
