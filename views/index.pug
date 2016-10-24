@@ -5,7 +5,7 @@ block content
     - var users = ['alex', 'david', 'kevin'];
     - var mixinName = 'users';
 
-    +#{mixinName}(users, 'blue')
+    //- +#{mixinName}(users, 'blue')
 
     #fx-container.full.fixed.passive
         svg#svg-container        
@@ -37,9 +37,8 @@ block content
                                 h2 #{result.name}
                                 hr
                                 p #{result.description_short}
-                        .hero-box
-                            .overlay
-                            .hero.img-load(style=`background-image: url(${result.hero})`)
+                        .hero-box.hero-parallax.parallax__group
+                            .hero.parallax__layer--back.img-load(style=`background-image: url(${result.hero})`)
                     // /CASE-STUDY OVERVIEW
                     .endeavor-contents.case-study-contents.parallax__group.contents
                         .endeavor-intro.cf
@@ -94,8 +93,10 @@ block content
                                     .image-grid.img-load(style=`background-image: url(${result.images[i].src})`)
                         // /GRID ITERATOR
                         // Hard coded index, what was I thinking?
+                        // BIG MOMENT 1
                         .big-moment-1.parallax__group
                             .big-moment-1-color.parallax__layer--back.img-load(style=`background-image: url(${result.images[0].src})`) 
+                        // /BIG MOMENT 1
                         // GRID ITERATOR 2
                         .grid.image-grid-wrapper
                             .grid-slider.slider-transition
@@ -139,9 +140,8 @@ block content
                                 h2 #{result.name}
                                 hr
                                 p #{result.description_short}
-                        .hero-box
-                            .overlay
-                            .hero.img-load(style=`background-image: url(${result.hero})`)
+                        .hero-box.hero-parallax.parallax__group
+                            .hero.parallax__layer--back.img-load(style=`background-image: url(${result.hero})`)
                     // /PROJECT OVERVIEW
                     .endeavor-contents.parallax__group.contents
                         .endeavor-intro.cf
@@ -306,7 +306,6 @@ block content
                                     hr
                                     p=result.description_short
                             .hero-box
-                                .overlay
                                 .hero.img-load(style=`background-image: url(${result.hero})`)
                         // /CASE STUDY OVERVIEW
                 // /CASE STUDY ITERATOR
