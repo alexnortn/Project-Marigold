@@ -304,6 +304,10 @@ $(document).ready(function() {
 
             project_id = $elem.attr('data-project');
 
+            if (!$currentTarget) {
+                return;
+            }
+
             if ($currentTarget.hasClass('case-study-item')) {
                 currents = case_studies;
                 container = $('.case-study-container');
