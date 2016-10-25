@@ -357,9 +357,134 @@ box-shadow 0 5px 3px rgba(0, 0, 0, 0)
 	margin-top 0
 	
 
+/* -------------------------------------- */
+/* Image Grid */
+	
+
+.image-grid-overlay 
+	width 100%
+	height 100%
+	position absolute
+	z-index 100
+	display none
+
+
+.grid-slider 
+	width 10%
+	height auto
+	margin-bottom 50px
+	position relative
+	margin-left auto
+	margin-right auto
+	display none
+	transition all ease-in-out 500ms
+	transform translateZ(0)
+
+
+.active-grid-slider 
+	width 100%
+	transform scale(0.85)
+	margin-bottom 0
+
+
+.image-grid-wrapper 
+	clear both
+	position relative
+	display block
+	text-align center
+
+
+.image-grid-container
+	border-radius 20% 
+	position relative
+	display inline-block
+	width  12%
+	margin 2%
+	box-shadow 0 0px 10px rgba(0, 0, 0, 0) 
+	transition all ease-in-out 250ms
+
+
+.slider-transition 
+	margin-bottom -55%
+	top -275px
+	transform scale(0.15)
+	z-index 0
+	opacity 0
+	
+
+.bounce 
+	transition all ease-in-out 250ms
+
+
+.bounce:hover 
+	box-shadow 0 15px 10px rgba(0, 0, 0, 0.18) 
+	cursor pointer
+	transform translateY(-15px)
+
+
+.bounce-sm 
+	transition all ease-in-out 250ms
+
+
+.bounce-sm:hover 
+	box-shadow 0 5px 10px rgba(0, 0, 0, 0.18) 
+	cursor pointer
+	transform translateY(-5px)
+
+
+.active-grid::after 
+	content ""
+	position absolute
+	margin-top 10px
+	border-bottom 3px solid $GRAY
+	width 35%
+	margin-left -20%
+
+
+.shrink-grid 
+	width  4%
+	margin 10px
+
+
+.image-cross 
+	position absolute
+	display inline-block
+	width  50px
+	height 50px
+	top 36%
+	left 36%
+	border-radius 100%
+	border 1px solid black
+	opacity 0
+	transition all ease-in-out 250ms
+
+
+.image-grid 
+	width 100%
+	border-radius 20%
+	padding-bottom 100%
+	background-color green
+	background-position center
+	background-repeat no-repeat
+	background-size cover
+	transition all ease-in-out 250ms
+	
+
 
 /* -------------------------------------- */
 /* Moments */
+
+.endeavor-item-big
+	margin-top 125px
+	margin-bottom 125px
+	
+
+.endeavor-item-top-big
+	margin-top 125px
+
+
+.endeavor-item-bottom-big
+	margin-bottom 125px
 
 
 .endeavor-item
@@ -371,15 +496,20 @@ box-shadow 0 5px 3px rgba(0, 0, 0, 0)
 	margin-top 75px
 	
 
-.endeavor-item-top-50
-	margin-top 50px
-	
-
 .endeavor-item-bottom
 	margin-bottom 75px
 	
 
-.endeavor-item-bottom-50
+.endeavor-item-small
+	margin-top 50px
+	margin-bottom 50px
+	
+
+.endeavor-item-top-small
+	margin-top 50px
+	
+
+.endeavor-item-bottom-small
 	margin-bottom 50px
 	
 	
@@ -645,20 +775,34 @@ box-shadow 0 5px 3px rgba(0, 0, 0, 0)
 	.meta-data ul
 		width 50%
 		
+	.endeavor-item-big
+		margin-top 100px 
+		margin-bottom 100px
+		
+	.endeavor-item-bottom-big
+		margin-bottom 100px
+
+	.endeavor-item-top-big
+		margin-top 100px
+		
 	.endeavor-item
 		margin-top 50px
+		margin-bottom 25px
+		
+	.endeavor-item-small
+		margin-top 35px
 		margin-bottom 25px
 		
 	.endeavor-item-top
 		margin-top 50px
 		
-	.endeavor-item-top-50
+	.endeavor-item-top-small
 		margin-top 25px
 		
 	.endeavor-item-bottom
 		margin-bottom 25px
 		
-	.endeavor-item-bottom-50
+	.endeavor-item-bottom-small
 		margin-bottom 25px
 		
 
@@ -667,20 +811,34 @@ box-shadow 0 5px 3px rgba(0, 0, 0, 0)
 	.meta-data ul
 		width 50%
 		
+	.endeavor-item-big
+		margin-top 100px
+		margin-bottom 100px
+		
+	.endeavor-item-bottom-big
+		margin-bottom 100px
+
+	.endeavor-item-top-big
+		margin-top 100px
+		
 	.endeavor-item
 		margin-top 50px
+		margin-bottom 25px
+		
+	.endeavor-item-small
+		margin-top 35px
 		margin-bottom 25px
 		
 	.endeavor-item-top
 		margin-top 50px
 		
-	.endeavor-item-top-50
+	.endeavor-item-top-small
 		margin-top 25px
 		
 	.endeavor-item-bottom
 		margin-bottom 25px
 		
-	.endeavor-item-bottom-50
+	.endeavor-item-bottom-small
 		margin-bottom 25px
 		
 

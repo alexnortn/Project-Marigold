@@ -153,8 +153,8 @@ mixin endeavorEndPad()
 mixin endeavorTwoImageParallaxLeft(imageSrc1, imageSrc2, pullQuote)
     .para-box.parallax__group
         blockquote.left.parallax__layer.parallax__layer--fore=result.pull_quotes[0]
-        .endeavor-image-box.endeavor-item-top.endeavor-item-bottom-50.img-load(style=`background-image: url(${imageSrc1})`)
-        .endeavor-image-box.endeavor-item-bottom.img-load(style=`background-image: url(${imageSrc2})`)
+        .endeavor-image-box.endeavor-item-top.endeavor-item-bottom-small.img-load(style=`background-image: url(${imageSrc1})`)
+        .endeavor-image-box.endeavor-item-bottom-big.img-load(style=`background-image: url(${imageSrc2})`)
 
 
 //-  Endeavor Parallax Images Right
@@ -163,9 +163,23 @@ mixin endeavorTwoImageParallaxLeft(imageSrc1, imageSrc2, pullQuote)
 
 mixin endeavorTwoImageParallaxRight(imageSrc1, imageSrc2, pullQuote)
     .para-box.parallax__group   
-        .endeavor-image-box.endeavor-item-top.endeavor-item-bottom-50.right.img-load(style=`background-image: url(${imageSrc1})`)
-        .endeavor-image-box.right.endeavor-item-bottom.img-load(style=`background-image: url(${imageSrc2})`)
+        .endeavor-image-box.endeavor-item-top.endeavor-item-bottom-small.right.img-load(style=`background-image: url(${imageSrc1})`)
+        .endeavor-image-box.right.endeavor-item-bottom-big.img-load(style=`background-image: url(${imageSrc2})`)
         blockquote.right.parallax__layer.parallax__layer--fore=result.pull_quotes[0]
+
+
+//-  Endeavor Image Grid Iterator
+    Requires: <result.images[]> <result.images_preview[], result.image[1]>
+    Description: Self-Containing element for displaying up to [ 7 ] images in an interacive slider
+
+mixin endeavorImageGridIterator(images, images_preview)
+    .endeavor-item-big.grid.image-grid-wrapper
+        .grid-slider.slider-transition
+            each image, i in images
+                    img.big-moment-3-color(src=`${images[i].src}`)
+        each image, i in images_preview
+            .image-grid-container.bounce&attributes({'data-slide': i})
+                .image-grid.img-load(style=`background-image: url(${images_preview[i].src})`)
 
 
 

@@ -34,29 +34,15 @@ block content
                         +endeavorIntro(result.description, result.meta)
                         +endeavorImageFS(result.images[index].src)
                         +endeavorTwoImageParallaxLeft(result.hero, result.hero, result.pull_quotes[0])
-                        // GRID ITERATOR
-                        .grid.image-grid-wrapper
-                            .grid-slider.slider-transition
-                                each image, i in result.images
-                                    img.big-moment-3-color(src=`${result.images[i].src}`)
-                            each image, i in result.images
-                                .image-grid-container.bounce&attributes({'data-slide': i})
-                                    .image-grid.img-load(style=`background-image: url(${result.images[i].src})`)
-                        // /GRID ITERATOR
+
+                        +endeavorImageGridIterator(result.images, result.images)
+
                         // Hard coded index, what was I thinking?
                         // BIG MOMENT 1
                         .big-moment-1.parallax__group
                             .big-moment-1-color.parallax__layer--back.img-load(style=`background-image: url(${result.images[0].src})`) 
                         // /BIG MOMENT 1
-                        // GRID ITERATOR 2
-                        .grid.image-grid-wrapper
-                            .grid-slider.slider-transition
-                                each image, i in result.images
-                                        img.big-moment-3-color(src = `${result.images[i].src}`)
-                            each image, i in result.images
-                                .image-grid-container.bounce&attributes({'data-slide': i})
-                                    .image-grid.img-load(style=`background-image: url(${result.images[i].src})`)
-                        // /GRID ITERATOR 2
+                        +endeavorImageGridIterator(result.images, result.images)
                         +endeavorTwoImageParallaxRight(result.hero, result.hero, result.pull_quotes[0])
                         +endeavorVideoFS(result.videos[0].src)
                         .big-moment-2.parallax__group  
