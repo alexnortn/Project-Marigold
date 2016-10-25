@@ -62,6 +62,51 @@ mixin projectPreview(result, i)
         + project-description <string>
         + project-image-preview <src>
 
+mixin endeavorHeader(result, i)
+    .endeavor-overview
+        .description
+            .description-wrapper
+                h3 #{result.project_type}
+                h2 #{result.name}
+                hr
+                p #{result.description_short}
+        .hero-box.hero-parallax.parallax__group
+            .hero.parallax__layer--back.img-load(style=`background-image: url(${result.hero})`)
+    // /ENDEAVOR OVERVIEW
+    .endeavor-contents.parallax__group.contents
+        .endeavor-intro.cf
+                .main-description 
+                    q=bios_text.description_pull
+                    h4 Brief
+                    p.tamer=result.description_long
+                    h4 Process
+                    p.tamer=result.description_long
+                .meta-data
+                    ul
+                        li Client
+                        li=result.meta.Client
+                    ul
+                        li Year
+                        li=result.meta.Year
+                    ul
+                        li Role
+                        li=result.meta.Role
+                    ul
+                        li Team
+                        li=result.meta.Team
+                    ul
+                        li Discipline
+                        li=result.meta.Discipline
+                    ul
+                        li Medium
+                        li=result.meta.Medium
+                    ul
+                        li Technologies
+                        li=result.meta.Technologies
+                    ul
+                        li Duration
+                        li=result.meta.Duration
+
 
 
 
