@@ -31,7 +31,7 @@ mixin caseStudyPreview(result, i)
                     h3=result.project_type
                     h2=result.name
                     hr
-                    p=result.description_short
+                    p=result.description.brief
             .hero-box
                 .hero.img-load(style=`background-image: url(${result.hero})`)
 
@@ -48,7 +48,7 @@ mixin projectPreview(result, i)
     li.select-work-item.item.project-item&attributes( {'data-inproject': false}, {'data-projectIndex': i}, {'data-project': result.route}, {'id': result.preview} )
         .select-work-img-container
             .select-work-description
-                p.tamer=result.description_short
+                p.tamer=result.description.brief
                 hr
             .select-work-img.img-load(style=`background-image: url(${result.images[0].src})`)
         h3 #{result.name}
@@ -66,51 +66,64 @@ mixin endeavorHeader(result, i)
     .endeavor-overview
         .description
             .description-wrapper
-                h3 #{result.project_type}
-                h2 #{result.name}
+                h3=result.project_type
+                h2=result.name
                 hr
-                p #{result.description_short}
+                p=result.description.brief
         .hero-box.hero-parallax.parallax__group
             .hero.parallax__layer--back.img-load(style=`background-image: url(${result.hero})`)
-    // /ENDEAVOR OVERVIEW
-    .endeavor-contents.parallax__group.contents
-        .endeavor-intro.cf
-                .main-description 
-                    q=bios_text.description_pull
-                    h4 Brief
-                    p.tamer=result.description_long
-                    h4 Process
-                    p.tamer=result.description_long
-                .meta-data
-                    ul
-                        li Client
-                        li=result.meta.Client
-                    ul
-                        li Year
-                        li=result.meta.Year
-                    ul
-                        li Role
-                        li=result.meta.Role
-                    ul
-                        li Team
-                        li=result.meta.Team
-                    ul
-                        li Discipline
-                        li=result.meta.Discipline
-                    ul
-                        li Medium
-                        li=result.meta.Medium
-                    ul
-                        li Technologies
-                        li=result.meta.Technologies
-                    ul
-                        li Duration
-                        li=result.meta.Duration
 
 
+//-  Endeavor Main Description & Meta Info
+    Requires: <result> <index>
+        + route <scr/string>
+        + name-preview <string>
+        + project-name <string>
+        + project-description <string>
+        + project-hook <string>
+        + project-meta <string>
+            + Client
+            + Year
+            + Role
+            + Team
+            + Discipline
+            + Medium
+            + Technologies
+            + Duration
 
-
-
+mixin endeavorIntro(result, i)
+    .endeavor-intro.cf
+        .main-description 
+            q=result.description.brief
+            h4 Brief
+            p.tamer=result.description.extensive
+            h4 Process
+            p.tamer=result.description.extensive
+        .meta-data
+            ul
+                li Client
+                li=result.meta.Client
+            ul
+                li Year
+                li=result.meta.Year
+            ul
+                li Role
+                li=result.meta.Role
+            ul
+                li Team
+                li=result.meta.Team
+            ul
+                li Discipline
+                li=result.meta.Discipline
+            ul
+                li Medium
+                li=result.meta.Medium
+            ul
+                li Technologies
+                li=result.meta.Technologies
+            ul
+                li Duration
+                li=result.meta.Duration
 
 
 
