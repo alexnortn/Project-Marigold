@@ -43,17 +43,13 @@ block content
                         +endeavorTwoImageParallaxRight(result.hero, result.hero, result.pull_quotes[0])
                         +endeavorVideoFS(result.videos[0].src)
 
-                        +endeavorParallaxCaptionLeft(result.images[0].src, result.images[0].src, result.description.long_2)
                         +endeavorParallaxCaptionRight(result.images[0].src, result.images[0].src, result.description.long_2)
 
-                        //- .big-moment-2.parallax__group  
-                        //-     .big-moment-2-color.img-load(style=`background-image: url(${result.images[0].src})`)
-                        //-     .img-box.parallax__layer.parallax__layer--fore.img-load(style=`background-image: url(${result.images[0].src})`)
-                        //-     p.caption=result.description.long_2
+                        +endeavorImageCenterCaption(result.hero, result.description.long_2)
 
-                        .para-box
-                            .image-box.image-box--center.img-load(style=`background-image: url(${result.hero})`)
-                            p.caption.center-caption=result.description.long_2
+                        //- .para-box
+                        //-     .image-box.image-box--center.img-load(style=`background-image: url(${result.hero})`)
+                        //-     p.caption.center-caption=result.description.long_2
                         .big-moment-3
                             each image, i in result.images
                                 img.big-moment-3-color(src = `${result.images[i].src}`)

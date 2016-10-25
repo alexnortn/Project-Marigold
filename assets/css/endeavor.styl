@@ -481,6 +481,27 @@ box-shadow 0 5px 3px rgba(0, 0, 0, 0)
 
 
 /* -------------------------------------- */
+/* Parallax Box */
+	
+.endeavor-para-box blockquote 
+	position absolute
+	width 40%
+	margin-left 50px
+	margin-top 14.5%
+
+
+.endeavor-para-box blockquote.left 
+	text-align left
+	left 45%
+
+
+.endeavor-para-box blockquote.right 
+	text-align right
+	left 5%
+	
+
+
+/* -------------------------------------- */
 /* Moments */
 
 .endeavor-item-big
@@ -700,6 +721,9 @@ box-shadow 0 5px 3px rgba(0, 0, 0, 0)
 	.endeavor-parallax-behind-fs 
 		height 80vh
 		
+	.endeavor-parallax-hybrid .img-box
+		top -250px
+		
 
 /* ----------- Retina Screens ----------- */
 @media screen and (max-width: 1000px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
@@ -728,6 +752,9 @@ box-shadow 0 5px 3px rgba(0, 0, 0, 0)
 		
 	.endeavor-parallax-behind-fs 
 		height 80vh
+		
+	.endeavor-parallax-hybrid .img-box
+		top -250px
 	
 
 
@@ -763,6 +790,12 @@ box-shadow 0 5px 3px rgba(0, 0, 0, 0)
 		border-right 1px solid $GREY_BG
 		border-top 1px solid $GREY_BG
 		
+	.endeavor-parallax-hybrid.parallax__group .img-box
+		display none
+		
+	.endeavor-parallax-hybrid.parallax__group .caption
+		display none
+		
 		
 
 /* ----------- Retina Screens ----------- */
@@ -793,6 +826,12 @@ box-shadow 0 5px 3px rgba(0, 0, 0, 0)
 		box-sizing border-box
 		border-right 1px solid $GREY_BG
 		border-top 1px solid $GREY_BG
+		
+	.endeavor-parallax-hybrid.parallax__group .img-box
+		display none
+		
+	.endeavor-parallax-hybrid.parallax__group .caption
+		display none
 		
 
 
@@ -831,6 +870,10 @@ box-shadow 0 5px 3px rgba(0, 0, 0, 0)
 	.endeavor-item-bottom-small
 		margin-bottom 25px
 		
+	.endeavor-parallax-hybrid
+		margin-top 75px
+		margin-bottom 75px
+		
 
 /* ----------- Retina Screens ----------- */
 @media screen and (max-width: 500px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
@@ -866,6 +909,10 @@ box-shadow 0 5px 3px rgba(0, 0, 0, 0)
 		
 	.endeavor-item-bottom-small
 		margin-bottom 25px
+		
+	.endeavor-parallax-hybrid
+		margin-top 75px
+		margin-bottom 75px
 		
 
 

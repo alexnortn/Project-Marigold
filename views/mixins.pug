@@ -151,7 +151,7 @@ mixin endeavorEndPad()
     Description: Self-Containing parallax element with two left image and a flush-right pull quote
 
 mixin endeavorTwoImageParallaxLeft(imageSrc1, imageSrc2, pullQuote)
-    .para-box.parallax__group
+    .endeavor-para-box.parallax__group
         blockquote.left.parallax__layer.parallax__layer--fore=result.pull_quotes[0]
         .endeavor-image-box.endeavor-item-top.endeavor-item-bottom-small.img-load(style=`background-image: url(${imageSrc1})`)
         .endeavor-image-box.endeavor-item-bottom-big.img-load(style=`background-image: url(${imageSrc2})`)
@@ -162,7 +162,7 @@ mixin endeavorTwoImageParallaxLeft(imageSrc1, imageSrc2, pullQuote)
     Description: Self-Containing parallax element with two left image and a flush-left pull quote
 
 mixin endeavorTwoImageParallaxRight(imageSrc1, imageSrc2, pullQuote)
-    .para-box.parallax__group   
+    .endeavor-para-box.parallax__group   
         .endeavor-image-box.endeavor-item-top.endeavor-item-bottom-small.right.img-load(style=`background-image: url(${imageSrc1})`)
         .endeavor-image-box.right.endeavor-item-bottom-big.img-load(style=`background-image: url(${imageSrc2})`)
         blockquote.right.parallax__layer.parallax__layer--fore=result.pull_quotes[0]
@@ -193,7 +193,7 @@ mixin endeavorParallaxBehind(src)
 
 
 //-  Endeavor Parallax Right + Caption Left
-    Requires: <result.image.src>
+    Requires: <result.image.src> <result.caption>
     Description: Self-Containing element for a body-width background image, fixed caption + parallax image effect.
 
 mixin endeavorParallaxCaptionRight(imageBig, imageParallax, caption)
@@ -204,7 +204,7 @@ mixin endeavorParallaxCaptionRight(imageBig, imageParallax, caption)
 
 
 //-  Endeavor Parallax Left + Caption Right
-    Requires: <result.image.src>
+    Requires: <result.image.src> <result.caption>
     Description: Self-Containing element for a body-width background image, fixed caption + parallax image effect.
 
 mixin endeavorParallaxCaptionLeft(imageBig, imageParallax, caption)
@@ -212,6 +212,16 @@ mixin endeavorParallaxCaptionLeft(imageBig, imageParallax, caption)
         .endeavor-parallax-hybrid-color.img-load(style=`background-image: url(${imageBig})`)
         .img-box.endeavor-parallax-hybrid-right-img-box.parallax__layer.parallax__layer--fore.img-load(style=`background-image: url(${imageParallax})`)
         p.endeavor-parallax-hybrid-right-caption.caption=caption
+
+
+//-  Endeavor Image Centered + Caption
+    Requires: <result.image.src> <result.caption>
+    Description: Self-Containing element for centered image + caption
+
+mixin endeavorImageCenterCaption(image, caption)
+    .endeavor-item.endeavor-para-box
+        .image-box.image-box--center.img-load(style=`background-image: url(${image})`)
+        p.caption.center-caption=caption
 
 
 
