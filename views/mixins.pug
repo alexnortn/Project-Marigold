@@ -154,9 +154,7 @@ mixin endeavorTwoImageParallaxLeft(imageSrc1, imageSrc2, pullQuote)
     .para-box.parallax__group
         blockquote.left.parallax__layer.parallax__layer--fore=result.pull_quotes[0]
         .endeavor-image-box.endeavor-item-top.endeavor-item-bottom-50.img-load(style=`background-image: url(${imageSrc1})`)
-            .image-left
         .endeavor-image-box.endeavor-item-bottom.img-load(style=`background-image: url(${imageSrc2})`)
-            .image-left
 
 
 //-  Endeavor Parallax Images Right
@@ -166,10 +164,7 @@ mixin endeavorTwoImageParallaxLeft(imageSrc1, imageSrc2, pullQuote)
 mixin endeavorTwoImageParallaxRight(imageSrc1, imageSrc2, pullQuote)
     .para-box.parallax__group   
         .endeavor-image-box.endeavor-item-top.endeavor-item-bottom-50.right.img-load(style=`background-image: url(${imageSrc1})`)
-            .image-right
-                //- p.caption.caption--2 #{result.description_long_2}
         .endeavor-image-box.right.endeavor-item-bottom.img-load(style=`background-image: url(${imageSrc2})`)
-            .image-right
         blockquote.right.parallax__layer.parallax__layer--fore=result.pull_quotes[0]
 
 
