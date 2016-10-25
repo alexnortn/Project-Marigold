@@ -29,19 +29,11 @@ block content
         .endeavor-container.case-study-container
             each result, index in case_studies
                 .endeavor.endeavor-view.case-study-view.parallax&attributes({'data-inproject': false}, {'data-projectIndex': index}, {'id': result.route})
-                    +endeavorHeader(result, i)
+                    +endeavorHeader(result)
                     .endeavor-contents.parallax__group.contents
-                        +endeavorIntro(result, i)
-                        // BIG MOMENT 0
-                        .big-moment-0-color.img-load(style=`background-image: url(${result.images[index].src})`)
-                        // 2X PARALLAX IMAGES LEFT
-                        .para-box.parallax__group
-                            blockquote.left.parallax__layer.parallax__layer--fore=result.pull_quotes[0]
-                            .image-box.img-load(style=`background-image: url(${result.hero})`)
-                                .image-left
-                            .image-box.image-box--bottom.img-load(style=`background-image: url(${result.hero})`)
-                                .image-left
-                                    //- p.caption #{result.description_long_2}
+                        +endeavorIntro(result.description, result.meta)
+                        +endeavorImageFS(result.images[index].src)
+                        +endeavorTwoImageParallaxLeft(result.hero, result.hero, result.pull_quotes[0])
                         // GRID ITERATOR
                         .grid.image-grid-wrapper
                             .grid-slider.slider-transition
@@ -65,15 +57,8 @@ block content
                                 .image-grid-container.bounce&attributes({'data-slide': i})
                                     .image-grid.img-load(style=`background-image: url(${result.images[i].src})`)
                         // /GRID ITERATOR 2
-                        // 2X PARALLAX IMAGES RIGHT
-                        .para-box.parallax__group   
-                            .image-box.right.img-load(style=`background-image: url(${result.hero})`)
-                                .image-right
-                                    //- p.caption.caption--2 #{result.description_long_2}
-                            .image-box.right.image-box--bottom.img-load(style=`background-image: url(${result.hero})`)
-                                .image-right
-                            blockquote.right.parallax__layer.parallax__layer--fore=result.pull_quotes[0]
-                        iframe.video-settings(src = `${result.videos[0].src}` frameborder="0" allowfullscreen)
+                        +endeavorTwoImageParallaxRight(result.hero, result.hero, result.pull_quotes[0])
+                        +endeavorVideoFS(result.videos[0].src)
                         .big-moment-2.parallax__group  
                             .big-moment-2-color.img-load(style=`background-image: url(${result.images[0].src})`)
                             .img-box.parallax__layer.parallax__layer--fore.img-load(style=`background-image: url(${result.images[0].src})`)
@@ -85,20 +70,22 @@ block content
                         .big-moment-3
                             each image, i in result.images
                                 img.big-moment-3-color(src = `${result.images[i].src}`)
-                        .end-pad
+                        +endeavorEndPad()
 
         // PROJECT ITERATOR
         .endeavor-container.project-container
             each result, index in select_work
                 .endeavor.endeavor-view.project-view.parallax&attributes({'data-inproject': false}, {'data-projectIndex': index}, {'id': result.route})
-                    +endeavorHeader(result, i)
+                    +endeavorHeader(result)
                     .endeavor-contents.parallax__group.contents
-                        +endeavorIntro(result, i)
-                        .big-moment-0-color.img-load(style=`background-image: url(${result.images[0].src})`)
-                        .big-moment-0-color.img-load(style=`background-image: url(${result.images[0].src})`)
-                        .big-moment-0-color.img-load(style=`background-image: url(${result.images[0].src})`)
-                        iframe.video-settings(src = `${result.videos[0].src}` frameborder="0" allowfullscreen)
-                        .end-pad
+                        +endeavorIntro(result.description, result.meta)
+                        +endeavorImageFS(result.images[0].src)
+                        +endeavorImageFS(result.images[0].src)
+                        +endeavorImageFS(result.images[0].src)
+
+                        +endeavorVideoFS(result.videos[0].src)
+
+                        +endeavorEndPad()
         // /PROJECT ITERATOR
 
     // NAV MENU
@@ -213,8 +200,8 @@ block content
         section#works.section&attributes({'data-inproject': false})
             #works-wrapper
                 // CASE STUDY ITERATOR
-                each result, i in case_studies
-                    +caseStudyPreview(result, i)
+                each result, index in case_studies
+                    +caseStudyPreview(result, index)
                 // /CASE STUDY ITERATOR
 
                 //SELECT WORK GRID SECTION
@@ -222,8 +209,8 @@ block content
                     #select-work-wrapper
                         h3 Selected Works
                         ul
-                            each result, i in select_work
-                                +projectPreview(result, i)
+                            each result, index in select_work
+                                +projectPreview(result, index)
                         h5#select-more { more }
                 // /SELECT WORK GRID SECTION
         // /WORKS SECTION 

@@ -23,8 +23,8 @@ mixin users2(users, colour)
         + project-description <string>
         + project-image-preview <src>
 
-mixin caseStudyPreview(result, i)
-    .case-study.case-study-window.item.case-study-item&attributes( {'data-inproject': false}, {'data-projectIndex': i}, {'data-project': result.route},  {'id': result.preview} )
+mixin caseStudyPreview(result, index)
+    .case-study.case-study-window.item.case-study-item&attributes( {'data-inproject': false}, {'data-projectIndex': index}, {'data-project': result.route},  {'id': result.preview} )
         .case-study-overview
             .description
                 .description-wrapper
@@ -44,8 +44,8 @@ mixin caseStudyPreview(result, i)
         + project-description <string>
         + project-image-preview <src>
 
-mixin projectPreview(result, i)
-    li.select-work-item.item.project-item&attributes( {'data-inproject': false}, {'data-projectIndex': i}, {'data-project': result.route}, {'id': result.preview} )
+mixin projectPreview(result, index)
+    li.select-work-item.item.project-item&attributes( {'data-inproject': false}, {'data-projectIndex': index}, {'data-project': result.route}, {'id': result.preview} )
         .select-work-img-container
             .select-work-description
                 p.tamer=result.description.brief
@@ -55,14 +55,14 @@ mixin projectPreview(result, i)
 
 
 //-  Endeavor Header
-    Requires: <result> <index>
+    Requires: <result>
         + route <scr/string>
         + name-preview <string>
         + project-name <string>
         + project-description <string>
         + project-image-preview <src>
 
-mixin endeavorHeader(result, i)
+mixin endeavorHeader(result)
     .endeavor-overview
         .description
             .description-wrapper
@@ -75,13 +75,9 @@ mixin endeavorHeader(result, i)
 
 
 //-  Endeavor Main Description & Meta Info
-    Requires: <result> <index>
-        + route <scr/string>
-        + name-preview <string>
-        + project-name <string>
-        + project-description <string>
-        + project-hook <string>
-        + project-meta <string>
+    Requires: <result.description> <result.meta>
+        + project-description <{string}>
+        + project-meta <{string}>
             + Client
             + Year
             + Role
@@ -91,39 +87,99 @@ mixin endeavorHeader(result, i)
             + Technologies
             + Duration
 
-mixin endeavorIntro(result, i)
+mixin endeavorIntro(description, meta)
     .endeavor-intro.cf
         .main-description 
-            q=result.description.brief
+            q=description.brief
             h4 Brief
-            p.tamer=result.description.extensive
+            p.tamer=description.extensive
             h4 Process
-            p.tamer=result.description.extensive
+            p.tamer=description.extensive
         .meta-data
             ul
                 li Client
-                li=result.meta.Client
+                li=meta.Client
             ul
                 li Year
-                li=result.meta.Year
+                li=meta.Year
             ul
                 li Role
-                li=result.meta.Role
+                li=meta.Role
             ul
                 li Team
-                li=result.meta.Team
+                li=meta.Team
             ul
                 li Discipline
-                li=result.meta.Discipline
+                li=meta.Discipline
             ul
                 li Medium
-                li=result.meta.Medium
+                li=meta.Medium
             ul
                 li Technologies
-                li=result.meta.Technologies
+                li=meta.Technologies
             ul
                 li Duration
-                li=result.meta.Duration
+                li=meta.Duration
+
+
+//-  Endeavor Project | Full-Width Adaptive Image
+    Requires: <result.img.scr>
+    Description: Full-Width Image Element
+
+mixin endeavorImageFS(src)
+    img.endeavor-item.fsw(src=src)
+
+
+//-  Endeavor Project | Full-Width Adaptive Youtube Video
+    Requires: <result.img.scr>
+    Description: Full-Width Embed Video Element
+
+mixin endeavorVideoFS(src)
+    iframe.endeavor-item.video-settings(src=src frameborder="0" allowfullscreen)
+
+
+//-  Endeavor Project | End Pad
+    Requires: {} --> Could extend for modularity (see <endeavor.styl)
+    Description: empty div to provide padding
+
+mixin endeavorEndPad()
+    .end-pad.end-pad-100
+
+
+//-  Endeavor Parallax Images Left
+    Requires: <result.pullQuote> <result.image[0], result.image[1]>
+    Description: Self-Containing parallax element with two left image and a flush-right pull quote
+
+mixin endeavorTwoImageParallaxLeft(imageSrc1, imageSrc2, pullQuote)
+    .para-box.parallax__group
+        blockquote.left.parallax__layer.parallax__layer--fore=result.pull_quotes[0]
+        .endeavor-image-box.endeavor-item-top.endeavor-item-bottom-50.img-load(style=`background-image: url(${imageSrc1})`)
+            .image-left
+        .endeavor-image-box.endeavor-item-bottom.img-load(style=`background-image: url(${imageSrc2})`)
+            .image-left
+
+
+//-  Endeavor Parallax Images Right
+    Requires: <result.pullQuote> <result.image[0], result.image[1]>
+    Description: Self-Containing parallax element with two left image and a flush-left pull quote
+
+mixin endeavorTwoImageParallaxRight(imageSrc1, imageSrc2, pullQuote)
+    .para-box.parallax__group   
+        .endeavor-image-box.endeavor-item-top.endeavor-item-bottom-50.right.img-load(style=`background-image: url(${imageSrc1})`)
+            .image-right
+                //- p.caption.caption--2 #{result.description_long_2}
+        .endeavor-image-box.right.endeavor-item-bottom.img-load(style=`background-image: url(${imageSrc2})`)
+            .image-right
+        blockquote.right.parallax__layer.parallax__layer--fore=result.pull_quotes[0]
+
+
+
+
+
+
+
+
+
 
 
 

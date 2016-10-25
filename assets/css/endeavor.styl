@@ -142,12 +142,26 @@ box-shadow 0 5px 3px rgba(0, 0, 0, 0)
 .video-settings
 	width 100%
 	height calc(100% / 1.778) // Standard 16:9 Video
-	
+
 
 .end-pad
 	display block
 	width 100%
+
+.end-pad-500
+	height 500px
+		
+
+.end-pad-250
 	height 250px
+	
+
+.end-pad-100
+	height 100px
+	
+
+.end-pad-25
+	height 25px
 	
 
 /* -------------------------------------- */
@@ -278,7 +292,109 @@ box-shadow 0 5px 3px rgba(0, 0, 0, 0)
 
 
 /* -------------------------------------- */
+/* Image Box */
+
+
+.endeavor-image-box 
+	width 50%
+	padding-bottom 30%
+	display block
+	float left
+	clear both
+
+
+.image-left.caption.caption--2 p 
+	left 20%
+
+
+.overlay-background 
+	width 100%
+	height 100%
+	background-color white
+	opacity 0.75
+
+
+.overlay-background:h$GREY
+	cursor url("../images/assets/xx.png"), auto
+
+
+.endeavor-image-box.right 
+	float right
+
+
+.image-left 
+	width 100%
+	height 100%
+
+
+.endeavor-image-box--bottom 
+	margin-bottom 150px
+
+
+.endeavor-image-box--center 
+	clear none
+	float none
+	position relative
+	margin-left auto
+	margin-right auto
+	
+
+.image-left p 
+	border-top 1.25px dotted black
+	padding-top 1.5em
+	position absolute
+	left 50%
+	margin-left 50px
+	margin-top 0
+
+
+.image-right p 
+	border-top 1.25px dotted black
+	padding-top 1.5em
+	position absolute
+	left 20%
+	margin-left 50px
+	margin-top 0
+	
+
+.img-box 
+	position relative
+	float right
+	width 30vw
+	height 40vw
+	margin-right 200px
+	background-color red
+	bottom -250px
+	
+
+
+/* -------------------------------------- */
 /* Moments */
+
+
+.endeavor-item
+	margin-top 75px
+	margin-bottom 75px
+	
+
+.endeavor-item-top
+	margin-top 75px
+	
+
+.endeavor-item-top-50
+	margin-top 50px
+	
+
+.endeavor-item-bottom
+	margin-bottom 75px
+	
+
+.endeavor-item-bottom-50
+	margin-bottom 50px
+	
+	
+.fsw // fullscreen width
+	width 100%
 
 
 .big-moment-1 
@@ -539,11 +655,43 @@ box-shadow 0 5px 3px rgba(0, 0, 0, 0)
 	.meta-data ul
 		width 50%
 		
+	.endeavor-item
+		margin-top 50px
+		margin-bottom 25px
+		
+	.endeavor-item-top
+		margin-top 50px
+		
+	.endeavor-item-top-50
+		margin-top 25px
+		
+	.endeavor-item-bottom
+		margin-bottom 25px
+		
+	.endeavor-item-bottom-50
+		margin-bottom 25px
+		
 
 /* ----------- Retina Screens ----------- */
 @media screen and (max-width: 500px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
 	.meta-data ul
 		width 50%
+		
+	.endeavor-item
+		margin-top 50px
+		margin-bottom 25px
+		
+	.endeavor-item-top
+		margin-top 50px
+		
+	.endeavor-item-top-50
+		margin-top 25px
+		
+	.endeavor-item-bottom
+		margin-bottom 25px
+		
+	.endeavor-item-bottom-50
+		margin-bottom 25px
 		
 
 
