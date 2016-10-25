@@ -32,7 +32,9 @@ block content
                     +endeavorHeader(result)
                     .endeavor-contents.parallax__group.contents
                         +endeavorIntro(result.description, result.meta)
+                        
                         +endeavorImageFS(result.images[index].src)
+                        
                         +endeavorTwoImageParallaxLeft(result.hero, result.hero, result.pull_quotes[0])
 
                         +endeavorImageGridIterator(result.images, result.images)
@@ -40,7 +42,9 @@ block content
                         +endeavorParallaxBehind(result.images[0].src)
 
                         +endeavorImageGridIterator(result.images, result.images)
+
                         +endeavorTwoImageParallaxRight(result.hero, result.hero, result.pull_quotes[0])
+
                         +endeavorVideoFS(result.videos[0].src)
 
                         +endeavorParallaxCaptionRight(result.images[0].src, result.images[0].src, result.description.long_2)
@@ -49,11 +53,8 @@ block content
 
                         +endeavorImageSlider(result.images)
 
-                        //- .big-moment-3
-                        //-     each image, i in result.images
-                        //-         img.big-moment-3-color(src = `${result.images[i].src}`)
                         +endeavorEndPad()
-
+        // /CASE STUDY ITERATOR
         // PROJECT ITERATOR
         .endeavor-container.project-container
             each result, index in select_work
