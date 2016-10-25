@@ -143,7 +143,7 @@ mixin endeavorVideoFS(src)
     Description: empty div to provide padding
 
 mixin endeavorEndPad()
-    .end-pad.end-pad-100
+    .end-pad.end-pad-50
 
 
 //-  Endeavor Parallax Images Left
@@ -183,8 +183,35 @@ mixin endeavorImageGridIterator(images, images_preview)
 
 
 
+//-  Endeavor Parallax Behind
+    Requires: <result.image.src>
+    Description: Self-Containing element for a full-screen parallax behind effect. Note: margins won't work on this guy.
+
+mixin endeavorParallaxBehind(src)
+    .endeavor-parallax-behind-fs.parallax__group
+        .endeavor-parallax-behind-support.parallax__layer--back.img-load(style=`background-image: url(${src})`) 
 
 
+//-  Endeavor Parallax Right + Caption Left
+    Requires: <result.image.src>
+    Description: Self-Containing element for a body-width background image, fixed caption + parallax image effect.
+
+mixin endeavorParallaxCaptionRight(imageBig, imageParallax, caption)
+    .endeavor-item.fsw.endeavor-parallax-hybrid.parallax__group  
+        .endeavor-parallax-hybrid-color.img-load(style=`background-image: url(${imageBig})`)
+        .img-box.endeavor-parallax-hybrid-left-img-box.parallax__layer.parallax__layer--fore.img-load(style=`background-image: url(${imageParallax})`)
+        p.endeavor-parallax-hybrid-left-caption.caption=caption
+
+
+//-  Endeavor Parallax Left + Caption Right
+    Requires: <result.image.src>
+    Description: Self-Containing element for a body-width background image, fixed caption + parallax image effect.
+
+mixin endeavorParallaxCaptionLeft(imageBig, imageParallax, caption)
+    .endeavor-item.fsw.endeavor-parallax-hybrid.parallax__group  
+        .endeavor-parallax-hybrid-color.img-load(style=`background-image: url(${imageBig})`)
+        .img-box.endeavor-parallax-hybrid-right-img-box.parallax__layer.parallax__layer--fore.img-load(style=`background-image: url(${imageParallax})`)
+        p.endeavor-parallax-hybrid-right-caption.caption=caption
 
 
 

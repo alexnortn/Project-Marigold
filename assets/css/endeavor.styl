@@ -357,6 +357,15 @@ box-shadow 0 5px 3px rgba(0, 0, 0, 0)
 	margin-top 0
 	
 
+.img-box 
+	position relative
+	width 30vw
+	height 40vw
+	margin-right 200px
+	background-color red
+	bottom -250px
+	
+
 /* -------------------------------------- */
 /* Image Grid */
 	
@@ -515,53 +524,35 @@ box-shadow 0 5px 3px rgba(0, 0, 0, 0)
 	
 .fsw // fullscreen width
 	width 100%
-
-
-.big-moment-1 
-	margin-bottom 150px
-	display block
-	width 100%
-	height 750px
-	position relative
-	text-align center
 	
 
-.big-moment-1 h1 
-	padding-top 15%
-
-
-.big-moment-1hover .center 
+.endeavor-parallax-behind-fs:hover .center 
 	opacity 1
 
 
-.big-moment-1 
+.endeavor-parallax-behind-fs
 	display block
-	width 175%
-	left -35%
-	height 750px
+	width 102vw
+	left calc((102vw - 1275px) / -2) // 1200~ Max contents relative width
+	height 70vh
 	position relative
 	text-align center
-	border-top 1200px
-	margin-top -1200px
-	border-bottom 1000px
-	margin-bottom -950px
+	border-top 130vh
+	margin-top -130vh
+	border-bottom 100vh
+	margin-bottom -100vh
 	border-style solid
 	border-color $WHITE_BG
-	z-index: -1
+	z-index -1
 	transition-timing-function linear
 	transition all 0.5s
 
 
-.big-moment-1:hover img 
-	margin-top 90px
-
-
-.big-moment-1-color 
+.endeavor-parallax-behind-support 
 	background-repeat no-repeat
 	background-attachment scroll
 	background-size cover
 	background-position left
-	background-color Beige
 	position absolute
 	left -20%
 	right -20%
@@ -570,9 +561,8 @@ box-shadow 0 5px 3px rgba(0, 0, 0, 0)
 	margin-top -225px
 	
 
-.big-moment-2 
-	margin-top    100px
-	margin-bottom 350px
+.endeavor-parallax-hybrid 
+	margin-bottom 30%
 	display block
 	width 100%
 	clear both
@@ -581,36 +571,60 @@ box-shadow 0 5px 3px rgba(0, 0, 0, 0)
 	text-align center
 
 
-.big-moment-2 .img-box 
+.endeavor-parallax-hybrid .img-box 
 	position relative
-	margin-right auto
-	float right
+	margin-right 15%
+	max-width 450px
+	max-height 560px
+	// float right
 	top -300px
+	box-shadow 0 0 50px rgba(0,0,0,.18)
 
 
-.big-moment-2-color 
+.endeavor-parallax-hybrid-color 
 	padding-top 50%
 	background-color Beige
 	bottom 0
-	width 100%
 	background-size 100% auto
 
 
-.big-moment-2 p.caption 
+.endeavor-parallax-hybrid p.caption 
+	font-family Circular-Roman
 	font-size 12px
+	letter-spacing 0.25px
+	margin-bottom 15px
 	line-height 2em
 	margin-top 25px
-	left 10%
-	width 300px
-	bottom -80px
+	// left 10%
+	width 20vw
+	min-width 225px
+	max-width 350px
+	bottom -25%
 	text-align left
 	position absolute
 	display inline-block
 	text-align justify
 	text-justify inter-word
 	background-color $WHITE_BG
-	padding 40px 30px 15px 30px
+	padding 3.5vw
 	box-shadow 0 -10px 15px rgba(0, 0, 0, 0.18) 
+	
+
+.endeavor-parallax-hybrid-left-caption
+	left 10%
+	
+
+.endeavor-parallax-hybrid-left-img-box
+	float right
+	
+
+.endeavor-parallax-hybrid-right-caption
+	right 10%
+	
+
+.endeavor-parallax-hybrid-right-img-box
+	float left
+	left 15%
 
 
 .big-moment-3 
@@ -642,11 +656,17 @@ box-shadow 0 5px 3px rgba(0, 0, 0, 0)
 	.endeavor-contents blockquote
 		font-size 48px
 		
+	.endeavor-parallax-behind-fs
+		left calc((100vw - 85vw) / -2) // 85~ Contents relative width
+		
 
 /* ----------- Retina Screens ----------- */
 @media screen and (max-width: 1500px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
 	.endeavor-contents blockquote
-		font-size 48px	
+		font-size 48px
+		
+	.endeavor-parallax-behind-fs
+		left calc((100vw - 85vw) / -2) // 85~ Contents relative width	
 		
 
 /*---------------------------------------------------------------*/
@@ -677,6 +697,9 @@ box-shadow 0 5px 3px rgba(0, 0, 0, 0)
 	.endeavor-overview .description
 		margin-left auto
 		
+	.endeavor-parallax-behind-fs 
+		height 80vh
+		
 
 /* ----------- Retina Screens ----------- */
 @media screen and (max-width: 1000px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
@@ -702,6 +725,9 @@ box-shadow 0 5px 3px rgba(0, 0, 0, 0)
 	// endeavor (non case-study)
 	.endeavor-overview .description
 		margin-left auto
+		
+	.endeavor-parallax-behind-fs 
+		height 80vh
 	
 
 

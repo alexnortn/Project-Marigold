@@ -311,114 +311,8 @@ p.center-caption
 	margin-right auto
 	
 
-.img-box 
-	position relative
-	float right
-	width 30vw
-	height 40vw
-	margin-right 200px
-	background-color red
-	bottom -250px
-	
-
 /* -------------------------------------- */
-/* Moments */
-	
-
-.big-moment-1 h1 
-	padding-top 15%
-
-
-.big-moment-1:hover .center 
-	opacity 1
-
-
-.big-moment-1 
-	display block
-	width 102vw
-	left calc((102vw - 1275px) / -2) // 1200~ Max contents relative width
-	height 70vh
-	position relative
-	text-align center
-	border-top 130vh
-	margin-top -130vh
-	border-bottom 100vh
-	margin-bottom -100vh
-	border-style solid
-	border-color $WHITE_BG
-	z-index -1
-	transition-timing-function linear
-	transition all 0.5s
-
-
-.big-moment-1:hover img 
-	margin-top 90px
-
-
-.big-moment-1-color 
-	background-repeat no-repeat
-	background-attachment scroll
-	background-size cover
-	background-position left
-	background-color Beige
-	position absolute
-	left 0
-	right 0
-	top 0
-	height 125%
-	margin-top -225px
-	
-
-.big-moment-2 
-	margin-top 150px
-	margin-bottom 30%
-	display block
-	width 100%
-	clear both
-	/*background-color red*/
-	position relative
-	text-align center
-
-
-.big-moment-2 .img-box 
-	position relative
-	margin-right 15%
-	max-width 450px
-	max-height 560px
-	float right
-	top -300px
-	box-shadow 0 0 100px rgba(0,0,0,.18)
-
-
-.big-moment-2-color 
-	padding-top 50%
-	background-color Beige
-	bottom 0
-	width 100%
-	background-size 100% auto
-
-
-.big-moment-2 p.caption 
-	font-family Circular-Roman
-	font-size 12px
-	letter-spacing 0.25px
-	margin-bottom 15px
-	line-height 2em
-	margin-top 25px
-	left 10%
-	width 20vw
-	min-width 225px
-	max-width 350px
-	bottom -25%
-	text-align left
-	position absolute
-	display inline-block
-	text-align justify
-	text-justify inter-word
-	background-color $WHITE_BG
-	padding 3.5vw
-	box-shadow 0 -10px 15px rgba(0, 0, 0, 0.18) 
-
+/* Moments */	
 
 .big-moment-3 
 	margin-top 100px
@@ -448,14 +342,10 @@ p.center-caption
 /* Breakpoint 1 | Large Screen */
 
 /* ----------- Non-Retina Screens ----------- */
-@media screen and (max-width: 1500px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)	
-	.big-moment-1	
-		left calc((100vw - 85vw) / -2) // 85~ Contents relative width
+// @media screen and (max-width: 1500px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)	
 
-/* ----------- Retina Screens ----------- */
-@media screen and (max-width: 1500px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)	
-	.big-moment-1	
-		left calc((100vw - 85vw) / -2) // 85~ Contents relative width
+// /* ----------- Retina Screens ----------- */
+// @media screen and (max-width: 1500px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)	
  
 
 /*---------------------------------------------------------------*/
@@ -482,9 +372,6 @@ p.center-caption
 	.case-study
 		min-height 850px
 		
-	.big-moment-1 
-		height 80vh
-		
 
 /* ----------- Retina Screens ----------- */
 @media screen and (max-width: 1000px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
@@ -505,10 +392,7 @@ p.center-caption
 		width 65%
 		
 	.case-study
-		min-height 850px
-		
-	.big-moment-1 
-		height 80vh	
+		min-height 850px	
 
 
 /*---------------------------------------------------------------*/

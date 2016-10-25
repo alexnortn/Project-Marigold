@@ -37,19 +37,20 @@ block content
 
                         +endeavorImageGridIterator(result.images, result.images)
 
-                        // Hard coded index, what was I thinking?
-                        // BIG MOMENT 1
-                        .big-moment-1.parallax__group
-                            .big-moment-1-color.parallax__layer--back.img-load(style=`background-image: url(${result.images[0].src})`) 
-                        // /BIG MOMENT 1
+                        +endeavorParallaxBehind(result.images[0].src)
+
                         +endeavorImageGridIterator(result.images, result.images)
                         +endeavorTwoImageParallaxRight(result.hero, result.hero, result.pull_quotes[0])
                         +endeavorVideoFS(result.videos[0].src)
-                        .big-moment-2.parallax__group  
-                            .big-moment-2-color.img-load(style=`background-image: url(${result.images[0].src})`)
-                            .img-box.parallax__layer.parallax__layer--fore.img-load(style=`background-image: url(${result.images[0].src})`)
-                            p.caption=result.description.long_2
-                        // 2X PARALLAX IMAGES LEFT
+
+                        +endeavorParallaxCaptionLeft(result.images[0].src, result.images[0].src, result.description.long_2)
+                        +endeavorParallaxCaptionRight(result.images[0].src, result.images[0].src, result.description.long_2)
+
+                        //- .big-moment-2.parallax__group  
+                        //-     .big-moment-2-color.img-load(style=`background-image: url(${result.images[0].src})`)
+                        //-     .img-box.parallax__layer.parallax__layer--fore.img-load(style=`background-image: url(${result.images[0].src})`)
+                        //-     p.caption=result.description.long_2
+
                         .para-box
                             .image-box.image-box--center.img-load(style=`background-image: url(${result.hero})`)
                             p.caption.center-caption=result.description.long_2
