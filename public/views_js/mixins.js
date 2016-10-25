@@ -305,7 +305,7 @@ function pug_style(r){if(!r)return"";if("object"==typeof r){var e="",t="";for(va
 
 
 
-;pug_debug_line = 190;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
+;pug_debug_line = 189;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 
 
 
@@ -315,23 +315,7 @@ function pug_style(r){if(!r)return"";if("object"==typeof r){var e="",t="";for(va
 
 
 
-;pug_debug_line = 199;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-;pug_debug_line = 210;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
+;pug_debug_line = 198;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 
 
 
@@ -347,7 +331,41 @@ function pug_style(r){if(!r)return"";if("object"==typeof r){var e="",t="";for(va
 
 
 
-;pug_debug_line = 221;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
+;pug_debug_line = 209;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;pug_debug_line = 220;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
+
+
+
+
+
+
+
+
+
+
+
+;pug_debug_line = 230;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
+
+
+
+
+
+
 
 
 

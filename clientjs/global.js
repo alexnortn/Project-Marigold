@@ -312,7 +312,7 @@ $(document).ready(function() {
                 currents = case_studies;
                 container = $('.case-study-container');
 
-                let bottomSlick = container.find('.big-moment-3');
+                let bottomSlick = container.find('.endeavor-image-slider');
                 if (!bottomSlick.hasClass('slick-initialized')) { 
                     addSlick(bottomSlick, true);
                     bottomSlick.slick('slickNext')

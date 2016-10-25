@@ -47,12 +47,11 @@ block content
 
                         +endeavorImageCenterCaption(result.hero, result.description.long_2)
 
-                        //- .para-box
-                        //-     .image-box.image-box--center.img-load(style=`background-image: url(${result.hero})`)
-                        //-     p.caption.center-caption=result.description.long_2
-                        .big-moment-3
-                            each image, i in result.images
-                                img.big-moment-3-color(src = `${result.images[i].src}`)
+                        +endeavorImageSlider(result.images)
+
+                        //- .big-moment-3
+                        //-     each image, i in result.images
+                        //-         img.big-moment-3-color(src = `${result.images[i].src}`)
                         +endeavorEndPad()
 
         // PROJECT ITERATOR

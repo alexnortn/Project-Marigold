@@ -182,7 +182,6 @@ mixin endeavorImageGridIterator(images, images_preview)
                 .image-grid.img-load(style=`background-image: url(${images_preview[i].src})`)
 
 
-
 //-  Endeavor Parallax Behind
     Requires: <result.image.src>
     Description: Self-Containing element for a full-screen parallax behind effect. Note: margins won't work on this guy.
@@ -222,6 +221,16 @@ mixin endeavorImageCenterCaption(image, caption)
     .endeavor-item.endeavor-para-box
         .image-box.image-box--center.img-load(style=`background-image: url(${image})`)
         p.caption.center-caption=caption
+
+
+//-  Endeavor Swipable Image Slide
+    Requires: <result.image[].src>
+    Description: Self-Containing element for centered swipable image carousel
+
+mixin endeavorImageSlider(images)
+    .endeavor-item.endeavor-image-slider
+        each image, i in images
+            img.endeavor-image-slider-color.fsw(src = `${images[i].src}`)
 
 
 
