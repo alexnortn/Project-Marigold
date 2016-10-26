@@ -33,7 +33,7 @@ mixin caseStudyPreview(data, index)
                     hr
                     p=data.description.brief
             .hero-box
-                .hero.img-load(style=`background-image: url(${data.hero})`)
+                .hero.img-load(style=`background-image: url(${data.image_hero})`)
 
 
 //-  Project-Study Preview
@@ -50,7 +50,7 @@ mixin projectPreview(data, index)
             .select-work-description
                 p.tamer=data.description.brief
                 hr
-            .select-work-img.img-load(style=`background-image: url(${data.images[0].src})`)
+            .select-work-img.img-load(style=`background-image: url(${data.image_preview})`)
         h3 #{data.name}
 
 
@@ -71,7 +71,7 @@ mixin endeavorHeader(data)
                 hr
                 p=data.description.brief
         .hero-box.hero-parallax.parallax__group
-            .hero.parallax__layer--back.img-load(style=`background-image: url(${data.hero})`)
+            .hero.parallax__layer--back.img-load(style=`background-image: url(${data.image_hero})`)
 
 
 //-  Endeavor Main Description & Meta Info
@@ -129,7 +129,18 @@ mixin endeavorIntro(data)
     Description: Full-Width Image Element
 
 mixin endeavorImageFS(datum)
-    img.endeavor-item.fsw(src=datum)
+    - var image = datum.image
+    img.endeavor-item.fsw(src=image.src)
+
+
+//-  Endeavor Project | Full-Width Adaptive Image
+    Requires: <datum.images[[>
+    Description: Full-Width Image Elements Array
+
+mixin endeavorImageFSList(data)
+    - var images = data.images
+    each image, index in images
+        img.endeavor-item.fsw(src=image.src)
 
 
 //-  Endeavor Project | Full-Width Adaptive Youtube Video
@@ -137,7 +148,8 @@ mixin endeavorImageFS(datum)
     Description: Full-Width Embed Video Element
 
 mixin endeavorVideoFS(datum)
-    iframe.endeavor-item.video-settings(src=datum.src frameborder="0" allowfullscreen)
+    - var video = datum.video
+    iframe.endeavor-item.video-settings(src=video.src frameborder="0" allowfullscreen)
 
 
 //-  Endeavor Project | End Pad
@@ -182,14 +194,13 @@ mixin endeavorTwoImageParallaxRight(data)
 
 mixin endeavorImageGridIterator(data)
     - var images = data.images
-    - var images_preview = data.images_preview
     .endeavor-item-big.grid.image-grid-wrapper
         .grid-slider.slider-transition
             each image, i in images
-                    img.big-moment-3-color(src=`${images[i].src}`)
-        each image, i in images_preview
+                    img.big-moment-3-color(src=`${image.src}`)
+        each image, i in images
             .image-grid-container.bounce&attributes({'data-slide': i})
-                .image-grid.img-load(style=`background-image: url(${images_preview[i].src})`)
+                .image-grid.img-load(style=`background-image: url(${image.src_preview})`)
 
 
 //-  Endeavor Parallax Behind
@@ -197,8 +208,9 @@ mixin endeavorImageGridIterator(data)
     Description: Self-Containing element for a full-screen parallax behind effect. Note: margins won't work on this guy.
 
 mixin endeavorParallaxBehind(datum)
+    - var image = datum.image
     .endeavor-parallax-behind-fs.parallax__group
-        .endeavor-parallax-behind-support.parallax__layer--back.img-load(style=`background-image: url(${datum.src})`) 
+        .endeavor-parallax-behind-support.parallax__layer--back.img-load(style=`background-image: url(${image.src})`) 
 
 
 //-  Endeavor Parallax Right + Caption Left
@@ -233,7 +245,7 @@ mixin endeavorParallaxCaptionLeft(data)
     Requires: <result.image> <result.caption>
     Description: Self-Containing element for centered image + caption
 
-mixin endeavorImageCenterCaption(image, caption)
+mixin endeavorImageCenterCaption(data)
     - var image = data.image
     - var caption = data.caption
     .endeavor-item.endeavor-para-box

@@ -27,48 +27,23 @@ block content
 
         // CASE STUDY ITERATOR
         .endeavor-container.case-study-container
-            each result, index in case_studies
-                .endeavor.endeavor-view.case-study-view.parallax&attributes({'data-inproject': false}, {'data-projectIndex': index}, {'id': result.route})
-                    +endeavorHeader(result)
+            each case_study, index in case_studies
+                .endeavor.endeavor-view.case-study-view.parallax&attributes({'data-inproject': false}, {'data-projectIndex': index}, {'id': case_study.route})
+                    +endeavorHeader(case_study)
                     .endeavor-contents.parallax__group.contents
-                        +endeavorIntro(result.description, result.meta)
-                        
-                        +endeavorImageFS(result.images[index].src)
-                        
-                        +endeavorTwoImageParallaxLeft(result.hero, result.hero, result.pull_quotes[0])
-
-                        +endeavorImageGridIterator(result.images, result.images)
-
-                        +endeavorParallaxBehind(result.images[0].src)
-
-                        +endeavorImageGridIterator(result.images, result.images)
-
-                        +endeavorTwoImageParallaxRight(result.hero, result.hero, result.pull_quotes[0])
-
-                        +endeavorVideoFS(result.videos[0].src)
-
-                        +endeavorParallaxCaptionRight(result.images[0].src, result.images[0].src, result.description.long_2)
-
-                        +endeavorImageCenterCaption(result.hero, result.description.long_2)
-
-                        +endeavorImageSlider(result.images)
-
-                        +endeavorEndPad()
+                        +endeavorIntro(case_study)
+                        each section, iindex in case_study.sections
+                            +#{section.name}(section.data)
         // /CASE STUDY ITERATOR
         // PROJECT ITERATOR
         .endeavor-container.project-container
-            each result, index in select_work
-                .endeavor.endeavor-view.project-view.parallax&attributes({'data-inproject': false}, {'data-projectIndex': index}, {'id': result.route})
-                    +endeavorHeader(result)
+            each project, index in projects
+                .endeavor.endeavor-view.project-view.parallax&attributes({'data-inproject': false}, {'data-projectIndex': index}, {'id': project.route})
+                    +endeavorHeader(project)
                     .endeavor-contents.parallax__group.contents
-                        +endeavorIntro(result.description, result.meta)
-                        +endeavorImageFS(result.images[0].src)
-                        +endeavorImageFS(result.images[0].src)
-                        +endeavorImageFS(result.images[0].src)
-
-                        +endeavorVideoFS(result.videos[0].src)
-
-                        +endeavorEndPad()
+                        +endeavorIntro(project)
+                        each section, iindex in project.sections
+                            +#{section.name}(section.data)
         // /PROJECT ITERATOR
 
     // NAV MENU
@@ -183,8 +158,8 @@ block content
         section#works.section&attributes({'data-inproject': false})
             #works-wrapper
                 // CASE STUDY ITERATOR
-                each result, index in case_studies
-                    +caseStudyPreview(result, index)
+                each case_study, index in case_studies
+                    +caseStudyPreview(case_study, index)
                 // /CASE STUDY ITERATOR
 
                 //SELECT WORK GRID SECTION
@@ -192,8 +167,8 @@ block content
                     #select-work-wrapper
                         h3 Selected Works
                         ul
-                            each result, index in select_work
-                                +projectPreview(result, index)
+                            each project, index in projects
+                                +projectPreview(project, index)
                         h5#select-more { more }
                 // /SELECT WORK GRID SECTION
         // /WORKS SECTION 
