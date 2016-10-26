@@ -78,8 +78,8 @@ $(document).ready(function() {
     // Center In
     $('#pagination').alwaysCenterIn(window, { direction: 'vertical' });
 
-    // Set video size + aspect ratio
-    function setupVideo($elem = null) {
+    // Set media size + aspect ratio
+    function setupMedia($elem = null) {
         if ($elem === null) {
             if (_$projectCurrentContents === null) {
                 return;
@@ -94,10 +94,10 @@ $(document).ready(function() {
             width = width + "px";
             height = height + "px";
 
-            $('.video-frame').css('width', width)
+            $('.media-frame').css('width', width)
                              .css('height', height);
 
-            $('.video-settings').css('height', height);
+            $('.media-settings').css('height', height);
 
     }
 
@@ -105,7 +105,7 @@ $(document).ready(function() {
     $(window).resize(function() {
 
         stickyUpdate();
-        setupVideo();
+        setupMedia();
 
         if (_mobile) { // Disable blur effect on mobile devices + tablets
             return;
@@ -314,20 +314,23 @@ $(document).ready(function() {
             if ($currentTarget.hasClass('case-study-item')) {
                 currents = case_studies;
                 container = $('.case-study-container');
-
-                let bottomSlick = container.find('.endeavor-image-slider');
-                if (!bottomSlick.hasClass('slick-initialized')) { 
-                    addSlick(bottomSlick, true);
-                    bottomSlick.slick('slickNext')
-                               .slick('slickNext')
-                               .slick('slickNext')
-                               .slick('slickGoTo', 0, false);
-                };
             }
             else if ($currentTarget.hasClass('project-item')) {
                 currents = projects;
                 container = $('.project-container');
             }
+
+            // Setup Slick
+            let bottomSlick = container.find('.endeavor-image-slider');
+                if (!bottomSlick.hasClass('slick-initialized')) { 
+                    addSlick(bottomSlick, true);
+                    bottomSlick.slick('slickNext')
+                               .slick('slickNext')
+                               .slick('slickNext')
+                               .slick('slickGoTo', 0, false)
+                               .slick('slickGoTo', 1, false)
+                               .slick('slickGoTo', 0, false);
+                };
 
             currents.forEach(function(project_item, index) {
                 if (project_item.id === project_id) {
@@ -365,7 +368,7 @@ $(document).ready(function() {
                                 $('.arrow-container').removeClass('transparent');
                                 
                                 _$projectCurrentContents = $(project_id).find('.contents');
-                                setupVideo(_$projectCurrentContents); // Resize Video players
+                                setupMedia(_$projectCurrentContents); // Resize Video players
 
                                 $transitionSVG.remove();
                             })

@@ -1465,16 +1465,6 @@
                     }
                 },
                 {
-                    "name" : "endeavorVideoFS",
-                    "data" : {
-                        "video" : {
-                            "name" : "DigProcess",
-                            "src" : "https://www.youtube.com/embed/p5DGhmvRtOA",
-                            "caption" : "Alex Norton DiG Programing Process." 
-                        }
-                    }
-                },
-                {
                     "name" : "endeavorImageFSList",
                     "data" : {
                         "meta" : "Sectors",
@@ -1494,6 +1484,16 @@
                                 "caption": "Dig gif image"   
                             }
                         ]
+                    }
+                },
+                {
+                    "name" : "endeavorPubFS",
+                    "data" : {
+                        "pub" : {
+                            "name" : "DigBrandBook",
+                            "src" : "//e.issuu.com/embed.html#22891629/40051135",
+                            "caption" : "Alex Norton DiG Brand Book." 
+                        }
                     }
                 },
                 {
@@ -1519,7 +1519,17 @@
                     }
                 },
                 {
-                    "name" : "endeavorImageFSList",
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "video" : {
+                            "name" : "DigProcess",
+                            "src" : "https://www.youtube.com/embed/p5DGhmvRtOA",
+                            "caption" : "Alex Norton DiG Programing Process." 
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageSlider",
                     "data" : {
                         "meta" : "Algorithmic",
                         "images" : [
@@ -1560,6 +1570,10 @@
                             }
                         ]
                     }
+                },
+                {
+                    "name" : "endeavorEndPad",
+                    "data" : {}
                 }
             ]
         },

@@ -149,7 +149,16 @@ mixin endeavorImageFSList(data)
 
 mixin endeavorVideoFS(datum)
     - var video = datum.video
-    iframe.endeavor-item.video-settings(src=video.src frameborder="0" allowfullscreen)
+    iframe.endeavor-item.media-settings.media-frame.video-settings(src=video.src frameborder="0" allowfullscreen)
+
+
+//-  Endeavor Project | Full-Width Adaptive Issuu Digital Publication
+    Requires: <datum.src>
+    Description: Full-Width Embeded Digital Publication
+
+mixin endeavorPubFS(datum)
+    - var pub = datum.pub
+    iframe.endeavor-item.media-settings.media-frame.pub-settings(src=pub.src frameborder="0" allowfullscreen)
 
 
 //-  Endeavor Project | End Pad
@@ -157,7 +166,7 @@ mixin endeavorVideoFS(datum)
     Description: empty div to provide padding
 
 mixin endeavorEndPad()
-    .end-pad.end-pad-50
+    .end-pad.end-pad-100
 
 
 //-  Endeavor Parallax Images Left
