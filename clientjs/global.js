@@ -228,9 +228,6 @@ $(document).ready(function() {
             scrollHandler,
             project_id;
 
-        console.log(case_studies);
-        console.log(projects);
-
         function updateCurrentProject(index, current_id) {
             let new_id = '#' + currents[index].id;
             updateProjectHandlers(current_id, new_id);
