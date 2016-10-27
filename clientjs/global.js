@@ -226,7 +226,7 @@ $(document).ready(function() {
             projects = $('.project-view').toArray(),
             currents = [],
             scrollHandler,
-            project_id;
+            project_id; 
 
         function updateCurrentProject(index, current_id) {
             let new_id = '#' + currents[index].id;

@@ -25,7 +25,7 @@ mixin users2(users, colour)
 
 mixin caseStudyPreview(data, index)
     .case-study.case-study-window.item.case-study-item&attributes( {'data-inproject': false}, {'data-projectIndex': index}, {'data-project': data.route},  {'id': data.preview} )
-        .case-study-overview
+        .case-study-overview.endeavor-overview.endeavor-overview-preview
             .description
                 .description-wrapper
                     h3=data.project_type
@@ -71,7 +71,7 @@ mixin endeavorHeader(data)
                 hr
                 p=data.description.brief
         .hero-box.hero-parallax.parallax__group
-            .hero.parallax__layer--back.img-load(style=`background-image: url(${data.image_hero})`)
+            .hero.parallax__layer--back.no-hover.img-load(style=`background-image: url(${data.image_hero})`)
 
 
 //-  Endeavor Main Description & Meta Info

@@ -76,8 +76,22 @@ $StickyOffsetMeta = 20vh
 	z-index 1
 	display flex
 	flex-direction column
-box-shadow 0 5px 3px rgba(0, 0, 0, 0)
+	box-shadow 0 5px 3px rgba(0, 0, 0, 0)
+	
 	transition all 250ms	
+	
+
+.endeavor-overview-preview:hover 
+	/*box-shadow: 0 10px 15px rgba(0, 0, 0, 0.18)*/
+	cursor pointer
+
+
+.endeavor-overview-preview:hover .hero 
+	transform scale(1.03)
+
+
+.endeavor-overview-preview:hover .description 
+	box-shadow 0 0px 50px rgba(0, 0, 0, 0.18)
 
 
 .endeavor-page 
@@ -192,7 +206,7 @@ box-shadow 0 5px 3px rgba(0, 0, 0, 0)
 /* Description Box */
 	
 
-.endeavor .description 
+.endeavor-overview .description 
 	width 300px
 	height 300px
 	min-width 300px
@@ -216,16 +230,16 @@ box-shadow 0 5px 3px rgba(0, 0, 0, 0)
 	transition all 250ms
 
 
-.endeavor .description h3 
+.endeavor-overview .description h3 
 	margin-bottom 10px
 	text-align center
 
 
-.endeavor .description h2 
+.endeavor-overview .description h2 
 	margin-bottom 7.5px
 	text-align center
 	
-.endeavor .description hr
+.endeavor-overview .description hr
 	width 25px	
 	height 4px
 	border none
@@ -233,14 +247,14 @@ box-shadow 0 5px 3px rgba(0, 0, 0, 0)
 	background-color $BLACK
 
 
-.endeavor .description p
+.endeavor-overview .description p
 	font-family Chronicle-Semitalic 
 	margin-top 40px
 	text-align center
 	align-self flex-end
 
 
-.endeavor .description .social 
+.endeavor-overview .description .social 
 	width 75%
 	bottom 30px
 	position absolute
@@ -702,7 +716,7 @@ box-shadow 0 5px 3px rgba(0, 0, 0, 0)
 
 /* ----------- Non-Retina Screens ----------- */
 @media screen and (max-width: 1000px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)		
-	.endeavor .description 
+	.endeavor-overview .description 
 		margin-left auto
 		margin-right auto
 		position relative
@@ -720,6 +734,10 @@ box-shadow 0 5px 3px rgba(0, 0, 0, 0)
 		
 	.hero-box
 		display table
+		
+	.endeavor-overview 
+		height 60vh
+		min-height 400px
 		
 	// endeavor (non case-study)
 	.endeavor-overview .description
@@ -775,7 +793,7 @@ box-shadow 0 5px 3px rgba(0, 0, 0, 0)
 
 /* ----------- Retina Screens ----------- */
 @media screen and (max-width: 1000px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
-	.endeavor .description 
+	.endeavor-overview .description 
 		margin-left auto
 		margin-right auto
 		position relative
@@ -793,6 +811,10 @@ box-shadow 0 5px 3px rgba(0, 0, 0, 0)
 		
 	.hero-box
 		display table
+		
+	.endeavor-overview 
+		height 60vh
+		400px
 		
 	// endeavor (non case-study)
 	.endeavor-overview .description
@@ -870,6 +892,7 @@ box-shadow 0 5px 3px rgba(0, 0, 0, 0)
 		padding initial
 		height auto
 		margin-bottom 75px
+		margin-top 150px
 		
 	.meta-data ul
 		width 25%
@@ -887,6 +910,21 @@ box-shadow 0 5px 3px rgba(0, 0, 0, 0)
 		
 	.endeavor-parallax-hybrid
 		margin-bottom 75px
+		
+	.endeavor-overview .description
+		width 200px
+		height 250px
+		min-width 250px
+		min-height 250px
+		
+	.endeavor-overview .description hr
+		width 15px
+		height 2px
+		
+	.endeavor-overview .description p 
+		font-size 14px
+		margin-top 15px
+		align-self center
 		
 		
 
@@ -910,6 +948,7 @@ box-shadow 0 5px 3px rgba(0, 0, 0, 0)
 		padding initial
 		height auto
 		margin-bottom 75px
+		margin-top 150px
 		
 	.meta-data ul
 		width 25%
@@ -928,6 +967,21 @@ box-shadow 0 5px 3px rgba(0, 0, 0, 0)
 	.endeavor-parallax-hybrid
 		margin-bottom 75px
 		
+	.endeavor-overview .description
+		width 200px
+		height 200px
+		min-width 200px
+		min-height 200px
+		
+	.endeavor-overview .description hr
+		width 15px
+		height 2px
+		
+	.endeavor-overview .description p 
+		font-size 14px
+		margin-top 15px
+		align-self center
+		
 
 
 /* ----------- Retina Screens ----------- */
@@ -935,11 +989,41 @@ box-shadow 0 5px 3px rgba(0, 0, 0, 0)
 	.meta-data ul
 		width 50%
 		
+	.end-pad-100
+		height 175px
+		
+	.endeavor-overview
+		height 75vh
+		
+	.endeavor-overview.endeavor-overview-preview
+		height 60vh
+		
+	.endeavor-overview .description
+		bottom 70%
+		
+	.endeavor-overview.endeavor-overview-preview .description
+		bottom 35%
+		
 
 /* ----------- Retina Screens ----------- */
 @media screen and (max-width: 500px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
 	.meta-data ul
 		width 50%
+		
+	.end-pad-100
+		height 175px
+		
+	.endeavor-overview
+		height 75vh
+		
+	.endeavor-overview.endeavor-overview-preview
+		height 60vh
+		
+	.endeavor-overview .description
+		bottom 70%
+		
+	.endeavor-overview.endeavor-overview-preview .description
+		bottom 35%
 		
 
 
