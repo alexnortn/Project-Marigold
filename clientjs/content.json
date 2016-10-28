@@ -1211,7 +1211,7 @@
             "route" :"convolve-project",
             "name"  : "Convolve",
             "project_type"  : "Project",
-            "year"  : "2014",
+            "year"  : "2015",
             "preview" :"convolve-preview",
             "medium": [
                 "Paper",
@@ -1461,60 +1461,46 @@
                         "meta" : "Branding",
                         "images" : [
                             {
-                                "name": "dig-poster-0",
-                                "src": "images/projects/dig/hi-res/dig-poster-0.jpg",
-                                "src_mobile": "images/projects/dig/hi-res/dig-poster-0.jpg",
-                                "src_preview": "images/projects/dig/hi-res/dig-poster-0.jpg",
-                                "caption": "Dig Poster Mock"   
-                            },
-                            {
-                                "name": "dig-poster-1",
-                                "src": "images/projects/dig/hi-res/dig-poster-1.jpg",
-                                "src_mobile": "images/projects/dig/hi-res/dig-poster-1.jpg",
-                                "src_preview": "images/projects/dig/hi-res/dig-poster-1.jpg",
+                                "name": "dig-poster-sem-1",
+                                "src": "images/projects/dig/hi-res/dig-poster-sem-1.jpg",
+                                "src_mobile": "images/projects/dig/hi-res/dig-poster-sem-1.jpg",
+                                "src_preview": "images/projects/dig/hi-res/dig-poster-sem-1.jpg",
                                 "caption": "Dig Poster"   
                             },
                             {
-                                "name": "dig-poster-2",
-                                "src": "images/projects/dig/hi-res/dig-poster-2.jpg",
-                                "src_mobile": "images/projects/dig/hi-res/dig-poster-2.jpg",
-                                "src_preview": "images/projects/dig/hi-res/dig-poster-2.jpg",
+                                "name": "dig-poster-1.0",
+                                "src": "images/projects/dig/hi-res/dig-poster-1.0.jpg",
+                                "src_mobile": "images/projects/dig/hi-res/dig-poster-1.0.jpg",
+                                "src_preview": "images/projects/dig/hi-res/dig-poster-1.0.jpg",
                                 "caption": "Dig Poster"   
                             },
                             {
-                                "name": "dig-poster-2.1",
-                                "src": "images/projects/dig/hi-res/dig-poster-2.1.jpg",
-                                "src_mobile": "images/projects/dig/hi-res/dig-poster-2.1.jpg",
-                                "src_preview": "images/projects/dig/hi-res/dig-poster-2.1.jpg",
+                                "name": "dig-poster-1.1",
+                                "src": "images/projects/dig/hi-res/dig-poster-1.1.jpg",
+                                "src_mobile": "images/projects/dig/hi-res/dig-poster-1.1.jpg",
+                                "src_preview": "images/projects/dig/hi-res/dig-poster-1.1.jpg",
                                 "caption": "Dig Poster"   
                             },
                             {
-                                "name": "dig-poster-2.2",
-                                "src": "images/projects/dig/hi-res/dig-poster-2.2.jpg",
-                                "src_mobile": "images/projects/dig/hi-res/dig-poster-2.2.jpg",
-                                "src_preview": "images/projects/dig/hi-res/dig-poster-2.2.jpg",
+                                "name": "dig-poster-1.2",
+                                "src": "images/projects/dig/hi-res/dig-poster-1.2.jpg",
+                                "src_mobile": "images/projects/dig/hi-res/dig-poster-1.2.jpg",
+                                "src_preview": "images/projects/dig/hi-res/dig-poster-1.2.jpg",
                                 "caption": "Dig Poster"   
                             },
                             {
-                                "name": "dig-poster-2.3",
-                                "src": "images/projects/dig/hi-res/dig-poster-2.3.jpg",
-                                "src_mobile": "images/projects/dig/hi-res/dig-poster-2.3.jpg",
-                                "src_preview": "images/projects/dig/hi-res/dig-poster-2.3.jpg",
+                                "name": "dig-poster-1.3",
+                                "src": "images/projects/dig/hi-res/dig-poster-1.3.jpg",
+                                "src_mobile": "images/projects/dig/hi-res/dig-poster-1.3.jpg",
+                                "src_preview": "images/projects/dig/hi-res/dig-poster-1.3.jpg",
                                 "caption": "Dig Poster"   
                             },
                             {
-                                "name": "dig-poster-3",
-                                "src": "images/projects/dig/hi-res/dig-poster-3.jpg",
-                                "src_mobile": "images/projects/dig/hi-res/dig-poster-3.jpg",
-                                "src_preview": "images/projects/dig/hi-res/dig-poster-3.jpg",
+                                "name": "dig-poster-sem-2",
+                                "src": "images/projects/dig/hi-res/dig-poster-sem-2.jpg",
+                                "src_mobile": "images/projects/dig/hi-res/dig-poster-sem-2.jpg",
+                                "src_preview": "images/projects/dig/hi-res/dig-poster-sem-2.jpg",
                                 "caption": "Dig Poster"   
-                            },
-                            {
-                                "name": "dig-poster-4",
-                                "src": "images/projects/dig/hi-res/dig-poster-4.jpg",
-                                "src_mobile": "images/projects/dig/hi-res/dig-poster-4.jpg",
-                                "src_preview": "images/projects/dig/hi-res/dig-poster-4.jpg",
-                                "caption": "Dig Poster Mock"   
                             }
                         ]
                     }
@@ -1543,6 +1529,13 @@
                                 "src_mobile": "images/projects/dig/hi-res/dig-sector-gif.gif",
                                 "src_preview": "images/projects/dig/hi-res/dig-sector-gif.gif",
                                 "caption": "Dig gif image"   
+                            },
+                            {
+                                "name": "dig-sector-2",
+                                "src": "images/projects/dig/hi-res/dig-sector-2.jpg",
+                                "src_mobile": "images/projects/dig/hi-res/dig-sector-2.jpg",
+                                "src_preview": "images/projects/dig/hi-res/dig-sector-2.jpg",
+                                "caption": "Dig gif image"   
                             }
                         ]
                     }
@@ -1551,6 +1544,49 @@
                     "name" : "endeavorSubheaderFS",
                     "data" : {
                         "subheader" : "Identity System"
+                    }
+                },
+                {
+                    "name" : "endeavorImageFSList",
+                    "data" : {
+                        "meta" : "BrandBook",
+                        "images" : [
+                            {
+                                "name": "dig-brandbook-cover",
+                                "src": "images/projects/dig/hi-res/dig-brandbook-cover.jpg",
+                                "src_mobile": "images/projects/dig/hi-res/dig-brandbook-cover.jpg",
+                                "src_preview": "images/projects/dig/hi-res/dig-brandbook-cover.jpg",
+                                "caption": "Dig gif image"   
+                            },
+                            {
+                                "name": "dig-brandbook-sections",
+                                "src": "images/projects/dig/hi-res/dig-brandbook-sections.jpg",
+                                "src_mobile": "images/projects/dig/hi-res/dig-brandbook-sections.jpg",
+                                "src_preview": "images/projects/dig/hi-res/dig-brandbook-sections.jpg",
+                                "caption": "Dig gif image"   
+                            },
+                            {
+                                "name": "dig-brandbook-0",
+                                "src": "images/projects/dig/hi-res/dig-brandbook-0.jpg",
+                                "src_mobile": "images/projects/dig/hi-res/dig-brandbook-0.jpg",
+                                "src_preview": "images/projects/dig/hi-res/dig-brandbook-0.jpg",
+                                "caption": "Dig gif image"   
+                            },
+                            {
+                                "name": "dig-brandbook-1",
+                                "src": "images/projects/dig/hi-res/dig-brandbook-1.jpg",
+                                "src_mobile": "images/projects/dig/hi-res/dig-brandbook-1.jpg",
+                                "src_preview": "images/projects/dig/hi-res/dig-brandbook-1.jpg",
+                                "caption": "Dig gif image"   
+                            },
+                            {
+                                "name": "dig-brandbook-2",
+                                "src": "images/projects/dig/hi-res/dig-brandbook-2.jpg",
+                                "src_mobile": "images/projects/dig/hi-res/dig-brandbook-2.jpg",
+                                "src_preview": "images/projects/dig/hi-res/dig-brandbook-2.jpg",
+                                "caption": "Dig gif image"   
+                            }
+                        ]
                     }
                 },
                 {
@@ -1573,10 +1609,10 @@
                     "name" : "endeavorImageFS",
                     "data" : {
                         "image" : {
-                            "name": "dig-algo-0.12",
-                            "src": "images/projects/dig/hi-res/dig-algo-0.12.jpg",
-                            "src_mobile": "images/projects/dig/hi-res/dig-algo-0.12.jpg",
-                            "src_preview": "images/projects/dig/hi-res/dig-algo-0.12.jpg",
+                            "name": "dig-algo-0.1",
+                            "src": "images/projects/dig/hi-res/dig-algo-0.1.jpg",
+                            "src_mobile": "images/projects/dig/hi-res/dig-algo-0.1.jpg",
+                            "src_preview": "images/projects/dig/hi-res/dig-algo-0.1.jpg",
                             "caption": "Dig gif image"   
                         }
                     }
