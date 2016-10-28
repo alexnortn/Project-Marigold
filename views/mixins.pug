@@ -33,7 +33,7 @@ mixin caseStudyPreview(data, index)
                     hr
                     p=data.description.brief
             .hero-box
-                .hero.img-load(style=`background-image: url(${data.image_hero})`)
+                .hero(style=`background-image: url(${data.image_hero})`)
 
 
 //-  Project-Study Preview
@@ -50,7 +50,7 @@ mixin projectPreview(data, index)
             .select-work-description
                 p.tamer=data.description.brief
                 hr
-            .select-work-img.img-load(style=`background-image: url(${data.image_preview})`)
+            .select-work-img(style=`background-image: url(${data.image_preview})`)
         h3 #{data.name}
 
 
@@ -71,7 +71,7 @@ mixin endeavorHeader(data)
                 hr
                 p=data.description.brief
         .hero-box.hero-parallax.parallax__group
-            .hero.parallax__layer--back.no-hover.img-load(style=`background-image: url(${data.image_hero})`)
+            .hero.parallax__layer--back.no-hover(style=`background-image: url(${data.image_hero})`)
 
 
 //-  Endeavor Main Description & Meta Info
@@ -124,13 +124,47 @@ mixin endeavorIntro(data)
                 li=meta.Duration
 
 
+//-  Endeavor Project | Full-Width blocking, Caption
+    Requires: <datum.caption>
+    Description: Full-Width Image Element
+
+mixin endeavorCaptionFS(datum)
+    - var caption = datum.caption
+    .edeavor-item.fsw
+        p.caption.no-margin.endeavor-padding-left-50.endeavor-width-35-vw=caption
+
+
+//-  Endeavor Project | Full-Width blocking, Sub-Header
+    Requires: <datum.subheader>
+    Description: Full-Width Image Element
+
+mixin endeavorSubheaderFS(datum)
+    - var subheader = datum.subheader
+    .edeavor-item.endeavor-item-top-125
+        h3=datum.subheader
+        hr.slight.endeavor-item-top-10.fsw
+
+
+//-  Endeavor Project | Full-Width blocking, Sub-Header
+    Requires: <datum.subheader> <datum.caption>
+    Description: Full-Width Image Element
+
+mixin endeavorSubheaderCaptionFS(datum)
+    - var subheader = datum.subheader
+    - var caption = datum.caption
+    .edeavor-item
+        h3=datum.subheader
+        p.caption.no-margin.endeavor-item-top-15.endeavor-width-35-vw=caption
+        hr.slight.endeavor-item-top-25.fsw
+
+
 //-  Endeavor Project | Full-Width Adaptive Image
     Requires: <datum.img.scr>
     Description: Full-Width Image Element
 
 mixin endeavorImageFS(datum)
     - var image = datum.image
-    img.endeavor-item.fsw(src=image.src)
+    img.endeavor-item.img-load.veil.fsw(src=image.src)&attributes({'data-src': image.src})
 
 
 //-  Endeavor Project | Full-Width Adaptive Image
@@ -140,7 +174,7 @@ mixin endeavorImageFS(datum)
 mixin endeavorImageFSList(data)
     - var images = data.images
     each image, index in images
-        img.endeavor-item.fsw(src=image.src)
+        img.endeavor-item.img-load.veil.fsw(src=image.src)&attributes({'data-src': image.src})
 
 
 //-  Endeavor Project | Full-Width Adaptive Youtube Video
@@ -149,7 +183,7 @@ mixin endeavorImageFSList(data)
 
 mixin endeavorVideoFS(datum)
     - var video = datum.video
-    iframe.endeavor-item.media-settings.media-frame.video-settings(src=video.src frameborder="0" allowfullscreen)
+    iframe.endeavor-item.media-settings.media-frame.video-settings(width="1920" height="1080" src=video.src frameborder="0" allowfullscreen)
 
 
 //-  Endeavor Project | Full-Width Adaptive Issuu Digital Publication
@@ -179,8 +213,8 @@ mixin endeavorTwoImageParallaxLeft(data)
     - var pullQuote = data.pullQuote
     .endeavor-para-box.endeavor-item.parallax__group
         blockquote.left.parallax__layer.parallax__layer--fore=pullQuote
-        .endeavor-image-box.endeavor-item-top.endeavor-item-bottom-small.img-load(style=`background-image: url(${image1.src})`)
-        .endeavor-image-box.endeavor-item-bottom-big.img-load(style=`background-image: url(${image2.src})`)
+        .endeavor-image-box.endeavor-item-top.endeavor-item-bottom-50(style=`background-image: url(${image1.src})`)
+        .endeavor-image-box.endeavor-item-bottom-125(style=`background-image: url(${image2.src})`)
 
 
 //-  Endeavor Parallax Images Right
@@ -192,8 +226,8 @@ mixin endeavorTwoImageParallaxRight(data)
     - var image2 = data.image2
     - var pullQuote = data.pullQuote
     .endeavor-para-box.parallax__group   
-        .endeavor-image-box.endeavor-item-top.endeavor-item-bottom-small.right.img-load(style=`background-image: url(${image1.src})`)
-        .endeavor-image-box.right.endeavor-item-bottom-big.img-load(style=`background-image: url(${image2.src})`)
+        .endeavor-image-box.endeavor-item-top.endeavor-item-bottom-50.right(style=`background-image: url(${image1.src})`)
+        .endeavor-image-box.right.endeavor-item-bottom-125(style=`background-image: url(${image2.src})`)
         blockquote.right.parallax__layer.parallax__layer--fore=pullQuote
 
 
@@ -203,13 +237,13 @@ mixin endeavorTwoImageParallaxRight(data)
 
 mixin endeavorImageGridIterator(data)
     - var images = data.images
-    .endeavor-item-big.grid.image-grid-wrapper
+    .endeavor-item-125.grid.image-grid-wrapper
         .grid-slider.slider-transition
             each image, i in images
                     img.big-moment-3-color(src=`${image.src}`)
         each image, i in images
             .image-grid-container.bounce&attributes({'data-slide': i})
-                .image-grid.img-load(style=`background-image: url(${image.src_preview})`)
+                .image-grid(style=`background-image: url(${image.src_preview})`)
 
 
 //-  Endeavor Parallax Behind
@@ -219,7 +253,7 @@ mixin endeavorImageGridIterator(data)
 mixin endeavorParallaxBehind(datum)
     - var image = datum.image
     .endeavor-parallax-behind-fs.parallax__group
-        .endeavor-parallax-behind-support.parallax__layer--back.img-load(style=`background-image: url(${image.src})`) 
+        .endeavor-parallax-behind-support.parallax__layer--back(style=`background-image: url(${image.src})`) 
 
 
 //-  Endeavor Parallax Right + Caption Left
@@ -231,8 +265,8 @@ mixin endeavorParallaxCaptionRight(data)
     - var imageParallax = data.imageParallax
     - var caption = data.caption
     .endeavor-item.fsw.endeavor-parallax-hybrid.parallax__group  
-        .endeavor-parallax-hybrid-color.img-load(style=`background-image: url(${imageBig.src})`)
-        .img-box.endeavor-parallax-hybrid-left-img-box.parallax__layer.parallax__layer--fore.img-load(style=`background-image: url(${imageParallax.src})`)
+        .endeavor-parallax-hybrid-color(style=`background-image: url(${imageBig.src})`)
+        .img-box.endeavor-parallax-hybrid-left-img-box.parallax__layer.parallax__layer--fore(style=`background-image: url(${imageParallax.src})`)
         p.endeavor-parallax-hybrid-left-caption.caption=caption
 
 
@@ -245,8 +279,8 @@ mixin endeavorParallaxCaptionLeft(data)
     - var imageParallax = data.imageParallax
     - var caption = data.caption
     .endeavor-item.fsw.endeavor-parallax-hybrid.parallax__group  
-        .endeavor-parallax-hybrid-color.img-load(style=`background-image: url(${imageBig})`)
-        .img-box.endeavor-parallax-hybrid-right-img-box.parallax__layer.parallax__layer--fore.img-load(style=`background-image: url(${imageParallax})`)
+        .endeavor-parallax-hybrid-color(style=`background-image: url(${imageBig})`)
+        .img-box.endeavor-parallax-hybrid-right-img-box.parallax__layer.parallax__layer--fore(style=`background-image: url(${imageParallax})`)
         p.endeavor-parallax-hybrid-right-caption.caption=caption
 
 
@@ -258,7 +292,7 @@ mixin endeavorImageCenterCaption(data)
     - var image = data.image
     - var caption = data.caption
     .endeavor-item.endeavor-para-box
-        .image-box.image-box--center.img-load(style=`background-image: url(${image.src})`)
+        .image-box.image-box--center(style=`background-image: url(${image.src})`)
         p.caption.center-caption=caption
 
 

@@ -1369,7 +1369,7 @@
         },
         {
             "route" :"dig-project",
-            "name"  : "DiG",
+            "name"  : "The DiG",
             "project_type"  : "Project",
             "year"  : "2014",
             "preview" :"dig-preview",
@@ -1395,18 +1395,24 @@
                 "This is the third big quote"
             ],
             "meta" : {
-                "Client" : "Eyewire, Princeton",
+                "Client" : "Eyewire, Princeton Neuroscience Institute",
                 "Year" : 2016,
                 "Role" : "Designer / Developer",
                 "Team" : "Eyewire, Karl Catubig",
                 "Discipline" : "Graphic Design / Computational Design",
-                "Medium" : "Digital",
+                "Medium" : "Digital / Print",
                 "Technologies" : "Processing / Pencils",
                 "Duration" : "Three Months"
             },
             "image_hero": "images/projects/dig/hi-res/dig-hero.jpg",
             "image_preview": "images/projects/dig/hi-res/dig-preview.jpg",
             "sections" : [
+                {
+                    "name" : "endeavorSubheaderFS",
+                    "data" : {
+                        "subheader" : "Branding"
+                    }
+                },
                 {
                     "name" : "endeavorImageFSList",
                     "data" : {
@@ -1439,7 +1445,21 @@
                                 "src_mobile": "images/projects/dig/hi-res/dig-grid.jpg",
                                 "src_preview": "images/projects/dig/hi-res/dig-grid.jpg",
                                 "caption": "Dig gif image"   
-                            },
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorSubheaderFS",
+                    "data" : {
+                        "subheader" : "Application"
+                    }
+                },
+                {
+                    "name" : "endeavorImageFSList",
+                    "data" : {
+                        "meta" : "Branding",
+                        "images" : [
                             {
                                 "name": "dig-poster-1",
                                 "src": "images/projects/dig/hi-res/dig-poster-1.jpg",
@@ -1465,6 +1485,12 @@
                     }
                 },
                 {
+                    "name" : "endeavorCaptionFS",
+                    "data" : {
+                        "caption" : "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know?"
+                    }
+                },
+                {
                     "name" : "endeavorImageFSList",
                     "data" : {
                         "meta" : "Sectors",
@@ -1487,6 +1513,12 @@
                     }
                 },
                 {
+                    "name" : "endeavorSubheaderFS",
+                    "data" : {
+                        "subheader" : "Identity System"
+                    }
+                },
+                {
                     "name" : "endeavorPubFS",
                     "data" : {
                         "pub" : {
@@ -1494,6 +1526,12 @@
                             "src" : "//e.issuu.com/embed.html#22891629/40051135",
                             "caption" : "Alex Norton DiG Brand Book." 
                         }
+                    }
+                },
+                {
+                    "name" : "endeavorSubheaderFS",
+                    "data" : {
+                        "subheader" : "Algorithms + Process"
                     }
                 },
                 {

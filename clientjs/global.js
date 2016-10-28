@@ -12,6 +12,7 @@ http://alexnortn.com
 let $ = require('jquery');
         require('./jquery.centerIn.js');
         require('./cssTransitionEnd.js');
+        require('../node_modules/unveil2/src/jquery.unveil2.js');
 
 // Module Dependencies
 let velocity    = require('velocity-animate'),
@@ -20,7 +21,6 @@ let velocity    = require('velocity-animate'),
     hammertime  = require('hammerjs'),
     Stickyfill  = require('stickyfill'),
     isMobile    = require('ismobilejs'),
-    unveil      = require('../node_modules/unveil2/src/jquery.unveil2.js'),
     animation   = require('./animation.js');
 
 // Bower Dependencies
@@ -62,12 +62,12 @@ $(document).ready(function() {
 
     window.addEventListener("hashchange", hashChanged, false);
 
+    hashRoute();
+    hashChanged();
+
     // Call pagination
     pagination(_sections);
     paginationUpdate(_sectionCurrent);
-
-    hashRoute();
-    hashChanged();
 
     stickyUpdate();
 
@@ -198,6 +198,7 @@ $(document).ready(function() {
             }
 
             $( this ).addClass('passive');
+            $('#content-wrapper').removeClass('visibility-hidden');
 
             $('.endeavor-container').removeClass('visible')
 
@@ -228,6 +229,10 @@ $(document).ready(function() {
             scrollHandler,
             project_id; 
 
+        let captureScrollHandler = function(evt) {
+            evt.stopPropagation();
+        }
+
         function updateCurrentProject(index, current_id) {
             let new_id = '#' + currents[index].id;
             updateProjectHandlers(current_id, new_id);
@@ -248,10 +253,12 @@ $(document).ready(function() {
             scrollHandler = function() {
                 if ($(new_id).scrollTop() > 0) {
                     $('.arrow-container').addClass('arrow-bottom');
+                    $('.arrow-center').addClass('visible');
                     $('#prev').addClass('arrow-left-alt');
                 }
                 else {
                     $('.arrow-container').removeClass('arrow-bottom');
+                    $('.arrow-center').removeClass('visible');
                     $('#prev').removeClass('arrow-left-alt');
                 }
             }
@@ -342,6 +349,7 @@ $(document).ready(function() {
             let opaque = false;
 
             $('#fx-container').removeClass('passive');
+            $('#content-wrapper').addClass('visibility-hidden');
 
             let $transitionSVG = createCircle(x_pos, y_pos);
 
@@ -352,7 +360,8 @@ $(document).ready(function() {
                     $('body').addClass('endeavor-open');
                     
                     container.addClass('flex-row');
-                        $(project_id).velocity("scroll", { axis: "x", duration: 0, container: container });
+                        $(project_id).velocity("scroll", { axis: "x", duration: 0, container: container });;
+                        $(project_id).scrollTop(0)     // Reset project scroll             
                     container.addClass('visible');
                 
                     $('#fx-container').addClass('opaque').onCSSTransitionEnd( function() { 
@@ -484,11 +493,25 @@ $(document).ready(function() {
     //     placeholder: 'http://placehold.it/500x300',
     // });
 
-    $('.img-load').unveil({
-        offset: 400,
-        // throttle: 200,
-        placeholder: 'http://placehold.it/500x300',
-    });
+    // debugger;
+
+    // $('.img-load').unveil({
+    //     placeholder: 'http://placehold.it/500x300',
+    // }).on('loading.unveil', function() {
+    //     console.log('unveiling ' + this);
+    // }).on('loaded.unveil', function() {
+    //     this.removeClass('veil');
+    //     console.log('unveiled ' + this);
+    // });
+
+    // $('.img-load').unveil();    
+
+    // $('.img-load').unveil(200, function() {
+    //     $(this).load(function() {
+    //         this.removeClass('veil');
+    //         console.log('unviel ' + this);
+    //     });
+    // });
 
 
     // --------------------------------------
@@ -571,21 +594,11 @@ $(document).ready(function() {
     });
 
     // Header navigation --> Go Home (clicking 'a' sends the users to /#bios)
-    $('#logo').click(function(){
+    $('.logo').click(function(){
         
         //  Close current project
-        _closeProject();
-
-        _sectionCurrent = "web-lab"; // Set #web-lab as current
-        animation.scrollToVelocity(_sectionCurrent); // Navigate
-
-    });
-
-    // Header navigation --> Go Home (clicking 'a' sends the users to /#bios)
-    $('#logo-header').click(function(){
-        
-        if ($('.case-study').hasClass('case-study-open')) closeCasestudy(); //  Close current project
-        closeNav() // Close nav
+        closeProject();
+        closeNav();
 
         _sectionCurrent = "web-lab"; // Set #web-lab as current
         animation.scrollToVelocity(_sectionCurrent); // Navigate
