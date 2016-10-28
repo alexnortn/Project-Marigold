@@ -1494,6 +1494,13 @@
                                 "src_mobile": "images/projects/dig/hi-res/dig-brandbook-2.jpg",
                                 "src_preview": "images/projects/dig/hi-res/dig-brandbook-2.jpg",
                                 "caption": "Dig gif image"   
+                            },
+                            {
+                                "name": "dig-brandbook-3",
+                                "src": "images/projects/dig/hi-res/dig-brandbook-3.jpg",
+                                "src_mobile": "images/projects/dig/hi-res/dig-brandbook-3.jpg",
+                                "src_preview": "images/projects/dig/hi-res/dig-brandbook-3.jpg",
+                                "caption": "Dig gif image"   
                             }
                         ]
                     }
