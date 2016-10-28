@@ -1461,25 +1461,60 @@
                         "meta" : "Branding",
                         "images" : [
                             {
+                                "name": "dig-poster-0",
+                                "src": "images/projects/dig/hi-res/dig-poster-0.jpg",
+                                "src_mobile": "images/projects/dig/hi-res/dig-poster-0.jpg",
+                                "src_preview": "images/projects/dig/hi-res/dig-poster-0.jpg",
+                                "caption": "Dig Poster Mock"   
+                            },
+                            {
                                 "name": "dig-poster-1",
                                 "src": "images/projects/dig/hi-res/dig-poster-1.jpg",
                                 "src_mobile": "images/projects/dig/hi-res/dig-poster-1.jpg",
                                 "src_preview": "images/projects/dig/hi-res/dig-poster-1.jpg",
-                                "caption": "Dig gif image"   
+                                "caption": "Dig Poster"   
                             },
                             {
                                 "name": "dig-poster-2",
                                 "src": "images/projects/dig/hi-res/dig-poster-2.jpg",
                                 "src_mobile": "images/projects/dig/hi-res/dig-poster-2.jpg",
                                 "src_preview": "images/projects/dig/hi-res/dig-poster-2.jpg",
-                                "caption": "Dig gif image"   
+                                "caption": "Dig Poster"   
+                            },
+                            {
+                                "name": "dig-poster-2.1",
+                                "src": "images/projects/dig/hi-res/dig-poster-2.1.jpg",
+                                "src_mobile": "images/projects/dig/hi-res/dig-poster-2.1.jpg",
+                                "src_preview": "images/projects/dig/hi-res/dig-poster-2.1.jpg",
+                                "caption": "Dig Poster"   
+                            },
+                            {
+                                "name": "dig-poster-2.2",
+                                "src": "images/projects/dig/hi-res/dig-poster-2.2.jpg",
+                                "src_mobile": "images/projects/dig/hi-res/dig-poster-2.2.jpg",
+                                "src_preview": "images/projects/dig/hi-res/dig-poster-2.2.jpg",
+                                "caption": "Dig Poster"   
+                            },
+                            {
+                                "name": "dig-poster-2.3",
+                                "src": "images/projects/dig/hi-res/dig-poster-2.3.jpg",
+                                "src_mobile": "images/projects/dig/hi-res/dig-poster-2.3.jpg",
+                                "src_preview": "images/projects/dig/hi-res/dig-poster-2.3.jpg",
+                                "caption": "Dig Poster"   
                             },
                             {
                                 "name": "dig-poster-3",
                                 "src": "images/projects/dig/hi-res/dig-poster-3.jpg",
                                 "src_mobile": "images/projects/dig/hi-res/dig-poster-3.jpg",
                                 "src_preview": "images/projects/dig/hi-res/dig-poster-3.jpg",
-                                "caption": "Dig gif image"   
+                                "caption": "Dig Poster"   
+                            },
+                            {
+                                "name": "dig-poster-4",
+                                "src": "images/projects/dig/hi-res/dig-poster-4.jpg",
+                                "src_mobile": "images/projects/dig/hi-res/dig-poster-4.jpg",
+                                "src_preview": "images/projects/dig/hi-res/dig-poster-4.jpg",
+                                "caption": "Dig Poster Mock"   
                             }
                         ]
                     }
@@ -1532,6 +1567,18 @@
                     "name" : "endeavorSubheaderFS",
                     "data" : {
                         "subheader" : "Algorithms + Process"
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "image" : {
+                            "name": "dig-algo-0.12",
+                            "src": "images/projects/dig/hi-res/dig-algo-0.12.jpg",
+                            "src_mobile": "images/projects/dig/hi-res/dig-algo-0.12.jpg",
+                            "src_preview": "images/projects/dig/hi-res/dig-algo-0.12.jpg",
+                            "caption": "Dig gif image"   
+                        }
                     }
                 },
                 {
