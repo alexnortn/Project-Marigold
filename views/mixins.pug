@@ -177,6 +177,25 @@ mixin endeavorImageFSList(data)
         img.endeavor-item.img-load.veil.fsw(src=image.src)&attributes({'data-src': image.src})
 
 
+//-  Endeavor Project | 75%-Width Adaptive Image
+    Requires: <datum.img.scr>
+    Description: Full-Width Image Element
+
+mixin endeavorImage75(datum)
+    - var image = datum.image
+    img.endeavor-item-25.img-load.veil.endeavor-width-75-percent(src=image.src)&attributes({'data-src': image.src})
+
+
+//-  Endeavor Project | 75%-Width Adaptive Image
+    Requires: <datum.images[[>
+    Description: Full-Width Image Elements Array
+
+mixin endeavorImage75List(data)
+    - var images = data.images
+    each image, index in images
+        img.endeavor-item-25.img-load.veil.endeavor-width-75-percent(src=image.src)&attributes({'data-src': image.src})
+
+
 //-  Endeavor Project | Full-Width Adaptive Youtube Video
     Requires: <datum.src>
     Description: Full-Width Embed Video Element
