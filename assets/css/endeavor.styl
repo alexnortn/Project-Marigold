@@ -556,6 +556,61 @@ p.center-caption
 
 
 /* -------------------------------------- */
+/* Description Box */
+
+.endeavor-description 
+	width 50%
+	max-width 500px
+	border-left 1px solid $GRAY
+	position relative
+	display block
+	padding 0 0 30px 35px
+	
+	order 2
+	
+.endeavor-description p 
+	text-align left
+	font-family Chronicle-Roman, serif
+	font-size 18px
+	line-height 2em
+	letter-spacing 0
+	
+.endeavor-description q 
+	margin-top 0
+	margin-bottom 0
+	
+.endeavor-description h4
+	margin-top 50px 
+	
+
+.description-wrapper
+	align-self center
+	display flex
+	flex-direction column
+	
+
+.pull-left p 
+	text-align center
+	line-height 1.5em
+	padding 0 75px 25px 75px
+
+
+.pull-left h1 
+	font-family Freight-Text-Italic
+
+
+.pull-left 
+	display inline-block
+	width 40%
+	float right
+	position relative
+	margin-right 45px
+	padding-top 28px
+	padding-bottom 30px
+	
+
+
+/* -------------------------------------- */
 /* Margin Modifiers */
 
 .endeavor-item-125
@@ -663,6 +718,14 @@ p.center-caption
 
 .endeavor-padding-left-50
 	padding-left 50px
+	
+
+
+/* -------------------------------------- */
+/* Position Modifiers */
+
+.endeavor-float-right
+	float right
 	
 
 /* -------------------------------------- */
@@ -1042,6 +1105,11 @@ p.center-caption
 	.endeavor-contents .project-intro 
 		padding-top 300px
 		
+	.endeavor-description
+		padding 0
+		width 100%
+		border-left none
+		
 	.meta-data
 		flex-direction row
 		flex-wrap wrap
@@ -1102,6 +1170,11 @@ p.center-caption
 		
 	.endeavor-contents .project-intro 
 		padding-top 300px
+		
+	.endeavor-description
+		padding 0
+		width 100%
+		border-left none
 		
 	.meta-data
 		flex-direction row

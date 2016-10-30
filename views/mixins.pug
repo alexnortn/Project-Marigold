@@ -91,7 +91,7 @@ mixin endeavorIntro(data)
     - var description = data.description
     - var meta = data.meta
     .endeavor-intro.cf
-        .main-description 
+        .endeavor-description 
             q=description.brief
             h4 Brief
             p.tamer=description.extensive
@@ -124,14 +124,37 @@ mixin endeavorIntro(data)
                 li=meta.Duration
 
 
+//-  Endeavor Expandable Description Sections
+    Requires: <data.description> <data.meta>
+        + project-description <{string}>
+
+mixin endeavorDescriptions(data)
+    - var sections = data.sections
+    .endeavor-item.cf
+        .endeavor-description.endeavor-float-right
+            each section, index in sections 
+                h4=section.name
+                p.tamer=section.content
+
+
 //-  Endeavor Project | Full-Width blocking, Caption
     Requires: <datum.caption>
-    Description: Full-Width Image Element
+    Description: 35vw-Width Text Element
 
 mixin endeavorCaptionFS(datum)
     - var caption = datum.caption
     .edeavor-item.fsw
         p.caption.no-margin.endeavor-padding-left-50.endeavor-width-35-vw=caption
+
+
+//-  Endeavor Project | Full-Width blocking, Content
+    Requires: <datum.content>
+    Description: 35vw-Width Text Element
+
+mixin endeavorContentFS(datum)
+    - var content = datum.content
+    .edeavor-item.fsw
+        p.content.no-margin.endeavor-float-right.endeavor-width-35-vw=content
 
 
 //-  Endeavor Project | Full-Width blocking, Sub-Header
@@ -220,6 +243,14 @@ mixin endeavorPubFS(datum)
 
 mixin endeavorEndPad()
     .end-pad.end-pad-100
+
+
+//-  Endeavor Project | End Pad
+    Requires: {} --> Could extend for modularity (see <endeavor.styl)
+    Description: empty div to provide padding
+
+mixin endeavorEndPad250()
+    .end-pad.end-pad-250
 
 
 //-  Endeavor Parallax Images Left

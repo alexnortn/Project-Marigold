@@ -1214,9 +1214,7 @@
             "year"  : "2015",
             "preview" :"convolve-preview",
             "medium": [
-                "Paper",
-                "Wood",
-                "Arduino"
+                "Digital"
             ],
             "technique": [
                 "Laser Cutter",
@@ -1224,33 +1222,39 @@
                 "Programing"
             ],
             "description" : {
-                "brief": "A traditional Japanese lamp that responds gesturally to weather phenomena.",
-                "extensive": "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know? When is a qualitative understanding of data sufficient? The lamp is also a sort of commentary on the current state of culture in Japan. It is no coincidence that the lamp resembles a tower crane. The lamp bridges the gap between traditional Japanese culture and Japan as a world-leading technological hub. The Lamp is a collaboration between Massart’s graphic design program and MIT’s Architectural Computation department. The following pages detail the CAD models and a bit of the building process for the first of the 3 proposed lamps, this is the smallest desk lamp. Further on there is a glimpse into the program written to aggregate weather sources as well as a web-interface designed to program + control the lamp.",
+                "brief": "An immersive heads up display for augmenting complexity",
+                "extensive": "Sean & I created a prototype for a fully immersive heads up display that would augment Inception in a way that enhanced the viewing experience. When using any media player the user often experiences the heads up display as an interruption, intrusion and invasion onto the stage of the screen. What if you could make a user really miss those moments? What if, the user was just as interested in the data on a heads up display as the movie itself?",
                 "long_1": "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know? When is a qualitative understanding of data sufficient? The lamp is also a sort of commentary on the current state of culture in Japan.",
                 "long_2": "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know?"
             },
             "meta" : {
-                "Client" : "Self (MIT)",
+                "Client" : "Student",
                 "Year" : 2015,
-                "Role" : "Designer / Developer",
-                "Team" : "—",
-                "Discipline" : "Fabrication / Industrial Design",
-                "Medium" : "Internet of Things / Wood",
-                "Technologies" : "Arduino / Woodshop",
-                "Duration" : "Two Months"
+                "Role" : "Designer, Researcher",
+                "Team" : "Sean Morse",
+                "Discipline" : "Graphic Design / UI / UX / Information Architecture",
+                "Medium" : "Digital Augemented Video Player",
+                "Technologies" : "Processing / After Effects",
+                "Duration" : "One Month"
             },
-            "image_hero": "images/crystal-8.jpg",
-            "image_preview": "images/crystal-8.jpg",
+            "image_hero": "images/projects/convolve/hi-res/convolve-hero.jpg",
+            "image_preview": "images/projects/convolve/hi-res/convolve-preview.jpg",
             "sections" : [
                 {
+                    "name" : "endeavorSubheaderFS",
+                    "data" : {
+                        "subheader" : "Views"
+                    }
+                },
+                {
                     "name" : "endeavorImageFS",
                     "data" : {
                         "image" : {
-                            "name": "hero",
-                            "src": "images/crystal-8.jpg",
-                            "src_mobile": "images/crystal-8.jpg",
-                            "src_preview": "images/lamp-sm-0.jpg",
-                            "caption": "Side view of Gestural Lamp. "
+                            "name": "convolve-poster-1",
+                            "src": "images/projects/convolve/hi-res/convolve-poster-1.jpg",
+                            "src_mobile": "images/projects/convolve/hi-res/convolve-poster-1.jpg",
+                            "src_preview": "images/projects/convolve/hi-res/convolve-poster-1.jpg",
+                            "caption": "Convolve Poster"
                         }
                     }
                 },
@@ -1258,111 +1262,186 @@
                     "name" : "endeavorImageFS",
                     "data" : {
                         "image" : {
-                            "name": "hero",
-                            "src": "images/crystal-8.jpg",
-                            "src_mobile": "images/crystal-8.jpg",
-                            "src_preview": "images/lamp-sm-0.jpg",
-                            "caption": "Side view of Gestural Lamp. "
+                            "name": "convolve-mock-1",
+                            "src": "images/projects/convolve/hi-res/convolve-mock-1.jpg",
+                            "src_mobile": "images/projects/convolve/hi-res/convolve-mock-1.jpg",
+                            "src_preview": "images/projects/convolve/hi-res/convolve-mock-1.jpg",
+                            "caption": "Dig Poster"
                         }
                     }
                 },
                 {
-                    "name" : "endeavorImageFS",
+                    "name" : "endeavorSubheaderFS",
                     "data" : {
-                        "image" : {
-                            "name": "hero",
-                            "src": "images/crystal-8.jpg",
-                            "src_mobile": "images/crystal-8.jpg",
-                            "src_preview": "images/lamp-sm-0.jpg",
-                            "caption": "Side view of Gestural Lamp. "
-                        }
+                        "subheader" : "HUD Prototype"
                     }
                 },
                 {
                     "name" : "endeavorVideoFS",
                     "data" : {
                         "video" : {
-                            "name" : "MSTY",
-                            "src" : "https://www.youtube.com/embed/V2FqFHfjFaM",
-                            "caption" : "something" 
+                            "name" : "Convolve Prototype",
+                            "src" : "https://www.youtube.com/embed/8imAdvSaGlI",
+                            "caption" : "Convolve // Imemrsive viewing experience." 
                         }
                     }
                 },
                 {
-                    "name" : "endeavorImageSlider",
+                    "name" : "endeavorCaptionFS",
                     "data" : {
-                        "images": [
+                        "caption" : "Our research culminated in an animated walkthrough. The animation demonstrates working aspects of the concept as well as gives the viewer an appreciation for the usability and aesthetics."
+                    }
+                },
+                {
+                    "name" : "endeavorSubheaderFS",
+                    "data" : {
+                        "subheader" : "Interactive Contextualization"
+                    }
+                },
+                {
+                    "name" : "endeavorImageFSList",
+                    "data" : {
+                        "meta" : "Views",
+                        "images" : [
                             {
-                                "name": "hero",
-                                "src": "images/crystal-8.jpg",
-                                "src_mobile": "images/crystal-8.jpg",
-                                "src_preview": "images/lamp-sm-0.jpg",
-                                "caption": "Side view of Gestural Lamp. "
+                                "name": "convolve-augment-1",
+                                "src": "images/projects/convolve/hi-res/convolve-intro.gif",
+                                "src_mobile": "images/projects/convolve/hi-res/convolve-intro.gif",
+                                "src_preview": "images/projects/convolve/hi-res/convolve-intro.gif",
+                                "caption": "Convolve Intro"   
                             },
                             {
-                                "name": "support_1",
-                                "src": "images/crystal-8.jpg",
-                                "src_mobile": "images/crystal-8.jpg",
-                                "src_preview": "Images/Sun-sm.png",
-                                "caption": " "
-                            },
-                            {
-                                "name": "support_2",
-                                "src": "images/crystal-8.jpg",
-                                "src_mobile": "images/crystal-8.jpg",
-                                "src_preview": "Images/Sun-sm.png",
-                                "caption": " "
-                            },
-                            {
-                                "name": "support_3",
-                                "src": "images/crystal-8.jpg",
-                                "src_mobile": "images/crystal-8.jpg",
-                                "src_preview": "Images/Sun-sm.png",
-                                "caption": " "
-                            },
-                            {
-                                "name": "support_4",
-                                "src": "images/crystal-8.jpg",
-                                "src_mobile": "images/crystal-8.jpg",
-                                "src_preview": "Images/Sun-sm.png",
-                                "caption": " "
-                            },
-                            {
-                                "name": "support_5",
-                                "src": "images/crystal-8.jpg",
-                                "src_mobile": "images/crystal-8.jpg",
-                                "src_preview": "Images/Sun-sm.png",
-                                "caption": " "
+                                "name": "convolve-screen-3",
+                                "src": "images/projects/convolve/hi-res/convolve-screen-3.png",
+                                "src_mobile": "images/projects/convolve/hi-res/convolve-screen-3.png",
+                                "src_preview": "images/projects/convolve/hi-res/convolve-screen-3.png",
+                                "caption": "Convolve Screen 1"   
                             }
                         ]
                     }
                 },
                 {
-                    "name" : "endeavorImageFS",
+                    "name" : "endeavorCaptionFS",
                     "data" : {
-                        "image" : {
-                            "name": "hero",
-                            "src": "images/crystal-8.jpg",
-                            "src_mobile": "images/crystal-8.jpg",
-                            "src_preview": "images/lamp-sm-0.jpg",
-                            "caption": "Side view of Gestural Lamp. "
-                        }
+                        "caption" : "Augmenting with data has often been seen as overall uninteresting to the general public. Convolve looks to seemingly change that notion almost entirely. The next step is picking data that is worth investigating and of an interest to the viewer. The curation of interesting and dynamic data can change almost everything about how we feel about any given subject. When choosing the data that would be augmented onto the Convolve heads up display we kept those notions in mind."
+                    }
+                },
+                {
+                    "name" : "endeavorImageFSList",
+                    "data" : {
+                        "meta" : "Views",
+                        "images" : [
+                            {
+                                "name": "convolve-augment-1",
+                                "src": "images/projects/convolve/hi-res/convolve-augment-1.jpg",
+                                "src_mobile": "images/projects/convolve/hi-res/convolve-augment-1.jpg",
+                                "src_preview": "images/projects/convolve/hi-res/convolve-augment-1.jpg",
+                                "caption": "Convolve Intro"   
+                            },
+                            {
+                                "name": "convolve-augment-1.1",
+                                "src": "images/projects/convolve/hi-res/convolve-augment-1.1.jpg",
+                                "src_mobile": "images/projects/convolve/hi-res/convolve-augment-1.1.jpg",
+                                "src_preview": "images/projects/convolve/hi-res/convolve-augment-1.1.jpg",
+                                "caption": "Convolve Intro"   
+                            },
+                            {
+                                "name": "convolve-augment-1.2",
+                                "src": "images/projects/convolve/hi-res/convolve-augment-1.2.jpg",
+                                "src_mobile": "images/projects/convolve/hi-res/convolve-augment-1.2.jpg",
+                                "src_preview": "images/projects/convolve/hi-res/convolve-augment-1.2.jpg",
+                                "caption": "Convolve Intro"   
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorSubheaderFS",
+                    "data" : {
+                        "subheader" : "Convolve Icon System"
                     }
                 },
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
                         "image" : {
-                            "name": "hero",
-                            "src": "images/crystal-8.jpg",
-                            "src_mobile": "images/crystal-8.jpg",
-                            "src_preview": "images/lamp-sm-0.jpg",
-                            "caption": "Side view of Gestural Lamp. "
+                            "name": "convolve-augment-2",
+                            "src": "images/projects/convolve/hi-res/convolve-augment-2.jpg",
+                            "src_mobile": "images/projects/convolve/hi-res/convolve-augment-2.jpg",
+                            "src_preview": "images/projects/convolve/hi-res/convolve-augment-2.jpg",
+                            "caption": "Convolve Icon System"
                         }
                     }
                 },
                 {
-                    "name" : "endeavorEndPad",
+                    "name" : "endeavorCaptionFS",
+                    "data" : {
+                        "caption" : "We focused in on subjects such as geography, architecture, paradox, allegory, metaphor, chance, games, roles, and totems. Using this as a base we developed a HUD that would share this information with its user and allow navigation and filtering based on one or all simultaneously."
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "image" : {
+                            "name": "convolve-augment-3",
+                            "src": "images/projects/convolve/hi-res/convolve-augment-3.jpg",
+                            "src_mobile": "images/projects/convolve/hi-res/convolve-augment-3.jpg",
+                            "src_preview": "images/projects/convolve/hi-res/convolve-augment-3.jpg",
+                            "caption": "Convolve Navigation System"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorCaptionFS",
+                    "data" : {
+                        "caption" : "We also took advantage of the time scrubber as a way to not only navigate viewing time but to link users to what dream state was currently being experienced within the film. Outer most layer was being awake and the center most point being limbo. The scrubber shown is simply a prototype."
+                    }
+                },
+                {
+                    "name" : "endeavorImageFSList",
+                    "data" : {
+                        "meta" : "Views",
+                        "images" : [
+                            {
+                                "name": "convolve-screen-4",
+                                "src": "images/projects/convolve/hi-res/convolve-screen-4.jpg",
+                                "src_mobile": "images/projects/convolve/hi-res/convolve-screen-4.jpg",
+                                "src_preview": "images/projects/convolve/hi-res/convolve-screen-4.jpg",
+                                "caption": "Convolve Screen 4"   
+                            },
+                            {
+                                "name": "convolve-screen-5",
+                                "src": "images/projects/convolve/hi-res/convolve-screen-5.jpg",
+                                "src_mobile": "images/projects/convolve/hi-res/convolve-screen-5.jpg",
+                                "src_preview": "images/projects/convolve/hi-res/convolve-screen-5.jpg",
+                                "caption": "Convolve Screen 5"   
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorSubheaderFS",
+                    "data" : {
+                        "subheader" : "Reflections"
+                    }
+                },
+                {
+                    "name" : "endeavorDescriptions",
+                    "data" : {
+                        "sections" : [
+                            {
+                                "name" : "Lessons Learned",
+                                "content" : "Augmenting with data has often been seen as overall uninteresting to the general public. Convolve looks to seemingly change that notion almost entirely. The next step is picking data that is worth investigating and of an interest to the viewer. The curation of interesting and dynamic data can change almost everything about how we feel about any given subject. When choosing the data that would be augmented onto the Convolve heads up display we kept those notions in mind."
+                            },
+                            {
+                                "name" : "Next Steps",
+                                "content" : "Augmenting with data has often been seen as overall uninteresting to the general public. Convolve looks to seemingly change that notion almost entirely. The next step is picking data that is worth investigating and of an interest to the viewer. The curation of interesting and dynamic data can change almost everything about how we feel about any given subject. When choosing the data that would be augmented onto the Convolve heads up display we kept those notions in mind."
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorEndPad250",
                     "data" : {}
                 }
             ]
@@ -1468,10 +1547,10 @@
                                 "caption": "Dig gif image"   
                             },
                             {
-                                "name": "dig-brandbook-sections",
-                                "src": "images/projects/dig/hi-res/dig-brandbook-sections.jpg",
-                                "src_mobile": "images/projects/dig/hi-res/dig-brandbook-sections.jpg",
-                                "src_preview": "images/projects/dig/hi-res/dig-brandbook-sections.jpg",
+                                "name": "dig-brandbook-sections-1",
+                                "src": "images/projects/dig/hi-res/dig-brandbook-sections-1.jpg",
+                                "src_mobile": "images/projects/dig/hi-res/dig-brandbook-sections-1.jpg",
+                                "src_preview": "images/projects/dig/hi-res/dig-brandbook-sections-1.jpg",
                                 "caption": "Dig gif image"   
                             },
                             {
@@ -1558,13 +1637,6 @@
                                 "src_mobile": "images/projects/dig/hi-res/dig-poster-1.2.jpg",
                                 "src_preview": "images/projects/dig/hi-res/dig-poster-1.2.jpg",
                                 "caption": "Dig Poster"   
-                            },
-                            {
-                                "name": "dig-poster-1.3",
-                                "src": "images/projects/dig/hi-res/dig-poster-1.3.jpg",
-                                "src_mobile": "images/projects/dig/hi-res/dig-poster-1.3.jpg",
-                                "src_preview": "images/projects/dig/hi-res/dig-poster-1.3.jpg",
-                                "caption": "Dig Poster"   
                             }
                         ]
                     }
@@ -1643,34 +1715,12 @@
                     "name" : "endeavorImageFS",
                     "data" : {
                         "image" : {
-                            "name": "dig-algo-0.1",
-                            "src": "images/projects/dig/hi-res/dig-algo-0.1.jpg",
-                            "src_mobile": "images/projects/dig/hi-res/dig-algo-0.1.jpg",
-                            "src_preview": "images/projects/dig/hi-res/dig-algo-0.1.jpg",
+                            "name": "dig-algo-0.2",
+                            "src": "images/projects/dig/hi-res/dig-algo-0.2.jpg",
+                            "src_mobile": "images/projects/dig/hi-res/dig-algo-0.2.jpg",
+                            "src_preview": "images/projects/dig/hi-res/dig-algo-0.2.jpg",
                             "caption": "Dig gif image"   
                         }
-                    }
-                },
-                {
-                    "name" : "endeavorImageFSList",
-                    "data" : {
-                        "meta" : "Process",
-                        "images" : [
-                            {
-                                "name": "dig-process-1",
-                                "src": "images/projects/dig/hi-res/dig-process-1.jpg",
-                                "src_mobile": "images/projects/dig/hi-res/dig-process-1.jpg",
-                                "src_preview": "images/projects/dig/hi-res/dig-process-1.jpg",
-                                "caption": "Dig gif image"   
-                            },
-                            {
-                                "name": "dig-process-2",
-                                "src": "images/projects/dig/hi-res/dig-process-2.jpg",
-                                "src_mobile": "images/projects/dig/hi-res/dig-process-2.jpg",
-                                "src_preview": "images/projects/dig/hi-res/dig-process-2.jpg",
-                                "caption": "Dig gif image"   
-                            }
-                        ]
                     }
                 },
                 {

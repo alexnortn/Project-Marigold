@@ -52,6 +52,8 @@ let _projectCurrentId,
 // DOM Ready =============================================================
 $(document).ready(function() {
 
+    console.log('we out here');
+
     // Check mobile
     if (isMobile.tablet || isMobile.phone) {
         _mobile = true;
