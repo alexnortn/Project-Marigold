@@ -2352,6 +2352,18 @@
                     }
                 },
                 {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "image" : {
+                            "name": "das-interactive-views",
+                            "src": "images/projects/das-interactive/hi-res/das-interactive-views.jpg",
+                            "src_mobile": "images/projects/das-interactive/hi-res/das-interactive-views.jpg",
+                            "src_preview": "images/projects/das-interactive/hi-res/das-interactive-views.jpg",
+                            "caption": "DAS Interactive Views"
+                        }
+                    }
+                },
+                {
                     "name" : "endeavorSubheaderFS",
                     "data" : {
                         "subheader" : "Reflections"
