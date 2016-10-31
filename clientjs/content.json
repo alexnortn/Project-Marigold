@@ -1777,6 +1777,27 @@
                     }
                 },
                 {
+                    "name" : "endeavorSubheaderFS",
+                    "data" : {
+                        "subheader" : "Reflections"
+                    }
+                },
+                {
+                    "name" : "endeavorDescriptions",
+                    "data" : {
+                        "sections" : [
+                            {
+                                "name" : "Lessons Learned",
+                                "content" : "Augmenting with data has often been seen as overall uninteresting to the general public. Convolve looks to seemingly change that notion almost entirely. The next step is picking data that is worth investigating and of an interest to the viewer. The curation of interesting and dynamic data can change almost everything about how we feel about any given subject. When choosing the data that would be augmented onto the Convolve heads up display we kept those notions in mind."
+                            },
+                            {
+                                "name" : "Next Steps",
+                                "content" : "Augmenting with data has often been seen as overall uninteresting to the general public. Convolve looks to seemingly change that notion almost entirely. The next step is picking data that is worth investigating and of an interest to the viewer. The curation of interesting and dynamic data can change almost everything about how we feel about any given subject. When choosing the data that would be augmented onto the Convolve heads up display we kept those notions in mind."
+                            }
+                        ]
+                    }
+                },
+                {
                     "name" : "endeavorEndPad",
                     "data" : {}
                 }
@@ -1946,17 +1967,18 @@
             "route" :"das-project",
             "name"  : "DAS",
             "project_type"  : "Project",
-            "year"  : "2014",
+            "year"  : "2015",
             "preview" :"das-preview",
             "medium": [
-                "Paper",
-                "Wood",
-                "Arduino"
+                "Magazing",
+                "Digital Publication",
+                "Interactive"
             ],
             "technique": [
-                "Laser Cutter",
-                "Wood Working",
-                "Programing"
+                "Typesetting",
+                "Layout",
+                "Graphic Design",
+                "User Experience Design"
             ],
             "description" : {
                 "brief": "A traditional Japanese lamp that responds gesturally to weather phenomena.",
@@ -1965,109 +1987,116 @@
                 "long_2": "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know?"
             },
             "meta" : {
-                "Client" : "Self (MIT)",
+                "Client" : "MassArt",
                 "Year" : 2015,
-                "Role" : "Designer / Developer",
+                "Role" : "Designer / Editor",
                 "Team" : "—",
-                "Discipline" : "Fabrication / Industrial Design",
-                "Medium" : "Internet of Things / Wood",
-                "Technologies" : "Arduino / Woodshop",
+                "Discipline" : "Graphic Design / UX Design",
+                "Medium" : "Physical Publication / Digital Publication",
+                "Technologies" : "—",
                 "Duration" : "Two Months"
             },
-            "image_hero": "images/crystal-8.jpg",
-            "image_preview": "images/crystal-8.jpg",
+            "image_hero": "images/projects/das/hi-res/das-hero-2.jpg",
+            "image_preview": "images/projects/das/hi-res/das-preview.jpg",
             "sections" : [
                 {
-                    "name" : "endeavorImageFS",
+                    "name" : "endeavorSubheaderFS",
                     "data" : {
-                        "image" : {
-                            "name": "hero",
-                            "src": "images/crystal-8.jpg",
-                            "src_mobile": "images/crystal-8.jpg",
-                            "src_preview": "images/lamp-sm-0.jpg",
-                            "caption": "Side view of Gestural Lamp. "
-                        }
+                        "subheader" : "Physical Publication"
+                    }
+                },
+                {
+                    "name" : "endeavorImageFSList",
+                    "data" : {
+                        "meta" : "DAS Intro",
+                        "images" : [
+                            {
+                                "name": "DAS Intro",
+                                "src": "images/projects/das/hi-res/das-pub-0.jpg",
+                                "src_mobile": "images/projects/das/hi-res/das-pub-0.jpg",
+                                "src_preview": "images/projects/das/hi-res/das-pub-0.jpg",
+                                "caption": "DAS Cover"   
+                            },
+                            {
+                                "name": "DAS Contents",
+                                "src": "images/projects/das/hi-res/das-pub-1.jpg",
+                                "src_mobile": "images/projects/das/hi-res/das-pub-1.jpg",
+                                "src_preview": "images/projects/das/hi-res/das-pub-1.jpg",
+                                "caption": "DAS Contents"   
+                            },
+                            {
+                                "name": "DAS Intro",
+                                "src": "images/projects/das/hi-res/das-pub-2.jpg",
+                                "src_mobile": "images/projects/das/hi-res/das-pub-2.jpg",
+                                "src_preview": "images/projects/das/hi-res/das-pub-2.jpg",
+                                "caption": "DAS Contents CU"   
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorCaptionFS",
+                    "data" : {
+                        "caption" : "Augmenting with data has often been seen as overall uninteresting to the general public. Convolve looks to seemingly change that notion almost entirely. The next step is picking data that is worth investigating and of an interest to the viewer. The curation of interesting and dynamic data can change almost everything about how we feel about any given subject. When choosing the data that would be augmented onto the Convolve heads up display we kept those notions in mind."
                     }
                 },
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
                         "image" : {
-                            "name": "hero",
-                            "src": "images/crystal-8.jpg",
-                            "src_mobile": "images/crystal-8.jpg",
-                            "src_preview": "images/lamp-sm-0.jpg",
-                            "caption": "Side view of Gestural Lamp. "
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImageFS",
-                    "data" : {
-                        "image" : {
-                            "name": "hero",
-                            "src": "images/crystal-8.jpg",
-                            "src_mobile": "images/crystal-8.jpg",
-                            "src_preview": "images/lamp-sm-0.jpg",
-                            "caption": "Side view of Gestural Lamp. "
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorVideoFS",
-                    "data" : {
-                        "video" : {
-                            "name" : "MSTY",
-                            "src" : "https://www.youtube.com/embed/V2FqFHfjFaM",
-                            "caption" : "something" 
+                            "name": "DAS Computation Intro",
+                            "src": "images/projects/das/hi-res/das-pub-3.jpg",
+                            "src_mobile": "images/projects/das/hi-res/das-pub-3",
+                            "src_preview": "images/projects/das/hi-res/das-pub-3",
+                            "caption": "DAS Computation Intro"
                         }
                     }
                 },
                 {
                     "name" : "endeavorImageSlider",
                     "data" : {
-                        "images": [
+                        "images" : [
                             {
-                                "name": "hero",
-                                "src": "images/crystal-8.jpg",
-                                "src_mobile": "images/crystal-8.jpg",
-                                "src_preview": "images/lamp-sm-0.jpg",
-                                "caption": "Side view of Gestural Lamp. "
+                                "name": "DAS Computation 0",
+                                "src": "images/projects/das/hi-res/das-pub-4.jpg",
+                                "src_mobile": "images/projects/das/hi-res/das-pub-4.jpg",
+                                "src_preview": "images/projects/das/hi-res/das-pub-4.jpg",
+                                "caption": "DAS Computation 0"   
                             },
                             {
-                                "name": "support_1",
-                                "src": "images/crystal-8.jpg",
-                                "src_mobile": "images/crystal-8.jpg",
-                                "src_preview": "Images/Sun-sm.png",
-                                "caption": " "
+                                "name": "DAS Computation 1",
+                                "src": "images/projects/das/hi-res/das-pub-5.jpg",
+                                "src_mobile": "images/projects/das/hi-res/das-pub-5.jpg",
+                                "src_preview": "images/projects/das/hi-res/das-pub-5.jpg",
+                                "caption": "DAS Computation 1"   
                             },
                             {
-                                "name": "support_2",
-                                "src": "images/crystal-8.jpg",
-                                "src_mobile": "images/crystal-8.jpg",
-                                "src_preview": "Images/Sun-sm.png",
-                                "caption": " "
+                                "name": "DAS Computation 2",
+                                "src": "images/projects/das/hi-res/das-pub-6.jpg",
+                                "src_mobile": "images/projects/das/hi-res/das-pub-6.jpg",
+                                "src_preview": "images/projects/das/hi-res/das-pub-6.jpg",
+                                "caption": "DAS Computation 2"   
                             },
                             {
-                                "name": "support_3",
-                                "src": "images/crystal-8.jpg",
-                                "src_mobile": "images/crystal-8.jpg",
-                                "src_preview": "Images/Sun-sm.png",
-                                "caption": " "
+                                "name": "DAS Computation 3",
+                                "src": "images/projects/das/hi-res/das-pub-7.jpg",
+                                "src_mobile": "images/projects/das/hi-res/das-pub-7.jpg",
+                                "src_preview": "images/projects/das/hi-res/das-pub-7.jpg",
+                                "caption": "DAS Computation 3"   
                             },
                             {
-                                "name": "support_4",
-                                "src": "images/crystal-8.jpg",
-                                "src_mobile": "images/crystal-8.jpg",
-                                "src_preview": "Images/Sun-sm.png",
-                                "caption": " "
+                                "name": "DAS Computation 4",
+                                "src": "images/projects/das/hi-res/das-pub-8.jpg",
+                                "src_mobile": "images/projects/das/hi-res/das-pub-8.jpg",
+                                "src_preview": "images/projects/das/hi-res/das-pub-8.jpg",
+                                "caption": "DAS Computation 4"   
                             },
                             {
-                                "name": "support_5",
-                                "src": "images/crystal-8.jpg",
-                                "src_mobile": "images/crystal-8.jpg",
-                                "src_preview": "Images/Sun-sm.png",
-                                "caption": " "
+                                "name": "DAS Computation 5",
+                                "src": "images/projects/das/hi-res/das-pub-9.jpg",
+                                "src_mobile": "images/projects/das/hi-res/das-pub-9.jpg",
+                                "src_preview": "images/projects/das/hi-res/das-pub-9.jpg",
+                                "caption": "DAS Computation 5"   
                             }
                         ]
                     }
@@ -2076,11 +2105,11 @@
                     "name" : "endeavorImageFS",
                     "data" : {
                         "image" : {
-                            "name": "hero",
-                            "src": "images/crystal-8.jpg",
-                            "src_mobile": "images/crystal-8.jpg",
-                            "src_preview": "images/lamp-sm-0.jpg",
-                            "caption": "Side view of Gestural Lamp. "
+                            "name": "DAS Computation CU 2",
+                            "src": "images/projects/das/hi-res/das-pub-10.jpg",
+                            "src_mobile": "images/projects/das/hi-res/das-pub-10.jpg",
+                            "src_preview": "images/projects/das/hi-res/das-pub-10.jpg",
+                            "caption": "DAS Computation CU 2"   
                         }
                     }
                 },
@@ -2088,146 +2117,233 @@
                     "name" : "endeavorImageFS",
                     "data" : {
                         "image" : {
-                            "name": "hero",
-                            "src": "images/crystal-8.jpg",
-                            "src_mobile": "images/crystal-8.jpg",
-                            "src_preview": "images/lamp-sm-0.jpg",
-                            "caption": "Side view of Gestural Lamp. "
+                            "name": "DAS Computation 3D",
+                            "src": "images/projects/das/hi-res/das-pub-11.jpg",
+                            "src_mobile": "images/projects/das/hi-res/das-pub-11.jpg",
+                            "src_preview": "images/projects/das/hi-res/das-pub-11.jpg",
+                            "caption": "DAS Computation 3D"   
                         }
                     }
                 },
                 {
-                    "name" : "endeavorEndPad",
+                    "name" : "endeavorCaptionFS",
+                    "data" : {
+                        "caption" : "We also took advantage of the time scrubber as a way to not only navigate viewing time but to link users to what dream state was currently being experienced within the film. Outer most layer was being awake and the center most point being limbo. The scrubber shown is simply a prototype."
+                    }
+                },
+                {
+                    "name" : "endeavorImageFSList",
+                    "data" : {
+                        "images" : [
+                            {
+                                "name": "DAS Computation 6",
+                                "src": "images/projects/das/hi-res/das-pub-12.jpg",
+                                "src_mobile": "images/projects/das/hi-res/das-pub-12.jpg",
+                                "src_preview": "images/projects/das/hi-res/das-pub-12.jpg",
+                                "caption": "DAS Computation 6"   
+                            },
+                            {
+                                "name": "DAS Computation 7",
+                                "src": "images/projects/das/hi-res/das-pub-13.jpg",
+                                "src_mobile": "images/projects/das/hi-res/das-pub-13.jpg",
+                                "src_preview": "images/projects/das/hi-res/das-pub-13.jpg",
+                                "caption": "DAS Computation 7"   
+                            },
+                            {
+                                "name": "DAS Computation 8",
+                                "src": "images/projects/das/hi-res/das-pub-14.jpg",
+                                "src_mobile": "images/projects/das/hi-res/das-pub-14.jpg",
+                                "src_preview": "images/projects/das/hi-res/das-pub-14.jpg",
+                                "caption": "DAS Computation 8"   
+                            },
+                            {
+                                "name": "DAS Computation 9",
+                                "src": "images/projects/das/hi-res/das-pub-15.jpg",
+                                "src_mobile": "images/projects/das/hi-res/das-pub-15.jpg",
+                                "src_preview": "images/projects/das/hi-res/das-pub-15.jpg",
+                                "caption": "DAS Computation 9"   
+                            },
+                            {
+                                "name": "DAS Computation 10",
+                                "src": "images/projects/das/hi-res/das-pub-16.jpg",
+                                "src_mobile": "images/projects/das/hi-res/das-pub-16.jpg",
+                                "src_preview": "images/projects/das/hi-res/das-pub-16.jpg",
+                                "caption": "DAS Computation 10"   
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorPubFS",
+                    "data" : {
+                        "pub" : {
+                            "name" : "DAS_Quaterly",
+                            "src" : "//e.issuu.com/embed.html#22891629/32844009",
+                            "caption" : "Alex Norton DAS DAS_Quaterly." 
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorSubheaderFS",
+                    "data" : {
+                        "subheader" : "Reflections"
+                    }
+                },
+                {
+                    "name" : "endeavorDescriptions",
+                    "data" : {
+                        "sections" : [
+                            {
+                                "name" : "Lessons Learned",
+                                "content" : "Augmenting with data has often been seen as overall uninteresting to the general public. Convolve looks to seemingly change that notion almost entirely. The next step is picking data that is worth investigating and of an interest to the viewer. The curation of interesting and dynamic data can change almost everything about how we feel about any given subject. When choosing the data that would be augmented onto the Convolve heads up display we kept those notions in mind."
+                            },
+                            {
+                                "name" : "Next Steps",
+                                "content" : "Augmenting with data has often been seen as overall uninteresting to the general public. Convolve looks to seemingly change that notion almost entirely. The next step is picking data that is worth investigating and of an interest to the viewer. The curation of interesting and dynamic data can change almost everything about how we feel about any given subject. When choosing the data that would be augmented onto the Convolve heads up display we kept those notions in mind."
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorEndPad250",
                     "data" : {}
                 }
             ]
         },
         {
-            "route" :"olympics-project",
-            "name"  : "Olympics",
+            "route" :"das-interactive-project",
+            "name"  : "DAS Interactive",
             "project_type"  : "Project",
-            "year"  : "2014",
-            "preview" :"olympics-preview",
+            "year"  : "2015",
+            "preview" :"das-preview",
             "medium": [
-                "Paper",
-                "Wood",
-                "Arduino"
+                "Magazing",
+                "Digital Publication",
+                "Interactive"
             ],
             "technique": [
-                "Laser Cutter",
-                "Wood Working",
-                "Programing"
+                "Typesetting",
+                "Layout",
+                "Graphic Design",
+                "User Experience Design"
             ],
             "description" : {
                 "brief": "A traditional Japanese lamp that responds gesturally to weather phenomena.",
-                "extensive": "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know? When is a qualitative understanding of data sufficient? The lamp is also a sort of commentary on the current state of culture in Japan. It is no coincidence that the lamp resembles a tower crane. The lamp bridges the gap between traditional Japanese culture and Japan as a world-leading technological hub. The Lamp is a collaboration between Massart’s graphic design program and MIT’s Architectural Computation department. The following pages detail the CAD models and a bit of the building process for the first of the 3 proposed lamps, this is the smallest desk lamp. Further on there is a glimpse into the program written to aggregate weather sources as well as a web-interface designed to program + control the lamp.",
-                "long_1": "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know? When is a qualitative understanding of data sufficient? The lamp is also a sort of commentary on the current state of culture in Japan.",
+                "extensive": "Inspired by Charles and Ray Eames’ canonical Powers of Ten, the course explores the relationship between science and engineering through the lens of Design. It examines howtransformationsin science and technology have influenced design thinking, and vice versa. It oòers interdisciplinary tools and methods to represent, model, design and fabricate objects, machines, and systems. Structured as core lectures and lab sessions, the course is organize by systems: Designing Data, Designing Materiality, Designing Life and Designing Nature. World-renowned designers, scientists and engineers will contribute with guest lectures. Within a workshop setting, we will design things - material and immaterial; we will learn new computational and fabrication tools along the way; we will develop methodologies for design research of interdisciplinary problems; we will practice what it means to think, live, and breathe Design.<br><br>The course creates a new pedagogical paradigm for learning and education, which cuts across various disciplines and scales to demonstrate that design is not a discipline, but a way of looking at the world; one that promotes the synthesis of interdisciplinary knowledge across scales in order to create objects and systems for the greater good. his is partly due to the fact that big, real-world challenges - such as the race to cure cancer, the Mars landing mission and the challenge to design sustainable cities and buildings - require, perhaps more than ever, an interdisciplinary skill set combined with an ability to operate across multiple scales with creativity.<br><br>The history of design innovation provides endless examples of cross-disciplinary innovations and individuals. Buckminster Fuller, for instance, was a designer, a futurist, an inventor, an author and a systems theorist. His designs based on the geodesic dome have influenced not only generations of designers, architects, engineers and urban planners but also chemists, material scientists and physicists, who were inspired by his representation of the physical world. Charles and Ray Eames were mid-century American designers working at a range of scales and in a variety of media, from furniture and military aircraft parts to ûlms and exhibitions. Their experiments in design fabrication and cultural media provide signiûcant references for design education today. An example of the value of learning across disciplines today is found in Siddhartha Mukherjee’s book, Emperor of All Maladies: a Biography of Cancer, which tells the story of how the process of inventing cell dyes to trace the growth of cancerous tissues was actually inspired by textile design.<br><br>Design has expanded to include a broad range of scales and disciplines, shifting from the production of objects to the design of experiences, data, networks, territories, and social frameworks. Designers are no longer exclusively committed to design autonomous objects (buildings, cars, furniture and household products), but rather are conceiving and testing whole ecologies of design experiences (robotic construction systems, transportation systems, health care experiences, water distribution, and clean energy). his has prompted Tim Brown, CEO of the design consultancy ûrm IDEO to state, Design is too important to be left to designers. he scope of design ecologies is so broad and so integrated with other disciplines that traditionally trained designers are ill equipped to tackle the new breadth of design tasks at hand. Interdisciplinary teams must work together to design the systems, experiences, environments and futures for our increasingly complex world. Design Across Scales, Disciplines and Problem Contexts responds to this challenge by creating a course that is not a traditional design course for designers, but one about culture, science and technology serving as a foundation course for all students regardless of their major",
+                "long_1": "This course explores the reciprocal relationships among design, science, and technology by covering a wide range of topics including industrial design, architecture, visualization and perception, design computation, material ecology, and environmental design and sustainability. Students will examine how transformations in science and technology have influenced design thinking and vice versa, as well as develop methodologies for design research and collaborate on design solutions to interdisciplinary problems.",
                 "long_2": "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know?"
             },
             "meta" : {
-                "Client" : "Self (MIT)",
+                "Client" : "MassArt",
                 "Year" : 2015,
-                "Role" : "Designer / Developer",
+                "Role" : "Designer / Editor",
                 "Team" : "—",
-                "Discipline" : "Fabrication / Industrial Design",
-                "Medium" : "Internet of Things / Wood",
-                "Technologies" : "Arduino / Woodshop",
+                "Discipline" : "Graphic Design / UX Design",
+                "Medium" : "Physical Publication / Digital Publication",
+                "Technologies" : "—",
                 "Duration" : "Two Months"
             },
-            "image_hero": "images/crystal-8.jpg",
-            "image_preview": "images/crystal-8.jpg",
+            "image_hero": "images/projects/das/hi-res/das-hero-2.jpg",
+            "image_preview": "images/projects/das/hi-res/das-preview.jpg",
             "sections" : [
                 {
-                    "name" : "endeavorImageFS",
+                    "name" : "endeavorSubheaderFS",
                     "data" : {
-                        "image" : {
-                            "name": "hero",
-                            "src": "images/crystal-8.jpg",
-                            "src_mobile": "images/crystal-8.jpg",
-                            "src_preview": "images/lamp-sm-0.jpg",
-                            "caption": "Side view of Gestural Lamp. "
-                        }
+                        "subheader" : "Physical Publication"
+                    }
+                },
+                {
+                    "name" : "endeavorImageFSList",
+                    "data" : {
+                        "meta" : "DAS Intro",
+                        "images" : [
+                            {
+                                "name": "DAS Intro",
+                                "src": "images/projects/das/hi-res/das-pub-0.jpg",
+                                "src_mobile": "images/projects/das/hi-res/das-pub-0.jpg",
+                                "src_preview": "images/projects/das/hi-res/das-pub-0.jpg",
+                                "caption": "DAS Cover"   
+                            },
+                            {
+                                "name": "DAS Contents",
+                                "src": "images/projects/das/hi-res/das-pub-1.jpg",
+                                "src_mobile": "images/projects/das/hi-res/das-pub-1.jpg",
+                                "src_preview": "images/projects/das/hi-res/das-pub-1.jpg",
+                                "caption": "DAS Contents"   
+                            },
+                            {
+                                "name": "DAS Intro",
+                                "src": "images/projects/das/hi-res/das-pub-2.jpg",
+                                "src_mobile": "images/projects/das/hi-res/das-pub-2.jpg",
+                                "src_preview": "images/projects/das/hi-res/das-pub-2.jpg",
+                                "caption": "DAS Contents CU"   
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorCaptionFS",
+                    "data" : {
+                        "caption" : "Augmenting with data has often been seen as overall uninteresting to the general public. Convolve looks to seemingly change that notion almost entirely. The next step is picking data that is worth investigating and of an interest to the viewer. The curation of interesting and dynamic data can change almost everything about how we feel about any given subject. When choosing the data that would be augmented onto the Convolve heads up display we kept those notions in mind."
                     }
                 },
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
                         "image" : {
-                            "name": "hero",
-                            "src": "images/crystal-8.jpg",
-                            "src_mobile": "images/crystal-8.jpg",
-                            "src_preview": "images/lamp-sm-0.jpg",
-                            "caption": "Side view of Gestural Lamp. "
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImageFS",
-                    "data" : {
-                        "image" : {
-                            "name": "hero",
-                            "src": "images/crystal-8.jpg",
-                            "src_mobile": "images/crystal-8.jpg",
-                            "src_preview": "images/lamp-sm-0.jpg",
-                            "caption": "Side view of Gestural Lamp. "
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorVideoFS",
-                    "data" : {
-                        "video" : {
-                            "name" : "MSTY",
-                            "src" : "https://www.youtube.com/embed/V2FqFHfjFaM",
-                            "caption" : "something" 
+                            "name": "DAS Computation Intro",
+                            "src": "images/projects/das/hi-res/das-pub-3.jpg",
+                            "src_mobile": "images/projects/das/hi-res/das-pub-3",
+                            "src_preview": "images/projects/das/hi-res/das-pub-3",
+                            "caption": "DAS Computation Intro"
                         }
                     }
                 },
                 {
                     "name" : "endeavorImageSlider",
                     "data" : {
-                        "images": [
+                        "images" : [
                             {
-                                "name": "hero",
-                                "src": "images/crystal-8.jpg",
-                                "src_mobile": "images/crystal-8.jpg",
-                                "src_preview": "images/lamp-sm-0.jpg",
-                                "caption": "Side view of Gestural Lamp. "
+                                "name": "DAS Computation 0",
+                                "src": "images/projects/das/hi-res/das-pub-4.jpg",
+                                "src_mobile": "images/projects/das/hi-res/das-pub-4.jpg",
+                                "src_preview": "images/projects/das/hi-res/das-pub-4.jpg",
+                                "caption": "DAS Computation 0"   
                             },
                             {
-                                "name": "support_1",
-                                "src": "images/crystal-8.jpg",
-                                "src_mobile": "images/crystal-8.jpg",
-                                "src_preview": "Images/Sun-sm.png",
-                                "caption": " "
+                                "name": "DAS Computation 1",
+                                "src": "images/projects/das/hi-res/das-pub-5.jpg",
+                                "src_mobile": "images/projects/das/hi-res/das-pub-5.jpg",
+                                "src_preview": "images/projects/das/hi-res/das-pub-5.jpg",
+                                "caption": "DAS Computation 1"   
                             },
                             {
-                                "name": "support_2",
-                                "src": "images/crystal-8.jpg",
-                                "src_mobile": "images/crystal-8.jpg",
-                                "src_preview": "Images/Sun-sm.png",
-                                "caption": " "
+                                "name": "DAS Computation 2",
+                                "src": "images/projects/das/hi-res/das-pub-6.jpg",
+                                "src_mobile": "images/projects/das/hi-res/das-pub-6.jpg",
+                                "src_preview": "images/projects/das/hi-res/das-pub-6.jpg",
+                                "caption": "DAS Computation 2"   
                             },
                             {
-                                "name": "support_3",
-                                "src": "images/crystal-8.jpg",
-                                "src_mobile": "images/crystal-8.jpg",
-                                "src_preview": "Images/Sun-sm.png",
-                                "caption": " "
+                                "name": "DAS Computation 3",
+                                "src": "images/projects/das/hi-res/das-pub-7.jpg",
+                                "src_mobile": "images/projects/das/hi-res/das-pub-7.jpg",
+                                "src_preview": "images/projects/das/hi-res/das-pub-7.jpg",
+                                "caption": "DAS Computation 3"   
                             },
                             {
-                                "name": "support_4",
-                                "src": "images/crystal-8.jpg",
-                                "src_mobile": "images/crystal-8.jpg",
-                                "src_preview": "Images/Sun-sm.png",
-                                "caption": " "
+                                "name": "DAS Computation 4",
+                                "src": "images/projects/das/hi-res/das-pub-8.jpg",
+                                "src_mobile": "images/projects/das/hi-res/das-pub-8.jpg",
+                                "src_preview": "images/projects/das/hi-res/das-pub-8.jpg",
+                                "caption": "DAS Computation 4"   
                             },
                             {
-                                "name": "support_5",
-                                "src": "images/crystal-8.jpg",
-                                "src_mobile": "images/crystal-8.jpg",
-                                "src_preview": "Images/Sun-sm.png",
-                                "caption": " "
+                                "name": "DAS Computation 5",
+                                "src": "images/projects/das/hi-res/das-pub-9.jpg",
+                                "src_mobile": "images/projects/das/hi-res/das-pub-9.jpg",
+                                "src_preview": "images/projects/das/hi-res/das-pub-9.jpg",
+                                "caption": "DAS Computation 5"   
                             }
                         ]
                     }
@@ -2236,11 +2352,11 @@
                     "name" : "endeavorImageFS",
                     "data" : {
                         "image" : {
-                            "name": "hero",
-                            "src": "images/crystal-8.jpg",
-                            "src_mobile": "images/crystal-8.jpg",
-                            "src_preview": "images/lamp-sm-0.jpg",
-                            "caption": "Side view of Gestural Lamp. "
+                            "name": "DAS Computation CU 2",
+                            "src": "images/projects/das/hi-res/das-pub-10.jpg",
+                            "src_mobile": "images/projects/das/hi-res/das-pub-10.jpg",
+                            "src_preview": "images/projects/das/hi-res/das-pub-10.jpg",
+                            "caption": "DAS Computation CU 2"   
                         }
                     }
                 },
@@ -2248,16 +2364,95 @@
                     "name" : "endeavorImageFS",
                     "data" : {
                         "image" : {
-                            "name": "hero",
-                            "src": "images/crystal-8.jpg",
-                            "src_mobile": "images/crystal-8.jpg",
-                            "src_preview": "images/lamp-sm-0.jpg",
-                            "caption": "Side view of Gestural Lamp. "
+                            "name": "DAS Computation 3D",
+                            "src": "images/projects/das/hi-res/das-pub-11.jpg",
+                            "src_mobile": "images/projects/das/hi-res/das-pub-11.jpg",
+                            "src_preview": "images/projects/das/hi-res/das-pub-11.jpg",
+                            "caption": "DAS Computation 3D"   
                         }
                     }
                 },
                 {
-                    "name" : "endeavorEndPad",
+                    "name" : "endeavorCaptionFS",
+                    "data" : {
+                        "caption" : "We also took advantage of the time scrubber as a way to not only navigate viewing time but to link users to what dream state was currently being experienced within the film. Outer most layer was being awake and the center most point being limbo. The scrubber shown is simply a prototype."
+                    }
+                },
+                {
+                    "name" : "endeavorImageFSList",
+                    "data" : {
+                        "images" : [
+                            {
+                                "name": "DAS Computation 6",
+                                "src": "images/projects/das/hi-res/das-pub-12.jpg",
+                                "src_mobile": "images/projects/das/hi-res/das-pub-12.jpg",
+                                "src_preview": "images/projects/das/hi-res/das-pub-12.jpg",
+                                "caption": "DAS Computation 6"   
+                            },
+                            {
+                                "name": "DAS Computation 7",
+                                "src": "images/projects/das/hi-res/das-pub-13.jpg",
+                                "src_mobile": "images/projects/das/hi-res/das-pub-13.jpg",
+                                "src_preview": "images/projects/das/hi-res/das-pub-13.jpg",
+                                "caption": "DAS Computation 7"   
+                            },
+                            {
+                                "name": "DAS Computation 8",
+                                "src": "images/projects/das/hi-res/das-pub-14.jpg",
+                                "src_mobile": "images/projects/das/hi-res/das-pub-14.jpg",
+                                "src_preview": "images/projects/das/hi-res/das-pub-14.jpg",
+                                "caption": "DAS Computation 8"   
+                            },
+                            {
+                                "name": "DAS Computation 9",
+                                "src": "images/projects/das/hi-res/das-pub-15.jpg",
+                                "src_mobile": "images/projects/das/hi-res/das-pub-15.jpg",
+                                "src_preview": "images/projects/das/hi-res/das-pub-15.jpg",
+                                "caption": "DAS Computation 9"   
+                            },
+                            {
+                                "name": "DAS Computation 10",
+                                "src": "images/projects/das/hi-res/das-pub-16.jpg",
+                                "src_mobile": "images/projects/das/hi-res/das-pub-16.jpg",
+                                "src_preview": "images/projects/das/hi-res/das-pub-16.jpg",
+                                "caption": "DAS Computation 10"   
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorPubFS",
+                    "data" : {
+                        "pub" : {
+                            "name" : "DAS_Quaterly",
+                            "src" : "//e.issuu.com/embed.html#22891629/32844009",
+                            "caption" : "Alex Norton DAS DAS_Quaterly." 
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorSubheaderFS",
+                    "data" : {
+                        "subheader" : "Reflections"
+                    }
+                },
+                {
+                    "name" : "endeavorDescriptions",
+                    "data" : {
+                        "sections" : [
+                            {
+                                "name" : "Lessons Learned",
+                                "content" : "Augmenting with data has often been seen as overall uninteresting to the general public. Convolve looks to seemingly change that notion almost entirely. The next step is picking data that is worth investigating and of an interest to the viewer. The curation of interesting and dynamic data can change almost everything about how we feel about any given subject. When choosing the data that would be augmented onto the Convolve heads up display we kept those notions in mind."
+                            },
+                            {
+                                "name" : "Next Steps",
+                                "content" : "Augmenting with data has often been seen as overall uninteresting to the general public. Convolve looks to seemingly change that notion almost entirely. The next step is picking data that is worth investigating and of an interest to the viewer. The curation of interesting and dynamic data can change almost everything about how we feel about any given subject. When choosing the data that would be augmented onto the Convolve heads up display we kept those notions in mind."
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorEndPad250",
                     "data" : {}
                 }
             ]

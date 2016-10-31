@@ -32,7 +32,7 @@ $(document).ready(function () {
     	? true
     	: false;
 
-	activateGlyph(_mobile, phone, tablet); // Save battery while testing
+	// activateGlyph(_mobile, phone, tablet); // Save battery while testing /
 
 });
 
