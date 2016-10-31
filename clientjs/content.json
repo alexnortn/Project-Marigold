@@ -215,14 +215,14 @@
                             "src": "images/crystal-8.jpg",
                             "src_mobile": "images/crystal-8.jpg",
                             "src_preview": "images/lamp-sm-0.jpg",
-                            "caption": "Side view of Gestural Lamp. "
+                            "caption": "Side view of Gestural Lamp."
                         },
                         "imageParallax" : {
                             "name": "hero",
                             "src": "images/crystal-8.jpg",
                             "src_mobile": "images/crystal-8.jpg",
                             "src_preview": "images/lamp-sm-0.jpg",
-                            "caption": "Side view of Gestural Lamp. "
+                            "caption": "Side view of Gestural Lamp."
                         },
                         "caption" : "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know?"
                     }
@@ -235,7 +235,7 @@
                             "src": "images/crystal-8.jpg",
                             "src_mobile": "images/crystal-8.jpg",
                             "src_preview": "images/lamp-sm-0.jpg",
-                            "caption": "Side view of Gestural Lamp. "
+                            "caption": "Side view of Gestural Lamp."
                         },
                         "caption" : "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know?"
                     }
@@ -2243,7 +2243,7 @@
                 "Technologies" : "—",
                 "Duration" : "Two Months"
             },
-            "image_hero": "images/projects/das/hi-res/das-hero-2.jpg",
+            "image_hero": "images/projects/das-interactive/hi-res/das-interactive-hero.jpg",
             "image_preview": "images/projects/das/hi-res/das-preview.jpg",
             "sections" : [
                 {
@@ -2253,181 +2253,102 @@
                     }
                 },
                 {
-                    "name" : "endeavorImageFSList",
-                    "data" : {
-                        "meta" : "DAS Intro",
-                        "images" : [
-                            {
-                                "name": "DAS Intro",
-                                "src": "images/projects/das/hi-res/das-pub-0.jpg",
-                                "src_mobile": "images/projects/das/hi-res/das-pub-0.jpg",
-                                "src_preview": "images/projects/das/hi-res/das-pub-0.jpg",
-                                "caption": "DAS Cover"   
-                            },
-                            {
-                                "name": "DAS Contents",
-                                "src": "images/projects/das/hi-res/das-pub-1.jpg",
-                                "src_mobile": "images/projects/das/hi-res/das-pub-1.jpg",
-                                "src_preview": "images/projects/das/hi-res/das-pub-1.jpg",
-                                "caption": "DAS Contents"   
-                            },
-                            {
-                                "name": "DAS Intro",
-                                "src": "images/projects/das/hi-res/das-pub-2.jpg",
-                                "src_mobile": "images/projects/das/hi-res/das-pub-2.jpg",
-                                "src_preview": "images/projects/das/hi-res/das-pub-2.jpg",
-                                "caption": "DAS Contents CU"   
-                            }
-                        ]
-                    }
-                },
-                {
-                    "name" : "endeavorCaptionFS",
-                    "data" : {
-                        "caption" : "Augmenting with data has often been seen as overall uninteresting to the general public. Convolve looks to seemingly change that notion almost entirely. The next step is picking data that is worth investigating and of an interest to the viewer. The curation of interesting and dynamic data can change almost everything about how we feel about any given subject. When choosing the data that would be augmented onto the Convolve heads up display we kept those notions in mind."
-                    }
-                },
-                {
                     "name" : "endeavorImageFS",
                     "data" : {
                         "image" : {
-                            "name": "DAS Computation Intro",
-                            "src": "images/projects/das/hi-res/das-pub-3.jpg",
-                            "src_mobile": "images/projects/das/hi-res/das-pub-3",
-                            "src_preview": "images/projects/das/hi-res/das-pub-3",
-                            "caption": "DAS Computation Intro"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImageSlider",
-                    "data" : {
-                        "images" : [
-                            {
-                                "name": "DAS Computation 0",
-                                "src": "images/projects/das/hi-res/das-pub-4.jpg",
-                                "src_mobile": "images/projects/das/hi-res/das-pub-4.jpg",
-                                "src_preview": "images/projects/das/hi-res/das-pub-4.jpg",
-                                "caption": "DAS Computation 0"   
-                            },
-                            {
-                                "name": "DAS Computation 1",
-                                "src": "images/projects/das/hi-res/das-pub-5.jpg",
-                                "src_mobile": "images/projects/das/hi-res/das-pub-5.jpg",
-                                "src_preview": "images/projects/das/hi-res/das-pub-5.jpg",
-                                "caption": "DAS Computation 1"   
-                            },
-                            {
-                                "name": "DAS Computation 2",
-                                "src": "images/projects/das/hi-res/das-pub-6.jpg",
-                                "src_mobile": "images/projects/das/hi-res/das-pub-6.jpg",
-                                "src_preview": "images/projects/das/hi-res/das-pub-6.jpg",
-                                "caption": "DAS Computation 2"   
-                            },
-                            {
-                                "name": "DAS Computation 3",
-                                "src": "images/projects/das/hi-res/das-pub-7.jpg",
-                                "src_mobile": "images/projects/das/hi-res/das-pub-7.jpg",
-                                "src_preview": "images/projects/das/hi-res/das-pub-7.jpg",
-                                "caption": "DAS Computation 3"   
-                            },
-                            {
-                                "name": "DAS Computation 4",
-                                "src": "images/projects/das/hi-res/das-pub-8.jpg",
-                                "src_mobile": "images/projects/das/hi-res/das-pub-8.jpg",
-                                "src_preview": "images/projects/das/hi-res/das-pub-8.jpg",
-                                "caption": "DAS Computation 4"   
-                            },
-                            {
-                                "name": "DAS Computation 5",
-                                "src": "images/projects/das/hi-res/das-pub-9.jpg",
-                                "src_mobile": "images/projects/das/hi-res/das-pub-9.jpg",
-                                "src_preview": "images/projects/das/hi-res/das-pub-9.jpg",
-                                "caption": "DAS Computation 5"   
-                            }
-                        ]
-                    }
-                },
-                {
-                    "name" : "endeavorImageFS",
-                    "data" : {
-                        "image" : {
-                            "name": "DAS Computation CU 2",
-                            "src": "images/projects/das/hi-res/das-pub-10.jpg",
-                            "src_mobile": "images/projects/das/hi-res/das-pub-10.jpg",
-                            "src_preview": "images/projects/das/hi-res/das-pub-10.jpg",
-                            "caption": "DAS Computation CU 2"   
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImageFS",
-                    "data" : {
-                        "image" : {
-                            "name": "DAS Computation 3D",
-                            "src": "images/projects/das/hi-res/das-pub-11.jpg",
-                            "src_mobile": "images/projects/das/hi-res/das-pub-11.jpg",
-                            "src_preview": "images/projects/das/hi-res/das-pub-11.jpg",
-                            "caption": "DAS Computation 3D"   
+                            "name": "das-interactive-print-5",
+                            "src": "images/projects/das-interactive/hi-res/das-interactive-print-5.jpg",
+                            "src_mobile": "images/projects/das-interactive/hi-res/das-interactive-print-5.jpg",
+                            "src_preview": "images/projects/das-interactive/hi-res/das-interactive-print-5.jpg",
+                            "caption": "Dig Poster"
                         }
                     }
                 },
                 {
                     "name" : "endeavorCaptionFS",
                     "data" : {
-                        "caption" : "We also took advantage of the time scrubber as a way to not only navigate viewing time but to link users to what dream state was currently being experienced within the film. Outer most layer was being awake and the center most point being limbo. The scrubber shown is simply a prototype."
+                        "caption" : "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know?"
                     }
                 },
                 {
-                    "name" : "endeavorImageFSList",
+                    "name" : "endeavorSubheaderFS",
                     "data" : {
-                        "images" : [
-                            {
-                                "name": "DAS Computation 6",
-                                "src": "images/projects/das/hi-res/das-pub-12.jpg",
-                                "src_mobile": "images/projects/das/hi-res/das-pub-12.jpg",
-                                "src_preview": "images/projects/das/hi-res/das-pub-12.jpg",
-                                "caption": "DAS Computation 6"   
-                            },
-                            {
-                                "name": "DAS Computation 7",
-                                "src": "images/projects/das/hi-res/das-pub-13.jpg",
-                                "src_mobile": "images/projects/das/hi-res/das-pub-13.jpg",
-                                "src_preview": "images/projects/das/hi-res/das-pub-13.jpg",
-                                "caption": "DAS Computation 7"   
-                            },
-                            {
-                                "name": "DAS Computation 8",
-                                "src": "images/projects/das/hi-res/das-pub-14.jpg",
-                                "src_mobile": "images/projects/das/hi-res/das-pub-14.jpg",
-                                "src_preview": "images/projects/das/hi-res/das-pub-14.jpg",
-                                "caption": "DAS Computation 8"   
-                            },
-                            {
-                                "name": "DAS Computation 9",
-                                "src": "images/projects/das/hi-res/das-pub-15.jpg",
-                                "src_mobile": "images/projects/das/hi-res/das-pub-15.jpg",
-                                "src_preview": "images/projects/das/hi-res/das-pub-15.jpg",
-                                "caption": "DAS Computation 9"   
-                            },
-                            {
-                                "name": "DAS Computation 10",
-                                "src": "images/projects/das/hi-res/das-pub-16.jpg",
-                                "src_mobile": "images/projects/das/hi-res/das-pub-16.jpg",
-                                "src_preview": "images/projects/das/hi-res/das-pub-16.jpg",
-                                "caption": "DAS Computation 10"   
-                            }
-                        ]
+                        "subheader" : "Digital Publication"
                     }
                 },
                 {
-                    "name" : "endeavorPubFS",
+                    "name" : "endeavorImageFS",
                     "data" : {
-                        "pub" : {
-                            "name" : "DAS_Quaterly",
-                            "src" : "//e.issuu.com/embed.html#22891629/32844009",
-                            "caption" : "Alex Norton DAS DAS_Quaterly." 
+                        "image" : {
+                            "name": "das-interactive-devices",
+                            "src": "images/projects/das-interactive/hi-res/das-interactive-devices.jpg",
+                            "src_mobile": "images/projects/das-interactive/hi-res/das-interactive-devices.jpg",
+                            "src_preview": "images/projects/das-interactive/hi-res/das-interactive-devices.jpg",
+                            "caption": "Dig Poster"
                         }
+                    }
+                },
+                {
+                    "name" : "endeavorSubheaderFS",
+                    "data" : {
+                        "subheader" : "Prototype"
+                    }
+                },
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "video" : {
+                            "name" : "DAS Tablet",
+                            "src" : "https://www.youtube.com/embed/6B8QnIVKJEU",
+                            "caption" : "DAS Interactive onboarding" 
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "video" : {
+                            "name" : "DAS Mobile",
+                            "src" : "https://www.youtube.com/embed/LM7G9qog4d8",
+                            "caption" : "DAS Interactive onboarding" 
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "image" : {
+                            "name": "das-interactive-loading",
+                            "src": "images/projects/das-interactive/hi-res/das-interactive-loading.jpg",
+                            "src_mobile": "images/projects/das-interactive/hi-res/das-interactive-loading.jpg",
+                            "src_preview": "images/projects/das-interactive/hi-res/das-interactive-loading.jpg",
+                            "caption": "DAS Interactive Loading"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorCaptionFS",
+                    "data" : {
+                        "caption" : "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know?"
+                    }
+                },
+                {
+                    "name" : "endeavorParallaxCaptionRight",
+                    "data" : {
+                        "imageBig" : {
+                            "name": "hero",
+                            "name": "das-interactive-loading",
+                            "src": "images/projects/das-interactive/hi-res/das-interactive-iphone-bg.jpg",
+                            "src_mobile": "images/projects/das-interactive/hi-res/das-interactive-iphone-bg.jpg",
+                            "src_preview": "images/projects/das-interactive/hi-res/das-interactive-iphone-bg.jpg"
+                        },
+                        "imageParallax" : {
+                            "name": "das-interactive-iphone",
+                            "src": "images/projects/das-interactive/hi-res/das-interactive-iphone.png",
+                            "src_mobile": "images/projects/das-interactive/hi-res/das-interactive-iphone.png",
+                            "src_preview": "images/projects/das-interactive/hi-res/das-interactive-iphone.png"
+                        },
+                        "caption" : "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know?"
                     }
                 },
                 {

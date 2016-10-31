@@ -165,6 +165,7 @@ mixin endeavorSubheaderFS(datum)
     - var subheader = datum.subheader
     .edeavor-item.endeavor-item-top-125
         h3=datum.subheader
+
         hr.slight.endeavor-item-top-10.fsw
 
 
@@ -316,7 +317,7 @@ mixin endeavorParallaxCaptionRight(data)
     - var caption = data.caption
     .endeavor-item.fsw.endeavor-parallax-hybrid.parallax__group  
         .endeavor-parallax-hybrid-color(style=`background-image: url(${imageBig.src})`)
-        .img-box.endeavor-parallax-hybrid-left-img-box.parallax__layer.parallax__layer--fore(style=`background-image: url(${imageParallax.src})`)
+        img.img-box.endeavor-parallax-hybrid-left-img-box.parallax__layer.parallax__layer--fore(src=`${imageParallax.src}`)
         p.endeavor-parallax-hybrid-left-caption.caption=caption
 
 
@@ -330,7 +331,7 @@ mixin endeavorParallaxCaptionLeft(data)
     - var caption = data.caption
     .endeavor-item.fsw.endeavor-parallax-hybrid.parallax__group  
         .endeavor-parallax-hybrid-color(style=`background-image: url(${imageBig})`)
-        .img-box.endeavor-parallax-hybrid-right-img-box.parallax__layer.parallax__layer--fore(style=`background-image: url(${imageParallax})`)
+        img.img-box.endeavor-parallax-hybrid-right-img-box.parallax__layer.parallax__layer--fore(src=`${imageParallax.src}`)
         p.endeavor-parallax-hybrid-right-caption.caption=caption
 
 
