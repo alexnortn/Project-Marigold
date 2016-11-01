@@ -2318,10 +2318,10 @@
                     "name" : "endeavorImageFS",
                     "data" : {
                         "image" : {
-                            "name": "das-interactive-loading",
-                            "src": "images/projects/das-interactive/hi-res/das-interactive-loading.jpg",
-                            "src_mobile": "images/projects/das-interactive/hi-res/das-interactive-loading.jpg",
-                            "src_preview": "images/projects/das-interactive/hi-res/das-interactive-loading.jpg",
+                            "name": "das-interactive-loading-2",
+                            "src": "images/projects/das-interactive/hi-res/das-interactive-loading-2.jpg",
+                            "src_mobile": "images/projects/das-interactive/hi-res/das-interactive-loading-2.jpg",
+                            "src_preview": "images/projects/das-interactive/hi-res/das-interactive-loading-2.jpg",
                             "caption": "DAS Interactive Loading"
                         }
                     }
@@ -2359,6 +2359,48 @@
                             "src": "images/projects/das-interactive/hi-res/das-interactive-views.jpg",
                             "src_mobile": "images/projects/das-interactive/hi-res/das-interactive-views.jpg",
                             "src_preview": "images/projects/das-interactive/hi-res/das-interactive-views.jpg",
+                            "caption": "DAS Interactive Views"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorSubheaderFS",
+                    "data" : {
+                        "subheader" : "Information Architecture"
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "image" : {
+                            "name": "das-interactive-funnel",
+                            "src": "images/projects/das-interactive/hi-res/das-interactive-funnel.jpg",
+                            "src_mobile": "images/projects/das-interactive/hi-res/das-interactive-funnel.jpg",
+                            "src_preview": "images/projects/das-interactive/hi-res/das-interactive-funnel.jpg",
+                            "caption": "DAS Interactive Views"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "image" : {
+                            "name": "das-interactive-share",
+                            "src": "images/projects/das-interactive/hi-res/das-interactive-share.jpg",
+                            "src_mobile": "images/projects/das-interactive/hi-res/das-interactive-share.jpg",
+                            "src_preview": "images/projects/das-interactive/hi-res/das-interactive-share.jpg",
+                            "caption": "DAS Interactive Views"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "image" : {
+                            "name": "das-interactive-menu",
+                            "src": "images/projects/das-interactive/hi-res/das-interactive-menu.jpg",
+                            "src_mobile": "images/projects/das-interactive/hi-res/das-interactive-menu.jpg",
+                            "src_preview": "images/projects/das-interactive/hi-res/das-interactive-menu.jpg",
                             "caption": "DAS Interactive Views"
                         }
                     }
