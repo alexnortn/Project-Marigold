@@ -1048,11 +1048,11 @@
             ]
         },
         {
-            "route" :"eyewire-project",
-            "name"  : "Eyewire",
+            "route" :"divrcity-project",
+            "name"  : "Divrcity",
             "project_type"  : "Project",
             "year"  : "2014",
-            "preview" :"eyewire-preview",
+            "preview" :"divrcity-preview",
             "medium": [
                 "Paper",
                 "Wood",
@@ -2244,7 +2244,7 @@
                 "Duration" : "Two Months"
             },
             "image_hero": "images/projects/das-interactive/hi-res/das-interactive-hero.jpg",
-            "image_preview": "images/projects/das/hi-res/das-preview.jpg",
+            "image_preview": "images/projects/das-interactive/hi-res/das-interactive-preview.jpg",
             "sections" : [
                 {
                     "name" : "endeavorSubheaderFS",
@@ -2379,6 +2379,12 @@
                             "src_preview": "images/projects/das-interactive/hi-res/das-interactive-funnel.jpg",
                             "caption": "DAS Interactive Views"
                         }
+                    }
+                },
+                {
+                    "name" : "endeavorSubheaderFS",
+                    "data" : {
+                        "subheader" : "Context Menus"
                     }
                 },
                 {
