@@ -1835,8 +1835,8 @@
                 "Technologies" : "Arduino / Woodshop",
                 "Duration" : "Two Months"
             },
-            "image_hero": "images/crystal-8.jpg",
-            "image_preview": "images/crystal-8.jpg",
+            "image_hero": "images/projects/muwu/hi-res/muwu-hero-3.jpg",
+            "image_preview": "images/projects/muwu/hi-res/muwu-preview-2.jpg",
             "sections" : [
                 {
                     "name" : "endeavorImageFS",
