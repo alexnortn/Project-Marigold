@@ -291,7 +291,8 @@ mixin endeavorImageGridIterator(data)
     .endeavor-item-125.grid.image-grid-wrapper
         .grid-slider.slider-transition
             each image, i in images
-                    img.limit-width-50vw.big-moment-3-color(src=`${image.src}`)
+                div.fill-area
+                    img.limit-width-50vw.big-moment-3-color.endeavor-image-box--center(src=`${image.src}`)
         each image, i in images
             .image-grid-container.bounce&attributes({'data-slide': i})
                 .image-grid(style=`background-image: url(${image.src_preview})`) 
@@ -343,7 +344,7 @@ mixin endeavorImageCenterCaption(data)
     - var image = data.image
     - var caption = data.caption
     .endeavor-item.endeavor-para-box
-        img.image-box.image-box--center(src=`${image.src}`)
+        img.endeavor-width-50-percent.img-box.endeavor-image-box--center(src=`${image.src}`)
         p.caption.center-caption=caption
 
 

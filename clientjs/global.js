@@ -553,7 +553,7 @@ $(document).ready(function() {
             $slickInitClass.addClass('active-grid-slider');
 
             // Add Slick slider with current parent id
-            addSlick($slickInitClass, false);
+            addSlick($slickInitClass, false, false);
                 $slickInitClass.removeClass('slider-transition');
 
                 // Wait to calculate page offset until class transition ends
@@ -871,11 +871,11 @@ function paginationUpdate(sectionUpdate) {
 
 
 // Setup for Slick slider plugin Grid #1
-function addSlick($elem, _dotsBool) {
+function addSlick($elem, _dotsBool, _autoplay = true) {
 
     $elem.slick({
         arrows:             false,
-        autoplay:           true,
+        autoplay:           _autoplay,
         dots:               _dotsBool,
         lazyLoad:           'progressive',
         adaptiveHeight:     true
