@@ -1859,6 +1859,24 @@
                 {
                     "name" : "endeavorSubheaderFS",
                     "data" : {
+                        "subheader" : "Research"
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "image" : {
+                            "name": "muwu-research-2",
+                            "src": "images/projects/muwu/hi-res/muwu-research-2.jpg",
+                            "src_mobile": "images/projects/muwu/hi-res/muwu-research-2.jpg",
+                            "src_preview": "images/projects/muwu/hi-res/muwu-research-2.jpg",
+                            "caption": "Muwu Research"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorSubheaderFS",
+                    "data" : {
                         "subheader" : "Methods"
                     }
                 },
@@ -1887,6 +1905,86 @@
                 {
                     "name" : "endeavorCaptionFS",
                     "data" : {
+                        "caption" : "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know?"
+                    }
+                },
+                {
+                    "name" : "endeavorSubheaderFS",
+                    "data" : {
+                        "subheader" : "Layout Machine"
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "image" : {
+                            "name": "muwu-layout-machine",
+                            "src": "images/projects/muwu/hi-res/muwu-layout-machine-2.jpg",
+                            "src_mobile": "images/projects/muwu/hi-res/muwu-layout-machine-2.jpg",
+                            "src_preview": "images/projects/muwu/hi-res/muwu-layout-machine-2.jpg",
+                            "caption": "Muwu Layout Machine"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageGridIterator",
+                    "data" : {
+                        "images": [
+                            {
+                                "name": "muwu-layout-option",
+                                "src": "images/projects/muwu/hi-res/muwu-layout-1.jpg",
+                                "src_mobile": "images/projects/muwu/hi-res/muwu-layout-1.jpg",
+                                "src_preview": "images/projects/muwu/hi-res/muwu-layout-1.jpg",
+                                "caption": "Muwu Layout Option"
+                            },
+                            {
+                                "name": "muwu-layout-option",
+                                "src": "images/projects/muwu/hi-res/muwu-layout-2.jpg",
+                                "src_mobile": "images/projects/muwu/hi-res/muwu-layout-2.jpg",
+                                "src_preview": "images/projects/muwu/hi-res/muwu-layout-2.jpg",
+                                "caption": "Muwu Layout Option"
+                            },
+                            {
+                                "name": "muwu-layout-option",
+                                "src": "images/projects/muwu/hi-res/muwu-layout-3.jpg",
+                                "src_mobile": "images/projects/muwu/hi-res/muwu-layout-3.jpg",
+                                "src_preview": "images/projects/muwu/hi-res/muwu-layout-3.jpg",
+                                "caption": "Muwu Layout Option"
+                            },
+                            {
+                                "name": "muwu-layout-option",
+                                "src": "images/projects/muwu/hi-res/muwu-layout-4.jpg",
+                                "src_mobile": "images/projects/muwu/hi-res/muwu-layout-4.jpg",
+                                "src_preview": "images/projects/muwu/hi-res/muwu-layout-4.jpg",
+                                "caption": "Muwu Layout Option"
+                            },
+                            {
+                                "name": "muwu-layout-option",
+                                "src": "images/projects/muwu/hi-res/muwu-layout-5.jpg",
+                                "src_mobile": "images/projects/muwu/hi-res/muwu-layout-5.jpg",
+                                "src_preview": "images/projects/muwu/hi-res/muwu-layout-5.jpg",
+                                "caption": "Muwu Layout Option"
+                            },
+                            {
+                                "name": "muwu-layout-option",
+                                "src": "images/projects/muwu/hi-res/muwu-layout-6.jpg",
+                                "src_mobile": "images/projects/muwu/hi-res/muwu-layout-6.jpg",
+                                "src_preview": "images/projects/muwu/hi-res/muwu-layout-6.jpg",
+                                "caption": "Muwu Layout Option"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorImageCenterCaption",
+                    "data" : {
+                        "image" : {
+                            "name": "Layout Machine Selection",
+                            "src": "images/projects/muwu/hi-res/muwu-layout.jpg",
+                            "src_mobile": "images/projects/muwu/hi-res/muwu-layout.jpg",
+                            "src_preview": "images/projects/muwu/hi-res/muwu-layout.jpg",
+                            "caption": "Muwu Layout Selection"
+                        },
                         "caption" : "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know?"
                     }
                 },

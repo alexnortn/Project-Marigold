@@ -291,10 +291,10 @@ mixin endeavorImageGridIterator(data)
     .endeavor-item-125.grid.image-grid-wrapper
         .grid-slider.slider-transition
             each image, i in images
-                    img.big-moment-3-color(src=`${image.src}`)
+                    img.limit-width-50vw.big-moment-3-color(src=`${image.src}`)
         each image, i in images
             .image-grid-container.bounce&attributes({'data-slide': i})
-                .image-grid(style=`background-image: url(${image.src_preview})`)
+                .image-grid(style=`background-image: url(${image.src_preview})`) 
 
 
 //-  Endeavor Parallax Behind
@@ -343,7 +343,7 @@ mixin endeavorImageCenterCaption(data)
     - var image = data.image
     - var caption = data.caption
     .endeavor-item.endeavor-para-box
-        .image-box.image-box--center(style=`background-image: url(${image.src})`)
+        img.image-box.image-box--center(src=`${image.src}`)
         p.caption.center-caption=caption
 
 

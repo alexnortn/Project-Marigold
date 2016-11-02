@@ -527,7 +527,7 @@ if ('number' == typeof pug_obj4.length) {
     var image = pug_obj4[i];
 
 ;pug_debug_line = 294;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cimg" + (" class=\"big-moment-3-color\""+pug_attr("src", `${image.src}`, true, true)) + "\u003E";
+pug_html = pug_html + "\u003Cimg" + (" class=\"limit-width-50vw big-moment-3-color\""+pug_attr("src", `${image.src}`, true, true)) + "\u003E";
   }
 
 } else {
@@ -537,7 +537,7 @@ pug_html = pug_html + "\u003Cimg" + (" class=\"big-moment-3-color\""+pug_attr("s
     var image = pug_obj4[i];
 
 ;pug_debug_line = 294;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cimg" + (" class=\"big-moment-3-color\""+pug_attr("src", `${image.src}`, true, true)) + "\u003E";
+pug_html = pug_html + "\u003Cimg" + (" class=\"limit-width-50vw big-moment-3-color\""+pug_attr("src", `${image.src}`, true, true)) + "\u003E";
   }
 
 }
@@ -554,7 +554,9 @@ if ('number' == typeof pug_obj5.length) {
 ;pug_debug_line = 296;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + "\u003Cdiv" + (pug_attrs(pug_merge([{"class": "image-grid-container bounce"},{'data-slide': i}]), true)) + "\u003E";
 ;pug_debug_line = 297;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cdiv" + (" class=\"image-grid\""+pug_attr("style", pug_style(`background-image: url(${image.src_preview})`), true, true)) + "\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";
+pug_html = pug_html + "\u003Cdiv" + (" class=\"image-grid\""+pug_attr("style", pug_style(`background-image: url(${image.src_preview})`), true, true)) + "\u003E";
+;pug_debug_line = 297;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
+pug_html = pug_html + " \u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";
   }
 
 } else {
@@ -566,7 +568,9 @@ pug_html = pug_html + "\u003Cdiv" + (" class=\"image-grid\""+pug_attr("style", p
 ;pug_debug_line = 296;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + "\u003Cdiv" + (pug_attrs(pug_merge([{"class": "image-grid-container bounce"},{'data-slide': i}]), true)) + "\u003E";
 ;pug_debug_line = 297;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cdiv" + (" class=\"image-grid\""+pug_attr("style", pug_style(`background-image: url(${image.src_preview})`), true, true)) + "\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";
+pug_html = pug_html + "\u003Cdiv" + (" class=\"image-grid\""+pug_attr("style", pug_style(`background-image: url(${image.src_preview})`), true, true)) + "\u003E";
+;pug_debug_line = 297;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
+pug_html = pug_html + " \u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";
   }
 
 }
@@ -639,7 +643,7 @@ var caption = data.caption
 ;pug_debug_line = 345;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + "\u003Cdiv class=\"endeavor-item endeavor-para-box\"\u003E";
 ;pug_debug_line = 346;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cdiv" + (" class=\"image-box image-box--center\""+pug_attr("style", pug_style(`background-image: url(${image.src})`), true, true)) + "\u003E\u003C\u002Fdiv\u003E";
+pug_html = pug_html + "\u003Cimg" + (" class=\"image-box image-box--center\""+pug_attr("src", `${image.src}`, true, true)) + "\u003E";
 ;pug_debug_line = 347;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + "\u003Cp class=\"caption center-caption\"\u003E";
 ;pug_debug_line = 347;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
