@@ -3194,6 +3194,194 @@
                     "data" : {}
                 }
             ]
+        },
+        {
+            "route" :"jenga-project",
+            "name"  : "Jenga Unchained",
+            "project_type"  : "Project",
+            "year"  : "2014",
+            "preview" :"jenga-preview",
+            "medium": [
+                "Graphic Design",
+                "Game Design",
+                "Woodworking"
+            ],
+            "technique": [
+                "CAD",
+                "Woodworking",
+                "Game Design"
+            ],
+            "description" : {
+                "brief": "A traditional Japanese lamp that responds gesturally to weather phenomena.",
+                "extensive": "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know? When is a qualitative understanding of data sufficient? The lamp is also a sort of commentary on the current state of culture in Japan. It is no coincidence that the lamp resembles a tower crane. The lamp bridges the gap between traditional Japanese culture and Japan as a world-leading technological hub. The Lamp is a collaboration between Massart’s graphic design program and MIT’s Architectural Computation department. The following pages detail the CAD models and a bit of the building process for the first of the 3 proposed lamps, this is the smallest desk lamp. Further on there is a glimpse into the program written to aggregate weather sources as well as a web-interface designed to program + control the lamp.",
+                "long_1": "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know? When is a qualitative understanding of data sufficient? The lamp is also a sort of commentary on the current state of culture in Japan.",
+                "long_2": "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know?"
+            },
+            "meta" : {
+                "Client" : "MIT Media Lab",
+                "Year" : 2014,
+                "Role" : "Designer",
+                "Team" : "—",
+                "Discipline" : "Game Design",
+                "Medium" : "Physical / Wood",
+                "Technologies" : "CAD / Woodworking",
+                "Duration" : "Two Weeks"
+            },
+            "image_hero": "images/projects/jenga-unchained/hi-res/jenga-hero.jpg",
+            "image_preview": "images/projects/jenga-unchained/hi-res/jenga-preview.jpg",
+            "sections" : [
+                {
+                    "name" : "endeavorSubheaderFS",
+                    "data" : {
+                        "subheader" : "Jenga Unchained Gameplay"
+                    }
+                },
+                {
+                    "name" : "endeavorImageFSList",
+                    "data" : {
+                        "images" : [
+                            {
+                                "name": "Jenga Unchained Item",
+                                "src": "images/projects/jenga-unchained/hi-res/jenga-cu-3.jpg",
+                                "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-cu-3.jpg",
+                                "src_preview": "images/projects/jenga-unchained/hi-res/jenga-cu-3.jpg",
+                                "caption": "Jenga Unchained Item"   
+                            },
+                            {
+                                "name": "Jenga Unchained Item",
+                                "src": "images/projects/jenga-unchained/hi-res/jenga-cu-1.jpg",
+                                "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-cu-1.jpg",
+                                "src_preview": "images/projects/jenga-unchained/hi-res/jenga-cu-1.jpg",
+                                "caption": "Jenga Unchained Item"   
+                            },
+                            {
+                                "name": "Jenga Unchained Item",
+                                "src": "images/projects/jenga-unchained/hi-res/jenga-cu-2.jpg",
+                                "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-cu-2.jpg",
+                                "src_preview": "images/projects/jenga-unchained/hi-res/jenga-cu-2.jpg",
+                                "caption": "Jenga Unchained Item"   
+                            },
+                            {
+                                "name": "Jenga Unchained Item",
+                                "src": "images/projects/jenga-unchained/hi-res/jenga-rules-1.jpg",
+                                "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-rules-1.jpg",
+                                "src_preview": "images/projects/jenga-unchained/hi-res/jenga-rules-1.jpg",
+                                "caption": "Jenga Unchained Item"   
+                            },
+                            {
+                                "name": "Jenga Unchained Item",
+                                "src": "images/projects/jenga-unchained/hi-res/jenga-0.jpg",
+                                "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-0.jpg",
+                                "src_preview": "images/projects/jenga-unchained/hi-res/jenga-0.jpg",
+                                "caption": "Jenga Unchained Item"   
+                            },
+                            {
+                                "name": "Jenga Unchained Item",
+                                "src": "images/projects/jenga-unchained/hi-res/jenga-1.jpg",
+                                "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-1.jpg",
+                                "src_preview": "images/projects/jenga-unchained/hi-res/jenga-1.jpg",
+                                "caption": "Jenga Unchained Item"   
+                            },
+                            {
+                                "name": "Jenga Unchained Item",
+                                "src": "images/projects/jenga-unchained/hi-res/jenga-2.jpg",
+                                "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-2.jpg",
+                                "src_preview": "images/projects/jenga-unchained/hi-res/jenga-2.jpg",
+                                "caption": "Jenga Unchained Item"   
+                            },
+                            {
+                                "name": "Jenga Unchained Item",
+                                "src": "images/projects/jenga-unchained/hi-res/jenga-3.jpg",
+                                "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-3.jpg",
+                                "src_preview": "images/projects/jenga-unchained/hi-res/jenga-3.jpg",
+                                "caption": "Jenga Unchained Item"   
+                            },
+                            {
+                                "name": "Jenga Unchained Item",
+                                "src": "images/projects/jenga-unchained/hi-res/jenga-5.jpg",
+                                "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-5.jpg",
+                                "src_preview": "images/projects/jenga-unchained/hi-res/jenga-5.jpg",
+                                "caption": "Jenga Unchained Item"   
+                            },
+                            {
+                                "name": "Jenga Unchained Item",
+                                "src": "images/projects/jenga-unchained/hi-res/jenga-6.jpg",
+                                "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-6.jpg",
+                                "src_preview": "images/projects/jenga-unchained/hi-res/jenga-6.jpg",
+                                "caption": "Jenga Unchained Item"   
+                            },
+                            {
+                                "name": "Jenga Unchained Item",
+                                "src": "images/projects/jenga-unchained/hi-res/jenga-7.jpg",
+                                "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-7.jpg",
+                                "src_preview": "images/projects/jenga-unchained/hi-res/jenga-7.jpg",
+                                "caption": "Jenga Unchained Item"   
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorSubheaderFS",
+                    "data" : {
+                        "subheader" : "CAD Designs"
+                    }
+                },
+                {
+                    "name" : "endeavorImageSlider",
+                    "data" : {
+                        "images" : [
+                            {
+                                "name": "Jenga Unchained CAD",
+                                "src": "images/projects/jenga-unchained/hi-res/jenga-cad-0.jpg",
+                                "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-cad-0.jpg",
+                                "src_preview": "images/projects/jenga-unchained/hi-res/jenga-cad-0.jpg",
+                                "caption": "Jenga Unchained CAD"   
+                            },
+                            {
+                                "name": "Jenga Unchained CAD",
+                                "src": "images/projects/jenga-unchained/hi-res/jenga-cad-1.jpg",
+                                "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-cad-1.jpg",
+                                "src_preview": "images/projects/jenga-unchained/hi-res/jenga-cad-1.jpg",
+                                "caption": "Jenga Unchained CAD"   
+                            },
+                            {
+                                "name": "Jenga Unchained CAD",
+                                "src": "images/projects/jenga-unchained/hi-res/jenga-cad-2.jpg",
+                                "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-cad-2.jpg",
+                                "src_preview": "images/projects/jenga-unchained/hi-res/jenga-cad-2.jpg",
+                                "caption": "Jenga Unchained CAD"   
+                            },
+                            {
+                                "name": "Jenga Unchained CAD",
+                                "src": "images/projects/jenga-unchained/hi-res/jenga-cad-3.jpg",
+                                "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-cad-3.jpg",
+                                "src_preview": "images/projects/jenga-unchained/hi-res/jenga-cad-3.jpg",
+                                "caption": "Jenga Unchained CAD"   
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorSubheaderFS",
+                    "data" : {
+                        "subheader" : "Design Process"
+                    }
+                },
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "video" : {
+                            "name" : "MSTY",
+                            "src" : "https://www.youtube.com/embed/RTS209d1V9Y",
+                            "caption" : "something" 
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorEndPad250",
+                    "data" : {}
+                }
+            ]
         }
     ],
     "bios_text": {
