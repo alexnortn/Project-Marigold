@@ -875,6 +875,7 @@ function addSlick($elem, _dotsBool, _autoplay = true) {
 
     $elem.slick({
         arrows:             false,
+        pauseOnHover:       true,
         autoplay:           _autoplay,
         dots:               _dotsBool,
         lazyLoad:           'progressive',
