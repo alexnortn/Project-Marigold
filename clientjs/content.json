@@ -2890,6 +2890,320 @@
                     "data" : {}
                 }
             ]
+        },
+        {
+            "route" :"our-epigenomes-project",
+            "name"  : "Our Epigenomes",
+            "project_type"  : "Project",
+            "year"  : "2015",
+            "preview" :"our-epigenomes-preview",
+            "medium": [
+                "Photography",
+                "Graphic Design",
+                "Book Binding"
+            ],
+            "technique": [
+                "Inkjet Printing",
+                "DSLR",
+                "Studio Photography",
+                "Art Direction"
+            ],
+            "description" : {
+                "brief": "A traditional Japanese lamp that responds gesturally to weather phenomena.",
+                "extensive": "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know? When is a qualitative understanding of data sufficient? The lamp is also a sort of commentary on the current state of culture in Japan. It is no coincidence that the lamp resembles a tower crane. The lamp bridges the gap between traditional Japanese culture and Japan as a world-leading technological hub. The Lamp is a collaboration between Massart’s graphic design program and MIT’s Architectural Computation department. The following pages detail the CAD models and a bit of the building process for the first of the 3 proposed lamps, this is the smallest desk lamp. Further on there is a glimpse into the program written to aggregate weather sources as well as a web-interface designed to program + control the lamp.",
+                "long_1": "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know? When is a qualitative understanding of data sufficient? The lamp is also a sort of commentary on the current state of culture in Japan.",
+                "long_2": "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know?"
+            },
+            "meta" : {
+                "Client" : "Gloria Im",
+                "Year" : 2015,
+                "Role" : "Designer / Photographer / Art Director",
+                "Team" : "Gloria Im",
+                "Discipline" : "Art Direction, Photography, Graphic Design",
+                "Medium" : "Photography, Book Design",
+                "Technologies" : "Studio Photography",
+                "Duration" : "One Week"
+            },
+            "image_hero": "images/projects/our-epigenomes/hi-res/our-epigenomes-hero.jpg",
+            "image_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-preview.jpg",
+            "sections" : [
+                {
+                    "name" : "endeavorSubheaderFS",
+                    "data" : {
+                        "subheader" : "Physical Publication"
+                    }
+                },
+                {
+                    "name" : "endeavorImageFSList",
+                    "data" : {
+                        "images" : [
+                            {
+                                "name": "Our Epigenomes Item",
+                                "src": "images/projects/our-epigenomes/hi-res/our-epigenomes-0.jpg",
+                                "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-0.jpg",
+                                "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-0.jpg",
+                                "caption": "Our Epigenomes Item"   
+                            },
+                            {
+                                "name": "Our Epigenomes Item",
+                                "src": "images/projects/our-epigenomes/hi-res/our-epigenomes-1.jpg",
+                                "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-1.jpg",
+                                "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-1.jpg",
+                                "caption": "Our Epigenomes Item"   
+                            },
+                            {
+                                "name": "Our Epigenomes Item",
+                                "src": "images/projects/our-epigenomes/hi-res/our-epigenomes-2.jpg",
+                                "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-2.jpg",
+                                "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-2.jpg",
+                                "caption": "Our Epigenomes Item"   
+                            },
+                            {
+                                "name": "Our Epigenomes Item",
+                                "src": "images/projects/our-epigenomes/hi-res/our-epigenomes-3.jpg",
+                                "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-3.jpg",
+                                "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-3.jpg",
+                                "caption": "Our Epigenomes Item"   
+                            },
+                            {
+                                "name": "Our Epigenomes Item",
+                                "src": "images/projects/our-epigenomes/hi-res/our-epigenomes-4.jpg",
+                                "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-4.jpg",
+                                "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-4.jpg",
+                                "caption": "Our Epigenomes Item"   
+                            },
+                            {
+                                "name": "Our Epigenomes Item",
+                                "src": "images/projects/our-epigenomes/hi-res/our-epigenomes-5.jpg",
+                                "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-5.jpg",
+                                "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-5.jpg",
+                                "caption": "Our Epigenomes Item"   
+                            },
+                            {
+                                "name": "Our Epigenomes Item",
+                                "src": "images/projects/our-epigenomes/hi-res/our-epigenomes-6.jpg",
+                                "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-6.jpg",
+                                "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-6.jpg",
+                                "caption": "Our Epigenomes Item"   
+                            },
+                            {
+                                "name": "Our Epigenomes Item",
+                                "src": "images/projects/our-epigenomes/hi-res/our-epigenomes-7.jpg",
+                                "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-7.jpg",
+                                "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-7.jpg",
+                                "caption": "Our Epigenomes Item"   
+                            },
+                            {
+                                "name": "Our Epigenomes Item",
+                                "src": "images/projects/our-epigenomes/hi-res/our-epigenomes-8.jpg",
+                                "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-8.jpg",
+                                "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-8.jpg",
+                                "caption": "Our Epigenomes Item"   
+                            },
+                            {
+                                "name": "Our Epigenomes Item",
+                                "src": "images/projects/our-epigenomes/hi-res/our-epigenomes-9.jpg",
+                                "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-9.jpg",
+                                "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-9.jpg",
+                                "caption": "Our Epigenomes Item"   
+                            },
+                            {
+                                "name": "Our Epigenomes Item",
+                                "src": "images/projects/our-epigenomes/hi-res/our-epigenomes-10.jpg",
+                                "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-10.jpg",
+                                "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-10.jpg",
+                                "caption": "Our Epigenomes Item"   
+                            },
+                            {
+                                "name": "Our Epigenomes Item",
+                                "src": "images/projects/our-epigenomes/hi-res/our-epigenomes-11.jpg",
+                                "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-11.jpg",
+                                "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-11.jpg",
+                                "caption": "Our Epigenomes Item"   
+                            },
+                            {
+                                "name": "Our Epigenomes Item",
+                                "src": "images/projects/our-epigenomes/hi-res/our-epigenomes-12.jpg",
+                                "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-12.jpg",
+                                "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-12.jpg",
+                                "caption": "Our Epigenomes Item"   
+                            },
+                            {
+                                "name": "Our Epigenomes Item",
+                                "src": "images/projects/our-epigenomes/hi-res/our-epigenomes-13.jpg",
+                                "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-13.jpg",
+                                "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-13.jpg",
+                                "caption": "Our Epigenomes Item"   
+                            },
+                            {
+                                "name": "Our Epigenomes Item",
+                                "src": "images/projects/our-epigenomes/hi-res/our-epigenomes-14.jpg",
+                                "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-14.jpg",
+                                "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-14.jpg",
+                                "caption": "Our Epigenomes Item"   
+                            },
+                            {
+                                "name": "Our Epigenomes Item",
+                                "src": "images/projects/our-epigenomes/hi-res/our-epigenomes-15.jpg",
+                                "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-15.jpg",
+                                "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-15.jpg",
+                                "caption": "Our Epigenomes Item"   
+                            },
+                            {
+                                "name": "Our Epigenomes Item",
+                                "src": "images/projects/our-epigenomes/hi-res/our-epigenomes-16.jpg",
+                                "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-16.jpg",
+                                "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-16.jpg",
+                                "caption": "Our Epigenomes Item"   
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorSubheaderFS",
+                    "data" : {
+                        "subheader" : "Digital Publication"
+                    }
+                },
+                {
+                    "name" : "endeavorPubFS",
+                    "data" : {
+                        "pub" : {
+                            "name" : "DigBrandBook",
+                            "src" : "//e.issuu.com/embed.html#22891629/32843107",
+                            "caption" : "Alex Norton DiG Brand Book." 
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorEndPad250",
+                    "data" : {}
+                }
+            ]
+        },
+        {
+            "route" :"cards-project",
+            "name"  : "Cabin Cards",
+            "project_type"  : "Project",
+            "year"  : "2015",
+            "preview" :"cards-preview",
+            "medium": [
+                "Graphic Design"
+            ],
+            "technique": [
+                "Inkjet Printing",
+                "Illustration",
+                "Laser Cutter"
+            ],
+            "description" : {
+                "brief": "A traditional Japanese lamp that responds gesturally to weather phenomena.",
+                "extensive": "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know? When is a qualitative understanding of data sufficient? The lamp is also a sort of commentary on the current state of culture in Japan. It is no coincidence that the lamp resembles a tower crane. The lamp bridges the gap between traditional Japanese culture and Japan as a world-leading technological hub. The Lamp is a collaboration between Massart’s graphic design program and MIT’s Architectural Computation department. The following pages detail the CAD models and a bit of the building process for the first of the 3 proposed lamps, this is the smallest desk lamp. Further on there is a glimpse into the program written to aggregate weather sources as well as a web-interface designed to program + control the lamp.",
+                "long_1": "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know? When is a qualitative understanding of data sufficient? The lamp is also a sort of commentary on the current state of culture in Japan.",
+                "long_2": "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know?"
+            },
+            "meta" : {
+                "Client" : "Self",
+                "Year" : 2015,
+                "Role" : "Designer",
+                "Team" : "—",
+                "Discipline" : "Graphic Design",
+                "Medium" : "Physical",
+                "Technologies" : "Laser Cutter",
+                "Duration" : "Two Days"
+            },
+            "image_hero": "images/projects/cards/hi-res/cards-hero.jpg",
+            "image_preview": "images/projects/cards/hi-res/cards-preview.jpg",
+            "sections" : [
+                {
+                    "name" : "endeavorSubheaderFS",
+                    "data" : {
+                        "subheader" : "Physical Cabin Card"
+                    }
+                },
+                {
+                    "name" : "endeavorImageFSList",
+                    "data" : {
+                        "images" : [
+                            {
+                                "name": "Cabin Cards Item",
+                                "src": "images/projects/cards/hi-res/cards-0.jpg",
+                                "src_mobile": "images/projects/cards/hi-res/cards-0.jpg",
+                                "src_preview": "images/projects/cards/hi-res/cards-0.jpg",
+                                "caption": "Cabin Cards Item"   
+                            },
+                            {
+                                "name": "Cabin Cards Item",
+                                "src": "images/projects/cards/hi-res/cards-1.jpg",
+                                "src_mobile": "images/projects/cards/hi-res/cards-1.jpg",
+                                "src_preview": "images/projects/cards/hi-res/cards-1.jpg",
+                                "caption": "Cabin Cards Item"   
+                            },
+                            {
+                                "name": "Cabin Cards Item",
+                                "src": "images/projects/cards/hi-res/cards-2.jpg",
+                                "src_mobile": "images/projects/cards/hi-res/cards-2.jpg",
+                                "src_preview": "images/projects/cards/hi-res/cards-2.jpg",
+                                "caption": "Cabin Cards Item"   
+                            },
+                            {
+                                "name": "Cabin Cards Item",
+                                "src": "images/projects/cards/hi-res/cards-3.jpg",
+                                "src_mobile": "images/projects/cards/hi-res/cards-3.jpg",
+                                "src_preview": "images/projects/cards/hi-res/cards-3.jpg",
+                                "caption": "Cabin Cards Item"   
+                            },
+                            {
+                                "name": "Cabin Cards Item",
+                                "src": "images/projects/cards/hi-res/cards-4.jpg",
+                                "src_mobile": "images/projects/cards/hi-res/cards-4.jpg",
+                                "src_preview": "images/projects/cards/hi-res/cards-4.jpg",
+                                "caption": "Cabin Cards Item"   
+                            },
+                            {
+                                "name": "Cabin Cards Item",
+                                "src": "images/projects/cards/hi-res/cards-5.jpg",
+                                "src_mobile": "images/projects/cards/hi-res/cards-5.jpg",
+                                "src_preview": "images/projects/cards/hi-res/cards-5.jpg",
+                                "caption": "Cabin Cards Item"   
+                            },
+                            {
+                                "name": "Cabin Cards Item",
+                                "src": "images/projects/cards/hi-res/cards-6.jpg",
+                                "src_mobile": "images/projects/cards/hi-res/cards-6.jpg",
+                                "src_preview": "images/projects/cards/hi-res/cards-6.jpg",
+                                "caption": "Cabin Cards Item"   
+                            },
+                            {
+                                "name": "Cabin Cards Item",
+                                "src": "images/projects/cards/hi-res/cards-7.jpg",
+                                "src_mobile": "images/projects/cards/hi-res/cards-7.jpg",
+                                "src_preview": "images/projects/cards/hi-res/cards-7.jpg",
+                                "caption": "Cabin Cards Item"   
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorSubheaderFS",
+                    "data" : {
+                        "subheader" : "Digital Publication"
+                    }
+                },
+                {
+                    "name" : "endeavorPubFS",
+                    "data" : {
+                        "pub" : {
+                            "name" : "DigBrandBook",
+                            "src" : "//e.issuu.com/embed.html#22891629/32843107",
+                            "caption" : "Alex Norton DiG Brand Book." 
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorEndPad250",
+                    "data" : {}
+                }
+            ]
         }
     ],
     "bios_text": {
