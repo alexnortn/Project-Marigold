@@ -3190,16 +3190,6 @@
                     }
                 },
                 {
-                    "name" : "endeavorPubFS",
-                    "data" : {
-                        "pub" : {
-                            "name" : "DigBrandBook",
-                            "src" : "//e.issuu.com/embed.html#22891629/32843107",
-                            "caption" : "Alex Norton DiG Brand Book." 
-                        }
-                    }
-                },
-                {
                     "name" : "endeavorEndPad250",
                     "data" : {}
                 }
