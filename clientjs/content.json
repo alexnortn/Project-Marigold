@@ -1909,6 +1909,70 @@
                     }
                 },
                 {
+                    "name" : "endeavorImageSlider",
+                    "data" : {
+                        "meta" : "Muwu Methods Iterator",
+                        "images" : [
+                            {
+                                "name": "muwu-method-1",
+                                "src": "images/projects/muwu/hi-res/muwu-method-1.jpg",
+                                "src_mobile": "images/projects/muwu/hi-res/muwu-method-1.jpg",
+                                "src_preview": "images/projects/muwu/hi-res/muwu-method-1.jpg",
+                                "caption": "Muwu Method"   
+                            },
+                            {
+                                "name": "muwu-method-2",
+                                "src": "images/projects/muwu/hi-res/muwu-method-2.jpg",
+                                "src_mobile": "images/projects/muwu/hi-res/muwu-method-2.jpg",
+                                "src_preview": "images/projects/muwu/hi-res/muwu-method-2.jpg",
+                                "caption": "Muwu Method"   
+                            },
+                            {
+                                "name": "muwu-method-3",
+                                "src": "images/projects/muwu/hi-res/muwu-method-3.jpg",
+                                "src_mobile": "images/projects/muwu/hi-res/muwu-method-3.jpg",
+                                "src_preview": "images/projects/muwu/hi-res/muwu-method-3.jpg",
+                                "caption": "Muwu Method"   
+                            },
+                            {
+                                "name": "muwu-method-4",
+                                "src": "images/projects/muwu/hi-res/muwu-method-4.jpg",
+                                "src_mobile": "images/projects/muwu/hi-res/muwu-method-4.jpg",
+                                "src_preview": "images/projects/muwu/hi-res/muwu-method-4.jpg",
+                                "caption": "Muwu Method"   
+                            },
+                            {
+                                "name": "muwu-method-5",
+                                "src": "images/projects/muwu/hi-res/muwu-method-5.jpg",
+                                "src_mobile": "images/projects/muwu/hi-res/muwu-method-5.jpg",
+                                "src_preview": "images/projects/muwu/hi-res/muwu-method-5.jpg",
+                                "caption": "Muwu Method"   
+                            },
+                            {
+                                "name": "muwu-method-6",
+                                "src": "images/projects/muwu/hi-res/muwu-method-6.jpg",
+                                "src_mobile": "images/projects/muwu/hi-res/muwu-method-6.jpg",
+                                "src_preview": "images/projects/muwu/hi-res/muwu-method-6.jpg",
+                                "caption": "Muwu Method"   
+                            },
+                            {
+                                "name": "muwu-method-7",
+                                "src": "images/projects/muwu/hi-res/muwu-method-7.jpg",
+                                "src_mobile": "images/projects/muwu/hi-res/muwu-method-7.jpg",
+                                "src_preview": "images/projects/muwu/hi-res/muwu-method-7.jpg",
+                                "caption": "Muwu Method"   
+                            },
+                            {
+                                "name": "muwu-method-8",
+                                "src": "images/projects/muwu/hi-res/muwu-method-8.jpg",
+                                "src_mobile": "images/projects/muwu/hi-res/muwu-method-8.jpg",
+                                "src_preview": "images/projects/muwu/hi-res/muwu-method-8.jpg",
+                                "caption": "Muwu Method"   
+                            }
+                        ]
+                    }
+                },
+                {
                     "name" : "endeavorSubheaderFS",
                     "data" : {
                         "subheader" : "Layout Machine"
