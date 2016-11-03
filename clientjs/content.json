@@ -2104,6 +2104,13 @@
                                 "caption": "Muwu Book 7"   
                             },
                             {
+                                "name": "muwu-empty",
+                                "src": "images/projects/muwu/hi-res/muwu-empty.jpg",
+                                "src_mobile": "images/projects/muwu/hi-res/muwu-empty.jpg",
+                                "src_preview": "images/projects/muwu/hi-res/muwu-empty.jpg",
+                                "caption": "Muwu Empty Poster"   
+                            },
+                            {
                                 "name": "muwu-book-13",
                                 "src": "images/projects/muwu/hi-res/muwu-book-13.jpg",
                                 "src_mobile": "images/projects/muwu/hi-res/muwu-book-13.jpg",
