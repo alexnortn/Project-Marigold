@@ -1881,6 +1881,18 @@
                     }
                 },
                 {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "image" : {
+                            "name": "muwu-layout-system",
+                            "src": "images/projects/muwu/hi-res/muwu-layout-system.jpg",
+                            "src_mobile": "images/projects/muwu/hi-res/muwu-layout-system.jpg",
+                            "src_preview": "images/projects/muwu/hi-res/muwu-layout-system.jpg",
+                            "caption": "Muwu Layout System"
+                        }
+                    }
+                },
+                {
                     "name" : "endeavorImageFSList",
                     "data" : {
                         "meta" : "Branding",
@@ -2178,6 +2190,16 @@
                                 "caption": "Muwu Book 14"   
                             }
                         ]
+                    }
+                },
+                {
+                    "name" : "endeavorPubFS",
+                    "data" : {
+                        "pub" : {
+                            "name" : "Muwu",
+                            "src" : "//e.issuu.com/embed.html#22891629/40340093",
+                            "caption" : "Alex Norton MuWu." 
+                        }
                     }
                 },
                 {
