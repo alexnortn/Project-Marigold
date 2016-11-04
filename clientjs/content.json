@@ -2182,17 +2182,42 @@
                     }
                 },
                 {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "video" : {
+                            "name" : "Muwu Generative Composition",
+                            "src" : "https://www.youtube.com/embed/pHdr4EWM3vk",
+                            "caption" : "Muwu Generative Composition" 
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "image" : {
+                            "name": "muwu-book-3",
+                            "src": "images/projects/muwu/hi-res/muwu-book-3.jpg",
+                            "src_mobile": "images/projects/muwu/hi-res/muwu-book-3.jpg",
+                            "src_preview": "images/projects/muwu/hi-res/muwu-book-3.jpg",
+                            "caption": "Muwu Processing"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "video" : {
+                            "name" : "Muwu Generative Composition",
+                            "src" : "https://www.youtube.com/embed/hsm9OmLwtMo",
+                            "caption" : "Muwu Generative Composition" 
+                        }
+                    }
+                },
+                {
                     "name" : "endeavorImageFSList",
                     "data" : {
                         "meta" : "Muwu Book II",
                         "images" : [
-                            {
-                                "name": "muwu-book-3",
-                                "src": "images/projects/muwu/hi-res/muwu-book-3.jpg",
-                                "src_mobile": "images/projects/muwu/hi-res/muwu-book-3.jpg",
-                                "src_preview": "images/projects/muwu/hi-res/muwu-book-3.jpg",
-                                "caption": "Muwu Book 3"   
-                            },
                             {
                                 "name": "muwu-book-1",
                                 "src": "images/projects/muwu/hi-res/muwu-book-1.jpg",
@@ -2242,9 +2267,9 @@
                     "name" : "endeavorVideoFS",
                     "data" : {
                         "video" : {
-                            "name" : "MSTY",
-                            "src" : "https://www.youtube.com/embed/hsm9OmLwtMo",
-                            "caption" : "something" 
+                            "name" : "Muwu Experiment",
+                            "src" : "https://www.youtube.com/embed/Rb8voJnauJI",
+                            "caption" : "Muwu Experiment" 
                         }
                     }
                 },
@@ -2252,10 +2277,77 @@
                     "name" : "endeavorVideoFS",
                     "data" : {
                         "video" : {
-                            "name" : "MSTY",
-                            "src" : "https://www.youtube.com/embed/pHdr4EWM3vk",
-                            "caption" : "something" 
+                            "name" : "Muwu Experiment",
+                            "src" : "https://www.youtube.com/embed/qgAEdzmkngE",
+                            "caption" : "Muwu Experiment" 
                         }
+                    }
+                },
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "video" : {
+                            "name" : "Muwu Experiment",
+                            "src" : "https://www.youtube.com/embed/EQtCQfhMmRk",
+                            "caption" : "Muwu Experiment" 
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageSlider",
+                    "data" : {
+                        "meta" : "MuWu Algorithmic Experiments",
+                        "images" : [
+                            {
+                                "name": "muwu-algo-0",
+                                "src": "images/projects/muwu/hi-res/muwu-algo-0.jpg",
+                                "src_mobile": "images/projects/muwu/hi-res/muwu-algo-0.jpg",
+                                "src_preview": "images/projects/muwu/hi-res/muwu-algo-0.jpg",
+                                "caption": "MuWu Algorithmic Experiment"   
+                            },
+                            {
+                                "name": "muwu-algo-1",
+                                "src": "images/projects/muwu/hi-res/muwu-algo-1.jpg",
+                                "src_mobile": "images/projects/muwu/hi-res/muwu-algo-1.jpg",
+                                "src_preview": "images/projects/muwu/hi-res/muwu-algo-1.jpg",
+                                "caption": "MuWu Algorithmic Experiment"   
+                            },
+                            {
+                                "name": "muwu-algo-2",
+                                "src": "images/projects/muwu/hi-res/muwu-algo-2.jpg",
+                                "src_mobile": "images/projects/muwu/hi-res/muwu-algo-2.jpg",
+                                "src_preview": "images/projects/muwu/hi-res/muwu-algo-2.jpg",
+                                "caption": "MuWu Algorithmic Experiment"   
+                            },
+                            {
+                                "name": "muwu-algo-3",
+                                "src": "images/projects/muwu/hi-res/muwu-algo-3.jpg",
+                                "src_mobile": "images/projects/muwu/hi-res/muwu-algo-3.jpg",
+                                "src_preview": "images/projects/muwu/hi-res/muwu-algo-3.jpg",
+                                "caption": "MuWu Algorithmic Experiment"   
+                            },
+                            {
+                                "name": "muwu-algo-4",
+                                "src": "images/projects/muwu/hi-res/muwu-algo-4.jpg",
+                                "src_mobile": "images/projects/muwu/hi-res/muwu-algo-4.jpg",
+                                "src_preview": "images/projects/muwu/hi-res/muwu-algo-4.jpg",
+                                "caption": "MuWu Algorithmic Experiment"   
+                            },
+                            {
+                                "name": "muwu-algo-5",
+                                "src": "images/projects/muwu/hi-res/muwu-algo-5.jpg",
+                                "src_mobile": "images/projects/muwu/hi-res/muwu-algo-5.jpg",
+                                "src_preview": "images/projects/muwu/hi-res/muwu-algo-5.jpg",
+                                "caption": "MuWu Algorithmic Experiment"   
+                            },
+                            {
+                                "name": "muwu-algo-6",
+                                "src": "images/projects/muwu/hi-res/muwu-algo-6.jpg",
+                                "src_mobile": "images/projects/muwu/hi-res/muwu-algo-6.jpg",
+                                "src_preview": "images/projects/muwu/hi-res/muwu-algo-6.jpg",
+                                "caption": "MuWu Algorithmic Experiment"   
+                            }
+                        ]
                     }
                 },
                 {
