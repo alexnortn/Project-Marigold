@@ -1995,9 +1995,9 @@
                     "data" : {
                         "image" : {
                             "name": "muwu-layout-machine",
-                            "src": "images/projects/muwu/hi-res/muwu-layout-machine-2.jpg",
-                            "src_mobile": "images/projects/muwu/hi-res/muwu-layout-machine-2.jpg",
-                            "src_preview": "images/projects/muwu/hi-res/muwu-layout-machine-2.jpg",
+                            "src": "images/projects/muwu/hi-res/muwu-layout-machine-3.jpg",
+                            "src_mobile": "images/projects/muwu/hi-res/muwu-layout-machine-3.jpg",
+                            "src_preview": "images/projects/muwu/hi-res/muwu-layout-machine-3.jpg",
                             "caption": "Muwu Layout Machine"
                         }
                     }
