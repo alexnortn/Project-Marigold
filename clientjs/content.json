@@ -1987,10 +1987,10 @@
                     "name" : "endeavorImageFS",
                     "data" : {
                         "image" : {
-                            "name": "muwu-layout-machine",
-                            "src": "images/projects/muwu/hi-res/muwu-layout-machine-3.jpg",
-                            "src_mobile": "images/projects/muwu/hi-res/muwu-layout-machine-3.jpg",
-                            "src_preview": "images/projects/muwu/hi-res/muwu-layout-machine-3.jpg",
+                            "name": "muwu-layout-machine-expanded",
+                            "src": "images/projects/muwu/hi-res/muwu-layout-machine-expanded-5.jpg",
+                            "src_mobile": "images/projects/muwu/hi-res/muwu-layout-machine-expanded-5.jpg",
+                            "src_preview": "images/projects/muwu/hi-res/muwu-layout-machine-expanded-5.jpg",
                             "caption": "Muwu Layout Machine"
                         }
                     }
@@ -2115,10 +2115,10 @@
                                 "caption": "Muwu Book 7"   
                             },
                             {
-                                "name": "muwu-empty",
-                                "src": "images/projects/muwu/hi-res/muwu-empty.jpg",
-                                "src_mobile": "images/projects/muwu/hi-res/muwu-empty.jpg",
-                                "src_preview": "images/projects/muwu/hi-res/muwu-empty.jpg",
+                                "name": "muwu-empty-2",
+                                "src": "images/projects/muwu/hi-res/muwu-empty-4.jpg",
+                                "src_mobile": "images/projects/muwu/hi-res/muwu-empty-4.jpg",
+                                "src_preview": "images/projects/muwu/hi-res/muwu-empty-4.jpg",
                                 "caption": "Muwu Empty Poster"   
                             },
                             {
@@ -3303,12 +3303,6 @@
                                 "caption": "Cabin Cards Item"   
                             }
                         ]
-                    }
-                },
-                {
-                    "name" : "endeavorSubheaderFS",
-                    "data" : {
-                        "subheader" : "Digital Publication"
                     }
                 },
                 {
