@@ -1903,13 +1903,6 @@
                                 "src_mobile": "images/projects/muwu/hi-res/muwu-methods-2.jpg",
                                 "src_preview": "images/projects/muwu/hi-res/muwu-methods-2.jpg",
                                 "caption": "Muwu Methods"   
-                            },
-                            {
-                                "name": "muwu-rules",
-                                "src": "images/projects/muwu/hi-res/muwu-rules.jpg",
-                                "src_mobile": "images/projects/muwu/hi-res/muwu-rules.jpg",
-                                "src_preview": "images/projects/muwu/hi-res/muwu-rules.jpg",
-                                "caption": "Muwu Rules"   
                             }
                         ]
                     }
@@ -2067,6 +2060,24 @@
                 {
                     "name" : "endeavorSubheaderFS",
                     "data" : {
+                        "subheader" : "Layout Synthesis"
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "image" : {
+                            "name": "muwu-layout-synthesis",
+                            "src": "images/projects/muwu/hi-res/muwu-layout-synthesis.jpg",
+                            "src_mobile": "images/projects/muwu/hi-res/muwu-layout-synthesis.jpg",
+                            "src_preview": "images/projects/muwu/hi-res/muwu-layout-synthesis.jpg",
+                            "caption": "Muwu Layout Synthesis"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorSubheaderFS",
+                    "data" : {
                         "subheader" : "Physical Volume"
                     }
                 },
@@ -2213,6 +2224,18 @@
                     "name" : "endeavorSubheaderFS",
                     "data" : {
                         "subheader" : "Generative Composition"
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "image" : {
+                            "name": "muwu-code",
+                            "src": "images/projects/muwu/hi-res/muwu-code.jpg",
+                            "src_mobile": "images/projects/muwu/hi-res/muwu-code.jpg",
+                            "src_preview": "images/projects/muwu/hi-res/muwu-code.jpg",
+                            "caption": "Muwu Processing"
+                        }
                     }
                 },
                 {
