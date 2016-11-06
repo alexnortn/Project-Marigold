@@ -1859,6 +1859,176 @@
                 {
                     "name" : "endeavorSubheaderFS",
                     "data" : {
+                        "subheader" : "Physical Volume"
+                    }
+                },
+                {
+                    "name" : "endeavorImageFSList",
+                    "data" : {
+                        "meta" : "Muwu Book",
+                        "images" : [
+                            {
+                                "name": "muwu-book-10",
+                                "src": "images/projects/muwu/hi-res/muwu-book-10.jpg",
+                                "src_mobile": "images/projects/muwu/hi-res/muwu-book-10.jpg",
+                                "src_preview": "images/projects/muwu/hi-res/muwu-book-10.jpg",
+                                "caption": "Muwu Book 10"   
+                            },
+                            {
+                                "name": "muwu-book-12",
+                                "src": "images/projects/muwu/hi-res/muwu-book-12.jpg",
+                                "src_mobile": "images/projects/muwu/hi-res/muwu-book-12.jpg",
+                                "src_preview": "images/projects/muwu/hi-res/muwu-book-12.jpg",
+                                "caption": "Muwu Book 12"   
+                            },
+                            {
+                                "name": "muwu-book-11",
+                                "src": "images/projects/muwu/hi-res/muwu-book-11.jpg",
+                                "src_mobile": "images/projects/muwu/hi-res/muwu-book-11.jpg",
+                                "src_preview": "images/projects/muwu/hi-res/muwu-book-11.jpg",
+                                "caption": "Muwu Book 11"   
+                            },
+                            {
+                                "name": "muwu-book-7",
+                                "src": "images/projects/muwu/hi-res/muwu-book-7.jpg",
+                                "src_mobile": "images/projects/muwu/hi-res/muwu-book-7.jpg",
+                                "src_preview": "images/projects/muwu/hi-res/muwu-book-7.jpg",
+                                "caption": "Muwu Book 7"   
+                            },
+                            {
+                                "name": "muwu-empty-2",
+                                "src": "images/projects/muwu/hi-res/muwu-empty-4.jpg",
+                                "src_mobile": "images/projects/muwu/hi-res/muwu-empty-4.jpg",
+                                "src_preview": "images/projects/muwu/hi-res/muwu-empty-4.jpg",
+                                "caption": "Muwu Empty Poster"   
+                            },
+                            {
+                                "name": "muwu-book-13",
+                                "src": "images/projects/muwu/hi-res/muwu-book-13.jpg",
+                                "src_mobile": "images/projects/muwu/hi-res/muwu-book-13.jpg",
+                                "src_preview": "images/projects/muwu/hi-res/muwu-book-13.jpg",
+                                "caption": "Muwu Book 13"   
+                            },
+                            {
+                                "name": "muwu-book-6",
+                                "src": "images/projects/muwu/hi-res/muwu-book-6.jpg",
+                                "src_mobile": "images/projects/muwu/hi-res/muwu-book-6.jpg",
+                                "src_preview": "images/projects/muwu/hi-res/muwu-book-6.jpg",
+                                "caption": "Muwu Book 6"   
+                            },
+                            {
+                                "name": "muwu-book-5",
+                                "src": "images/projects/muwu/hi-res/muwu-book-5.jpg",
+                                "src_mobile": "images/projects/muwu/hi-res/muwu-book-5.jpg",
+                                "src_preview": "images/projects/muwu/hi-res/muwu-book-5.jpg",
+                                "caption": "Muwu Book 5"   
+                            },
+                            {
+                                "name": "muwu-book-4",
+                                "src": "images/projects/muwu/hi-res/muwu-book-4.jpg",
+                                "src_mobile": "images/projects/muwu/hi-res/muwu-book-4.jpg",
+                                "src_preview": "images/projects/muwu/hi-res/muwu-book-4.jpg",
+                                "caption": "Muwu Book 4"   
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorImageSlider",
+                    "data" : {
+                        "meta" : "MuWu Close Up",
+                        "images" : [
+                            {
+                                "name": "muwu-book-18",
+                                "src": "images/projects/muwu/hi-res/muwu-book-18.jpg",
+                                "src_mobile": "images/projects/muwu/hi-res/muwu-book-18.jpg",
+                                "src_preview": "images/projects/muwu/hi-res/muwu-book-18.jpg",
+                                "caption": "Muwu Book 18"   
+                            },
+                            {
+                                "name": "muwu-book-17",
+                                "src": "images/projects/muwu/hi-res/muwu-book-17.jpg",
+                                "src_mobile": "images/projects/muwu/hi-res/muwu-book-17.jpg",
+                                "src_preview": "images/projects/muwu/hi-res/muwu-book-17.jpg",
+                                "caption": "Muwu Book 17"   
+                            },
+                            {
+                                "name": "muwu-book-16",
+                                "src": "images/projects/muwu/hi-res/muwu-book-16.jpg",
+                                "src_mobile": "images/projects/muwu/hi-res/muwu-book-16.jpg",
+                                "src_preview": "images/projects/muwu/hi-res/muwu-book-16.jpg",
+                                "caption": "Muwu Book 16"   
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "video" : {
+                            "name" : "Muwu Generative Composition",
+                            "src" : "https://www.youtube.com/embed/pHdr4EWM3vk",
+                            "caption" : "Muwu Generative Composition" 
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "image" : {
+                            "name": "muwu-book-3",
+                            "src": "images/projects/muwu/hi-res/muwu-book-3.jpg",
+                            "src_mobile": "images/projects/muwu/hi-res/muwu-book-3.jpg",
+                            "src_preview": "images/projects/muwu/hi-res/muwu-book-3.jpg",
+                            "caption": "Muwu Processing"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "video" : {
+                            "name" : "Muwu Generative Composition",
+                            "src" : "https://www.youtube.com/embed/hsm9OmLwtMo",
+                            "caption" : "Muwu Generative Composition" 
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFSList",
+                    "data" : {
+                        "meta" : "Muwu Book II",
+                        "images" : [
+                            {
+                                "name": "muwu-book-1",
+                                "src": "images/projects/muwu/hi-res/muwu-book-1.jpg",
+                                "src_mobile": "images/projects/muwu/hi-res/muwu-book-1.jpg",
+                                "src_preview": "images/projects/muwu/hi-res/muwu-book-1.jpg",
+                                "caption": "Muwu Book 1"   
+                            },
+                            {
+                                "name": "muwu-book-14",
+                                "src": "images/projects/muwu/hi-res/muwu-book-14.jpg",
+                                "src_mobile": "images/projects/muwu/hi-res/muwu-book-14.jpg",
+                                "src_preview": "images/projects/muwu/hi-res/muwu-book-14.jpg",
+                                "caption": "Muwu Book 14"   
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorPubFS",
+                    "data" : {
+                        "pub" : {
+                            "name" : "Muwu",
+                            "src" : "//e.issuu.com/embed.html#22891629/40340093",
+                            "caption" : "Alex Norton MuWu." 
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorSubheaderFS",
+                    "data" : {
                         "subheader" : "Research"
                     }
                 },
@@ -2072,176 +2242,6 @@
                             "src_mobile": "images/projects/muwu/hi-res/muwu-layout-synthesis-1.jpg",
                             "src_preview": "images/projects/muwu/hi-res/muwu-layout-synthesis-1.jpg",
                             "caption": "Muwu Layout Synthesis"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorSubheaderFS",
-                    "data" : {
-                        "subheader" : "Physical Volume"
-                    }
-                },
-                {
-                    "name" : "endeavorImageFSList",
-                    "data" : {
-                        "meta" : "Muwu Book",
-                        "images" : [
-                            {
-                                "name": "muwu-book-10",
-                                "src": "images/projects/muwu/hi-res/muwu-book-10.jpg",
-                                "src_mobile": "images/projects/muwu/hi-res/muwu-book-10.jpg",
-                                "src_preview": "images/projects/muwu/hi-res/muwu-book-10.jpg",
-                                "caption": "Muwu Book 10"   
-                            },
-                            {
-                                "name": "muwu-book-12",
-                                "src": "images/projects/muwu/hi-res/muwu-book-12.jpg",
-                                "src_mobile": "images/projects/muwu/hi-res/muwu-book-12.jpg",
-                                "src_preview": "images/projects/muwu/hi-res/muwu-book-12.jpg",
-                                "caption": "Muwu Book 12"   
-                            },
-                            {
-                                "name": "muwu-book-11",
-                                "src": "images/projects/muwu/hi-res/muwu-book-11.jpg",
-                                "src_mobile": "images/projects/muwu/hi-res/muwu-book-11.jpg",
-                                "src_preview": "images/projects/muwu/hi-res/muwu-book-11.jpg",
-                                "caption": "Muwu Book 11"   
-                            },
-                            {
-                                "name": "muwu-book-7",
-                                "src": "images/projects/muwu/hi-res/muwu-book-7.jpg",
-                                "src_mobile": "images/projects/muwu/hi-res/muwu-book-7.jpg",
-                                "src_preview": "images/projects/muwu/hi-res/muwu-book-7.jpg",
-                                "caption": "Muwu Book 7"   
-                            },
-                            {
-                                "name": "muwu-empty-2",
-                                "src": "images/projects/muwu/hi-res/muwu-empty-4.jpg",
-                                "src_mobile": "images/projects/muwu/hi-res/muwu-empty-4.jpg",
-                                "src_preview": "images/projects/muwu/hi-res/muwu-empty-4.jpg",
-                                "caption": "Muwu Empty Poster"   
-                            },
-                            {
-                                "name": "muwu-book-13",
-                                "src": "images/projects/muwu/hi-res/muwu-book-13.jpg",
-                                "src_mobile": "images/projects/muwu/hi-res/muwu-book-13.jpg",
-                                "src_preview": "images/projects/muwu/hi-res/muwu-book-13.jpg",
-                                "caption": "Muwu Book 13"   
-                            },
-                            {
-                                "name": "muwu-book-6",
-                                "src": "images/projects/muwu/hi-res/muwu-book-6.jpg",
-                                "src_mobile": "images/projects/muwu/hi-res/muwu-book-6.jpg",
-                                "src_preview": "images/projects/muwu/hi-res/muwu-book-6.jpg",
-                                "caption": "Muwu Book 6"   
-                            },
-                            {
-                                "name": "muwu-book-5",
-                                "src": "images/projects/muwu/hi-res/muwu-book-5.jpg",
-                                "src_mobile": "images/projects/muwu/hi-res/muwu-book-5.jpg",
-                                "src_preview": "images/projects/muwu/hi-res/muwu-book-5.jpg",
-                                "caption": "Muwu Book 5"   
-                            },
-                            {
-                                "name": "muwu-book-4",
-                                "src": "images/projects/muwu/hi-res/muwu-book-4.jpg",
-                                "src_mobile": "images/projects/muwu/hi-res/muwu-book-4.jpg",
-                                "src_preview": "images/projects/muwu/hi-res/muwu-book-4.jpg",
-                                "caption": "Muwu Book 4"   
-                            }
-                        ]
-                    }
-                },
-                {
-                    "name" : "endeavorImageSlider",
-                    "data" : {
-                        "meta" : "MuWu Close Up",
-                        "images" : [
-                            {
-                                "name": "muwu-book-18",
-                                "src": "images/projects/muwu/hi-res/muwu-book-18.jpg",
-                                "src_mobile": "images/projects/muwu/hi-res/muwu-book-18.jpg",
-                                "src_preview": "images/projects/muwu/hi-res/muwu-book-18.jpg",
-                                "caption": "Muwu Book 18"   
-                            },
-                            {
-                                "name": "muwu-book-17",
-                                "src": "images/projects/muwu/hi-res/muwu-book-17.jpg",
-                                "src_mobile": "images/projects/muwu/hi-res/muwu-book-17.jpg",
-                                "src_preview": "images/projects/muwu/hi-res/muwu-book-17.jpg",
-                                "caption": "Muwu Book 17"   
-                            },
-                            {
-                                "name": "muwu-book-16",
-                                "src": "images/projects/muwu/hi-res/muwu-book-16.jpg",
-                                "src_mobile": "images/projects/muwu/hi-res/muwu-book-16.jpg",
-                                "src_preview": "images/projects/muwu/hi-res/muwu-book-16.jpg",
-                                "caption": "Muwu Book 16"   
-                            }
-                        ]
-                    }
-                },
-                {
-                    "name" : "endeavorVideoFS",
-                    "data" : {
-                        "video" : {
-                            "name" : "Muwu Generative Composition",
-                            "src" : "https://www.youtube.com/embed/pHdr4EWM3vk",
-                            "caption" : "Muwu Generative Composition" 
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImageFS",
-                    "data" : {
-                        "image" : {
-                            "name": "muwu-book-3",
-                            "src": "images/projects/muwu/hi-res/muwu-book-3.jpg",
-                            "src_mobile": "images/projects/muwu/hi-res/muwu-book-3.jpg",
-                            "src_preview": "images/projects/muwu/hi-res/muwu-book-3.jpg",
-                            "caption": "Muwu Processing"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorVideoFS",
-                    "data" : {
-                        "video" : {
-                            "name" : "Muwu Generative Composition",
-                            "src" : "https://www.youtube.com/embed/hsm9OmLwtMo",
-                            "caption" : "Muwu Generative Composition" 
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImageFSList",
-                    "data" : {
-                        "meta" : "Muwu Book II",
-                        "images" : [
-                            {
-                                "name": "muwu-book-1",
-                                "src": "images/projects/muwu/hi-res/muwu-book-1.jpg",
-                                "src_mobile": "images/projects/muwu/hi-res/muwu-book-1.jpg",
-                                "src_preview": "images/projects/muwu/hi-res/muwu-book-1.jpg",
-                                "caption": "Muwu Book 1"   
-                            },
-                            {
-                                "name": "muwu-book-14",
-                                "src": "images/projects/muwu/hi-res/muwu-book-14.jpg",
-                                "src_mobile": "images/projects/muwu/hi-res/muwu-book-14.jpg",
-                                "src_preview": "images/projects/muwu/hi-res/muwu-book-14.jpg",
-                                "caption": "Muwu Book 14"   
-                            }
-                        ]
-                    }
-                },
-                {
-                    "name" : "endeavorPubFS",
-                    "data" : {
-                        "pub" : {
-                            "name" : "Muwu",
-                            "src" : "//e.issuu.com/embed.html#22891629/40340093",
-                            "caption" : "Alex Norton MuWu." 
                         }
                     }
                 },
