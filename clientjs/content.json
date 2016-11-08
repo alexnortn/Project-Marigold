@@ -1085,7 +1085,7 @@
                 "Duration" : "1 Month"
             },
             "image_hero": "images/projects/divrcity/hi-res/divrcity-hero-2.jpg",
-            "image_preview": "images/projects/divrcity/hi-res/divrcity-preview-5.jpg",
+            "image_preview": "images/projects/divrcity/hi-res/divrcity-preview-6.jpg",
             "sections" : [
                 {
                     "name" : "endeavorImageFS",
@@ -1157,6 +1157,45 @@
                     "name" : "endeavorCaptionFSCenter2",
                     "data" : {
                         "caption" : "Urban design is about making connections between people and places, movement and urban form, nature and the built fabric."
+                    }
+                },
+                {
+                    "name" : "endeavorSubheaderFS",
+                    "data" : {
+                        "subheader" : "Hypothesis"
+                    }
+                },
+                                {
+                    "name" : "endeavorDescriptions",
+                    "data" : {
+                        "sections" : [
+                            {
+                                "name" : "Spatial Organization",
+                                "content" : "The fundamental problem of cities is the problem of spatial organization. This is the problem of determining the location of businesses, public amenities, infrastructure, and residences with respect to each other."
+                            },
+                            {
+                                "name" : "Unconventional Puzzle",
+                                "content" : "The problem of a city’s spacial organization is similar to a puzzle, where parts of different kinds need to come together to create the whole. Though unlike conventional puzzles, cities have many possible solutions."
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorSubheaderFS",
+                    "data" : {
+                        "subheader" : "Urban Design: A Modern History"
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "image" : {
+                            "name": "Divrcity Urban Design",
+                                "src": "images/projects/divrcity/hi-res/divrcity-urban-design-2.jpg",
+                                "src_mobile": "images/projects/divrcity/hi-res/divrcity-urban-design-2.jpg",
+                                "src_preview": "images/projects/divrcity/hi-res/divrcity-urban-design-2.jpg",
+                                "caption": "Divrcity Urban Design"
+                        }
                     }
                 },
                 {
@@ -1384,7 +1423,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorDescriptions",
+                    "name" : "endeavorDescriptionsRight",
                     "data" : {
                         "sections" : [
                             {
@@ -1742,7 +1781,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorDescriptions",
+                    "name" : "endeavorDescriptionsRight",
                     "data" : {
                         "sections" : [
                             {
@@ -2317,7 +2356,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorDescriptions",
+                    "name" : "endeavorDescriptionsRight",
                     "data" : {
                         "sections" : [
                             {
@@ -2566,7 +2605,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorDescriptions",
+                    "name" : "endeavorDescriptionsRight",
                     "data" : {
                         "sections" : [
                             {
@@ -2795,7 +2834,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorDescriptions",
+                    "name" : "endeavorDescriptionsRight",
                     "data" : {
                         "sections" : [
                             {

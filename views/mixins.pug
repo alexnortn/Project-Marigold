@@ -131,6 +131,19 @@ mixin endeavorIntro(data)
 mixin endeavorDescriptions(data)
     - var sections = data.sections
     .endeavor-item.cf
+        .endeavor-description.endeavor-item-left-100.no-border
+            each section, index in sections 
+                h4=section.name
+                p.tamer=section.content
+
+
+//-  Endeavor Expandable Description Sections Float Right
+    Requires: <data.description> <data.meta>
+        + project-description <{string}>
+
+mixin endeavorDescriptionsRight(data)
+    - var sections = data.sections
+    .endeavor-item.cf
         .endeavor-description.endeavor-float-right
             each section, index in sections 
                 h4=section.name
@@ -175,6 +188,16 @@ mixin endeavorCaptionFSCenter2(datum)
     - var caption = datum.caption
     .edeavor-item.endeavor-flex.endeavor-flex-center.fsw
         p.endeavor-caption-2.no-margin.endeavor-text-center.endeavor-width-60-vw=caption
+
+
+//-  Endeavor Project | Full-Width blocking, Caption | Centered
+    Requires: <datum.caption>
+    Description: 35vw-Width Text Element Centered // Pull Quote text size + Circular Font
+
+mixin endeavorCaptionFSCenter3(datum)
+    - var caption = datum.caption
+    .edeavor-item.endeavor-flex.endeavor-flex-center.fsw
+        p.endeavor-pull-quote.no-margin.endeavor-text-center.endeavor-width-75-vw=caption
 
 
 //-  Endeavor Project | Full-Width blocking, Content
