@@ -1100,7 +1100,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorCaptionFSCenter2",
+                    "name" : "endeavorCaptionFSCenter3",
                     "data" : {
                         "caption" : "A large and permanent human settlement."
                     }
@@ -1136,7 +1136,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorCaptionFSCenter2",
+                    "name" : "endeavorCaptionFSCenter3",
                     "data" : {
                         "caption" : "The process of designing and shaping cities, towns and villages, with the goal of making urban areas functional, attractive, and sustainable."
                     }
@@ -1165,7 +1165,19 @@
                         "subheader" : "Hypothesis"
                     }
                 },
-                                {
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "image" : {
+                            "name": "Divrcity Thesis",
+                                "src": "images/projects/divrcity/hi-res/divrcity-thesis.jpg",
+                                "src_mobile": "images/projects/divrcity/hi-res/divrcity-thesis.jpg",
+                                "src_preview": "images/projects/divrcity/hi-res/divrcity-thesis.jpg",
+                                "caption": "Divrcity Thesis"
+                        }
+                    }
+                },
+                {
                     "name" : "endeavorDescriptions",
                     "data" : {
                         "sections" : [
