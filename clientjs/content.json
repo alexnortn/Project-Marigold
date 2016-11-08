@@ -1079,7 +1079,7 @@
                 "Technologies" : "Arduino / Woodshop",
                 "Duration" : "Two Months"
             },
-            "image_hero": "images/projects/divrcity/hi-res/divrcity-hero-1.jpg",
+            "image_hero": "images/projects/divrcity/hi-res/divrcity-hero-2.jpg",
             "image_preview": "images/projects/divrcity/hi-res/divrcity-preview-5.jpg",
             "sections" : [
                 {
@@ -1091,6 +1091,13 @@
                                 "src": "images/projects/divrcity/hi-res/divrcity-intro.jpg",
                                 "src_mobile": "images/projects/divrcity/hi-res/divrcity-intro.jpg",
                                 "src_preview": "images/projects/divrcity/hi-res/divrcity-intro.jpg",
+                                "caption": "Divrcity Item"   
+                            },
+                            {
+                                "name": "Divrcity Item",
+                                "src": "images/projects/divrcity/hi-res/divrcity-urban-design.jpg",
+                                "src_mobile": "images/projects/divrcity/hi-res/divrcity-urban-design.jpg",
+                                "src_preview": "images/projects/divrcity/hi-res/divrcity-urban-design.jpg",
                                 "caption": "Divrcity Item"   
                             }
                         ]
