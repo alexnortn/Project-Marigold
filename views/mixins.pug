@@ -92,11 +92,11 @@ mixin endeavorIntro(data)
     - var meta = data.meta
     .endeavor-intro.cf
         .endeavor-description 
-            q=description.brief
+            q=description.quote
             h4 Brief
             p.tamer=description.extensive
             h4 Process
-            p.tamer=description.extensive
+            p.tamer=description.process
         .meta-data
             ul
                 li Client
@@ -145,6 +145,36 @@ mixin endeavorCaptionFS(datum)
     - var caption = datum.caption
     .edeavor-item.fsw
         p.caption.no-margin.endeavor-padding-left-50.endeavor-width-35-vw=caption
+
+
+//-  Endeavor Project | Full-Width blocking, Caption
+    Requires: <datum.caption>
+    Description: 35vw-Width Text Element // Slightly larger text size + Circular Font
+
+mixin endeavorCaptionFS2(datum)
+    - var caption = datum.caption
+    .edeavor-item.fsw
+        p.no-margin.endeavor-caption-2.endeavor-padding-left-50.endeavor-width-60-vw=caption
+
+
+//-  Endeavor Project | Full-Width blocking, Caption | Centered
+    Requires: <datum.caption>
+    Description: 35vw-Width Text Element Centered
+
+mixin endeavorCaptionFSCenter(datum)
+    - var caption = datum.caption
+    .edeavor-item.endeavor-flex.endeavor-flex-center.fsw
+        p.caption.no-margin.endeavor-text-center.endeavor-width-35-vw=caption
+
+
+//-  Endeavor Project | Full-Width blocking, Caption | Centered
+    Requires: <datum.caption>
+    Description: 35vw-Width Text Element Centered // Slightly larger text size + Circular Font
+
+mixin endeavorCaptionFSCenter2(datum)
+    - var caption = datum.caption
+    .edeavor-item.endeavor-flex.endeavor-flex-center.fsw
+        p.endeavor-caption-2.no-margin.endeavor-text-center.endeavor-width-60-vw=caption
 
 
 //-  Endeavor Project | Full-Width blocking, Content

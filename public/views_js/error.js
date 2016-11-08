@@ -315,9 +315,9 @@ pug_html = pug_html + "\u003C!-- https:\u002F\u002Fstackoverflow.com\u002Fquesti
 
 
 
+;pug_debug_line = 174;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 
 
-;pug_debug_line = 176;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 
 
 
@@ -327,6 +327,7 @@ pug_html = pug_html + "\u003C!-- https:\u002F\u002Fstackoverflow.com\u002Fquesti
 
 
 
+;pug_debug_line = 184;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 
 
 
@@ -337,15 +338,14 @@ pug_html = pug_html + "\u003C!-- https:\u002F\u002Fstackoverflow.com\u002Fquesti
 
 
 
-;pug_debug_line = 189;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 
+;pug_debug_line = 194;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 
 
 
 
 
 
-;pug_debug_line = 198;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 
 
 
@@ -353,6 +353,7 @@ pug_html = pug_html + "\u003C!-- https:\u002F\u002Fstackoverflow.com\u002Fquesti
 
 
 
+;pug_debug_line = 206;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 
 
 
@@ -362,7 +363,6 @@ pug_html = pug_html + "\u003C!-- https:\u002F\u002Fstackoverflow.com\u002Fquesti
 
 
 
-;pug_debug_line = 208;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 
 
 
@@ -370,10 +370,10 @@ pug_html = pug_html + "\u003C!-- https:\u002F\u002Fstackoverflow.com\u002Fquesti
 
 
 
-;pug_debug_line = 217;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 
 
 
+;pug_debug_line = 219;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 
 
 
@@ -381,13 +381,13 @@ pug_html = pug_html + "\u003C!-- https:\u002F\u002Fstackoverflow.com\u002Fquesti
 
 
 
+;pug_debug_line = 228;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 
 
 
 
 
 
-;pug_debug_line = 227;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 
 
 
@@ -395,27 +395,25 @@ pug_html = pug_html + "\u003C!-- https:\u002F\u002Fstackoverflow.com\u002Fquesti
 
 
 
-;pug_debug_line = 236;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 
 
 
+;pug_debug_line = 238;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 
 
 
 
-;pug_debug_line = 245;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 
 
 
+;pug_debug_line = 247;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 
 
-;pug_debug_line = 253;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 
 
 
 
 
-;pug_debug_line = 261;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 
 
 
@@ -425,9 +423,15 @@ pug_html = pug_html + "\u003C!-- https:\u002F\u002Fstackoverflow.com\u002Fquesti
 
 
 
+;pug_debug_line = 257;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 
 
 
+
+
+
+
+;pug_debug_line = 266;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 
 
 
@@ -441,49 +445,13 @@ pug_html = pug_html + "\u003C!-- https:\u002F\u002Fstackoverflow.com\u002Fquesti
 
 
 
+;pug_debug_line = 283;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-;pug_debug_line = 289;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+;pug_debug_line = 291;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 
 
 
@@ -515,7 +483,17 @@ pug_html = pug_html + "\u003C!-- https:\u002F\u002Fstackoverflow.com\u002Fquesti
 
 
 
-;pug_debug_line = 315;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
+
+
+
+
+
+
+
+
+
+
+;pug_debug_line = 319;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 
 
 
@@ -537,7 +515,6 @@ pug_html = pug_html + "\u003C!-- https:\u002F\u002Fstackoverflow.com\u002Fquesti
 
 
 
-;pug_debug_line = 329;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 
 
 
@@ -559,7 +536,22 @@ pug_html = pug_html + "\u003C!-- https:\u002F\u002Fstackoverflow.com\u002Fquesti
 
 
 
-;pug_debug_line = 343;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
+
+
+
+;pug_debug_line = 335;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
+
+
+
+
+
+
+
+
+
+
+
+;pug_debug_line = 345;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 
 
 
@@ -575,7 +567,51 @@ pug_html = pug_html + "\u003C!-- https:\u002F\u002Fstackoverflow.com\u002Fquesti
 
 
 
-;pug_debug_line = 355;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
+
+
+
+
+
+
+;pug_debug_line = 359;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;pug_debug_line = 373;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;pug_debug_line = 385;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 
 
 
