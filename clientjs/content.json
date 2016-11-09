@@ -1092,16 +1092,17 @@
                     "data" : {
                         "image" : {
                             "name": "Divrcity City",
-                                "src": "images/projects/divrcity/hi-res/divrcity-city-1.jpg",
-                                "src_mobile": "images/projects/divrcity/hi-res/divrcity-city-1.jpg",
-                                "src_preview": "images/projects/divrcity/hi-res/divrcity-city-1.jpg",
+                                "src": "images/projects/divrcity/hi-res/divrcity-city-1.1.jpg",
+                                "src_mobile": "images/projects/divrcity/hi-res/divrcity-city-1.1.jpg",
+                                "src_preview": "images/projects/divrcity/hi-res/divrcity-city-1.1.jpg",
                                 "caption": "Divrcity City"
                         }
                     }
                 },
                 {
-                    "name" : "endeavorCaptionFSCenter3",
+                    "name" : "endeavorPullheaderCaptionFS",
                     "data" : {
+                        "subheader" : "City",
                         "caption" : "A large and permanent human settlement."
                     }
                 },
@@ -1118,7 +1119,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorCaptionFSCenter2",
+                    "name" : "endeavorCaptionFS",
                     "data" : {
                         "caption" : "Cities generally have complex systems for sanitation, utilities, land usage, housing, and transportation."
                     }
@@ -1128,16 +1129,17 @@
                     "data" : {
                         "image" : {
                             "name": "Divrcity Urban Design",
-                                "src": "images/projects/divrcity/hi-res/divrcity-urban-design-1.jpg",
-                                "src_mobile": "images/projects/divrcity/hi-res/divrcity-urban-design-1.jpg",
-                                "src_preview": "images/projects/divrcity/hi-res/divrcity-urban-design-1.jpg",
+                                "src": "images/projects/divrcity/hi-res/divrcity-urban-design-1.1.jpg",
+                                "src_mobile": "images/projects/divrcity/hi-res/divrcity-urban-design-1.1.jpg",
+                                "src_preview": "images/projects/divrcity/hi-res/divrcity-urban-design-1.1.jpg",
                                 "caption": "Divrcity Urban Design"
                         }
                     }
                 },
                 {
-                    "name" : "endeavorCaptionFSCenter3",
+                    "name" : "endeavorPullheaderCaptionFS",
                     "data" : {
+                        "subheader" : "Urban Design",
                         "caption" : "The process of designing and shaping cities, towns and villages, with the goal of making urban areas functional, attractive, and sustainable."
                     }
                 },
@@ -1154,7 +1156,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorCaptionFSCenter2",
+                    "name" : "endeavorCaptionFS",
                     "data" : {
                         "caption" : "Urban design is about making connections between people and places, movement and urban form, nature and the built fabric."
                     }
@@ -1209,6 +1211,114 @@
                                 "caption": "Divrcity Urban Design"
                         }
                     }
+                },
+                {
+                    "name" : "endeavorSubheaderFS",
+                    "data" : {
+                        "subheader" : "Research Design"
+                    }
+                },
+                {
+                    "name" : "endeavorPullheaderCaptionFS",
+                    "data" : {
+                        "subheader" : "Recipe for a City",
+                        "caption" : "Think of a city as a cake with a specific set of ingredients and preparation instructions. In this analogy, a city’s amenities represent the cake’s ingredients whereas the relative location of these amenities represents the cake’s preparation instructions"
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "image" : {
+                            "name": "Divrcity Urban Design as Cake",
+                                "src": "images/projects/divrcity/hi-res/divrcity-cake.jpg",
+                                "src_mobile": "images/projects/divrcity/hi-res/divrcity-cake.jpg",
+                                "src_preview": "images/projects/divrcity/hi-res/divrcity-cake.jpg",
+                                "caption": "Divrcity Urban Design as Cake"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorCaptionFS",
+                    "data" : {
+                        "caption" : "Like in a cake, a city’s ‘flavor’ will depend on the relative number of each of its ingredients. Adding more sugar and less flour will result in a different cake, much like a city with more churches and less bars."
+                    }
+                },
+                {
+                    "name" : "endeavorSubheaderFS",
+                    "data" : {
+                        "subheader" : "Data Acquisition"
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "image" : {
+                            "name": "Divrcity Data from Google",
+                                "src": "images/projects/divrcity/hi-res/divrcity-gmaps.jpg",
+                                "src_mobile": "images/projects/divrcity/hi-res/divrcity-gmaps.jpg",
+                                "src_preview": "images/projects/divrcity/hi-res/divrcity-gmaps.jpg",
+                                "caption": "Divrcity Data from Google"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorCaptionFS",
+                    "data" : {
+                        "caption" : "To examine the relationships between amenities in cities, we collected an extensive dataset including seven million data points from Google Maps API."
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "image" : {
+                            "name": "Divrcity Data from Google",
+                                "src": "images/projects/divrcity/hi-res/divrcity-usmap.jpg",
+                                "src_mobile": "images/projects/divrcity/hi-res/divrcity-usmap.jpg",
+                                "src_preview": "images/projects/divrcity/hi-res/divrcity-usmap.jpg",
+                                "caption": "Divrcity Data from Google"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorCaptionFS",
+                    "data" : {
+                        "caption" : "The dataset contains fine-grained locations of commercial and public amenities for 100 cities in the U.S. and Europe."
+                    }
+                },
+                {
+                    "name" : "endeavorSubheaderFS",
+                    "data" : {
+                        "subheader" : "Data + Methods"
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "image" : {
+                            "name": "Divrcity Data from Google",
+                                "src": "images/projects/divrcity/hi-res/divrcity-network.gif",
+                                "src_mobile": "images/projects/divrcity/hi-res/divrcity-network.gif",
+                                "src_preview": "images/projects/divrcity/hi-res/divrcity-network.gif",
+                                "caption": "Divrcity Data from Google"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorCaptionHeaderGrid",
+                    "data" : [ 
+                        {
+                            "header" : "Distance Calculations",
+                            "caption" : "To explore the relationships between amenities we calculated the distances from every amenity to every other amenity. We calculated the average minimum distance between each pair of two amenities, producing a metric value that represents the distance one must walk to get from type x to the closest amenity of type y."
+                        },
+                        {
+                            "header" : "Percolation Analysis",
+                            "caption" : "To understand the clustering behavior of amenities, we examined the clusters formed in each city using the calculated distances between every pair of amenities."
+                        },
+                        {
+                            "header" : "Cluster Composition",
+                            "caption" : "Taking a closer look at the size of the clusters we can understand the city centers and their composition of amenities. To do so, we fitted the calculated distances to the distribution of all amenity types to detect the minimum cluster size to observe an amenity of type x in a cluster."
+                        }
+                    ]
                 },
                 {
                     "name" : "endeavorEndPad250",

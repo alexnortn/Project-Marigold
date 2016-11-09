@@ -92,6 +92,11 @@ $StickyOffsetMeta = 20vh
 
 .endeavor-overview-preview:hover .description 
 	box-shadow 0 0px 50px rgba(0, 0, 0, 0.18)
+	
+
+.endeavor-border-top
+	border-top 1px solid $GRAY
+	padding-top 12px
 
 
 .endeavor-page 
@@ -109,6 +114,10 @@ $StickyOffsetMeta = 20vh
 	z-index -1
 	display block
 	/*overflow hidden*/
+		
+
+.endeavor-inline
+	display inline-block
 		
 
 .endeavor-contents 
@@ -339,11 +348,16 @@ p.center-caption
 	line-height 2em
 	margin-top 25px
 	width 300px
-	text-align left
 	position relative
 	display inline-block
 	text-align justify
 	text-justify inter-word
+	
+
+.caption-mod
+	width 100%
+	min-width 200px
+	max-width 350px
 	
 
 
@@ -702,6 +716,10 @@ p.center-caption
 	margin-left 100px
 	
 
+.endeavor-item-all-25
+	margin 25px
+	
+
 
 /* -------------------------------------- */
 /* Text Modifiers */	
@@ -722,7 +740,7 @@ p.center-caption
 	font-family Circular-Roman
 	font-size 18px
 	
-	line-height 2em
+	line-height 1.75em
 	margin-top 25px
 	max-width 650px
 	
@@ -750,6 +768,13 @@ p.center-caption
 .endeavor-flex-row
 	display flex
 	flex-direction row
+	
+
+.endeavor-flex-row-nowrap
+	display flex
+	flex-direction row
+	flex-wrap none
+	justify-content space-around
 	
 
 .endeavor-flex-center
@@ -1265,6 +1290,10 @@ p.center-caption
 	.endeavor-pull-quote
 		font-size 24px
 		
+	.endeavor-flex-row-nowrap
+		flex-direction column
+		flex-wrap wrap
+		
 
 /* ----------- Retina Screens ----------- */
 @media screen and (max-width: 768px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
@@ -1336,6 +1365,11 @@ p.center-caption
 		
 	.endeavor-pull-quote
 		font-size 24px
+		line-height 1.5em
+		
+	.endeavor-flex-row-nowrap
+		flex-direction column
+		flex-wrap wrap
 		
 
 
@@ -1380,7 +1414,6 @@ p.center-caption
 		
 	.endeavor-overview.endeavor-overview-preview .description
 		bottom 35%
-		
 
 
 //---------------------------------------------------------------

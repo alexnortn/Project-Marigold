@@ -162,7 +162,7 @@ mixin endeavorCaptionFS(datum)
 
 //-  Endeavor Project | Full-Width blocking, Caption
     Requires: <datum.caption>
-    Description: 35vw-Width Text Element // Slightly larger text size + Circular Font
+    Description: 60vw-Width Text Element // Slightly larger text size + Circular Font
 
 mixin endeavorCaptionFS2(datum)
     - var caption = datum.caption
@@ -182,7 +182,7 @@ mixin endeavorCaptionFSCenter(datum)
 
 //-  Endeavor Project | Full-Width blocking, Caption | Centered
     Requires: <datum.caption>
-    Description: 35vw-Width Text Element Centered // Slightly larger text size + Circular Font
+    Description: 60vw-Width Text Element Centered // Slightly larger text size + Circular Font
 
 mixin endeavorCaptionFSCenter2(datum)
     - var caption = datum.caption
@@ -192,12 +192,25 @@ mixin endeavorCaptionFSCenter2(datum)
 
 //-  Endeavor Project | Full-Width blocking, Caption | Centered
     Requires: <datum.caption>
-    Description: 35vw-Width Text Element Centered // Pull Quote text size + Circular Font
+    Description: 75vw-Width Text Element Centered // Pull Quote text size + Circular Font
 
 mixin endeavorCaptionFSCenter3(datum)
     - var caption = datum.caption
     .edeavor-item.endeavor-flex.endeavor-flex-center.fsw
         p.endeavor-pull-quote.no-margin.endeavor-text-center.endeavor-width-75-vw=caption
+
+
+//-  Endeavor Project | Full-Width blocking, Subheader + Caption | Centered
+    Requires: <data.header> <data.caption>
+    Description: 35vw-Width Text Element Centered // Sub-Header + Caption + Circular Font
+
+mixin endeavorPullheaderCaptionFS(data)
+    - var subheader = data.subheader
+    - var caption = data.caption
+    .endeavor-item.endeavor-flex.endeavor-flex-center.endeavor-flex-column.fsw
+        h2.endeavor-subheader.endeavor-pull-quote=subheader
+        p.endeavor-caption-2.no-margin.endeavor-text-center.endeavor-width-60-vw=caption
+
 
 
 //-  Endeavor Project | Full-Width blocking, Content
@@ -260,7 +273,7 @@ mixin endeavorImageFSList(data)
 
 mixin endeavorImage75(datum)
     - var image = datum.image
-    img.endeavor-item-25.img-load.veil.endeavor-width-75-percent(src=image.src)&attributes({'data-src': image.src})
+    img.endeavor-item.img-load.veil.endeavor-width-75-percent(src=image.src)&attributes({'data-src': image.src})
 
 
 //-  Endeavor Project | 75%-Width Adaptive Image
@@ -410,6 +423,72 @@ mixin endeavorImageSlider(data)
     .endeavor-item.endeavor-image-slider
         each image, i in images
             img.endeavor-image-slider-color.fsw(src = `${images[i].src}`)
+
+
+
+//- -------------- Hybrid Components ----------------
+
+
+
+//-  Endeavor Project | Adaptive Horizontal Column Element
+    Requires: <data.header> <data.caption>
+    Description: Apaptive Horizontal Column Element with Header + Caption
+
+mixin endeavorCaptionHeader(data, _width)
+    - var header = data.header
+    - var caption = data.caption
+    div.endeavor-border-top.endeavor-item-all-25
+        h4.endeavor-item-bottom-15=header
+        p.caption.caption-mod.endeavor-text-left.no-margin=caption
+
+
+//-  Endeavor Project | Adaptive Horizontal Column Element
+    Requires: <data.header> <data.image>
+    Description: Apaptive Horizontal Column Element with Header + Image
+
+mixin endeavorImageHeader(data, _width)
+    - var header = data.header
+    - var image = data.image
+    div.endeavor-border-top(style="width:" + _width + "%;").endeavor-item-all-25
+        h4.endeavor-item-bottom-15=header
+        img.img-load.veil.fsw(src=image.src)&attributes({'data-src': image.src})
+
+
+//-  Endeavor Project | Adaptive Horizontal Column Element Iterator
+    Requires: <data.headers[]> <data.captions[]> 
+    Works best with 3 columns --> As dictated by @media
+
+mixin endeavorCaptionHeaderGrid(data)
+    - var _width = (1 / (data.length + 0.5)) * 100; //- % of available width | 0.5 experimentally determined spacing coefficiant
+    .endeavor-item.endeavor-flex-row-nowrap
+        each datum, index in data
+            +endeavorCaptionHeader(datum, _width)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
