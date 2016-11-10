@@ -257,6 +257,15 @@ mixin endeavorImageFS(datum)
     img.endeavor-item.img-load.veil.fsw(src=image.src)&attributes({'data-src': image.src})
 
 
+//-  Endeavor Project | Full-Width Adaptive Image // No Top Margin
+    Requires: <datum.img.scr>
+    Description: Full-Width Image Element
+
+mixin endeavorImageNoTopFS(datum)
+    - var image = datum.image
+    img.endeavor-item.endeavor-item-top-none.img-load.veil.fsw(src=image.src)&attributes({'data-src': image.src})
+
+
 //-  Endeavor Project | Full-Width Adaptive Image
     Requires: <datum.images[[>
     Description: Full-Width Image Elements Array

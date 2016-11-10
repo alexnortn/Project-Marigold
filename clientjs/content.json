@@ -1321,6 +1321,60 @@
                     ]
                 },
                 {
+                    "name" : "endeavorSubheaderFS",
+                    "data" : {
+                        "subheader" : "Results"
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "image" : {
+                            "name": "Geography + Data",
+                                "src": "images/projects/divrcity/hi-res/divrcity-geography-data-1.jpg",
+                                "src_mobile": "images/projects/divrcity/hi-res/divrcity-geography-data-1.jpg",
+                                "src_preview": "images/projects/divrcity/hi-res/divrcity-geography-data-1.jpg",
+                                "caption": "Geography + Data"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "image" : {
+                            "name": "Amenities",
+                                "src": "images/projects/divrcity/hi-res/divrcity-amenities-1.jpg",
+                                "src_mobile": "images/projects/divrcity/hi-res/divrcity-amenities-1.jpg",
+                                "src_preview": "images/projects/divrcity/hi-res/divrcity-amenities-1.jpg",
+                                "caption": "Amenities"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "image" : {
+                            "name": "Amenities Matrix",
+                                "src": "images/projects/divrcity/hi-res/divrcity-amenity-matrix-2.jpg",
+                                "src_mobile": "images/projects/divrcity/hi-res/divrcity-amenity-matrix-2.jpg",
+                                "src_preview": "images/projects/divrcity/hi-res/divrcity-amenity-matrix-2.jpg",
+                                "caption": "Amenities Matrix"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageNoTopFS",
+                    "data" : {
+                        "image" : {
+                            "name": "Amenities Matrix Legend",
+                                "src": "images/projects/divrcity/hi-res/divrcity-colocation.jpg",
+                                "src_mobile": "images/projects/divrcity/hi-res/divrcity-colocation.jpg",
+                                "src_preview": "images/projects/divrcity/hi-res/divrcity-colocation.jpg",
+                                "caption": "Amenities Matrix Legend"
+                        }
+                    }
+                },
+                {
                     "name" : "endeavorEndPad250",
                     "data" : {}
                 }
