@@ -474,11 +474,14 @@ mixin endeavorCaptionHeader(data, _width)
     Description: Apaptive Horizontal Column Element with Header + Image
 
 mixin endeavorImageHeader(data, _width)
-    - var header = data.header
-    - var image = data.image
-    div.endeavor-border-top(style="width:" + _width + "%;").endeavor-item-all-25
-        h4.endeavor-item-bottom-15=header
-        img.img-load.veil.fsw(src=image.src)&attributes({'data-src': image.src})
+    - var header = data.header;
+    - var image_top = data.image_top;
+    - var images = data.images;
+    div.endeavor-item-all-25
+        img.img-load.veil.fsw(src=image_top.src)&attributes({'data-src': image_top.src})
+        h4.endeavor-item-bottom-15.endeavor-text-center.endeavor-item-top-50=header
+        each image, index in images
+            img.img-load.veil.fsw(src=image.src)&attributes({'data-src': image.src})
 
 
 //-  Endeavor Project | Adaptive Horizontal Column Element Iterator
@@ -490,6 +493,17 @@ mixin endeavorCaptionHeaderGrid(data)
     .endeavor-item.endeavor-flex-row-nowrap
         each datum, index in data
             +endeavorCaptionHeader(datum, _width)
+
+
+//-  Endeavor Project | Adaptive Horizontal Column Element Iterator
+    Requires: <data.headers[]> <data.images[]> 
+    Works best with 3 columns --> As dictated by @media
+
+mixin endeavorImageHeaderGrid(data)
+    - var _width = (1 / (data.length + 0.5)) * 100; //- % of available width | 0.5 experimentally determined spacing coefficiant
+    .endeavor-item.endeavor-flex-row-nowrap
+        each datum, index in data
+            +endeavorImageHeader(datum, _width)
 
 
 

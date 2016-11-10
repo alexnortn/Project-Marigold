@@ -1092,10 +1092,10 @@
                     "data" : {
                         "image" : {
                             "name": "Divrcity City",
-                                "src": "images/projects/divrcity/hi-res/divrcity-city-1.1.jpg",
-                                "src_mobile": "images/projects/divrcity/hi-res/divrcity-city-1.1.jpg",
-                                "src_preview": "images/projects/divrcity/hi-res/divrcity-city-1.1.jpg",
-                                "caption": "Divrcity City"
+                            "src": "images/projects/divrcity/hi-res/divrcity-city-1.1.jpg",
+                            "src_mobile": "images/projects/divrcity/hi-res/divrcity-city-1.1.jpg",
+                            "src_preview": "images/projects/divrcity/hi-res/divrcity-city-1.1.jpg",
+                            "caption": "Divrcity City"
                         }
                     }
                 },
@@ -1111,10 +1111,10 @@
                     "data" : {
                         "image" : {
                             "name": "Divrcity City",
-                                "src": "images/projects/divrcity/hi-res/divrcity-city-2.jpg",
-                                "src_mobile": "images/projects/divrcity/hi-res/divrcity-city-2.jpg",
-                                "src_preview": "images/projects/divrcity/hi-res/divrcity-city-2.jpg",
-                                "caption": "Divrcity City"
+                            "src": "images/projects/divrcity/hi-res/divrcity-city-2.jpg",
+                            "src_mobile": "images/projects/divrcity/hi-res/divrcity-city-2.jpg",
+                            "src_preview": "images/projects/divrcity/hi-res/divrcity-city-2.jpg",
+                            "caption": "Divrcity City"
                         }
                     }
                 },
@@ -1129,10 +1129,10 @@
                     "data" : {
                         "image" : {
                             "name": "Divrcity Urban Design",
-                                "src": "images/projects/divrcity/hi-res/divrcity-urban-design-1.1.jpg",
-                                "src_mobile": "images/projects/divrcity/hi-res/divrcity-urban-design-1.1.jpg",
-                                "src_preview": "images/projects/divrcity/hi-res/divrcity-urban-design-1.1.jpg",
-                                "caption": "Divrcity Urban Design"
+                            "src": "images/projects/divrcity/hi-res/divrcity-urban-design-1.1.jpg",
+                            "src_mobile": "images/projects/divrcity/hi-res/divrcity-urban-design-1.1.jpg",
+                            "src_preview": "images/projects/divrcity/hi-res/divrcity-urban-design-1.1.jpg",
+                            "caption": "Divrcity Urban Design"
                         }
                     }
                 },
@@ -1148,10 +1148,10 @@
                     "data" : {
                         "image" : {
                             "name": "Divrcity Urban Design",
-                                "src": "images/projects/divrcity/hi-res/divrcity-urban-design-2.jpg",
-                                "src_mobile": "images/projects/divrcity/hi-res/divrcity-urban-design-2.jpg",
-                                "src_preview": "images/projects/divrcity/hi-res/divrcity-urban-design-2.jpg",
-                                "caption": "Divrcity Urban Design"
+                            "src": "images/projects/divrcity/hi-res/divrcity-urban-design-2.jpg",
+                            "src_mobile": "images/projects/divrcity/hi-res/divrcity-urban-design-2.jpg",
+                            "src_preview": "images/projects/divrcity/hi-res/divrcity-urban-design-2.jpg",
+                            "caption": "Divrcity Urban Design"
                         }
                     }
                 },
@@ -1172,10 +1172,10 @@
                     "data" : {
                         "image" : {
                             "name": "Divrcity Thesis",
-                                "src": "images/projects/divrcity/hi-res/divrcity-thesis.jpg",
-                                "src_mobile": "images/projects/divrcity/hi-res/divrcity-thesis.jpg",
-                                "src_preview": "images/projects/divrcity/hi-res/divrcity-thesis.jpg",
-                                "caption": "Divrcity Thesis"
+                            "src": "images/projects/divrcity/hi-res/divrcity-thesis.jpg",
+                            "src_mobile": "images/projects/divrcity/hi-res/divrcity-thesis.jpg",
+                            "src_preview": "images/projects/divrcity/hi-res/divrcity-thesis.jpg",
+                            "caption": "Divrcity Thesis"
                         }
                     }
                 },
@@ -1208,16 +1208,66 @@
                     }
                 },
                 {
-                    "name" : "endeavorImageFS",
-                    "data" : {
-                        "image" : {
-                            "name": "Divrcity Urban Design as Cake",
-                                "src": "images/projects/divrcity/hi-res/divrcity-cake.jpg",
-                                "src_mobile": "images/projects/divrcity/hi-res/divrcity-cake.jpg",
-                                "src_preview": "images/projects/divrcity/hi-res/divrcity-cake.jpg",
-                                "caption": "Divrcity Urban Design as Cake"
+                    "name" : "endeavorImageHeaderGrid",
+                    "data" : [ 
+                        {
+                            "header" : "Chicago",
+                            "image_top" : {
+                                "name": "Divrcity Chicago",
+                                "src": "images/projects/divrcity/hi-res/divrcity-chicago.jpg",
+                                "src_mobile": "images/projects/divrcity/hi-res/divrcity-chicago.jpg",
+                                "src_preview": "images/projects/divrcity/hi-res/divrcity-chicago.jpg",
+                                "caption": "Divrcity Chicago"
+                            },
+                            "images" : [
+                                {
+                                    "name": "Cake One",
+                                    "src": "images/projects/divrcity/hi-res/divrcity-cake-1.jpg",
+                                    "src_mobile": "images/projects/divrcity/hi-res/divrcity-cake-1.jpg",
+                                    "src_preview": "images/projects/divrcity/hi-res/divrcity-cake-1.jpg",
+                                    "caption": "Cake One"
+                                }
+                            ]
+                        },
+                        {
+                            "header" : "New York",
+                            "image_top" : {
+                                "name": "Divrcity New York",
+                                "src": "images/projects/divrcity/hi-res/divrcity-new-york.jpg",
+                                "src_mobile": "images/projects/divrcity/hi-res/divrcity-new-york.jpg",
+                                "src_preview": "images/projects/divrcity/hi-res/divrcity-new-york.jpg",
+                                "caption": "Divrcity New York"
+                            },
+                            "images" : [
+                                {
+                                "name": "Cake Two",
+                                "src": "images/projects/divrcity/hi-res/divrcity-cake-2.jpg",
+                                "src_mobile": "images/projects/divrcity/hi-res/divrcity-cake-2.jpg",
+                                "src_preview": "images/projects/divrcity/hi-res/divrcity-cake-2.jpg",
+                                "caption": "Cake Two"
+                                }
+                            ]
+                        },
+                        {
+                            "header" : "Los Angeles",
+                            "image_top" : {
+                                "name": "Divrcity Los Angeles",
+                                "src": "images/projects/divrcity/hi-res/divrcity-los-angeles.jpg",
+                                "src_mobile": "images/projects/divrcity/hi-res/divrcity-los-angeles.jpg",
+                                "src_preview": "images/projects/divrcity/hi-res/divrcity-los-angeles.jpg",
+                                "caption": "Divrcity Los Angeles"
+                            },
+                            "images" : [
+                                {
+                                    "name": "Cake Three",
+                                    "src": "images/projects/divrcity/hi-res/divrcity-cake-3.jpg",
+                                    "src_mobile": "images/projects/divrcity/hi-res/divrcity-cake-3.jpg",
+                                    "src_preview": "images/projects/divrcity/hi-res/divrcity-cake-3.jpg",
+                                    "caption": "Cake Three"
+                                }
+                            ]
                         }
-                    }
+                    ]
                 },
                 {
                     "name" : "endeavorCaptionFS",
@@ -1236,10 +1286,10 @@
                     "data" : {
                         "image" : {
                             "name": "Divrcity Data from Google",
-                                "src": "images/projects/divrcity/hi-res/divrcity-gmaps.jpg",
-                                "src_mobile": "images/projects/divrcity/hi-res/divrcity-gmaps.jpg",
-                                "src_preview": "images/projects/divrcity/hi-res/divrcity-gmaps.jpg",
-                                "caption": "Divrcity Data from Google"
+                            "src": "images/projects/divrcity/hi-res/divrcity-gmaps.jpg",
+                            "src_mobile": "images/projects/divrcity/hi-res/divrcity-gmaps.jpg",
+                            "src_preview": "images/projects/divrcity/hi-res/divrcity-gmaps.jpg",
+                            "caption": "Divrcity Data from Google"
                         }
                     }
                 },
@@ -1254,10 +1304,10 @@
                     "data" : {
                         "image" : {
                             "name": "Divrcity Data from Google",
-                                "src": "images/projects/divrcity/hi-res/divrcity-usmap.jpg",
-                                "src_mobile": "images/projects/divrcity/hi-res/divrcity-usmap.jpg",
-                                "src_preview": "images/projects/divrcity/hi-res/divrcity-usmap.jpg",
-                                "caption": "Divrcity Data from Google"
+                            "src": "images/projects/divrcity/hi-res/divrcity-usmap.jpg",
+                            "src_mobile": "images/projects/divrcity/hi-res/divrcity-usmap.jpg",
+                            "src_preview": "images/projects/divrcity/hi-res/divrcity-usmap.jpg",
+                            "caption": "Divrcity Data from Google"
                         }
                     }
                 },
@@ -1278,10 +1328,10 @@
                     "data" : {
                         "image" : {
                             "name": "Divrcity Data from Google",
-                                "src": "images/projects/divrcity/hi-res/divrcity-network.gif",
-                                "src_mobile": "images/projects/divrcity/hi-res/divrcity-network.gif",
-                                "src_preview": "images/projects/divrcity/hi-res/divrcity-network.gif",
-                                "caption": "Divrcity Data from Google"
+                            "src": "images/projects/divrcity/hi-res/divrcity-network.gif",
+                            "src_mobile": "images/projects/divrcity/hi-res/divrcity-network.gif",
+                            "src_preview": "images/projects/divrcity/hi-res/divrcity-network.gif",
+                            "caption": "Divrcity Data from Google"
                         }
                     }
                 },
@@ -1325,10 +1375,10 @@
                     "data" : {
                         "image" : {
                             "name": "Amenities",
-                                "src": "images/projects/divrcity/hi-res/divrcity-amenities-1.jpg",
-                                "src_mobile": "images/projects/divrcity/hi-res/divrcity-amenities-1.jpg",
-                                "src_preview": "images/projects/divrcity/hi-res/divrcity-amenities-1.jpg",
-                                "caption": "Amenities"
+                            "src": "images/projects/divrcity/hi-res/divrcity-amenities-1.jpg",
+                            "src_mobile": "images/projects/divrcity/hi-res/divrcity-amenities-1.jpg",
+                            "src_preview": "images/projects/divrcity/hi-res/divrcity-amenities-1.jpg",
+                            "caption": "Amenities"
                         }
                     }
                 },
@@ -1337,10 +1387,10 @@
                     "data" : {
                         "image" : {
                             "name": "Amenities Matrix",
-                                "src": "images/projects/divrcity/hi-res/divrcity-amenity-matrix-2.jpg",
-                                "src_mobile": "images/projects/divrcity/hi-res/divrcity-amenity-matrix-2.jpg",
-                                "src_preview": "images/projects/divrcity/hi-res/divrcity-amenity-matrix-2.jpg",
-                                "caption": "Amenities Matrix"
+                            "src": "images/projects/divrcity/hi-res/divrcity-amenity-matrix-2.jpg",
+                            "src_mobile": "images/projects/divrcity/hi-res/divrcity-amenity-matrix-2.jpg",
+                            "src_preview": "images/projects/divrcity/hi-res/divrcity-amenity-matrix-2.jpg",
+                            "caption": "Amenities Matrix"
                         }
                     }
                 },
@@ -1349,22 +1399,34 @@
                     "data" : {
                         "image" : {
                             "name": "Amenities Matrix Legend",
-                                "src": "images/projects/divrcity/hi-res/divrcity-colocation.jpg",
-                                "src_mobile": "images/projects/divrcity/hi-res/divrcity-colocation.jpg",
-                                "src_preview": "images/projects/divrcity/hi-res/divrcity-colocation.jpg",
-                                "caption": "Amenities Matrix Legend"
+                            "src": "images/projects/divrcity/hi-res/divrcity-colocation.jpg",
+                            "src_mobile": "images/projects/divrcity/hi-res/divrcity-colocation.jpg",
+                            "src_preview": "images/projects/divrcity/hi-res/divrcity-colocation.jpg",
+                            "caption": "Amenities Matrix Legend"
                         }
                     }
                 },
-                                {
+                {
                     "name" : "endeavorImageNoTopFS",
                     "data" : {
                         "image" : {
                             "name": "Divrcity Matrix Full",
-                                "src": "images/projects/divrcity/hi-res/divrcity-matrix-full.jpg",
-                                "src_mobile": "images/projects/divrcity/hi-res/divrcity-matrix-full.jpg",
-                                "src_preview": "images/projects/divrcity/hi-res/divrcity-matrix-full.jpg",
-                                "caption": "Divrcity Matrix Full"
+                            "src": "images/projects/divrcity/hi-res/divrcity-matrix-full.jpg",
+                            "src_mobile": "images/projects/divrcity/hi-res/divrcity-matrix-full.jpg",
+                            "src_preview": "images/projects/divrcity/hi-res/divrcity-matrix-full.jpg",
+                            "caption": "Divrcity Matrix Full"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "image" : {
+                            "name": "Divrcity American City Scaling",
+                            "src": "images/projects/divrcity/hi-res/divrcity-city-scaling.jpg",
+                            "src_mobile": "images/projects/divrcity/hi-res/divrcity-city-scaling.jpg",
+                            "src_preview": "images/projects/divrcity/hi-res/divrcity-city-scaling.jpg",
+                            "caption": "Divrcity American City Scaling"
                         }
                     }
                 },
@@ -3776,7 +3838,7 @@
         "shout_out": "Interested in working together or simply meeting up?",
         "shout_out_sub": "I love sharing adventures, discovering new design, and nerding out on emerging technology—especially VR + AI.",
         "cta": "Let's Talk.",
-        "email": "alexnortn[at]gmail[dot]com",
+        "email": "alexnortn@gmail.com",
         "phone": "774 766 1179",
         "copywrite": "2016 Alex Norton"
     },
