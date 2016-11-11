@@ -282,6 +282,126 @@ $StickyOffsetMeta = 20vh
 
 
 /* -------------------------------------- */
+/* Moments */
+
+.endeavor-parallax-behind-fs:hover .center 
+	opacity 1
+
+
+.endeavor-parallax-behind-fs
+	display block
+	width 102vw
+	left calc((102vw - 1275px) / -2) // 1200~ Max contents relative width
+	height 70vh
+	position relative
+	text-align center
+	border-top 130vh
+	margin-top -130vh
+	border-bottom 100vh
+	margin-bottom -100vh
+	border-style solid
+	border-color $WHITE_BG
+	z-index -1
+	transition-timing-function linear
+	transition all 0.5s
+
+
+.endeavor-parallax-behind-support 
+	background-repeat no-repeat
+	background-attachment scroll
+	background-size cover
+	background-position left
+	position absolute
+	left -20%
+	right -20%
+	top 0
+	height 125%
+	margin-top -225px
+	
+
+.endeavor-parallax-hybrid 
+	display block
+	width 100%
+	clear both
+	position relative
+	text-align center
+
+
+.endeavor-parallax-hybrid .img-box 
+	position relative
+	margin-right 17.5%
+	top -300px
+	filter drop-shadow(0 0 25px rgba(0,0,0,0.35))
+	// box-shadow 0 0 50px rgba(0,0,0,.18)
+
+
+.endeavor-parallax-hybrid-color 
+	padding-top 50%
+	bottom 0
+	background-size 100% auto
+
+
+.endeavor-parallax-hybrid p.caption 
+	font-family Circular-Roman
+	font-size 14px
+	letter-spacing 0.25px
+	margin-bottom 15px
+	line-height 2em
+	margin-top 25px
+	width 20vw
+	min-width 225px
+	max-width 350px
+	bottom -25%
+	text-align left
+	position absolute
+	display inline-block
+	text-align left
+	text-justify inter-word
+	background-color $WHITE_BG
+	padding 3.5vw
+	box-shadow 0 -10px 15px rgba(0, 0, 0, 0.18) 
+	
+
+.endeavor-parallax-hybrid-left-caption
+	left 10%
+	
+
+.endeavor-parallax-hybrid-left-img-box
+	float right
+	
+
+.endeavor-parallax-hybrid-right-caption
+	right 10%
+	
+
+.endeavor-parallax-hybrid-right-img-box
+	float left
+	left 15%
+
+
+.endeavor-image-slider 
+	display block
+	width 100%
+	clear both
+	position relative
+	text-align center
+
+
+.endeavor-image-slider-color
+	height 100%
+	bottom 0
+	background-size 100% auto
+	
+.endeavor-image-slider ul.slick-dots
+	position initial
+	
+
+.no-margin
+	margin 0
+	
+
+
+/* -------------------------------------- */
 /* Meta Data */
 	
 
@@ -824,16 +944,16 @@ p.center-caption
 /* -------------------------------------- */
 /* Width Modifiers */	
 
-.endeavor-width-35-vw
-	width 35vw
+.endeavor-width-35-prcnt
+	width 35%
 	
 
-.endeavor-width-60-vw
-	width 60vw
+.endeavor-width-60-prcnt
+	width 60%
 	
 
-.endeavor-width-75-vw
-	width 75vw
+.endeavor-width-75-prcnt
+	width 75%
 	
 
 .endeavor-width-50-percent
@@ -884,125 +1004,10 @@ p.center-caption
 .endeavor-float-left
 	float left
 	
-
-/* -------------------------------------- */
-/* Moments */
-
-.endeavor-parallax-behind-fs:hover .center 
-	opacity 1
-
-
-.endeavor-parallax-behind-fs
-	display block
-	width 102vw
-	left calc((102vw - 1275px) / -2) // 1200~ Max contents relative width
-	height 70vh
+.endeavor-center
 	position relative
-	text-align center
-	border-top 130vh
-	margin-top -130vh
-	border-bottom 100vh
-	margin-bottom -100vh
-	border-style solid
-	border-color $WHITE_BG
-	z-index -1
-	transition-timing-function linear
-	transition all 0.5s
-
-
-.endeavor-parallax-behind-support 
-	background-repeat no-repeat
-	background-attachment scroll
-	background-size cover
-	background-position left
-	position absolute
-	left -20%
-	right -20%
-	top 0
-	height 125%
-	margin-top -225px
-	
-
-.endeavor-parallax-hybrid 
-	display block
-	width 100%
-	clear both
-	position relative
-	text-align center
-
-
-.endeavor-parallax-hybrid .img-box 
-	position relative
-	margin-right 17.5%
-	top -300px
-	filter drop-shadow(0 0 25px rgba(0,0,0,0.35))
-	// box-shadow 0 0 50px rgba(0,0,0,.18)
-
-
-.endeavor-parallax-hybrid-color 
-	padding-top 50%
-	bottom 0
-	background-size 100% auto
-
-
-.endeavor-parallax-hybrid p.caption 
-	font-family Circular-Roman
-	font-size 14px
-	letter-spacing 0.25px
-	margin-bottom 15px
-	line-height 2em
-	margin-top 25px
-	width 20vw
-	min-width 225px
-	max-width 350px
-	bottom -25%
-	text-align left
-	position absolute
-	display inline-block
-	text-align left
-	text-justify inter-word
-	background-color $WHITE_BG
-	padding 3.5vw
-	box-shadow 0 -10px 15px rgba(0, 0, 0, 0.18) 
-	
-
-.endeavor-parallax-hybrid-left-caption
-	left 10%
-	
-
-.endeavor-parallax-hybrid-left-img-box
-	float right
-	
-
-.endeavor-parallax-hybrid-right-caption
-	right 10%
-	
-
-.endeavor-parallax-hybrid-right-img-box
-	float left
-	left 15%
-
-
-.endeavor-image-slider 
-	display block
-	width 100%
-	clear both
-	position relative
-	text-align center
-
-
-.endeavor-image-slider-color
-	height 100%
-	bottom 0
-	background-size 100% auto
-	
-.endeavor-image-slider ul.slick-dots
-	position initial
-	
-
-.no-margin
-	margin 0
-	
+	margin-left auto
+	margin-right auto	
 
 /*
  *	Media Queries
@@ -1267,6 +1272,7 @@ p.center-caption
 		padding-top 300px
 		
 	.endeavor-description
+		width 75%
 		padding 0
 		width 100%
 		border-left none
@@ -1348,6 +1354,7 @@ p.center-caption
 	.endeavor-description
 		padding 0
 		width 100%
+		width 75%
 		border-left none
 		
 	.meta-data

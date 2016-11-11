@@ -170,7 +170,7 @@ mixin endeavorDescriptionsBig(data)
 mixin endeavorCaptionFS(datum)
     - var caption = datum.caption
     .endeavor-item.fsw
-        p.caption.no-margin.endeavor-padding-left-50.endeavor-width-35-vw=caption
+        p.caption.no-margin.endeavor-padding-left-50.endeavor-width-35-prcnt=caption
 
 
 //-  Endeavor Project | Full-Width blocking, Caption
@@ -180,7 +180,7 @@ mixin endeavorCaptionFS(datum)
 mixin endeavorCaptionFS2(datum)
     - var caption = datum.caption
     .endeavor-item.fsw
-        p.no-margin.endeavor-caption-2.endeavor-padding-left-50.endeavor-width-60-vw=caption
+        p.no-margin.endeavor-caption-2.endeavor-padding-left-50.endeavor-width-60-prcnt=caption
 
 
 //-  Endeavor Project | Full-Width blocking, Caption | Centered
@@ -190,7 +190,7 @@ mixin endeavorCaptionFS2(datum)
 mixin endeavorCaptionFSCenter(datum)
     - var caption = datum.caption
     .endeavor-item.endeavor-flex.endeavor-flex-center.fsw
-        p.caption.no-margin.endeavor-text-center.endeavor-width-35-vw=caption
+        p.caption.no-margin.endeavor-text-center.endeavor-width-35-prcnt=caption
 
 
 //-  Endeavor Project | Full-Width blocking, Caption | Centered
@@ -200,7 +200,7 @@ mixin endeavorCaptionFSCenter(datum)
 mixin endeavorCaptionFSCenter2(datum)
     - var caption = datum.caption
     .endeavor-item.endeavor-flex.endeavor-flex-center.fsw
-        p.endeavor-caption-2.no-margin.endeavor-text-center.endeavor-width-60-vw=caption
+        p.endeavor-caption-2.no-margin.endeavor-text-center.endeavor-width-60-prcnt=caption
 
 
 //-  Endeavor Project | Full-Width blocking, Caption | Centered
@@ -210,7 +210,7 @@ mixin endeavorCaptionFSCenter2(datum)
 mixin endeavorCaptionFSCenter3(datum)
     - var caption = datum.caption
     .edeavor-item.endeavor-flex.endeavor-flex-center.fsw
-        p.endeavor-pull-quote.no-margin.endeavor-text-center.endeavor-width-75-vw=caption
+        p.endeavor-pull-quote.no-margin.endeavor-text-center.endeavor-width-75-prcnt=caption
 
 
 //-  Endeavor Project | Full-Width blocking, Subheader + Caption | Centered
@@ -222,7 +222,7 @@ mixin endeavorPullheaderCaptionFS(data)
     - var caption = data.caption
     .endeavor-item.endeavor-flex.endeavor-flex-center.endeavor-flex-column.fsw
         h2.endeavor-subheader.endeavor-pull-quote=subheader
-        p.endeavor-caption-2.no-margin.endeavor-text-center.endeavor-width-60-vw=caption
+        p.endeavor-caption-2.no-margin.endeavor-text-center.endeavor-width-60-prcnt=caption
 
 
 
@@ -233,7 +233,7 @@ mixin endeavorPullheaderCaptionFS(data)
 mixin endeavorContentFS(datum)
     - var content = datum.content
     .edeavor-item.fsw
-        p.content.no-margin.endeavor-float-right.endeavor-width-35-vw=content
+        p.content.no-margin.endeavor-float-right.endeavor-width-35-prcnt=content
 
 
 //-  Endeavor Project | Full-Width blocking, Sub-Header
@@ -257,7 +257,7 @@ mixin endeavorSubheaderCaptionFS(datum)
     - var caption = datum.caption
     .edeavor-item
         h3=datum.subheader
-        p.caption.no-margin.endeavor-item-top-15.endeavor-width-35-vw=caption
+        p.caption.no-margin.endeavor-item-top-15.endeavor-width-35-prcnt=caption
         hr.slight.endeavor-item-top-25.fsw
 
 
@@ -461,6 +461,17 @@ mixin endeavorImageCenterCaption(data)
 mixin endeavorImageSlider(data)
     - var images = data.images
     .endeavor-item.endeavor-image-slider
+        each image, i in images
+            img.endeavor-image-slider-color.fsw(src = `${images[i].src}`)
+
+
+//-  Endeavor Swipable Image Slider 75
+    Requires: <result.images[]>
+    Description: Self-Containing element for centered swipable image carousel
+
+mixin endeavorImageSlider75(data)
+    - var images = data.images
+    .endeavor-item.endeavor-image-slider.endeavor-width-75-prcnt.endeavor-center
         each image, i in images
             img.endeavor-image-slider-color.fsw(src = `${images[i].src}`)
 
