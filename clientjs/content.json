@@ -1088,80 +1088,6 @@
             "image_preview": "images/projects/divrcity/hi-res/divrcity-preview-6.jpg",
             "sections" : [
                 {
-                    "name" : "endeavorImageFS",
-                    "data" : {
-                        "image" : {
-                            "name": "Divrcity City",
-                            "src": "images/projects/divrcity/hi-res/divrcity-city-1.1.jpg",
-                            "src_mobile": "images/projects/divrcity/hi-res/divrcity-city-1.1.jpg",
-                            "src_preview": "images/projects/divrcity/hi-res/divrcity-city-1.1.jpg",
-                            "caption": "Divrcity City"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorPullheaderCaptionFS",
-                    "data" : {
-                        "subheader" : "City",
-                        "caption" : "A large and permanent human settlement."
-                    }
-                },
-                {
-                    "name" : "endeavorImageFS",
-                    "data" : {
-                        "image" : {
-                            "name": "Divrcity City",
-                            "src": "images/projects/divrcity/hi-res/divrcity-city-2.jpg",
-                            "src_mobile": "images/projects/divrcity/hi-res/divrcity-city-2.jpg",
-                            "src_preview": "images/projects/divrcity/hi-res/divrcity-city-2.jpg",
-                            "caption": "Divrcity City"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorCaptionFS",
-                    "data" : {
-                        "caption" : "Cities generally have complex systems for sanitation, utilities, land usage, housing, and transportation."
-                    }
-                },
-                {
-                    "name" : "endeavorImageFS",
-                    "data" : {
-                        "image" : {
-                            "name": "Divrcity Urban Design",
-                            "src": "images/projects/divrcity/hi-res/divrcity-urban-design-1.1.jpg",
-                            "src_mobile": "images/projects/divrcity/hi-res/divrcity-urban-design-1.1.jpg",
-                            "src_preview": "images/projects/divrcity/hi-res/divrcity-urban-design-1.1.jpg",
-                            "caption": "Divrcity Urban Design"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorPullheaderCaptionFS",
-                    "data" : {
-                        "subheader" : "Urban Design",
-                        "caption" : "The process of designing and shaping cities, towns and villages, with the goal of making urban areas functional, attractive, and sustainable."
-                    }
-                },
-                {
-                    "name" : "endeavorImageFS",
-                    "data" : {
-                        "image" : {
-                            "name": "Divrcity Urban Design",
-                            "src": "images/projects/divrcity/hi-res/divrcity-urban-design-2.jpg",
-                            "src_mobile": "images/projects/divrcity/hi-res/divrcity-urban-design-2.jpg",
-                            "src_preview": "images/projects/divrcity/hi-res/divrcity-urban-design-2.jpg",
-                            "caption": "Divrcity Urban Design"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorCaptionFS",
-                    "data" : {
-                        "caption" : "Urban design is about making connections between people and places, movement and urban form, nature and the built fabric."
-                    }
-                },
-                {
                     "name" : "endeavorSubheaderFS",
                     "data" : {
                         "subheader" : "Hypothesis"
@@ -1180,7 +1106,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorDescriptions",
+                    "name" : "endeavorDescriptionsBig",
                     "data" : {
                         "sections" : [
                             {
@@ -1198,13 +1124,6 @@
                     "name" : "endeavorSubheaderFS",
                     "data" : {
                         "subheader" : "Research Design"
-                    }
-                },
-                {
-                    "name" : "endeavorPullheaderCaptionFS",
-                    "data" : {
-                        "subheader" : "Recipe for a City",
-                        "caption" : "Think of a city as a cake with a specific set of ingredients and preparation instructions. In this analogy, a city’s amenities represent the cake’s ingredients whereas the relative location of these amenities represents the cake’s preparation instructions"
                     }
                 },
                 {
@@ -1270,9 +1189,10 @@
                     ]
                 },
                 {
-                    "name" : "endeavorCaptionFS",
+                    "name" : "endeavorPullheaderCaptionFS",
                     "data" : {
-                        "caption" : "Like in a cake, a city’s ‘flavor’ will depend on the relative number of each of its ingredients. Adding more sugar and less flour will result in a different cake, much like a city with more churches and less bars."
+                        "subheader" : "Recipe for a City",
+                        "caption" : "Think of a city as a cake with a specific set of ingredients and preparation instructions. In this analogy, a city’s amenities represent the cake’s ingredients whereas the relative location of these amenities represents the cake’s preparation instructions"
                     }
                 },
                 {
@@ -1428,6 +1348,12 @@
                             "src_preview": "images/projects/divrcity/hi-res/divrcity-city-scaling.jpg",
                             "caption": "Divrcity American City Scaling"
                         }
+                    }
+                },
+                {
+                    "name" : "endeavorSubheaderFS",
+                    "data" : {
+                        "subheader" : "Interaction Design"
                     }
                 },
                 {

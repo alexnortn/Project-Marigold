@@ -334,8 +334,6 @@ p.center-caption
 	display block
 	
 	width 50%
-	min-width 300px
-	max-width 500px
 	
 	margin-bottom 150px
 	text-align center
@@ -347,7 +345,10 @@ p.center-caption
 	font-size 14px
 	line-height 2em
 	margin-top 25px
-	width 300px
+	
+	min-width 300px
+	max-width 500px
+	
 	position relative
 	display inline-block
 	text-align left
@@ -631,6 +632,33 @@ p.center-caption
 	border none
 	
 
+/* -------------------------------------- */
+/* Description Box Big */
+
+.endeavor-description-big 
+	width 75%
+	max-width 1000px
+	position relative
+	display block
+	padding 0 0 30px 35px
+	
+	order 2
+	
+.endeavor-description-big p 
+	text-align left
+	font-family Chronicle-Roman, serif
+	font-size 36px
+	line-height 1.75em
+	letter-spacing 0
+	
+.endeavor-description-big q 
+	margin-top 0
+	margin-bottom 0
+	
+.endeavor-description-big h4
+	margin-top 50px 
+	
+
 
 /* -------------------------------------- */
 /* Margin Modifiers */
@@ -649,8 +677,8 @@ p.center-caption
 
 
 .endeavor-item
-	margin-top 75px
-	margin-bottom 75px
+	margin-top 50px
+	margin-bottom 50px
 	
 
 .endeavor-item-top
@@ -1304,6 +1332,9 @@ p.center-caption
 		flex-direction column
 		flex-wrap wrap
 		
+	.endeavor-description-big p
+		font-size 24px
+		
 
 /* ----------- Retina Screens ----------- */
 @media screen and (max-width: 768px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
@@ -1380,6 +1411,9 @@ p.center-caption
 	.endeavor-flex-row-nowrap
 		flex-direction column
 		flex-wrap wrap
+		
+	.endeavor-description-big p
+		font-size 24px
 		
 
 

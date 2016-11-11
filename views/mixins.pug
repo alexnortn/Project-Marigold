@@ -150,13 +150,26 @@ mixin endeavorDescriptionsRight(data)
                 p.tamer=section.content
 
 
+//-  Endeavor Expandable Description Sections // Large Type
+    Requires: <data.description> <data.meta>
+        + project-description <{string}>
+
+mixin endeavorDescriptionsBig(data)
+    - var sections = data.sections
+    .endeavor-item.cf
+        .endeavor-description-big.endeavor-item-left-100.no-border
+            each section, index in sections 
+                h4=section.name
+                p.tamer=section.content
+
+
 //-  Endeavor Project | Full-Width blocking, Caption
     Requires: <datum.caption>
     Description: 35vw-Width Text Element
 
 mixin endeavorCaptionFS(datum)
     - var caption = datum.caption
-    .edeavor-item.fsw
+    .endeavor-item.fsw
         p.caption.no-margin.endeavor-padding-left-50.endeavor-width-35-vw=caption
 
 
@@ -166,7 +179,7 @@ mixin endeavorCaptionFS(datum)
 
 mixin endeavorCaptionFS2(datum)
     - var caption = datum.caption
-    .edeavor-item.fsw
+    .endeavor-item.fsw
         p.no-margin.endeavor-caption-2.endeavor-padding-left-50.endeavor-width-60-vw=caption
 
 
@@ -176,7 +189,7 @@ mixin endeavorCaptionFS2(datum)
 
 mixin endeavorCaptionFSCenter(datum)
     - var caption = datum.caption
-    .edeavor-item.endeavor-flex.endeavor-flex-center.fsw
+    .endeavor-item.endeavor-flex.endeavor-flex-center.fsw
         p.caption.no-margin.endeavor-text-center.endeavor-width-35-vw=caption
 
 
@@ -186,7 +199,7 @@ mixin endeavorCaptionFSCenter(datum)
 
 mixin endeavorCaptionFSCenter2(datum)
     - var caption = datum.caption
-    .edeavor-item.endeavor-flex.endeavor-flex-center.fsw
+    .endeavor-item.endeavor-flex.endeavor-flex-center.fsw
         p.endeavor-caption-2.no-margin.endeavor-text-center.endeavor-width-60-vw=caption
 
 
