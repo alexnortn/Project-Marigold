@@ -497,13 +497,12 @@ $(document).ready(function() {
     // --------------------------------------
     // Lazy Load Images --> Unveil2
 
-    // $('img').unveil({
-    //     offset: 400,
-    //     // throttle: 200,
-    //     placeholder: 'http://placehold.it/500x300',
-    // });
+    $('.img-load').unveil({
+        offset: 800,
+        container: $('.endeavor-view'),
+        placeholder: 'http://placehold.it/500x300'
+    });
 
-    // debugger;
 
     // $('.img-load').unveil({
     //     placeholder: 'http://placehold.it/500x300',

@@ -1202,7 +1202,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorImageFS",
+                    "name" : "endeavorImage75",
                     "data" : {
                         "image" : {
                             "name": "Divrcity Data from Google",
@@ -1291,7 +1291,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorImageFS",
+                    "name" : "endeavorImage75",
                     "data" : {
                         "image" : {
                             "name": "Amenities",
@@ -1372,35 +1372,11 @@
                     "name" : "endeavorImageFS",
                     "data" : {
                         "image" : {
-                            "name": "Devices Mock UP",
-                            "src": "images/projects/divrcity/hi-res/divrcity-mocks-2.1.jpg",
-                            "src_mobile": "images/projects/divrcity/hi-res/divrcity-mocks-2.1.jpg",
-                            "src_preview": "images/projects/divrcity/hi-res/divrcity-mocks-2.1.jpg",
-                            "caption": "Devices Mock UP"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImageFS",
-                    "data" : {
-                        "image" : {
-                            "name": "Devices Mock UP",
-                            "src": "images/projects/divrcity/hi-res/divrcity-mocks-3.jpg",
-                            "src_mobile": "images/projects/divrcity/hi-res/divrcity-mocks-3.jpg",
-                            "src_preview": "images/projects/divrcity/hi-res/divrcity-mocks-3.jpg",
-                            "caption": "Devices Mock UP"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImageFS",
-                    "data" : {
-                        "image" : {
-                            "name": "Devices Mock UP",
-                            "src": "images/projects/divrcity/hi-res/divrcity-mocks-4.jpg",
-                            "src_mobile": "images/projects/divrcity/hi-res/divrcity-mocks-4.jpg",
-                            "src_preview": "images/projects/divrcity/hi-res/divrcity-mocks-4.jpg",
-                            "caption": "Devices Mock UP"
+                            "name": "Divrcity Views",
+                            "src": "images/projects/divrcity/hi-res/divrcity-views.jpg",
+                            "src_mobile": "images/projects/divrcity/hi-res/divrcity-views.jpg",
+                            "src_preview": "images/projects/divrcity/hi-res/divrcity-views.jpg",
+                            "caption": "Divrcity Views"
                         }
                     }
                 },
@@ -1409,9 +1385,9 @@
                     "data" : {
                         "imageBig" : {
                             "name": "das-interactive-loading",
-                            "src": "images/projects/das-interactive/hi-res/das-interactive-iphone-bg.jpg",
-                            "src_mobile": "images/projects/das-interactive/hi-res/das-interactive-iphone-bg.jpg",
-                            "src_preview": "images/projects/das-interactive/hi-res/das-interactive-iphone-bg.jpg"
+                            "src": "images/projects/divrcity/hi-res/divrcity-mobile-bg.jpg",
+                            "src_mobile": "images/projects/divrcity/hi-res/divrcity-mobile-bg.jpg",
+                            "src_preview": "images/projects/divrcity/hi-res/divrcity-mobile-bg.jpg"
                         },
                         "imageParallax" : {
                             "name": "Devices Mock UP",
@@ -3022,18 +2998,30 @@
                 "Technologies" : "Arduino / Woodshop",
                 "Duration" : "Two Months"
             },
-            "image_hero": "images/crystal-8.jpg",
-            "image_preview": "images/crystal-8.jpg",
+            "image_hero": "images/projects/msty/hi-res/msty-hero-2.jpg",
+            "image_preview": "images/projects/msty/hi-res/msty-preview.jpg",
             "sections" : [
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
                         "image" : {
-                            "name": "hero",
-                            "src": "images/crystal-8.jpg",
-                            "src_mobile": "images/crystal-8.jpg",
-                            "src_preview": "images/lamp-sm-0.jpg",
-                            "caption": "Side view of Gestural Lamp. "
+                            "name": "MSTY Intro",
+                            "src": "images/projects/msty/hi-res/msty-intro.jpg",
+                            "src_mobile": "images/projects/msty/hi-res/msty-intro.jpg",
+                            "src_preview": "images/projects/msty/hi-res/msty-intro.jpg",
+                            "caption": "MSTY Intro"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "image" : {
+                            "name": "MSTY Expressions",
+                            "src": "images/projects/msty/hi-res/msty-many-2.jpg",
+                            "src_mobile": "images/projects/msty/hi-res/msty-many-2.jpg",
+                            "src_preview": "images/projects/msty/hi-res/msty-many-2.jpg",
+                            "caption": "MSTY Expressions"
                         }
                     }
                 },
