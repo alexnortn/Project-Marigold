@@ -72,6 +72,7 @@ $(document).ready(function() {
 
     _closeProject = closeProject; // Set up close project global
 
+    // Intro loader
     setTimeout(function() {
         $.Velocity.animate( $('.loader'), "fadeOut", { duration: 750 } )
             .then(function(elements) {
