@@ -14,6 +14,8 @@ let $ = require('jquery');
         require('./cssTransitionEnd.js');
         require('../node_modules/unveil2/src/jquery.unveil2.js');
 
+let _site_content = require('./content.json');
+
 // Module Dependencies
 let velocity    = require('velocity-animate'),
     velocity_ui = require('velocity-ui-pack'),
@@ -43,7 +45,8 @@ let _mobile;
 
 let _projectCurrentId,
     _openProjectState = false,
-    _closeProject;
+    _closeProject,
+    _endeavor_routes;
 
 
     // attachFastClick = require('fastclick');    
@@ -59,18 +62,24 @@ $(document).ready(function() {
     // Set Greeting
     setGreeting();
 
+    // Parse Contents
+    _endeavor_routes = {
+        projects: [],
+        case_studies: []
+    };
+
+    _site_content.case_studies.forEach(function(item) {
+        _endeavor_routes.case_studies.push(item.route);    
+    });
+
+    _site_content.projects.forEach(function(item) {
+        _endeavor_routes.projects.push(item.route);    
+    });    
+
     window.addEventListener("hashchange", hashChanged, false);
 
-    hashRoute();
+    hashRoute(); // Initial Page Routing
     hashChanged();
-
-    // Call pagination
-    pagination(_sections);
-    paginationUpdate(_sectionCurrent);
-
-    stickyUpdate();
-
-    _closeProject = closeProject; // Set up close project global
 
     // Intro loader
     setTimeout(function() {
@@ -82,6 +91,14 @@ $(document).ready(function() {
                 console.log("Rejected.");
             });
     }, 2500);
+
+    // Call pagination
+    pagination(_sections);
+    paginationUpdate(_sectionCurrent);
+
+    stickyUpdate();
+
+    _closeProject = closeProject; // Set up close project global
 
     // Center In
     $('#pagination').alwaysCenterIn(window, { direction: 'vertical' });
@@ -716,21 +733,42 @@ function hashRoute() {
     let _sections = $('.section');
 
     // If the user requests the index page, redirect to #bios
-    if ((window.location.hash == "") && (loaded !== true)) {
+    if ((window.location.pathname === "/") && (loaded !== true)) {
         window.location.hash = "web-lab";
         _sectionCurrent = $(_sections).index($('#web-lab')); // Set #bios as current
 
         hashChanged('#web-lab');
         loaded = true;
+    }
+    else {
+        // Check for Case Study Incoming Routing
+        _endeavor_routes.case_studies.forEach(function(item) {
+            if (window.location.pathname === item) {
+                console.log('Case Studies');
+                window.location.hash = "works";
+                _sectionCurrent = $(_sections).index($('#works')); // Set #bios as current
+                
+                hashChanged('#works');
+            }
+            return;
+        });
 
-    } else {
+        // Check for Project Incoming Routing
+        _endeavor_routes.projects.forEach(function(item) {
+            if (window.location.hash === item) {
+                console.log('Projects');
+                window.location.hash = "works";
+                _sectionCurrent = $(_sections).index($('#works')); // Set #bios as current
+                
+                hashChanged('#works');
+            }
+            return;
+        });
 
         // Find requested route
         let loc = window.location.hash;
-
         // Set current object to this route
         _sectionCurrent = $(_sections).index($(loc));
-
     }
 
     $(_sections).removeClass('currentSection');
@@ -738,7 +776,6 @@ function hashRoute() {
     $( _sections[ _sectionCurrent ] )
         .addClass('currentSection')
         .velocity("scroll", { duration: 1});
-
 }
 
 // Dynamic page hash setting (anonymous fn)
@@ -767,7 +804,7 @@ function hashRoute() {
             top = newTop;
         }
     });
-
+  
     //Set Hash while start scroll | check only every 200ms
     function step() {
         if (!changed) {
@@ -781,7 +818,7 @@ function hashRoute() {
             if (p.top >= top || p.bottom <= top) {
                 continue;
             }
-            if (currentHash == p.hash) {
+            if (currentHash === p.hash) {
                 break;
             }
             
@@ -806,9 +843,11 @@ function toggleLogo(loc) {
     let header = $('#header');
 
     if (loc === "#web-lab") { 
+        console.log('Header Closed');
         header.removeClass('header-open');
     } else {
         header.addClass('header-open');
+        console.log('Header Open');
     }
 }
 

@@ -495,7 +495,7 @@ var block = (this && this.block), attributes = (this && this.attributes) || {};
 ;pug_debug_line = 262;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 var image = datum.image
 ;pug_debug_line = 263;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cimg" + (pug_attrs(pug_merge([{"class": "endeavor-item img-load veil fsw","src": pug_escape(image.src)},{'data-src': image.src}]), true)) + "\u003E";
+pug_html = pug_html + "\u003Cimg" + (pug_attrs(pug_merge([{"class": "img-load endeavor-item veil fsw","src": pug_escape(image.src)},{'data-src': image.src}]), true)) + "\u003E";
 };
 ;pug_debug_line = 270;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_mixins["endeavorImageNoTopFS"] = pug_interp = function(datum){
@@ -503,7 +503,7 @@ var block = (this && this.block), attributes = (this && this.attributes) || {};
 ;pug_debug_line = 271;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 var image = datum.image
 ;pug_debug_line = 272;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cimg" + (pug_attrs(pug_merge([{"class": "endeavor-item endeavor-item-top-none img-load veil fsw","src": pug_escape(image.src)},{'data-src': image.src}]), true)) + "\u003E";
+pug_html = pug_html + "\u003Cimg" + (pug_attrs(pug_merge([{"class": "img-load endeavor-item endeavor-item-top-none veil fsw","src": pug_escape(image.src)},{'data-src': image.src}]), true)) + "\u003E";
 };
 ;pug_debug_line = 279;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_mixins["endeavorImageNoBottomFS"] = pug_interp = function(datum){
@@ -511,7 +511,7 @@ var block = (this && this.block), attributes = (this && this.attributes) || {};
 ;pug_debug_line = 280;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 var image = datum.image
 ;pug_debug_line = 281;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cimg" + (pug_attrs(pug_merge([{"class": "endeavor-item endeavor-item-bottom-none img-load veil fsw","src": pug_escape(image.src)},{'data-src': image.src}]), true)) + "\u003E";
+pug_html = pug_html + "\u003Cimg" + (pug_attrs(pug_merge([{"class": "img-load endeavor-item endeavor-item-bottom-none veil fsw","src": pug_escape(image.src)},{'data-src': image.src}]), true)) + "\u003E";
 };
 ;pug_debug_line = 288;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_mixins["endeavorImageNoTop75"] = pug_interp = function(datum){
@@ -519,7 +519,7 @@ var block = (this && this.block), attributes = (this && this.attributes) || {};
 ;pug_debug_line = 289;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 var image = datum.image
 ;pug_debug_line = 290;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cimg" + (pug_attrs(pug_merge([{"class": "endeavor-item endeavor-item-top-none img-load veil endeavor-width-75-percent","src": pug_escape(image.src)},{'data-src': image.src}]), true)) + "\u003E";
+pug_html = pug_html + "\u003Cimg" + (pug_attrs(pug_merge([{"class": "img-load endeavor-item endeavor-item-top-none veil endeavor-width-75-percent","src": pug_escape(image.src)},{'data-src': image.src}]), true)) + "\u003E";
 };
 ;pug_debug_line = 297;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_mixins["endeavorImageFSList"] = pug_interp = function(data){
@@ -535,7 +535,7 @@ if ('number' == typeof pug_obj3.length) {
     var image = pug_obj3[index];
 
 ;pug_debug_line = 300;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cimg" + (pug_attrs(pug_merge([{"class": "endeavor-item img-load veil fsw","src": pug_escape(image.src)},{'data-src': image.src}]), true)) + "\u003E";
+pug_html = pug_html + "\u003Cimg" + (pug_attrs(pug_merge([{"class": "img-load endeavor-item veil fsw","src": pug_escape(image.src)},{'data-src': image.src}]), true)) + "\u003E";
   }
 
 } else {
@@ -545,7 +545,7 @@ pug_html = pug_html + "\u003Cimg" + (pug_attrs(pug_merge([{"class": "endeavor-it
     var image = pug_obj3[index];
 
 ;pug_debug_line = 300;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cimg" + (pug_attrs(pug_merge([{"class": "endeavor-item img-load veil fsw","src": pug_escape(image.src)},{'data-src': image.src}]), true)) + "\u003E";
+pug_html = pug_html + "\u003Cimg" + (pug_attrs(pug_merge([{"class": "img-load endeavor-item veil fsw","src": pug_escape(image.src)},{'data-src': image.src}]), true)) + "\u003E";
   }
 
 }
@@ -557,7 +557,7 @@ var block = (this && this.block), attributes = (this && this.attributes) || {};
 ;pug_debug_line = 308;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 var image = datum.image
 ;pug_debug_line = 309;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cimg" + (pug_attrs(pug_merge([{"class": "endeavor-item img-load veil endeavor-width-75-percent","src": pug_escape(image.src)},{'data-src': image.src}]), true)) + "\u003E";
+pug_html = pug_html + "\u003Cimg" + (pug_attrs(pug_merge([{"class": "img-load endeavor-item veil endeavor-width-75-percent","src": pug_escape(image.src)},{'data-src': image.src}]), true)) + "\u003E";
 };
 ;pug_debug_line = 316;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_mixins["endeavorImage75List"] = pug_interp = function(data){
@@ -573,7 +573,7 @@ if ('number' == typeof pug_obj4.length) {
     var image = pug_obj4[index];
 
 ;pug_debug_line = 319;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cimg" + (pug_attrs(pug_merge([{"class": "endeavor-item-25 img-load veil endeavor-width-75-percent","src": pug_escape(image.src)},{'data-src': image.src}]), true)) + "\u003E";
+pug_html = pug_html + "\u003Cimg" + (pug_attrs(pug_merge([{"class": "img-load endeavor-item-25 veil endeavor-width-75-percent","src": pug_escape(image.src)},{'data-src': image.src}]), true)) + "\u003E";
   }
 
 } else {
@@ -583,7 +583,7 @@ pug_html = pug_html + "\u003Cimg" + (pug_attrs(pug_merge([{"class": "endeavor-it
     var image = pug_obj4[index];
 
 ;pug_debug_line = 319;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cimg" + (pug_attrs(pug_merge([{"class": "endeavor-item-25 img-load veil endeavor-width-75-percent","src": pug_escape(image.src)},{'data-src': image.src}]), true)) + "\u003E";
+pug_html = pug_html + "\u003Cimg" + (pug_attrs(pug_merge([{"class": "img-load endeavor-item-25 veil endeavor-width-75-percent","src": pug_escape(image.src)},{'data-src': image.src}]), true)) + "\u003E";
   }
 
 }
@@ -781,7 +781,7 @@ pug_html = pug_html + " ";
 ;pug_debug_line = 433;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + "\u003Cdiv" + (" class=\"endeavor-parallax-hybrid-color\""+pug_attr("style", pug_style(`background-image: url(${imageBig})`), true, true)) + "\u003E\u003C\u002Fdiv\u003E";
 ;pug_debug_line = 434;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cimg" + (" class=\"img-box endeavor-parallax-hybrid-right-img-box parallax__layer parallax__layer--fore\""+pug_attr("src", `${imageParallax.src}`, true, true)) + "\u003E";
+pug_html = pug_html + "\u003Cimg" + (" class=\"img-load img-box endeavor-parallax-hybrid-right-img-box parallax__layer parallax__layer--fore\""+pug_attr("src", `${imageParallax.src}`, true, true)) + "\u003E";
 ;pug_debug_line = 435;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + "\u003Cp class=\"endeavor-parallax-hybrid-right-caption caption\"\u003E";
 ;pug_debug_line = 435;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
@@ -797,7 +797,7 @@ var caption = data.caption
 ;pug_debug_line = 445;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + "\u003Cdiv class=\"endeavor-item endeavor-para-box fsw endeavor-flex-column\"\u003E";
 ;pug_debug_line = 446;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cimg" + (" class=\"endeavor-width-50-percent img-box endeavor-image-box--center\""+pug_attr("src", `${image.src}`, true, true)) + "\u003E";
+pug_html = pug_html + "\u003Cimg" + (" class=\"img-load endeavor-width-50-percent img-box endeavor-image-box--center\""+pug_attr("src", `${image.src}`, true, true)) + "\u003E";
 ;pug_debug_line = 447;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + "\u003Cp class=\"caption center-caption\"\u003E";
 ;pug_debug_line = 447;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
@@ -819,7 +819,7 @@ if ('number' == typeof pug_obj7.length) {
     var image = pug_obj7[i];
 
 ;pug_debug_line = 458;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cimg" + (" class=\"endeavor-image-slider-color fsw\""+pug_attr("src", `${images[i].src}`, true, true)) + "\u003E";
+pug_html = pug_html + "\u003Cimg" + (" class=\"img-load endeavor-image-slider-color fsw\""+pug_attr("src", `${images[i].src}`, true, true)) + "\u003E";
   }
 
 } else {
@@ -829,7 +829,7 @@ pug_html = pug_html + "\u003Cimg" + (" class=\"endeavor-image-slider-color fsw\"
     var image = pug_obj7[i];
 
 ;pug_debug_line = 458;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cimg" + (" class=\"endeavor-image-slider-color fsw\""+pug_attr("src", `${images[i].src}`, true, true)) + "\u003E";
+pug_html = pug_html + "\u003Cimg" + (" class=\"img-load endeavor-image-slider-color fsw\""+pug_attr("src", `${images[i].src}`, true, true)) + "\u003E";
   }
 
 }
@@ -852,7 +852,7 @@ if ('number' == typeof pug_obj8.length) {
     var image = pug_obj8[i];
 
 ;pug_debug_line = 469;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cimg" + (" class=\"endeavor-image-slider-color fsw\""+pug_attr("src", `${images[i].src}`, true, true)) + "\u003E";
+pug_html = pug_html + "\u003Cimg" + (" class=\"img-load endeavor-image-slider-color fsw\""+pug_attr("src", `${images[i].src}`, true, true)) + "\u003E";
   }
 
 } else {
@@ -862,7 +862,7 @@ pug_html = pug_html + "\u003Cimg" + (" class=\"endeavor-image-slider-color fsw\"
     var image = pug_obj8[i];
 
 ;pug_debug_line = 469;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cimg" + (" class=\"endeavor-image-slider-color fsw\""+pug_attr("src", `${images[i].src}`, true, true)) + "\u003E";
+pug_html = pug_html + "\u003Cimg" + (" class=\"img-load endeavor-image-slider-color fsw\""+pug_attr("src", `${images[i].src}`, true, true)) + "\u003E";
   }
 
 }

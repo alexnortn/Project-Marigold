@@ -260,7 +260,7 @@ mixin endeavorSubheaderCaptionFS(datum)
 
 mixin endeavorImageFS(datum)
     - var image = datum.image
-    img.endeavor-item.img-load.veil.fsw(src=image.src)&attributes({'data-src': image.src})
+    img.img-load.endeavor-item.veil.fsw(src=image.src)&attributes({'data-src': image.src})
 
 
 //-  Endeavor Project | Full-Width Adaptive Image // No Top Margin
@@ -269,7 +269,7 @@ mixin endeavorImageFS(datum)
 
 mixin endeavorImageNoTopFS(datum)
     - var image = datum.image
-    img.endeavor-item.endeavor-item-top-none.img-load.veil.fsw(src=image.src)&attributes({'data-src': image.src})
+    img.img-load.endeavor-item.endeavor-item-top-none.veil.fsw(src=image.src)&attributes({'data-src': image.src})
 
 
 //-  Endeavor Project | Full-Width Adaptive Image // No Top Margin
@@ -278,7 +278,7 @@ mixin endeavorImageNoTopFS(datum)
 
 mixin endeavorImageNoBottomFS(datum)
     - var image = datum.image
-    img.endeavor-item.endeavor-item-bottom-none.img-load.veil.fsw(src=image.src)&attributes({'data-src': image.src})
+    img.img-load.endeavor-item.endeavor-item-bottom-none.veil.fsw(src=image.src)&attributes({'data-src': image.src})
 
 
 //-  Endeavor Project | 75%-Width Adaptive Image // No Top Margin
@@ -287,7 +287,7 @@ mixin endeavorImageNoBottomFS(datum)
 
 mixin endeavorImageNoTop75(datum)
     - var image = datum.image
-    img.endeavor-item.endeavor-item-top-none.img-load.veil.endeavor-width-75-percent(src=image.src)&attributes({'data-src': image.src})
+    img.img-load.endeavor-item.endeavor-item-top-none.veil.endeavor-width-75-percent(src=image.src)&attributes({'data-src': image.src})
 
 
 //-  Endeavor Project | Full-Width Adaptive Image
@@ -297,7 +297,7 @@ mixin endeavorImageNoTop75(datum)
 mixin endeavorImageFSList(data)
     - var images = data.images
     each image, index in images
-        img.endeavor-item.img-load.veil.fsw(src=image.src)&attributes({'data-src': image.src})
+        img.img-load.endeavor-item.veil.fsw(src=image.src)&attributes({'data-src': image.src})
 
 
 //-  Endeavor Project | 75%-Width Adaptive Image
@@ -306,7 +306,7 @@ mixin endeavorImageFSList(data)
 
 mixin endeavorImage75(datum)
     - var image = datum.image
-    img.endeavor-item.img-load.veil.endeavor-width-75-percent(src=image.src)&attributes({'data-src': image.src})
+    img.img-load.endeavor-item.veil.endeavor-width-75-percent(src=image.src)&attributes({'data-src': image.src})
 
 
 //-  Endeavor Project | 75%-Width Adaptive Image
@@ -316,7 +316,7 @@ mixin endeavorImage75(datum)
 mixin endeavorImage75List(data)
     - var images = data.images
     each image, index in images
-        img.endeavor-item-25.img-load.veil.endeavor-width-75-percent(src=image.src)&attributes({'data-src': image.src})
+        img.img-load.endeavor-item-25.veil.endeavor-width-75-percent(src=image.src)&attributes({'data-src': image.src})
 
 
 //-  Endeavor Project | Full-Width Adaptive Youtube Video
@@ -431,7 +431,7 @@ mixin endeavorParallaxCaptionLeft(data)
     - var caption = data.caption
     .endeavor-item.fsw.endeavor-parallax-hybrid.parallax__group  
         .endeavor-parallax-hybrid-color(style=`background-image: url(${imageBig})`)
-        img.img-box.endeavor-parallax-hybrid-right-img-box.parallax__layer.parallax__layer--fore(src=`${imageParallax.src}`)
+        img.img-load.img-box.endeavor-parallax-hybrid-right-img-box.parallax__layer.parallax__layer--fore(src=`${imageParallax.src}`)
         p.endeavor-parallax-hybrid-right-caption.caption=caption
 
 
@@ -443,7 +443,7 @@ mixin endeavorImageCenterCaption(data)
     - var image = data.image
     - var caption = data.caption
     .endeavor-item.endeavor-para-box.fsw.endeavor-flex-column
-        img.endeavor-width-50-percent.img-box.endeavor-image-box--center(src=`${image.src}`)
+        img.img-load.endeavor-width-50-percent.img-box.endeavor-image-box--center(src=`${image.src}`)
         p.caption.center-caption=caption
 
 
@@ -455,7 +455,7 @@ mixin endeavorImageSlider(data)
     - var images = data.images
     .endeavor-item.endeavor-image-slider
         each image, i in images
-            img.endeavor-image-slider-color.fsw(src = `${images[i].src}`)
+            img.img-load.endeavor-image-slider-color.fsw(src = `${images[i].src}`)
 
 
 //-  Endeavor Swipable Image Slider 75
@@ -466,7 +466,7 @@ mixin endeavorImageSlider75(data)
     - var images = data.images
     .endeavor-item.endeavor-image-slider.endeavor-width-75-prcnt.endeavor-center
         each image, i in images
-            img.endeavor-image-slider-color.fsw(src = `${images[i].src}`)
+            img.img-load.endeavor-image-slider-color.fsw(src = `${images[i].src}`)
 
 
 

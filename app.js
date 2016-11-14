@@ -40,6 +40,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public'))); // What is this pointing towards?
 
 app.use('/', routes);
+app.use('*', routes); // Could be a little hacky
 app.use('/users', users);
 
 http.createServer(app).listen(app.get('port'), function(){
