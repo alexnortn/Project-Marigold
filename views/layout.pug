@@ -21,6 +21,8 @@ html
         include mixins.pug
 
     body
+        .loader
+            img(src = "/images/loader.gif" alt = "loader")
         #wrapper
             block content
         script(src="js/bundle.min.js")

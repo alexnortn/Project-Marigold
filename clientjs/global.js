@@ -51,9 +51,6 @@ let _projectCurrentId,
 
 // DOM Ready =============================================================
 $(document).ready(function() {
-
-    console.log('we out here');
-
     // Check mobile
     if (isMobile.tablet || isMobile.phone) {
         _mobile = true;
@@ -75,7 +72,15 @@ $(document).ready(function() {
 
     _closeProject = closeProject; // Set up close project global
 
-    $('body').addClass('loading');
+    setTimeout(function() {
+        $.Velocity.animate( $('.loader'), "fadeOut", { duration: 750 } )
+            .then(function(elements) {
+                $('#wrapper').velocity("fadeIn", { duration: 500, display: "flex" });
+            })
+            .catch(function(error) { 
+                console.log("Rejected.");
+            });
+    }, 2500);
 
     // Center In
     $('#pagination').alwaysCenterIn(window, { direction: 'vertical' });
@@ -709,13 +714,10 @@ function hashRoute() {
     let loaded;
     let _sections = $('.section');
 
+    // If the user requests the index page, redirect to #bios
     if ((window.location.hash == "") && (loaded !== true)) {
-
-        // If the user requests the index page, redirect to #bios
         window.location.hash = "web-lab";
-
-        // Set #bios as current
-        _sectionCurrent = $(_sections).index($('#web-lab'));
+        _sectionCurrent = $(_sections).index($('#web-lab')); // Set #bios as current
 
         hashChanged('#web-lab');
         loaded = true;
