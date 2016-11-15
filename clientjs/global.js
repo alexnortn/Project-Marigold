@@ -303,7 +303,7 @@ $(document).ready(function() {
             }
         }
 
-        function workItemInteraction($elem, evt) {
+        function workItemInteraction(_project_id, evt) {
 
             if (_openProjectState) {
                 return;
@@ -330,7 +330,7 @@ $(document).ready(function() {
 
             }
 
-            project_id = $elem.attr('data-project');
+            project_id = _project_id;
 
             if (!$currentTarget) {
                 return;
@@ -423,14 +423,14 @@ $(document).ready(function() {
         // Project Event Handlers
 
         $('.item').on('click', function(evt) {
-            workItemInteraction($(this), evt);
+            workItemInteraction($(this).attr('data-project'), evt);
         });
 
         $('.item').each(function(){
             var $this = $(this);
             var hammertime = new Hammer(this);
             hammertime.on("tap", function(evt) {
-                workItemInteraction($this, evt);
+                workItemInteraction($(this).attr('data-project'), evt);
                 return false;
             });
         });
@@ -737,28 +737,38 @@ function endeavorRouter() {
         loaded = true;
     }
     else {
-        // Check for Case Study Incoming Routing
-        for (let i = 0; i < _endeavor_routes.case_studies.length; i++) {
-            let item = _endeavor_routes.case_studies[i];
-            if (window.location.pathname === item) {
-                window.location.hash = "works";
-                _sectionCurrent = $(_sections).index($('#works')); // Set #bios as current
+        // // Check for Case Study Incoming Routing
+        // for (let i = 0; i < _endeavor_routes.case_studies.length; i++) {
+        //     let item = _endeavor_routes.case_studies[i],
+        //         path = window.location.pathname;
+
+        //     if (path === ("/" + item)) {
+        //         window.location.hash = "works";
+        //         window.location.pathname = path;
+        //         window.location.hash = "";
+        //         _sectionCurrent = $(_sections).index($('#works')); // Set #bios as current
                 
-                hashChanged('#works');
-                return;
-            } 
-        }
+        //         hashChanged('#works');
+        //         return;
+        //     } 
+        // }
 
         // Check for Project Incoming Routing
         for (let i = 0; i < _endeavor_routes.projects.length; i++) {
-            let item = _endeavor_routes.projects[i];
-            console.log(window.location.pathname);
-            if (window.location.pathname === ("/" + item)) {
-                console.log('Projects');
-                window.location.hash = "works";
+            let item = _endeavor_routes.projects[i],
+                path = window.location.pathname;
+
+            if (path === ("/" + item)) {
+                window.location.hash = "#works";
+                hashChanged();
+
+                setTimeout(function() {
+                    console.log('pushed');
+                    window.history.replaceState('routing', item, "/" + item); // Update browser state without refreshing the page
+                    workItemInteraction(item);
+                }, 500); // I'm sorry : (
+
                 _sectionCurrent = $(_sections).index($('#works')); // Set #bios as current
-                
-                hashChanged('#works');
                 return;
             }
         }
