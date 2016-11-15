@@ -78,19 +78,15 @@ $(document).ready(function() {
 
     window.addEventListener("hashchange", hashChanged, false);
 
-    hashRoute(); // Initial Page Routing
-    hashChanged();
-
     // Intro loader
-    setTimeout(function() {
-        $.Velocity.animate( $('.loader'), "fadeOut", { duration: 750 } )
-            .then(function(elements) {
-                $('#wrapper').velocity("fadeIn", { duration: 500, display: "flex" });
-            })
-            .catch(function(error) { 
-                console.log("Rejected.");
-            });
-    }, 2500);
+    $.Velocity.animate( $('.loader'), "fadeOut", { duration: 750 })
+        .then(function(elements) {
+                endeavorRouter(); // Initial Page Routing
+            hashChanged();
+        })
+        .catch(function(error) { 
+            console.log("Rejected.");
+        });
 
     // Call pagination
     pagination(_sections);
@@ -726,7 +722,7 @@ $(document).ready(function() {
 
 
 // Page load routing + hashing
-function hashRoute() {
+function endeavorRouter() {
 
     // Set current url hash
     let loaded;
@@ -742,28 +738,30 @@ function hashRoute() {
     }
     else {
         // Check for Case Study Incoming Routing
-        _endeavor_routes.case_studies.forEach(function(item) {
+        for (let i = 0; i < _endeavor_routes.case_studies.length; i++) {
+            let item = _endeavor_routes.case_studies[i];
             if (window.location.pathname === item) {
-                console.log('Case Studies');
                 window.location.hash = "works";
                 _sectionCurrent = $(_sections).index($('#works')); // Set #bios as current
                 
                 hashChanged('#works');
-            }
-            return;
-        });
+                return;
+            } 
+        }
 
         // Check for Project Incoming Routing
-        _endeavor_routes.projects.forEach(function(item) {
-            if (window.location.hash === item) {
+        for (let i = 0; i < _endeavor_routes.projects.length; i++) {
+            let item = _endeavor_routes.projects[i];
+            console.log(window.location.pathname);
+            if (window.location.pathname === ("/" + item)) {
                 console.log('Projects');
                 window.location.hash = "works";
                 _sectionCurrent = $(_sections).index($('#works')); // Set #bios as current
                 
                 hashChanged('#works');
+                return;
             }
-            return;
-        });
+        }
 
         // Find requested route
         let loc = window.location.hash;

@@ -203,7 +203,7 @@
                     "data" : {
                         "video" : {
                             "name" : "MSTY",
-                            "src" : "https://www.youtube.com/embed/V2FqFHfjFaM",
+                            "src" : "https://www.youtube.com/embed/V2FqFHfjFaM?autoplay=0&loop=1",
                             "caption" : "something" 
                         }
                     }
@@ -499,7 +499,7 @@
                     "data" : {
                         "video" : {
                             "name" : "MSTY",
-                            "src" : "https://www.youtube.com/embed/V2FqFHfjFaM",
+                            "src" : "https://www.youtube.com/embed/V2FqFHfjFaM?autoplay=0&loop=1",
                             "caption" : "something" 
                         }
                     }
@@ -795,7 +795,7 @@
                     "data" : {
                         "video" : {
                             "name" : "MSTY",
-                            "src" : "https://www.youtube.com/embed/V2FqFHfjFaM",
+                            "src" : "https://www.youtube.com/embed/V2FqFHfjFaM?autoplay=0&loop=1",
                             "caption" : "something" 
                         }
                     }
@@ -967,7 +967,7 @@
                     "data" : {
                         "video" : {
                             "name" : "MSTY",
-                            "src" : "https://www.youtube.com/embed/V2FqFHfjFaM",
+                            "src" : "https://www.youtube.com/embed/V2FqFHfjFaM?autoplay=0&loop=1",
                             "caption" : "something" 
                         }
                     }
@@ -1122,7 +1122,7 @@
                     "data" : {
                         "video" : {
                             "name" : "MSTY",
-                            "src" : "https://www.youtube.com/embed/V2FqFHfjFaM",
+                            "src" : "https://www.youtube.com/embed/V2FqFHfjFaM?autoplay=0&loop=1",
                             "caption" : "something" 
                         }
                     }
@@ -1262,6 +1262,52 @@
                             "src_mobile": "images/projects/msty/hi-res/msty-space.jpg",
                             "src_preview": "images/projects/msty/hi-res/msty-space.jpg",
                             "caption": "MSTY Spatial Design"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorSubheaderFS",
+                    "data" : {
+                        "subheader" : "Dynamic Depth of Field"
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "image" : {
+                            "name": "MSTY Dynamic Depth of Field",
+                            "src": "images/projects/msty/hi-res/msty-dynamic-dof-1.jpg",
+                            "src_mobile": "images/projects/msty/hi-res/msty-dynamic-dof-1.jpg",
+                            "src_preview": "images/projects/msty/hi-res/msty-dynamic-dof-1.jpg",
+                            "caption": "MSTY Dynamic Depth of Field"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "image" : {
+                            "name": "MSTY Dynamic Depth of Field",
+                            "src": "images/projects/msty/hi-res/msty-dynamic-dof-2.jpg",
+                            "src_mobile": "images/projects/msty/hi-res/msty-dynamic-dof-2.jpg",
+                            "src_preview": "images/projects/msty/hi-res/msty-dynamic-dof-2.jpg",
+                            "caption": "MSTY Dynamic Depth of Field"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorCaptionFS",
+                    "data" : {
+                        "caption" : "Visualizing dynamic depth of field. A depth–mapped image where darker shades of gray represent sharper focus."
+                    }
+                },
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "video" : {
+                            "name" : "MSTY",
+                            "src" : "https://www.youtube.com/embed/AL2U3B6Gci8?autoplay=0&loop=1",
+                            "caption" : "something" 
                         }
                     }
                 },
@@ -1721,7 +1767,7 @@
                     "data" : {
                         "video" : {
                             "name" : "Divrcity",
-                            "src" : "https://www.youtube.com/embed/H0k57SDrUdU",
+                            "src" : "https://www.youtube.com/embed/H0k57SDrUdU?autoplay=0&loop=1",
                             "caption" : "Divrcity Interactive Visualizations" 
                         }
                     }
@@ -1806,7 +1852,7 @@
                     "data" : {
                         "video" : {
                             "name" : "Convolve Prototype",
-                            "src" : "https://www.youtube.com/embed/8imAdvSaGlI",
+                            "src" : "https://www.youtube.com/embed/8imAdvSaGlI?autoplay=0&loop=1",
                             "caption" : "Convolve // Imemrsive viewing experience." 
                         }
                     }
@@ -2238,7 +2284,7 @@
                     "data" : {
                         "video" : {
                             "name" : "DigProcess",
-                            "src" : "https://www.youtube.com/embed/p5DGhmvRtOA",
+                            "src" : "https://www.youtube.com/embed/p5DGhmvRtOA?autoplay=0&loop=1",
                             "caption" : "Alex Norton DiG Programing Process." 
                         }
                     }
@@ -2609,7 +2655,7 @@
                     "data" : {
                         "video" : {
                             "name" : "DAS Tablet",
-                            "src" : "https://www.youtube.com/embed/6B8QnIVKJEU",
+                            "src" : "https://www.youtube.com/embed/6B8QnIVKJEU?autoplay=0&loop=1",
                             "caption" : "DAS Interactive onboarding" 
                         }
                     }
@@ -2619,7 +2665,7 @@
                     "data" : {
                         "video" : {
                             "name" : "DAS Mobile",
-                            "src" : "https://www.youtube.com/embed/LM7G9qog4d8",
+                            "src" : "https://www.youtube.com/embed/LM7G9qog4d8?autoplay=0&loop=1",
                             "caption" : "DAS Interactive onboarding" 
                         }
                     }
@@ -2892,7 +2938,7 @@
                     "data" : {
                         "video" : {
                             "name" : "Muwu Generative Composition",
-                            "src" : "https://www.youtube.com/embed/pHdr4EWM3vk",
+                            "src" : "https://www.youtube.com/embed/pHdr4EWM3vk?autoplay=0&loop=1",
                             "caption" : "Muwu Generative Composition" 
                         }
                     }
@@ -2914,7 +2960,7 @@
                     "data" : {
                         "video" : {
                             "name" : "Muwu Generative Composition",
-                            "src" : "https://www.youtube.com/embed/hsm9OmLwtMo",
+                            "src" : "https://www.youtube.com/embed/hsm9OmLwtMo?autoplay=0&loop=1",
                             "caption" : "Muwu Generative Composition" 
                         }
                     }
@@ -3193,7 +3239,7 @@
                     "data" : {
                         "video" : {
                             "name" : "Muwu Experiment",
-                            "src" : "https://www.youtube.com/embed/Rb8voJnauJI",
+                            "src" : "https://www.youtube.com/embed/Rb8voJnauJI?autoplay=0&loop=1",
                             "caption" : "Muwu Experiment" 
                         }
                     }
@@ -3203,7 +3249,7 @@
                     "data" : {
                         "video" : {
                             "name" : "Muwu Experiment",
-                            "src" : "https://www.youtube.com/embed/qgAEdzmkngE",
+                            "src" : "https://www.youtube.com/embed/qgAEdzmkngE?autoplay=0&loop=1",
                             "caption" : "Muwu Experiment" 
                         }
                     }
@@ -3213,7 +3259,7 @@
                     "data" : {
                         "video" : {
                             "name" : "Muwu Experiment",
-                            "src" : "https://www.youtube.com/embed/EQtCQfhMmRk",
+                            "src" : "https://www.youtube.com/embed/EQtCQfhMmRk?autoplay=0&loop=1",
                             "caption" : "Muwu Experiment" 
                         }
                     }
@@ -3760,7 +3806,7 @@
                     "data" : {
                         "video" : {
                             "name" : "MSTY",
-                            "src" : "https://www.youtube.com/embed/RTS209d1V9Y",
+                            "src" : "https://www.youtube.com/embed/RTS209d1V9Y?autoplay=0&loop=1",
                             "caption" : "something" 
                         }
                     }
