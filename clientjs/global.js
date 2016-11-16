@@ -48,6 +48,9 @@ let _projectCurrentId,
     _closeProject,
     _endeavor_routes;
 
+let _itemInteraction,
+    _endeavorRouter;
+
 
     // attachFastClick = require('fastclick');    
 
@@ -81,8 +84,10 @@ $(document).ready(function() {
     // Intro loader
     $.Velocity.animate( $('.loader'), "fadeOut", { duration: 750 })
         .then(function(elements) {
-                endeavorRouter(); // Initial Page Routing
-            hashChanged();
+            setTimeout(function() {
+                _endeavorRouter.initRoute(); // Initial Page Routing
+                hashChanged();
+            }, 0);
         })
         .catch(function(error) { 
             console.log("Rejected.");
@@ -237,11 +242,15 @@ $(document).ready(function() {
 
             transition = true;
 
+            // Internal URL Routing + Hashing
+            _endeavorRouter.resetURL();
+            _endeavorRouter.setHash("works");
+
         });
     } 
 
     // Project Grid Handlers
-    (function() { // For lexical scoping
+    _itemInteraction = function() { // For lexical scoping
         let current_index = 0,
             container,
             case_studies = $('.case-study-view').toArray(),
@@ -329,6 +338,12 @@ $(document).ready(function() {
                 $currentTarget = $(evt.srcEvent.currentTarget);
 
             }
+            else if (evt instanceof jQuery) { // For URL Routing
+                x_pos = window.innerWidth / 2;
+                y_pos = window.innerHeight / 2;
+
+                $currentTarget = evt;               
+            }
 
             project_id = _project_id;
 
@@ -412,7 +427,7 @@ $(document).ready(function() {
 
                         })
                         .catch(function(error) { 
-                                console.log("Rejected.");
+                            console.log("Rejected.");
                         });
                 });
 
@@ -424,6 +439,7 @@ $(document).ready(function() {
 
         $('.item').on('click', function(evt) {
             workItemInteraction($(this).attr('data-project'), evt);
+            _endeavorRouter.setURL($(this).attr('data-project')); // Internal URL Routing
         });
 
         $('.item').each(function(){
@@ -431,6 +447,7 @@ $(document).ready(function() {
             var hammertime = new Hammer(this);
             hammertime.on("tap", function(evt) {
                 workItemInteraction($(this).attr('data-project'), evt);
+                _endeavorRouter.setURL($(this).attr('data-project')); // Internal URL Routing
                 return false;
             });
         });
@@ -444,6 +461,8 @@ $(document).ready(function() {
             if (current_index >= 1) {
                 current_index--;
                 project_id = updateCurrentProject(current_index, project_id);
+                
+                _endeavorRouter.setURL(project_id.substring(1)); // Internal URL Routing
 
                 $('.arrow-container').removeClass('dip-to-white');
                 // $('.project-container').removeClass('dip-to-white');
@@ -471,6 +490,8 @@ $(document).ready(function() {
             if (current_index < currents.length - 1) {
                 current_index++;
                 project_id = updateCurrentProject(current_index, project_id);
+
+                _endeavorRouter.setURL(project_id.substring(1)); // Internal URL Routing
 
                 $('.arrow-container').removeClass('dip-to-white');
                 // $('.project-container').removeClass('dip-to-white');
@@ -510,7 +531,14 @@ $(document).ready(function() {
             }, 500);
         });
 
-    }());
+        // Closure
+        return {
+            workItemInteraction: function(_project_id, evt) {
+                workItemInteraction(_project_id, evt);
+            }
+        }
+
+    }();
 
 
     // --------------------------------------
@@ -722,69 +750,90 @@ $(document).ready(function() {
 
 
 // Page load routing + hashing
-function endeavorRouter() {
+_endeavorRouter = function() {
 
     // Set current url hash
     let loaded;
     let _sections = $('.section');
 
-    // If the user requests the index page, redirect to #bios
-    if ((window.location.pathname === "/") && (loaded !== true)) {
-        window.location.hash = "web-lab";
-        _sectionCurrent = $(_sections).index($('#web-lab')); // Set #bios as current
+    function initRoute() {
+        // If the user requests the index page, redirect to #bios
+        if ((window.location.pathname === "/") && (loaded !== true)) {
+            window.location.hash = "web-lab";
+            _sectionCurrent = $(_sections).index($('#web-lab')); // Set #bios as current
 
-        hashChanged('#web-lab');
-        loaded = true;
-    }
-    else {
-        // // Check for Case Study Incoming Routing
-        // for (let i = 0; i < _endeavor_routes.case_studies.length; i++) {
-        //     let item = _endeavor_routes.case_studies[i],
-        //         path = window.location.pathname;
+            hashChanged('#web-lab');
+            loaded = true;
+        }
+        else {
+            // Check for Project Incoming Routing
+            for (let i = 0; i < _endeavor_routes.case_studies.length; i++) {
+                let item = _endeavor_routes.case_studies[i],
+                    path = window.location.pathname;
 
-        //     if (path === ("/" + item)) {
-        //         window.location.hash = "works";
-        //         window.location.pathname = path;
-        //         window.location.hash = "";
-        //         _sectionCurrent = $(_sections).index($('#works')); // Set #bios as current
-                
-        //         hashChanged('#works');
-        //         return;
-        //     } 
-        // }
+                if (path === ("/" + item)) {
+                    window.location.hash = "#works";
+                    hashChanged();
 
-        // Check for Project Incoming Routing
-        for (let i = 0; i < _endeavor_routes.projects.length; i++) {
-            let item = _endeavor_routes.projects[i],
-                path = window.location.pathname;
+                    setTimeout(function() {
+                        window.history.replaceState('routing', item, "/" + item); // Update browser state without refreshing the page
+                       _itemInteraction.workItemInteraction(item, $('.case-study-item'));
+                    }, 500); // I'm sorry : (
 
-            if (path === ("/" + item)) {
-                window.location.hash = "#works";
-                hashChanged();
-
-                setTimeout(function() {
-                    console.log('pushed');
-                    window.history.replaceState('routing', item, "/" + item); // Update browser state without refreshing the page
-                    workItemInteraction(item);
-                }, 500); // I'm sorry : (
-
-                _sectionCurrent = $(_sections).index($('#works')); // Set #bios as current
-                return;
+                    _sectionCurrent = $(_sections).index($('#works')); // Set #bios as current
+                    return;
+                }
             }
+
+            // Check for Project Incoming Routing
+            for (let i = 0; i < _endeavor_routes.projects.length; i++) {
+                let item = _endeavor_routes.projects[i],
+                    path = window.location.pathname;
+
+                if (path === ("/" + item)) {
+                    window.location.hash = "#works";
+                    hashChanged();
+
+                    setTimeout(function() {
+                        window.history.replaceState('routing', item, "/" + item); // Update browser state without refreshing the page
+                       _itemInteraction.workItemInteraction(item, $('.project-item'));
+                    }, 500); // I'm sorry : (
+
+                    _sectionCurrent = $(_sections).index($('#works')); // Set #bios as current
+                    return;
+                }
+            }
+
+            // Find requested route
+            let loc = window.location.hash;
+            // Set current object to this route
+            _sectionCurrent = $(_sections).index($(loc));
         }
 
-        // Find requested route
-        let loc = window.location.hash;
-        // Set current object to this route
-        _sectionCurrent = $(_sections).index($(loc));
+        $(_sections).removeClass('currentSection');
+
+        $( _sections[ _sectionCurrent ] )
+            .addClass('currentSection')
+            .velocity("scroll", { duration: 1});
     }
 
-    $(_sections).removeClass('currentSection');
-
-    $( _sections[ _sectionCurrent ] )
-        .addClass('currentSection')
-        .velocity("scroll", { duration: 1});
-}
+    // Closure
+    return {
+        initRoute: function() {
+            initRoute();
+        },
+        resetURL: function() {
+            window.history.pushState('routing', "", "/"); // Update browser state without refreshing the page
+        },
+        setHash: function(hash) {
+            window.location.hash = "#" + hash;
+        },
+        setURL: function(URL) {
+            window.history.pushState('routing', "", "/" + URL); // Update browser state without refreshing the page
+            window.location.hash = "";
+        }
+    }
+}();
 
 // Dynamic page hash setting (anonymous fn)
 (function () {
