@@ -1088,6 +1088,18 @@
             "image_preview": "images/projects/msty/hi-res/msty-preview.jpg",
             "sections" : [
                 {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "image" : {
+                            "name": "MSTY Oculus",
+                            "src": "images/projects/msty/hi-res/msty-oculus.jpg",
+                            "src_mobile": "images/projects/msty/hi-res/msty-oculus.jpg",
+                            "src_preview": "images/projects/msty/hi-res/msty-oculus.jpg",
+                            "caption": "MSTY Oculus"
+                        }
+                    }
+                },
+                {
                     "name" : "endeavorSubheaderFS",
                     "data" : {
                         "subheader" : "Final Experience"
