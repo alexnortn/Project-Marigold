@@ -85,8 +85,12 @@ $(document).ready(function() {
     $.Velocity.animate( $('.loader'), "fadeOut", { duration: 750 })
         .then(function(elements) {
             setTimeout(function() {
-                _endeavorRouter.initRoute(); // Initial Page Routing
+                _endeavorRouter.route(); // Initial Page Routing
                 hashChanged();
+                
+                window.addEventListener('popstate', function(event) {
+                    _endeavorRouter.route(); // Event handler for History state change
+                }, false);
             }, 0);
         })
         .catch(function(error) { 
@@ -756,7 +760,7 @@ _endeavorRouter = function() {
     let loaded;
     let _sections = $('.section');
 
-    function initRoute() {
+    function route() {
         // If the user requests the index page, redirect to #bios
         if ((window.location.pathname === "/") && (loaded !== true)) {
             window.location.hash = "web-lab";
@@ -819,8 +823,8 @@ _endeavorRouter = function() {
 
     // Closure
     return {
-        initRoute: function() {
-            initRoute();
+        route: function() {
+            route();
         },
         resetURL: function() {
             window.history.pushState('routing', "", "/"); // Update browser state without refreshing the page

@@ -54,10 +54,6 @@ pug_html = pug_html + "\u003C!-- https:\u002F\u002Fstackoverflow.com\u002Fquesti
 
 
 
-
-
-
-
 ;pug_debug_line = 40;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 
 
@@ -81,10 +77,6 @@ pug_html = pug_html + "\u003C!-- https:\u002F\u002Fstackoverflow.com\u002Fquesti
 
 
 ;pug_debug_line = 58;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-
-
-
-
 
 
 
