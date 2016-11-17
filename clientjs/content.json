@@ -1146,13 +1146,37 @@
                     }
                 },
                 {
-                    "name" : "endeavorImageFS",
+                    "name" : "endeavorImageNoBottomFS",
                     "data" : {
                         "image" : {
                             "name": "MSTY Intro",
-                            "src": "images/projects/msty/hi-res/msty-intro.jpg",
-                            "src_mobile": "images/projects/msty/hi-res/msty-intro.jpg",
-                            "src_preview": "images/projects/msty/hi-res/msty-intro.jpg",
+                            "src": "images/projects/msty/hi-res/msty-intro-1.jpg",
+                            "src_mobile": "images/projects/msty/hi-res/msty-intro-1.jpg",
+                            "src_preview": "images/projects/msty/hi-res/msty-intro-1.jpg",
+                            "caption": "MSTY Intro"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageNoMarginFS",
+                    "data" : {
+                        "image" : {
+                            "name": "MSTY Intro",
+                            "src": "images/projects/msty/hi-res/msty-intro-2.jpg",
+                            "src_mobile": "images/projects/msty/hi-res/msty-intro-2.jpg",
+                            "src_preview": "images/projects/msty/hi-res/msty-intro-2.jpg",
+                            "caption": "MSTY Intro"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageNoTopFS",
+                    "data" : {
+                        "image" : {
+                            "name": "MSTY Intro",
+                            "src": "images/projects/msty/hi-res/msty-intro-3.jpg",
+                            "src_mobile": "images/projects/msty/hi-res/msty-intro-3.jpg",
+                            "src_preview": "images/projects/msty/hi-res/msty-intro-3.jpg",
                             "caption": "MSTY Intro"
                         }
                     }
