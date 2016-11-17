@@ -495,7 +495,7 @@ var block = (this && this.block), attributes = (this && this.attributes) || {};
 ;pug_debug_line = 271;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 var image = datum.image
 ;pug_debug_line = 272;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cimg" + (pug_attrs(pug_merge([{"class": "img-load endeavor-item endeavor-item-top-none veil fsw","src": pug_escape(image.src)},{'data-src': image.src}]), true)) + "\u003E";
+pug_html = pug_html + "\u003Cimg" + (pug_attrs(pug_merge([{"class": "img-load endeavor-item-top-none veil fsw","src": pug_escape(image.src)},{'data-src': image.src}]), true)) + "\u003E";
 };
 ;pug_debug_line = 279;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_mixins["endeavorImageNoMarginFS"] = pug_interp = function(datum){
@@ -503,7 +503,7 @@ var block = (this && this.block), attributes = (this && this.attributes) || {};
 ;pug_debug_line = 280;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 var image = datum.image
 ;pug_debug_line = 281;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cimg" + (pug_attrs(pug_merge([{"class": "img-load endeavor-item endeavor-item-no-margin veil fsw","src": pug_escape(image.src)},{'data-src': image.src}]), true)) + "\u003E";
+pug_html = pug_html + "\u003Cimg" + (pug_attrs(pug_merge([{"class": "img-load endeavor-item-no-margin veil fsw","src": pug_escape(image.src)},{'data-src': image.src}]), true)) + "\u003E";
 };
 ;pug_debug_line = 288;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_mixins["endeavorImageNoBottomFS"] = pug_interp = function(datum){
@@ -511,7 +511,7 @@ var block = (this && this.block), attributes = (this && this.attributes) || {};
 ;pug_debug_line = 289;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 var image = datum.image
 ;pug_debug_line = 290;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cimg" + (pug_attrs(pug_merge([{"class": "img-load endeavor-item endeavor-item-bottom-none veil fsw","src": pug_escape(image.src)},{'data-src': image.src}]), true)) + "\u003E";
+pug_html = pug_html + "\u003Cimg" + (pug_attrs(pug_merge([{"class": "img-load endeavor-item-bottom-none veil fsw","src": pug_escape(image.src)},{'data-src': image.src}]), true)) + "\u003E";
 };
 ;pug_debug_line = 297;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_mixins["endeavorImageNoTop75"] = pug_interp = function(datum){
@@ -519,7 +519,7 @@ var block = (this && this.block), attributes = (this && this.attributes) || {};
 ;pug_debug_line = 298;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 var image = datum.image
 ;pug_debug_line = 299;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cimg" + (pug_attrs(pug_merge([{"class": "img-load endeavor-item endeavor-item-top-none veil endeavor-width-75-percent","src": pug_escape(image.src)},{'data-src': image.src}]), true)) + "\u003E";
+pug_html = pug_html + "\u003Cimg" + (pug_attrs(pug_merge([{"class": "img-load endeavor-item-top-none veil endeavor-width-75-percent","src": pug_escape(image.src)},{'data-src': image.src}]), true)) + "\u003E";
 };
 ;pug_debug_line = 306;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_mixins["endeavorImageFSList"] = pug_interp = function(data){

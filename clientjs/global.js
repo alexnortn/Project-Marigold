@@ -405,7 +405,7 @@ $(document).ready(function() {
                         .then(function(elems) {
                             // $(project_id).velocity("scroll", { axis: "x", duration: 0, container: container });
                             $(project_id).scrollTop(0);     // Reset project scroll             
-                            container.addClass('visible');
+                            container.addClass('visible')
                         
                             $('#fx-container').addClass('opaque').onCSSTransitionEnd( function() { 
                                 if (opaque) {
@@ -450,8 +450,8 @@ $(document).ready(function() {
             var $this = $(this);
             var hammertime = new Hammer(this);
             hammertime.on("tap", function(evt) {
-                workItemInteraction($(this).attr('data-project'), evt);
-                _endeavorRouter.setURL($(this).attr('data-project')); // Internal URL Routing
+                workItemInteraction($(evt.srcEvent.currentTarget).attr('data-project'), evt);
+                _endeavorRouter.setURL($(evt.srcEvent.currentTarget).attr('data-project')); // Internal URL Routing
                 return false;
             });
         });
