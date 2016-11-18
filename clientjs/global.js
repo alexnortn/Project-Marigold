@@ -442,7 +442,7 @@ $(document).ready(function() {
         // Project Event Handlers
 
         $('.item').on('click', function(evt) {
-            workItemInteraction($(this).attr('data-project'), evt);
+            workItemInteraction($(this).attr('data-project'), evt); 
             _endeavorRouter.setURL($(this).attr('data-project')); // Internal URL Routing
         });
 

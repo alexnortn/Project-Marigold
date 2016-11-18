@@ -1647,7 +1647,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorImageNoTopFS",
+                    "name" : "endeavorImageFS",
                     "data" : {
                         "image" : {
                             "name": "Divrcity Matrix Full",
