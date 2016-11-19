@@ -381,6 +381,20 @@
                     }
                 },
                 {
+                    "name" : "endeavorTextRightFS",
+                    "data" : {
+                        "text" : "Connectomics",
+                        "bgColor" : ""
+                    }
+                },
+                {
+                    "name" : "endeavorTextLeftFS",
+                    "data" : {
+                        "text" : "Connectomics",
+                        "bgColor" : ""
+                    }
+                },
+                {
                     "name" : "endeavorTwoImageParallaxLeft",
                     "data" : {
                         "image1" : {

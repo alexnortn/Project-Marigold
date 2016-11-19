@@ -295,6 +295,30 @@ mixin endeavorTextRightImageFS(data)
         p.endeavor-block.endeavor-pulltext.endeavor-text-left.endeavor-second=data.text
 
 
+//-  Endeavor Project | Full-Width, Text Left
+    Requires: <datum.text>
+    Description: Full-Width, Text Element
+
+mixin endeavorTextLeftFS(datum)
+    - var text = datum.text
+    - var bgColor = datum.bgColor ? datum.bgColor : "transparent"
+
+    .endeavor-item.endeavor-horizontal-10vw.endeavor-flex-row-nowrap.endeavor-flex-center-main.endeavor-height-25vw.endeavor-flex-start.fsw(style=`background-color: ${bgColor}`)
+        p.endeavor-block.endeavor-pulltext.endeavor-text-left.endeavor-second=datum.text
+
+
+//-  Endeavor Project | Full-Width, Text Right
+    Requires: <datum.text>
+    Description: Full-Width, Text Element
+
+mixin endeavorTextRightFS(datum)
+    - var text = datum.text
+    - var bgColor = datum.bgColor ? datum.bgColor : "transparent"
+
+    .endeavor-item.endeavor-horizontal-10vw.endeavor-flex-row-nowrap.endeavor-flex-center-main.endeavor-height-25vw.endeavor-flex-end.fsw(style=`background-color: ${bgColor}`)
+        p.endeavor-block.endeavor-pulltext.endeavor-text-left.endeavor-second=datum.text
+
+
 //-  Endeavor Project | Full-Width Adaptive Image
     Requires: <datum.img.scr>
     Description: Full-Width Image Element
