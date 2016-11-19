@@ -245,13 +245,26 @@ mixin endeavorSubheaderFS(datum)
     Requires: <datum.subheader> <datum.caption>
     Description: Full-Width Image Element
 
-mixin endeavorSubheaderCaptionFS(datum)
-    - var subheader = datum.subheader
-    - var caption = datum.caption
+mixin endeavorSubheaderCaptionFS(data)
+    - var subheader = data.subheader
+    - var caption = data.caption
     .edeavor-item
-        h3=datum.subheader
+        h3=data.subheader
         p.caption.no-margin.endeavor-item-top-15.endeavor-width-35-prcnt=caption
         hr.slight.endeavor-item-top-25.fsw
+
+
+//-  Endeavor Project | Full-Width Centered Header + Subtext
+    Requires: <data.header> <data.subtext>
+    Description: Full-Width Image Element
+
+mixin endeavorIntroFS(data)
+    - var header = data.header
+    - var subtext = data.subtext
+    - var bgColor = data.bgColor ? data.bgColor : "transparent"
+    .endeavor-item.endeavor-intro.endeavor-50.endeavor-flex-column.endeavor-flex-center.fsw(style=`background-color: ${bgColor}`)
+        h1.endeavor-block.endeavor-header=data.header
+        p.endeavor-block.endeavor-subtext=data.subtext
 
 
 //-  Endeavor Project | Full-Width Adaptive Image
