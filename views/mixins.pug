@@ -262,9 +262,37 @@ mixin endeavorIntroFS(data)
     - var header = data.header
     - var subtext = data.subtext
     - var bgColor = data.bgColor ? data.bgColor : "transparent"
-    .endeavor-item.endeavor-intro.endeavor-50.endeavor-flex-column.endeavor-flex-center.fsw(style=`background-color: ${bgColor}`)
+    .endeavor-item.endeavor-50.endeavor-flex-column.endeavor-flex-center.fsw(style=`background-color: ${bgColor}`)
         h1.endeavor-block.endeavor-header=data.header
         p.endeavor-block.endeavor-subtext=data.subtext
+
+
+//-  Endeavor Project | Full-Width, Text left, Right-Aligned Square Image
+    Requires: <data.text> <data.img>
+    Description: Full-Width, Responsive Img + Text Element
+
+mixin endeavorTextLeftImageFS(data)
+    - var text = data.text
+    - var image = data.image
+    - var bgColor = data.bgColor ? data.bgColor : "transparent"
+
+    .endeavor-item.endeavor-horizontal-10vw.endeavor-flex-row-nowrap.endeavor-flex-center-main.endeavor-flex-between.fsw(style=`background-color: ${bgColor}`)
+        img.img-load.endeavor-second.endeavor-square-width.veil(src=image.src)&attributes({'data-src': image.src})
+        p.endeavor-block.endeavor-pulltext.endeavor-text-left=data.text
+
+
+//-  Endeavor Project | Full-Width, Text Right, Left-Aligned Square Image
+    Requires: <data.text> <data.img>
+    Description: Full-Width, Responsive Img + Text Element
+
+mixin endeavorTextRightImageFS(data)
+    - var text = data.text
+    - var image = data.image
+    - var bgColor = data.bgColor ? data.bgColor : "transparent"
+
+    .endeavor-item.endeavor-horizontal-10vw.endeavor-flex-row-nowrap.endeavor-flex-center-main.endeavor-flex-between.fsw(style=`background-color: ${bgColor}`)
+        img.img-load.endeavor-square-width.veil(src=image.src)&attributes({'data-src': image.src})
+        p.endeavor-block.endeavor-pulltext.endeavor-text-left.endeavor-second=data.text
 
 
 //-  Endeavor Project | Full-Width Adaptive Image
@@ -529,7 +557,7 @@ mixin endeavorImageHeader(data, _width)
 
 mixin endeavorCaptionHeaderGrid(data)
     - var _width = (1 / (data.length + 0.5)) * 100; //- % of available width | 0.5 experimentally determined spacing coefficiant
-    .endeavor-item.endeavor-flex-row-nowrap
+    .endeavor-item.endeavor-flex-row-nowrap.endeavor-flex-around
         each datum, index in data
             +endeavorCaptionHeader(datum, _width)
 
@@ -540,7 +568,7 @@ mixin endeavorCaptionHeaderGrid(data)
 
 mixin endeavorImageHeaderGrid(data)
     - var _width = (1 / (data.length + 0.5)) * 100; //- % of available width | 0.5 experimentally determined spacing coefficiant
-    .endeavor-item.endeavor-flex-row-nowrap
+    .endeavor-item.endeavor-flex-row-nowrap.endeavor-flex-around
         each datum, index in data
             +endeavorImageHeader(datum, _width)
 
