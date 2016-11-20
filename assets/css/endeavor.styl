@@ -134,7 +134,7 @@ $StickyOffsetMeta = 20vh
 
 .endeavor-contents h1 
 	text-align center
-	padding 30px
+	padding 15px
 	
 
 .endeavor-intro 
@@ -249,8 +249,8 @@ $StickyOffsetMeta = 20vh
 	text-align center
 	
 .endeavor-overview .description hr
-	width 25px	
-	height 4px
+	width 15px	
+	height 1px
 	border none
 	color $BLACK
 	background-color $BLACK
@@ -346,22 +346,28 @@ $StickyOffsetMeta = 20vh
 .endeavor-parallax-hybrid p.caption 
 	font-family 'Source Sans Pro', sans-serif
 	font-weight 400
-	font-size 14px
+	font-size 12px
+	
 	letter-spacing 0.25px
-	margin-bottom 15px
-	line-height 2em
-	margin-top 25px
+	line-height 1.85em
+	text-justify inter-word
+	text-align left
+	
 	width 20vw
 	min-width 225px
 	max-width 350px
-	bottom -25%
-	text-align left
+	
+	margin-bottom 15px
+	margin-top 25px
+	padding 3.5vw
+	
 	position absolute
 	display inline-block
-	text-align left
-	text-justify inter-word
+	
+	bottom -25%
+	
 	background-color $WHITE_BG
-	padding 3.5vw
+	
 	box-shadow 0 -10px 15px rgba(0, 0, 0, 0.18) 
 	
 
@@ -443,37 +449,35 @@ $StickyOffsetMeta = 20vh
 /* Caption */
 
 
-p.center-caption
-	font-family 'Source Sans Pro', sans-serif
-	font-weight 400
-	letter-spacing 0.25px
-	margin-bottom 15px
-	line-height 1.75em
-	 
+p.center-caption	
+	text-align center
+	
+	margin-bottom 150px
 	margin-left auto
 	margin-right auto
+	
 	display block
 	
 	width 50%
-	
-	margin-bottom 150px
-	text-align center
 	
 	transition width ease-in-out 250ms
 
 
 .caption 
-	font-size 14px
-	line-height 2em
-	margin-top 25px
+	font-family 'Source Sans Pro', sans-serif
+	font-weight 400
+	font-size 12px
 	
-	min-width 300px
-	max-width 500px
+	text-justify inter-word
+	line-height 1.85em
+	text-align left
+	
+	margin-top 25px
+
+	width 500px
 	
 	position relative
 	display inline-block
-	text-align left
-	text-justify inter-word
 	
 
 .caption-mod
@@ -710,12 +714,12 @@ p.center-caption
 	
 .endeavor-description p 
 	font-family 'Source Sans Pro', sans-serif
-	font-weight 400
+	font-weight 300
 	font-size 18px
 	
-	text-align left
-	line-height 2em
+	line-height 1.85em
 	letter-spacing 0
+	text-align left
 	
 .endeavor-description q 
 	margin-top 0
@@ -1446,10 +1450,6 @@ p.center-caption
 		min-width 250px
 		min-height 250px
 		
-	.endeavor-overview .description hr
-		width 15px
-		height 2px
-		
 	.endeavor-overview .description p 
 		font-size 14px
 		margin-top 15px
@@ -1526,10 +1526,6 @@ p.center-caption
 		height 200px
 		min-width 200px
 		min-height 200px
-		
-	.endeavor-overview .description hr
-		width 15px
-		height 2px
 		
 	.endeavor-overview .description p 
 		font-size 14px

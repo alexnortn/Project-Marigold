@@ -371,6 +371,12 @@
                     }
                 },
                 {
+                    "name" : "endeavorPad",
+                    "data" : {
+                        "height" : "10vw"
+                    }
+                },
+                {
                     "name" : "endeavorModuleMachine",
                     "data" : {
                         "bgImage" : "",
@@ -386,7 +392,7 @@
                                 "name" : "endeavorIntroFS",
                                 "data" : {
                                     "header" : "Connectomics",
-                                    "subtext" : "The production and study of connectomes, known as connectomics, may range in scale from a detailed map of the full set of neurons and synapses within part or all of the nervous system of an organism to a macro scale description of the functional and structural connectivity between all cortical areas and subcortical structures.",
+                                    "subtext" : "The production and study of connectomes, may range in scale from a detailed map of the full set of neurons and synapses within part or all of the nervous system of an organism to a macro scale description of the functional and structural connectivity.",
                                     "bgColor" : ""
                                 }
                             },
