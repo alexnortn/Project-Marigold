@@ -396,11 +396,11 @@
                                     "bgColor" : "",
                                     "sizeClass" : "endeavor-square-width-25",
                                     "image" : {
-                                        "name": "hero",
-                                        "src": "images/crystal-8.jpg",
-                                        "src_mobile": "images/crystal-8.jpg",
-                                        "src_preview": "images/lamp-sm-0.jpg",
-                                        "caption": "Side view of Gestural Lamp. "
+                                        "name": "Museum C.Elegans Worm",
+                                        "src": "images/projects/museum/hi-res/museum-worm.gif",
+                                        "src_mobile": "images/projects/museum/hi-res/museum-worm.gif",
+                                        "src_preview": "images/projects/museum/hi-res/museum-worm.gif",
+                                        "caption": "Museum C.Elegans Worm"
                                     }
                                 }
                             },
@@ -418,11 +418,11 @@
                                     "bgColor" : "",
                                     "sizeClass" : "endeavor-square-width-25",
                                     "image" : {
-                                        "name": "hero",
-                                        "src": "images/crystal-8.jpg",
-                                        "src_mobile": "images/crystal-8.jpg",
-                                        "src_preview": "images/lamp-sm-0.jpg",
-                                        "caption": "Side view of Gestural Lamp. "
+                                        "name": "Museum Stream of Consciousness",
+                                        "src": "images/projects/museum/hi-res/museum-river-1.jpg",
+                                        "src_mobile": "images/projects/museum/hi-res/museum-river-1.jpg",
+                                        "src_preview": "images/projects/museum/hi-res/museum-river-1.jpg",
+                                        "caption": "Museum Stream of Consciousness"
                                     }
                                 }
                             },
@@ -434,12 +434,13 @@
                                     "sizeClass" : "endeavor-square-width-25",
                                     "image" : {
                                         "name": "hero",
-                                        "src": "images/crystal-8.jpg",
-                                        "src_mobile": "images/crystal-8.jpg",
-                                        "src_preview": "images/lamp-sm-0.jpg",
+                                        "name": "Museum Stream of Consciousness",
+                                        "src": "images/projects/museum/hi-res/museum-river-2.jpg",
+                                        "src_mobile": "images/projects/museum/hi-res/museum-river-2.jpg",
+                                        "src_preview": "images/projects/museum/hi-res/museum-river-2.jpg",
                                         "size": "15vw",
                                         "padding": "5vw",
-                                        "caption": "Side view of Gestural Lamp. "
+                                        "caption": "Museum Stream of Consciousness"
                                     }
                                 }
                             },
@@ -451,10 +452,13 @@
                                     "sizeClass" : "endeavor-square-width-25",
                                     "image" : {
                                         "name": "hero",
-                                        "src": "images/crystal-8.jpg",
-                                        "src_mobile": "images/crystal-8.jpg",
-                                        "src_preview": "images/lamp-sm-0.jpg",
-                                        "caption": "Side view of Gestural Lamp. "
+                                        "name": "Museum Stream of Consciousness",
+                                        "src": "images/projects/museum/hi-res/museum-river-3.jpg",
+                                        "src_mobile": "images/projects/museum/hi-res/museum-river-3.jpg",
+                                        "src_preview": "images/projects/museum/hi-res/museum-river-3.jpg",
+                                        "size": "15vw",
+                                        "padding": "5vw",
+                                        "caption": "Museum Stream of Consciousness"
                                     }
                                 }
                             },
