@@ -274,11 +274,11 @@ mixin endeavorIntroFS(data)
 mixin endeavorTextLeftImageFS(data)
     - var text = data.text
     - var image = data.image
-    - var imageSize = data.image.size ? data.image.size : "25vw"
     - var bgColor = data.bgColor ? data.bgColor : "transparent"
+    - var sizeClass = data.sizeClass
 
     .endeavor-item.endeavor-horizontal-10vw.endeavor-flex-row-nowrap.endeavor-flex-center-main.endeavor-flex-between.fsw(style=`background-color: ${bgColor}`)
-        img.img-load.endeavor-second.veil(src=image.src)&attributes({'data-src': image.src})(style=`width: ${imageSize};height: ${imageSize}`)
+        img.img-load.endeavor-second.veil(src=image.src)&attributes({'data-src': image.src})(class=`${sizeClass}`)
         p.endeavor-block.endeavor-pulltext.endeavor-text-left=data.text
 
 
@@ -289,11 +289,11 @@ mixin endeavorTextLeftImageFS(data)
 mixin endeavorTextRightImageFS(data)
     - var text = data.text
     - var image = data.image
-    - var imageSize = data.image.size ? data.image.size : "25vw"
     - var bgColor = data.bgColor ? data.bgColor : "transparent"
+    - var sizeClass = data.sizeClass
 
     .endeavor-item.endeavor-horizontal-10vw.endeavor-flex-row-nowrap.endeavor-flex-center-main.endeavor-flex-between.fsw(style=`background-color: ${bgColor}`)
-        img.img-load.veil(src=image.src)&attributes({'data-src': image.src})(style=`width: ${imageSize};height: ${imageSize}`)
+        img.img-load.veil(src=image.src)&attributes({'data-src': image.src})(class=`${sizeClass}`)
         p.endeavor-block.endeavor-pulltext.endeavor-text-left.endeavor-second=data.text
 
 
@@ -303,12 +303,12 @@ mixin endeavorTextRightImageFS(data)
 
 mixin endeavorLeftImageFS(data)
     - var image = data.image
-    - var imageSize = data.image.size ? data.image.size : "25vw"
     - var imagePadding = data.image.padding ? data.image.padding : 0
+    - var sizeClass = data.sizeClass
     - var bgColor = data.bgColor ? data.bgColor : "transparent"
 
-    .endeavor-item.endeavor-item-no-margin.endeavor-horizontal-10vw.endeavor-flex-row-nowrap.endeavor-flex-center-main.endeavor-flex-start.fsw(style=`background-color: ${bgColor}`)
-        img.img-load.veil(src=image.src)&attributes({'data-src': image.src})(style=`width: ${imageSize};height: ${imageSize};padding: ${imagePadding}`)
+    .endeavor-item.endeavor-item-no-margim.endeavor-horizontal-10vw.endeavor-flex-row-nowrap.endeavor-flex-center-main.endeavor-flex-start.fsw(style=`background-color: ${bgColor}`)
+        img.img-load.veil(src=image.src)&attributes({'data-src': image.src})(class=`${sizeClass}`)
 
 
 //-  Endeavor Project | Full-Width, Text Right, Left-Aligned Square Image
@@ -317,12 +317,12 @@ mixin endeavorLeftImageFS(data)
 
 mixin endeavorRightImageFS(data)
     - var image = data.image
-    - var imageSize = data.image.size ? data.image.size : "25vw"
     - var imagePadding = data.image.padding ? data.image.padding : 0
+    - var sizeClass = data.sizeClass
     - var bgColor = data.bgColor ? data.bgColor : "transparent"
 
-    .endeavor-item.endeavor-item-no-margin.endeavor-horizontal-10vw.endeavor-flex-row-nowrap.endeavor-flex-center-main.endeavor-flex-end.fsw(style=`background-color: ${bgColor}`)
-        img.img-load.veil(src=image.src)&attributes({'data-src': image.src})(style=`width: ${imageSize};height: ${imageSize};padding: ${imagePadding}`)
+    .endeavor-item.endeavor-item-no-margim.endeavor-horizontal-10vw.endeavor-flex-row-nowrap.endeavor-flex-center-main.endeavor-flex-end.fsw(style=`background-color: ${bgColor}`)
+        img.img-load.veil(src=image.src)&attributes({'data-src': image.src})(class=`${sizeClass}`)
 
 
 //-  Endeavor Project | Full-Width, Text Left
@@ -500,7 +500,7 @@ mixin endeavorImageGridIterator(data)
 
 mixin endeavorParallaxBehind(datum)
     - var image = datum.image
-    .endeavor-parallax-behind-fs.parallax__group
+    .endeavor-parallax-behind-fs.endeavor-width-100vw.parallax__group
         .endeavor-parallax-behind-support.parallax__layer--back(style=`background-image: url(${image.src})`) 
 
 
@@ -618,6 +618,17 @@ mixin endeavorImageHeaderGrid(data)
     .endeavor-item.endeavor-flex-row-nowrap.endeavor-flex-around
         each datum, index in data
             +endeavorImageHeader(datum, _width)
+
+
+//-  Endeavor Project | Full 100vw Element
+    Requires: <data.modules> <data.modules.data> 
+    Useful for creating full screen extensive backgrounds + overlays
+
+mixin endeavorModuleMachine(data)
+    .endeavor-item.endeavor-width-100vw.endeavor-bg.endeavor-bg-center.endeavor-pos-rel(style=`background-image: url(${data.bg_image.src})`)
+        .endeavor-item-no-margin.endeavor-width-norm
+            each module, index in data.modules
+                +#{module.name}(module.data)
 
 
 

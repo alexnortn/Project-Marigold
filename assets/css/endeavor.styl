@@ -290,8 +290,6 @@ $StickyOffsetMeta = 20vh
 
 .endeavor-parallax-behind-fs
 	display block
-	width 102vw
-	left calc((102vw - 1275px) / -2) // 1200~ Max contents relative width
 	height 70vh
 	position relative
 	text-align center
@@ -878,6 +876,23 @@ p.center-caption
 
 
 /* -------------------------------------- */
+/* Background Modifiers */	
+
+.endeavor-bg-center
+	background-position center
+	
+
+.endeavor-bg
+	background-size 100% auto
+	background-repeat no-repeat
+	
+
+.endeavor-bg-25
+	background-position 25% 25%
+	
+
+
+/* -------------------------------------- */
 /* Text Modifiers */	
 
 .endeavor-text-center
@@ -1000,6 +1015,19 @@ p.center-caption
 	width 75%
 	
 
+.endeavor-width-norm
+	width 85%
+	max-width 1275px // In accordance with big-moment-1 85vw sizing
+	position relative
+	margin-left auto
+	margin-right auto
+	
+
+.endeavor-width-100vw
+	width 102vw
+	left calc((102vw - 1275px) / -2) // 1200~ Max contents relative width
+	
+
 .fsw // fullscreen width
 	width 100%
 	
@@ -1023,9 +1051,13 @@ p.center-caption
 /* -------------------------------------- */
 /* Form Modifiers */
 
-.endeavor-square-width
+.endeavor-square-width-25
 	width 25vw
 	height @width
+	min-width 100px
+	min-height 100px
+	max-width 300px
+	max-height 300px
 
 
 /* -------------------------------------- */
@@ -1053,7 +1085,7 @@ p.center-caption
 
 
 /* -------------------------------------- */
-/* Padding Modifiers */f
+/* Padding Modifiers */
 
 .endeavor-padding-left-50
 	padding-left 50px
@@ -1082,6 +1114,9 @@ p.center-caption
 /* -------------------------------------- */
 /* Position Modifiers */
 
+.endeavor-pos-rel
+	position relative
+
 .endeavor-float-right
 	float right
 	
@@ -1106,7 +1141,7 @@ p.center-caption
 	.endeavor-contents blockquote
 		font-size 48px
 		
-	.endeavor-parallax-behind-fs
+	.endeavor-width-100vw
 		left calc((100vw - 85vw) / -2) // 85~ Contents relative width
 		
 
@@ -1115,7 +1150,7 @@ p.center-caption
 	.endeavor-contents blockquote
 		font-size 48px
 		
-	.endeavor-parallax-behind-fs
+	.endeavor-width-100vw
 		left calc((100vw - 85vw) / -2) // 85~ Contents relative width	
 		
 
