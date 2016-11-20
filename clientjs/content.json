@@ -347,17 +347,56 @@
                     }
                 },
                 {
-                    "name" : "endeavorPad",
+                    "name" : "endeavorSubheaderFS",
                     "data" : {
-                        "height" : "10vw"
+                        "subheader" : "I am my connectome"
                     }
                 },
                 {
-                    "name" : "endeavorIntroFS",
+                    "name" : "endeavorImageFS",
                     "data" : {
-                        "header" : "Connectomics",
-                        "subtext" : "The production and study of connectomes, known as connectomics, may range in scale from a detailed map of the full set of neurons and synapses within part or all of the nervous system of an organism to a macro scale description of the functional and structural connectivity between all cortical areas and subcortical structures.",
-                        "bgColor" : ""
+                        "image" : {
+                            "name": "Sebastian TED",
+                            "src": "images/projects/museum/hi-res/museum-ted.jpg",
+                            "src_mobile": "images/projects/museum/hi-res/museum-ted.jpg",
+                            "src_preview": "images/projects/museum/hi-res/museum-ted.jpg",
+                            "caption": "Sebastian TED"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorCaptionFS",
+                    "data" : {
+                        "caption" : "At SeungLab scientists study Connectomics, a specialty in the domain of Neuroscience which seeks to understand brain structure and function by constructing comprehensive maps of the connections between neurons."
+                    }
+                },
+                {
+                    "name" : "endeavorModuleMachine",
+                    "data" : {
+                        "bgImage" : "",
+                        "bgColor" : "#ebebeb",
+                        "modules" : [
+                            {
+                                "name" : "endeavorPad",
+                                "data" : {
+                                    "height" : "10vw"
+                                }
+                            },
+                            {
+                                "name" : "endeavorIntroFS",
+                                "data" : {
+                                    "header" : "Connectomics",
+                                    "subtext" : "The production and study of connectomes, known as connectomics, may range in scale from a detailed map of the full set of neurons and synapses within part or all of the nervous system of an organism to a macro scale description of the functional and structural connectivity between all cortical areas and subcortical structures.",
+                                    "bgColor" : ""
+                                }
+                            },
+                            {
+                                "name" : "endeavorPad",
+                                "data" : {
+                                    "height" : "10vw"
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -375,13 +414,14 @@
                 {
                     "name" : "endeavorModuleMachine",
                     "data" : {
-                        "bg_image" : {
+                        "bgImage" : {
                             "name": "Museum C.Elegans Connectome",
                             "src": "images/projects/museum/hi-res/museum-celegans-3.jpg",
                             "src_mobile": "images/projects/museum/hi-res/museum-celegans-3.jpg",
                             "src_preview": "images/projects/museum/hi-res/museum-celegans-3.jpg",
                             "caption": "Museum C.Elegans Connectome"
                         },
+                        "bgColor" : "",
                         "modules" : [
                             {
                                 "name" : "endeavorPad",

@@ -162,7 +162,7 @@ mixin endeavorDescriptionsBig(data)
 
 mixin endeavorCaptionFS(datum)
     - var caption = datum.caption
-    .endeavor-item.fsw
+    .endeavor-item.endeavor-item-no-margin.fsw
         p.caption.no-margin.endeavor-padding-left-50.endeavor-width-35-prcnt=caption
 
 
@@ -625,7 +625,9 @@ mixin endeavorImageHeaderGrid(data)
     Useful for creating full screen extensive backgrounds + overlays
 
 mixin endeavorModuleMachine(data)
-    .endeavor-item.endeavor-width-100vw.endeavor-bg.endeavor-bg-center.endeavor-pos-rel(style=`background-image: url(${data.bg_image.src})`)
+    - var bgImage = data.bgImage ? data.bgImage : "none"
+    - var bgColor = data.bgColor ? data.bgColor : "transparent"
+    .endeavor-item.endeavor-width-100vw.endeavor-bg.endeavor-bg-center.endeavor-pos-rel(style=`background-image: url(${bgImage.src});background-color: ${bgColor}`)
         .endeavor-item-no-margin.endeavor-width-norm
             each module, index in data.modules
                 +#{module.name}(module.data)
