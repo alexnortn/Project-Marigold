@@ -376,11 +376,12 @@
                         "height" : "10vw"
                     }
                 },
-                {
+                                {
                     "name" : "endeavorModuleMachine",
                     "data" : {
                         "bgImage" : "",
-                        "bgColor" : "#ebebeb",
+                        "bgColor" : "#191919",
+                        "class" : "endeavor-item-no-margin",
                         "modules" : [
                             {
                                 "name" : "endeavorPad",
@@ -393,28 +394,23 @@
                                 "data" : {
                                     "header" : "Connectomics",
                                     "subtext" : "The production and study of connectomes, may range in scale from a detailed map of the full set of neurons and synapses within part or all of the nervous system of an organism to a macro scale description of the functional and structural connectivity.",
-                                    "bgColor" : ""
+                                    "bgColor" : "",
+                                    "textColor" : "#a1a1a1"
                                 }
                             },
                             {
-                                "name" : "endeavorPad",
+                                "name" : "endeavorImageFS",
                                 "data" : {
-                                    "height" : "10vw"
+                                    "image" : {
+                                        "name": "Museum Connectome",
+                                        "src": "images/projects/museum/hi-res/museum-connectome-2.jpg",
+                                        "src_mobile": "images/projects/museum/hi-res/museum-connectome-2.jpg",
+                                        "src_preview": "images/projects/museum/hi-res/museum-connectome-2.jpg",
+                                        "caption": "Museum Connectome"
+                                    }
                                 }
                             }
                         ]
-                    }
-                },
-                {
-                    "name" : "endeavorImageFS",
-                    "data" : {
-                        "image" : {
-                            "name": "Museum Connectome",
-                            "src": "images/projects/museum/hi-res/museum-connectome-2.jpg",
-                            "src_mobile": "images/projects/museum/hi-res/museum-connectome-2.jpg",
-                            "src_preview": "images/projects/museum/hi-res/museum-connectome-2.jpg",
-                            "caption": "Museum Connectome"
-                        }
                     }
                 },
                 {
@@ -422,17 +418,19 @@
                     "data" : {
                         "bgImage" : {
                             "name": "Museum C.Elegans Connectome",
-                            "src": "images/projects/museum/hi-res/museum-celegans-3.jpg",
-                            "src_mobile": "images/projects/museum/hi-res/museum-celegans-3.jpg",
-                            "src_preview": "images/projects/museum/hi-res/museum-celegans-3.jpg",
+                            "src": "images/projects/museum/hi-res/museum-celegans-2.jpg",
+                            "src_mobile": "images/projects/museum/hi-res/museum-celegans-2.jpg",
+                            "src_preview": "images/projects/museum/hi-res/museum-celegans-2.jpg",
                             "caption": "Museum C.Elegans Connectome"
                         },
-                        "bgColor" : "",
+                        "bgColor" : "#191919",
+                        "class" : "endeavor-item-no-margin",
                         "modules" : [
                             {
                                 "name" : "endeavorPad",
                                 "data" : {
-                                    "height" : "10vw"
+                                    "height" : "10vw",
+                                    "class" : "endeavor-item-no-margin"
                                 }
                             },
                             {
@@ -440,6 +438,7 @@
                                 "data" : {
                                     "text" : "Connectomics",
                                     "bgColor" : "",
+                                    "textColor" : "#a1a1a1",
                                     "sizeClass" : "endeavor-square-width-25",
                                     "image" : {
                                         "name": "Museum C.Elegans Worm",
@@ -454,7 +453,8 @@
                                 "name" : "endeavorTextLeftFS",
                                 "data" : {
                                     "text" : "Connectomics",
-                                    "bgColor" : ""
+                                    "bgColor" : "",
+                                    "textColor" : "#a1a1a1"
                                 }
                             },
                             {
@@ -462,6 +462,7 @@
                                 "data" : {
                                     "text" : "Connectomics",
                                     "bgColor" : "",
+                                    "textColor" : "#a1a1a1",
                                     "sizeClass" : "endeavor-square-width-25",
                                     "image" : {
                                         "name": "Museum Stream of Consciousness",
@@ -477,7 +478,9 @@
                                 "data" : {
                                     "text" : "Connectomics",
                                     "bgColor" : "",
+                                    "textColor" : "#a1a1a1",
                                     "sizeClass" : "endeavor-square-width-25",
+                                    "size" : "50%",
                                     "image" : {
                                         "name": "hero",
                                         "name": "Museum Stream of Consciousness",
@@ -495,6 +498,7 @@
                                 "data" : {
                                     "text" : "Connectomics",
                                     "bgColor" : "",
+                                    "textColor" : "#a1a1a1",
                                     "sizeClass" : "endeavor-square-width-25",
                                     "image" : {
                                         "name": "hero",
@@ -511,7 +515,7 @@
                             {
                                 "name" : "endeavorPad",
                                 "data" : {
-                                    "height" : "10vw"
+                                    "height" : "20vw"
                                 }
                             }
                         ]
