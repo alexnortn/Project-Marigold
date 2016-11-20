@@ -14,17 +14,25 @@ Style Guide
 
 
 body 
-	color $BLACK
+	font-family 'Source Sans Pro', sans-serif
+	font-weight 400
 	font-size 12px
+	
+	letter-spacing .01rem
+	
+	
 	height 100%
+	width 100%
+	min-width 400px
 	overflow-y visible
 	overflow-x hidden
 	margin 0
-	width 100%
-	min-width 400px
-	background-color $WHITE_BG
+	
 	position absolute
-	letter-spacing .01rem
+	
+	background-color $WHITE_BG
+	color $BLACK
+	
 	transition opacity ease-in-out 1000ms
 
 body::selection 
@@ -39,8 +47,10 @@ section
 
 
 h2 
-	font-family 'Circular-Bold'
+	font-family 'Source Sans Pro', sans-serif
+	font-weight 600
 	font-size 35px
+	
 	letter-spacing 5px
 
 
@@ -49,11 +59,10 @@ h2::selection
 
 
 h1 
-	font-family 'Circular-Bold'
-	/*text-transform uppercase*/
-	font-weight 300
+	font-family 'Source Sans Pro', sans-serif
+	font-weight 600
 	font-size 30px
-	/*letter-spacing 5px*/
+	
 	line-height 1.5em
 
 
@@ -62,7 +71,9 @@ h1::selection
 
 
 p 
-	font-family 'Chronicle-Roman'
+	font-family 'Source Sans Pro', sans-serif
+	font-weight 400
+	
 	text-rendering optimizeLegibility
 
 
@@ -83,7 +94,8 @@ a::selection
 
 
 strong 
-	font-family 'Circular-Bold', sans-serif
+	font-family 'Source Sans Pro', sans-serif
+	font-weight 600
 	
 
 .loader
@@ -175,19 +187,24 @@ strong
 
 
 p#interests 
-	font-family BerlingskeSans-Bold, sans-serif
+	font-family 'Source Sans Pro', sans-serif
+	font-weight 600
+	font-size 12px
+	
 	text-rendering geometricPrecision
 	letter-spacing 2px
-	font-size 12px
 
 
 p.describe 
-	font-family BerlingskeSansRegular, sans-serif
-	text-rendering geometricPrecision
-	letter-spacing 0px
+	font-family 'Source Sans Pro', sans-serif
+	font-weight 400
 	font-size 12px
-	width 450px
+	
+	text-rendering geometricPrecision
 	line-height 2em
+	letter-spacing 0px
+	
+	width 450px
 	padding 40px
 
 
@@ -277,12 +294,16 @@ p.directions
 	
 
 .center 
-	position relative
-	font-family Vaud-Bold
+	font-family 'Source Sans Pro', sans-serif
+	font-weight 600
 	font-size 50px
+	
 	color rgba(50,50,50,1)
 	opacity 0
+	
+	position relative
 	z-index 10
+	
 	transition-timing-function ease-in-out
 	transition all .5s
 
