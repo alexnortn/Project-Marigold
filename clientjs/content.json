@@ -291,8 +291,10 @@
                     }
                 },
                 {
-                    "name" : "endeavorEndPad",
-                    "data" : {}
+                    "name" : "endeavorPad",
+                    "data" : {
+                        "height" : ""
+                    }
                 }
             ]
         },
@@ -350,6 +352,63 @@
                         "header" : "Connectomics",
                         "subtext" : "The production and study of connectomes, known as connectomics, may range in scale from a detailed map of the full set of neurons and synapses within part or all of the nervous system of an organism to a macro scale description of the functional and structural connectivity between all cortical areas and subcortical structures.",
                         "bgColor" : ""
+                    }
+                },
+                                {
+                    "name" : "endeavorPad",
+                    "data" : {
+                        "height" : "10vw"
+                    }
+                },
+                {
+                    "name" : "endeavorTextLeftImageFS",
+                    "data" : {
+                        "text" : "Connectomics",
+                        "bgColor" : "",
+                        "image" : {
+                            "name": "hero",
+                            "src": "images/crystal-8.jpg",
+                            "src_mobile": "images/crystal-8.jpg",
+                            "src_preview": "images/lamp-sm-0.jpg",
+                            "caption": "Side view of Gestural Lamp. "
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorTextLeftFS",
+                    "data" : {
+                        "text" : "Connectomics",
+                        "bgColor" : ""
+                    }
+                },
+                {
+                    "name" : "endeavorTextLeftImageFS",
+                    "data" : {
+                        "text" : "Connectomics",
+                        "bgColor" : "",
+                        "image" : {
+                            "name": "hero",
+                            "src": "images/crystal-8.jpg",
+                            "src_mobile": "images/crystal-8.jpg",
+                            "src_preview": "images/lamp-sm-0.jpg",
+                            "caption": "Side view of Gestural Lamp. "
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorRightImageFS",
+                    "data" : {
+                        "text" : "Connectomics",
+                        "bgColor" : "",
+                        "image" : {
+                            "name": "hero",
+                            "src": "images/crystal-8.jpg",
+                            "src_mobile": "images/crystal-8.jpg",
+                            "src_preview": "images/lamp-sm-0.jpg",
+                            "size": "15vw",
+                            "padding": "5vw",
+                            "caption": "Side view of Gestural Lamp. "
+                        }
                     }
                 },
                 {
@@ -637,8 +696,10 @@
                     }
                 },
                 {
-                    "name" : "endeavorEndPad",
-                    "data" : {}
+                    "name" : "endeavorPad",
+                    "data" : {
+                        "height" : ""
+                    }
                 }
             ]
         },
@@ -646,7 +707,7 @@
             "route" :"explore-cs",
             "name"  : "Explore",
             "project_type"  : "Case Study",
-            "preview" :"museum-preview",
+            "preview" :"explore-preview",
             "year"  : "2016",
             "medium": [
                 "Paper",
@@ -933,8 +994,10 @@
                     }
                 },
                 {
-                    "name" : "endeavorEndPad",
-                    "data" : {}
+                    "name" : "endeavorPad",
+                    "data" : {
+                        "height" : ""
+                    }
                 }
             ]
         }
@@ -1096,8 +1159,10 @@
                     }
                 },
                 {
-                    "name" : "endeavorEndPad",
-                    "data" : {}
+                    "name" : "endeavorPad",
+                    "data" : {
+                        "height" : ""
+                    }
                 }
             ]
         },
@@ -1416,8 +1481,10 @@
                     }
                 },
                 {
-                    "name" : "endeavorEndPad",
-                    "data" : {}
+                    "name" : "endeavorPad",
+                    "data" : {
+                        "height" : ""
+                    }
                 }
             ]
         },
@@ -1780,8 +1847,10 @@
                     }
                 },
                 {
-                    "name" : "endeavorEndPad250",
-                    "data" : {}
+                    "name" : "endeavorPad",
+                    "data" : {
+                        "height" : ""
+                    }
                 }
             ]
         },
@@ -1998,8 +2067,10 @@
                     }
                 },
                 {
-                    "name" : "endeavorEndPad250",
-                    "data" : {}
+                    "name" : "endeavorPad",
+                    "data" : {
+                        "height" : ""
+                    }
                 }
             ]
         },
@@ -2340,8 +2411,10 @@
                     }
                 },
                 {
-                    "name" : "endeavorEndPad",
-                    "data" : {}
+                    "name" : "endeavorPad",
+                    "data" : {
+                        "height" : ""
+                    }
                 }
             ]
         },
@@ -2567,8 +2640,10 @@
                     }
                 },
                 {
-                    "name" : "endeavorEndPad250",
-                    "data" : {}
+                    "name" : "endeavorPad",
+                    "data" : {
+                        "height" : ""
+                    }
                 }
             ]
         },
@@ -2775,8 +2850,10 @@
                     }
                 },
                 {
-                    "name" : "endeavorEndPad250",
-                    "data" : {}
+                    "name" : "endeavorPad",
+                    "data" : {
+                        "height" : ""
+                    }
                 }
             ]
         },
@@ -3329,8 +3406,10 @@
                     }
                 },
                 {
-                    "name" : "endeavorEndPad250",
-                    "data" : {}
+                    "name" : "endeavorPad",
+                    "data" : {
+                        "height" : ""
+                    }
                 }
                   
             ]
@@ -3521,8 +3600,10 @@
                     }
                 },
                 {
-                    "name" : "endeavorEndPad250",
-                    "data" : {}
+                    "name" : "endeavorPad",
+                    "data" : {
+                        "height" : ""
+                    }
                 }
             ]
         },
@@ -3630,8 +3711,10 @@
                     }
                 },
                 {
-                    "name" : "endeavorEndPad250",
-                    "data" : {}
+                    "name" : "endeavorPad",
+                    "data" : {
+                        "height" : ""
+                    }
                 }
             ]
         },
@@ -3819,8 +3902,10 @@
                     }
                 },
                 {
-                    "name" : "endeavorEndPad250",
-                    "data" : {}
+                    "name" : "endeavorPad",
+                    "data" : {
+                        "height" : ""
+                    }
                 }
             ]
         }

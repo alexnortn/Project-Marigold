@@ -274,7 +274,7 @@ mixin endeavorIntroFS(data)
 mixin endeavorTextLeftImageFS(data)
     - var text = data.text
     - var image = data.image
-    - var imageSize = data.imageSize ? data.imageSize : "25vw"
+    - var imageSize = data.image.size ? data.image.size : "25vw"
     - var bgColor = data.bgColor ? data.bgColor : "transparent"
 
     .endeavor-item.endeavor-horizontal-10vw.endeavor-flex-row-nowrap.endeavor-flex-center-main.endeavor-flex-between.fsw(style=`background-color: ${bgColor}`)
@@ -289,12 +289,40 @@ mixin endeavorTextLeftImageFS(data)
 mixin endeavorTextRightImageFS(data)
     - var text = data.text
     - var image = data.image
-    - var imageSize = data.imageSize ? data.imageSize : "25vw"
+    - var imageSize = data.image.size ? data.image.size : "25vw"
     - var bgColor = data.bgColor ? data.bgColor : "transparent"
 
     .endeavor-item.endeavor-horizontal-10vw.endeavor-flex-row-nowrap.endeavor-flex-center-main.endeavor-flex-between.fsw(style=`background-color: ${bgColor}`)
         img.img-load.veil(src=image.src)&attributes({'data-src': image.src})(style=`width: ${imageSize};height: ${imageSize}`)
         p.endeavor-block.endeavor-pulltext.endeavor-text-left.endeavor-second=data.text
+
+
+//-  Endeavor Project | Full-Width, Text left, Right-Aligned Square Image
+    Requires: <data.text> <data.img>
+    Description: Full-Width, Responsive Img + Text Element
+
+mixin endeavorLeftImageFS(data)
+    - var image = data.image
+    - var imageSize = data.image.size ? data.image.size : "25vw"
+    - var imagePadding = data.image.padding ? data.image.padding : 0
+    - var bgColor = data.bgColor ? data.bgColor : "transparent"
+
+    .endeavor-item.endeavor-item-no-margin.endeavor-horizontal-10vw.endeavor-flex-row-nowrap.endeavor-flex-center-main.endeavor-flex-start.fsw(style=`background-color: ${bgColor}`)
+        img.img-load.veil(src=image.src)&attributes({'data-src': image.src})(style=`width: ${imageSize};height: ${imageSize};padding: ${imagePadding}`)
+
+
+//-  Endeavor Project | Full-Width, Text Right, Left-Aligned Square Image
+    Requires: <data.text> <data.img>
+    Description: Full-Width, Responsive Img + Text Element
+
+mixin endeavorRightImageFS(data)
+    - var image = data.image
+    - var imageSize = data.image.size ? data.image.size : "25vw"
+    - var imagePadding = data.image.padding ? data.image.padding : 0
+    - var bgColor = data.bgColor ? data.bgColor : "transparent"
+
+    .endeavor-item.endeavor-item-no-margin.endeavor-horizontal-10vw.endeavor-flex-row-nowrap.endeavor-flex-center-main.endeavor-flex-end.fsw(style=`background-color: ${bgColor}`)
+        img.img-load.veil(src=image.src)&attributes({'data-src': image.src})(style=`width: ${imageSize};height: ${imageSize};padding: ${imagePadding}`)
 
 
 //-  Endeavor Project | Full-Width, Text Left
@@ -414,19 +442,12 @@ mixin endeavorPubFS(datum)
 
 
 //-  Endeavor Project | End Pad
-    Requires: {} --> Could extend for modularity (see <endeavor.styl)
+    Optional: <datum.height> --> Could extend for modularity (see <endeavor.styl)
     Description: empty div to provide padding
 
-mixin endeavorEndPad()
-    .end-pad.end-pad-100
-
-
-//-  Endeavor Project | End Pad
-    Requires: {} --> Could extend for modularity (see <endeavor.styl)
-    Description: empty div to provide padding
-
-mixin endeavorEndPad250()
-    .end-pad.end-pad-250
+mixin endeavorPad(datum)
+    - var _height = datum.height ? datum.height : "250px"
+    .endeavor-item.fsw(style=`height: ${_height}`)
 
 
 //-  Endeavor Parallax Images Left
