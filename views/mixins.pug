@@ -274,10 +274,11 @@ mixin endeavorIntroFS(data)
 mixin endeavorTextLeftImageFS(data)
     - var text = data.text
     - var image = data.image
+    - var imageSize = data.imageSize ? data.imageSize : "25vw"
     - var bgColor = data.bgColor ? data.bgColor : "transparent"
 
     .endeavor-item.endeavor-horizontal-10vw.endeavor-flex-row-nowrap.endeavor-flex-center-main.endeavor-flex-between.fsw(style=`background-color: ${bgColor}`)
-        img.img-load.endeavor-second.endeavor-square-width.veil(src=image.src)&attributes({'data-src': image.src})
+        img.img-load.endeavor-second.veil(src=image.src)&attributes({'data-src': image.src})(style=`width: ${imageSize};height: ${imageSize}`)
         p.endeavor-block.endeavor-pulltext.endeavor-text-left=data.text
 
 
@@ -288,10 +289,11 @@ mixin endeavorTextLeftImageFS(data)
 mixin endeavorTextRightImageFS(data)
     - var text = data.text
     - var image = data.image
+    - var imageSize = data.imageSize ? data.imageSize : "25vw"
     - var bgColor = data.bgColor ? data.bgColor : "transparent"
 
     .endeavor-item.endeavor-horizontal-10vw.endeavor-flex-row-nowrap.endeavor-flex-center-main.endeavor-flex-between.fsw(style=`background-color: ${bgColor}`)
-        img.img-load.endeavor-square-width.veil(src=image.src)&attributes({'data-src': image.src})
+        img.img-load.veil(src=image.src)&attributes({'data-src': image.src})(style=`width: ${imageSize};height: ${imageSize}`)
         p.endeavor-block.endeavor-pulltext.endeavor-text-left.endeavor-second=data.text
 
 
