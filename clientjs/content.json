@@ -347,70 +347,6 @@
                     }
                 },
                 {
-                    "name" : "endeavorSubheaderFS",
-                    "data" : {
-                        "subheader" : "I am my connectome"
-                    }
-                },
-                {
-                    "name" : "endeavorImageFS",
-                    "data" : {
-                        "image" : {
-                            "name": "Sebastian TED",
-                            "src": "images/projects/museum/hi-res/museum-ted.jpg",
-                            "src_mobile": "images/projects/museum/hi-res/museum-ted.jpg",
-                            "src_preview": "images/projects/museum/hi-res/museum-ted.jpg",
-                            "caption": "Sebastian TED"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorCaptionFS",
-                    "data" : {
-                        "caption" : "At SeungLab scientists study Connectomics, a specialty in the domain of Neuroscience which seeks to understand brain structure and function by constructing comprehensive maps of the connections between neurons."
-                    }
-                },
-                {
-                    "name" : "endeavorSectionIntroFS",
-                    "data" : {
-                        "header" : "Human Brain",
-                        "bgColor" : "",
-                        "textColor" : "#a1a1a1"
-                    }
-                },
-                {
-                    "name" : "endeavorInfographicGrid",
-                    "data" : [ 
-                        {
-                            "quantity" : "3",
-                            "units" : "Pound",
-                            "noun" : "Organ",
-                            "bgColor" : "",
-                            "bgColor2" : "#DFDFDF",
-                            "textColor" : "",
-                            "textColor2" : "#808080"
-                        },
-                        {
-                            "quantity" : "80",
-                            "units" : "Billion",
-                            "noun" : "Neurons",
-                            "bgColor" : "",
-                            "bgColor2" : "#DFDFDF",
-                            "textColor" : "",
-                            "textColor2" : "#808080"
-                        },
-                        {
-                            "quantity" : "100",
-                            "units" : "Trillion",
-                            "noun" : "Synapses",
-                            "bgColor" : "",
-                            "bgColor2" : "#DFDFDF",
-                            "textColor" : "",
-                            "textColor2" : "#808080"
-                        }
-                    ]
-                },
-                {
                     "name" : "endeavorPad",
                     "data" : {
                         "height" : "10vw"
@@ -436,6 +372,25 @@
                                     "subtext" : "The production and study of connectomes, may range in scale from a detailed map of the full set of neurons and synapses within part or all of the nervous system of an organism to a macro scale description of the functional and structural connectivity.",
                                     "bgColor" : "",
                                     "textColor" : "#a1a1a1"
+                                }
+                            },
+                            {
+                                "name" : "endeavorImageFS",
+                                "data" : {
+                                    "image" : {
+                                        "name": "Sebastian TED",
+                                        "src": "images/projects/museum/hi-res/museum-ted.jpg",
+                                        "src_mobile": "images/projects/museum/hi-res/museum-ted.jpg",
+                                        "src_preview": "images/projects/museum/hi-res/museum-ted.jpg",
+                                        "caption": "Sebastian TED"
+                                    }
+                                }
+                            },
+                            {
+                                "name" : "endeavorCaptionFS",
+                                "data" : {
+                                    "textColor" : "#a1a1a1",
+                                    "caption" : "At SeungLab scientists study Connectomics, a specialty in the domain of Neuroscience which seeks to understand brain structure and function by constructing comprehensive maps of the connections between neurons."
                                 }
                             },
                             {

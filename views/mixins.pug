@@ -157,13 +157,15 @@ mixin endeavorDescriptionsBig(data)
 
 
 //-  Endeavor Project | Full-Width blocking, Caption
-    Requires: <datum.caption>
+    Requires: <data.caption>
+    Optional: <data.textColor>
     Description: 35vw-Width Text Element
 
-mixin endeavorCaptionFS(datum)
-    - var caption = datum.caption
+mixin endeavorCaptionFS(data)
+    - var caption = data.caption
+    - var textColor = data.textColor ? data.textColor : "#232323" // $BLACK
     .endeavor-item.endeavor-item-no-margin.fsw
-        p.caption.no-margin.endeavor-padding-left-50.endeavor-width-500px=caption
+        p.caption.no-margin.endeavor-padding-left-50.endeavor-width-500px(style=`color: ${textColor}`)=caption
 
 
 //-  Endeavor Project | Full-Width blocking, Caption
@@ -276,7 +278,7 @@ mixin endeavorSectionIntroFS(data)
     - var header = data.header
     - var bgColor = data.bgColor ? data.bgColor : "transparent"
     - var textColor = data.textColor ? data.textColor : "#232323" // $BLACK
-    .endeavor-item.endeavor-item-top-125.endeavor-flex-column.endeavor-flex-center.fsw(style=`background-color: ${bgColor}`)
+    .endeavor-item-top-125.endeavor-flex-column.endeavor-flex-center.fsw(style=`background-color: ${bgColor}`)
         h2.section-intro.endeavor-block.endeavor-header(style=`color: ${textColor}`)=data.header
 
 
@@ -678,7 +680,7 @@ mixin endeavorInfograpic(data, _width)
     Description: Apaptive, Responsive Horizontal Row Iterator for simple infographic explanations
 
 mixin endeavorInfographicGrid(data)
-    .endeavor-item.endeavor-flex-row-nowrap.endeavor-flex-around
+    .endeavor-item.endeavor-item-top-125.endeavor-flex-row-nowrap.endeavor-flex-around
         each datum, index in data
             +endeavorInfograpic(datum)
 
