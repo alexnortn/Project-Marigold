@@ -32,3 +32,184 @@
 }
 
 // Brain Infographic
+
+{
+    "name" : "endeavorInfographicGrid",
+    "data" : [ 
+        {
+            "quantity" : "20",
+            "units" : "Years",
+            "noun" : "Research",
+            "bgColor" : "",
+            "bgColor2" : "#DFDFDF",
+            "textColor" : "#a1a1a1",
+            "textColor2" : "#808080"
+        },
+        {
+            "quantity" : "302",
+            "units" : "Neurons",
+            "noun" : "",
+            "bgColor" : "",
+            "bgColor2" : "#DFDFDF",
+            "textColor" : "#a1a1a1",
+            "textColor2" : "#808080"
+        },
+        {
+            "quantity" : "7K",
+            "units" : "Synapses",
+            "noun" : "",
+            "bgColor" : "",
+            "bgColor2" : "#DFDFDF",
+            "textColor" : "#a1a1a1",
+            "textColor2" : "#808080"
+        }
+    ]
+}
+
+
+{
+    "name" : "endeavorInfographicCompare",
+    "data" : {
+        "bgColor" : "",
+        "label" : "Brain",
+        "contents" : [ 
+            {
+                "quantity" : "3",
+                "units" : "Hundred",
+                "noun" : "",
+                "bgColor" : "",
+                "bgColor2" : "#DFDFDF",
+                "textColor" : "#a1a1a1",
+                "textColor2" : "#808080"
+            },
+            {
+                "quantity" : "80",
+                "units" : "Billion",
+                "noun" : "",
+                "bgColor" : "",
+                "bgColor2" : "#DFDFDF",
+                "textColor" : "#a1a1a1",
+                "textColor2" : "#808080"
+            }
+        ]
+    },
+}
+
+
+
+{
+                                "name" : "endeavorInfographicCompare",
+                                "data" : {
+                                    "bgColor" : "",
+                                    "label" : "Brain",
+                                    "textColor" : "#a1a1a1",
+                                    "contents" : [ 
+                                        {
+                                            "quantity" : "3",
+                                            "units" : "Hundred",
+                                            "noun" : "",
+                                            "bgColor" : "",
+                                            "bgColor2" : "#DFDFDF",
+                                            "textColor" : "#a1a1a1",
+                                            "textColor2" : "#808080"
+                                        },
+                                        {
+                                            "quantity" : "80",
+                                            "units" : "Billion",
+                                            "noun" : "",
+                                            "bgColor" : "",
+                                            "bgColor2" : "#DFDFDF",
+                                            "textColor" : "#a1a1a1",
+                                            "textColor2" : "#808080"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name" : "endeavorInfographicCompare",
+                                "data" : {
+                                    "bgColor" : "",
+                                    "label" : "Brain",
+                                    "textColor" : "#a1a1a1",
+                                    "contents" : [ 
+                                        {
+                                            "quantity" : "7",
+                                            "units" : "Thousand",
+                                            "noun" : "",
+                                            "bgColor" : "",
+                                            "bgColor2" : "#DFDFDF",
+                                            "textColor" : "#a1a1a1",
+                                            "textColor2" : "#808080"
+                                        },
+                                        {
+                                            "quantity" : "100",
+                                            "units" : "Trillion",
+                                            "noun" : "",
+                                            "bgColor" : "",
+                                            "bgColor2" : "#DFDFDF",
+                                            "textColor" : "#a1a1a1",
+                                            "textColor2" : "#808080"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name" : "endeavorInfographicCompare",
+                                "data" : {
+                                    "bgColor" : "",
+                                    "label" : "Brain",
+                                    "textColor" : "#a1a1a1",
+                                    "contents" : [ 
+                                        {
+                                            "quantity" : "20",
+                                            "units" : "Years",
+                                            "noun" : "",
+                                            "bgColor" : "",
+                                            "bgColor2" : "#DFDFDF",
+                                            "textColor" : "#a1a1a1",
+                                            "textColor2" : "#808080"
+                                        },
+                                        {
+                                            "quantity" : "?",
+                                            "units" : "Lifetimes",
+                                            "noun" : "",
+                                            "bgColor" : "",
+                                            "bgColor2" : "#DFDFDF",
+                                            "textColor" : "#a1a1a1",
+                                            "textColor2" : "#808080"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name" : "endeavorInfographicGrid",
+                                "data" : [ 
+                                    {
+                                        "quantity" : "20",
+                                        "units" : "Years",
+                                        "noun" : "",
+                                        "bgColor" : "",
+                                        "bgColor2" : "#DFDFDF",
+                                        "textColor" : "#a1a1a1",
+                                        "textColor2" : "#808080"
+                                    },
+                                    {
+                                        "quantity" : "302",
+                                        "units" : "Neurons",
+                                        "noun" : "",
+                                        "bgColor" : "",
+                                        "bgColor2" : "#DFDFDF",
+                                        "textColor" : "#a1a1a1",
+                                        "textColor2" : "#808080"
+                                    },
+                                    {
+                                        "quantity" : "7K",
+                                        "units" : "Synapses",
+                                        "noun" : "",
+                                        "bgColor" : "",
+                                        "bgColor2" : "#DFDFDF",
+                                        "textColor" : "#a1a1a1",
+                                        "textColor2" : "#808080"
+                                    }
+                                ]
+                            },

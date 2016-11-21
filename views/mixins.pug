@@ -164,7 +164,7 @@ mixin endeavorDescriptionsBig(data)
 mixin endeavorCaptionFS(data)
     - var caption = data.caption
     - var textColor = data.textColor ? data.textColor : "#232323" // $BLACK
-    .endeavor-item.endeavor-item-no-margin.fsw
+    .endeavor-item-no-margin.fsw
         p.caption.no-margin.endeavor-padding-left-50.endeavor-width-500px(style=`color: ${textColor}`)=caption
 
 
@@ -393,6 +393,15 @@ mixin endeavorImageFS(datum)
     img.img-load.endeavor-item.veil.fsw(src=image.src)&attributes({'data-src': image.src})
 
 
+//-  Endeavor Project | Full-Width Adaptive Image
+    Requires: <datum.img.scr>
+    Description: Full-Width Image Element
+
+mixin endeavorImage100vw(datum)
+    - var image = datum.image
+    img.img-load.endeavor-item.veil.endeavor-width-100vw.endeavor-pos-rel(src=image.src)&attributes({'data-src': image.src})
+
+
 //-  Endeavor Project | Full-Width Adaptive Image // No Top Margin
     Requires: <datum.img.scr>
     Description: Full-Width Image Element
@@ -576,7 +585,7 @@ mixin endeavorImageCenterCaption(data)
     - var image = data.image
     - var caption = data.caption
     .endeavor-item.endeavor-para-box.fsw.endeavor-flex-column
-        img.img-load.endeavor-width-50-percent.img-box.endeavor-image-box--center(src=`${image.src}`)
+        img.img-load.endeavor-width-50-prcnt.img-box.endeavor-image-box--center(src=`${image.src}`)
         p.caption.center-caption=caption
 
 
@@ -600,6 +609,23 @@ mixin endeavorImageSlider75(data)
     .endeavor-item.endeavor-image-slider.endeavor-width-75-prcnt.endeavor-center
         each image, i in images
             img.img-load.endeavor-image-slider-color.fsw(src = `${images[i].src}`)
+
+
+//-  Endeavor Display Card + Image
+    Requires: <data.image> <data.header>
+    Description: Display Card with Border Radius + Image + Centered // No Margin
+
+mixin endeavorCardCenter(data)
+    - var image = data.image
+    - var header = data.header
+    - var color = data.textColor ? data.textColor : "#A1A1A1"
+    - var bgColor = data.bgColor ? data.bgColor : "transparent"
+    - var bgColor2 = data.bgColor2 ? data.bgColor2 : "transparent"
+    .endeavor-item-no-margin.endeavor-flex-center.endeavor-flex
+        .endeavor-card.endeavor-radius-50px.endeavor-flex-center-main.endeavor-square-250px.endeavor-flex-column(style=`background-color: ${bgColor}`)
+            .endeavor-item-50-25.endeavor-square-60px.endeavor-center.endeavor-circle.endeavor-flex.endeavor-flex-center.endeavor-item-bottom-25(style=`background-color: ${bgColor2}`)
+                img.img-load.endeavor-width-40-prcnt(src = `${image.src}`)
+            h2.card-header.endeavor-text-center(style=`color: ${color}`)=header
 
 
 
@@ -660,7 +686,7 @@ mixin endeavorImageHeaderGrid(data)
     Requires: <data.quantity> <data.units> <data.noun>
     Description: Apaptive Horizontal Column Element for simple infographic explanations
 
-mixin endeavorInfograpic(data, _width)
+mixin endeavorInfographic(data, _width)
     - var quantity = data.quantity
     - var units = data.units
     - var noun = data.noun
@@ -669,9 +695,9 @@ mixin endeavorInfograpic(data, _width)
     - var textColor = data.textColor ? data.textColor : "#232323" // $BLACK
     - var textColor2 = data.textColor2 ? data.textColor2 : "#232323" // $BLACK
     .endeavor-item-all-25(style=`background-color: ${bgColor}`)
-        .endeavor-square-150px.endeavor-center.endeavor-circle.endeavor-flex.endeavor-flex-center.endeavor-item-bottom-25(style=`background-color: ${bgColor2}`)
-            h1.endeavor-header.endeavor-item-no-margin.endeavor-text-center(style=`color: ${textColor2}`)=quantity
-        p.endeavor-pulltext.endeavor-item-no-margin.endeavor-text-center(style=`color: ${textColor}`).endeavor-item-bottom-15=units
+        .endeavor-square-125px.endeavor-center.endeavor-circle.endeavor-flex.endeavor-flex-center.endeavor-item-bottom-25(style=`background-color: ${bgColor2}`)
+            h1.thin.endeavor-item-no-margin.endeavor-text-center(style=`color: ${textColor2}`)=quantity
+        p.endeavor-item-no-margin.endeavor-text-center(style=`color: ${textColor}`).endeavor-item-bottom-15=units
         h3.endeavor-item-no-margin.endeavor-text-center(style=`color: ${textColor}`).caption.caption-mod.no-margin=noun
 
 
@@ -680,9 +706,26 @@ mixin endeavorInfograpic(data, _width)
     Description: Apaptive, Responsive Horizontal Row Iterator for simple infographic explanations
 
 mixin endeavorInfographicGrid(data)
-    .endeavor-item.endeavor-item-top-125.endeavor-flex-row-nowrap.endeavor-flex-around
+    .endeavor-item-125.endeavor-flex-row-nowrap.endeavor-flex-around.endeavor-horizontal-10vw
         each datum, index in data
-            +endeavorInfograpic(datum)
+            +endeavorInfographic(datum)
+
+
+//-  Endeavor Project | Adaptive Horizontal Row Iterator
+    Requires: Infographic Module
+    Description: Apaptive, Responsive Horizontal Row Iterator for simple infographic explanations
+
+mixin endeavorInfographicCompare(data)
+    - var bgColor = data.bgColor ? data.bgColor : "transparent"
+    - var textColor = data.textColor ? data.textColor : "#232323" // $BLACK
+    - var label = data.label ? data.label : ""
+    - var contents = data.contents
+    .endeavor-flex.endeavor-horizontal-10vw.endeavor-item-no-margin
+        .endeavor-side-label.endeavor-flex.endeavor-flex-center(style=`background-color: ${bgColor}`)
+            h3.endeavor-rot-90-ccw(style=`color: ${textColor}`)=label
+        .endeavor-flex-row-nowrap.endeavor-flex-around.endeavor-flex-center-main.endeavor-flex-2
+            each content, index in contents
+                +endeavorInfographic(content)
 
 
 //-  Endeavor Project | Full 100vw Element

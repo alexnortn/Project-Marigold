@@ -30,6 +30,11 @@ $StickyOffsetMeta = 20vh
 /* -------------------------------------- */
 /* Elements */
 
+.endeavor-side-label
+	width 100px
+	height 300px
+	border-right 1px solid $BLACK_TEXT
+
 .endeavor-container
 	display none
 	background-color $WHITE_BG
@@ -838,6 +843,11 @@ p.center-caption
 	margin-bottom 25px
 	
 
+.endeavor-item-50-25
+	margin 25px
+	margin-top 50px
+	
+
 .endeavor-item-top-25
 	margin-top 25px
 	
@@ -1008,12 +1018,24 @@ p.center-caption
 	order 2
 	
 
+.endeavor-flex-1
+	flex-grow 1
+	
+
+.endeavor-flex-2
+	flex-grow 2
+	
+
 
 /* -------------------------------------- */
 /* Width Modifiers */	
 
 .endeavor-width-35-prcnt
 	width 35%
+	
+
+.endeavor-width-40-prcnt
+	width 40%
 	
 
 .endeavor-width-60-prcnt
@@ -1024,7 +1046,7 @@ p.center-caption
 	width 75%
 	
 
-.endeavor-width-50-percent
+.endeavor-width-50-prcnt
 	width 50%
 	
 
@@ -1053,6 +1075,10 @@ p.center-caption
 
 .endeavor-width-500px
 	width 500px
+	
+
+.endeavor-width-300px
+	width 300px
 	
 
 .fsw // fullscreen width
@@ -1087,13 +1113,41 @@ p.center-caption
 	max-height 300px
 	
 
-.endeavor-square-150px
-	width 150px
+.endeavor-square-250px
+	width 250px
+	height @width
+	
+
+.endeavor-square-125px
+	width 125px
+	height @width
+	
+
+.endeavor-square-75px
+	width 75px
 	height @width
 	
 	
-.endeavor-circle
+.endeavor-circle 
 	border-radius 100%
+	
+
+.endeavor-radius-50px
+	border-radius 50px
+	
+
+
+/* -------------------------------------- */
+/* Transform Modifiers */
+
+.endeavor-rot-90-ccw
+	transform rotate(-90deg)
+	
+
+.endeavor-rot-90-cw
+	transform rotate(90deg)
+
+	
 
 
 /* -------------------------------------- */
