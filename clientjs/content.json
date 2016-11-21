@@ -437,6 +437,7 @@
                                 "name" : "endeavorTextLeftImageFS",
                                 "data" : {
                                     "text" : "Connectomics",
+                                    "superText" : "Connectomics",
                                     "bgColor" : "",
                                     "textColor" : "#a1a1a1",
                                     "sizeClass" : "endeavor-square-width-25",
@@ -453,6 +454,7 @@
                                 "name" : "endeavorTextLeftFS",
                                 "data" : {
                                     "text" : "Connectomics",
+                                    "superText" : "Connectomics",
                                     "bgColor" : "",
                                     "textColor" : "#a1a1a1"
                                 }
@@ -461,6 +463,7 @@
                                 "name" : "endeavorTextLeftImageFS",
                                 "data" : {
                                     "text" : "Connectomics",
+                                    "superText" : "Connectomics",
                                     "bgColor" : "",
                                     "textColor" : "#a1a1a1",
                                     "sizeClass" : "endeavor-square-width-25",
@@ -497,6 +500,7 @@
                                 "name" : "endeavorTextLeftImageFS",
                                 "data" : {
                                     "text" : "Connectomics",
+                                    "superText" : "Connectomics",
                                     "bgColor" : "",
                                     "textColor" : "#a1a1a1",
                                     "sizeClass" : "endeavor-square-width-25",
