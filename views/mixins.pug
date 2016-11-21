@@ -268,6 +268,18 @@ mixin endeavorIntroFS(data)
         p.endeavor-block.endeavor-subtext(style=`color: ${textColor}`)=data.subtext
 
 
+//-  Endeavor Project | Full-Width Centered Header + Subtext
+    Requires: <data.header> <data.subtext>
+    Description: Full-Width Image Element
+
+mixin endeavorSectionIntroFS(data)
+    - var header = data.header
+    - var bgColor = data.bgColor ? data.bgColor : "transparent"
+    - var textColor = data.textColor ? data.textColor : "#232323" // $BLACK
+    .endeavor-item.endeavor-item-top-125.endeavor-flex-column.endeavor-flex-center.fsw(style=`background-color: ${bgColor}`)
+        h2.section-intro.endeavor-block.endeavor-header(style=`color: ${textColor}`)=data.header
+
+
 //-  Endeavor Project | Full-Width, Text left, Right-Aligned Square Image
     Requires: <data.text> <data.img>
     Description: Full-Width, Responsive Img + Text Element
@@ -600,7 +612,7 @@ mixin endeavorImageSlider75(data)
 mixin endeavorCaptionHeader(data, _width)
     - var header = data.header
     - var caption = data.caption
-    div.endeavor-border-top.endeavor-item-all-25
+    .endeavor-border-top.endeavor-item-all-25
         h4.endeavor-item-bottom-15=header
         p.caption.caption-mod.endeavor-text-left.no-margin=caption
 
@@ -613,7 +625,7 @@ mixin endeavorImageHeader(data, _width)
     - var header = data.header;
     - var image_top = data.image_top;
     - var images = data.images;
-    div.endeavor-item-all-25
+    .endeavor-item-all-25
         img.img-load.veil.fsw(src=image_top.src)&attributes({'data-src': image_top.src})
         h4.endeavor-item-bottom-15.endeavor-text-center.endeavor-item-top-50=header
         each image, index in images
@@ -640,6 +652,35 @@ mixin endeavorImageHeaderGrid(data)
     .endeavor-item.endeavor-flex-row-nowrap.endeavor-flex-around
         each datum, index in data
             +endeavorImageHeader(datum, _width)
+
+
+//-  Endeavor Project | Adaptive Horizontal Column Elementz
+    Requires: <data.quantity> <data.units> <data.noun>
+    Description: Apaptive Horizontal Column Element for simple infographic explanations
+
+mixin endeavorInfograpic(data, _width)
+    - var quantity = data.quantity
+    - var units = data.units
+    - var noun = data.noun
+    - var bgColor = data.bgColor ? data.bgColor : "transparent"
+    - var bgColor2 = data.bgColor2 ? data.bgColor2 : "transparent"
+    - var textColor = data.textColor ? data.textColor : "#232323" // $BLACK
+    - var textColor2 = data.textColor2 ? data.textColor2 : "#232323" // $BLACK
+    .endeavor-item-all-25(style=`background-color: ${bgColor}`)
+        .endeavor-square-150px.endeavor-center.endeavor-circle.endeavor-flex.endeavor-flex-center.endeavor-item-bottom-25(style=`background-color: ${bgColor2}`)
+            h1.endeavor-header.endeavor-item-no-margin.endeavor-text-center(style=`color: ${textColor2}`)=quantity
+        p.endeavor-pulltext.endeavor-item-no-margin.endeavor-text-center(style=`color: ${textColor}`).endeavor-item-bottom-15=units
+        h3.endeavor-item-no-margin.endeavor-text-center(style=`color: ${textColor}`).caption.caption-mod.no-margin=noun
+
+
+//-  Endeavor Project | Adaptive Horizontal Row Iterator
+    Requires: Infographic Module
+    Description: Apaptive, Responsive Horizontal Row Iterator for simple infographic explanations
+
+mixin endeavorInfographicGrid(data)
+    .endeavor-item.endeavor-flex-row-nowrap.endeavor-flex-around
+        each datum, index in data
+            +endeavorInfograpic(datum)
 
 
 //-  Endeavor Project | Full 100vw Element
