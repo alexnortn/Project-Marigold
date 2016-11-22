@@ -428,6 +428,7 @@
                                     "header" : "Connectome Comparison",
                                     "bgColor" : "#1e1e1e",
                                     "bgColor2" : "#2e2e2e",
+                                    "lineColor" : "#2e2e2e",
                                     "textColor" : "#666666",
                                     "image" : {
                                         "name": "Museum Connectome Icon",
@@ -435,6 +436,83 @@
                                         "src_mobile": "images/projects/museum/hi-res/museum-connectome-icon.png",
                                         "src_preview": "images/projects/museum/hi-res/museum-connectome-icon.png",
                                         "caption": "Museum Connectome Icon"
+                                    }
+                                }
+                            },
+                            {
+                                "name" : "endeavorVerticalComparison",
+                                "data" : {
+                                    "textLeft" : "Human Brain",
+                                    "textRight" : "C. Elegans",
+                                    "bgColor" : "#1e1e1e",
+                                    "bgColor2" : "#2e2e2e",
+                                    "lineColor" : "#2e2e2e",
+                                    "textColor" : "#666666",
+                                    "first" : "true",
+                                    "image" : {
+                                        "name": "Museum Compare Icon",
+                                        "src": "images/projects/museum/hi-res/museum-compare-icon.png",
+                                        "src_mobile": "images/projects/museum/hi-res/museum-compare-icon.png",
+                                        "src_preview": "images/projects/museum/hi-res/museum-compare-icon.png",
+                                        "caption": "Museum Compare Icon"
+                                    }
+                                }
+                            },
+                            {
+                                "name" : "endeavorVerticalComparison",
+                                "data" : {
+                                    "textLeft" : "80 Billion",
+                                    "textRight" : "302",
+                                    "bgColor" : "#1e1e1e",
+                                    "bgColor2" : "#2e2e2e",
+                                    "lineColor" : "#2e2e2e",
+                                    "textColor" : "#666666",
+                                    "first" : "",
+                                    "image" : {
+                                        "name": "Museum Neuron Icon",
+                                        "src": "images/projects/museum/hi-res/museum-neuron-icon.png",
+                                        "src_mobile": "images/projects/museum/hi-res/museum-neuron-icon.png",
+                                        "src_preview": "images/projects/museum/hi-res/museum-neuron-icon.png",
+                                        "caption": "Museum Neuron Icon"
+                                    }
+                                }
+                            },
+                            {
+                                "name" : "endeavorVerticalComparison",
+                                "data" : {
+                                    "textLeft" : "100 Trillion",
+                                    "textRight" : "7034",
+                                    "bgColor" : "#1e1e1e",
+                                    "bgColor2" : "#2e2e2e",
+                                    "lineColor" : "#2e2e2e",
+                                    "textColor" : "#666666",
+                                    "first" : "",
+                                    "image" : {
+                                        "name": "Museum Synapse Icon",
+                                        "src": "images/projects/museum/hi-res/museum-synapse-icon.png",
+                                        "src_mobile": "images/projects/museum/hi-res/museum-synapse-icon.png",
+                                        "src_preview": "images/projects/museum/hi-res/museum-synapse-icon.png",
+                                        "caption": "Museum Synapse Icon"
+                                    }
+                                }
+                            },
+
+                            {
+                                "name" : "endeavorVerticalComparison",
+                                "data" : {
+                                    "textLeft" : "?",
+                                    "textRight" : "20 Years",
+                                    "bgColor" : "#1e1e1e",
+                                    "bgColor2" : "#2e2e2e",
+                                    "lineColor" : "#2e2e2e",
+                                    "textColor" : "#666666",
+                                    "first" : "",
+                                    "image" : {
+                                        "name": "Museum Timer Icon",
+                                        "src": "images/projects/museum/hi-res/museum-timer-icon.png",
+                                        "src_mobile": "images/projects/museum/hi-res/museum-timer-icon.png",
+                                        "src_preview": "images/projects/museum/hi-res/museum-timer-icon.png",
+                                        "caption": "Museum Timer Icon"
                                     }
                                 }
                             },

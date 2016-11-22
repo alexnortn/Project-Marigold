@@ -613,19 +613,42 @@ mixin endeavorImageSlider75(data)
 
 //-  Endeavor Display Card + Image
     Requires: <data.image> <data.header>
+    Optional: <data.textColor> <data.bgColor> <data.bgColor2>
     Description: Display Card with Border Radius + Image + Centered // No Margin
 
 mixin endeavorCardCenter(data)
     - var image = data.image
     - var header = data.header
-    - var color = data.textColor ? data.textColor : "#A1A1A1"
+    - var textColor = data.textColor ? data.textColor : "#A1A1A1"
     - var bgColor = data.bgColor ? data.bgColor : "transparent"
     - var bgColor2 = data.bgColor2 ? data.bgColor2 : "transparent"
     .endeavor-item-no-margin.endeavor-flex-center.endeavor-flex
         .endeavor-card.endeavor-radius-50px.endeavor-flex-center-main.endeavor-square-250px.endeavor-flex-column(style=`background-color: ${bgColor}`)
             .endeavor-item-50-25.endeavor-square-60px.endeavor-center.endeavor-circle.endeavor-flex.endeavor-flex-center.endeavor-item-bottom-25(style=`background-color: ${bgColor2}`)
                 img.img-load.endeavor-width-40-prcnt(src = `${image.src}`)
-            h2.card-header.endeavor-text-center(style=`color: ${color}`)=header
+            h2.card-header.endeavor-text-center(style=`color: ${textColor}`)=header
+
+
+//-  Endeavor Display Card + Image
+    Requires: <data.image> <data.header>
+    Optional: <data.textColor> <data.bgColor> <data.bgColor2>
+    Description: Display Card with Border Radius + Image + Centered // No Margin
+
+mixin endeavorVerticalComparison(data)
+    - var image = data.image
+    - var textLeft = data.textLeft
+    - var textRight = data.textRight
+    - var textColor = data.textColor ? data.textColor : "#A1A1A1"
+    - var bgColor = data.bgColor ? data.bgColor : "transparent"
+    - var bgColor2 = data.bgColor2 ? data.bgColor2 : "transparent"
+    - var lineColor = data.lineColor ? data.lineColor : "transparent"
+    - var weight = data.first ? "600" : "200"
+    .endeavor-item-no-margin.endeavor-flex-center.endeavor-flex-column.endeavor-height-200px
+        .endeavor-vertical-rule.endeavor-pos-abs.endeavor-height-200px(style=`background-color: ${lineColor}`)
+        .endeavor-item-25.endeavor-square-60px.endeavor-center.endeavor-circle.endeavor-flex.endeavor-flex-center.endeavor-push-1(style=`background-color: ${bgColor2}`)
+            img.img-load.endeavor-width-40-prcnt(src = `${image.src}`)
+            p.endeavor-pos-abs.endeavor-width-150px.endeavor-left-100px.endeavor-text-left(style=`color: ${textColor};font-weight: ${weight}`)=textLeft
+            p.endeavor-pos-abs.endeavor-width-150px.endeavor-right-100px.endeavor-text-right(style=`color: ${textColor};font-weight: ${weight}`)=textRight
 
 
 
