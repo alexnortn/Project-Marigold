@@ -215,9 +215,10 @@ mixin endeavorCaptionFSCenter3(datum)
 mixin endeavorPullheaderCaptionFS(data)
     - var subheader = data.subheader
     - var caption = data.caption
+    - var textColor = data.textColor ? data.textColor : "#232323" // $BLACK
     .endeavor-item.endeavor-flex.endeavor-flex-center.endeavor-flex-column.fsw
-        h2.endeavor-subheader.endeavor-pull-quote=subheader
-        p.endeavor-caption-2.no-margin.endeavor-text-center.endeavor-width-60-prcnt=caption
+        h2.endeavor-subheader.endeavor-pull-quote(style=`color: ${textColor}`)=subheader
+        p.endeavor-caption-2.no-margin.endeavor-text-center.endeavor-width-60-prcnt(style=`color: ${textColor}`)=caption
 
 
 
@@ -392,7 +393,8 @@ mixin endeavorTextRightFS(data)
 mixin endeavorNestedImageFS(data)
     - var image = data.image
     - var image2 = data.image2
-    .endeavor-item.endeavor-flex-column
+    - var marginBottom = data.margin ? data.margin : "" // $BLACK
+    .endeavor-item.endeavor-flex-column(style=`margin-bottom: ${marginBottom}`)
         img.img-load.endeavor-item.veil.fsw(src=image.src)&attributes({'data-src': image.src}) 
         img.img-load.endeavor-item.veil.endeavor-width-40-prcnt.endeavor-pos-rel.endeavor-top-minus-15vw.endeavor-flex-self-center.endeavor-shadow-50(src=image2.src)&attributes({'data-src': image2.src}) 
 
