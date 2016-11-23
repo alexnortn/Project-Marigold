@@ -368,10 +368,11 @@
                             {
                                 "name" : "endeavorIntroFS",
                                 "data" : {
+                                    "margin" : "endeavor-item-125",
                                     "header" : "Connectomics",
                                     "subtext" : "The production and study of connectomes, may range in scale from a detailed map of the full set of neurons and synapses within part or all of the nervous system of an organism to a macro scale description of the functional and structural connectivity.",
                                     "bgColor" : "",
-                                    "textColor" : "#a1a1a1"
+                                    "textColor" : "#666666"
                                 }
                             },
                             {
@@ -389,7 +390,7 @@
                             {
                                 "name" : "endeavorCaptionFS",
                                 "data" : {
-                                    "textColor" : "#a1a1a1",
+                                    "textColor" : "#666666",
                                     "caption" : "At SeungLab scientists study Connectomics, a specialty in the domain of Neuroscience which seeks to understand brain structure and function by constructing comprehensive maps of the connections between neurons."
                                 }
                             },
@@ -415,6 +416,65 @@
                         "bgColor" : "#191919",
                         "class" : "endeavor-item-no-margin",
                         "modules" : [
+                            {
+                                "name" : "endeavorImageFS",
+                                "data" : {
+                                    "image" : {
+                                        "name": "Connectome as Stream",
+                                        "src": "images/projects/museum/hi-res/museum-stream.jpg",
+                                        "src_mobile": "images/projects/museum/hi-res/museum-stream.jpg",
+                                        "src_preview": "images/projects/museum/hi-res/museum-stream.jpg",
+                                        "caption": "Connectome as Stream"
+                                    }
+                                }
+                            },
+                            {
+                                "name" : "endeavorCaptionHeaderGrid",
+                                "data" : {
+                                    "noMargin" : "true",
+                                    "textColor" : "#666666",
+                                    "contents": [ 
+                                        {
+                                            "header" : "Neural Activity",
+                                            "caption" : "Neuroscientists believe neural activity is the basis for our throughts, feelings, and peceptions."
+                                        },
+                                        {
+                                            "header" : "Neural Pathways",
+                                            "caption" : "The connectome is like the riverbed. The connections of the brains's neural network determine the pathways along which the activity flows."
+                                        },
+                                        {
+                                            "header" : "Stream of Consciousness",
+                                            "caption" : "Like the water in a riverbed, neural activity is constantly changing."
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name" : "endeavorPad",
+                                "data" : {
+                                    "height" : "10vw",
+                                    "class" : "endeavor-item-no-margin"
+                                }
+                            },
+                            {
+                                "name" : "endeavorNestedImageFS",
+                                "data" : {
+                                    "image" : {
+                                        "name": "C. Elegans Connectome",
+                                        "src": "images/projects/museum/hi-res/museum-connectome-graph.jpg",
+                                        "src_mobile": "images/projects/museum/hi-res/museum-connectome-graph.jpg",
+                                        "src_preview": "images/projects/museum/hi-res/museum-connectome-graph.jpg",
+                                        "caption": "C. Elegans Connectome"
+                                    },
+                                    "image2" : {
+                                        "name": "C. Elegans Worm",
+                                        "src": "images/projects/museum/hi-res/museum-worm.gif",
+                                        "src_mobile": "images/projects/museum/hi-res/museum-worm.gif",
+                                        "src_preview": "images/projects/museum/hi-res/museum-worm.gif",
+                                        "caption": "C. Elegans Worm"
+                                    }
+                                }
+                            },
                             {
                                 "name" : "endeavorPad",
                                 "data" : {
@@ -1829,20 +1889,23 @@
                 },
                 {
                     "name" : "endeavorCaptionHeaderGrid",
-                    "data" : [ 
-                        {
-                            "header" : "Distance Calculations",
-                            "caption" : "To explore the relationships between amenities we calculated the distances from every amenity to every other amenity. We calculated the average minimum distance between each pair of two amenities, producing a metric value that represents the distance one must walk to get from type x to the closest amenity of type y."
-                        },
-                        {
-                            "header" : "Percolation Analysis",
-                            "caption" : "To understand the clustering behavior of amenities, we examined the clusters formed in each city using the calculated distances between every pair of amenities."
-                        },
-                        {
-                            "header" : "Cluster Composition",
-                            "caption" : "Taking a closer look at the size of the clusters we can understand the city centers and their composition of amenities. To do so, we fitted the calculated distances to the distribution of all amenity types to detect the minimum cluster size to observe an amenity of type x in a cluster."
-                        }
-                    ]
+                    "data" : {
+                        "textColor" : "#666666",
+                        "contents" : [ 
+                            {
+                                "header" : "Distance Calculations",
+                                "caption" : "To explore the relationships between amenities we calculated the distances from every amenity to every other amenity. We calculated the average minimum distance between each pair of two amenities, producing a metric value that represents the distance one must walk to get from type x to the closest amenity of type y."
+                            },
+                            {
+                                "header" : "Percolation Analysis",
+                                "caption" : "To understand the clustering behavior of amenities, we examined the clusters formed in each city using the calculated distances between every pair of amenities."
+                            },
+                            {
+                                "header" : "Cluster Composition",
+                                "caption" : "Taking a closer look at the size of the clusters we can understand the city centers and their composition of amenities. To do so, we fitted the calculated distances to the distribution of all amenity types to detect the minimum cluster size to observe an amenity of type x in a cluster."
+                            }
+                        ]
+                    }
                 },
                 {
                     "name" : "endeavorSubheaderFS",

@@ -261,11 +261,12 @@ mixin endeavorSubheaderCaptionFS(data)
     Description: Full-Width Image Element
 
 mixin endeavorIntroFS(data)
+    - var _margin = data.margin ? data.margin : "endeavor-item"
     - var header = data.header
     - var subtext = data.subtext
     - var bgColor = data.bgColor ? data.bgColor : "transparent"
     - var textColor = data.textColor ? data.textColor : "#232323" // $BLACK
-    .endeavor-item.endeavor-50.endeavor-flex-column.endeavor-flex-center.fsw(style=`background-color: ${bgColor}`)
+    .endeavor-flex-column.endeavor-flex-center.fsw(style=`background-color: ${bgColor}`)(class=`${_margin}`)
         h1.endeavor-block.endeavor-header(style=`color: ${textColor}`)=data.header
         p.endeavor-block.endeavor-subtext(style=`color: ${textColor}`)=data.subtext
 
@@ -382,6 +383,20 @@ mixin endeavorTextRightFS(data)
         .endeavor-block.endeavor-second
             h3.endeavor-text-left(style=`color: ${textColor}`)=data.superText
             p.endeavor-pulltext.endeavor-text-left(style=`color: ${textColor}`)=data.text
+
+
+//-  Endeavor Project | Full-Width Adaptive Image + Nested Centered + Offset Image
+    Requires: <data.image> <data.image2>
+    Description: Full-Width Image Element
+
+mixin endeavorNestedImageFS(data)
+    - var image = data.image
+    - var image2 = data.image2
+    .endeavor-item.endeavor-flex-column
+        img.img-load.endeavor-item.veil.fsw(src=image.src)&attributes({'data-src': image.src}) 
+        img.img-load.endeavor-item.veil.endeavor-width-40-prcnt.endeavor-pos-rel.endeavor-top-minus-15vw.endeavor-flex-self-center.endeavor-shadow-50(src=image2.src)&attributes({'data-src': image2.src}) 
+
+
 
 
 //-  Endeavor Project | Full-Width Adaptive Image
@@ -660,12 +675,13 @@ mixin endeavorVerticalComparison(data)
     Requires: <data.header> <data.caption>
     Description: Apaptive Horizontal Column Element with Header + Caption
 
-mixin endeavorCaptionHeader(data, _width)
+mixin endeavorCaptionHeader(data, _width, _textColor)
     - var header = data.header
     - var caption = data.caption
-    .endeavor-border-top.endeavor-item-all-25
-        h4.endeavor-item-bottom-15=header
-        p.caption.caption-mod.endeavor-text-left.no-margin=caption
+    - var textColor = _textColor ? _textColor : "#232323" // $BLACK
+    .endeavor-border-top.endeavor-item-all-25(style=`border-color: ${textColor}`)
+        h4.endeavor-item-bottom-15(style=`color: ${textColor}`)=header
+        p.caption.caption-mod.endeavor-text-left.no-margin.endeavor-item-top-5(style=`color: ${textColor}`)=caption
 
 
 //-  Endeavor Project | Adaptive Horizontal Column Element
@@ -689,9 +705,12 @@ mixin endeavorImageHeader(data, _width)
 
 mixin endeavorCaptionHeaderGrid(data)
     - var _width = (1 / (data.length + 0.5)) * 100; //- % of available width | 0.5 experimentally determined spacing coefficiant
-    .endeavor-item.endeavor-flex-row-nowrap.endeavor-flex-around
-        each datum, index in data
-            +endeavorCaptionHeader(datum, _width)
+    - var marginClass = data.noMargin ? "endeavor-item-no-margin" : "endeavor-item" // $BLACK
+    - var textColor = data.textColor ? data.textColor : "#232323" // $BLACK
+    - var contents = data.contents
+    .endeavor-flex-row-nowrap.endeavor-flex-around(class=`${marginClass}`)
+        each content, index in contents
+            +endeavorCaptionHeader(content, _width, textColor)
 
 
 //-  Endeavor Project | Adaptive Horizontal Column Element Iterator
