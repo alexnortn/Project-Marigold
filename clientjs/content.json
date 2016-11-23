@@ -457,6 +457,68 @@
                                 }
                             },
                             {
+                                "name" : "endeavorTextLeftImage2FS",
+                                "data" : {
+                                    "bgColor" : "",
+                                    "textColor" : "#a1a1a1",
+                                    "sizeClass" : "endeavor-square-width-25",
+                                    "text" : "It is true that the riverbed guides the flow of the water.",
+                                    "image" : {
+                                        "name": "Museum Stream of Consciousness",
+                                        "src": "images/projects/museum/hi-res/museum-river-1.jpg",
+                                        "src_mobile": "images/projects/museum/hi-res/museum-river-1.jpg",
+                                        "src_preview": "images/projects/museum/hi-res/museum-river-1.jpg",
+                                        "caption": "Museum Stream of Consciousness"
+                                    }
+                                }
+                            },
+                            {
+                                "name" : "endeavorRightImageFS",
+                                "data" : {
+                                    "text" : "Connectomics",
+                                    "bgColor" : "",
+                                    "textColor" : "#a1a1a1",
+                                    "sizeClass" : "endeavor-square-width-25",
+                                    "size" : "50%",
+                                    "image" : {
+                                        "name": "hero",
+                                        "name": "Museum Stream of Consciousness",
+                                        "src": "images/projects/museum/hi-res/museum-river-2.jpg",
+                                        "src_mobile": "images/projects/museum/hi-res/museum-river-2.jpg",
+                                        "src_preview": "images/projects/museum/hi-res/museum-river-2.jpg",
+                                        "size": "15vw",
+                                        "padding": "5vw",
+                                        "caption": "Museum Stream of Consciousness"
+                                    }
+                                }
+                            },
+                            {
+                                "name" : "endeavorTextLeftImage2FS",
+                                "data" : {
+                                    "bgColor" : "",
+                                    "textColor" : "#a1a1a1",
+                                    "sizeClass" : "endeavor-square-width-25",
+                                    "text" : "However, over time the water can reshape the bed of the river.",
+                                    "image" : {
+                                        "name": "hero",
+                                        "name": "Museum Stream of Consciousness",
+                                        "src": "images/projects/museum/hi-res/museum-river-3.jpg",
+                                        "src_mobile": "images/projects/museum/hi-res/museum-river-3.jpg",
+                                        "src_preview": "images/projects/museum/hi-res/museum-river-3.jpg",
+                                        "size": "15vw",
+                                        "padding": "5vw",
+                                        "caption": "Museum Stream of Consciousness"
+                                    }
+                                }
+                            },
+                            {
+                                "name" : "endeavorPad",
+                                "data" : {
+                                    "height" : "10vw",
+                                    "class" : "endeavor-item-no-margin"
+                                }
+                            },
+                            {
                                 "name" : "endeavorNestedImageFS",
                                 "data" : {
                                     "margin" : "-15vw",
@@ -518,6 +580,7 @@
                                     "lineColor" : "#2e2e2e",
                                     "textColor" : "#666666",
                                     "first" : "true",
+                                    "last" : "",
                                     "image" : {
                                         "name": "Museum Compare Icon",
                                         "src": "images/projects/museum/hi-res/museum-compare-icon.png",
@@ -537,6 +600,7 @@
                                     "lineColor" : "#2e2e2e",
                                     "textColor" : "#666666",
                                     "first" : "",
+                                    "last" : "",
                                     "image" : {
                                         "name": "Museum Neuron Icon",
                                         "src": "images/projects/museum/hi-res/museum-neuron-icon.png",
@@ -556,6 +620,7 @@
                                     "lineColor" : "#2e2e2e",
                                     "textColor" : "#666666",
                                     "first" : "",
+                                    "last" : "",
                                     "image" : {
                                         "name": "Museum Synapse Icon",
                                         "src": "images/projects/museum/hi-res/museum-synapse-icon.png",
@@ -576,75 +641,13 @@
                                     "lineColor" : "#2e2e2e",
                                     "textColor" : "#666666",
                                     "first" : "",
+                                    "last" : "true",
                                     "image" : {
                                         "name": "Museum Timer Icon",
                                         "src": "images/projects/museum/hi-res/museum-timer-icon.png",
                                         "src_mobile": "images/projects/museum/hi-res/museum-timer-icon.png",
                                         "src_preview": "images/projects/museum/hi-res/museum-timer-icon.png",
                                         "caption": "Museum Timer Icon"
-                                    }
-                                }
-                            },
-                            {
-                                "name" : "endeavorSubheaderFS",
-                                "data" : {
-                                    "subheader" : "Stream of Consciousness"
-                                }
-                            },
-                            {
-                                "name" : "endeavorTextLeftImageFS",
-                                "data" : {
-                                    "text" : "Connectomics",
-                                    "superText" : "Connectomics",
-                                    "bgColor" : "",
-                                    "textColor" : "#a1a1a1",
-                                    "sizeClass" : "endeavor-square-width-25",
-                                    "image" : {
-                                        "name": "Museum Stream of Consciousness",
-                                        "src": "images/projects/museum/hi-res/museum-river-1.jpg",
-                                        "src_mobile": "images/projects/museum/hi-res/museum-river-1.jpg",
-                                        "src_preview": "images/projects/museum/hi-res/museum-river-1.jpg",
-                                        "caption": "Museum Stream of Consciousness"
-                                    }
-                                }
-                            },
-                            {
-                                "name" : "endeavorRightImageFS",
-                                "data" : {
-                                    "text" : "Connectomics",
-                                    "bgColor" : "",
-                                    "textColor" : "#a1a1a1",
-                                    "sizeClass" : "endeavor-square-width-25",
-                                    "size" : "50%",
-                                    "image" : {
-                                        "name": "hero",
-                                        "name": "Museum Stream of Consciousness",
-                                        "src": "images/projects/museum/hi-res/museum-river-2.jpg",
-                                        "src_mobile": "images/projects/museum/hi-res/museum-river-2.jpg",
-                                        "src_preview": "images/projects/museum/hi-res/museum-river-2.jpg",
-                                        "size": "15vw",
-                                        "padding": "5vw",
-                                        "caption": "Museum Stream of Consciousness"
-                                    }
-                                }
-                            },
-                            {
-                                "name" : "endeavorTextLeftImageFS",
-                                "data" : {
-                                    "text" : "Connectomics",
-                                    "superText" : "Connectomics",
-                                    "bgColor" : "",
-                                    "textColor" : "#a1a1a1",
-                                    "sizeClass" : "endeavor-square-width-25",
-                                    "image" : {
-                                        "name": "hero",
-                                        "name": "Museum Stream of Consciousness",
-                                        "src": "images/projects/museum/hi-res/museum-river-3.jpg",
-                                        "src_mobile": "images/projects/museum/hi-res/museum-river-3.jpg",
-                                        "src_preview": "images/projects/museum/hi-res/museum-river-3.jpg",
-                                        "size": "15vw",
-                                        "padding": "5vw",
-                                        "caption": "Museum Stream of Consciousness"
                                     }
                                 }
                             },

@@ -236,12 +236,13 @@ mixin endeavorContentFS(datum)
     Requires: <datum.subheader>
     Description: Full-Width Image Element
 
-mixin endeavorSubheaderFS(datum)
-    - var subheader = datum.subheader
+mixin endeavorSubheaderFS(data)
+    - var subheader = data.subheader
+    - var textColor = data.textColor ? data.textColor : "#232323" // $BLACK
     .edeavor-item.endeavor-item-top-125
-        h3=datum.subheader
+        h3(style=`color: ${textColor}`)=data.subheader
 
-        hr.slight.endeavor-item-top-10.fsw
+        hr.slight.endeavor-item-top-10.fsw(style=`border-color: ${textColor}`)
 
 
 //-  Endeavor Project | Full-Width blocking, Sub-Header
@@ -285,7 +286,7 @@ mixin endeavorSectionIntroFS(data)
 
 
 //-  Endeavor Project | Full-Width, Text left, Right-Aligned Square Image
-    Requires: <data.text> <data.img>
+    Requires: <data.supertext> <data.text> <data.img>
     Description: Full-Width, Responsive Img + Text Element
 
 mixin endeavorTextLeftImageFS(data)
@@ -303,8 +304,25 @@ mixin endeavorTextLeftImageFS(data)
             p.endeavor-pulltext.endeavor-text-left(style=`color: ${textColor}`)=data.text
 
 
-//-  Endeavor Project | Full-Width, Text Right, Left-Aligned Square Image
+//-  Endeavor Project | Full-Width, Text left, Right-Aligned Square Image
     Requires: <data.text> <data.img>
+    Description: Full-Width, Responsive Img + Text Element
+
+mixin endeavorTextLeftImage2FS(data)
+    - var text = data.text
+    - var image = data.image
+    - var bgColor = data.bgColor ? data.bgColor : "transparent"
+    - var textColor = data.textColor ? data.textColor : "#232323" // $BLACK
+    - var sizeClass = data.sizeClass
+
+    .endeavor-item.endeavor-horizontal-10vw.endeavor-flex-row-nowrap.endeavor-flex-center-main.endeavor-flex-between.fsw(style=`background-color: ${bgColor}`)
+        img.img-load.endeavor-second.veil(src=image.src)&attributes({'data-src': image.src})(class=`${sizeClass}`)
+        .endeavor-block
+            p.endeavor-caption-4.endeavor-text-left(style=`color: ${textColor}`)=data.text
+
+
+//-  Endeavor Project | Full-Width, Text Right, Left-Aligned Square Image
+    Requires: <data.supertext> <data.text> <data.img>
     Description: Full-Width, Responsive Img + Text Element
 
 mixin endeavorTextRightImageFS(data)
@@ -320,6 +338,23 @@ mixin endeavorTextRightImageFS(data)
         .endeavor-block.endeavor-second
             h3.endeavor-text-left(style=`color: ${textColor}`)=data.superText
             p.endeavor-pulltext.endeavor-text-left(style=`color: ${textColor}`)=data.text
+
+
+//-  Endeavor Project | Full-Width, Text Right, Left-Aligned Square Image
+    Requires: <data.text> <data.img>
+    Description: Full-Width, Responsive Img + Text Element
+
+mixin endeavorTextRightImage2FS(data)
+    - var text = data.text
+    - var image = data.image
+    - var bgColor = data.bgColor ? data.bgColor : "transparent"
+    - var textColor = data.textColor ? data.textColor : "#232323" // $BLACK
+    - var sizeClass = data.sizeClass
+
+    .endeavor-item.endeavor-horizontal-10vw.endeavor-flex-row-nowrap.endeavor-flex-center-main.endeavor-flex-between.fsw(style=`background-color: ${bgColor}`)
+        img.img-load.veil(src=image.src)&attributes({'data-src': image.src})(class=`${sizeClass}`)
+        .endeavor-block.endeavor-second
+            p.endeavor-caption-4.endeavor-text-left(style=`color: ${textColor}`)=data.text
 
 
 //-  Endeavor Project | Full-Width, Text left, Right-Aligned Square Image
@@ -660,8 +695,9 @@ mixin endeavorVerticalComparison(data)
     - var bgColor2 = data.bgColor2 ? data.bgColor2 : "transparent"
     - var lineColor = data.lineColor ? data.lineColor : "transparent"
     - var weight = data.first ? "600" : "200"
+    - var classd = data.last ? "endeavor-vertical-last" : ""
     .endeavor-item-no-margin.endeavor-flex-center.endeavor-flex-column.endeavor-height-200px
-        .endeavor-vertical-rule.endeavor-pos-abs.endeavor-height-200px(style=`background-color: ${lineColor}`)
+        .endeavor-vertical-rule.endeavor-pos-abs.endeavor-height-200px(style=`background-color: ${lineColor}`)(class=`${classd}`)
         .endeavor-item-25.endeavor-square-60px.endeavor-center.endeavor-circle.endeavor-flex.endeavor-flex-center.endeavor-push-1(style=`background-color: ${bgColor2}`)
             img.img-load.endeavor-width-40-prcnt(src = `${image.src}`)
             p.endeavor-pos-abs.endeavor-width-150px.endeavor-left-100px.endeavor-text-left(style=`color: ${textColor};font-weight: ${weight}`)=textLeft
