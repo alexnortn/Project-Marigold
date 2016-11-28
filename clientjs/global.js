@@ -80,22 +80,19 @@ $(document).ready(function() {
         _endeavor_routes.projects.push(item.route);    
     });    
 
-    window.addEventListener("hashchange", function(event) {
-        hashChanged();
-    }, false);
-
     // Intro loader
     $.Velocity.animate( $('.loader'), "fadeOut", { duration: 750 })
         .then(function(elements) {
             setTimeout(function() {
-                _endeavorRouter.route(); // Initial Page Routing
+                _endeavorRouter.route(window.location.pathname.slice(1)); // Initial Page Routing
                 hashChanged();
                 window.addEventListener('popstate', function(event) {
-                    console.log("pop");
+                    hashChanged();
                     if (window.location.pathname === "/") {
                         return;
                     }
-                    _endeavorRouter.route(); // Event handler for History state change
+                    console.log('route');
+                    _endeavorRouter.route(event.state); // Event handler for History state change
                 }, false);
             }, 0);
         })
@@ -324,9 +321,9 @@ $(document).ready(function() {
 
         function workItemInteraction(_project_id, evt) {
 
-            if (_openProjectState) {
-                return;
-            }
+            // if (_openProjectState) {
+            //     return;
+            // }
 
             // Testing for touch || click
             let x_pos,
@@ -361,6 +358,7 @@ $(document).ready(function() {
                 return;
             }
 
+            // Target list to iterate through
             if ($currentTarget.hasClass('case-study-item')) {
                 currents = case_studies;
                 container = $('.case-study-container');
@@ -409,7 +407,6 @@ $(document).ready(function() {
 
                     $.Velocity.animate( $(project_id), "scroll", { axis: "x", duration: 0, container: container })
                         .then(function(elems) {
-                            // $(project_id).velocity("scroll", { axis: "x", duration: 0, container: container });
                             $(project_id).scrollTop(0);     // Reset project scroll             
                             container.addClass('visible')
                         
@@ -614,7 +611,7 @@ $(document).ready(function() {
 
                 // Wait to calculate page offset until class transition ends
                 setTimeout(
-                    function(e) {
+                    function(evt) {
 
                         let scrollInId = $('.case-study-view');
 
@@ -766,11 +763,12 @@ _endeavorRouter = function() {
     let loaded;
     let _sections = $('.section');
 
-    function route() {
-        // If the user requests the index page, redirect to #bios
-        if ((window.location.pathname === "/") && (loaded !== true)) {
+    function route(state) {
+
+        // If the user requests the index page, redirect to #web-lab
+        if ((state === "home") && (loaded !== true)) {
             window.location.hash = "web-lab";
-            _sectionCurrent = $(_sections).index($('#web-lab')); // Set #bios as current
+            _sectionCurrent = $(_sections).index($('#web-lab')); // Set #web-lab as current
 
             hashChanged('#web-lab');
             loaded = true;
@@ -778,40 +776,30 @@ _endeavorRouter = function() {
         else {
             // Check for Project Incoming Routing
             for (let i = 0; i < _endeavor_routes.case_studies.length; i++) {
-                let item = _endeavor_routes.case_studies[i],
-                    path = window.location.pathname;
+                let item = _endeavor_routes.case_studies[i];
 
-                if (path === ("/" + item)) {
-                    window.location.hash = "#works";
-                    hashChanged();
-
+                if (state === item) {
                     setTimeout(function() {
-                        window.history.replaceState('routing', item, "/" + item); // Update browser state without refreshing the page
                        _itemInteraction.workItemInteraction(item, $('.case-study-item'));
                     }, 500); // I'm sorry : (
 
-                    _sectionCurrent = $(_sections).index($('#works')); // Set #bios as current
-                    console.log('project hash route');
+                    _sectionCurrent = $(_sections).index($('#works')); // Set #works as current
+                    console.log('case study url route');
                     return;
                 }
             }
 
             // Check for Case Study Incoming Routing
             for (let i = 0; i < _endeavor_routes.projects.length; i++) {
-                let item = _endeavor_routes.projects[i],
-                    path = window.location.pathname;
+                let item = _endeavor_routes.projects[i];
 
-                if (path === ("/" + item)) {
-                    window.location.hash = "#works";
-                    hashChanged();
-
+                if (state === item) {
                     setTimeout(function() {
-                        window.history.replaceState('routing', item, "/" + item); // Update browser state without refreshing the page
                        _itemInteraction.workItemInteraction(item, $('.project-item'));
                     }, 500); // I'm sorry : (
 
-                    _sectionCurrent = $(_sections).index($('#works')); // Set #bios as current
-                    console.log('case study url route');
+                    _sectionCurrent = $(_sections).index($('#works')); // Set #works as current
+                    console.log('project hash route');
                     return;
                 }
             }
@@ -831,19 +819,18 @@ _endeavorRouter = function() {
 
     // Closure
     return {
-        route: function() {
-            route();
+        route: function(state) {
+            route(state);
         },
         resetURL: function() {
-            window.history.pushState('routing', "", "/"); // Update browser state without refreshing the page
+            window.history.pushState('home', "", "/"); // Update browser state without refreshing the page
         },
         setHash: function(hash) {
             window.location.hash = "#" + hash;
         },
         setURL: function(URL) {
             if (URL) {
-                console.log('push history');
-                window.history.pushState('routing', "", "/" + URL); // Update browser state without refreshing the page
+                window.history.pushState(URL, "", "/" + URL); // Update browser state without refreshing the page
             }
         }
     }
@@ -943,12 +930,6 @@ function hashChanged() {
 
     // Affect pagination on navigation change
     paginationUpdate(sectionUpdate);
-
-    // Close project overlay if open
-    if (_openProjectState) {
-        _closeProject();
-    }
-
 };
 
 // Setup Pagination
