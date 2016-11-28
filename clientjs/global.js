@@ -45,6 +45,7 @@ let _mobile;
 
 let _projectCurrentId,
     _openProjectState = false,
+    _hashChanged = false,
     _closeProject,
     _endeavor_routes;
 
@@ -79,7 +80,9 @@ $(document).ready(function() {
         _endeavor_routes.projects.push(item.route);    
     });    
 
-    window.addEventListener("hashchange", hashChanged, false);
+    window.addEventListener("hashchange", function(event) {
+        hashChanged();
+    }, false);
 
     // Intro loader
     $.Velocity.animate( $('.loader'), "fadeOut", { duration: 750 })
@@ -87,8 +90,11 @@ $(document).ready(function() {
             setTimeout(function() {
                 _endeavorRouter.route(); // Initial Page Routing
                 hashChanged();
-                
                 window.addEventListener('popstate', function(event) {
+                    console.log("pop");
+                    if (window.location.pathname === "/") {
+                        return;
+                    }
                     _endeavorRouter.route(); // Event handler for History state change
                 }, false);
             }, 0);
@@ -154,9 +160,9 @@ $(document).ready(function() {
     });
 
     // Check current position relative to top of page
-    $(window).scroll(function () {
+    window.addEventListener('scroll', function(e) {
         $('.scroll-arrow').velocity("fadeOut", { duration: 250 }); // Fade it out | They get it
-    });
+    }, {passive:true});
 
     // --------------------------------------
     // Event Handlers
@@ -785,11 +791,12 @@ _endeavorRouter = function() {
                     }, 500); // I'm sorry : (
 
                     _sectionCurrent = $(_sections).index($('#works')); // Set #bios as current
+                    console.log('project hash route');
                     return;
                 }
             }
 
-            // Check for Project Incoming Routing
+            // Check for Case Study Incoming Routing
             for (let i = 0; i < _endeavor_routes.projects.length; i++) {
                 let item = _endeavor_routes.projects[i],
                     path = window.location.pathname;
@@ -804,6 +811,7 @@ _endeavorRouter = function() {
                     }, 500); // I'm sorry : (
 
                     _sectionCurrent = $(_sections).index($('#works')); // Set #bios as current
+                    console.log('case study url route');
                     return;
                 }
             }
@@ -833,8 +841,10 @@ _endeavorRouter = function() {
             window.location.hash = "#" + hash;
         },
         setURL: function(URL) {
-            window.history.pushState('routing', "", "/" + URL); // Update browser state without refreshing the page
-            window.location.hash = "";
+            if (URL) {
+                console.log('push history');
+                window.history.pushState('routing', "", "/" + URL); // Update browser state without refreshing the page
+            }
         }
     }
 }();
@@ -904,11 +914,9 @@ function toggleLogo(loc) {
     let header = $('#header');
 
     if (loc === "#web-lab") { 
-        console.log('Header Closed');
         header.removeClass('header-open');
     } else {
         header.addClass('header-open');
-        console.log('Header Open');
     }
 }
 
