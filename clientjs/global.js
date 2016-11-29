@@ -557,6 +557,13 @@ $(document).ready(function() {
         placeholder: '../images/loader.gif'
     });
 
+    // More event control
+    // .on('loading.unveil', function () {
+    //     console.log('Unveiling', this);
+    // }).on('loaded.unveil', function () {
+    //     console.log('Unveiled', this);
+    // });
+
 
     // $('.img-load').unveil({
     //     placeholder: 'http://placehold.it/500x300',
@@ -766,7 +773,7 @@ _endeavorRouter = function() {
     function route(state) {
 
         // If the user requests the index page, redirect to #web-lab
-        if ((state === "home") && (loaded !== true)) {
+        if ((state === "home") || (state === "")) {
             window.location.hash = "web-lab";
             _sectionCurrent = $(_sections).index($('#web-lab')); // Set #web-lab as current
 
