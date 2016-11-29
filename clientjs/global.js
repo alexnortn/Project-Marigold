@@ -84,14 +84,10 @@ $(document).ready(function() {
     $.Velocity.animate( $('.loader'), "fadeOut", { duration: 750 })
         .then(function(elements) {
             setTimeout(function() {
-                _endeavorRouter.route(window.location.pathname.slice(1)); // Initial Page Routing
+                _endeavorRouter.initialRoute(window.location.pathname.slice(1)); // Initial Page Routing => No Animation
                 hashChanged();
                 window.addEventListener('popstate', function(event) {
                     hashChanged();
-                    if (window.location.pathname === "/") {
-                        return;
-                    }
-                    console.log('route');
                     _endeavorRouter.route(event.state); // Event handler for History state change
                 }, false);
             }, 0);
@@ -244,7 +240,7 @@ $(document).ready(function() {
 
             $('body').removeClass('endeavor-open');
 
-            $('#pagination').fadeToggle(500); // Fade Out Pagination
+            $('#pagination').velocity("fadeIn", { duration: 500 });
                 _openProjectState = false;
 
             transition = true;
@@ -319,12 +315,7 @@ $(document).ready(function() {
             }
         }
 
-        function workItemInteraction(_project_id, evt) {
-
-            // if (_openProjectState) {
-            //     return;
-            // }
-
+        function workItemInteraction(_project_id, evt, animate = false) {
             // Testing for touch || click
             let x_pos,
                 y_pos;
@@ -399,13 +390,15 @@ $(document).ready(function() {
 
             $('#pagination').velocity("fadeOut", { duration: 500 });
 
-            $.Velocity.animate( $transitionSVG, { r: 2000 }, { duration: 750 },  "ease-out" )
+            let slide_duration = animate ? 750 : 0; // Flag for instantaneous animation
+
+            $.Velocity.animate( $transitionSVG, { r: 2000 }, { duration: 750 - slide_duration },  "ease-out" )
                 .then(function(elements) {
                     $('body').addClass('endeavor-open');
                     
                     container.addClass('flex-row');
 
-                    $.Velocity.animate( $(project_id), "scroll", { axis: "x", duration: 0, container: container })
+                    $.Velocity.animate( $(project_id), "scroll", { axis: "x", duration: slide_duration, container: container })
                         .then(function(elems) {
                             $(project_id).scrollTop(0);     // Reset project scroll             
                             container.addClass('visible')
@@ -418,6 +411,7 @@ $(document).ready(function() {
                                 $.Velocity.animate( $transitionSVG, "fadeOut", { duration: 500 } )
                                     .then(function(elements) {
                                         $('.arrow-container').removeClass('transparent');
+                                        console.log("pop");
                                         
                                         _$projectCurrentContents = $(project_id).find('.contents');
                                         setupMedia(_$projectCurrentContents); // Resize Video players
@@ -519,12 +513,9 @@ $(document).ready(function() {
 
         // Scroll to next project
         $('#close').click(function(evt) {
-            if (!_openProjectState) {
-                return;
+            if (_openProjectState) {
+                closeProject();
             }
-
-            closeProject();
-
         });
 
         // Resize
@@ -540,8 +531,8 @@ $(document).ready(function() {
 
         // Closure
         return {
-            workItemInteraction: function(_project_id, evt) {
-                workItemInteraction(_project_id, evt);
+            workItemInteraction: function(_project_id, evt, animate) {
+                workItemInteraction(_project_id, evt, animate);
             }
         }
 
@@ -770,10 +761,27 @@ _endeavorRouter = function() {
     let loaded;
     let _sections = $('.section');
 
-    function route(state) {
+    function route(state, animate = true) {
 
         // If the user requests the index page, redirect to #web-lab
-        if ((state === "home") || (state === "")) {
+        if ( window.location.pathname === "/" ) {
+            if (_openProjectState) {
+                $('.arrow-container').addClass('transparent');
+                _closeProject(); // Exit project
+                hashChanged('#web-lab');
+
+                $('.arrow-container-main').addClass('transparent');
+                
+                setTimeout(function() { // Currently a hack for avoinding deferred Velocity Animation
+                    $('.arrow-container-main').removeClass('transparent');
+                    $('.arrow-container').addClass('transparent');
+                    console.log('popout');
+                }, 2000);
+
+                _sectionCurrent = $(_sections).index($('#works')); // Set #works as current
+            }
+        }
+        else if ((state === "home") || (state === "")) { // If the user requests the index page, redirect to #web-lab
             window.location.hash = "web-lab";
             _sectionCurrent = $(_sections).index($('#web-lab')); // Set #web-lab as current
 
@@ -787,11 +795,10 @@ _endeavorRouter = function() {
 
                 if (state === item) {
                     setTimeout(function() {
-                       _itemInteraction.workItemInteraction(item, $('.case-study-item'));
+                       _itemInteraction.workItemInteraction(item, $('.case-study-item'), animate);
                     }, 500); // I'm sorry : (
 
                     _sectionCurrent = $(_sections).index($('#works')); // Set #works as current
-                    console.log('case study url route');
                     return;
                 }
             }
@@ -802,11 +809,10 @@ _endeavorRouter = function() {
 
                 if (state === item) {
                     setTimeout(function() {
-                       _itemInteraction.workItemInteraction(item, $('.project-item'));
+                       _itemInteraction.workItemInteraction(item, $('.project-item'), animate);
                     }, 500); // I'm sorry : (
 
                     _sectionCurrent = $(_sections).index($('#works')); // Set #works as current
-                    console.log('project hash route');
                     return;
                 }
             }
@@ -824,10 +830,17 @@ _endeavorRouter = function() {
             .velocity("scroll", { duration: 1});
     }
 
+    function initialRoute(state) {
+        route(state, false); // animate flag for project transition
+    }
+
     // Closure
     return {
         route: function(state) {
             route(state);
+        },
+        initialRoute: function(state) {
+            initialRoute(state);
         },
         resetURL: function() {
             window.history.pushState('home', "", "/"); // Update browser state without refreshing the page
