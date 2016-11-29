@@ -39,6 +39,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "hero",
                             "src": "images/crystal-8.jpg",
@@ -120,6 +127,13 @@
                 {
                     "name" : "endeavorParallaxBehind",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "hero",
                             "src": "images/crystal-8.jpg",
@@ -231,6 +245,13 @@
                 {
                     "name" : "endeavorImageCenterCaption",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "hero",
                             "src": "images/crystal-8.jpg",
@@ -337,6 +358,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "hero",
                             "src": "images/crystal-8.jpg",
@@ -378,6 +406,13 @@
                             {
                                 "name" : "endeavorImage100vw",
                                 "data" : {
+                                    "placeholder" : {
+                                        "name" : "",
+                                        "src" : "",
+                                        "src_mobile" : "",
+                                        "src_preview" : "",
+                                        "caption" : ""
+                                    },
                                     "image" : {
                                         "name": "Sebastian TED",
                                         "src": "images/projects/museum/hi-res/museum-ted.jpg",
@@ -397,6 +432,13 @@
                             {
                                 "name" : "endeavorImageFS",
                                 "data" : {
+                                    "placeholder" : {
+                                        "name" : "",
+                                        "src" : "",
+                                        "src_mobile" : "",
+                                        "src_preview" : "",
+                                        "caption" : ""
+                                    },
                                     "image" : {
                                         "name": "Museum Connectome",
                                         "src": "images/projects/museum/hi-res/museum-connectome-3.png",
@@ -419,6 +461,13 @@
                             {
                                 "name" : "endeavorImageFS",
                                 "data" : {
+                                    "placeholder" : {
+                                        "name" : "",
+                                        "src" : "",
+                                        "src_mobile" : "",
+                                        "src_preview" : "",
+                                        "caption" : ""
+                                    },
                                     "image" : {
                                         "name": "Connectome as Stream",
                                         "src": "images/projects/museum/hi-res/museum-stream.jpg",
@@ -463,6 +512,13 @@
                                     "textColor" : "#a1a1a1",
                                     "sizeClass" : "endeavor-square-width-25",
                                     "text" : "It is true that the riverbed guides the flow of the water.",
+                                    "placeholder" : {
+                                        "name" : "",
+                                        "src" : "",
+                                        "src_mobile" : "",
+                                        "src_preview" : "",
+                                        "caption" : ""
+                                    },
                                     "image" : {
                                         "name": "Museum Stream of Consciousness",
                                         "src": "images/projects/museum/hi-res/museum-river-1.jpg",
@@ -480,6 +536,13 @@
                                     "textColor" : "#a1a1a1",
                                     "sizeClass" : "endeavor-square-width-25",
                                     "size" : "50%",
+                                    "placeholder" : {
+                                        "name" : "",
+                                        "src" : "",
+                                        "src_mobile" : "",
+                                        "src_preview" : "",
+                                        "caption" : ""
+                                    },
                                     "image" : {
                                         "name": "hero",
                                         "name": "Museum Stream of Consciousness",
@@ -499,6 +562,13 @@
                                     "textColor" : "#a1a1a1",
                                     "sizeClass" : "endeavor-square-width-25",
                                     "text" : "However, over time the water can reshape the bed of the river.",
+                                    "placeholder" : {
+                                        "name" : "",
+                                        "src" : "",
+                                        "src_mobile" : "",
+                                        "src_preview" : "",
+                                        "caption" : ""
+                                    },
                                     "image" : {
                                         "name": "hero",
                                         "name": "Museum Stream of Consciousness",
@@ -522,6 +592,13 @@
                                 "name" : "endeavorNestedImageFS",
                                 "data" : {
                                     "margin" : "-15vw",
+                                    "placeholder" : {
+                                        "name" : "",
+                                        "src" : "",
+                                        "src_mobile" : "",
+                                        "src_preview" : "",
+                                        "caption" : ""
+                                    },
                                     "image" : {
                                         "name": "C. Elegans Connectome",
                                         "src": "images/projects/museum/hi-res/museum-connectome-graph.jpg",
@@ -561,6 +638,13 @@
                                     "bgColor2" : "#2e2e2e",
                                     "lineColor" : "#2e2e2e",
                                     "textColor" : "#666666",
+                                    "placeholder" : {
+                                        "name" : "",
+                                        "src" : "",
+                                        "src_mobile" : "",
+                                        "src_preview" : "",
+                                        "caption" : ""
+                                    },
                                     "image" : {
                                         "name": "Museum Connectome Icon",
                                         "src": "images/projects/museum/hi-res/museum-connectome-icon.png",
@@ -581,6 +665,13 @@
                                     "textColor" : "#666666",
                                     "first" : "true",
                                     "last" : "",
+                                    "placeholder" : {
+                                        "name" : "",
+                                        "src" : "",
+                                        "src_mobile" : "",
+                                        "src_preview" : "",
+                                        "caption" : ""
+                                    },
                                     "image" : {
                                         "name": "Museum Compare Icon",
                                         "src": "images/projects/museum/hi-res/museum-compare-icon.png",
@@ -601,6 +692,13 @@
                                     "textColor" : "#666666",
                                     "first" : "",
                                     "last" : "",
+                                    "placeholder" : {
+                                        "name" : "",
+                                        "src" : "",
+                                        "src_mobile" : "",
+                                        "src_preview" : "",
+                                        "caption" : ""
+                                    },
                                     "image" : {
                                         "name": "Museum Neuron Icon",
                                         "src": "images/projects/museum/hi-res/museum-neuron-icon.png",
@@ -621,6 +719,13 @@
                                     "textColor" : "#666666",
                                     "first" : "",
                                     "last" : "",
+                                    "placeholder" : {
+                                        "name" : "",
+                                        "src" : "",
+                                        "src_mobile" : "",
+                                        "src_preview" : "",
+                                        "caption" : ""
+                                    },
                                     "image" : {
                                         "name": "Museum Synapse Icon",
                                         "src": "images/projects/museum/hi-res/museum-synapse-icon.png",
@@ -642,6 +747,13 @@
                                     "textColor" : "#666666",
                                     "first" : "",
                                     "last" : "true",
+                                    "placeholder" : {
+                                        "name" : "",
+                                        "src" : "",
+                                        "src_mobile" : "",
+                                        "src_preview" : "",
+                                        "caption" : ""
+                                    },
                                     "image" : {
                                         "name": "Museum Timer Icon",
                                         "src": "images/projects/museum/hi-res/museum-timer-icon.png",
@@ -732,6 +844,13 @@
                 {
                     "name" : "endeavorParallaxBehind",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "hero",
                             "src": "images/crystal-8.jpg",
@@ -843,6 +962,13 @@
                 {
                     "name" : "endeavorImageCenterCaption",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "hero",
                             "src": "images/crystal-8.jpg",
@@ -949,6 +1075,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "hero",
                             "src": "images/crystal-8.jpg",
@@ -1030,6 +1163,13 @@
                 {
                     "name" : "endeavorParallaxBehind",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "hero",
                             "src": "images/crystal-8.jpg",
@@ -1141,6 +1281,13 @@
                 {
                     "name" : "endeavorImageCenterCaption",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "hero",
                             "src": "images/crystal-8.jpg",
@@ -1249,6 +1396,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "hero",
                             "src": "images/crystal-8.jpg",
@@ -1261,6 +1415,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "hero",
                             "src": "images/crystal-8.jpg",
@@ -1273,6 +1434,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "hero",
                             "src": "images/crystal-8.jpg",
@@ -1344,6 +1512,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "hero",
                             "src": "images/crystal-8.jpg",
@@ -1356,6 +1531,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "hero",
                             "src": "images/crystal-8.jpg",
@@ -1412,6 +1594,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "MSTY Oculus",
                             "src": "images/projects/msty/hi-res/msty-oculus.jpg",
@@ -1430,6 +1619,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "MSTY Pow",
                             "src": "images/projects/msty/hi-res/msty-pow.jpg",
@@ -1442,6 +1638,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "MSTY Dendrite Fade",
                             "src": "images/projects/msty/hi-res/msty-dendrite-fade.jpg",
@@ -1470,6 +1673,13 @@
                 {
                     "name" : "endeavorImageNoBottomFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "MSTY Intro",
                             "src": "images/projects/msty/hi-res/msty-intro-1.jpg",
@@ -1482,6 +1692,13 @@
                 {
                     "name" : "endeavorImageNoMarginFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "MSTY Intro",
                             "src": "images/projects/msty/hi-res/msty-intro-2.jpg",
@@ -1494,6 +1711,13 @@
                 {
                     "name" : "endeavorImageNoTopFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "MSTY Intro",
                             "src": "images/projects/msty/hi-res/msty-intro-3.jpg",
@@ -1512,6 +1736,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "MSTY Expressions",
                             "src": "images/projects/msty/hi-res/msty-many.jpg",
@@ -1524,6 +1755,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "MSTY Lineup",
                             "src": "images/projects/msty/hi-res/msty-lineup.jpg",
@@ -1536,6 +1774,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "MSTY Expressions Gif",
                             "src": "images/projects/msty/hi-res/msty-stoked.gif",
@@ -1554,6 +1799,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "MSTY State Machine",
                             "src": "images/projects/msty/hi-res/msty-fsm.jpg",
@@ -1578,6 +1830,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "MSTY Navigation System",
                             "src": "images/projects/msty/hi-res/msty-navigation.jpg",
@@ -1596,6 +1855,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "MSTY Neuroscience",
                             "src": "images/projects/msty/hi-res/msty-meshes.jpg",
@@ -1614,6 +1880,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "MSTY Spatial Design",
                             "src": "images/projects/msty/hi-res/msty-space.jpg",
@@ -1632,6 +1905,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "MSTY Dynamic Depth of Field",
                             "src": "images/projects/msty/hi-res/msty-dynamic-dof-1.jpg",
@@ -1644,6 +1924,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "MSTY Dynamic Depth of Field",
                             "src": "images/projects/msty/hi-res/msty-dynamic-dof-2.jpg",
@@ -1678,6 +1965,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "MSTY Exhibition",
                             "src": "images/projects/msty/hi-res/msty-exhibition.jpg",
@@ -1740,6 +2034,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "Divrcity Thesis",
                             "src": "images/projects/divrcity/hi-res/divrcity-thesis.jpg",
@@ -1848,6 +2149,13 @@
                 {
                     "name" : "endeavorImage75",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "Divrcity Data from Google",
                             "src": "images/projects/divrcity/hi-res/divrcity-gmaps.jpg",
@@ -1866,6 +2174,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "Divrcity Data from Google",
                             "src": "images/projects/divrcity/hi-res/divrcity-usmap.jpg",
@@ -1890,6 +2205,13 @@
                 {
                     "name" : "endeavorImageNoBottomFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "Divrcity Data from Google",
                             "src": "images/projects/divrcity/hi-res/divrcity-network.gif",
@@ -1928,6 +2250,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "Geography + Data",
                                 "src": "images/projects/divrcity/hi-res/divrcity-geography-data-1.jpg",
@@ -1940,6 +2269,13 @@
                 {
                     "name" : "endeavorImage75",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "Amenities",
                             "src": "images/projects/divrcity/hi-res/divrcity-amenities-1.jpg",
@@ -1952,6 +2288,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "Amenities Matrix",
                             "src": "images/projects/divrcity/hi-res/divrcity-amenity-matrix-2.jpg",
@@ -1964,6 +2307,13 @@
                 {
                     "name" : "endeavorImageNoTop75",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "Amenities Matrix Legend",
                             "src": "images/projects/divrcity/hi-res/divrcity-colocation.jpg",
@@ -1976,6 +2326,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "Divrcity Matrix Full",
                             "src": "images/projects/divrcity/hi-res/divrcity-matrix-full.jpg",
@@ -1988,6 +2345,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "Divrcity American City Scaling",
                             "src": "images/projects/divrcity/hi-res/divrcity-city-scaling.jpg",
@@ -2006,6 +2370,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "Devices Mock UP",
                             "src": "images/projects/divrcity/hi-res/divrcity-mocks.jpg",
@@ -2018,6 +2389,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "Divrcity Views",
                             "src": "images/projects/divrcity/hi-res/divrcity-views.jpg",
@@ -2106,6 +2484,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "convolve-poster-1",
                             "src": "images/projects/convolve/hi-res/convolve-poster-1.jpg",
@@ -2118,6 +2503,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "convolve-mock-1",
                             "src": "images/projects/convolve/hi-res/convolve-mock-1.jpg",
@@ -2221,6 +2613,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "convolve-augment-2",
                             "src": "images/projects/convolve/hi-res/convolve-augment-2.jpg",
@@ -2239,6 +2638,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "convolve-augment-3",
                             "src": "images/projects/convolve/hi-res/convolve-augment-3.jpg",
@@ -2334,6 +2740,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "dig-gif",
                             "src": "images/projects/dig/hi-res/dig-gif.gif",
@@ -2447,6 +2860,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "dig-poster-sem-1",
                             "src": "images/projects/dig/hi-res/dig-poster-sem-1.jpg",
@@ -2558,6 +2978,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "dig-algo-0.2",
                             "src": "images/projects/dig/hi-res/dig-algo-0.2.jpg",
@@ -2709,6 +3136,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "DAS Computation Intro",
                             "src": "images/projects/das/hi-res/das-pub-3.jpg",
@@ -2770,6 +3204,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "DAS Computation CU 2",
                             "src": "images/projects/das/hi-res/das-pub-10.jpg",
@@ -2782,6 +3223,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "DAS Computation 3D",
                             "src": "images/projects/das/hi-res/das-pub-11.jpg",
@@ -2903,6 +3351,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "das-interactive-print-5",
                             "src": "images/projects/das-interactive/hi-res/das-interactive-print-5.jpg",
@@ -2927,6 +3382,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "das-interactive-devices",
                             "src": "images/projects/das-interactive/hi-res/das-interactive-devices.jpg",
@@ -2965,6 +3427,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "das-interactive-loading-2",
                             "src": "images/projects/das-interactive/hi-res/das-interactive-loading-2.jpg",
@@ -3002,6 +3471,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "das-interactive-views",
                             "src": "images/projects/das-interactive/hi-res/das-interactive-views.jpg",
@@ -3020,6 +3496,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "das-interactive-funnel",
                             "src": "images/projects/das-interactive/hi-res/das-interactive-funnel.jpg",
@@ -3038,6 +3521,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "das-interactive-share",
                             "src": "images/projects/das-interactive/hi-res/das-interactive-share.jpg",
@@ -3050,6 +3540,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "das-interactive-menu",
                             "src": "images/projects/das-interactive/hi-res/das-interactive-menu.jpg",
@@ -3112,6 +3609,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "muwu-intro",
                             "src": "images/projects/muwu/hi-res/muwu-intro.jpg",
@@ -3240,6 +3744,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "muwu-book-3",
                             "src": "images/projects/muwu/hi-res/muwu-book-3.jpg",
@@ -3300,6 +3811,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "muwu-research-2",
                             "src": "images/projects/muwu/hi-res/muwu-research-2.jpg",
@@ -3318,6 +3836,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "muwu-layout-system-expanded",
                             "src": "images/projects/muwu/hi-res/muwu-layout-system-expanded.jpg",
@@ -3421,6 +3946,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "muwu-layout-machine-expanded",
                             "src": "images/projects/muwu/hi-res/muwu-layout-machine-expanded-5.jpg",
@@ -3482,6 +4014,13 @@
                 {
                     "name" : "endeavorImageCenterCaption",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "Layout Machine Selection",
                             "src": "images/projects/muwu/hi-res/muwu-layout.jpg",
@@ -3501,6 +4040,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "muwu-layout-synthesis",
                             "src": "images/projects/muwu/hi-res/muwu-layout-synthesis-1.jpg",
@@ -3519,6 +4065,13 @@
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
                             "name": "muwu-code",
                             "src": "images/projects/muwu/hi-res/muwu-code.jpg",
