@@ -584,6 +584,8 @@ $(document).ready(function() {
             $slickInitClass    = $containerClass.find('.grid-slider'),
             slideIndex        = $(this).data('slide');
 
+        $(this).parent().find('.unveil').trigger('unveil'); // Trigger loading of slider
+
         $containerClass
             .children('.image-grid-container')
                 .removeClass("active-grid")

@@ -509,7 +509,7 @@
                                 "name" : "endeavorTextLeftImage2FS",
                                 "data" : {
                                     "bgColor" : "",
-                                    "textColor" : "#a1a1a1",
+                                    "textColor" : "#666666",
                                     "sizeClass" : "endeavor-square-width-25",
                                     "text" : "It is true that the riverbed guides the flow of the water.",
                                     "placeholder" : {
@@ -533,7 +533,7 @@
                                 "data" : {
                                     "text" : "Connectomics",
                                     "bgColor" : "",
-                                    "textColor" : "#a1a1a1",
+                                    "textColor" : "#666666",
                                     "sizeClass" : "endeavor-square-width-25",
                                     "size" : "50%",
                                     "placeholder" : {
@@ -559,7 +559,7 @@
                                 "name" : "endeavorTextLeftImage2FS",
                                 "data" : {
                                     "bgColor" : "",
-                                    "textColor" : "#a1a1a1",
+                                    "textColor" : "#666666",
                                     "sizeClass" : "endeavor-square-width-25",
                                     "text" : "However, over time the water can reshape the bed of the river.",
                                     "placeholder" : {
