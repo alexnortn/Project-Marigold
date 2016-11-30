@@ -238,11 +238,12 @@ mixin endeavorContentFS(datum)
 
 mixin endeavorSubheaderFS(data)
     - var subheader = data.subheader
+    - var ruleColor = data.ruleColor ? data.ruleColor : "#DFDFDF"
     - var textColor = data.textColor ? data.textColor : "#232323" // $BLACK
     .edeavor-item.endeavor-item-top-125
         h3(style=`color: ${textColor}`)=data.subheader
 
-        hr.slight.endeavor-item-top-10.fsw(style=`border-color: ${textColor}`)
+        hr.slight.endeavor-item-top-10.fsw(style=`border-color: ${ruleColor}`)
 
 
 //-  Endeavor Project | Full-Width blocking, Sub-Header
@@ -251,11 +252,12 @@ mixin endeavorSubheaderFS(data)
 
 mixin endeavorSubheaderCaptionFS(data)
     - var subheader = data.subheader
+    - var ruleColor = data.ruleColor ? data.ruleColor : "#DFDFDF"
     - var caption = data.caption
     .edeavor-item
         h3=data.subheader
         p.caption.no-margin.endeavor-item-top-15.endeavor-width-500px=caption
-        hr.slight.endeavor-item-top-25.fsw
+        hr.slight.endeavor-item-top-25.fsw(style=`border-color: ${ruleColor}`)
 
 
 //-  Endeavor Project | Full-Width Centered Header + Subtext
@@ -299,7 +301,7 @@ mixin endeavorTextLeftImageFS(data)
     - var sizeClass = data.sizeClass
 
     .endeavor-item.endeavor-horizontal-10vw.endeavor-flex-row-nowrap.endeavor-flex-center-main.endeavor-flex-between.fsw(style=`background-color: ${bgColor}`)
-        img.img-load.endeavor-second.veil(src=placeholder.src)&attributes({'data-src': image.src})(class=`${sizeClass}`)
+        img.unveil.endeavor-second.veil(src=placeholder.src)&attributes({'data-src': image.src})(class=`${sizeClass}`)
         .endeavor-block
             h3.endeavor-text-left(style=`color: ${textColor}`)=data.superText
             p.endeavor-pulltext.endeavor-text-left(style=`color: ${textColor}`)=data.text
@@ -318,7 +320,7 @@ mixin endeavorTextLeftImage2FS(data)
     - var sizeClass = data.sizeClass
 
     .endeavor-item.endeavor-horizontal-10vw.endeavor-flex-row-nowrap.endeavor-flex-center-main.endeavor-flex-between.fsw(style=`background-color: ${bgColor}`)
-        img.img-load.endeavor-second.veil(src=placeholder.src)&attributes({'data-src': image.src})(class=`${sizeClass}`)
+        img.unveil.endeavor-second.veil(src=placeholder.src)&attributes({'data-src': image.src})(class=`${sizeClass}`)
         .endeavor-block
             p.endeavor-caption-4.endeavor-text-left(style=`color: ${textColor}`)=data.text
 
@@ -337,7 +339,7 @@ mixin endeavorTextRightImageFS(data)
     - var sizeClass = data.sizeClass
 
     .endeavor-item.endeavor-horizontal-10vw.endeavor-flex-row-nowrap.endeavor-flex-center-main.endeavor-flex-between.fsw(style=`background-color: ${bgColor}`)
-        img.img-load.veil(src=placeholder.src)&attributes({'data-src': image.src})(class=`${sizeClass}`)
+        img.unveil.veil(src=placeholder.src)&attributes({'data-src': image.src})(class=`${sizeClass}`)
         .endeavor-block.endeavor-second
             h3.endeavor-text-left(style=`color: ${textColor}`)=data.superText
             p.endeavor-pulltext.endeavor-text-left(style=`color: ${textColor}`)=data.text
@@ -356,7 +358,7 @@ mixin endeavorTextRightImage2FS(data)
     - var sizeClass = data.sizeClass
 
     .endeavor-item.endeavor-horizontal-10vw.endeavor-flex-row-nowrap.endeavor-flex-center-main.endeavor-flex-between.fsw(style=`background-color: ${bgColor}`)
-        img.img-load.veil(src=placeholder.src)&attributes({'data-src': image.src})(class=`${sizeClass}`)
+        img.unveil.veil(src=placeholder.src)&attributes({'data-src': image.src})(class=`${sizeClass}`)
         .endeavor-block.endeavor-second
             p.endeavor-caption-4.endeavor-text-left(style=`color: ${textColor}`)=data.text
 
@@ -375,7 +377,7 @@ mixin endeavorLeftImageFS(data)
 
     .endeavor-item.endeavor-item-no-margin.endeavor-horizontal-10vw.endeavor-flex-row-nowrap.endeavor-flex-center-main.endeavor-flex-start.fsw(style=`background-color: ${bgColor}`)
         .endeavor-contaner.endeavor-flex.endeavor-flex-center(class=`${sizeClass}`)
-            img.img-load.veil(style=`width: ${size};height: ${size}`)(src=placeholder.src)&attributes({'data-src': image.src})
+            img.unveil.veil(style=`width: ${size};height: ${size}`)(src=placeholder.src)&attributes({'data-src': image.src})
 
 
 //-  Endeavor Project | Full-Width, Text Right, Left-Aligned Square Image
@@ -392,7 +394,7 @@ mixin endeavorRightImageFS(data)
 
     .endeavor-item.endeavor-item-no-margin.endeavor-horizontal-10vw.endeavor-flex-row-nowrap.endeavor-flex-center-main.endeavor-flex-end.fsw(style=`background-color: ${bgColor}`)
         .endeavor-contaner.endeavor-flex.endeavor-flex-center(class=`${sizeClass}`)
-            img.img-load.veil(style=`width: ${size};height: ${size}`)(src=placeholder.src)&attributes({'data-src': image.src})
+            img.unveil.veil(style=`width: ${size};height: ${size}`)(src=placeholder.src)&attributes({'data-src': image.src})
 
 
 //-  Endeavor Project | Full-Width, Text Left
@@ -437,8 +439,8 @@ mixin endeavorNestedImageFS(data)
     - var image2 = data.image2
     - var marginBottom = data.margin ? data.margin : "" // $BLACK
     .endeavor-item.endeavor-flex-column(style=`margin-bottom: ${marginBottom}`)
-        img.img-load.endeavor-item.veil.fsw(src=placeholder.src)&attributes({'data-src': image.src}) 
-        img.img-load.endeavor-item.veil.endeavor-width-40-prcnt.endeavor-pos-rel.endeavor-top-minus-15vw.endeavor-flex-self-center.endeavor-shadow-50(src=placeholder.src)&attributes({'data-src': image2.src}) 
+        img.unveil.endeavor-item.veil.fsw(src=placeholder.src)&attributes({'data-src': image.src}) 
+        img.unveil.endeavor-item.veil.endeavor-width-40-prcnt.endeavor-pos-rel.endeavor-top-minus-15vw.endeavor-flex-self-center.endeavor-shadow-50(src=placeholder.src)&attributes({'data-src': image2.src}) 
 
 
 
@@ -450,7 +452,7 @@ mixin endeavorNestedImageFS(data)
 mixin endeavorImageFS(data)
     - var image = data.image
     - var placeholder = data.placeholder ? data.placeholder : ""
-    img.img-load.endeavor-item.veil.fsw(src=placeholder.src)&attributes({'data-src': image.src})
+    img.unveil.endeavor-item.veil.fsw(src=placeholder.src)&attributes({'data-src': image.src})
 
 
 //-  Endeavor Project | Full-Width Adaptive Image
@@ -460,7 +462,7 @@ mixin endeavorImageFS(data)
 mixin endeavorImage100vw(data)
     - var image = data.image
     - var placeholder = data.placeholder ? data.placeholder : ""
-    img.img-load.endeavor-item.veil.endeavor-width-100vw.endeavor-pos-rel(src=placeholder.src)&attributes({'data-src': image.src})
+    img.unveil.endeavor-item.veil.endeavor-width-100vw.endeavor-pos-rel(src=placeholder.src)&attributes({'data-src': image.src})
 
 
 //-  Endeavor Project | Full-Width Adaptive Image // No Top Margin
@@ -470,7 +472,7 @@ mixin endeavorImage100vw(data)
 mixin endeavorImageNoTopFS(data)
     - var image = data.image
     - var placeholder = data.placeholder ? data.placeholder : ""
-    img.img-load.endeavor-item-top-none.veil.fsw(src=placeholder.src)&attributes({'data-src': image.src})
+    img.unveil.endeavor-item-top-none.veil.fsw(src=placeholder.src)&attributes({'data-src': image.src})
 
 
 //-  Endeavor Project | Full-Width Adaptive Image // No Margin
@@ -480,7 +482,7 @@ mixin endeavorImageNoTopFS(data)
 mixin endeavorImageNoMarginFS(data)
     - var image = data.image
     - var placeholder = data.placeholder ? data.placeholder : ""
-    img.img-load.endeavor-item-no-margin.veil.fsw(src=placeholder.src)&attributes({'data-src': image.src})
+    img.unveil.endeavor-item-no-margin.veil.fsw(src=placeholder.src)&attributes({'data-src': image.src})
 
 
 //-  Endeavor Project | Full-Width Adaptive Image // No Top Margin
@@ -490,7 +492,7 @@ mixin endeavorImageNoMarginFS(data)
 mixin endeavorImageNoBottomFS(data)
     - var image = data.image
     - var placeholder = data.placeholder ? data.placeholder : ""
-    img.img-load.endeavor-item-bottom-none.veil.fsw(src=placeholder.src)&attributes({'data-src': image.src})
+    img.unveil.endeavor-item-bottom-none.veil.fsw(src=placeholder.src)&attributes({'data-src': image.src})
 
 
 //-  Endeavor Project | 75%-Width Adaptive Image // No Top Margin
@@ -500,7 +502,7 @@ mixin endeavorImageNoBottomFS(data)
 mixin endeavorImageNoTop75(data)
     - var image = data.image
     - var placeholder = data.placeholder ? data.placeholder : ""
-    img.img-load.endeavor-item-top-none.veil.endeavor-width-75-percent(src=placeholder.src)&attributes({'data-src': image.src})
+    img.unveil.endeavor-item-top-none.veil.endeavor-width-75-percent(src=placeholder.src)&attributes({'data-src': image.src})
 
 
 //-  Endeavor Project | Full-Width Adaptive Image
@@ -511,7 +513,7 @@ mixin endeavorImageFSList(data)
     - var images = data.images
     - var placeholder = data.placeholder ? data.placeholder : ""
     each image, index in images
-        img.img-load.endeavor-item.veil.fsw(src=placeholder.src)&attributes({'data-src': image.src})
+        img.unveil.endeavor-item.veil.fsw(src=placeholder.src)&attributes({'data-src': image.src})
 
 
 //-  Endeavor Project | 75%-Width Adaptive Image
@@ -521,7 +523,7 @@ mixin endeavorImageFSList(data)
 mixin endeavorImage75(data)
     - var image = data.image
     - var placeholder = data.placeholder ? data.placeholder : ""
-    img.img-load.endeavor-item.veil.endeavor-width-75-percent(src=placeholder.src)&attributes({'data-src': image.src})
+    img.unveil.endeavor-item.veil.endeavor-width-75-percent(src=placeholder.src)&attributes({'data-src': image.src})
 
 
 //-  Endeavor Project | 75%-Width Adaptive Image
@@ -532,7 +534,7 @@ mixin endeavorImage75List(data)
     - var images = data.images
     - var placeholder = data.placeholder ? data.placeholder : ""
     each image, index in images
-        img.img-load.endeavor-item-25.veil.endeavor-width-75-percent(src=placeholder.src)&attributes({'data-src': image.src})
+        img.unveil.endeavor-item-25.veil.endeavor-width-75-percent(src=placeholder.src)&attributes({'data-src': image.src})
 
 
 //-  Endeavor Project | Full-Width Adaptive Youtube Video
@@ -604,7 +606,7 @@ mixin endeavorImageGridIterator(data)
         .grid-slider.slider-transition
             each image, i in images
                 div.fill-area
-                    img.img-load.limit-width-50vw.big-moment-3-color.endeavor-image-box--center(src=`${placeholder.src}`)&attributes({'data-src': image.src})
+                    img.unveil.limit-width-50vw.big-moment-3-color.endeavor-image-box--center(src=`${placeholder.src}`)&attributes({'data-src': image.src})
         each image, i in images
             .image-grid-container.bounce&attributes({'data-slide': i})
                 .image-grid(style=`background-image: url(${image.src_preview})`) 
@@ -631,7 +633,7 @@ mixin endeavorParallaxCaptionRight(data)
     - var caption = data.caption
     .endeavor-item.fsw.endeavor-parallax-hybrid.parallax__group  
         .endeavor-parallax-hybrid-color(style=`background-image: url(${imageBig.src})`)
-        img.img-load.img-box.endeavor-parallax-hybrid-left-img-box.parallax__layer.parallax__layer--fore(src=`${imageParallax.src}`)
+        img.unveil.img-box.endeavor-parallax-hybrid-left-img-box.parallax__layer.parallax__layer--fore(src=`${imageParallax.src}`)
         p.endeavor-parallax-hybrid-left-caption.caption=caption
 
 
@@ -645,7 +647,7 @@ mixin endeavorParallaxCaptionLeft(data)
     - var caption = data.caption
     .endeavor-item.fsw.endeavor-parallax-hybrid.parallax__group  
         .endeavor-parallax-hybrid-color(style=`background-image: url(${imageBig})`)
-        img.img-load.img-box.endeavor-parallax-hybrid-right-img-box.parallax__layer.parallax__layer--fore(src=`${imageParallax.src}`)
+        img.unveil.img-box.endeavor-parallax-hybrid-right-img-box.parallax__layer.parallax__layer--fore(src=`${imageParallax.src}`)
         p.endeavor-parallax-hybrid-right-caption.caption=caption
 
 
@@ -658,7 +660,7 @@ mixin endeavorImageCenterCaption(data)
     - var placeholder = data.placeholder ? data.placeholder : ""
     - var caption = data.caption
     .endeavor-item.endeavor-para-box.fsw.endeavor-flex-column
-        img.img-load.endeavor-width-50-prcnt.img-box.endeavor-image-box--center(src=`${placeholder.src}`)&attributes({'data-src': image.src})
+        img.unveil.endeavor-width-50-prcnt.img-box.endeavor-image-box--center(src=`${placeholder.src}`)&attributes({'data-src': image.src})
         p.caption.center-caption=caption
 
 
@@ -671,7 +673,7 @@ mixin endeavorImageSlider(data)
     - var placeholder = data.placeholder ? data.placeholder : ""
     .endeavor-item.endeavor-image-slider
         each image, i in images
-            img.img-load.endeavor-image-slider-color.fsw(src=placeholder.src)&attributes({'data-src': images[i].src})
+            img.unveil.endeavor-image-slider-color.fsw(src=placeholder.src)&attributes({'data-src': images[i].src})
 
 
 //-  Endeavor Swipable Image Slider 75
@@ -683,7 +685,7 @@ mixin endeavorImageSlider75(data)
     - var placeholder = data.placeholder ? data.placeholder : ""
     .endeavor-item.endeavor-image-slider.endeavor-width-75-prcnt.endeavor-center
         each image, i in images
-            img.img-load.endeavor-image-slider-color.fsw(src=placeholder.src)&attributes({'data-src': images[i].src})
+            img.unveil.endeavor-image-slider-color.fsw(src=placeholder.src)&attributes({'data-src': images[i].src})
 
 
 //-  Endeavor Display Card + Image
@@ -701,7 +703,7 @@ mixin endeavorCardCenter(data)
     .endeavor-item-no-margin.endeavor-flex-center.endeavor-flex
         .endeavor-card.endeavor-radius-50px.endeavor-flex-center-main.endeavor-square-250px.endeavor-flex-column(style=`background-color: ${bgColor}`)
             .endeavor-item-50-25.endeavor-square-60px.endeavor-center.endeavor-circle.endeavor-flex.endeavor-flex-center.endeavor-item-bottom-25(style=`background-color: ${bgColor2}`)
-                img.img-load.endeavor-width-40-prcnt(src = `${image.src}`)
+                img.unveil.endeavor-width-40-prcnt(src = `${image.src}`)
             h2.card-header.endeavor-text-center(style=`color: ${textColor}`)=header
 
 
@@ -724,7 +726,7 @@ mixin endeavorVerticalComparison(data)
     .endeavor-item-no-margin.endeavor-flex-center.endeavor-flex-column.endeavor-height-200px
         .endeavor-vertical-rule.endeavor-pos-abs.endeavor-height-200px(style=`background-color: ${lineColor}`)(class=`${classd}`)
         .endeavor-item-25.endeavor-square-60px.endeavor-center.endeavor-circle.endeavor-flex.endeavor-flex-center.endeavor-push-1(style=`background-color: ${bgColor2}`)
-            img.img-load.endeavor-width-40-prcnt(src = `${image.src}`)
+            img.unveil.endeavor-width-40-prcnt(src = `${image.src}`)
             p.endeavor-pos-abs.endeavor-width-150px.endeavor-left-100px.endeavor-text-left(style=`color: ${textColor};font-weight: ${weight}`)=textLeft
             p.endeavor-pos-abs.endeavor-width-150px.endeavor-right-100px.endeavor-text-right(style=`color: ${textColor};font-weight: ${weight}`)=textRight
 
@@ -757,10 +759,10 @@ mixin endeavorImageHeader(data, _width)
     - var placeholder = data.placeholder ? data.placeholder : ""
     - var images = data.images;
     .endeavor-item-all-25
-        img.img-load.veil.fsw(src=placeholder.src)&attributes({'data-src': image_top.src})
+        img.unveil.veil.fsw(src=placeholder.src)&attributes({'data-src': image_top.src})
         h4.endeavor-item-bottom-15.endeavor-text-center.endeavor-item-top-50=header
         each image, index in images
-            img.img-load.veil.fsw(src=placeholder.src)&attributes({'data-src': image.src})
+            img.unveil.veil.fsw(src=placeholder.src)&attributes({'data-src': image.src})
 
 
 //-  Endeavor Project | Adaptive Horizontal Column Element Iterator

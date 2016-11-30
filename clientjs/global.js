@@ -542,10 +542,10 @@ $(document).ready(function() {
     // --------------------------------------
     // Lazy Load Images --> Unveil2
 
-    $('.img-load').unveil({
+    $('.unveil').unveil({
         offset: 800,
         container: $('.endeavor-view'),
-        placeholder: '../images/loader.gif'
+        placeholder: '../images/loader2.png'
     });
 
     // More event control
@@ -556,7 +556,7 @@ $(document).ready(function() {
     // });
 
 
-    // $('.img-load').unveil({
+    // $('..unveil').unveil({
     //     placeholder: 'http://placehold.it/500x300',
     // }).on('loading.unveil', function() {
     //     console.log('unveiling ' + this);
@@ -565,9 +565,9 @@ $(document).ready(function() {
     //     console.log('unveiled ' + this);
     // });
 
-    // $('.img-load').unveil();    
+    // $('..unveil').unveil();    
 
-    // $('.img-load').unveil(200, function() {
+    // $('..unveil').unveil(200, function() {
     //     $(this).load(function() {
     //         this.removeClass('veil');
     //         console.log('unviel ' + this);
@@ -764,29 +764,30 @@ _endeavorRouter = function() {
     function route(state, animate = true) {
 
         // If the user requests the index page, redirect to #web-lab
-        if ( window.location.pathname === "/" ) {
-            if (_openProjectState) {
-                $('.arrow-container').addClass('transparent');
-                _closeProject(); // Exit project
-                hashChanged('#web-lab');
-
-                $('.arrow-container-main').addClass('transparent');
-                
-                setTimeout(function() { // Currently a hack for avoinding deferred Velocity Animation
-                    $('.arrow-container-main').removeClass('transparent');
-                    $('.arrow-container').addClass('transparent');
-                    console.log('popout');
-                }, 2000);
-
-                _sectionCurrent = $(_sections).index($('#works')); // Set #works as current
-            }
-        }
-        else if ((state === "home") || (state === "")) { // If the user requests the index page, redirect to #web-lab
+        if ((state === "home") || (state === "")) { // If the user requests the index page, redirect to #web-lab
             window.location.hash = "web-lab";
             _sectionCurrent = $(_sections).index($('#web-lab')); // Set #web-lab as current
-
             hashChanged('#web-lab');
             loaded = true;
+        }
+        else if ( window.location.pathname === "/" ) {
+            if (!_openProjectState) {
+                return;
+            }
+            
+            $('.arrow-container').addClass('transparent');
+            _closeProject(); // Exit project
+            hashChanged('#web-lab');
+
+            $('.arrow-container-main').addClass('transparent');
+            
+            setTimeout(function() { // Currently a hack for avoinding deferred Velocity Animation
+                $('.arrow-container-main').removeClass('transparent');
+                $('.arrow-container').addClass('transparent');
+                console.log('popout');
+            }, 2000);
+
+            _sectionCurrent = $(_sections).index($('#works')); // Set #works as current
         }
         else {
             // Check for Project Incoming Routing
