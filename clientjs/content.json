@@ -468,13 +468,6 @@
                                 }
                             },
                             {
-                                "name" : "endeavorPad",
-                                "data" : {
-                                    "height" : "10vw",
-                                    "class" : "endeavor-item-no-margin"
-                                }
-                            },
-                            {
                                 "name" : "endeavorNestedImageFS",
                                 "data" : {
                                     "margin" : "-15vw",
@@ -514,30 +507,6 @@
                                 "data" : {
                                     "height" : "10vw",
                                     "class" : "endeavor-item-no-margin"
-                                }
-                            },
-                            {
-                                "name" : "endeavorCardCenter",
-                                "data" : {
-                                    "header" : "Connectome Comparison",
-                                    "bgColor" : "#1e1e1e",
-                                    "bgColor2" : "#2e2e2e",
-                                    "lineColor" : "#2e2e2e",
-                                    "textColor" : "#666666",
-                                    "placeholder" : {
-                                        "name" : "",
-                                        "src" : "",
-                                        "src_mobile" : "",
-                                        "src_preview" : "",
-                                        "caption" : ""
-                                    },
-                                    "image" : {
-                                        "name": "Museum Connectome Icon",
-                                        "src": "images/projects/museum/hi-res/museum-connectome-icon.png",
-                                        "src_mobile": "images/projects/museum/hi-res/museum-connectome-icon.png",
-                                        "src_preview": "images/projects/museum/hi-res/museum-connectome-icon.png",
-                                        "caption": "Museum Connectome Icon"
-                                    }
                                 }
                             },
                             {
