@@ -164,7 +164,8 @@ mixin endeavorDescriptionsBig(data)
 mixin endeavorCaptionFS(data)
     - var caption = data.caption
     - var textColor = data.textColor ? data.textColor : "#232323" // $BLACK
-    .endeavor-item-no-margin.fsw
+    - var _class = data.class ? data.class : "endeavor-item-no-margin"
+    .fsw(class=`${_class}`)
         p.caption.no-margin.endeavor-padding-left-50.endeavor-width-500px(style=`color: ${textColor}`)=caption
 
 
@@ -462,7 +463,8 @@ mixin endeavorImageFS(data)
 mixin endeavorImage100vw(data)
     - var image = data.image
     - var placeholder = data.placeholder ? data.placeholder : ""
-    img.unveil.endeavor-item.veil.endeavor-width-100vw.endeavor-pos-rel(src=placeholder.src)&attributes({'data-src': image.src})
+    - var _class = data.class ? data.class : ""
+    img.unveil.endeavor-item.veil.endeavor-width-100vw.endeavor-pos-rel(src=placeholder.src)(class=`${_class}`)&attributes({'data-src': image.src})
 
 
 //-  Endeavor Project | Full-Width Adaptive Image // No Top Margin
