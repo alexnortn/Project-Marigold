@@ -401,6 +401,7 @@
                                     "image" : {
                                         "name": "Sebastian TED",
                                         "src": "images/projects/museum/hi-res/museum-ted.jpg",
+                                        "src_low": "images/projects/museum/low-res/museum-ted.jpg",
                                         "src_mobile": "images/projects/museum/hi-res/museum-ted.jpg",
                                         "src_preview": "images/projects/museum/hi-res/museum-ted.jpg",
                                         "caption": "Sebastian TED"
@@ -444,6 +445,7 @@
                                     "image" : {
                                         "name": "Museum Connectome",
                                         "src": "images/projects/museum/hi-res/museum-connectome-3.png",
+                                        "src_low": "images/projects/museum/low-res/museum-connectome-3.png",
                                         "src_mobile": "images/projects/museum/hi-res/museum-connectome-3.png",
                                         "src_preview": "images/projects/museum/hi-res/museum-connectome-3.png",
                                         "caption": "Museum Connectome"
@@ -481,6 +483,7 @@
                                     "image" : {
                                         "name": "C. Elegans Connectome",
                                         "src": "images/projects/museum/hi-res/museum-connectome-graph.jpg",
+                                        "src_low": "images/projects/museum/low-res/museum-connectome-graph.jpg",
                                         "src_mobile": "images/projects/museum/hi-res/museum-connectome-graph.jpg",
                                         "src_preview": "images/projects/museum/hi-res/museum-connectome-graph.jpg",
                                         "caption": "C. Elegans Connectome"
@@ -488,6 +491,7 @@
                                     "image2" : {
                                         "name": "C. Elegans Worm",
                                         "src": "images/projects/museum/hi-res/museum-worm.gif",
+                                        "src_low": "images/projects/museum/low-res/museum-worm.gif",
                                         "src_mobile": "images/projects/museum/hi-res/museum-worm.gif",
                                         "src_preview": "images/projects/museum/hi-res/museum-worm.gif",
                                         "caption": "C. Elegans Worm"
@@ -1350,6 +1354,7 @@
                         "image" : {
                             "name": "MSTY Oculus",
                             "src": "images/projects/msty/hi-res/msty-oculus.jpg",
+                            "src_low": "images/projects/msty/low-res/msty-oculus.jpg",
                             "src_mobile": "images/projects/msty/hi-res/msty-oculus.jpg",
                             "src_preview": "images/projects/msty/hi-res/msty-oculus.jpg",
                             "caption": "MSTY Oculus"
@@ -1375,6 +1380,7 @@
                         "image" : {
                             "name": "MSTY Pow",
                             "src": "images/projects/msty/hi-res/msty-pow.jpg",
+                            "src_low": "images/projects/msty/low-res/msty-pow.jpg",
                             "src_mobile": "images/projects/msty/hi-res/msty-pow.jpg",
                             "src_preview": "images/projects/msty/hi-res/msty-pow.jpg",
                             "caption": "MSTY Pow"
@@ -1394,6 +1400,7 @@
                         "image" : {
                             "name": "MSTY Dendrite Fade",
                             "src": "images/projects/msty/hi-res/msty-dendrite-fade.jpg",
+                            "src_low": "images/projects/msty/low-res/msty-dendrite-fade.jpg",
                             "src_mobile": "images/projects/msty/hi-res/msty-dendrite-fade.jpg",
                             "src_preview": "images/projects/msty/hi-res/msty-dendrite-fade.jpg",
                             "caption": "MSTY Dendrite Fade"
@@ -1429,6 +1436,7 @@
                         "image" : {
                             "name": "MSTY Intro",
                             "src": "images/projects/msty/hi-res/msty-intro-1.jpg",
+                            "src_low": "images/projects/msty/low-res/msty-intro-1.jpg",
                             "src_mobile": "images/projects/msty/hi-res/msty-intro-1.jpg",
                             "src_preview": "images/projects/msty/hi-res/msty-intro-1.jpg",
                             "caption": "MSTY Intro"
@@ -1448,6 +1456,7 @@
                         "image" : {
                             "name": "MSTY Intro",
                             "src": "images/projects/msty/hi-res/msty-intro-2.jpg",
+                            "src_low": "images/projects/msty/low-res/msty-intro-2.jpg",
                             "src_mobile": "images/projects/msty/hi-res/msty-intro-2.jpg",
                             "src_preview": "images/projects/msty/hi-res/msty-intro-2.jpg",
                             "caption": "MSTY Intro"
@@ -1467,6 +1476,7 @@
                         "image" : {
                             "name": "MSTY Intro",
                             "src": "images/projects/msty/hi-res/msty-intro-3.jpg",
+                            "src_low": "images/projects/msty/low-res/msty-intro-3.jpg",
                             "src_mobile": "images/projects/msty/hi-res/msty-intro-3.jpg",
                             "src_preview": "images/projects/msty/hi-res/msty-intro-3.jpg",
                             "caption": "MSTY Intro"
@@ -1492,6 +1502,7 @@
                         "image" : {
                             "name": "MSTY Expressions",
                             "src": "images/projects/msty/hi-res/msty-many.jpg",
+                            "src_low": "images/projects/msty/low-res/msty-many.jpg",
                             "src_mobile": "images/projects/msty/hi-res/msty-many.jpg",
                             "src_preview": "images/projects/msty/hi-res/msty-many.jpg",
                             "caption": "MSTY Expressions"
@@ -1511,6 +1522,7 @@
                         "image" : {
                             "name": "MSTY Lineup",
                             "src": "images/projects/msty/hi-res/msty-lineup.jpg",
+                            "src_low": "images/projects/msty/low-res/msty-lineup.jpg",
                             "src_mobile": "images/projects/msty/hi-res/msty-lineup.jpg",
                             "src_preview": "images/projects/msty/hi-res/msty-lineup.jpg",
                             "caption": "MSTY Lineup"
@@ -1530,6 +1542,7 @@
                         "image" : {
                             "name": "MSTY Expressions Gif",
                             "src": "images/projects/msty/hi-res/msty-stoked.gif",
+                            "src_low": "images/projects/msty/low-res/msty-stoked.gif",
                             "src_mobile": "images/projects/msty/hi-res/msty-stoked.gif",
                             "src_preview": "images/projects/msty/hi-res/msty-stoked.gif",
                             "caption": "MSTY Expressions Gif"
@@ -1555,6 +1568,7 @@
                         "image" : {
                             "name": "MSTY State Machine",
                             "src": "images/projects/msty/hi-res/msty-fsm.jpg",
+                            "src_low": "images/projects/msty/low-res/msty-fsm.jpg",
                             "src_mobile": "images/projects/msty/hi-res/msty-fsm.jpg",
                             "src_preview": "images/projects/msty/hi-res/msty-fsm.jpg",
                             "caption": "MSTY State Machine"
@@ -1586,6 +1600,7 @@
                         "image" : {
                             "name": "MSTY Navigation System",
                             "src": "images/projects/msty/hi-res/msty-navigation.jpg",
+                            "src_low": "images/projects/msty/low-res/msty-navigation.jpg",
                             "src_mobile": "images/projects/msty/hi-res/msty-navigation.jpg",
                             "src_preview": "images/projects/msty/hi-res/msty-navigation.jpg",
                             "caption": "MSTY Navigation System"
@@ -1611,6 +1626,7 @@
                         "image" : {
                             "name": "MSTY Neuroscience",
                             "src": "images/projects/msty/hi-res/msty-meshes.jpg",
+                            "src_low": "images/projects/msty/low-res/msty-meshes.jpg",
                             "src_mobile": "images/projects/msty/hi-res/msty-meshes.jpg",
                             "src_preview": "images/projects/msty/hi-res/msty-meshes.jpg",
                             "caption": "MSTY Neuroscience"
@@ -1636,6 +1652,7 @@
                         "image" : {
                             "name": "MSTY Spatial Design",
                             "src": "images/projects/msty/hi-res/msty-space.jpg",
+                            "src_low": "images/projects/msty/low-res/msty-space.jpg",
                             "src_mobile": "images/projects/msty/hi-res/msty-space.jpg",
                             "src_preview": "images/projects/msty/hi-res/msty-space.jpg",
                             "caption": "MSTY Spatial Design"
@@ -1661,6 +1678,7 @@
                         "image" : {
                             "name": "MSTY Dynamic Depth of Field",
                             "src": "images/projects/msty/hi-res/msty-dynamic-dof-1.jpg",
+                            "src_low": "images/projects/msty/low-res/msty-dynamic-dof-1.jpg",
                             "src_mobile": "images/projects/msty/hi-res/msty-dynamic-dof-1.jpg",
                             "src_preview": "images/projects/msty/hi-res/msty-dynamic-dof-1.jpg",
                             "caption": "MSTY Dynamic Depth of Field"
@@ -1680,6 +1698,7 @@
                         "image" : {
                             "name": "MSTY Dynamic Depth of Field",
                             "src": "images/projects/msty/hi-res/msty-dynamic-dof-2.jpg",
+                            "src_low": "images/projects/msty/low-res/msty-dynamic-dof-2.jpg",
                             "src_mobile": "images/projects/msty/hi-res/msty-dynamic-dof-2.jpg",
                             "src_preview": "images/projects/msty/hi-res/msty-dynamic-dof-2.jpg",
                             "caption": "MSTY Dynamic Depth of Field"
@@ -1721,6 +1740,7 @@
                         "image" : {
                             "name": "MSTY Exhibition",
                             "src": "images/projects/msty/hi-res/msty-exhibition.jpg",
+                            "src_low": "images/projects/msty/low-res/msty-exhibition.jpg",
                             "src_mobile": "images/projects/msty/hi-res/msty-exhibition.jpg",
                             "src_preview": "images/projects/msty/hi-res/msty-exhibition.jpg",
                             "caption": "MSTY Exhibition"
@@ -1790,6 +1810,7 @@
                         "image" : {
                             "name": "Divrcity Thesis",
                             "src": "images/projects/divrcity/hi-res/divrcity-thesis.jpg",
+                            "src_low": "images/projects/divrcity/low-res/divrcity-thesis.jpg",
                             "src_mobile": "images/projects/divrcity/hi-res/divrcity-thesis.jpg",
                             "src_preview": "images/projects/divrcity/hi-res/divrcity-thesis.jpg",
                             "caption": "Divrcity Thesis"
@@ -1825,6 +1846,7 @@
                             "image_top" : {
                                 "name": "Divrcity Chicago",
                                 "src": "images/projects/divrcity/hi-res/divrcity-chicago.jpg",
+                                "src_low": "images/projects/divrcity/low-res/divrcity-chicago.jpg",
                                 "src_mobile": "images/projects/divrcity/hi-res/divrcity-chicago.jpg",
                                 "src_preview": "images/projects/divrcity/hi-res/divrcity-chicago.jpg",
                                 "caption": "Divrcity Chicago"
@@ -1833,6 +1855,7 @@
                                 {
                                     "name": "Cake One",
                                     "src": "images/projects/divrcity/hi-res/divrcity-cake-1.jpg",
+                                    "src_low": "images/projects/divrcity/low-res/divrcity-cake-1.jpg",
                                     "src_mobile": "images/projects/divrcity/hi-res/divrcity-cake-1.jpg",
                                     "src_preview": "images/projects/divrcity/hi-res/divrcity-cake-1.jpg",
                                     "caption": "Cake One"
@@ -1844,6 +1867,7 @@
                             "image_top" : {
                                 "name": "Divrcity New York",
                                 "src": "images/projects/divrcity/hi-res/divrcity-new-york.jpg",
+                                "src_low": "images/projects/divrcity/low-res/divrcity-new-york.jpg",
                                 "src_mobile": "images/projects/divrcity/hi-res/divrcity-new-york.jpg",
                                 "src_preview": "images/projects/divrcity/hi-res/divrcity-new-york.jpg",
                                 "caption": "Divrcity New York"
@@ -1852,6 +1876,7 @@
                                 {
                                 "name": "Cake Two",
                                 "src": "images/projects/divrcity/hi-res/divrcity-cake-2.jpg",
+                                "src_low": "images/projects/divrcity/low-res/divrcity-cake-2.jpg",
                                 "src_mobile": "images/projects/divrcity/hi-res/divrcity-cake-2.jpg",
                                 "src_preview": "images/projects/divrcity/hi-res/divrcity-cake-2.jpg",
                                 "caption": "Cake Two"
@@ -1863,6 +1888,7 @@
                             "image_top" : {
                                 "name": "Divrcity Los Angeles",
                                 "src": "images/projects/divrcity/hi-res/divrcity-los-angeles.jpg",
+                                "src_low": "images/projects/divrcity/low-res/divrcity-los-angeles.jpg",
                                 "src_mobile": "images/projects/divrcity/hi-res/divrcity-los-angeles.jpg",
                                 "src_preview": "images/projects/divrcity/hi-res/divrcity-los-angeles.jpg",
                                 "caption": "Divrcity Los Angeles"
@@ -1871,6 +1897,7 @@
                                 {
                                     "name": "Cake Three",
                                     "src": "images/projects/divrcity/hi-res/divrcity-cake-3.jpg",
+                                    "src_low": "images/projects/divrcity/low-res/divrcity-cake-3.jpg",
                                     "src_mobile": "images/projects/divrcity/hi-res/divrcity-cake-3.jpg",
                                     "src_preview": "images/projects/divrcity/hi-res/divrcity-cake-3.jpg",
                                     "caption": "Cake Three"
@@ -1905,6 +1932,7 @@
                         "image" : {
                             "name": "Divrcity Data from Google",
                             "src": "images/projects/divrcity/hi-res/divrcity-gmaps.jpg",
+                            "src_low": "images/projects/divrcity/low-res/divrcity-gmaps.jpg",
                             "src_mobile": "images/projects/divrcity/hi-res/divrcity-gmaps.jpg",
                             "src_preview": "images/projects/divrcity/hi-res/divrcity-gmaps.jpg",
                             "caption": "Divrcity Data from Google"
@@ -1930,6 +1958,7 @@
                         "image" : {
                             "name": "Divrcity Data from Google",
                             "src": "images/projects/divrcity/hi-res/divrcity-usmap.jpg",
+                            "src_low": "images/projects/divrcity/low-res/divrcity-usmap.jpg",
                             "src_mobile": "images/projects/divrcity/hi-res/divrcity-usmap.jpg",
                             "src_preview": "images/projects/divrcity/hi-res/divrcity-usmap.jpg",
                             "caption": "Divrcity Data from Google"
@@ -1961,6 +1990,7 @@
                         "image" : {
                             "name": "Divrcity Data from Google",
                             "src": "images/projects/divrcity/hi-res/divrcity-network.gif",
+                            "src_low": "images/projects/divrcity/low-res/divrcity-network.gif",
                             "src_mobile": "images/projects/divrcity/hi-res/divrcity-network.gif",
                             "src_preview": "images/projects/divrcity/hi-res/divrcity-network.gif",
                             "caption": "Divrcity Data from Google"
@@ -2006,6 +2036,7 @@
                         "image" : {
                             "name": "Geography + Data",
                                 "src": "images/projects/divrcity/hi-res/divrcity-geography-data-1.jpg",
+                                "src_low": "images/projects/divrcity/low-res/divrcity-geography-data-1.jpg",
                                 "src_mobile": "images/projects/divrcity/hi-res/divrcity-geography-data-1.jpg",
                                 "src_preview": "images/projects/divrcity/hi-res/divrcity-geography-data-1.jpg",
                                 "caption": "Geography + Data"
@@ -2025,6 +2056,7 @@
                         "image" : {
                             "name": "Amenities",
                             "src": "images/projects/divrcity/hi-res/divrcity-amenities-1.jpg",
+                            "src_low": "images/projects/divrcity/low-res/divrcity-amenities-1.jpg",
                             "src_mobile": "images/projects/divrcity/hi-res/divrcity-amenities-1.jpg",
                             "src_preview": "images/projects/divrcity/hi-res/divrcity-amenities-1.jpg",
                             "caption": "Amenities"
@@ -2044,6 +2076,7 @@
                         "image" : {
                             "name": "Amenities Matrix",
                             "src": "images/projects/divrcity/hi-res/divrcity-amenity-matrix-2.jpg",
+                            "src_low": "images/projects/divrcity/low-res/divrcity-amenity-matrix-2.jpg",
                             "src_mobile": "images/projects/divrcity/hi-res/divrcity-amenity-matrix-2.jpg",
                             "src_preview": "images/projects/divrcity/hi-res/divrcity-amenity-matrix-2.jpg",
                             "caption": "Amenities Matrix"
@@ -2063,6 +2096,7 @@
                         "image" : {
                             "name": "Amenities Matrix Legend",
                             "src": "images/projects/divrcity/hi-res/divrcity-colocation.jpg",
+                            "src_low": "images/projects/divrcity/low-res/divrcity-colocation.jpg",
                             "src_mobile": "images/projects/divrcity/hi-res/divrcity-colocation.jpg",
                             "src_preview": "images/projects/divrcity/hi-res/divrcity-colocation.jpg",
                             "caption": "Amenities Matrix Legend"
@@ -2082,6 +2116,7 @@
                         "image" : {
                             "name": "Divrcity Matrix Full",
                             "src": "images/projects/divrcity/hi-res/divrcity-matrix-full.jpg",
+                            "src_low": "images/projects/divrcity/low-res/divrcity-matrix-full.jpg",
                             "src_mobile": "images/projects/divrcity/hi-res/divrcity-matrix-full.jpg",
                             "src_preview": "images/projects/divrcity/hi-res/divrcity-matrix-full.jpg",
                             "caption": "Divrcity Matrix Full"
@@ -2101,6 +2136,7 @@
                         "image" : {
                             "name": "Divrcity American City Scaling",
                             "src": "images/projects/divrcity/hi-res/divrcity-city-scaling.jpg",
+                            "src_low": "images/projects/divrcity/low-res/divrcity-city-scaling.jpg",
                             "src_mobile": "images/projects/divrcity/hi-res/divrcity-city-scaling.jpg",
                             "src_preview": "images/projects/divrcity/hi-res/divrcity-city-scaling.jpg",
                             "caption": "Divrcity American City Scaling"
@@ -2126,6 +2162,7 @@
                         "image" : {
                             "name": "Devices Mock UP",
                             "src": "images/projects/divrcity/hi-res/divrcity-mocks.jpg",
+                            "src_low": "images/projects/divrcity/low-res/divrcity-mocks.jpg",
                             "src_mobile": "images/projects/divrcity/hi-res/divrcity-mocks.jpg",
                             "src_preview": "images/projects/divrcity/hi-res/divrcity-mocks.jpg",
                             "caption": "Devices Mock UP"
@@ -2145,6 +2182,7 @@
                         "image" : {
                             "name": "Divrcity Views",
                             "src": "images/projects/divrcity/hi-res/divrcity-views.jpg",
+                            "src_low": "images/projects/divrcity/low-res/divrcity-views.jpg",
                             "src_mobile": "images/projects/divrcity/hi-res/divrcity-views.jpg",
                             "src_preview": "images/projects/divrcity/hi-res/divrcity-views.jpg",
                             "caption": "Divrcity Views"
@@ -2157,12 +2195,14 @@
                         "imageBig" : {
                             "name": "das-interactive-loading",
                             "src": "images/projects/divrcity/hi-res/divrcity-mobile-bg.jpg",
+                            "src_low": "images/projects/divrcity/low-res/divrcity-mobile-bg.jpg",
                             "src_mobile": "images/projects/divrcity/hi-res/divrcity-mobile-bg.jpg",
                             "src_preview": "images/projects/divrcity/hi-res/divrcity-mobile-bg.jpg"
                         },
                         "imageParallax" : {
                             "name": "Devices Mock UP",
                             "src": "images/projects/divrcity/hi-res/divrcity-mobile.png",
+                            "src_low": "images/projects/divrcity/low-res/divrcity-mobile.png",
                             "src_mobile": "images/projects/divrcity/hi-res/divrcity-mobile.png",
                             "src_preview": "images/projects/divrcity/hi-res/divrcity-mobile.png",
                             "caption": "Devices Mock UP"
@@ -2240,6 +2280,7 @@
                         "image" : {
                             "name": "convolve-poster-1",
                             "src": "images/projects/convolve/hi-res/convolve-poster-1.jpg",
+                            "src_low": "images/projects/convolve/low-res/convolve-poster-1.jpg",
                             "src_mobile": "images/projects/convolve/hi-res/convolve-poster-1.jpg",
                             "src_preview": "images/projects/convolve/hi-res/convolve-poster-1.jpg",
                             "caption": "Convolve Poster"
@@ -2259,6 +2300,7 @@
                         "image" : {
                             "name": "convolve-mock-1",
                             "src": "images/projects/convolve/hi-res/convolve-mock-1.jpg",
+                            "src_low": "images/projects/convolve/low-res/convolve-mock-1.jpg",
                             "src_mobile": "images/projects/convolve/hi-res/convolve-mock-1.jpg",
                             "src_preview": "images/projects/convolve/hi-res/convolve-mock-1.jpg",
                             "caption": "Dig Poster"
@@ -2301,6 +2343,7 @@
                             {
                                 "name": "convolve-augment-1",
                                 "src": "images/projects/convolve/hi-res/convolve-intro.gif",
+                                "src_low": "images/projects/convolve/low-res/convolve-intro.gif",
                                 "src_mobile": "images/projects/convolve/hi-res/convolve-intro.gif",
                                 "src_preview": "images/projects/convolve/hi-res/convolve-intro.gif",
                                 "caption": "Convolve Intro"   
@@ -2308,6 +2351,7 @@
                             {
                                 "name": "convolve-screen-3",
                                 "src": "images/projects/convolve/hi-res/convolve-screen-3.png",
+                                "src_low": "images/projects/convolve/low-res/convolve-screen-3.png",
                                 "src_mobile": "images/projects/convolve/hi-res/convolve-screen-3.png",
                                 "src_preview": "images/projects/convolve/hi-res/convolve-screen-3.png",
                                 "caption": "Convolve Screen 1"   
@@ -2329,6 +2373,7 @@
                             {
                                 "name": "convolve-augment-1",
                                 "src": "images/projects/convolve/hi-res/convolve-augment-1.jpg",
+                                "src_low": "images/projects/convolve/low-res/convolve-augment-1.jpg",
                                 "src_mobile": "images/projects/convolve/hi-res/convolve-augment-1.jpg",
                                 "src_preview": "images/projects/convolve/hi-res/convolve-augment-1.jpg",
                                 "caption": "Convolve Intro"   
@@ -2336,6 +2381,7 @@
                             {
                                 "name": "convolve-augment-1.1",
                                 "src": "images/projects/convolve/hi-res/convolve-augment-1.1.jpg",
+                                "src_low": "images/projects/convolve/low-res/convolve-augment-1.1.jpg",
                                 "src_mobile": "images/projects/convolve/hi-res/convolve-augment-1.1.jpg",
                                 "src_preview": "images/projects/convolve/hi-res/convolve-augment-1.1.jpg",
                                 "caption": "Convolve Intro"   
@@ -2343,6 +2389,7 @@
                             {
                                 "name": "convolve-augment-1.2",
                                 "src": "images/projects/convolve/hi-res/convolve-augment-1.2.jpg",
+                                "src_low": "images/projects/convolve/low-res/convolve-augment-1.2.jpg",
                                 "src_mobile": "images/projects/convolve/hi-res/convolve-augment-1.2.jpg",
                                 "src_preview": "images/projects/convolve/hi-res/convolve-augment-1.2.jpg",
                                 "caption": "Convolve Intro"   
@@ -2369,6 +2416,7 @@
                         "image" : {
                             "name": "convolve-augment-2",
                             "src": "images/projects/convolve/hi-res/convolve-augment-2.jpg",
+                            "src_low": "images/projects/convolve/low-res/convolve-augment-2.jpg",
                             "src_mobile": "images/projects/convolve/hi-res/convolve-augment-2.jpg",
                             "src_preview": "images/projects/convolve/hi-res/convolve-augment-2.jpg",
                             "caption": "Convolve Icon System"
@@ -2394,6 +2442,7 @@
                         "image" : {
                             "name": "convolve-augment-3",
                             "src": "images/projects/convolve/hi-res/convolve-augment-3.jpg",
+                            "src_low": "images/projects/convolve/low-res/convolve-augment-3.jpg",
                             "src_mobile": "images/projects/convolve/hi-res/convolve-augment-3.jpg",
                             "src_preview": "images/projects/convolve/hi-res/convolve-augment-3.jpg",
                             "caption": "Convolve Navigation System"
@@ -2414,6 +2463,7 @@
                             {
                                 "name": "convolve-screen-4",
                                 "src": "images/projects/convolve/hi-res/convolve-screen-4.jpg",
+                                "src_low": "images/projects/convolve/low-res/convolve-screen-4.jpg",
                                 "src_mobile": "images/projects/convolve/hi-res/convolve-screen-4.jpg",
                                 "src_preview": "images/projects/convolve/hi-res/convolve-screen-4.jpg",
                                 "caption": "Convolve Screen 4"   
@@ -2421,6 +2471,7 @@
                             {
                                 "name": "convolve-screen-5",
                                 "src": "images/projects/convolve/hi-res/convolve-screen-5.jpg",
+                                "src_low": "images/projects/convolve/low-res/convolve-screen-5.jpg",
                                 "src_mobile": "images/projects/convolve/hi-res/convolve-screen-5.jpg",
                                 "src_preview": "images/projects/convolve/hi-res/convolve-screen-5.jpg",
                                 "caption": "Convolve Screen 5"   
@@ -2496,6 +2547,7 @@
                         "image" : {
                             "name": "dig-gif",
                             "src": "images/projects/dig/hi-res/dig-gif.gif",
+                            "src_low": "images/projects/dig/low-res/dig-gif.gif",
                             "src_mobile": "images/projects/dig/hi-res/dig-gif.gif",
                             "src_preview": "images/projects/dig/hi-res/dig-gif.gif",
                             "caption": "Dig gif image"   
@@ -2510,6 +2562,7 @@
                             {
                                 "name": "dig-logo-black",
                                 "src": "images/projects/dig/hi-res/dig-logo-black.gif",
+                                "src_low": "images/projects/dig/low-res/dig-logo-black.gif",
                                 "src_mobile": "images/projects/dig/hi-res/dig-logo-black.gif",
                                 "src_preview": "images/projects/dig/hi-res/dig-logo-black.gif",
                                 "caption": "Dig gif image"   
@@ -2517,6 +2570,7 @@
                             {
                                 "name": "dig-logo-white",
                                 "src": "images/projects/dig/hi-res/dig-logo-white.gif",
+                                "src_low": "images/projects/dig/low-res/dig-logo-white.gif",
                                 "src_mobile": "images/projects/dig/hi-res/dig-logo-white.gif",
                                 "src_preview": "images/projects/dig/hi-res/dig-logo-white.gif",
                                 "caption": "Dig gif image"   
@@ -2524,6 +2578,7 @@
                             {
                                 "name": "dig-grid",
                                 "src": "images/projects/dig/hi-res/dig-grid.jpg",
+                                "src_low": "images/projects/dig/low-res/dig-grid.jpg",
                                 "src_mobile": "images/projects/dig/hi-res/dig-grid.jpg",
                                 "src_preview": "images/projects/dig/hi-res/dig-grid.jpg",
                                 "caption": "Dig gif image"   
@@ -2545,6 +2600,7 @@
                             {
                                 "name": "dig-brandbook-cover",
                                 "src": "images/projects/dig/hi-res/dig-brandbook-cover.jpg",
+                                "src_low": "images/projects/dig/low-res/dig-brandbook-cover.jpg",
                                 "src_mobile": "images/projects/dig/hi-res/dig-brandbook-cover.jpg",
                                 "src_preview": "images/projects/dig/hi-res/dig-brandbook-cover.jpg",
                                 "caption": "Dig gif image"   
@@ -2552,6 +2608,7 @@
                             {
                                 "name": "dig-brandbook-sections-1",
                                 "src": "images/projects/dig/hi-res/dig-brandbook-sections-1.jpg",
+                                "src_low": "images/projects/dig/low-res/dig-brandbook-sections-1.jpg",
                                 "src_mobile": "images/projects/dig/hi-res/dig-brandbook-sections-1.jpg",
                                 "src_preview": "images/projects/dig/hi-res/dig-brandbook-sections-1.jpg",
                                 "caption": "Dig gif image"   
@@ -2559,6 +2616,7 @@
                             {
                                 "name": "dig-brandbook-0",
                                 "src": "images/projects/dig/hi-res/dig-brandbook-0.jpg",
+                                "src_low": "images/projects/dig/low-res/dig-brandbook-0.jpg",
                                 "src_mobile": "images/projects/dig/hi-res/dig-brandbook-0.jpg",
                                 "src_preview": "images/projects/dig/hi-res/dig-brandbook-0.jpg",
                                 "caption": "Dig gif image"   
@@ -2566,6 +2624,7 @@
                             {
                                 "name": "dig-brandbook-1",
                                 "src": "images/projects/dig/hi-res/dig-brandbook-1.jpg",
+                                "src_low": "images/projects/dig/low-res/dig-brandbook-1.jpg",
                                 "src_mobile": "images/projects/dig/hi-res/dig-brandbook-1.jpg",
                                 "src_preview": "images/projects/dig/hi-res/dig-brandbook-1.jpg",
                                 "caption": "Dig gif image"   
@@ -2573,6 +2632,7 @@
                             {
                                 "name": "dig-brandbook-2",
                                 "src": "images/projects/dig/hi-res/dig-brandbook-2.jpg",
+                                "src_low": "images/projects/dig/low-res/dig-brandbook-2.jpg",
                                 "src_mobile": "images/projects/dig/hi-res/dig-brandbook-2.jpg",
                                 "src_preview": "images/projects/dig/hi-res/dig-brandbook-2.jpg",
                                 "caption": "Dig gif image"   
@@ -2580,6 +2640,7 @@
                             {
                                 "name": "dig-brandbook-3",
                                 "src": "images/projects/dig/hi-res/dig-brandbook-3.jpg",
+                                "src_low": "images/projects/dig/low-res/dig-brandbook-3.jpg",
                                 "src_mobile": "images/projects/dig/hi-res/dig-brandbook-3.jpg",
                                 "src_preview": "images/projects/dig/hi-res/dig-brandbook-3.jpg",
                                 "caption": "Dig gif image"   
@@ -2616,6 +2677,7 @@
                         "image" : {
                             "name": "dig-poster-sem-1",
                             "src": "images/projects/dig/hi-res/dig-poster-sem-1.jpg",
+                            "src_low": "images/projects/dig/low-res/dig-poster-sem-1.jpg",
                             "src_mobile": "images/projects/dig/hi-res/dig-poster-sem-1.jpg",
                             "src_preview": "images/projects/dig/hi-res/dig-poster-sem-1.jpg",
                             "caption": "Dig Poster"
@@ -2630,6 +2692,7 @@
                             {
                                 "name": "dig-poster-1.0",
                                 "src": "images/projects/dig/hi-res/dig-poster-1.0.jpg",
+                                "src_low": "images/projects/dig/low-res/dig-poster-1.0.jpg",
                                 "src_mobile": "images/projects/dig/hi-res/dig-poster-1.0.jpg",
                                 "src_preview": "images/projects/dig/hi-res/dig-poster-1.0.jpg",
                                 "caption": "Dig Poster"   
@@ -2637,6 +2700,7 @@
                             {
                                 "name": "dig-poster-1.1",
                                 "src": "images/projects/dig/hi-res/dig-poster-1.1.jpg",
+                                "src_low": "images/projects/dig/low-res/dig-poster-1.1.jpg",
                                 "src_mobile": "images/projects/dig/hi-res/dig-poster-1.1.jpg",
                                 "src_preview": "images/projects/dig/hi-res/dig-poster-1.1.jpg",
                                 "caption": "Dig Poster"   
@@ -2644,6 +2708,7 @@
                             {
                                 "name": "dig-poster-1.2",
                                 "src": "images/projects/dig/hi-res/dig-poster-1.2.jpg",
+                                "src_low": "images/projects/dig/low-res/dig-poster-1.2.jpg",
                                 "src_mobile": "images/projects/dig/hi-res/dig-poster-1.2.jpg",
                                 "src_preview": "images/projects/dig/hi-res/dig-poster-1.2.jpg",
                                 "caption": "Dig Poster"   
@@ -2659,6 +2724,7 @@
                             {
                                 "name": "dig-poster-sem-2",
                                 "src": "images/projects/dig/hi-res/dig-poster-sem-2.jpg",
+                                "src_low": "images/projects/dig/low-res/dig-poster-sem-2.jpg",
                                 "src_mobile": "images/projects/dig/hi-res/dig-poster-sem-2.jpg",
                                 "src_preview": "images/projects/dig/hi-res/dig-poster-sem-2.jpg",
                                 "caption": "Dig Poster"   
@@ -2666,6 +2732,7 @@
                             {
                                 "name": "dig-poster-2-application-1",
                                 "src": "images/projects/dig/hi-res/dig-poster-2-application-1.jpg",
+                                "src_low": "images/projects/dig/low-res/dig-poster-2-application-1.jpg",
                                 "src_mobile": "images/projects/dig/hi-res/dig-poster-2-application-1.jpg",
                                 "src_preview": "images/projects/dig/hi-res/dig-poster-2-application-1.jpg",
                                 "caption": "Dig Poster"   
@@ -2673,6 +2740,7 @@
                             {
                                 "name": "dig-poster-2-application-2",
                                 "src": "images/projects/dig/hi-res/dig-poster-2-application-2.jpg",
+                                "src_low": "images/projects/dig/low-res/dig-poster-2-application-2.jpg",
                                 "src_mobile": "images/projects/dig/hi-res/dig-poster-2-application-2.jpg",
                                 "src_preview": "images/projects/dig/hi-res/dig-poster-2-application-2.jpg",
                                 "caption": "Dig Poster"   
@@ -2694,6 +2762,7 @@
                             {
                                 "name": "dig-sector-1",
                                 "src": "images/projects/dig/hi-res/dig-sector-1.jpg",
+                                "src_low": "images/projects/dig/low-res/dig-sector-1.jpg",
                                 "src_mobile": "images/projects/dig/hi-res/dig-sector-1.jpg",
                                 "src_preview": "images/projects/dig/hi-res/dig-sector-1.jpg",
                                 "caption": "Dig gif image"   
@@ -2701,6 +2770,7 @@
                             {
                                 "name": "dig-sector-gif",
                                 "src": "images/projects/dig/hi-res/dig-sector-gif.gif",
+                                "src_low": "images/projects/dig/low-res/dig-sector-gif.gif",
                                 "src_mobile": "images/projects/dig/hi-res/dig-sector-gif.gif",
                                 "src_preview": "images/projects/dig/hi-res/dig-sector-gif.gif",
                                 "caption": "Dig gif image"   
@@ -2708,6 +2778,7 @@
                             {
                                 "name": "dig-sector-2",
                                 "src": "images/projects/dig/hi-res/dig-sector-2.jpg",
+                                "src_low": "images/projects/dig/low-res/dig-sector-2.jpg",
                                 "src_mobile": "images/projects/dig/hi-res/dig-sector-2.jpg",
                                 "src_preview": "images/projects/dig/hi-res/dig-sector-2.jpg",
                                 "caption": "Dig gif image"   
@@ -2734,6 +2805,7 @@
                         "image" : {
                             "name": "dig-algo-0.2",
                             "src": "images/projects/dig/hi-res/dig-algo-0.2.jpg",
+                            "src_low": "images/projects/dig/low-res/dig-algo-0.2.jpg",
                             "src_mobile": "images/projects/dig/hi-res/dig-algo-0.2.jpg",
                             "src_preview": "images/projects/dig/hi-res/dig-algo-0.2.jpg",
                             "caption": "Dig gif image"   
@@ -2758,6 +2830,7 @@
                             {
                                 "name": "dig-algo-1",
                                 "src": "images/projects/dig/hi-res/dig-algo-1.jpg",
+                                "src_low": "images/projects/dig/low-res/dig-algo-1.jpg",
                                 "src_mobile": "images/projects/dig/hi-res/dig-algo-1.jpg",
                                 "src_preview": "images/projects/dig/hi-res/dig-algo-1.jpg",
                                 "caption": "Dig gif image"   
@@ -2765,6 +2838,7 @@
                             {
                                 "name": "dig-algo-2",
                                 "src": "images/projects/dig/hi-res/dig-algo-2.jpg",
+                                "src_low": "images/projects/dig/low-res/dig-algo-2.jpg",
                                 "src_mobile": "images/projects/dig/hi-res/dig-algo-2.jpg",
                                 "src_preview": "images/projects/dig/hi-res/dig-algo-2.jpg",
                                 "caption": "Dig gif image"   
@@ -2772,6 +2846,7 @@
                             {
                                 "name": "dig-algo-3",
                                 "src": "images/projects/dig/hi-res/dig-algo-3.jpg",
+                                "src_low": "images/projects/dig/low-res/dig-algo-3.jpg",
                                 "src_mobile": "images/projects/dig/hi-res/dig-algo-3.jpg",
                                 "src_preview": "images/projects/dig/hi-res/dig-algo-3.jpg",
                                 "caption": "Dig gif image"   
@@ -2779,6 +2854,7 @@
                             {
                                 "name": "dig-algo-4",
                                 "src": "images/projects/dig/hi-res/dig-algo-4.jpg",
+                                "src_low": "images/projects/dig/low-res/dig-algo-4.jpg",
                                 "src_mobile": "images/projects/dig/hi-res/dig-algo-4.jpg",
                                 "src_preview": "images/projects/dig/hi-res/dig-algo-4.jpg",
                                 "caption": "Dig gif image"   
@@ -2786,6 +2862,7 @@
                             {
                                 "name": "dig-algo-5",
                                 "src": "images/projects/dig/hi-res/dig-algo-5.jpg",
+                                "src_low": "images/projects/dig/low-res/dig-algo-5.jpg",
                                 "src_mobile": "images/projects/dig/hi-res/dig-algo-5.jpg",
                                 "src_preview": "images/projects/dig/hi-res/dig-algo-5.jpg",
                                 "caption": "Dig gif image"   
@@ -2852,6 +2929,7 @@
                             {
                                 "name": "DAS Intro",
                                 "src": "images/projects/das/hi-res/das-pub-0.jpg",
+                                "src_low": "images/projects/das/low-res/das-pub-0.jpg",
                                 "src_mobile": "images/projects/das/hi-res/das-pub-0.jpg",
                                 "src_preview": "images/projects/das/hi-res/das-pub-0.jpg",
                                 "caption": "DAS Cover"   
@@ -2859,6 +2937,7 @@
                             {
                                 "name": "DAS Contents",
                                 "src": "images/projects/das/hi-res/das-pub-1.jpg",
+                                "src_low": "images/projects/das/low-res/das-pub-1.jpg",
                                 "src_mobile": "images/projects/das/hi-res/das-pub-1.jpg",
                                 "src_preview": "images/projects/das/hi-res/das-pub-1.jpg",
                                 "caption": "DAS Contents"   
@@ -2866,6 +2945,7 @@
                             {
                                 "name": "DAS Intro",
                                 "src": "images/projects/das/hi-res/das-pub-2.jpg",
+                                "src_low": "images/projects/das/low-res/das-pub-2.jpg",
                                 "src_mobile": "images/projects/das/hi-res/das-pub-2.jpg",
                                 "src_preview": "images/projects/das/hi-res/das-pub-2.jpg",
                                 "caption": "DAS Contents CU"   
@@ -2892,6 +2972,7 @@
                         "image" : {
                             "name": "DAS Computation Intro",
                             "src": "images/projects/das/hi-res/das-pub-3.jpg",
+                            "src_low": "images/projects/das/low-res/das-pub-3.jpg",
                             "src_mobile": "images/projects/das/hi-res/das-pub-3",
                             "src_preview": "images/projects/das/hi-res/das-pub-3",
                             "caption": "DAS Computation Intro"
@@ -2905,6 +2986,7 @@
                             {
                                 "name": "DAS Computation 0",
                                 "src": "images/projects/das/hi-res/das-pub-4.jpg",
+                                "src_low": "images/projects/das/low-res/das-pub-4.jpg",
                                 "src_mobile": "images/projects/das/hi-res/das-pub-4.jpg",
                                 "src_preview": "images/projects/das/hi-res/das-pub-4.jpg",
                                 "caption": "DAS Computation 0"   
@@ -2912,6 +2994,7 @@
                             {
                                 "name": "DAS Computation 1",
                                 "src": "images/projects/das/hi-res/das-pub-5.jpg",
+                                "src_low": "images/projects/das/low-res/das-pub-5.jpg",
                                 "src_mobile": "images/projects/das/hi-res/das-pub-5.jpg",
                                 "src_preview": "images/projects/das/hi-res/das-pub-5.jpg",
                                 "caption": "DAS Computation 1"   
@@ -2919,6 +3002,7 @@
                             {
                                 "name": "DAS Computation 2",
                                 "src": "images/projects/das/hi-res/das-pub-6.jpg",
+                                "src_low": "images/projects/das/low-res/das-pub-6.jpg",
                                 "src_mobile": "images/projects/das/hi-res/das-pub-6.jpg",
                                 "src_preview": "images/projects/das/hi-res/das-pub-6.jpg",
                                 "caption": "DAS Computation 2"   
@@ -2926,6 +3010,7 @@
                             {
                                 "name": "DAS Computation 3",
                                 "src": "images/projects/das/hi-res/das-pub-7.jpg",
+                                "src_low": "images/projects/das/low-res/das-pub-7.jpg",
                                 "src_mobile": "images/projects/das/hi-res/das-pub-7.jpg",
                                 "src_preview": "images/projects/das/hi-res/das-pub-7.jpg",
                                 "caption": "DAS Computation 3"   
@@ -2933,6 +3018,7 @@
                             {
                                 "name": "DAS Computation 4",
                                 "src": "images/projects/das/hi-res/das-pub-8.jpg",
+                                "src_low": "images/projects/das/low-res/das-pub-8.jpg",
                                 "src_mobile": "images/projects/das/hi-res/das-pub-8.jpg",
                                 "src_preview": "images/projects/das/hi-res/das-pub-8.jpg",
                                 "caption": "DAS Computation 4"   
@@ -2940,6 +3026,7 @@
                             {
                                 "name": "DAS Computation 5",
                                 "src": "images/projects/das/hi-res/das-pub-9.jpg",
+                                "src_low": "images/projects/das/low-res/das-pub-9.jpg",
                                 "src_mobile": "images/projects/das/hi-res/das-pub-9.jpg",
                                 "src_preview": "images/projects/das/hi-res/das-pub-9.jpg",
                                 "caption": "DAS Computation 5"   
@@ -2960,6 +3047,7 @@
                         "image" : {
                             "name": "DAS Computation CU 2",
                             "src": "images/projects/das/hi-res/das-pub-10.jpg",
+                            "src_low": "images/projects/das/low-res/das-pub-10.jpg",
                             "src_mobile": "images/projects/das/hi-res/das-pub-10.jpg",
                             "src_preview": "images/projects/das/hi-res/das-pub-10.jpg",
                             "caption": "DAS Computation CU 2"   
@@ -2979,6 +3067,7 @@
                         "image" : {
                             "name": "DAS Computation 3D",
                             "src": "images/projects/das/hi-res/das-pub-11.jpg",
+                            "src_low": "images/projects/das/low-res/das-pub-11.jpg",
                             "src_mobile": "images/projects/das/hi-res/das-pub-11.jpg",
                             "src_preview": "images/projects/das/hi-res/das-pub-11.jpg",
                             "caption": "DAS Computation 3D"   
@@ -2998,6 +3087,7 @@
                             {
                                 "name": "DAS Computation 6",
                                 "src": "images/projects/das/hi-res/das-pub-12.jpg",
+                                "src_low": "images/projects/das/low-res/das-pub-12.jpg",
                                 "src_mobile": "images/projects/das/hi-res/das-pub-12.jpg",
                                 "src_preview": "images/projects/das/hi-res/das-pub-12.jpg",
                                 "caption": "DAS Computation 6"   
@@ -3005,6 +3095,7 @@
                             {
                                 "name": "DAS Computation 7",
                                 "src": "images/projects/das/hi-res/das-pub-13.jpg",
+                                "src_low": "images/projects/das/low-res/das-pub-13.jpg",
                                 "src_mobile": "images/projects/das/hi-res/das-pub-13.jpg",
                                 "src_preview": "images/projects/das/hi-res/das-pub-13.jpg",
                                 "caption": "DAS Computation 7"   
@@ -3012,6 +3103,7 @@
                             {
                                 "name": "DAS Computation 8",
                                 "src": "images/projects/das/hi-res/das-pub-14.jpg",
+                                "src_low": "images/projects/das/low-res/das-pub-14.jpg",
                                 "src_mobile": "images/projects/das/hi-res/das-pub-14.jpg",
                                 "src_preview": "images/projects/das/hi-res/das-pub-14.jpg",
                                 "caption": "DAS Computation 8"   
@@ -3019,6 +3111,7 @@
                             {
                                 "name": "DAS Computation 9",
                                 "src": "images/projects/das/hi-res/das-pub-15.jpg",
+                                "src_low": "images/projects/das/low-res/das-pub-15.jpg",
                                 "src_mobile": "images/projects/das/hi-res/das-pub-15.jpg",
                                 "src_preview": "images/projects/das/hi-res/das-pub-15.jpg",
                                 "caption": "DAS Computation 9"   
@@ -3026,6 +3119,7 @@
                             {
                                 "name": "DAS Computation 10",
                                 "src": "images/projects/das/hi-res/das-pub-16.jpg",
+                                "src_low": "images/projects/das/low-res/das-pub-16.jpg",
                                 "src_mobile": "images/projects/das/hi-res/das-pub-16.jpg",
                                 "src_preview": "images/projects/das/hi-res/das-pub-16.jpg",
                                 "caption": "DAS Computation 10"   
@@ -3107,6 +3201,7 @@
                         "image" : {
                             "name": "das-interactive-print-5",
                             "src": "images/projects/das-interactive/hi-res/das-interactive-print-5.jpg",
+                            "src_low": "images/projects/das-interactive/low-res/das-interactive-print-5.jpg",
                             "src_mobile": "images/projects/das-interactive/hi-res/das-interactive-print-5.jpg",
                             "src_preview": "images/projects/das-interactive/hi-res/das-interactive-print-5.jpg",
                             "caption": "Dig Poster"
@@ -3138,6 +3233,7 @@
                         "image" : {
                             "name": "das-interactive-devices",
                             "src": "images/projects/das-interactive/hi-res/das-interactive-devices.jpg",
+                            "src_low": "images/projects/das-interactive/low-res/das-interactive-devices.jpg",
                             "src_mobile": "images/projects/das-interactive/hi-res/das-interactive-devices.jpg",
                             "src_preview": "images/projects/das-interactive/hi-res/das-interactive-devices.jpg",
                             "caption": "Dig Poster"
@@ -3183,6 +3279,7 @@
                         "image" : {
                             "name": "das-interactive-loading-2",
                             "src": "images/projects/das-interactive/hi-res/das-interactive-loading-2.jpg",
+                            "src_low": "images/projects/das-interactive/low-res/das-interactive-loading-2.jpg",
                             "src_mobile": "images/projects/das-interactive/hi-res/das-interactive-loading-2.jpg",
                             "src_preview": "images/projects/das-interactive/hi-res/das-interactive-loading-2.jpg",
                             "caption": "DAS Interactive Loading"
@@ -3202,12 +3299,14 @@
                             "name": "hero",
                             "name": "das-interactive-loading",
                             "src": "images/projects/das-interactive/hi-res/das-interactive-iphone-bg.jpg",
+                            "src_low": "images/projects/das-interactive/low-res/das-interactive-iphone-bg.jpg",
                             "src_mobile": "images/projects/das-interactive/hi-res/das-interactive-iphone-bg.jpg",
                             "src_preview": "images/projects/das-interactive/hi-res/das-interactive-iphone-bg.jpg"
                         },
                         "imageParallax" : {
                             "name": "das-interactive-iphone",
                             "src": "images/projects/das-interactive/hi-res/das-interactive-iphone.png",
+                            "src_low": "images/projects/das-interactive/low-res/das-interactive-iphone.png",
                             "src_mobile": "images/projects/das-interactive/hi-res/das-interactive-iphone.png",
                             "src_preview": "images/projects/das-interactive/hi-res/das-interactive-iphone.png"
                         },
@@ -3227,6 +3326,7 @@
                         "image" : {
                             "name": "das-interactive-views",
                             "src": "images/projects/das-interactive/hi-res/das-interactive-views.jpg",
+                            "src_low": "images/projects/das-interactive/low-res/das-interactive-views.jpg",
                             "src_mobile": "images/projects/das-interactive/hi-res/das-interactive-views.jpg",
                             "src_preview": "images/projects/das-interactive/hi-res/das-interactive-views.jpg",
                             "caption": "DAS Interactive Views"
@@ -3252,6 +3352,7 @@
                         "image" : {
                             "name": "das-interactive-funnel",
                             "src": "images/projects/das-interactive/hi-res/das-interactive-funnel.jpg",
+                            "src_low": "images/projects/das-interactive/low-res/das-interactive-funnel.jpg",
                             "src_mobile": "images/projects/das-interactive/hi-res/das-interactive-funnel.jpg",
                             "src_preview": "images/projects/das-interactive/hi-res/das-interactive-funnel.jpg",
                             "caption": "DAS Interactive Views"
@@ -3277,6 +3378,7 @@
                         "image" : {
                             "name": "das-interactive-share",
                             "src": "images/projects/das-interactive/hi-res/das-interactive-share.jpg",
+                            "src_low": "images/projects/das-interactive/low-res/das-interactive-share.jpg",
                             "src_mobile": "images/projects/das-interactive/hi-res/das-interactive-share.jpg",
                             "src_preview": "images/projects/das-interactive/hi-res/das-interactive-share.jpg",
                             "caption": "DAS Interactive Views"
@@ -3296,6 +3398,7 @@
                         "image" : {
                             "name": "das-interactive-menu",
                             "src": "images/projects/das-interactive/hi-res/das-interactive-menu.jpg",
+                            "src_low": "images/projects/das-interactive/low-res/das-interactive-menu.jpg",
                             "src_mobile": "images/projects/das-interactive/hi-res/das-interactive-menu.jpg",
                             "src_preview": "images/projects/das-interactive/hi-res/das-interactive-menu.jpg",
                             "caption": "DAS Interactive Views"
@@ -3365,6 +3468,7 @@
                         "image" : {
                             "name": "muwu-intro",
                             "src": "images/projects/muwu/hi-res/muwu-intro.jpg",
+                            "src_low": "images/projects/muwu/low-res/muwu-intro.jpg",
                             "src_mobile": "images/projects/muwu/hi-res/muwu-intro.jpg",
                             "src_preview": "images/projects/muwu/hi-res/muwu-intro.jpg",
                             "caption": "Muwu Intro"
@@ -3385,6 +3489,7 @@
                             {
                                 "name": "muwu-book-10",
                                 "src": "images/projects/muwu/hi-res/muwu-book-10.jpg",
+                                "src_low": "images/projects/muwu/low-res/muwu-book-10.jpg",
                                 "src_mobile": "images/projects/muwu/hi-res/muwu-book-10.jpg",
                                 "src_preview": "images/projects/muwu/hi-res/muwu-book-10.jpg",
                                 "caption": "Muwu Book 10"   
@@ -3392,6 +3497,7 @@
                             {
                                 "name": "muwu-book-12",
                                 "src": "images/projects/muwu/hi-res/muwu-book-12.jpg",
+                                "src_low": "images/projects/muwu/low-res/muwu-book-12.jpg",
                                 "src_mobile": "images/projects/muwu/hi-res/muwu-book-12.jpg",
                                 "src_preview": "images/projects/muwu/hi-res/muwu-book-12.jpg",
                                 "caption": "Muwu Book 12"   
@@ -3399,6 +3505,7 @@
                             {
                                 "name": "muwu-book-11",
                                 "src": "images/projects/muwu/hi-res/muwu-book-11.jpg",
+                                "src_low": "images/projects/muwu/low-res/muwu-book-11.jpg",
                                 "src_mobile": "images/projects/muwu/hi-res/muwu-book-11.jpg",
                                 "src_preview": "images/projects/muwu/hi-res/muwu-book-11.jpg",
                                 "caption": "Muwu Book 11"   
@@ -3406,6 +3513,7 @@
                             {
                                 "name": "muwu-book-7",
                                 "src": "images/projects/muwu/hi-res/muwu-book-7.jpg",
+                                "src_low": "images/projects/muwu/low-res/muwu-book-7.jpg",
                                 "src_mobile": "images/projects/muwu/hi-res/muwu-book-7.jpg",
                                 "src_preview": "images/projects/muwu/hi-res/muwu-book-7.jpg",
                                 "caption": "Muwu Book 7"   
@@ -3413,6 +3521,7 @@
                             {
                                 "name": "muwu-empty-2",
                                 "src": "images/projects/muwu/hi-res/muwu-empty-4.jpg",
+                                "src_low": "images/projects/muwu/low-res/muwu-empty-4.jpg",
                                 "src_mobile": "images/projects/muwu/hi-res/muwu-empty-4.jpg",
                                 "src_preview": "images/projects/muwu/hi-res/muwu-empty-4.jpg",
                                 "caption": "Muwu Empty Poster"   
@@ -3420,6 +3529,7 @@
                             {
                                 "name": "muwu-book-13",
                                 "src": "images/projects/muwu/hi-res/muwu-book-13.jpg",
+                                "src_low": "images/projects/muwu/low-res/muwu-book-13.jpg",
                                 "src_mobile": "images/projects/muwu/hi-res/muwu-book-13.jpg",
                                 "src_preview": "images/projects/muwu/hi-res/muwu-book-13.jpg",
                                 "caption": "Muwu Book 13"   
@@ -3427,6 +3537,7 @@
                             {
                                 "name": "muwu-book-6",
                                 "src": "images/projects/muwu/hi-res/muwu-book-6.jpg",
+                                "src_low": "images/projects/muwu/low-res/muwu-book-6.jpg",
                                 "src_mobile": "images/projects/muwu/hi-res/muwu-book-6.jpg",
                                 "src_preview": "images/projects/muwu/hi-res/muwu-book-6.jpg",
                                 "caption": "Muwu Book 6"   
@@ -3434,6 +3545,7 @@
                             {
                                 "name": "muwu-book-5",
                                 "src": "images/projects/muwu/hi-res/muwu-book-5.jpg",
+                                "src_low": "images/projects/muwu/low-res/muwu-book-5.jpg",
                                 "src_mobile": "images/projects/muwu/hi-res/muwu-book-5.jpg",
                                 "src_preview": "images/projects/muwu/hi-res/muwu-book-5.jpg",
                                 "caption": "Muwu Book 5"   
@@ -3441,6 +3553,7 @@
                             {
                                 "name": "muwu-book-4",
                                 "src": "images/projects/muwu/hi-res/muwu-book-4.jpg",
+                                "src_low": "images/projects/muwu/low-res/muwu-book-4.jpg",
                                 "src_mobile": "images/projects/muwu/hi-res/muwu-book-4.jpg",
                                 "src_preview": "images/projects/muwu/hi-res/muwu-book-4.jpg",
                                 "caption": "Muwu Book 4"   
@@ -3456,6 +3569,7 @@
                             {
                                 "name": "muwu-book-18",
                                 "src": "images/projects/muwu/hi-res/muwu-book-18.jpg",
+                                "src_low": "images/projects/muwu/low-res/muwu-book-18.jpg",
                                 "src_mobile": "images/projects/muwu/hi-res/muwu-book-18.jpg",
                                 "src_preview": "images/projects/muwu/hi-res/muwu-book-18.jpg",
                                 "caption": "Muwu Book 18"   
@@ -3463,6 +3577,7 @@
                             {
                                 "name": "muwu-book-17",
                                 "src": "images/projects/muwu/hi-res/muwu-book-17.jpg",
+                                "src_low": "images/projects/muwu/low-res/muwu-book-17.jpg",
                                 "src_mobile": "images/projects/muwu/hi-res/muwu-book-17.jpg",
                                 "src_preview": "images/projects/muwu/hi-res/muwu-book-17.jpg",
                                 "caption": "Muwu Book 17"   
@@ -3470,6 +3585,7 @@
                             {
                                 "name": "muwu-book-16",
                                 "src": "images/projects/muwu/hi-res/muwu-book-16.jpg",
+                                "src_low": "images/projects/muwu/low-res/muwu-book-16.jpg",
                                 "src_mobile": "images/projects/muwu/hi-res/muwu-book-16.jpg",
                                 "src_preview": "images/projects/muwu/hi-res/muwu-book-16.jpg",
                                 "caption": "Muwu Book 16"   
@@ -3500,6 +3616,7 @@
                         "image" : {
                             "name": "muwu-book-3",
                             "src": "images/projects/muwu/hi-res/muwu-book-3.jpg",
+                            "src_low": "images/projects/muwu/low-res/muwu-book-3.jpg",
                             "src_mobile": "images/projects/muwu/hi-res/muwu-book-3.jpg",
                             "src_preview": "images/projects/muwu/hi-res/muwu-book-3.jpg",
                             "caption": "Muwu Processing"
@@ -3524,6 +3641,7 @@
                             {
                                 "name": "muwu-book-1",
                                 "src": "images/projects/muwu/hi-res/muwu-book-1.jpg",
+                                "src_low": "images/projects/muwu/low-res/muwu-book-1.jpg",
                                 "src_mobile": "images/projects/muwu/hi-res/muwu-book-1.jpg",
                                 "src_preview": "images/projects/muwu/hi-res/muwu-book-1.jpg",
                                 "caption": "Muwu Book 1"   
@@ -3531,6 +3649,7 @@
                             {
                                 "name": "muwu-book-14",
                                 "src": "images/projects/muwu/hi-res/muwu-book-14.jpg",
+                                "src_low": "images/projects/muwu/low-res/muwu-book-14.jpg",
                                 "src_mobile": "images/projects/muwu/hi-res/muwu-book-14.jpg",
                                 "src_preview": "images/projects/muwu/hi-res/muwu-book-14.jpg",
                                 "caption": "Muwu Book 14"   
@@ -3567,6 +3686,7 @@
                         "image" : {
                             "name": "muwu-research-2",
                             "src": "images/projects/muwu/hi-res/muwu-research-2.jpg",
+                            "src_low": "images/projects/muwu/low-res/muwu-research-2.jpg",
                             "src_mobile": "images/projects/muwu/hi-res/muwu-research-2.jpg",
                             "src_preview": "images/projects/muwu/hi-res/muwu-research-2.jpg",
                             "caption": "Muwu Research"
@@ -3592,6 +3712,7 @@
                         "image" : {
                             "name": "muwu-layout-system-expanded",
                             "src": "images/projects/muwu/hi-res/muwu-layout-system-expanded.jpg",
+                            "src_low": "images/projects/muwu/low-res/muwu-layout-system-expanded.jpg",
                             "src_mobile": "images/projects/muwu/hi-res/muwu-layout-system-expanded.jpg",
                             "src_preview": "images/projects/muwu/hi-res/muwu-layout-system-expanded.jpg",
                             "caption": "Muwu Layout System"
@@ -3606,6 +3727,7 @@
                             {
                                 "name": "muwu-methods",
                                 "src": "images/projects/muwu/hi-res/muwu-methods-2.jpg",
+                                "src_low": "images/projects/muwu/low-res/muwu-methods-2.jpg",
                                 "src_mobile": "images/projects/muwu/hi-res/muwu-methods-2.jpg",
                                 "src_preview": "images/projects/muwu/hi-res/muwu-methods-2.jpg",
                                 "caption": "Muwu Methods"   
@@ -3627,6 +3749,7 @@
                             {
                                 "name": "muwu-method-1",
                                 "src": "images/projects/muwu/hi-res/muwu-method-1.jpg",
+                                "src_low": "images/projects/muwu/low-res/muwu-method-1.jpg",
                                 "src_mobile": "images/projects/muwu/hi-res/muwu-method-1.jpg",
                                 "src_preview": "images/projects/muwu/hi-res/muwu-method-1.jpg",
                                 "caption": "Muwu Method"   
@@ -3634,6 +3757,7 @@
                             {
                                 "name": "muwu-method-2",
                                 "src": "images/projects/muwu/hi-res/muwu-method-2.jpg",
+                                "src_low": "images/projects/muwu/low-res/muwu-method-2.jpg",
                                 "src_mobile": "images/projects/muwu/hi-res/muwu-method-2.jpg",
                                 "src_preview": "images/projects/muwu/hi-res/muwu-method-2.jpg",
                                 "caption": "Muwu Method"   
@@ -3641,6 +3765,7 @@
                             {
                                 "name": "muwu-method-3",
                                 "src": "images/projects/muwu/hi-res/muwu-method-3.jpg",
+                                "src_low": "images/projects/muwu/low-res/muwu-method-3.jpg",
                                 "src_mobile": "images/projects/muwu/hi-res/muwu-method-3.jpg",
                                 "src_preview": "images/projects/muwu/hi-res/muwu-method-3.jpg",
                                 "caption": "Muwu Method"   
@@ -3648,6 +3773,7 @@
                             {
                                 "name": "muwu-method-4",
                                 "src": "images/projects/muwu/hi-res/muwu-method-4.jpg",
+                                "src_low": "images/projects/muwu/low-res/muwu-method-4.jpg",
                                 "src_mobile": "images/projects/muwu/hi-res/muwu-method-4.jpg",
                                 "src_preview": "images/projects/muwu/hi-res/muwu-method-4.jpg",
                                 "caption": "Muwu Method"   
@@ -3655,6 +3781,7 @@
                             {
                                 "name": "muwu-method-5",
                                 "src": "images/projects/muwu/hi-res/muwu-method-5.jpg",
+                                "src_low": "images/projects/muwu/low-res/muwu-method-5.jpg",
                                 "src_mobile": "images/projects/muwu/hi-res/muwu-method-5.jpg",
                                 "src_preview": "images/projects/muwu/hi-res/muwu-method-5.jpg",
                                 "caption": "Muwu Method"   
@@ -3662,6 +3789,7 @@
                             {
                                 "name": "muwu-method-6",
                                 "src": "images/projects/muwu/hi-res/muwu-method-6.jpg",
+                                "src_low": "images/projects/muwu/low-res/muwu-method-6.jpg",
                                 "src_mobile": "images/projects/muwu/hi-res/muwu-method-6.jpg",
                                 "src_preview": "images/projects/muwu/hi-res/muwu-method-6.jpg",
                                 "caption": "Muwu Method"   
@@ -3669,6 +3797,7 @@
                             {
                                 "name": "muwu-method-7",
                                 "src": "images/projects/muwu/hi-res/muwu-method-7.jpg",
+                                "src_low": "images/projects/muwu/low-res/muwu-method-7.jpg",
                                 "src_mobile": "images/projects/muwu/hi-res/muwu-method-7.jpg",
                                 "src_preview": "images/projects/muwu/hi-res/muwu-method-7.jpg",
                                 "caption": "Muwu Method"   
@@ -3676,6 +3805,7 @@
                             {
                                 "name": "muwu-method-8",
                                 "src": "images/projects/muwu/hi-res/muwu-method-8.jpg",
+                                "src_low": "images/projects/muwu/low-res/muwu-method-8.jpg",
                                 "src_mobile": "images/projects/muwu/hi-res/muwu-method-8.jpg",
                                 "src_preview": "images/projects/muwu/hi-res/muwu-method-8.jpg",
                                 "caption": "Muwu Method"   
@@ -3702,6 +3832,7 @@
                         "image" : {
                             "name": "muwu-layout-machine-expanded",
                             "src": "images/projects/muwu/hi-res/muwu-layout-machine-expanded-5.jpg",
+                            "src_low": "images/projects/muwu/low-res/muwu-layout-machine-expanded-5.jpg",
                             "src_mobile": "images/projects/muwu/hi-res/muwu-layout-machine-expanded-5.jpg",
                             "src_preview": "images/projects/muwu/hi-res/muwu-layout-machine-expanded-5.jpg",
                             "caption": "Muwu Layout Machine"
@@ -3715,6 +3846,7 @@
                             {
                                 "name": "muwu-layout-option",
                                 "src": "images/projects/muwu/hi-res/muwu-layout-1.jpg",
+                                "src_low": "images/projects/muwu/low-res/muwu-layout-1.jpg",
                                 "src_mobile": "images/projects/muwu/hi-res/muwu-layout-1.jpg",
                                 "src_preview": "images/projects/muwu/hi-res/muwu-layout-1.jpg",
                                 "caption": "Muwu Layout Option"
@@ -3722,6 +3854,7 @@
                             {
                                 "name": "muwu-layout-option",
                                 "src": "images/projects/muwu/hi-res/muwu-layout-2.jpg",
+                                "src_low": "images/projects/muwu/low-res/muwu-layout-2.jpg",
                                 "src_mobile": "images/projects/muwu/hi-res/muwu-layout-2.jpg",
                                 "src_preview": "images/projects/muwu/hi-res/muwu-layout-2.jpg",
                                 "caption": "Muwu Layout Option"
@@ -3729,6 +3862,7 @@
                             {
                                 "name": "muwu-layout-option",
                                 "src": "images/projects/muwu/hi-res/muwu-layout-3.jpg",
+                                "src_low": "images/projects/muwu/low-res/muwu-layout-3.jpg",
                                 "src_mobile": "images/projects/muwu/hi-res/muwu-layout-3.jpg",
                                 "src_preview": "images/projects/muwu/hi-res/muwu-layout-3.jpg",
                                 "caption": "Muwu Layout Option"
@@ -3736,6 +3870,7 @@
                             {
                                 "name": "muwu-layout-option",
                                 "src": "images/projects/muwu/hi-res/muwu-layout-4.jpg",
+                                "src_low": "images/projects/muwu/low-res/muwu-layout-4.jpg",
                                 "src_mobile": "images/projects/muwu/hi-res/muwu-layout-4.jpg",
                                 "src_preview": "images/projects/muwu/hi-res/muwu-layout-4.jpg",
                                 "caption": "Muwu Layout Option"
@@ -3743,6 +3878,7 @@
                             {
                                 "name": "muwu-layout-option",
                                 "src": "images/projects/muwu/hi-res/muwu-layout-5.jpg",
+                                "src_low": "images/projects/muwu/low-res/muwu-layout-5.jpg",
                                 "src_mobile": "images/projects/muwu/hi-res/muwu-layout-5.jpg",
                                 "src_preview": "images/projects/muwu/hi-res/muwu-layout-5.jpg",
                                 "caption": "Muwu Layout Option"
@@ -3750,6 +3886,7 @@
                             {
                                 "name": "muwu-layout-option",
                                 "src": "images/projects/muwu/hi-res/muwu-layout-6.jpg",
+                                "src_low": "images/projects/muwu/low-res/muwu-layout-6.jpg",
                                 "src_mobile": "images/projects/muwu/hi-res/muwu-layout-6.jpg",
                                 "src_preview": "images/projects/muwu/hi-res/muwu-layout-6.jpg",
                                 "caption": "Muwu Layout Option"
@@ -3770,6 +3907,7 @@
                         "image" : {
                             "name": "Layout Machine Selection",
                             "src": "images/projects/muwu/hi-res/muwu-layout.jpg",
+                            "src_low": "images/projects/muwu/low-res/muwu-layout.jpg",
                             "src_mobile": "images/projects/muwu/hi-res/muwu-layout.jpg",
                             "src_preview": "images/projects/muwu/hi-res/muwu-layout.jpg",
                             "caption": "Muwu Layout Selection"
@@ -3796,6 +3934,7 @@
                         "image" : {
                             "name": "muwu-layout-synthesis",
                             "src": "images/projects/muwu/hi-res/muwu-layout-synthesis-1.jpg",
+                            "src_low": "images/projects/muwu/low-res/muwu-layout-synthesis-1.jpg",
                             "src_mobile": "images/projects/muwu/hi-res/muwu-layout-synthesis-1.jpg",
                             "src_preview": "images/projects/muwu/hi-res/muwu-layout-synthesis-1.jpg",
                             "caption": "Muwu Layout Synthesis"
@@ -3821,6 +3960,7 @@
                         "image" : {
                             "name": "muwu-code",
                             "src": "images/projects/muwu/hi-res/muwu-code.jpg",
+                            "src_low": "images/projects/muwu/low-res/muwu-code.jpg",
                             "src_mobile": "images/projects/muwu/hi-res/muwu-code.jpg",
                             "src_preview": "images/projects/muwu/hi-res/muwu-code.jpg",
                             "caption": "Muwu Processing"
@@ -3865,6 +4005,7 @@
                             {
                                 "name": "muwu-algo-0",
                                 "src": "images/projects/muwu/hi-res/muwu-algo-0.jpg",
+                                "src_low": "images/projects/muwu/low-res/muwu-algo-0.jpg",
                                 "src_mobile": "images/projects/muwu/hi-res/muwu-algo-0.jpg",
                                 "src_preview": "images/projects/muwu/hi-res/muwu-algo-0.jpg",
                                 "caption": "MuWu Algorithmic Experiment"   
@@ -3872,6 +4013,7 @@
                             {
                                 "name": "muwu-algo-1",
                                 "src": "images/projects/muwu/hi-res/muwu-algo-1.jpg",
+                                "src_low": "images/projects/muwu/low-res/muwu-algo-1.jpg",
                                 "src_mobile": "images/projects/muwu/hi-res/muwu-algo-1.jpg",
                                 "src_preview": "images/projects/muwu/hi-res/muwu-algo-1.jpg",
                                 "caption": "MuWu Algorithmic Experiment"   
@@ -3879,6 +4021,7 @@
                             {
                                 "name": "muwu-algo-2",
                                 "src": "images/projects/muwu/hi-res/muwu-algo-2.jpg",
+                                "src_low": "images/projects/muwu/low-res/muwu-algo-2.jpg",
                                 "src_mobile": "images/projects/muwu/hi-res/muwu-algo-2.jpg",
                                 "src_preview": "images/projects/muwu/hi-res/muwu-algo-2.jpg",
                                 "caption": "MuWu Algorithmic Experiment"   
@@ -3886,6 +4029,7 @@
                             {
                                 "name": "muwu-algo-3",
                                 "src": "images/projects/muwu/hi-res/muwu-algo-3.jpg",
+                                "src_low": "images/projects/muwu/low-res/muwu-algo-3.jpg",
                                 "src_mobile": "images/projects/muwu/hi-res/muwu-algo-3.jpg",
                                 "src_preview": "images/projects/muwu/hi-res/muwu-algo-3.jpg",
                                 "caption": "MuWu Algorithmic Experiment"   
@@ -3893,6 +4037,7 @@
                             {
                                 "name": "muwu-algo-4",
                                 "src": "images/projects/muwu/hi-res/muwu-algo-4.jpg",
+                                "src_low": "images/projects/muwu/low-res/muwu-algo-4.jpg",
                                 "src_mobile": "images/projects/muwu/hi-res/muwu-algo-4.jpg",
                                 "src_preview": "images/projects/muwu/hi-res/muwu-algo-4.jpg",
                                 "caption": "MuWu Algorithmic Experiment"   
@@ -3900,6 +4045,7 @@
                             {
                                 "name": "muwu-algo-5",
                                 "src": "images/projects/muwu/hi-res/muwu-algo-5.jpg",
+                                "src_low": "images/projects/muwu/low-res/muwu-algo-5.jpg",
                                 "src_mobile": "images/projects/muwu/hi-res/muwu-algo-5.jpg",
                                 "src_preview": "images/projects/muwu/hi-res/muwu-algo-5.jpg",
                                 "caption": "MuWu Algorithmic Experiment"   
@@ -3907,6 +4053,7 @@
                             {
                                 "name": "muwu-algo-6",
                                 "src": "images/projects/muwu/hi-res/muwu-algo-6.jpg",
+                                "src_low": "images/projects/muwu/low-res/muwu-algo-6.jpg",
                                 "src_mobile": "images/projects/muwu/hi-res/muwu-algo-6.jpg",
                                 "src_preview": "images/projects/muwu/hi-res/muwu-algo-6.jpg",
                                 "caption": "MuWu Algorithmic Experiment"   
@@ -3973,6 +4120,7 @@
                             {
                                 "name": "Our Epigenomes Item",
                                 "src": "images/projects/our-epigenomes/hi-res/our-epigenomes-0.jpg",
+                                "src_low": "images/projects/our-epigenomes/low-res/our-epigenomes-0.jpg",
                                 "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-0.jpg",
                                 "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-0.jpg",
                                 "caption": "Our Epigenomes Item"   
@@ -3980,6 +4128,7 @@
                             {
                                 "name": "Our Epigenomes Item",
                                 "src": "images/projects/our-epigenomes/hi-res/our-epigenomes-1.jpg",
+                                "src_low": "images/projects/our-epigenomes/low-res/our-epigenomes-1.jpg",
                                 "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-1.jpg",
                                 "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-1.jpg",
                                 "caption": "Our Epigenomes Item"   
@@ -3987,6 +4136,7 @@
                             {
                                 "name": "Our Epigenomes Item",
                                 "src": "images/projects/our-epigenomes/hi-res/our-epigenomes-2.jpg",
+                                "src_low": "images/projects/our-epigenomes/low-res/our-epigenomes-2.jpg",
                                 "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-2.jpg",
                                 "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-2.jpg",
                                 "caption": "Our Epigenomes Item"   
@@ -3994,6 +4144,7 @@
                             {
                                 "name": "Our Epigenomes Item",
                                 "src": "images/projects/our-epigenomes/hi-res/our-epigenomes-3.jpg",
+                                "src_low": "images/projects/our-epigenomes/low-res/our-epigenomes-3.jpg",
                                 "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-3.jpg",
                                 "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-3.jpg",
                                 "caption": "Our Epigenomes Item"   
@@ -4001,6 +4152,7 @@
                             {
                                 "name": "Our Epigenomes Item",
                                 "src": "images/projects/our-epigenomes/hi-res/our-epigenomes-4.jpg",
+                                "src_low": "images/projects/our-epigenomes/low-res/our-epigenomes-4.jpg",
                                 "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-4.jpg",
                                 "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-4.jpg",
                                 "caption": "Our Epigenomes Item"   
@@ -4008,6 +4160,7 @@
                             {
                                 "name": "Our Epigenomes Item",
                                 "src": "images/projects/our-epigenomes/hi-res/our-epigenomes-5.jpg",
+                                "src_low": "images/projects/our-epigenomes/low-res/our-epigenomes-5.jpg",
                                 "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-5.jpg",
                                 "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-5.jpg",
                                 "caption": "Our Epigenomes Item"   
@@ -4015,6 +4168,7 @@
                             {
                                 "name": "Our Epigenomes Item",
                                 "src": "images/projects/our-epigenomes/hi-res/our-epigenomes-6.jpg",
+                                "src_low": "images/projects/our-epigenomes/low-res/our-epigenomes-6.jpg",
                                 "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-6.jpg",
                                 "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-6.jpg",
                                 "caption": "Our Epigenomes Item"   
@@ -4022,6 +4176,7 @@
                             {
                                 "name": "Our Epigenomes Item",
                                 "src": "images/projects/our-epigenomes/hi-res/our-epigenomes-7.jpg",
+                                "src_low": "images/projects/our-epigenomes/low-res/our-epigenomes-7.jpg",
                                 "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-7.jpg",
                                 "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-7.jpg",
                                 "caption": "Our Epigenomes Item"   
@@ -4029,6 +4184,7 @@
                             {
                                 "name": "Our Epigenomes Item",
                                 "src": "images/projects/our-epigenomes/hi-res/our-epigenomes-8.jpg",
+                                "src_low": "images/projects/our-epigenomes/low-res/our-epigenomes-8.jpg",
                                 "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-8.jpg",
                                 "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-8.jpg",
                                 "caption": "Our Epigenomes Item"   
@@ -4036,6 +4192,7 @@
                             {
                                 "name": "Our Epigenomes Item",
                                 "src": "images/projects/our-epigenomes/hi-res/our-epigenomes-9.jpg",
+                                "src_low": "images/projects/our-epigenomes/low-res/our-epigenomes-9.jpg",
                                 "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-9.jpg",
                                 "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-9.jpg",
                                 "caption": "Our Epigenomes Item"   
@@ -4043,6 +4200,7 @@
                             {
                                 "name": "Our Epigenomes Item",
                                 "src": "images/projects/our-epigenomes/hi-res/our-epigenomes-10.jpg",
+                                "src_low": "images/projects/our-epigenomes/low-res/our-epigenomes-10.jpg",
                                 "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-10.jpg",
                                 "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-10.jpg",
                                 "caption": "Our Epigenomes Item"   
@@ -4050,6 +4208,7 @@
                             {
                                 "name": "Our Epigenomes Item",
                                 "src": "images/projects/our-epigenomes/hi-res/our-epigenomes-11.jpg",
+                                "src_low": "images/projects/our-epigenomes/low-res/our-epigenomes-11.jpg",
                                 "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-11.jpg",
                                 "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-11.jpg",
                                 "caption": "Our Epigenomes Item"   
@@ -4057,6 +4216,7 @@
                             {
                                 "name": "Our Epigenomes Item",
                                 "src": "images/projects/our-epigenomes/hi-res/our-epigenomes-12.jpg",
+                                "src_low": "images/projects/our-epigenomes/low-res/our-epigenomes-12.jpg",
                                 "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-12.jpg",
                                 "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-12.jpg",
                                 "caption": "Our Epigenomes Item"   
@@ -4064,6 +4224,7 @@
                             {
                                 "name": "Our Epigenomes Item",
                                 "src": "images/projects/our-epigenomes/hi-res/our-epigenomes-13.jpg",
+                                "src_low": "images/projects/our-epigenomes/low-res/our-epigenomes-13.jpg",
                                 "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-13.jpg",
                                 "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-13.jpg",
                                 "caption": "Our Epigenomes Item"   
@@ -4071,6 +4232,7 @@
                             {
                                 "name": "Our Epigenomes Item",
                                 "src": "images/projects/our-epigenomes/hi-res/our-epigenomes-14.jpg",
+                                "src_low": "images/projects/our-epigenomes/low-res/our-epigenomes-14.jpg",
                                 "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-14.jpg",
                                 "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-14.jpg",
                                 "caption": "Our Epigenomes Item"   
@@ -4078,6 +4240,7 @@
                             {
                                 "name": "Our Epigenomes Item",
                                 "src": "images/projects/our-epigenomes/hi-res/our-epigenomes-15.jpg",
+                                "src_low": "images/projects/our-epigenomes/low-res/our-epigenomes-15.jpg",
                                 "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-15.jpg",
                                 "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-15.jpg",
                                 "caption": "Our Epigenomes Item"   
@@ -4085,6 +4248,7 @@
                             {
                                 "name": "Our Epigenomes Item",
                                 "src": "images/projects/our-epigenomes/hi-res/our-epigenomes-16.jpg",
+                                "src_low": "images/projects/our-epigenomes/low-res/our-epigenomes-16.jpg",
                                 "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-16.jpg",
                                 "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-16.jpg",
                                 "caption": "Our Epigenomes Item"   
@@ -4163,6 +4327,7 @@
                             {
                                 "name": "Cabin Cards Item",
                                 "src": "images/projects/cards/hi-res/cards-0.jpg",
+                                "src_low": "images/projects/cards/low-res/cards-0.jpg",
                                 "src_mobile": "images/projects/cards/hi-res/cards-0.jpg",
                                 "src_preview": "images/projects/cards/hi-res/cards-0.jpg",
                                 "caption": "Cabin Cards Item"   
@@ -4170,6 +4335,7 @@
                             {
                                 "name": "Cabin Cards Item",
                                 "src": "images/projects/cards/hi-res/cards-1.jpg",
+                                "src_low": "images/projects/cards/low-res/cards-1.jpg",
                                 "src_mobile": "images/projects/cards/hi-res/cards-1.jpg",
                                 "src_preview": "images/projects/cards/hi-res/cards-1.jpg",
                                 "caption": "Cabin Cards Item"   
@@ -4177,6 +4343,7 @@
                             {
                                 "name": "Cabin Cards Item",
                                 "src": "images/projects/cards/hi-res/cards-2.jpg",
+                                "src_low": "images/projects/cards/low-res/cards-2.jpg",
                                 "src_mobile": "images/projects/cards/hi-res/cards-2.jpg",
                                 "src_preview": "images/projects/cards/hi-res/cards-2.jpg",
                                 "caption": "Cabin Cards Item"   
@@ -4184,6 +4351,7 @@
                             {
                                 "name": "Cabin Cards Item",
                                 "src": "images/projects/cards/hi-res/cards-3.jpg",
+                                "src_low": "images/projects/cards/low-res/cards-3.jpg",
                                 "src_mobile": "images/projects/cards/hi-res/cards-3.jpg",
                                 "src_preview": "images/projects/cards/hi-res/cards-3.jpg",
                                 "caption": "Cabin Cards Item"   
@@ -4191,6 +4359,7 @@
                             {
                                 "name": "Cabin Cards Item",
                                 "src": "images/projects/cards/hi-res/cards-4.jpg",
+                                "src_low": "images/projects/cards/low-res/cards-4.jpg",
                                 "src_mobile": "images/projects/cards/hi-res/cards-4.jpg",
                                 "src_preview": "images/projects/cards/hi-res/cards-4.jpg",
                                 "caption": "Cabin Cards Item"   
@@ -4198,6 +4367,7 @@
                             {
                                 "name": "Cabin Cards Item",
                                 "src": "images/projects/cards/hi-res/cards-5.jpg",
+                                "src_low": "images/projects/cards/low-res/cards-5.jpg",
                                 "src_mobile": "images/projects/cards/hi-res/cards-5.jpg",
                                 "src_preview": "images/projects/cards/hi-res/cards-5.jpg",
                                 "caption": "Cabin Cards Item"   
@@ -4205,6 +4375,7 @@
                             {
                                 "name": "Cabin Cards Item",
                                 "src": "images/projects/cards/hi-res/cards-6.jpg",
+                                "src_low": "images/projects/cards/low-res/cards-6.jpg",
                                 "src_mobile": "images/projects/cards/hi-res/cards-6.jpg",
                                 "src_preview": "images/projects/cards/hi-res/cards-6.jpg",
                                 "caption": "Cabin Cards Item"   
@@ -4212,6 +4383,7 @@
                             {
                                 "name": "Cabin Cards Item",
                                 "src": "images/projects/cards/hi-res/cards-7.jpg",
+                                "src_low": "images/projects/cards/low-res/cards-7.jpg",
                                 "src_mobile": "images/projects/cards/hi-res/cards-7.jpg",
                                 "src_preview": "images/projects/cards/hi-res/cards-7.jpg",
                                 "caption": "Cabin Cards Item"   
@@ -4276,6 +4448,7 @@
                             {
                                 "name": "Jenga Unchained Item",
                                 "src": "images/projects/jenga-unchained/hi-res/jenga-cu-3.jpg",
+                                "src_low": "images/projects/jenga-unchained/low-res/jenga-cu-3.jpg",
                                 "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-cu-3.jpg",
                                 "src_preview": "images/projects/jenga-unchained/hi-res/jenga-cu-3.jpg",
                                 "caption": "Jenga Unchained Item"   
@@ -4283,6 +4456,7 @@
                             {
                                 "name": "Jenga Unchained Item",
                                 "src": "images/projects/jenga-unchained/hi-res/jenga-cu-1.jpg",
+                                "src_low": "images/projects/jenga-unchained/low-res/jenga-cu-1.jpg",
                                 "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-cu-1.jpg",
                                 "src_preview": "images/projects/jenga-unchained/hi-res/jenga-cu-1.jpg",
                                 "caption": "Jenga Unchained Item"   
@@ -4290,6 +4464,7 @@
                             {
                                 "name": "Jenga Unchained Item",
                                 "src": "images/projects/jenga-unchained/hi-res/jenga-cu-2.jpg",
+                                "src_low": "images/projects/jenga-unchained/low-res/jenga-cu-2.jpg",
                                 "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-cu-2.jpg",
                                 "src_preview": "images/projects/jenga-unchained/hi-res/jenga-cu-2.jpg",
                                 "caption": "Jenga Unchained Item"   
@@ -4297,6 +4472,7 @@
                             {
                                 "name": "Jenga Unchained Item",
                                 "src": "images/projects/jenga-unchained/hi-res/jenga-rules-1.jpg",
+                                "src_low": "images/projects/jenga-unchained/low-res/jenga-rules-1.jpg",
                                 "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-rules-1.jpg",
                                 "src_preview": "images/projects/jenga-unchained/hi-res/jenga-rules-1.jpg",
                                 "caption": "Jenga Unchained Item"   
@@ -4304,6 +4480,7 @@
                             {
                                 "name": "Jenga Unchained Item",
                                 "src": "images/projects/jenga-unchained/hi-res/jenga-0.jpg",
+                                "src_low": "images/projects/jenga-unchained/low-res/jenga-0.jpg",
                                 "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-0.jpg",
                                 "src_preview": "images/projects/jenga-unchained/hi-res/jenga-0.jpg",
                                 "caption": "Jenga Unchained Item"   
@@ -4311,6 +4488,7 @@
                             {
                                 "name": "Jenga Unchained Item",
                                 "src": "images/projects/jenga-unchained/hi-res/jenga-1.jpg",
+                                "src_low": "images/projects/jenga-unchained/low-res/jenga-1.jpg",
                                 "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-1.jpg",
                                 "src_preview": "images/projects/jenga-unchained/hi-res/jenga-1.jpg",
                                 "caption": "Jenga Unchained Item"   
@@ -4318,6 +4496,7 @@
                             {
                                 "name": "Jenga Unchained Item",
                                 "src": "images/projects/jenga-unchained/hi-res/jenga-2.jpg",
+                                "src_low": "images/projects/jenga-unchained/low-res/jenga-2.jpg",
                                 "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-2.jpg",
                                 "src_preview": "images/projects/jenga-unchained/hi-res/jenga-2.jpg",
                                 "caption": "Jenga Unchained Item"   
@@ -4325,6 +4504,7 @@
                             {
                                 "name": "Jenga Unchained Item",
                                 "src": "images/projects/jenga-unchained/hi-res/jenga-3.jpg",
+                                "src_low": "images/projects/jenga-unchained/low-res/jenga-3.jpg",
                                 "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-3.jpg",
                                 "src_preview": "images/projects/jenga-unchained/hi-res/jenga-3.jpg",
                                 "caption": "Jenga Unchained Item"   
@@ -4332,6 +4512,7 @@
                             {
                                 "name": "Jenga Unchained Item",
                                 "src": "images/projects/jenga-unchained/hi-res/jenga-5.jpg",
+                                "src_low": "images/projects/jenga-unchained/low-res/jenga-5.jpg",
                                 "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-5.jpg",
                                 "src_preview": "images/projects/jenga-unchained/hi-res/jenga-5.jpg",
                                 "caption": "Jenga Unchained Item"   
@@ -4339,6 +4520,7 @@
                             {
                                 "name": "Jenga Unchained Item",
                                 "src": "images/projects/jenga-unchained/hi-res/jenga-6.jpg",
+                                "src_low": "images/projects/jenga-unchained/low-res/jenga-6.jpg",
                                 "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-6.jpg",
                                 "src_preview": "images/projects/jenga-unchained/hi-res/jenga-6.jpg",
                                 "caption": "Jenga Unchained Item"   
@@ -4346,6 +4528,7 @@
                             {
                                 "name": "Jenga Unchained Item",
                                 "src": "images/projects/jenga-unchained/hi-res/jenga-7.jpg",
+                                "src_low": "images/projects/jenga-unchained/low-res/jenga-7.jpg",
                                 "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-7.jpg",
                                 "src_preview": "images/projects/jenga-unchained/hi-res/jenga-7.jpg",
                                 "caption": "Jenga Unchained Item"   
@@ -4366,6 +4549,7 @@
                             {
                                 "name": "Jenga Unchained CAD",
                                 "src": "images/projects/jenga-unchained/hi-res/jenga-cad-0.jpg",
+                                "src_low": "images/projects/jenga-unchained/low-res/jenga-cad-0.jpg",
                                 "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-cad-0.jpg",
                                 "src_preview": "images/projects/jenga-unchained/hi-res/jenga-cad-0.jpg",
                                 "caption": "Jenga Unchained CAD"   
@@ -4373,6 +4557,7 @@
                             {
                                 "name": "Jenga Unchained CAD",
                                 "src": "images/projects/jenga-unchained/hi-res/jenga-cad-1.jpg",
+                                "src_low": "images/projects/jenga-unchained/low-res/jenga-cad-1.jpg",
                                 "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-cad-1.jpg",
                                 "src_preview": "images/projects/jenga-unchained/hi-res/jenga-cad-1.jpg",
                                 "caption": "Jenga Unchained CAD"   
@@ -4380,6 +4565,7 @@
                             {
                                 "name": "Jenga Unchained CAD",
                                 "src": "images/projects/jenga-unchained/hi-res/jenga-cad-2.jpg",
+                                "src_low": "images/projects/jenga-unchained/low-res/jenga-cad-2.jpg",
                                 "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-cad-2.jpg",
                                 "src_preview": "images/projects/jenga-unchained/hi-res/jenga-cad-2.jpg",
                                 "caption": "Jenga Unchained CAD"   
@@ -4387,6 +4573,7 @@
                             {
                                 "name": "Jenga Unchained CAD",
                                 "src": "images/projects/jenga-unchained/hi-res/jenga-cad-3.jpg",
+                                "src_low": "images/projects/jenga-unchained/low-res/jenga-cad-3.jpg",
                                 "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-cad-3.jpg",
                                 "src_preview": "images/projects/jenga-unchained/hi-res/jenga-cad-3.jpg",
                                 "caption": "Jenga Unchained CAD"   

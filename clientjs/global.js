@@ -11,8 +11,8 @@ http://alexnortn.com
 // jQuery things
 let $ = require('jquery');
         require('./jquery.centerIn.js');
+        require('lazysizes');
         require('./cssTransitionEnd.js');
-        require('../node_modules/unveil2/src/jquery.unveil2.js');
 
 let _site_content = require('./content.json');
 
@@ -433,6 +433,11 @@ $(document).ready(function() {
                 });
 
             _openProjectState = true;
+
+
+            // Lazysizes configuration
+            window.lazySizesConfig = window.lazySizesConfig || {};
+            window.lazySizesConfig.expand = 0; // Loading offset
         }
 
         // --------------------------------------
@@ -537,42 +542,6 @@ $(document).ready(function() {
         }
 
     }();
-
-
-    // --------------------------------------
-    // Lazy Load Images --> Unveil2
-
-    $('.unveil').unveil({
-        offset: 800,
-        container: $('.endeavor-view'),
-        placeholder: '../images/loader2.png'
-    });
-
-    // More event control
-    // .on('loading.unveil', function () {
-    //     console.log('Unveiling', this);
-    // }).on('loaded.unveil', function () {
-    //     console.log('Unveiled', this);
-    // });
-
-
-    // $('..unveil').unveil({
-    //     placeholder: 'http://placehold.it/500x300',
-    // }).on('loading.unveil', function() {
-    //     console.log('unveiling ' + this);
-    // }).on('loaded.unveil', function() {
-    //     this.removeClass('veil');
-    //     console.log('unveiled ' + this);
-    // });
-
-    // $('..unveil').unveil();    
-
-    // $('..unveil').unveil(200, function() {
-    //     $(this).load(function() {
-    //         this.removeClass('veil');
-    //         console.log('unviel ' + this);
-    //     });
-    // });
 
 
     // --------------------------------------
