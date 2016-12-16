@@ -24,7 +24,7 @@ mixin caseStudyPreview(data, index)
                     h3=data.project_type
                     h2=data.name
                     hr
-                    //- p=data.description.brief
+                    //- p=data.description.quote
             .hero-box
                 .hero(style=`background-image: url(${data.image_hero})`)
 
@@ -41,7 +41,7 @@ mixin projectPreview(data, index)
     li.select-work-item.item.project-item&attributes( {'data-inproject': false}, {'data-projectIndex': index}, {'data-project': data.route}, {'id': data.preview} )
         .select-work-img-container
             .select-work-description
-                p.tamer=data.description.brief
+                p.tamer=data.description.quote
                 hr
             .select-work-img(style=`background-image: url(${data.image_preview})`)
         h3 #{data.name}

@@ -46,7 +46,7 @@ pug_html = pug_html + "\u003Cdiv class=\"select-work-description\"\u003E";
 ;pug_debug_line = 44;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + "\u003Cp class=\"tamer\"\u003E";
 ;pug_debug_line = 44;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + (pug_escape(null == (pug_interp = data.description.brief) ? "" : pug_interp)) + "\u003C\u002Fp\u003E";
+pug_html = pug_html + (pug_escape(null == (pug_interp = data.description.quote) ? "" : pug_interp)) + "\u003C\u002Fp\u003E";
 ;pug_debug_line = 45;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + "\u003Chr\u002F\u003E\u003C\u002Fdiv\u003E";
 ;pug_debug_line = 46;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
