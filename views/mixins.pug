@@ -217,7 +217,7 @@ mixin endeavorPullheaderCaptionFS(data)
     - var subheader = data.subheader
     - var caption = data.caption
     - var textColor = data.textColor ? data.textColor : "#232323" // $BLACK
-    .endeavor-item.endeavor-flex.endeavor-flex-center.endeavor-flex-column.fsw
+    .endeavor-item-125.endeavor-flex.endeavor-flex-center.endeavor-flex-column.fsw
         h2.endeavor-subheader.endeavor-pull-quote(style=`color: ${textColor}`)=subheader
         p.endeavor-caption-2.no-margin.endeavor-text-center.endeavor-width-60-prcnt(style=`color: ${textColor}`)=caption
 
@@ -244,7 +244,7 @@ mixin endeavorSubheaderFS(data)
     .edeavor-item.endeavor-item-top-125
         h3(style=`color: ${textColor}`)=data.subheader
 
-        hr.slight.endeavor-item-top-10.fsw(style=`border-color: ${ruleColor}`)
+        //- hr.slight.endeavor-item-top-10.fsw(style=`border-color: ${ruleColor}`)
 
 
 //-  Endeavor Project | Full-Width blocking, Sub-Header
@@ -482,7 +482,7 @@ mixin endeavorImageNoMarginFS(data)
 
 mixin endeavorImageNoBottomFS(data)
     - var image = data.image
-    img.lazyload.endeavor-item-bottom-none.blur-up.fsw(src=image.src_low)&attributes({'data-src': image.src})
+    img.lazyload.endeavor-item.endeavor-item-bottom-none.blur-up.fsw(src=image.src_low)&attributes({'data-src': image.src})
 
 
 //-  Endeavor Project | 75%-Width Adaptive Image // No Top Margin
@@ -723,8 +723,8 @@ mixin endeavorCaptionHeader(data, _width, _textColor)
     - var header = data.header
     - var caption = data.caption
     - var textColor = _textColor ? _textColor : "#232323" // $BLACK
-    .endeavor-border-top.endeavor-item-all-25(style=`border-color: ${textColor}`)
-        h4.endeavor-item-bottom-15(style=`color: ${textColor}`)=header
+    .endeavor-item-all-25(style=`border-color: ${textColor}`)
+        h5(style=`color: ${textColor}`)=header
         p.caption.caption-mod.endeavor-text-left.no-margin.endeavor-item-top-5(style=`color: ${textColor}`)=caption
 
 
