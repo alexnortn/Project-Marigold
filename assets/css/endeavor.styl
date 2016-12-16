@@ -424,6 +424,8 @@ $StickyOffsetMeta = 20vh
 	top $StickyOffsetMeta
 	height 500px
 	
+	max-width 150px
+	
 	display flex
 	flex-direction column
 	order 1
@@ -431,26 +433,25 @@ $StickyOffsetMeta = 20vh
 	border-left 1px solid $GRAY
 	padding 20px 75px 0 35px
 	
+
 .meta-data line 
 	color $BLACK_Q
 	
+
 .meta-data ul li
 	font-family 'Source Sans Pro', sans-serif
-	font-weight 400
+	font-size 12px
+	font-weight 300
+	line-height 1.25
+	
+	text-align left
 
 
 .meta-data ul li:nth-child(odd) 
-	font-size 8px
-	text-transform uppercase
-	line-height 3em
-	letter-spacing 1px
-	text-align left
-	color $GREY
-
+	font-weight 400
+	margin-bottom 5px
 
 .meta-data ul li:nth-child(even) 
-	font-size 12px
-	letter-spacing .25px
 	margin-bottom 15px
 	
 
@@ -1579,6 +1580,8 @@ p.center-caption
 		flex-direction row
 		flex-wrap wrap
 		
+		max-width 100%
+		
 		border-radius 10px 10px 0 0
 		border 1px solid $GREY_BG
 		border-top 10px solid $GREY_BG
@@ -1671,6 +1674,8 @@ p.center-caption
 	.meta-data
 		flex-direction row
 		flex-wrap wrap
+		
+		max-width 100%
 		
 		border-radius 10px 10px 0 0
 		border 1px solid $GREY_BG
