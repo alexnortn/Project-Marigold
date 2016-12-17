@@ -630,10 +630,11 @@ mixin endeavorParallaxBehind(data)
 mixin endeavorParallaxCaptionRight(data)
     - var imageBig = data.imageBig
     - var imageParallax = data.imageParallax
+    - var sources = data.imageParallax.src_standard + " 1x, " + data.imageParallax.src_retina + " 2x"
     - var caption = data.caption
     .endeavor-item.fsw.endeavor-parallax-hybrid.parallax__group  
         .endeavor-parallax-hybrid-color(style=`background-image: url(${imageBig.src})`)
-        img.lazyload.img-box.endeavor-parallax-hybrid-left-img-box.parallax__layer.parallax__layer--fore(src=`${imageParallax.src}`)
+        img.lazyload.img-box.endeavor-parallax-hybrid-left-img-box.parallax__layer.parallax__layer--fore(src=`${imageParallax.src_low}`)&attributes({'data-src': imageParallax.src}, {'data-srcset': sources})
         p.endeavor-parallax-hybrid-left-caption.caption=caption
 
 
@@ -644,10 +645,11 @@ mixin endeavorParallaxCaptionRight(data)
 mixin endeavorParallaxCaptionLeft(data)
     - var imageBig = data.imageBig
     - var imageParallax = data.imageParallax
+    - var sources = data.imageParallax.src_standard + " 1x, " + data.imageParallax.src_retina + " 2x"
     - var caption = data.caption
     .endeavor-item.fsw.endeavor-parallax-hybrid.parallax__group  
         .endeavor-parallax-hybrid-color(style=`background-image: url(${imageBig})`)
-        img.lazyload.img-box.endeavor-parallax-hybrid-right-img-box.parallax__layer.parallax__layer--fore(src=`${imageParallax.src}`)
+        img.lazyload.img-box.endeavor-parallax-hybrid-right-img-box.parallax__layer.parallax__layer--fore(src=`${imageParallax.src_low}`)&attributes({'data-src': imageParallax.src}, {'data-srcset': sources})
         p.endeavor-parallax-hybrid-right-caption.caption=caption
 
 
@@ -760,7 +762,7 @@ mixin endeavorImageHeader(data, _width)
         img.lazyload.blur-up.fsw(src=image_top.src_low)&attributes({'data-src': image_top.src}, {'data-srcset': sources_top})
         h4.endeavor-item-bottom-15.endeavor-text-center.endeavor-item-top-50=header
         each image, index in images
-            - var sources = data.image.src_standard + " 1x, " + data.image.src_retina + " 2x"
+            - var sources = image.src_standard + " 1x, " + image.src_retina + " 2x"
             img.lazyload.blur-up.fsw(src=`${image.src_low}`)&attributes({'data-src': image.src}, {'data-srcset': sources})
 
 
