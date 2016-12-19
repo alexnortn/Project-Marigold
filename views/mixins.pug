@@ -273,7 +273,7 @@ mixin endeavorIntroFS(data)
     - var subtext = data.subtext
     - var bgColor = data.bgColor ? data.bgColor : "transparent"
     - var textColor = data.textColor ? data.textColor : "#232323" // $BLACK
-    .endeavor-flex-column.endeavor-flex-center.fsw(style=`background-color: ${bgColor}`)(class=`${_margin}`)
+    .endeavor-flex-column.endeavor-flex-center.fsw(style=`background-color: ${bgColor}`, class=`${_margin}`)
         h1.endeavor-block.endeavor-header(style=`color: ${textColor}`)=data.header
         p.endeavor-block.endeavor-subtext(style=`color: ${textColor}`)=data.subtext
 
@@ -731,6 +731,28 @@ mixin endeavorVerticalComparison(data)
             p.endeavor-pos-abs.endeavor-width-150px.endeavor-right-100px.endeavor-text-right(style=`color: ${textColor};font-weight: ${weight}`)=textRight
 
 
+//-  Endeavor Project | Full 100vw Element
+    Requires: <data.modules> <data.modules.data> 
+    Description: Useful for creating flowing comparisons
+
+mixin endeavorAnalysisComparision(data)
+    - var bgColor = data.bgColor ? data.bgColor : "transparent"
+    - var header = data.header
+    - var process = data.process
+    - var _class = data.class ? data.class : "endeavor-item"
+    .endeavor-width-100vw.endeavor-bg-200.endeavor-bg-center.endeavor-pos-rel(class=`${_class}`)(style=`background-color: ${bgColor}`)
+        .endeavor-item-no-margin.endeavor-width-norm
+            .endeavor-float-left.endeavor-25.endeavor-width-35-prcnt.endeavor-min-width-150px.endeavor-height-100px
+                h4=header
+            each step, index in process
+                .endeavor-float-left.endeavor-25.endeavor-width-35-prcnt.endeavor-min-width-150px.endeavor-height-100px
+                    h4=step.header
+                .endeavor-flex-row
+                    each content, iindex in step.contents
+                        .endeavor-width-50-prcnt.endeavor-25.endeavor-height-100px
+                            h4=content.header
+                            p=content.description
+
 
 //- -------------- Hybrid Components ----------------
 
@@ -839,7 +861,7 @@ mixin endeavorInfographicCompare(data)
 
 //-  Endeavor Project | Full 100vw Element
     Requires: <data.modules> <data.modules.data> 
-    Useful for creating full screen extensive backgrounds + overlays
+    Description: Useful for creating full screen extensive backgrounds + overlays
 
 mixin endeavorModuleMachine(data)
     - var bgImage = data.bgImage ? data.bgImage : "none"
