@@ -490,6 +490,204 @@
                     }
                 },
                 {
+                    "name" : "endeavorAnalysisComparision",
+                    "data" : {
+                        "header" : "Connectomics Process",
+                        "bgColor" : "#e6e6e6",
+                        "process" : [
+                            {
+                                "header" : "Physiology",
+                                "contents" : [
+                                    {
+                                        "header" : "Description",
+                                        "description" : "Record functional neural activity from living organism."
+                                    },
+                                    {
+                                        "header" : "Discipline",
+                                        "description" : "Biology"
+                                    },
+                                    {
+                                        "header" : "Process",
+                                        "description" : "Calcium imaging, probes, experiment."
+                                    },
+                                    {
+                                        "header" : "Automatable",
+                                        "description" : "No"
+                                    }
+                                ]
+                            },
+                            {
+                                "header" : "Preparation",
+                                "contents" : [
+                                    {
+                                        "header" : "Description",
+                                        "description" : "Prepare brain sample for imaging."
+                                    },
+                                    {
+                                        "header" : "Discipline",
+                                        "description" : "Biology"
+                                    },
+                                    {
+                                        "header" : "Process",
+                                        "description" : "Manual disection + surgery of specimen."
+                                    },
+                                    {
+                                        "header" : "Automatable",
+                                        "description" : "No"
+                                    }
+                                ]
+                            },
+                            {
+                                "header" : "Slice",
+                                "contents" : [
+                                    {
+                                        "header" : "Description",
+                                        "description" : "After the brain has been carefully disected, scientists must slice the brain into waffer thin samples as thin as 14 nanometers."
+                                    },
+                                    {
+                                        "header" : "Discipline",
+                                        "description" : "Biology"
+                                    },
+                                    {
+                                        "header" : "Process",
+                                        "description" : "Microtome vs other methods"
+                                    },
+                                    {
+                                        "header" : "Automatable",
+                                        "description" : "Yes"
+                                    }
+                                ]
+                            },
+                            {
+                                "header" : "Image",
+                                "contents" : [
+                                    {
+                                        "header" : "Description",
+                                        "description" : "In order to capture the fine structure of the brain scientists use powerful electron microscopes."
+                                    },
+                                    {
+                                        "header" : "Discipline",
+                                        "description" : "Biology"
+                                    },
+                                    {
+                                        "header" : "Process",
+                                        "description" : "Image brain tissue slices, capture to digital spaces."
+                                    },
+                                    {
+                                        "header" : "Automatable",
+                                        "description" : "Yes"
+                                    }
+                                ]
+                            },
+                            {
+                                "header" : "Align Images",
+                                "contents" : [
+                                    {
+                                        "header" : "Description",
+                                        "description" : "Align micrographs into a three dimensional volume"
+                                    },
+                                    {
+                                        "header" : "Discipline",
+                                        "description" : "Computer Science"
+                                    },
+                                    {
+                                        "header" : "Process",
+                                        "description" : "Use advanced image processing techniques to remove distortion introduced to the tissue samples during the preparation + imaging process."
+                                    },
+                                    {
+                                        "header" : "Automatable",
+                                        "description" : "Yes"
+                                    }
+                                ]
+                            },
+                            {
+                                "header" : "Generate Segmentation",
+                                "contents" : [
+                                    {
+                                        "header" : "Description",
+                                        "description" : "Segment dataset, create semantic coloring in two-dimensional space."
+                                    },
+                                    {
+                                        "header" : "Discipline",
+                                        "description" : "Computer Science"
+                                    },
+                                    {
+                                        "header" : "Process",
+                                        "description" : "Trace through image stacks following neural structures like a coloring book."
+                                    },
+                                    {
+                                        "header" : "Automatable",
+                                        "description" : "Maybe"
+                                    }
+                                ]
+                            },
+                            {
+                                "header" : "Extract Neurons",
+                                "contents" : [
+                                    {
+                                        "header" : "Description",
+                                        "description" : "Join together data from segmentation into three-dimensional volumes."
+                                    },
+                                    {
+                                        "header" : "Discipline",
+                                        "description" : "Computer Science"
+                                    },
+                                    {
+                                        "header" : "Process",
+                                        "description" : "Generate 3D volumetric meshes from stacks of 2D area representations."
+                                    },
+                                    {
+                                        "header" : "Automatable",
+                                        "description" : "Maybe"
+                                    }
+                                ]
+                            },
+                            {
+                                "header" : "Find Connections",
+                                "contents" : [
+                                    {
+                                        "header" : "Description",
+                                        "description" : "Sift through neuron branches in search of synaptic connections."
+                                    },
+                                    {
+                                        "header" : "Discipline",
+                                        "description" : "Computer Science"
+                                    },
+                                    {
+                                        "header" : "Process",
+                                        "description" : "Look for places where neurons intersect or synaptic clefts where cells exchange information."
+                                    },
+                                    {
+                                        "header" : "Automatable",
+                                        "description" : "Maybe"
+                                    }
+                                ]
+                            },
+                            {
+                                "header" : "Analyze Network",
+                                "contents" : [
+                                    {
+                                        "header" : "Description",
+                                        "description" : "Create models to understand how connections within the network add up to the overall behavior captured during the Physiology section."
+                                    },
+                                    {
+                                        "header" : "Discipline",
+                                        "description" : "Computer Science"
+                                    },
+                                    {
+                                        "header" : "Process",
+                                        "description" : "Utilize complex mathmatical models and statistics to find patterns within network connectivity."
+                                    },
+                                    {
+                                        "header" : "Automatable",
+                                        "description" : "Probably Not"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
                     "name" : "endeavorTwoImageParallaxLeft",
                     "data" : {
                         "image1" : {

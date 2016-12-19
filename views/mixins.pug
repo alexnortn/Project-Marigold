@@ -275,7 +275,7 @@ mixin endeavorIntroFS(data)
     - var textColor = data.textColor ? data.textColor : "#232323" // $BLACK
     .endeavor-flex-column.endeavor-flex-center.fsw(style=`background-color: ${bgColor}`, class=`${_margin}`)
         h1.endeavor-block.endeavor-header(style=`color: ${textColor}`)=data.header
-        p.endeavor-block.endeavor-subtext(style=`color: ${textColor}`)=data.subtext
+        p.endeavor-block.endeavor-subtext.endeavor-text-center(style=`color: ${textColor}`)=data.subtext
 
 
 //-  Endeavor Project | Full-Width Centered Header + Subtext
@@ -546,7 +546,8 @@ mixin endeavorImage75List(data)
 //- This is really slow
 
 mixin endeavorVideoFS(datum)
-    - var video = datum.video
+    //- - var video = datum.video
+    - var video = "potato"
     iframe.endeavor-item.media-settings.media-frame.video-settings(width="1920" height="1080" src=video.src frameborder="0" allowfullscreen)
 
 
@@ -741,17 +742,19 @@ mixin endeavorAnalysisComparision(data)
     - var process = data.process
     - var _class = data.class ? data.class : "endeavor-item"
     .endeavor-width-100vw.endeavor-bg-200.endeavor-bg-center.endeavor-pos-rel(class=`${_class}`)(style=`background-color: ${bgColor}`)
-        .endeavor-item-no-margin.endeavor-width-norm
-            .endeavor-float-left.endeavor-25.endeavor-width-35-prcnt.endeavor-min-width-150px.endeavor-height-100px
-                h4=header
+        .endeavor-item-no-margin.endeavor-width-60-prcnt
+            .endeavor-float-left.endeavor-15.endeavor-width-35-prcnt.endeavor-min-width-150px.endeavor-item-top
+                p.copy-small-header=header
+            .endeavor-clearfix
             each step, index in process
-                .endeavor-float-left.endeavor-25.endeavor-width-35-prcnt.endeavor-min-width-150px.endeavor-height-100px
-                    h4=step.header
-                .endeavor-flex-row
-                    each content, iindex in step.contents
-                        .endeavor-width-50-prcnt.endeavor-25.endeavor-height-100px
-                            h4=content.header
-                            p=content.description
+                .fsw.endeavor-item-top
+                    .endeavor-float-left.endeavor-5.endeavor-padding-right-10.endeavor-width-35-prcnt.endeavor-min-width-250px
+                        p.copy-small-header=step.header
+                    .endeavor-flex-row
+                        each content, iindex in step.contents
+                            .endeavor-width-50-prcnt.endeavor-5.endeavor-padding-right-10.analysis
+                                p.copy-small-header=content.header
+                                p.copy-small.endeavor-text-left=content.description
 
 
 //- -------------- Hybrid Components ----------------
