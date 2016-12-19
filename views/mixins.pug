@@ -742,17 +742,18 @@ mixin endeavorAnalysisComparision(data)
     - var process = data.process
     - var _class = data.class ? data.class : "endeavor-item"
     .endeavor-width-100vw.endeavor-bg-200.endeavor-bg-center.endeavor-pos-rel(class=`${_class}`)(style=`background-color: ${bgColor}`)
-        .endeavor-item-no-margin.endeavor-width-60-prcnt
-            .endeavor-float-left.endeavor-15.endeavor-width-35-prcnt.endeavor-min-width-150px.endeavor-item-top
+        .endeavor-item-no-margin.endeavor-width-75-prcnt.endeavor-max-width-650px.endeavor-padding-bottom-125.endeavor-center
+            .endeavor-float-left.endeavor-5.endeavor-width-25-prcnt.endeavor-min-width-200px.endeavor-item-top-125
                 p.copy-small-header=header
             .endeavor-clearfix
             each step, index in process
                 .fsw.endeavor-item-top
-                    .endeavor-float-left.endeavor-5.endeavor-padding-right-10.endeavor-width-35-prcnt.endeavor-min-width-250px
-                        p.copy-small-header=step.header
+                    .endeavor-float-left.endeavor-5.endeavor-width-25-prcnt.endeavor-min-width-200px
+                        - var number = index + 1
+                        p.copy-small-header=`${"0" + number + ". " + step.header}`
                     .endeavor-flex-row
                         each content, iindex in step.contents
-                            .endeavor-width-50-prcnt.endeavor-5.endeavor-padding-right-10.analysis
+                            .endeavor-width-50-prcnt.endeavor-5.endeavor-padding-right-25.analysis
                                 p.copy-small-header=content.header
                                 p.copy-small.endeavor-text-left=content.description
 
