@@ -443,12 +443,12 @@
                         },
                         "image" : {
                             "name": "Seunglab Personel",
-                            "src": "images/projects/museum/standard/seunglab.jpg",
-                            "src_standard": "images/projects/museum/standard/seunglab.jpg",
-                            "src_retina": "images/projects/museum/retina/seunglab.jpg",
-                            "src_low": "images/projects/museum/low-res/seunglab.jpg",
-                            "src_mobile": "images/projects/museum/hi-res/seunglab.jpg",
-                            "src_preview": "images/projects/museum/hi-res/seunglab.jpg",
+                            "src": "images/projects/museum/standard/museum-seunglab.jpg",
+                            "src_standard": "images/projects/museum/standard/museum-seunglab.jpg",
+                            "src_retina": "images/projects/museum/retina/museum-seunglab.jpg",
+                            "src_low": "images/projects/museum/low-res/museum-seunglab.jpg",
+                            "src_mobile": "images/projects/museum/hi-res/museum-seunglab.jpg",
+                            "src_preview": "images/projects/museum/hi-res/museum-seunglab.jpg",
                             "caption": "Seunglab Personel"
                         }
                     }
@@ -713,6 +713,38 @@
                     }
                 },
                 {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Sebastian TED",
+                            "src": "images/projects/museum/standard/museum-cube.gif",
+                            "src_standard": "images/projects/museum/standard/museum-cube.gif",
+                            "src_retina": "images/projects/museum/retina/museum-cube.gif",
+                            "src_low": "images/projects/museum/low-res/museum-cube.gif",
+                            "src_mobile": "images/projects/museum/hi-res/museum-cube.gif",
+                            "src_preview": "images/projects/museum/hi-res/museum-cube.gif",
+                            "caption": "Sebastian TED"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorCaptionFS",
+                    "data" : {
+                        "class" : "endeavor-item",
+                        "textColor" : "#666666",
+                        "caption" : "At SeungLab scientists study Connectomics, a specialty in the domain of Neuroscience which seeks to understand brain structure and function by constructing comprehensive maps of the connections between neurons."
+                    }
+                },
+                {
                     "name" : "endeavorChecklist",
                     "data" : {
                         "header" : "Observations",
@@ -737,6 +769,56 @@
                                 "description" : "Collaboration necessitates sharing, of knowledge, time, ideas,  skills, and increasingly data."
                             }
                         ]
+                    }
+                },
+                {
+                    "name" : "endeavorChecklist",
+                    "data" : {
+                        "header" : "Questions",
+                        "subheader" : "Qualitative Analysis",
+                        "class" : "endeavor-item-no-margin",
+                        "bgColor" : "#e6e6e6",
+                        "contents" : [
+                            {
+                                "header" : "Publish or Perish",
+                                "description" : "Researchers have an excess of data and a lack of investigative power."
+                            },
+                            {
+                                "header" : "Scale = Collaboration",
+                                "description" : "The scale of todays scientific challenges demand cross–disciplinary collaboration."
+                            },
+                            {
+                                "header" : "Go Big or Go Home",
+                                "description" : "Collaboration presents the opportunity for teams to leverage each others specialties to move faster and tackle larger and more important problems."
+                            },
+                            {
+                                "header" : "Sharing = Caring",
+                                "description" : "Collaboration necessitates sharing, of knowledge, time, ideas,  skills, and increasingly data."
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorParallaxBehind",
+                    "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Museum Project Specs",
+                            "src": "images/projects/museum/standard/museum-project-specs.jpg",
+                            "src_standard": "images/projects/museum/standard/museum-project-specs.jpg",
+                            "src_retina": "images/projects/museum/retina/museum-project-specs.jpg",
+                            "src_low": "images/projects/museum/low-res/museum-project-specs.jpg",
+                            "src_mobile": "images/projects/museum/hi-res/museum-project-specs.jpg",
+                            "src_preview": "images/projects/museum/hi-res/museum-project-specs.jpg",
+                            "caption": "Museum Project Specs"
+                        }
                     }
                 },
                 {
