@@ -382,27 +382,6 @@
             "image_preview": "images/projects/museum/hi-res/museum-hero.jpg",
             "sections" : [
                 {
-                    "name" : "endeavorImageFS",
-                    "data" : {
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "hero",
-                            "src": "images/crystal-8.jpg",
-                            "src": "images/crystal-8.jpg",
-                            "src_mobile": "images/crystal-8.jpg",
-                            "src_preview": "images/lamp-sm-0.jpg",
-                            "caption": "Side view of Gestural Lamp. "
-                        }
-                    }
-                },
-                {
                     "name" : "endeavorPad",
                     "data" : {
                         "height" : "10vw"
@@ -441,9 +420,57 @@
                     }
                 },
                 {
-                    "name" : "endeavorPad",
+                    "name" : "endeavorIntroFS",
                     "data" : {
-                        "height" : "10vw"
+                        "margin" : "endeavor-item-125",
+                        "header" : "Hello, Seunglab.",
+                        "subtext" : "At SeungLab scientists study Connectomics, a specialty in the domain of Neuroscience which seeks to understand brain structure and function by constructing comprehensive maps of the connections between neurons.",
+                        "bgColor" : "",
+                        "textColor" : "#666666"
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Seunglab Personel",
+                            "src": "images/projects/museum/standard/seunglab.jpg",
+                            "src_standard": "images/projects/museum/standard/seunglab.jpg",
+                            "src_retina": "images/projects/museum/retina/seunglab.jpg",
+                            "src_low": "images/projects/museum/low-res/seunglab.jpg",
+                            "src_mobile": "images/projects/museum/hi-res/seunglab.jpg",
+                            "src_preview": "images/projects/museum/hi-res/seunglab.jpg",
+                            "caption": "Seunglab Personel"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorCaptionHeaderGrid",
+                    "data" : {
+                        "textColor" : "#666666",
+                        "contents" : [ 
+                            {
+                                "header" : "Traditional Connectomics",
+                                "caption" : "Traditionally, Connectomics is a tedious and time consuming process performed by manually tracing through a volume of micrographs like a 3D coloring book."
+                            },
+                            {
+                                "header" : "Scaling Up",
+                                "caption" : "To glean meaningful information from biological neural networks, many thousands of neurons must be reconstructed."
+                            },
+                            {
+                                "header" : "Volumetric Reconstruction + ML",
+                                "caption" : "Researchers at SeungLab specialize in volumetric neuron reconstruction and employ sophisticated Machine Learning + Computer Vision techniques in collaboration with expert tracers to rapidly accelerate this process."
+                            }
+                        ]
                     }
                 },
                 {
@@ -454,6 +481,12 @@
                         "subtext" : "The production and study of connectomes, may range in scale from a detailed map of the full set of neurons and synapses within part or all of the nervous system of an organism to a macro scale description of the functional and structural connectivity.",
                         "bgColor" : "",
                         "textColor" : "#666666"
+                    }
+                },
+                {
+                    "name" : "endeavorPad",
+                    "data" : {
+                        "height" : "10vw"
                     }
                 },
                 {
@@ -675,6 +708,33 @@
                                         "description" : "Probably Not"
                                     }
                                 ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorChecklist",
+                    "data" : {
+                        "header" : "Observations",
+                        "subheader" : "Friction & Oppertunity",
+                        "class" : "endeavor-item-no-margin",
+                        "bgColor" : "#e6e6e6",
+                        "contents" : [
+                            {
+                                "header" : "Publish or Perish",
+                                "description" : "Researchers have an excess of data and a lack of investigative power."
+                            },
+                            {
+                                "header" : "Scale = Collaboration",
+                                "description" : "The scale of todays scientific challenges demand cross–disciplinary collaboration."
+                            },
+                            {
+                                "header" : "Go Big or Go Home",
+                                "description" : "Collaboration presents the opportunity for teams to leverage each others specialties to move faster and tackle larger and more important problems."
+                            },
+                            {
+                                "header" : "Sharing = Caring",
+                                "description" : "Collaboration necessitates sharing, of knowledge, time, ideas,  skills, and increasingly data."
                             }
                         ]
                     }

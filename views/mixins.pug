@@ -151,7 +151,8 @@ mixin endeavorDescriptionsRight(data)
 
 mixin endeavorDescriptionsBig(data)
     - var sections = data.sections
-    .endeavor-item.cf
+    - var _class = data.class ? data.class : "endeavor-item"
+    .cf(class=`${_class}`)
         .endeavor-description-big.endeavor-item-left-100.no-border
             each section, index in sections 
                 h4=section.name
@@ -275,7 +276,7 @@ mixin endeavorIntroFS(data)
     - var textColor = data.textColor ? data.textColor : "#232323" // $BLACK
     .endeavor-flex-column.endeavor-flex-center.fsw(style=`background-color: ${bgColor}`, class=`${_margin}`)
         h1.endeavor-block.endeavor-header(style=`color: ${textColor}`)=data.header
-        p.endeavor-block.endeavor-subtext.endeavor-text-center(style=`color: ${textColor}`)=data.subtext
+        p.endeavor-block.endeavor-text-center.endeavor-max-width-750px(style=`color: ${textColor}`)=data.subtext
 
 
 //-  Endeavor Project | Full-Width Centered Header + Subtext
@@ -743,19 +744,44 @@ mixin endeavorAnalysisComparision(data)
     - var _class = data.class ? data.class : "endeavor-item"
     .endeavor-width-100vw.endeavor-bg-200.endeavor-bg-center.endeavor-pos-rel(class=`${_class}`)(style=`background-color: ${bgColor}`)
         .endeavor-item-no-margin.endeavor-width-75-prcnt.endeavor-max-width-750px.endeavor-padding-bottom-125.endeavor-center.endeavor-padding-left-100
-            .endeavor-float-left.endeavor-5.endeavor-width-25-prcnt.endeavor-min-width-200px.endeavor-item-125
+            .endeavor-float-left.endeavor-5.endeavor-width-25-prcnt.endeavor-min-width-200px.endeavor-item-top-125
                 h2.copy-small-header=header
             .endeavor-clearfix
             each step, index in process
-                .fsw.endeavor-item-top
-                    .endeavor-float-left.endeavor-5.endeavor-width-25-prcnt.endeavor-min-width-200px
+                .fsw.endeavor-item-top.endeavor-border-top
+                    .endeavor-float-left.endeavor-5.endeavor-padding-right-25.endeavor-width-25-prcnt.endeavor-min-width-200px
                         - var number = index + 1
-                        p.copy-small-header=`${"0" + number + ". " + step.header}`
+                        p.copy-small-subheader.tight=`${"0" + number + ". " + step.header}`
                     .endeavor-flex-row
                         each content, iindex in step.contents
                             .endeavor-width-50-prcnt.endeavor-5.endeavor-padding-right-25.analysis
                                 p.copy-small-header=content.header
                                 p.copy-small.endeavor-text-left=content.description
+
+
+//-  Endeavor Project | Full 100vw Element
+    Requires: <data.modules> <data.modules.data> 
+    Description: Useful for creating flowing checklists
+
+mixin endeavorChecklist(data)
+    - var bgColor = data.bgColor ? data.bgColor : "transparent"
+    - var header = data.header
+    - var subheader = data.subheader
+    - var contents = data.contents
+    - var _class = data.class ? data.class : "endeavor-item"
+    .endeavor-width-100vw.endeavor-bg-200.endeavor-bg-center.endeavor-pos-rel(class=`${_class}`)(style=`background-color: ${bgColor}`)
+        .endeavor-item-no-margin.endeavor-width-75-prcnt.endeavor-max-width-750px.endeavor-padding-bottom-125.endeavor-center.endeavor-padding-left-100
+            h2.copy-small-header=header
+            .endeavor-clearfix
+            .fsw.endeavor-item-top
+                .endeavor-float-left.endeavor-5.endeavor-width-25-prcnt.endeavor-min-width-200px
+                    p.copy-small-subheader.tight=subheader
+            .endeavor-flex-row
+                each content, index in contents
+                    ul.endeavor-width-50-prcnt.endeavor-5.endeavor-padding-right-25.checklist
+                        li
+                            p.copy-small-header=content.header
+                            p.copy-small.endeavor-text-left=content.description
 
 
 //- -------------- Hybrid Components ----------------
@@ -801,7 +827,7 @@ mixin endeavorCaptionHeaderGrid(data)
     - var marginClass = data.noMargin ? "endeavor-item-no-margin" : "endeavor-item" // $BLACK
     - var textColor = data.textColor ? data.textColor : "#232323" // $BLACK
     - var contents = data.contents
-    .endeavor-flex-row-nowrap.endeavor-flex-around(class=`${marginClass}`)
+    .endeavor-flex-row-nowrap.endeavor-flex-around.endeavor-padding-bottom-50(class=`${marginClass}`)
         each content, index in contents
             +endeavorCaptionHeader(content, _width, textColor)
 
