@@ -311,7 +311,7 @@ mixin endeavorIntroFS(data)
     - var textColor = data.textColor ? data.textColor : "#232323" // $BLACK
     .endeavor-flex-column.endeavor-flex-center.fsw(style=`background-color: ${bgColor}`, class=`${_margin}`)
         h1.endeavor-block.endeavor-header(style=`color: ${textColor}`)=data.header
-        p.endeavor-block.endeavor-text-center.endeavor-max-width-750px(style=`color: ${textColor}`)=data.subtext
+        p.big-p.endeavor-block.endeavor-text-center(style=`color: ${textColor}`)=data.subtext
 
 
 //-  Endeavor Project | Full-Width Centered Header + Subtext

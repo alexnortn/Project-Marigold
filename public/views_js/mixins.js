@@ -561,7 +561,7 @@ pug_html = pug_html + "\u003Ch1" + (" class=\"endeavor-block endeavor-header\""+
 ;pug_debug_line = 313;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + (pug_escape(null == (pug_interp = data.header) ? "" : pug_interp)) + "\u003C\u002Fh1\u003E";
 ;pug_debug_line = 314;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cp" + (" class=\"endeavor-block endeavor-text-center endeavor-max-width-750px\""+pug_attr("style", pug_style(`color: ${textColor}`), true, false)) + "\u003E";
+pug_html = pug_html + "\u003Cp" + (" class=\"big-p endeavor-block endeavor-text-center\""+pug_attr("style", pug_style(`color: ${textColor}`), true, false)) + "\u003E";
 ;pug_debug_line = 314;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + (pug_escape(null == (pug_interp = data.subtext) ? "" : pug_interp)) + "\u003C\u002Fp\u003E\u003C\u002Fdiv\u003E";
 };
