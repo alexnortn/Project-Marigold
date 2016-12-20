@@ -760,12 +760,6 @@
                     }
                 },
                 {
-                    "name" : "endeavorSubheaderFS",
-                    "data" : {
-                        "subheader" : "Process 02/05: Define"
-                    }
-                },
-                {
                     "name" : "endeavorChecklist",
                     "data" : {
                         "header" : "Observations",
@@ -817,6 +811,12 @@
                                 "description" : "Collaboration necessitates sharing, of knowledge, time, ideas,  skills, and increasingly data."
                             }
                         ]
+                    }
+                },
+                {
+                    "name" : "endeavorSubheaderFS",
+                    "data" : {
+                        "subheader" : "Process 02/05: Define"
                     }
                 },
                 {

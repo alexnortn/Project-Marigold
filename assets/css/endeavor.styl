@@ -322,19 +322,6 @@ $StickyOffsetMeta = 20vh
 // endeavor (non case-study)
 .endeavor-overview .description
 	margin-left 15%
-	
-
-/* -------------------------------------- */
-/* Interaction */
-
-	.endeavor-transition-250
-		transition all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55)
-		
-	.endeavor-reveal
-		height 0
-		
-	.endeavor-no-flow
-		overflow hidden
 		
 
 
@@ -1199,7 +1186,7 @@ p.center-caption
 	
 
 .endeavor-width-100vw
-	height auto
+	max-height 25000px // Animation Trick
 	width 102vw
 	left calc((102vw - 1275px) / -2) // 1200~ Max contents relative width
 	
@@ -1455,6 +1442,23 @@ p.center-caption
 .endeavor-vertical-last
 	bottom 400px
 	height 100px
+	
+
+
+/* -------------------------------------- */
+/* Interaction */
+
+	.endeavor-transition-250
+		transition all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55)
+		
+	.endeavor-transition-1000
+		transition all 1000ms cubic-bezier(0.68, -0.55, 0.265, 1.55)
+		
+	.endeavor-reveal
+		max-height 0
+		
+	.endeavor-no-flow
+		overflow hidden
 
 
 
