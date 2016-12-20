@@ -830,11 +830,11 @@ mixin endeavorChecklist(data)
     - var contents = data.contents
     - var _class = data.class ? data.class : "endeavor-item"
     .endeavor-width-100vw.endeavor-bg-200.endeavor-bg-center.endeavor-pos-rel.endeavor-transition-250(id=`${_id}`)(class=`${_class}`)(style=`background-color: ${bgColor}`)
-        .endeavor-item-no-vertical-margin.endeavor-width-75-prcnt.endeavor-padding-bottom-125.endeavor-center
+        .endeavor-item-no-vertical-margin.endeavor-width-75-prcnt.endeavor-padding-bottom-75.endeavor-center
             h2=header
             .endeavor-flex-row.endeavor-padding-top-25.endeavor-padding-left-50
                 each content, index in contents
-                    ul.endeavor-width-75-prcnt.endeavor-max-width-500.endeavor-25.endeavor-padding-right-25.checklist
+                    ul.endeavor-width-75-prcnt.endeavor-max-width-500.endeavor-15.endeavor-padding-right-25.checklist
                         li
                             p.roman=content.header
                             p=content.description

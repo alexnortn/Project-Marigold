@@ -39,7 +39,8 @@ let BASEURL = argv.production
 
 gulp.task('default', ['build']);
 
-gulp.task('build', [ 'images', 'js', 'pug', 'css', 'fonts', 'plugins']);
+// Removed "pug"
+gulp.task('build', [ 'images', 'js', 'css', 'fonts', 'plugins']);
 
 
 gulp.task('images', [ ], function () {
