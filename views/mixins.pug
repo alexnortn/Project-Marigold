@@ -22,7 +22,7 @@ mixin caseStudyPreview(data, index)
             .description
                 .description-wrapper
                     h3=data.project_type
-                    h2=data.name
+                    h2.project-intro=data.name
                     hr
                     //- p=data.description.quote
             .hero-box
@@ -60,7 +60,7 @@ mixin endeavorHeader(data)
         .description
             .description-wrapper
                 h3=data.project_type
-                h2=data.name
+                h2.project-intro=data.name
                 hr
                 //- p=data.description.brief
         .hero-box.hero-parallax.parallax__group
@@ -830,18 +830,14 @@ mixin endeavorChecklist(data)
     - var contents = data.contents
     - var _class = data.class ? data.class : "endeavor-item"
     .endeavor-width-100vw.endeavor-bg-200.endeavor-bg-center.endeavor-pos-rel.endeavor-transition-250(id=`${_id}`)(class=`${_class}`)(style=`background-color: ${bgColor}`)
-        .endeavor-item-no-vertical-margin.endeavor-width-75-prcnt.endeavor-max-width-750px.endeavor-padding-bottom-125.endeavor-center.endeavor-padding-left-100.endeavor-padding-tablet-none
-            h2.copy-small-header=header
-            .endeavor-clearfix
-            .fsw.endeavor-item-top
-                .endeavor-float-left.endeavor-5.endeavor-padding-right-25.endeavor-width-25-prcnt.endeavor-min-width-200px
-                    p.copy-small-subheader.tight=subheader
-            .endeavor-flex-row.endeavor-clear-tablet.endeavor-padding-25-tablet
+        .endeavor-item-no-vertical-margin.endeavor-width-75-prcnt.endeavor-max-width-750px.endeavor-padding-bottom-125.endeavor-center
+            h2=header
+            .endeavor-flex-row.endeavor-padding-top-25.endeavor-padding-left-50
                 each content, index in contents
-                    ul.endeavor-width-50-prcnt.endeavor-5.endeavor-padding-right-25.checklist
+                    ul.endeavor-width-75-prcnt.endeavor-max-width-500.endeavor-5.endeavor-padding-right-25.checklist
                         li
-                            p.copy-small-header=content.header
-                            p.copy-small.endeavor-text-left=content.description
+                            p.roman=content.header
+                            p=content.description
 
 
 //- -------------- Hybrid Components ----------------

@@ -382,9 +382,14 @@
             "image_preview": "images/projects/museum/hi-res/museum-hero.jpg",
             "sections" : [
                 {
-                    "name" : "endeavorSubheaderFS",
+                    "name" : "endeavorDesignProcess",
                     "data" : {
-                        "subheader" : "Final Application"
+                        "class" : "endeavor-item-top-250 endeavor-item",
+                        "process" : "Final Deliverable",
+                        "text" : "",
+                        "number" : "00/05",
+                        "bgColor" : "#1e1e1e",
+                        "textColor" : "#666666"
                     }
                 },
                 {
@@ -441,7 +446,7 @@
                     "data" : {
                         "margin" : "endeavor-item-250",
                         "header" : "Hello, Seunglab",
-                        "subtext" : "At SeungLab scientists study Connectomics, a specialty in the domain of Neuroscience which seeks to understand brain structure and function by constructing comprehensive maps of the connections between neurons.",
+                        "subtext" : "At Seunglab scientists study Connectomics, a specialty in the domain of Neuroscience which seeks to understand brain structure and function by constructing comprehensive maps of the connections between neurons.",
                         "bgColor" : "",
                         "textColor" : "#666666"
                     }
