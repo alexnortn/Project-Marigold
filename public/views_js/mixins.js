@@ -1267,7 +1267,7 @@ var _class = data.class ? data.class : "endeavor-item"
 ;pug_debug_line = 760;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + "\u003Cdiv" + (pug_attr("class", pug_classes(["endeavor-width-100vw","endeavor-bg-200","endeavor-bg-center","endeavor-pos-rel","endeavor-pos-rel","endeavor-transition-1000","endeavor-no-flow",`${_class}`], [false,false,false,false,false,false,false,true]), false, false)+pug_attr("id", `${_id}`, true, false)+pug_attr("style", pug_style(`background-color: ${bgColor}`), true, false)) + "\u003E";
 ;pug_debug_line = 761;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cdiv class=\"endeavor-item-no-margin endeavor-width-75-prcnt endeavor-max-width-750px endeavor-padding-bottom-125 endeavor-center endeavor-padding-left-100\"\u003E";
+pug_html = pug_html + "\u003Cdiv class=\"endeavor-item-no-margin endeavor-width-75-prcnt endeavor-max-width-750px endeavor-padding-bottom-125 endeavor-center endeavor-padding-left-100 endeavor-padding-tablet-none\"\u003E";
 ;pug_debug_line = 762;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + "\u003Cdiv class=\"endeavor-float-left endeavor-5 endeavor-width-25-prcnt endeavor-min-width-200px endeavor-item-top-125\"\u003E";
 ;pug_debug_line = 763;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
@@ -1295,7 +1295,7 @@ pug_html = pug_html + "\u003Cp class=\"copy-small-subheader tight\"\u003E";
 ;pug_debug_line = 769;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + (pug_escape(null == (pug_interp = `${"0" + number + ". " + step.header}`) ? "" : pug_interp)) + "\u003C\u002Fp\u003E\u003C\u002Fdiv\u003E";
 ;pug_debug_line = 770;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cdiv class=\"endeavor-flex-row\"\u003E";
+pug_html = pug_html + "\u003Cdiv class=\"endeavor-flex-row endeavor-clear-tablet\"\u003E";
 ;pug_debug_line = 771;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 // iterate step.contents
 var pug_obj10 = step.contents;
@@ -1356,7 +1356,7 @@ pug_html = pug_html + "\u003Cp class=\"copy-small-subheader tight\"\u003E";
 ;pug_debug_line = 769;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + (pug_escape(null == (pug_interp = `${"0" + number + ". " + step.header}`) ? "" : pug_interp)) + "\u003C\u002Fp\u003E\u003C\u002Fdiv\u003E";
 ;pug_debug_line = 770;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cdiv class=\"endeavor-flex-row\"\u003E";
+pug_html = pug_html + "\u003Cdiv class=\"endeavor-flex-row endeavor-clear-tablet\"\u003E";
 ;pug_debug_line = 771;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 // iterate step.contents
 var pug_obj11 = step.contents;
@@ -1418,7 +1418,7 @@ var _class = data.class ? data.class : "endeavor-item"
 ;pug_debug_line = 786;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + "\u003Cdiv" + (pug_attr("class", pug_classes(["endeavor-width-100vw","endeavor-bg-200","endeavor-bg-center","endeavor-pos-rel","endeavor-transition-1000","endeavor-no-flow",`${_class}`], [false,false,false,false,false,false,true]), false, false)+pug_attr("id", `${_id}`, true, false)+pug_attr("style", pug_style(`background-color: ${bgColor}`), true, false)) + "\u003E";
 ;pug_debug_line = 787;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cdiv class=\"endeavor-item-no-margin endeavor-width-75-prcnt endeavor-max-width-750px endeavor-padding-bottom-125 endeavor-center endeavor-padding-left-100\"\u003E";
+pug_html = pug_html + "\u003Cdiv class=\"endeavor-item-no-vertical-margin endeavor-width-75-prcnt endeavor-max-width-750px endeavor-padding-bottom-125 endeavor-center endeavor-padding-left-100 endeavor-padding-tablet-none\"\u003E";
 ;pug_debug_line = 788;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 // iterate process
 var pug_obj12 = process;
@@ -1438,7 +1438,7 @@ pug_html = pug_html + "\u003Cp class=\"copy-small-subheader tight\"\u003E";
 ;pug_debug_line = 792;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + (pug_escape(null == (pug_interp = `${"0" + number + ". " + step.header}`) ? "" : pug_interp)) + "\u003C\u002Fp\u003E\u003C\u002Fdiv\u003E";
 ;pug_debug_line = 793;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cdiv class=\"endeavor-flex-row\"\u003E";
+pug_html = pug_html + "\u003Cdiv class=\"endeavor-flex-row endeavor-clear-tablet\"\u003E";
 ;pug_debug_line = 794;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 // iterate step.contents
 var pug_obj13 = step.contents;
@@ -1499,7 +1499,7 @@ pug_html = pug_html + "\u003Cp class=\"copy-small-subheader tight\"\u003E";
 ;pug_debug_line = 792;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + (pug_escape(null == (pug_interp = `${"0" + number + ". " + step.header}`) ? "" : pug_interp)) + "\u003C\u002Fp\u003E\u003C\u002Fdiv\u003E";
 ;pug_debug_line = 793;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cdiv class=\"endeavor-flex-row\"\u003E";
+pug_html = pug_html + "\u003Cdiv class=\"endeavor-flex-row endeavor-clear-tablet\"\u003E";
 ;pug_debug_line = 794;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 // iterate step.contents
 var pug_obj14 = step.contents;
