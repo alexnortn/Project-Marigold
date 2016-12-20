@@ -200,6 +200,12 @@ $(document).ready(function() {
         animation.scrollToVelocity(_sectionCurrent); // Navigate
     });
 
+    // Toggle "More" content for Museum connectomics process
+    $('#ghost-connectomics').click(function(evt) {
+        $('#ghost-connectomics-affect').removeClass('endeavor-reveal');
+        $(this).parent().velocity("fadeOut", { duration: 250 });
+    });
+
     // Create SVG Circle
     function createCircle(_cx, _cy) {
         let svgNS = "http://www.w3.org/2000/svg";  

@@ -119,6 +119,20 @@ mixin endeavorIntro(data)
                 li=meta.Duration
 
 
+//-  Endeavor Animated Ghost Button
+    Requires: <data.text><data.id> --> For Js access
+    Description: Full-width element with centered button
+
+mixin endeavorGhostButton(data)
+    - var text = data.text ? data.text : "666"
+    - var _id = data.id ? data.id : "666"
+    - var _class = data.class ? data.class : "endeavor-item-125"
+    - var textColor = data.textColor ? data.textColor : "#232323" // $BLACK
+    .fsw(class=`${_class}`)
+        button(id=`${_id}`).endeavor-button.ghost.endeavor-flex.endeavor-flex-center.endeavor-center
+            h3.endeavor-text-center.endeavor-transition-250(style=`color: ${textColor}`)=text
+
+
 //-  Endeavor Expandable Description Sections
     Requires: <data.description> <data.meta>
         + project-description <{string}>
@@ -740,13 +754,37 @@ mixin endeavorVerticalComparison(data)
 mixin endeavorAnalysisComparision(data)
     - var bgColor = data.bgColor ? data.bgColor : "transparent"
     - var header = data.header
+    - var _id = data.id ? data.id : "666"
     - var process = data.process
     - var _class = data.class ? data.class : "endeavor-item"
-    .endeavor-width-100vw.endeavor-bg-200.endeavor-bg-center.endeavor-pos-rel(class=`${_class}`)(style=`background-color: ${bgColor}`)
+    .endeavor-width-100vw.endeavor-bg-200.endeavor-bg-center.endeavor-pos-rel.endeavor-pos-rel.endeavor-transition-250.endeavor-no-flow(id=`${_id}`)(class=`${_class}`)(style=`background-color: ${bgColor}`)
         .endeavor-item-no-margin.endeavor-width-75-prcnt.endeavor-max-width-750px.endeavor-padding-bottom-125.endeavor-center.endeavor-padding-left-100
             .endeavor-float-left.endeavor-5.endeavor-width-25-prcnt.endeavor-min-width-200px.endeavor-item-top-125
                 h2.copy-small-header=header
             .endeavor-clearfix
+            each step, index in process
+                .fsw.endeavor-item-top.endeavor-border-top
+                    .endeavor-float-left.endeavor-5.endeavor-padding-right-25.endeavor-width-25-prcnt.endeavor-min-width-200px
+                        - var number = index + 1
+                        p.copy-small-subheader.tight=`${"0" + number + ". " + step.header}`
+                    .endeavor-flex-row
+                        each content, iindex in step.contents
+                            .endeavor-width-50-prcnt.endeavor-5.endeavor-padding-right-25.analysis
+                                p.copy-small-header=content.header
+                                p.copy-small.endeavor-text-left=content.description
+
+
+//-  Endeavor Project | Full 100vw Element
+    Requires: <data.modules> <data.modules.data> 
+    Description: Useful for creating flowing comparisons
+
+mixin endeavorAnalysisComparision2(data)
+    - var bgColor = data.bgColor ? data.bgColor : "transparent"
+    - var process = data.process
+    - var _id = data.id ? data.id : "666"
+    - var _class = data.class ? data.class : "endeavor-item"
+    .endeavor-width-100vw.endeavor-bg-200.endeavor-bg-center.endeavor-pos-rel.endeavor-transition-250.endeavor-no-flow(id=`${_id}`)(class=`${_class}`)(style=`background-color: ${bgColor}`)
+        .endeavor-item-no-margin.endeavor-width-75-prcnt.endeavor-max-width-750px.endeavor-padding-bottom-125.endeavor-center.endeavor-padding-left-100
             each step, index in process
                 .fsw.endeavor-item-top.endeavor-border-top
                     .endeavor-float-left.endeavor-5.endeavor-padding-right-25.endeavor-width-25-prcnt.endeavor-min-width-200px
@@ -766,10 +804,11 @@ mixin endeavorAnalysisComparision(data)
 mixin endeavorChecklist(data)
     - var bgColor = data.bgColor ? data.bgColor : "transparent"
     - var header = data.header
+    - var _id = data.id ? data.id : "666"
     - var subheader = data.subheader
     - var contents = data.contents
     - var _class = data.class ? data.class : "endeavor-item"
-    .endeavor-width-100vw.endeavor-bg-200.endeavor-bg-center.endeavor-pos-rel(class=`${_class}`)(style=`background-color: ${bgColor}`)
+    .endeavor-width-100vw.endeavor-bg-200.endeavor-bg-center.endeavor-pos-rel.endeavor-transition-250(id=`${_id}`)(class=`${_class}`)(style=`background-color: ${bgColor}`)
         .endeavor-item-no-margin.endeavor-width-75-prcnt.endeavor-max-width-750px.endeavor-padding-bottom-125.endeavor-center.endeavor-padding-left-100
             h2.copy-small-header=header
             .endeavor-clearfix

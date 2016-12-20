@@ -67,6 +67,20 @@ $StickyOffsetMeta = 20vh
 	transition all 250ms ease-in-out
 	
 
+.ghost
+	background-color transparent
+	border 1px solid $BLACK
+	box-shadow 0 0 0 rgba(0 0 0 0)
+	
+
+.endeavor-button:hover 
+	cursor pointer
+	
+
+.endeavor-button:hover h3
+	letter-spacing 7.5px
+	
+
 	
 .flex-row
 	display flex
@@ -313,8 +327,14 @@ $StickyOffsetMeta = 20vh
 /* -------------------------------------- */
 /* Interaction */
 
-	.transition-250
+	.endeavor-transition-250
 		transition all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55)
+		
+	.endeavor-reveal
+		height 0
+		
+	.endeavor-no-flow
+		overflow hidden
 		
 
 
@@ -860,6 +880,19 @@ p.center-caption
 	margin-bottom 50px
 	
 
+.endeavor-item-250
+	margin-top 250px
+	margin-bottom 250px
+	
+
+.endeavor-item-top-250
+	margin-top 250px
+	
+
+.endeavor-item-bottom-250
+	margin-bottom 250px
+	
+
 .endeavor-item-125
 	margin-top 125px
 	margin-bottom 125px
@@ -1166,6 +1199,7 @@ p.center-caption
 	
 
 .endeavor-width-100vw
+	height auto
 	width 102vw
 	left calc((102vw - 1275px) / -2) // 1200~ Max contents relative width
 	
