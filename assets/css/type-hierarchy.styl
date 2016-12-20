@@ -21,8 +21,10 @@ a::selection
 
 h1
 	font-family 'Source Sans Pro', sans-serif
-	font-weight 600
-	font-size 42px
+	font-weight 200
+	font-size 72px
+	
+	letter-spacing 1.15px
 	
 	text-align left
 	line-height 1.25em
@@ -42,6 +44,15 @@ h1.endeavor-header
 	line-height 1.5em
 	text-align center
 	color $BLACK
+	
+h1.endeavor-process
+	font-size 48px
+	letter-spacing 10px
+	line-height 1.5em
+	text-align center
+	text-transform uppercase
+	
+	padding 5px
 	
 h1.thin
 	font-weight 200
@@ -452,18 +463,19 @@ section details
 // Breakpoint 2 | Small Screen
 
 /* ----------- Non-Retina Screens ----------- */
-// @media screen and (max-width: 500px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)
-		
+@media screen and (max-width: 500px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)
 
-// @media screen and (max-height: 500px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)
+	h1
+		font-size 60px
+		
 		
 
 		
 /* ----------- Retina Screens ----------- */
-// @media screen and (max-width: 500px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
+@media screen and (max-width: 500px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
+	h1
+		font-size 60px
 		
-		
-// @media screen and (max-height: 500px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)		
 
 
 

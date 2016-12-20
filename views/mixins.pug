@@ -133,6 +133,27 @@ mixin endeavorGhostButton(data)
             h3.endeavor-text-center.endeavor-transition-250(style=`color: ${textColor}`)=text
 
 
+//-  Endeavor Design Process Section
+    Requires: <data.process><data.number><data.text>
+    Description: Full-width element with centered button
+
+mixin endeavorDesignProcess(data)
+    - var text = data.text ? data.text : "666"
+    - var process = data.process ? data.process : "666"
+    - var number = data.number ? data.number : "666"
+    - var _class = data.class ? data.class : "endeavor-item-125"
+    - var textColor = data.textColor ? data.textColor : "#232323" // $BLACK
+    - var bgColor = data.bgColor ? data.bgColor : "transparent"
+    .endeavor-pos-rel.endeavor-width-100vw.endeavor-height-500px(style=`background-color: ${bgColor}`, class=`${_class}`)
+        .endeavor-width-norm.endeavor-flex.endeavor-flex-center.endeavor-center.endeavor-height-100-prcnt
+            h3.endeavor-top-left.endeavor-padding-top-50(style=`color: ${textColor}`) Design Process
+            div
+                h1.endeavor-process.endeavor-text-center.endeavor-no-padding(style=`color: ${textColor}`)=process
+                h3.endeavor-text-center(style=`color: ${textColor}`)=number
+        .endeavor-width-norm.endeavor-max-width-750px.endeavor-flex.endeavor-flex-center.endeavor-center.endeavor-reveal.endeavor-no-flow
+            p.endeavor-block.endeavor-text-center(style=`color: ${textColor}`)=data.text
+
+
 //-  Endeavor Expandable Description Sections
     Requires: <data.description> <data.meta>
         + project-description <{string}>
@@ -809,13 +830,13 @@ mixin endeavorChecklist(data)
     - var contents = data.contents
     - var _class = data.class ? data.class : "endeavor-item"
     .endeavor-width-100vw.endeavor-bg-200.endeavor-bg-center.endeavor-pos-rel.endeavor-transition-250(id=`${_id}`)(class=`${_class}`)(style=`background-color: ${bgColor}`)
-        .endeavor-item-no-margin.endeavor-width-75-prcnt.endeavor-max-width-750px.endeavor-padding-bottom-125.endeavor-center.endeavor-padding-left-100
+        .endeavor-item-no-vertical-margin.endeavor-width-75-prcnt.endeavor-max-width-750px.endeavor-padding-bottom-125.endeavor-center.endeavor-padding-left-100.endeavor-padding-tablet-none
             h2.copy-small-header=header
             .endeavor-clearfix
             .fsw.endeavor-item-top
-                .endeavor-float-left.endeavor-5.endeavor-width-25-prcnt.endeavor-min-width-200px
+                .endeavor-float-left.endeavor-5.endeavor-padding-right-25.endeavor-width-25-prcnt.endeavor-min-width-200px
                     p.copy-small-subheader.tight=subheader
-            .endeavor-flex-row
+            .endeavor-flex-row.endeavor-clear-tablet.endeavor-padding-25-tablet
                 each content, index in contents
                     ul.endeavor-width-50-prcnt.endeavor-5.endeavor-padding-right-25.checklist
                         li
