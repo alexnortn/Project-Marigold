@@ -12,7 +12,7 @@ function pug_style(r){if(!r)return"";if("object"==typeof r){var e="",t="";for(va
 pug_mixins["caseStudyPreview"] = pug_interp = function(data, index){
 var block = (this && this.block), attributes = (this && this.attributes) || {};
 ;pug_debug_line = 20;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cdiv" + (pug_attrs(pug_merge([{"class": "case-study case-study-window item case-study-item endeavor-height-90vw endeavor-height-600px-mobile"}, {'data-inproject': false}, {'data-projectIndex': index}, {'data-project': data.route},  {'id': data.preview} ]), false)) + "\u003E";
+pug_html = pug_html + "\u003Cdiv" + (pug_attrs(pug_merge([{"class": "case-study case-study-window item case-study-item endeavor-height-100vw endeavor-height-600px-mobile"}, {'data-inproject': false}, {'data-projectIndex': index}, {'data-project': data.route},  {'id': data.preview} ]), false)) + "\u003E";
 ;pug_debug_line = 21;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + "\u003Cdiv class=\"case-study-overview endeavor-overview endeavor-overview-preview\"\u003E";
 ;pug_debug_line = 22;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";

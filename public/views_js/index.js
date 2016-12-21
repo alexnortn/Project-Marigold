@@ -34,7 +34,7 @@ pug_html = pug_html + "\u003C!-- https:\u002F\u002Fstackoverflow.com\u002Fquesti
 pug_mixins["caseStudyPreview"] = pug_interp = function(data, index){
 var block = (this && this.block), attributes = (this && this.attributes) || {};
 ;pug_debug_line = 20;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cdiv" + (pug_attrs(pug_merge([{"class": "case-study case-study-window item case-study-item endeavor-height-90vw endeavor-height-600px-mobile"}, {'data-inproject': false}, {'data-projectIndex': index}, {'data-project': data.route},  {'id': data.preview} ]), true)) + "\u003E";
+pug_html = pug_html + "\u003Cdiv" + (pug_attrs(pug_merge([{"class": "case-study case-study-window item case-study-item endeavor-height-100vw endeavor-height-600px-mobile"}, {'data-inproject': false}, {'data-projectIndex': index}, {'data-project': data.route},  {'id': data.preview} ]), true)) + "\u003E";
 ;pug_debug_line = 21;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + "\u003Cdiv class=\"case-study-overview endeavor-overview endeavor-overview-preview\"\u003E";
 ;pug_debug_line = 22;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
@@ -2393,7 +2393,7 @@ pug_html = pug_html + "\u003Cdiv class=\"bios-content\" id=\"bios-content\"\u003
 ;pug_debug_line = 139;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
 pug_html = pug_html + "\u003Cimg src=\"\u002Fimages\u002Fself.jpg\" alt=\"Alex Norton Portrait\"\u003E";
 ;pug_debug_line = 140;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
-pug_html = pug_html + "\u003Cdiv class=\"copy endeavor-text-center\"\u003E";
+pug_html = pug_html + "\u003Cdiv class=\"copy\"\u003E";
 ;pug_debug_line = 141;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
 pug_html = pug_html + "\u003Cq\u003E";
 ;pug_debug_line = 141;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
@@ -2415,9 +2415,9 @@ pug_html = pug_html + "\u003Ca id=\"resume\" href=\"\u002Fimages\u002FNorton-Ale
 ;pug_debug_line = 145;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
 pug_html = pug_html + "Résumé\u003C\u002Fa\u003E";
 ;pug_debug_line = 146;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
-pug_html = pug_html + "\u003Cbutton class=\"endeavor-button endeavor-center\" id=\"bios-more\"\u003E";
+pug_html = pug_html + "\u003Cbutton class=\"endeavor-button\" id=\"bios-more\"\u003E";
 ;pug_debug_line = 147;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
-pug_html = pug_html + "\u003Ch3 class=\"endeavor-center endeavor-text-center transition-250\"\u003E";
+pug_html = pug_html + "\u003Ch3 class=\"endeavor-center endeavor-text-center endeavor-transition-250\"\u003E";
 ;pug_debug_line = 147;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
 pug_html = pug_html + "more\u003C\u002Fh3\u003E\u003C\u002Fbutton\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E\u003C\u002Fsection\u003E";
 ;pug_debug_line = 148;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Findex.pug";
