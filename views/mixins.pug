@@ -17,7 +17,7 @@
         + project-image-preview <src>
 
 mixin caseStudyPreview(data, index)
-    .case-study.case-study-window.item.case-study-item&attributes( {'data-inproject': false}, {'data-projectIndex': index}, {'data-project': data.route},  {'id': data.preview} )
+    .case-study.case-study-window.item.case-study-item.endeavor-height-90vw.endeavor-height-600px-mobile&attributes( {'data-inproject': false}, {'data-projectIndex': index}, {'data-project': data.route},  {'id': data.preview} )
         .case-study-overview.endeavor-overview.endeavor-overview-preview
             .description
                 .description-wrapper
@@ -129,8 +129,8 @@ mixin endeavorGhostButton(data)
     - var _class = data.class ? data.class : "endeavor-item-125"
     - var textColor = data.textColor ? data.textColor : "#232323" // $BLACK
     .fsw(class=`${_class}`)
-        button(id=`${_id}`).endeavor-button.ghost.endeavor-flex.endeavor-flex-center.endeavor-center
-            h3.endeavor-text-center.endeavor-transition-250(style=`color: ${textColor}`)=text
+        button(id=`${_id}`).endeavor-button.ghost.endeavor-center
+            h3.endeavor-center.endeavor-text-center.endeavor-transition-250(style=`color: ${textColor}`)=text
 
 
 //-  Endeavor Design Process Section
@@ -257,7 +257,7 @@ mixin endeavorPullheaderCaptionFS(data)
     - var textColor = data.textColor ? data.textColor : "#232323" // $BLACK
     .endeavor-item.endeavor-flex.endeavor-flex-center.endeavor-flex-column.fsw
         h2.endeavor-subheader.endeavor-pull-quote(style=`color: ${textColor}`)=subheader
-        p.endeavor-caption-2.no-margin.endeavor-text-center.endeavor-width-60-prcnt(style=`color: ${textColor}`)=caption
+        p.endeavor-caption-2.no-margin.endeavor-text-center.endeavor-width-60-prcnt.endeavor-width-100-prcnt-mobile(style=`color: ${textColor}`)=caption
 
 
 
@@ -829,11 +829,11 @@ mixin endeavorChecklist(data)
     - var subheader = data.subheader
     - var contents = data.contents
     - var _class = data.class ? data.class : "endeavor-item"
-    .fsw.endeavor-padding-bottom-75.endeavor-center.endeavor-padding-100-left-tablet(class=`${_class}`)(style=`background-color: ${bgColor}`)
+    .fsw.endeavor-padding-bottom-75.endeavor-center.endeavor-padding-left-100-1000.endeavor-padding-left-0-mobile(class=`${_class}`)(style=`background-color: ${bgColor}`)
         h2=header
         .endeavor-flex-row.endeavor-padding-top-25.endeavor-padding-left-50
             each content, index in contents
-                ul.endeavor-width-45-prcnt.endeavor-max-width-500.endeavor-15.endeavor-padding-right-25.checklist
+                ul.endeavor-width-45-prcnt.endeavor-width-100-prcnt-1000.endeavor-max-width-500.endeavor-15.endeavor-padding-right-25.checklist
                     li
                         p.roman=content.header
                         p=content.description
@@ -851,7 +851,7 @@ mixin endeavorCaptionHeader(data, _width, _textColor)
     - var header = data.header
     - var caption = data.caption
     - var textColor = _textColor ? _textColor : "#232323" // $BLACK
-    .endeavor-item-all-25(style=`border-color: ${textColor}`)
+    .endeavor-item-all-25.endeavor-item-all-15-mobile(style=`border-color: ${textColor}`)
         h5(style=`color: ${textColor}`)=header
         p.caption.caption-mod.endeavor-text-left.no-margin.endeavor-item-top-5(style=`color: ${textColor}`)=caption
 

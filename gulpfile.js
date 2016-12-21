@@ -155,3 +155,18 @@ gulp.task('watch', function () {
         'views/**',
     ], [ 'pug' ]);
 });
+
+// Only CSS + PUG + IMAGES (conserve juice)
+gulp.task('watch-lite', function () {
+    gulp.watch([
+        'assets/css/*'
+    ], [ 'css' ]);
+
+    gulp.watch([
+        'assets/images/**'
+    ], [ 'images' ]);
+
+    gulp.watch([
+        'views/**',
+    ], [ 'pug' ]);
+});

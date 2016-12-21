@@ -143,7 +143,8 @@ block content
                         p#self-short.tamer.body-copy !{bios_text.description_short}
                         p#self-long.tamer.body-copy !{bios_text.description_long}
                         a#resume(href="/images/Norton-Alex-Resume.pdf" target="_blank") Résumé
-                        h5#bios-more { more }
+                        button#bios-more.endeavor-button.endeavor-center
+                                h3.endeavor-center.endeavor-text-center.transition-250 more
         // /BIOS SECTION  
 
 
@@ -163,8 +164,8 @@ block content
                             each project, index in projects
                                 +projectPreview(project, index)
                         .fsw.endeavor-item-125
-                            button#select-more.endeavor-button.endeavor-flex.endeavor-flex-center.endeavor-center
-                                h3.endeavor-text-center.transition-250 more
+                            button#select-more.endeavor-button.endeavor-center
+                                h3.endeavor-center.endeavor-text-center.transition-250 more
                 // /SELECT WORK GRID SECTION
         // /WORKS SECTION 
 
