@@ -790,7 +790,7 @@ mixin endeavorAnalysisComparision(data)
                         p.copy-small-subheader.tight=`${"0" + number + ". " + step.header}`
                     .endeavor-flex-row.endeavor-clear-tablet.endeavor-padding-25-tablet
                         each content, iindex in step.contents
-                            .endeavor-width-50-prcnt.endeavor-5.endeavor-padding-right-25.analysis
+                            .endeavor-width-50-prcnt.endeavor-5.analysis
                                 p.copy-small-header=content.header
                                 p.copy-small.endeavor-text-left=content.description
 
@@ -813,7 +813,7 @@ mixin endeavorAnalysisComparision2(data)
                         p.copy-small-subheader.tight=`${"0" + number + ". " + step.header}`
                     .endeavor-flex-row.endeavor-clear-tablet.endeavor-padding-25-tablet
                         each content, iindex in step.contents
-                            .endeavor-width-50-prcnt.endeavor-5.endeavor-padding-right-25.analysis
+                            .endeavor-width-50-prcnt.endeavor-5.analysis
                                 p.copy-small-header=content.header
                                 p.copy-small.endeavor-text-left=content.description
 
@@ -833,7 +833,7 @@ mixin endeavorChecklist(data)
         h2=header
         .endeavor-flex-row.endeavor-padding-top-25.endeavor-padding-left-50
             each content, index in contents
-                ul.endeavor-width-45-prcnt.endeavor-width-100-prcnt-1000.endeavor-max-width-500.endeavor-15.endeavor-padding-right-25.endeavor-padding-vertical-5-mobile.checklist
+                ul.endeavor-width-45-prcnt.endeavor-width-100-prcnt-1000.endeavor-max-width-500.endeavor-15.endeavor-padding-vertical-5-mobile.checklist
                     li
                         p.roman=content.header
                         p=content.description
