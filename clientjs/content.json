@@ -738,41 +738,75 @@
                     }
                 },
                 {
-                    "name" : "endeavorImage100vw",
+                    "name" : "endeavorModuleMachine",
                     "data" : {
+                        "bgImage" : "",
+                        "bgColor" : "#191919",
                         "class" : "endeavor-item-no-margin",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "Image segmentation",
-                            "src": "images/projects/museum/standard/museum-cube.gif",
-                            "src_standard": "images/projects/museum/standard/museum-cube.gif",
-                            "src_retina": "images/projects/museum/retina/museum-cube.gif",
-                            "src_low": "images/projects/museum/low-res/museum-cube.gif",
-                            "src_mobile": "images/projects/museum/hi-res/museum-cube.gif",
-                            "src_preview": "images/projects/museum/hi-res/museum-cube.gif",
-                            "caption": "Image segmentation"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorCaptionFS",
-                    "data" : {
-                        "class" : "endeavor-item",
-                        "textColor" : "#666666",
-                        "caption" : "At SeungLab scientists study Connectomics, a specialty in the domain of Neuroscience which seeks to understand brain structure and function by constructing comprehensive maps of the connections between neurons."
+                        "modules" : [
+                            {
+                                "name" : "endeavorPad",
+                                "data" : {
+                                    "height" : "10vw",
+                                    "class" : "endeavor-item-no-margin"
+                                }
+                            },
+                            {
+                                "name" : "endeavorNestedImageFS",
+                                "data" : {
+                                    "margin" : "-15vw",
+                                    "placeholder" : {
+                                        "name" : "",
+                                        "src" : "",
+                                        "src" : "",
+                                        "src_mobile" : "",
+                                        "src_preview" : "",
+                                        "caption" : ""
+                                    },
+                                    "image" : {
+                                        "name": "C. Elegans Connectome",
+                                        "src": "images/projects/museum/standard/museum-connectome-graph.jpg",
+                                        "src_standard": "images/projects/museum/standard/museum-connectome-graph.jpg",
+                                        "src_retina": "images/projects/museum/retina/museum-connectome-graph.jpg",
+                                        "src_low": "images/projects/museum/low-res/museum-connectome-graph.jpg",
+                                        "src_mobile": "images/projects/museum/hi-res/museum-connectome-graph.jpg",
+                                        "src_preview": "images/projects/museum/hi-res/museum-connectome-graph.jpg",
+                                        "caption": "C. Elegans Connectome"
+                                    },
+                                    "image2" : {
+                                        "name": "C. Elegans Worm",
+                                        "src": "images/projects/museum/standard/museum-worm.gif",
+                                        "src_standard": "images/projects/museum/standard/museum-worm.gif",
+                                        "src_retina": "images/projects/museum/retina/museum-worm.gif",
+                                        "src_low": "images/projects/museum/low-res/museum-worm.gif",
+                                        "src_mobile": "images/projects/museum/hi-res/museum-worm.gif",
+                                        "src_preview": "images/projects/museum/hi-res/museum-worm.gif",
+                                        "caption": "C. Elegans Worm"
+                                    }
+                                }
+                            },
+                            {
+                                "name" : "endeavorPullheaderCaptionFS",
+                                "data" : {
+                                    "textColor" : "#666666",
+                                    "subheader" : "C. Elegans",
+                                    "caption" : "So far, C. elegans is the only organism that boasts a complete connectome. Researchers are also working on connectomes for the fruit fly nervous system and the mouse brain."
+                                }
+                            },
+                            {
+                                "name" : "endeavorPad",
+                                "data" : {
+                                    "height" : "125px",
+                                    "class" : "endeavor-item-no-margin"
+                                }
+                            }
+                        ]
                     }
                 },
                 {
                     "name" : "endeavorChecklist",
                     "data" : {
-                        "header" : "Coversations",
+                        "header" : "Conversations",
                         "class" : "endeavor-item-top-125",
                         "bgColor" : "",
                         "contents" : [
