@@ -147,6 +147,7 @@ mixin endeavorDesignProcess(data)
     .endeavor-pos-rel.endeavor-width-100vw.endeavor-height-500px(style=`background-color: ${bgColor}`, class=`${_class}`)
         .endeavor-width-norm.endeavor-flex.endeavor-flex-center.endeavor-center.endeavor-height-100-prcnt
             h3.endeavor-top-left.endeavor-padding-top-50(style=`color: ${textColor}`) Design Process
+            h3.endeavor-top-right.endeavor-padding-top-50(style=`color: ${textColor}`) D5
             div
                 h1.endeavor-process.endeavor-text-center.endeavor-no-padding(style=`color: ${textColor}`)=process
                 h3.endeavor-text-center(style=`color: ${textColor}`)=number
@@ -479,7 +480,7 @@ mixin endeavorNestedImageFS(data)
     - var marginBottom = data.margin ? data.margin : "" // $BLACK
     .endeavor-item.endeavor-flex-column.endeavor-flex-center-main(style=`margin-bottom: ${marginBottom}`)
         img.lazyload.blur-up.fsw(src=image.src_low)&attributes({'data-src': image.src}, {'data-srcset': sources}) 
-        img.lazyload.blur-up.endeavor-width-40-prcnt.endeavor-pos-rel.endeavor-top-minus-15vw.endeavor-flex-self-center.endeavor-shadow-50(src=image.src_low)&attributes({'data-src': image2.src}, {'data-srcset': sources2}) 
+        img.lazyload.blur-up.endeavor-width-40-prcnt.endeavor-pos-rel.endeavor-top-minus-10vw.endeavor-flex-self-center.endeavor-shadow-50(src=image.src_low)&attributes({'data-src': image2.src}, {'data-srcset': sources2}) 
 
 
 
