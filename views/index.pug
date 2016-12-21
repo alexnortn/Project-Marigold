@@ -137,7 +137,7 @@ block content
                     p#bios-title-p !{bios_text.title}
                 #bios-content.bios-content
                     img(src = "/images/self.jpg" alt = "Alex Norton Portrait")
-                    .copy
+                    .copy.endeavor-text-center
                         q !{bios_text.description_pull}
                         h4 About
                         p#self-short.tamer.body-copy !{bios_text.description_short}
@@ -163,7 +163,7 @@ block content
                         ul
                             each project, index in projects
                                 +projectPreview(project, index)
-                        .fsw.endeavor-item-125
+                        .fsw.endeavor-item-125.endeavor-text-center
                             button#select-more.endeavor-button.endeavor-center
                                 h3.endeavor-center.endeavor-text-center.transition-250 more
                 // /SELECT WORK GRID SECTION

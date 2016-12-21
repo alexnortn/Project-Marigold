@@ -128,7 +128,7 @@ mixin endeavorGhostButton(data)
     - var _id = data.id ? data.id : "666"
     - var _class = data.class ? data.class : "endeavor-item-125"
     - var textColor = data.textColor ? data.textColor : "#232323" // $BLACK
-    .fsw(class=`${_class}`)
+    .fsw.endeavor-text-center(class=`${_class}`)
         button(id=`${_id}`).endeavor-button.ghost.endeavor-center
             h3.endeavor-center.endeavor-text-center.endeavor-transition-250(style=`color: ${textColor}`)=text
 
@@ -601,9 +601,8 @@ mixin endeavorPubFS(datum)
     Description: empty div to provide padding
 
 mixin endeavorPad(data)
-    - var _height = data.height ? data.height : "250px"
-    - var _class = data.class ? data.class : "endeavor-item"
-    .fsw(style=`height: ${_height}`)(class=`${_class}`)
+    - var _class = data.class ? data.class : "endeavor-item endeavor-height-10vw"
+    .fsw(class=`${_class}`)
 
 
 //-  Endeavor Parallax Images Left
@@ -833,7 +832,7 @@ mixin endeavorChecklist(data)
         h2=header
         .endeavor-flex-row.endeavor-padding-top-25.endeavor-padding-left-50
             each content, index in contents
-                ul.endeavor-width-45-prcnt.endeavor-width-100-prcnt-1000.endeavor-max-width-500.endeavor-15.endeavor-padding-right-25.checklist
+                ul.endeavor-width-45-prcnt.endeavor-width-100-prcnt-1000.endeavor-max-width-500.endeavor-15.endeavor-padding-right-25.endeavor-padding-vertical-5-mobile.checklist
                     li
                         p.roman=content.header
                         p=content.description

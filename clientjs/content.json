@@ -343,7 +343,7 @@
                 {
                     "name" : "endeavorPad",
                     "data" : {
-                        "height" : ""
+                        "class" : "endeavor-item-no-margin endeavor-height-10vw"
                     }
                 }
             ]
@@ -395,7 +395,7 @@
                 {
                     "name" : "endeavorPad",
                     "data" : {
-                        "height" : "10vw"
+                        "class" : "endeavor-item-no-margin endeavor-height-10vw"
                     }
                 },
                 {
@@ -747,8 +747,7 @@
                             {
                                 "name" : "endeavorPad",
                                 "data" : {
-                                    "height" : "125px",
-                                    "class" : "endeavor-item-no-margin"
+                                    "class" : "endeavor-item-no-margin endeavor-height-10vw"
                                 }
                             },
                             {
@@ -796,8 +795,7 @@
                             {
                                 "name" : "endeavorPad",
                                 "data" : {
-                                    "height" : "125px",
-                                    "class" : "endeavor-item-no-margin"
+                                    "class" : "endeavor-item-no-margin endeavor-height-100px"
                                 }
                             }
                         ]
@@ -1237,7 +1235,7 @@
                 {
                     "name" : "endeavorPad",
                     "data" : {
-                        "height" : ""
+                        "class" : "endeavor-item-no-margin endeavor-height-10vw"
                     }
                 }
             ]
@@ -1585,7 +1583,7 @@
                 {
                     "name" : "endeavorPad",
                     "data" : {
-                        "height" : ""
+                        "class" : "endeavor-item-no-margin endeavor-height-10vw"
                     }
                 }
             ]
@@ -2084,7 +2082,7 @@
                 {
                     "name" : "endeavorPad",
                     "data" : {
-                        "height" : ""
+                        "class" : "endeavor-item-no-margin endeavor-height-10vw"
                     }
                 }
             ]
@@ -2608,7 +2606,7 @@
                 {
                     "name" : "endeavorPad",
                     "data" : {
-                        "height" : ""
+                        "class" : "endeavor-item-no-margin endeavor-height-10vw"
                     }
                 }
             ]
@@ -2893,7 +2891,7 @@
                 {
                     "name" : "endeavorPad",
                     "data" : {
-                        "height" : ""
+                        "class" : "endeavor-item-no-margin endeavor-height-10vw"
                     }
                 }
             ]
@@ -3338,7 +3336,7 @@
                 {
                     "name" : "endeavorPad",
                     "data" : {
-                        "height" : ""
+                        "class" : "endeavor-item-no-margin endeavor-height-10vw"
                     }
                 }
             ]
@@ -3641,7 +3639,7 @@
                 {
                     "name" : "endeavorPad",
                     "data" : {
-                        "height" : ""
+                        "class" : "endeavor-item-no-margin endeavor-height-10vw"
                     }
                 }
             ]
@@ -3933,7 +3931,7 @@
                 {
                     "name" : "endeavorPad",
                     "data" : {
-                        "height" : ""
+                        "class" : "endeavor-item-no-margin endeavor-height-10vw"
                     }
                 }
             ]
@@ -4684,7 +4682,7 @@
                 {
                     "name" : "endeavorPad",
                     "data" : {
-                        "height" : ""
+                        "class" : "endeavor-item-no-margin endeavor-height-10vw"
                     }
                 }
                   
@@ -4928,7 +4926,7 @@
                 {
                     "name" : "endeavorPad",
                     "data" : {
-                        "height" : ""
+                        "class" : "endeavor-item-no-margin endeavor-height-10vw"
                     }
                 }
             ]
@@ -5062,7 +5060,7 @@
                 {
                     "name" : "endeavorPad",
                     "data" : {
-                        "height" : ""
+                        "class" : "endeavor-item-no-margin endeavor-height-10vw"
                     }
                 }
             ]
@@ -5297,7 +5295,7 @@
                 {
                     "name" : "endeavorPad",
                     "data" : {
-                        "height" : ""
+                        "class" : "endeavor-item-no-margin endeavor-height-10vw"
                     }
                 }
             ]
