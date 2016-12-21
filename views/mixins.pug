@@ -477,9 +477,9 @@ mixin endeavorNestedImageFS(data)
     - var image2 = data.image2
     - var sources2 = data.image2.src_standard + " 1x, " + data.image2.src_retina + " 2x"
     - var marginBottom = data.margin ? data.margin : "" // $BLACK
-    .endeavor-item.endeavor-flex-column(style=`margin-bottom: ${marginBottom}`)
-        img.lazyload.endeavor-item.blur-up.fsw(src=image.src_low)&attributes({'data-src': image.src}, {'data-srcset': sources}) 
-        img.lazyload.endeavor-item.blur-up.endeavor-width-40-prcnt.endeavor-pos-rel.endeavor-top-minus-15vw.endeavor-flex-self-center.endeavor-shadow-50(src=image.src_low)&attributes({'data-src': image2.src}, {'data-srcset': sources2}) 
+    .endeavor-item.endeavor-flex-column.endeavor-flex-center-main(style=`margin-bottom: ${marginBottom}`)
+        img.lazyload.blur-up.fsw(src=image.src_low)&attributes({'data-src': image.src}, {'data-srcset': sources}) 
+        img.lazyload.blur-up.endeavor-width-40-prcnt.endeavor-pos-rel.endeavor-top-minus-15vw.endeavor-flex-self-center.endeavor-shadow-50(src=image.src_low)&attributes({'data-src': image2.src}, {'data-srcset': sources2}) 
 
 
 
@@ -829,11 +829,11 @@ mixin endeavorChecklist(data)
     - var subheader = data.subheader
     - var contents = data.contents
     - var _class = data.class ? data.class : "endeavor-item"
-    .fsw.endeavor-padding-bottom-75.endeavor-center(class=`${_class}`)(style=`background-color: ${bgColor}`)
+    .fsw.endeavor-padding-bottom-75.endeavor-center.endeavor-padding-100-left-tablet(class=`${_class}`)(style=`background-color: ${bgColor}`)
         h2=header
         .endeavor-flex-row.endeavor-padding-top-25.endeavor-padding-left-50
             each content, index in contents
-                ul.endeavor-width-75-prcnt.endeavor-max-width-500.endeavor-15.endeavor-padding-right-25.checklist
+                ul.endeavor-width-45-prcnt.endeavor-max-width-500.endeavor-15.endeavor-padding-right-25.checklist
                     li
                         p.roman=content.header
                         p=content.description
@@ -952,7 +952,7 @@ mixin endeavorModuleMachine(data)
     - var bgImage = data.bgImage ? data.bgImage : "none"
     - var bgColor = data.bgColor ? data.bgColor : "transparent"
     - var _class = data.class ? data.class : "endeavor-item"
-    .endeavor-width-100vw.endeavor-bg-200.endeavor-bg-center.endeavor-pos-rel(class=`${_class}`)(style=`background-image: url(${bgImage.src});background-color: ${bgColor}`)
+    .endeavor-width-100vw.endeavor-bg-200.endeavor-bg-center.endeavor-pos-rel.endeavor-flex-column.endeavor-flex-center-main(class=`${_class}`)(style=`background-image: url(${bgImage.src});background-color: ${bgColor}`)
         .endeavor-item-no-margin.endeavor-width-norm
             each module, index in data.modules
                 +#{module.name}(module.data)

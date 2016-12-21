@@ -747,14 +747,14 @@
                             {
                                 "name" : "endeavorPad",
                                 "data" : {
-                                    "height" : "10vw",
+                                    "height" : "125px",
                                     "class" : "endeavor-item-no-margin"
                                 }
                             },
                             {
                                 "name" : "endeavorNestedImageFS",
                                 "data" : {
-                                    "margin" : "-15vw",
+                                    "margin" : "-10vw",
                                     "placeholder" : {
                                         "name" : "",
                                         "src" : "",
