@@ -1242,7 +1242,7 @@
         },
         {
             "route" :"explore-cs",
-            "name"  : "Eyewire Explore",
+            "name"  : "Explore",
             "project_type"  : "Case Study",
             "preview" :"explore-preview",
             "year"  : "2016",
