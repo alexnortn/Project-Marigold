@@ -385,11 +385,12 @@
                     "name" : "endeavorDesignProcess",
                     "data" : {
                         "class" : "endeavor-item-top-250 endeavor-item",
-                        "process" : "Final Deliverable",
+                        "process" : "Deliverable",
                         "text" : "",
                         "number" : "00/05",
-                        "bgColor" : "#1e1e1e",
-                        "textColor" : "#666666"
+                        "bgColor" : "#e6e6e6",
+                        "textColor" : "#cccccc",
+                        "textColor2" : "#d9d9d9"
                     }
                 },
                 {
@@ -437,8 +438,9 @@
                         "process" : "Discover",
                         "text" : "The Discover phase aims to know your client, their brand and their customers while gaining a full understanding of the project. This is essential to allow the design team to understand the task, develop a feel for the client’s business or interest, become familiar with the user and empathize with the brand.",
                         "number" : "01/05",
-                        "bgColor" : "#1e1e1e",
-                        "textColor" : "#666666"
+                        "bgColor" : "#e6e6e6",
+                        "textColor" : "#cccccc",
+                        "textColor2" : "#d9d9d9"
                     }
                 },
                 {
@@ -741,7 +743,7 @@
                     "name" : "endeavorModuleMachine",
                     "data" : {
                         "bgImage" : "",
-                        "bgColor" : "#191919",
+                        "bgColor" : "#e6e6e6",
                         "class" : "endeavor-item-no-margin",
                         "modules" : [
                             {
@@ -860,8 +862,9 @@
                         "process" : "Define",
                         "text" : "The strategic decisions make in the Define phase will determine the success or failure of the project. Based on the business goals, a communication strategy for the chosen digital touch points must now be developed. Based on the brand goals, we will create the design principles. With the help of user insights, we will develop guidelines for the user experience. Based on all the goals and requirements, we will define metrics for measuring success.",
                         "number" : "02/05",
-                        "bgColor" : "#1e1e1e",
-                        "textColor" : "#666666"
+                        "bgColor" : "#e6e6e6",
+                        "textColor" : "#cccccc",
+                        "textColor2" : "#d9d9d9"
                     }
                 },
                 {
@@ -921,8 +924,9 @@
                         "process" : "Design",
                         "text" : "In the Design phase, the creative and conceptual direction and information architecture are defined based on the strategic guidelines and, when appropriate, the creative brief. The phase concludes with a comprehensive design and concept document that will serve as a template for production + development.",
                         "number" : "03/05",
-                        "bgColor" : "#1e1e1e",
-                        "textColor" : "#666666"
+                        "bgColor" : "#e6e6e6",
+                        "textColor" : "#cccccc",
+                        "textColor2" : "#d9d9d9"
                     }
                 },
                 {
@@ -932,8 +936,9 @@
                         "process" : "Deploy",
                         "text" : "In the Design phase, the creative and conceptual direction and information architecture are defined based on the strategic guidelines and, when appropriate, the creative brief. The phase concludes with a comprehensive design and concept document that will serve as a template for production + development.",
                         "number" : "04/05",
-                        "bgColor" : "#1e1e1e",
-                        "textColor" : "#666666"
+                        "bgColor" : "#e6e6e6",
+                        "textColor" : "#cccccc",
+                        "textColor2" : "#d9d9d9"
                     }
                 },
                 {
@@ -943,8 +948,9 @@
                         "process" : "Discussion",
                         "text" : "In the Design phase, the creative and conceptual direction and information architecture are defined based on the strategic guidelines and, when appropriate, the creative brief. The phase concludes with a comprehensive design and concept document that will serve as a template for production + development.",
                         "number" : "05/05",
-                        "bgColor" : "#1e1e1e",
-                        "textColor" : "#666666"
+                        "bgColor" : "#e6e6e6",
+                        "textColor" : "#cccccc",
+                        "textColor2" : "#d9d9d9"
                     }
                 },
                 {

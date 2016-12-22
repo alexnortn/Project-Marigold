@@ -17,7 +17,7 @@
         + project-image-preview <src>
 
 mixin caseStudyPreview(data, index)
-    .case-study.case-study-window.item.case-study-item.endeavor-height-100vw.endeavor-height-600px-mobile&attributes( {'data-inproject': false}, {'data-projectIndex': index}, {'data-project': data.route},  {'id': data.preview} )
+    .case-study.case-study-window.item.case-study-item.endeavor-height-1000px-responsive.endeavor-height-600px-mobile&attributes( {'data-inproject': false}, {'data-projectIndex': index}, {'data-project': data.route},  {'id': data.preview} )
         .case-study-overview.endeavor-overview.endeavor-overview-preview
             .description
                 .description-wrapper
@@ -143,13 +143,14 @@ mixin endeavorDesignProcess(data)
     - var number = data.number ? data.number : "666"
     - var _class = data.class ? data.class : "endeavor-item-125"
     - var textColor = data.textColor ? data.textColor : "#232323" // $BLACK
+    - var textColor2 = data.textColor2 ? data.textColor2 : "#232323" // $BLACK
     - var bgColor = data.bgColor ? data.bgColor : "transparent"
     .endeavor-pos-rel.endeavor-width-100vw.endeavor-height-500px(style=`background-color: ${bgColor}`, class=`${_class}`)
         .endeavor-width-norm.endeavor-flex.endeavor-flex-center.endeavor-center.endeavor-height-100-prcnt
             h3.endeavor-top-left.endeavor-padding-top-50(style=`color: ${textColor}`) Design Process
             h3.endeavor-top-right.endeavor-padding-top-50(style=`color: ${textColor}`) D5
             div
-                h1.endeavor-process.endeavor-text-center.endeavor-no-padding(style=`color: ${textColor}`)=process
+                h1.endeavor-process.endeavor-text-center.endeavor-no-padding(style=`color: ${textColor2}`)=process
                 h3.endeavor-text-center(style=`color: ${textColor}`)=number
         .endeavor-width-norm.endeavor-max-width-750px.endeavor-flex.endeavor-flex-center.endeavor-center.endeavor-reveal.endeavor-no-flow
             p.endeavor-block.endeavor-text-center(style=`color: ${textColor}`)=data.text
