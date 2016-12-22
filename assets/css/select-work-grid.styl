@@ -284,6 +284,7 @@ $F-padding = 15px
 	.select-work li
 		width 30vw 
 		height @width
+		margin-right 15px
 	
 	.select-work ul
 		max-width 600px
@@ -303,6 +304,7 @@ $F-padding = 15px
 	.select-work li
 		width 30vw 
 		height @width
+		margin-right 15px
 	
 	.select-work ul
 		max-width 600px
@@ -326,21 +328,6 @@ $F-padding = 15px
 	#select-work
 		padding-top 35%
 		
-
-/* ----------- Retina Screens ----------- */
-@media screen and (max-width: 500px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
-	// #select-work-wrapper h3
-	// 	margin-top 50px
-		
-	#select-work
-		padding-top 35%
-
-		
-		
-
-//---------------------------------------------------------------
-// Breakpoint 6 | Phablet // iPhone 6s
-@media only screen and (max-device-width: 414px) and (min-resolution: 2dppx)
 	#select-work-wrapper
 		min-width 275px
 		width 85% 
@@ -350,10 +337,45 @@ $F-padding = 15px
 		height @width
 		margin-left 0
 		margin-right 0
+		margin-bottom 0
+		margin-top 100px
 		
 	.select-work ul
 		max-width 500px
 		min-width 100px
+		
+
+/* ----------- Retina Screens ----------- */
+@media screen and (max-width: 500px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
+	// #select-work-wrapper h3
+	// 	margin-top 50px
+		
+	#select-work
+		padding-top 35%
+		
+	#select-work-wrapper
+		min-width 275px
+		width 85% 
+		
+	.select-work li
+		width 85vw 
+		height @width
+		margin-left 0
+		margin-right 0
+		margin-bottom 0
+		margin-top 100px
+		
+	.select-work ul
+		max-width 500px
+		min-width 100px
+
+		
+		
+
+//---------------------------------------------------------------
+// Breakpoint 6 | Phablet // iPhone 6s
+// @media only screen and (max-device-width: 414px) and (min-resolution: 2dppx)
+	
 
 		
 
