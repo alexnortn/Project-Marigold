@@ -152,14 +152,12 @@ block content
         section#works.section&attributes({'data-inproject': false})
             #works-wrapper
                 // CASE STUDY ITERATOR
-                +endeavorSectionOpener("Case Studies", "01/03")
                 each case_study, index in case_studies
                     +caseStudyPreviewAlt(case_study, index)
                 // /CASE STUDY ITERATOR
 
                 //SELECT WORK GRID SECTION
                 #select-work.select-work.endeavor-padding-bottom-5vw
-                    +endeavorSectionOpener("Select Works", "02/03")
                     #select-work-wrapper
                         ul
                             each project, index in projects
@@ -174,7 +172,6 @@ block content
         //FEATURE SECTION
         section#feature.feature
             #feature-wrapper
-                +endeavorSectionOpener("Feature + Collaboration", "03/03", "endeavor-item-no-margin endeavor-width-100vw")
                 ul
                     // FEATURE ITERATOR
                     each result, index in feature
