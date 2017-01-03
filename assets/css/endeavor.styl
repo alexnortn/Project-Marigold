@@ -256,14 +256,18 @@ $StickyOffsetMeta = 20vh
 	
 
 .endeavor-overview .description 
+	position absolute
+	bottom -15%
+	
+	margin-left 15%
+	
 	width 300px
 	height 300px
 	min-width 300px
 	min-height 300px	
+	
 	padding 50px 50px 30px 50px
-	margin-left 7.5%
-	position absolute
-	bottom -15%
+	
 	order inherit
 	z-index 20
 	
@@ -286,6 +290,35 @@ $StickyOffsetMeta = 20vh
 
 .endeavor-overview .description h2 
 	margin-bottom 7.5px
+	text-align center
+	
+
+.endeavor-overview .description-preview
+	position absolute
+	
+	top 10%
+	padding 55px 75px 35px 60px
+	
+	order inherit
+	z-index 20
+	
+	background-color $WHITE_BG
+	
+	border-radius 0 50px 50px 0
+	box-shadow 0 0 100px rgba(0, 0, 0, 0.18)
+	
+	transition all 250ms
+
+
+
+.endeavor-overview .description-preview h3 
+	margin-bottom 5px
+	text-align center
+
+
+.endeavor-overview .description-preview h2 
+	margin-bottom 7.5px
+	margin-left -2.5px
 	text-align center
 	
 .endeavor-overview .description hr
@@ -313,15 +346,6 @@ $StickyOffsetMeta = 20vh
 	position absolute
 	border-top 1.25px dotted black
 	padding  25px 0 0 0
-	
-
-.description-wrapper
-	align-self center
-	
-
-// endeavor (non case-study)
-.endeavor-overview .description
-	margin-left 15%
 		
 
 
@@ -799,14 +823,7 @@ p.center-caption
 	margin-bottom 0
 	
 .endeavor-description h4
-	margin-top 50px 
-	
-
-.description-wrapper
-	align-self center
-	display flex
-	flex-direction column
-	
+	margin-top 50px 	
 
 .pull-left p 
 	text-align center
@@ -1123,6 +1140,15 @@ p.center-caption
 
 .endeavor-flex-start
 	justify-content flex-start
+	
+
+.endeavor-flex-align-start
+	align-items flex-start
+	
+
+.endeavor-flex-start2
+	justify-content flex-start
+	align-items flex-start
 	
 
 .endeavor-flex-self-center
@@ -2064,9 +2090,6 @@ p.center-caption
 		
 	.end-pad-100
 		height 175px
-		
-	.endeavor-overview.endeavor-overview-preview
-		height 60vh
 		
 	.endeavor-overview .description
 		width 82%

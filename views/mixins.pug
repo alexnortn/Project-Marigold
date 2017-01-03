@@ -12,7 +12,7 @@
         + route <scr/string>
         + name-preview <string>
         + project-type <string>
-        + project-name <string>
+        + project-name <string> 
         + project-description <string>
         + project-image-preview <src>
 
@@ -40,11 +40,11 @@ mixin caseStudyPreview(data, index)
 
 mixin caseStudyPreviewAlt(data, index)
     .case-study.case-study-window.item.case-study-item.endeavor-height-1000px-responsive.endeavor-height-600px-mobile&attributes( {'data-inproject': false}, {'data-projectIndex': index}, {'data-project': data.route},  {'id': data.preview} )
-        .case-study-overview.endeavor-overview.endeavor-overview-preview
-            //- .description
-            //-     .description-wrapper
-            //-         h3=data.project_type
-            //-         h2.project-intro=data.name
+        .case-study-overview.endeavor-overview.endeavor-overview-preview.endeavor-flex-row
+            .description-preview.endeavor-flex-column.endeavor-flex-start2
+                .description-wrapper.endeavor-flex-column.endeavor-flex-align-start
+                    h3=data.project_type
+                    h2.project-intro=data.name
             .hero-box
                 .hero(style=`background-image: url(${data.image_hero})`)
 
