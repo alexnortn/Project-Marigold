@@ -345,6 +345,7 @@ mixin endeavorSubheaderCaptionFS(data)
 
 mixin endeavorIntroFS(data)
     - var _margin = data.margin ? data.margin : "endeavor-item"
+    - var _class = data.class ? data.class : ""
     - var header = data.header
     - var subtext = data.subtext
     - var bgColor = data.bgColor ? data.bgColor : "transparent"
@@ -988,10 +989,9 @@ mixin endeavorInfographicCompare(data)
     Description: Useful for creating full screen extensive backgrounds + overlays
 
 mixin endeavorModuleMachine(data)
-    - var bgImage = data.bgImage ? data.bgImage : "none"
-    - var bgColor = data.bgColor ? data.bgColor : "transparent"
+    - var bgColor = data.bgColor ? data.bgColor : ""
     - var _class = data.class ? data.class : "endeavor-item"
-    .endeavor-width-100vw.endeavor-bg-200.endeavor-bg-center.endeavor-pos-rel.endeavor-flex-column.endeavor-flex-center-main(class=`${_class}`)(style=`background-image: url(${bgImage.src});background-color: ${bgColor}`)
+    .endeavor-width-100vw.endeavor-bg-200.endeavor-bg-center.endeavor-pos-rel.endeavor-flex-column.endeavor-flex-center-main(class=`${_class}`)(style=`background-color: ${bgColor}`)
         .endeavor-item-no-margin.endeavor-width-norm
             each module, index in data.modules
                 +#{module.name}(module.data)
