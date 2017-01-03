@@ -807,7 +807,7 @@
                     "name" : "endeavorChecklist",
                     "data" : {
                         "header" : "Observations",
-                        "class" : "endeavor-item-top-125",
+                        "class" : "",
                         "bgColor" : "",
                         "contents" : [
                             {
@@ -869,7 +869,7 @@
                     "name" : "endeavorChecklist",
                     "data" : {
                         "header" : "Design Questions",
-                        "class" : "endeavor-item-125",
+                        "class" : "",
                         "bgColor" : "",
                         "contents" : [
                             {
