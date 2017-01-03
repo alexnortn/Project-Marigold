@@ -169,10 +169,29 @@ mixin endeavorDesignProcess(data)
             h3.endeavor-top-left.endeavor-padding-top-50(style=`color: ${textColor}`) Design Process
             h3.endeavor-top-right.endeavor-padding-top-50(style=`color: ${textColor}`) D5
             div
-                h1.endeavor-process.endeavor-text-center.endeavor-no-padding(style=`color: ${textColor2}`)=process
+                h1.endeavor-section-opener.endeavor-text-center.endeavor-no-padding(style=`color: ${textColor2}`)=process
                 h3.endeavor-text-center(style=`color: ${textColor}`)=number
         .endeavor-width-norm.endeavor-max-width-750px.endeavor-flex.endeavor-flex-center.endeavor-center.endeavor-reveal.endeavor-no-flow
             p.endeavor-block.endeavor-text-center(style=`color: ${textColor}`)=data.text
+
+
+//-  Endeavor Site Content Section
+    Requires: <data.sectionName><data.number>
+    Description: Full-width element with centered button
+
+mixin endeavorSectionOpener(section, number, _class_)
+    - var section = section ? section : "666"
+    - var number = number ? number : "666"
+    - var _class = _class_ ? _class_ : "endeavor-item-no-margin"
+    - var textColor  = "#bfbfbf" // $BLACK
+    - var textColor2 = "#d9d9d9" // $BLACK
+    .endeavor-pos-rel.endeavor-flex-self-center.endeavor-width-100-prcnt.endeavor-height-750px.endeavor-height-500px-1000.endeavor-bg-graydient(class=`${_class}`)
+        .endeavor-width-norm.endeavor-flex.endeavor-flex-center.endeavor-center.endeavor-height-100-prcnt
+            h3.endeavor-top-left.endeavor-padding-top-50(style=`color: ${textColor}`) Design Process
+            h3.endeavor-top-right.endeavor-padding-top-50(style=`color: ${textColor}`) C3
+            div
+                h1.endeavor-section-opener.endeavor-text-center.endeavor-no-padding(style=`color: ${textColor2}`)=section
+                h3.endeavor-text-center(style=`color: ${textColor}`)=number
 
 
 //-  Endeavor Expandable Description Sections
