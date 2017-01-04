@@ -860,6 +860,34 @@ mixin endeavorAnalysisComparision2(data)
 
 //-  Endeavor Project | Full 100vw Element
     Requires: <data.modules> <data.modules.data> 
+    Description: Useful for creating interactive, responsive, flowing comparisons
+
+mixin endeavorAnalysisComparision3(data)
+    - var bgColor = data.bgColor ? data.bgColor : "transparent"
+    - var process = data.process
+    - var _id = data.id ? data.id : "666"
+    - var _class = data.class ? data.class : "endeavor-item"
+    .endeavor-width-100vw.endeavor-transition-1000.endeavor-no-flow(id=`${_id}`)(class=`${_class}`)(style=`background-color: ${bgColor}`)
+        .endeavor-item-no-vertical-margin.endeavor-width-75-prcnt.endeavor-max-width-750px.endeavor-center
+            each step, index in process
+                .fsw.endeavor-flex.endeavor-flex-start.endeavor-flex-center-main.endeavor-border-top.endeavor-height-auto.endeavor-height-max-100px
+                    .endeavor-vertical-5.endeavor-square-100px.endeavor-flex.endeavor-flex-center
+                        - var number = index + 1
+                        p.copy-small-subheader.tight=`${"0" + number}`
+                    .endeavor-padding-left-50.endeavor-height-100px.endeavor-width-100-prcnt.endeavor-flex-row.endeavor-flex-center-main
+                        p.copy-small-subheader.tight=step.header
+                    .endeavor-5.endeavor-square-100px.endeavor-flex.endeavor-flex-center
+                        .endeavor-square-50px.endeavor-circle.endeavor-flex.endeavor-flex-center.endeavor-border
+                            p.copy-small-subheader.tight +
+                    //- .endeavor-flex-row.endeavor-clear-tablet.endeavor-padding-25-tablet
+                    //-     each content, iindex in step.contents
+                    //-         .endeavor-width-50-prcnt.endeavor-5.analysis
+                    //-             p.copy-small-header=content.header
+                    //-             p.copy-small.endeavor-text-left=content.description
+
+
+//-  Endeavor Project | Full 100vw Element
+    Requires: <data.modules> <data.modules.data> 
     Description: Useful for creating flowing checklists
 
 mixin endeavorChecklist(data)
