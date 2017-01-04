@@ -1352,6 +1352,12 @@ p.center-caption
 
 .endeavor-height-max-100px-reveal:hover
 	max-height 500px
+	cursor pointer
+	
+
+.endeavor-height-max-100px-reveal:hover .x-out
+	transform: rotate(45deg)
+	
 	
 
 /* -------------------------------------- */
@@ -1664,24 +1670,43 @@ p.center-caption
 	.endeavor-transition-250
 		transition all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55)
 		
+	
 	.endeavor-transition-1000
 		transition all 1000ms cubic-bezier(0.68, -0.55, 0.265, 1.55)
 		
+	
 	.endeavor-transition-ease-1000
 		transition all 1000ms ease-in-out
 		
+	
 	.endeavor-transition-ease-500
 		transition all 500ms ease-in-out
 		
+	
 	.endeavor-no-flow
 		overflow hidden
 		
+	
 	.endeavor-360:hover
 		animation three-sixty 1s
 		
+	
 	.endeavor-reveal
 		max-height 0
 		margin-bottom 0
+		
+
+	.trigger 
+		position fixed
+		top 0
+		left 0
+		clip rect(0,0,0,0)
+		
+
+	.comparison-trigger:checked
+		max-height 500px
+		
+
 
 
 /*
@@ -1805,7 +1830,7 @@ p.center-caption
 		margin-bottom 300px
 		
 	.endeavor-padding-left-100-1000
-		padding-left 100px
+		padding-left 0
 		
 	.endeavor-width-100-prcnt-1000
 		width 100%
@@ -1912,7 +1937,7 @@ p.center-caption
 		margin-bottom 300px
 		
 	.endeavor-padding-left-100-1000
-		padding-left 100px
+		padding-left 0
 		
 	.endeavor-width-100-prcnt-1000
 		width 100%
