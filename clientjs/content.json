@@ -547,7 +547,7 @@
                 {
                     "name" : "endeavorAnalysisComparision3",
                     "data" : {
-                        "class" : "endeavor-item endeavor-reveal",
+                        "class" : "endeavor-item-250 endeavor-reveal",
                         "id" : "ghost-connectomics-affect",
                         "bgColor" : "endeavor-item-no-margin",
                         "process" : [

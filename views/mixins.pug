@@ -171,7 +171,7 @@ mixin endeavorDesignProcess(data)
             div
                 h1.endeavor-section-opener.endeavor-text-center.endeavor-no-padding(style=`color: ${textColor2}`)=process
                 h3.endeavor-text-center(style=`color: ${textColor}`)=number
-        .endeavor-width-norm.endeavor-max-width-750px.endeavor-flex.endeavor-flex-center.endeavor-center.endeavor-reveal.endeavor-no-flow
+        .endeavor-width-norm.endeavor-max-width-750px.endeavor-flex.endeavor-flex-center.endeavor-center.endeavor-height-0.endeavor-no-flow
             p.endeavor-block.endeavor-text-center(style=`color: ${textColor}`)=data.text
 
 
@@ -244,7 +244,7 @@ mixin endeavorCaptionFS(data)
     - var textColor = data.textColor ? data.textColor : "#232323" // $BLACK
     - var _class = data.class ? data.class : "endeavor-item-no-margin"
     .fsw(class=`${_class}`)
-        p.caption.no-margin.endeavor-padding-left-50.endeavor-width-500px(style=`color: ${textColor}`)=caption
+        p.caption.no-margin.endeavor-padding-left-50-responsive.endeavor-width-500px(style=`color: ${textColor}`)=caption
 
 
 //-  Endeavor Project | Full-Width blocking, Caption
@@ -254,7 +254,7 @@ mixin endeavorCaptionFS(data)
 mixin endeavorCaptionFS2(datum)
     - var caption = datum.caption
     .endeavor-item.fsw
-        p.no-margin.endeavor-caption-2.endeavor-padding-left-50.endeavor-width-60-prcnt=caption
+        p.no-margin.endeavor-caption-2.endeavor-padding-left-50-responsive.endeavor-width-60-prcnt=caption
 
 
 //-  Endeavor Project | Full-Width blocking, Caption | Centered
@@ -867,23 +867,24 @@ mixin endeavorAnalysisComparision3(data)
     - var process = data.process
     - var _id = data.id ? data.id : "666"
     - var _class = data.class ? data.class : "endeavor-item"
-    .endeavor-width-100vw.endeavor-transition-1000.endeavor-no-flow(id=`${_id}`)(class=`${_class}`)(style=`background-color: ${bgColor}`)
+    .fsw.endeavor-transition-1000.endeavor-no-flow(id=`${_id}`)(class=`${_class}`)(style=`background-color: ${bgColor}`)
         .endeavor-item-no-vertical-margin.endeavor-width-75-prcnt.endeavor-max-width-750px.endeavor-center
             each step, index in process
-                .fsw.endeavor-flex.endeavor-flex-start.endeavor-flex-center-main.endeavor-border-top.endeavor-height-auto.endeavor-height-max-100px
-                    .endeavor-vertical-5.endeavor-square-100px.endeavor-flex.endeavor-flex-center
-                        - var number = index + 1
-                        p.copy-small-subheader.tight=`${"0" + number}`
-                    .endeavor-padding-left-50.endeavor-height-100px.endeavor-width-100-prcnt.endeavor-flex-row.endeavor-flex-center-main
-                        p.copy-small-subheader.tight=step.header
-                    .endeavor-5.endeavor-square-100px.endeavor-flex.endeavor-flex-center
-                        .endeavor-square-50px.endeavor-circle.endeavor-flex.endeavor-flex-center.endeavor-border
+                .fsw.endeavor-height-auto.endeavor-height-max-100px-reveal.endeavor-no-flow.endeavor-transition-ease-500
+                    .fsw.endeavor-flex.endeavor-flex-start.endeavor-border-top-noPad
+                        .endeavor-square-100px.endeavor-flex.endeavor-flex-center
+                            - var number = index + 1
+                            p.copy-small-subheader.tight=`${"0" + number}`
+                        .endeavor-padding-left-50.endeavor-padding-left-25-1000.endeavor-height-100-prcnt.endeavor-width-100-prcnt
+                            .fsw.endeavor-height-100px.endeavor-flex-row.endeavor-flex-center-main
+                                p.copy-small-subheader.tight=step.header
+                            .endeavor-flex-row.endeavor-clear-tablet.endeavor-padding-bottom-35
+                                each content, iindex in step.contents
+                                    .endeavor-width-50-prcnt.endeavor-5.analysis
+                                        p.copy-small-header=content.header
+                                        p.copy-small.endeavor-text-left=content.description
+                        .endeavor-square-100px.endeavor-flex.endeavor-flex-center
                             p.copy-small-subheader.tight +
-                    //- .endeavor-flex-row.endeavor-clear-tablet.endeavor-padding-25-tablet
-                    //-     each content, iindex in step.contents
-                    //-         .endeavor-width-50-prcnt.endeavor-5.analysis
-                    //-             p.copy-small-header=content.header
-                    //-             p.copy-small.endeavor-text-left=content.description
 
 
 //-  Endeavor Project | Full 100vw Element
@@ -899,7 +900,7 @@ mixin endeavorChecklist(data)
     - var _class = data.class ? data.class : "endeavor-item-125"
     .fsw.endeavor-center.endeavor-padding-left-100-1000.endeavor-padding-left-0-mobile(class=`${_class}`)(style=`background-color: ${bgColor}`)
         h2=header
-        .endeavor-flex-row.endeavor-padding-top-50.endeavor-padding-left-50
+        .endeavor-flex-row.endeavor-padding-top-50.endeavor-padding-left-50-responsive
             each content, index in contents
                 ul.endeavor-width-45-prcnt.endeavor-width-100-prcnt-1000.endeavor-max-width-500.endeavor-15.endeavor-padding-vertical-5-mobile.checklist
                     li
