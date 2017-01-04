@@ -871,11 +871,11 @@ mixin endeavorChecklist(data)
     - var _class = data.class ? data.class : "endeavor-item-125"
     .fsw.endeavor-center.endeavor-padding-left-100-1000.endeavor-padding-left-0-mobile(class=`${_class}`)(style=`background-color: ${bgColor}`)
         h2=header
-        .endeavor-flex-row.endeavor-padding-top-25.endeavor-padding-left-50
+        .endeavor-flex-row.endeavor-padding-top-50.endeavor-padding-left-50
             each content, index in contents
                 ul.endeavor-width-45-prcnt.endeavor-width-100-prcnt-1000.endeavor-max-width-500.endeavor-15.endeavor-padding-vertical-5-mobile.checklist
                     li
-                        p.roman=content.header
+                        p.space-after.roman=content.header
                         p=content.description
 
 

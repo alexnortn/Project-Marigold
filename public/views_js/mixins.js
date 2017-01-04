@@ -1673,7 +1673,7 @@ pug_html = pug_html + "\u003Ch2\u003E";
 ;pug_debug_line = 873;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + (pug_escape(null == (pug_interp = header) ? "" : pug_interp)) + "\u003C\u002Fh2\u003E";
 ;pug_debug_line = 874;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cdiv class=\"endeavor-flex-row endeavor-padding-top-25 endeavor-padding-left-50\"\u003E";
+pug_html = pug_html + "\u003Cdiv class=\"endeavor-flex-row endeavor-padding-top-50 endeavor-padding-left-50\"\u003E";
 ;pug_debug_line = 875;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 // iterate contents
 var pug_obj15 = contents;
@@ -1687,7 +1687,7 @@ pug_html = pug_html + "\u003Cul class=\"endeavor-width-45-prcnt endeavor-width-1
 ;pug_debug_line = 877;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + "\u003Cli\u003E";
 ;pug_debug_line = 878;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cp class=\"roman\"\u003E";
+pug_html = pug_html + "\u003Cp class=\"space-after roman\"\u003E";
 ;pug_debug_line = 878;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + (pug_escape(null == (pug_interp = content.header) ? "" : pug_interp)) + "\u003C\u002Fp\u003E";
 ;pug_debug_line = 879;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
@@ -1707,7 +1707,7 @@ pug_html = pug_html + "\u003Cul class=\"endeavor-width-45-prcnt endeavor-width-1
 ;pug_debug_line = 877;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + "\u003Cli\u003E";
 ;pug_debug_line = 878;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cp class=\"roman\"\u003E";
+pug_html = pug_html + "\u003Cp class=\"space-after roman\"\u003E";
 ;pug_debug_line = 878;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + (pug_escape(null == (pug_interp = content.header) ? "" : pug_interp)) + "\u003C\u002Fp\u003E";
 ;pug_debug_line = 879;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
