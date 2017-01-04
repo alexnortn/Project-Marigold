@@ -394,9 +394,15 @@
                     }
                 },
                 {
-                    "name" : "endeavorPad",
+                    "name" : "endeavorDesignProcess",
                     "data" : {
-                        "class" : "endeavor-item-no-margin endeavor-height-10vw"
+                        "class" : "endeavor-item-no-margin",
+                        "process" : "Discover",
+                        "text" : "The Discover phase aims to know your client, their brand and their customers while gaining a full understanding of the project. This is essential to allow the design team to understand the task, develop a feel for the client’s business or interest, become familiar with the user and empathize with the brand.",
+                        "number" : "01/05",
+                        "bgColor" : "#e6e6e6",
+                        "textColor" : "#bfbfbf",
+                        "textColor2" : "#d9d9d9"
                     }
                 },
                 {
@@ -428,26 +434,14 @@
                     "data" : {
                         "class" : "endeavor-item",
                         "textColor" : "#666666",
-                        "caption" : "At SeungLab scientists study Connectomics, a specialty in the domain of Neuroscience which seeks to understand brain structure and function by constructing comprehensive maps of the connections between neurons."
-                    }
-                },
-                {
-                    "name" : "endeavorDesignProcess",
-                    "data" : {
-                        "class" : "endeavor-item-no-margin",
-                        "process" : "Discover",
-                        "text" : "The Discover phase aims to know your client, their brand and their customers while gaining a full understanding of the project. This is essential to allow the design team to understand the task, develop a feel for the client’s business or interest, become familiar with the user and empathize with the brand.",
-                        "number" : "01/05",
-                        "bgColor" : "#e6e6e6",
-                        "textColor" : "#bfbfbf",
-                        "textColor2" : "#d9d9d9"
+                        "caption" : "Sebastian Seung (pictured above) is a leader in the new field of connectomics, currently the hottest space in neuroscience, which studies, in once-impossible detail, the wiring of the brain."
                     }
                 },
                 {
                     "name" : "endeavorModuleMachine",
                     "data" : {
                         "bgColor" : "",
-                        "class" : "endeavor-item-no-margin endeavor-bg-graydient",
+                        "class" : "endeavor-item-no-margin",
                         "modules" : [
                             {
                                 "name" : "endeavorIntroFS",
