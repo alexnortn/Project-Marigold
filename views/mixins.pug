@@ -146,6 +146,7 @@ mixin endeavorIntro(data)
 mixin endeavorGhostButton(data)
     - var text = data.text ? data.text : "666"
     - var _id = data.id ? data.id : "666"
+    - var _align = data.align ? data.align : "666"
     - var _class = data.class ? data.class : "endeavor-item-125"
     - var textColor = data.textColor ? data.textColor : "#232323" // $BLACK
     .fsw.endeavor-text-center(class=`${_class}`)
@@ -908,6 +909,31 @@ mixin endeavorChecklist(data)
                     li
                         p.space-after.roman=content.header
                         p=content.description
+
+
+//-  Endeavor Project | Full 100vw Element
+    Requires: <data.modules> <data.modules.data> 
+    Note: This rocks with Font-Awesome Bullets!
+    Description: Useful for creating flowing checklists
+
+mixin endeavorParagraphChecklist(data)
+    - var bgColor = data.bgColor ? data.bgColor : "transparent"
+    - var header = data.header
+    - var _id = data.id ? data.id : "666"
+    - var contents = data.contents
+    - var _class = data.class ? data.class : "endeavor-item-125"
+    .fsw.endeavor-center.endeavor-padding-left-100-1000.endeavor-padding-left-0-mobile(class=`${_class}`)(style=`background-color: ${bgColor}`)
+        h2=header
+        .endeavor-flex-row.endeavor-padding-top-50.endeavor-padding-left-50-responsive
+            each content, index in contents
+                - var _icon = content.icon
+                - console.log("HEY LISTEN " + index);
+                p.space-after.roman.endeavor-item-top-25=content.header
+                ul.fa-ul.endeavor-width-45-prcnt.endeavor-width-100-prcnt-1000.endeavor-max-width-500.endeavor-15.endeavor-padding-vertical-5-mobile.checklist
+                    each bullet, iindex in content.bullets
+                        li
+                            i.fa-li.fa.fa-2x(class=`${_icon}`)
+                            p=bullet
 
 
 //- -------------- Hybrid Components ----------------

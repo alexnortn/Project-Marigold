@@ -807,6 +807,47 @@
                     }
                 },
                 {
+                    "name" : "endeavorParagraphChecklist",
+                    "data" : {
+                        "header" : "Market Research",
+                        "class" : "",
+                        "bgColor" : "",
+                        "text" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with.",
+                        "contents" : [
+                            {
+                                "header" : "Do's",
+                                "icon" : "fa-check",
+                                "bullets" : [
+                                    "Researchers have an excess of data and a lack of investigative power.",
+                                    "The scale of todays scientific challenges demand cross–disciplinary collaboration.",
+                                    "Collaboration presents the opportunity for teams to leverage each others specialties to move faster and tackle larger and more important problems.",
+                                    "Collaboration necessitates sharing, of knowledge, time, ideas,  skills, and increasingly data."
+                                ]
+                            },
+                            {
+                                "header" : "Dont's",
+                                "icon" : "fa-close",
+                                "bullets" : [
+                                    "Researchers have an excess of data and a lack of investigative power.",
+                                    "The scale of todays scientific challenges demand cross–disciplinary collaboration.",
+                                    "Collaboration presents the opportunity for teams to leverage each others specialties to move faster and tackle larger and more important problems.",
+                                    "Collaboration necessitates sharing, of knowledge, time, ideas,  skills, and increasingly data."
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorGhostButton",
+                    "data" : {
+                        "class" : "endeavor-item-bottom-250",
+                        "text" : "Look Closer",
+                        "align" : "",
+                        "id" : "ghost-market-research",
+                        "textColor" : "#666666"
+                    }
+                },
+                {
                     "name" : "endeavorChecklist",
                     "data" : {
                         "header" : "Observations",
