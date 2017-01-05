@@ -889,7 +889,7 @@ mixin endeavorAnalysisComparision3(data)
                             p.copy-small-subheader.tight +
 
 
-//-  Endeavor Project | Full 100vw Element
+//-  Endeavor Project | 100% Object
     Requires: <data.modules> <data.modules.data> 
     Description: Useful for creating flowing checklists
 
@@ -910,7 +910,7 @@ mixin endeavorChecklist(data)
                         p=content.description
 
 
-//-  Endeavor Project | Full 100vw Element
+//-  Endeavor Project | 100% Object
     Requires: <data.modules> <data.modules.data> 
     Note: This rocks with Font-Awesome Bullets!
     Description: Useful for creating flowing checklists
@@ -936,6 +936,35 @@ mixin endeavorParagraphChecklist(data)
                             li.endeavor-item-left-25.endeavor-item-bottom-25
                                 i.endeavor-color-gray-75.fa-li.fa.fa-2x(class=`${_icon}`)
                                 p.lil-p=bullet
+
+
+//-  Endeavor Project | 100% Object
+    Requires: <data.modules> <data.modules.data> 
+    Note: This rocks with Font-Awesome Bullets!
+    Description: Useful for creating flowing checklists
+
+mixin endeavorParagraphUsers(data)
+    - var bgColor = data.bgColor ? data.bgColor : "transparent"
+    - var header = data.header
+    - var description = data.description
+    - var _id = data.id ? data.id : "666"
+    - var contents = data.contents
+    - var _class = data.class ? data.class : "endeavor-item-125"
+    - var _class2 = data.class2 ? data.class2 : ""
+    .fsw.endeavor-center.endeavor-padding-left-100-1000.endeavor-padding-left-0-mobile(class=`${_class}`)(style=`background-color: ${bgColor}`)
+        h2=header
+        .endeavor-flex-row.endeavor-padding-top-50.endeavor-padding-left-50-responsive
+            p.endeavor-item-bottom-25=description
+            .fsw.endeavor-transition-ease-500.endeavor-height-auto.endeavor-no-flow&attributes({'class': _class2}, {'id': _id})
+                each content, index in contents
+                    - var _icon = content.icon
+                    p.lil-p.space-after.roman.endeavor-item-top-25.endeavor-item-left-25=content.header
+                    ul.fa-ul.endeavor-width-45-prcnt.endeavor-width-100-prcnt-1000.endeavor-max-width-750px.endeavor-padding-vertical-5-mobile.checklist.endeavor-border-top
+                        each bullet, iindex in content.bullets
+                            li.endeavor-item-left-25.endeavor-item-bottom-25.endeavor-inline-block
+                                i.endeavor-color-gray-75.fa-li.fa.fa-2x(class=`${_icon}`)
+                                p.lil-p.space-after.roman=bullet.header
+                                p.lil-p=bullet.description
 
 
 //- -------------- Hybrid Components ----------------

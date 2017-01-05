@@ -850,6 +850,87 @@
                     }
                 },
                 {
+                    "name" : "endeavorParagraphUsers",
+                    "data" : {
+                        "header" : "User Stories",
+                        "id" : "ghost-user-stories-affect",
+                        "class" : "endeavor-item-125 endeavor-item-bottom-25",
+                        "class2" : "endeavor-reveal",
+                        "bgColor" : "",
+                        "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with.",
+                        "contents" : [
+                            {
+                                "header" : "Stakeholders",
+                                "icon" : "fa-user-circle",
+                                "bullets" : [
+                                    {
+                                        "header" : "SeungLab",
+                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                    }
+                                ]
+                            },
+                            {
+                                "header" : "Individuals",
+                                "icon" : "fa-user",
+                                "bullets" : [
+                                    {
+                                        "header" : "Neuroscientist",
+                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                    },
+                                    {
+                                        "header" : "Neuroanatomist",
+                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                    },
+                                    {
+                                        "header" : "Student: Undergrad",
+                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                    },
+                                    {
+                                        "header" : "Student: Graduate",
+                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                    },
+                                    {
+                                        "header" : "Gamer: Eyewire",
+                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                    },
+                                    {
+                                        "header" : "Curious Surfer",
+                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                    }
+                                ]
+                            },
+                            {
+                                "header" : "Organization",
+                                "icon" : "fa-users",
+                                "bullets" : [
+                                    {
+                                        "header" : "Lab",
+                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                    },
+                                    {
+                                        "header" : "University",
+                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                    },
+                                    {
+                                        "header" : "Eyewire",
+                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorGhostButton",
+                    "data" : {
+                        "class" : "endeavor-item-bottom-125 endeavor-padding-left-50-responsive endeavor-text-left",
+                        "text" : "Look Closer",
+                        "align" : "",
+                        "id" : "ghost-user-stories",
+                        "textColor" : "#666666"
+                    }
+                },
+                {
                     "name" : "endeavorChecklist",
                     "data" : {
                         "header" : "Observations",
