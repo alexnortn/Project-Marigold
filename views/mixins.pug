@@ -146,7 +146,6 @@ mixin endeavorIntro(data)
 mixin endeavorGhostButton(data)
     - var text = data.text ? data.text : "666"
     - var _id = data.id ? data.id : "666"
-    - var _align = data.align ? data.align : "666"
     - var _class = data.class ? data.class : "endeavor-item-125"
     - var textColor = data.textColor ? data.textColor : "#232323" // $BLACK
     .fsw.endeavor-text-center(class=`${_class}`)
@@ -382,7 +381,7 @@ mixin endeavorTextLeftImageFS(data)
     - var sizeClass = data.sizeClass
 
     .endeavor-item.endeavor-horizontal-10vw.endeavor-flex-row-nowrap.endeavor-flex-center-main.endeavor-flex-between.fsw(style=`background-color: ${bgColor}`)
-        img.lazyload.endeavor-second.blur-up(src=image.src_low)&attributes({'data-src': image.src}, {'data-srcset': sources})(class=`${sizeClass}`)
+        img.lazyload.endeavor-second.blur-up(src=image.src_low)&attributes({'data-src': image.src}, {'data-srcset': sources}, {'class':sizeClass})
         .endeavor-block
             h3.endeavor-text-left(style=`color: ${textColor}`)=data.superText
             p.endeavor-pulltext.endeavor-text-left(style=`color: ${textColor}`)=data.text
@@ -401,7 +400,7 @@ mixin endeavorTextLeftImage2FS(data)
     - var sizeClass = data.sizeClass
 
     .endeavor-item.endeavor-horizontal-10vw.endeavor-flex-row-nowrap.endeavor-flex-center-main.endeavor-flex-between.fsw(style=`background-color: ${bgColor}`)
-        img.lazyload.endeavor-second.blur-up(src=image.src_low)&attributes({'data-src': image.src}, {'data-srcset': sources})(class=`${sizeClass}`)
+        img.lazyload.endeavor-second.blur-up(src=image.src_low)&attributes({'data-src': image.src}, {'data-srcset': sources}, {'class':sizeClass})
         .endeavor-block
             p.endeavor-caption-4.endeavor-text-left(style=`color: ${textColor}`)=data.text
 
@@ -420,7 +419,7 @@ mixin endeavorTextRightImageFS(data)
     - var sizeClass = data.sizeClass
 
     .endeavor-item.endeavor-horizontal-10vw.endeavor-flex-row-nowrap.endeavor-flex-center-main.endeavor-flex-between.fsw(style=`background-color: ${bgColor}`)
-        img.lazyload.blur-up(src=image.src_low)&attributes({'data-src': image.src}, {'data-srcset': sources})(class=`${sizeClass}`)
+        img.lazyload.blur-up(src=image.src_low)&attributes({'data-src': image.src}, {'data-srcset': sources}, {'class':sizeClass})
         .endeavor-block.endeavor-second
             h3.endeavor-text-left(style=`color: ${textColor}`)=data.superText
             p.endeavor-pulltext.endeavor-text-left(style=`color: ${textColor}`)=data.text
@@ -439,7 +438,7 @@ mixin endeavorTextRightImage2FS(data)
     - var sizeClass = data.sizeClass
 
     .endeavor-item.endeavor-horizontal-10vw.endeavor-flex-row-nowrap.endeavor-flex-center-main.endeavor-flex-between.fsw(style=`background-color: ${bgColor}`)
-        img.lazyload.blur-up(src=image.src_low)&attributes({'data-src': image.src}, {'data-srcset': sources})(class=`${sizeClass}`)
+        img.lazyload.blur-up(src=image.src_low)&attributes({'data-src': image.src}, {'data-srcset': sources}, {'class':sizeClass})
         .endeavor-block.endeavor-second
             p.endeavor-caption-4.endeavor-text-left(style=`color: ${textColor}`)=data.text
 
@@ -919,21 +918,24 @@ mixin endeavorChecklist(data)
 mixin endeavorParagraphChecklist(data)
     - var bgColor = data.bgColor ? data.bgColor : "transparent"
     - var header = data.header
+    - var description = data.description
     - var _id = data.id ? data.id : "666"
     - var contents = data.contents
     - var _class = data.class ? data.class : "endeavor-item-125"
+    - var _class2 = data.class2 ? data.class2 : ""
     .fsw.endeavor-center.endeavor-padding-left-100-1000.endeavor-padding-left-0-mobile(class=`${_class}`)(style=`background-color: ${bgColor}`)
         h2=header
         .endeavor-flex-row.endeavor-padding-top-50.endeavor-padding-left-50-responsive
-            each content, index in contents
-                - var _icon = content.icon
-                - console.log("HEY LISTEN " + index);
-                p.space-after.roman.endeavor-item-top-25=content.header
-                ul.fa-ul.endeavor-width-45-prcnt.endeavor-width-100-prcnt-1000.endeavor-max-width-500.endeavor-15.endeavor-padding-vertical-5-mobile.checklist
-                    each bullet, iindex in content.bullets
-                        li
-                            i.fa-li.fa.fa-2x(class=`${_icon}`)
-                            p=bullet
+            p.endeavor-item-bottom-25=description
+            .fsw.endeavor-transition-ease-500.endeavor-height-auto.endeavor-no-flow&attributes({'class': _class2}, {'id': _id})
+                each content, index in contents
+                    - var _icon = content.icon
+                    p.space-after.roman.endeavor-item-top-25=content.header
+                    ul.fa-ul.endeavor-width-45-prcnt.endeavor-width-100-prcnt-1000.endeavor-max-width-500.endeavor-15.endeavor-padding-vertical-5-mobile.checklist
+                        each bullet, iindex in content.bullets
+                            li
+                                i.fa-li.fa.fa-2x(class=`${_icon}`)
+                                p=bullet
 
 
 //- -------------- Hybrid Components ----------------
