@@ -818,7 +818,7 @@
                         "contents" : [
                             {
                                 "header" : "Do's",
-                                "icon" : "fa-check",
+                                "icon" : "fa-thumbs-o-up",
                                 "bullets" : [
                                     "Researchers have an excess of data and a lack of investigative power.",
                                     "The scale of todays scientific challenges demand cross–disciplinary collaboration.",
@@ -828,7 +828,7 @@
                             },
                             {
                                 "header" : "Dont's",
-                                "icon" : "fa-close",
+                                "icon" : "fa-thumbs-o-down",
                                 "bullets" : [
                                     "Researchers have an excess of data and a lack of investigative power.",
                                     "The scale of todays scientific challenges demand cross–disciplinary collaboration.",
@@ -861,7 +861,7 @@
                         "contents" : [
                             {
                                 "header" : "Stakeholders",
-                                "icon" : "fa-user-circle",
+                                "icon" : "fa-institution",
                                 "bullets" : [
                                     {
                                         "header" : "SeungLab",
@@ -935,7 +935,9 @@
                     "data" : {
                         "header" : "Observations",
                         "class" : "endeavor-item-125",
+                        "icon" : "fa-hand-o-right",
                         "bgColor" : "",
+                        "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with.",
                         "contents" : [
                             {
                                 "header" : "Publish or Perish",
@@ -997,7 +999,9 @@
                     "data" : {
                         "header" : "Design Questions",
                         "class" : "",
+                        "icon" : "fa-hand-o-right",
                         "bgColor" : "",
+                        "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with.",
                         "contents" : [
                             {
                                 "header" : "What is the problem you're trying to solve?",
