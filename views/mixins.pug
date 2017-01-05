@@ -904,7 +904,7 @@ mixin endeavorChecklist(data)
         h2=header
         .endeavor-flex-row.endeavor-padding-top-50.endeavor-padding-left-50-responsive
             each content, index in contents
-                ul.endeavor-width-45-prcnt.endeavor-width-100-prcnt-1000.endeavor-max-width-500.endeavor-15.endeavor-padding-vertical-5-mobile.checklist
+                ul.endeavor-width-45-prcnt.endeavor-width-100-prcnt-1000.endeavor-max-width-500.endeavor-padding-vertical-5-mobile.checklist.endeavor-item-bottom-25.endeavor-width-75-prcnt-1000
                     li
                         p.space-after.roman=content.header
                         p=content.description
@@ -930,12 +930,12 @@ mixin endeavorParagraphChecklist(data)
             .fsw.endeavor-transition-ease-500.endeavor-height-auto.endeavor-no-flow&attributes({'class': _class2}, {'id': _id})
                 each content, index in contents
                     - var _icon = content.icon
-                    p.space-after.roman.endeavor-item-top-25=content.header
-                    ul.fa-ul.endeavor-width-45-prcnt.endeavor-width-100-prcnt-1000.endeavor-max-width-500.endeavor-15.endeavor-padding-vertical-5-mobile.checklist
+                    ul.fa-ul.endeavor-width-45-prcnt.endeavor-width-100-prcnt-1000.endeavor-max-width-750px.endeavor-padding-vertical-5-mobile.checklist.endeavor-inline-block
+                        p.lil-p.space-after.roman.endeavor-item-top-25.endeavor-item-left-25=content.header
                         each bullet, iindex in content.bullets
-                            li
-                                i.fa-li.fa.fa-2x(class=`${_icon}`)
-                                p=bullet
+                            li.endeavor-item-left-25.endeavor-item-bottom-25
+                                i.endeavor-color-gray-75.fa-li.fa.fa-2x(class=`${_icon}`)
+                                p.lil-p=bullet
 
 
 //- -------------- Hybrid Components ----------------

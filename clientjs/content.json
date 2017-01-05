@@ -842,7 +842,7 @@
                 {
                     "name" : "endeavorGhostButton",
                     "data" : {
-                        "class" : "endeavor-item-bottom-250 endeavor-padding-left-50-responsive endeavor-text-left",
+                        "class" : "endeavor-item-bottom-125 endeavor-padding-left-50-responsive endeavor-text-left",
                         "text" : "Look Closer",
                         "align" : "",
                         "id" : "ghost-market-research",
