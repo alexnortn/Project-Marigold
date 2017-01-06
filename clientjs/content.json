@@ -1010,7 +1010,9 @@
                     "name" : "endeavorChecklist",
                     "data" : {
                         "header" : "Design Questions",
-                        "class" : "",
+                        "id" : "ghost-design-questions-affect",
+                        "class" : "endeavor-item-125 endeavor-item-bottom-15",
+                        "class2" : "endeavor-reveal",
                         "icon" : "fa-hand-o-right",
                         "bgColor" : "",
                         "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with.",
@@ -1035,9 +1037,19 @@
                     }
                 },
                 {
+                    "name" : "endeavorGhostButton",
+                    "data" : {
+                        "class" : "endeavor-item-bottom-125 endeavor-text-left",
+                        "text" : "Look Closer",
+                        "align" : "",
+                        "id" : "ghost-design-questions",
+                        "textColor" : "#666666"
+                    }
+                },
+                {
                     "name" : "endeavorDesignProcess",
                     "data" : {
-                        "class" : "endeavor-item-no-margin",
+                        "class" : "endeavor-item-top-125",
                         "process" : "Design",
                         "text" : "In the Design phase, the creative and conceptual direction and information architecture are defined based on the strategic guidelines and, when appropriate, the creative brief. The phase concludes with a comprehensive design and concept document that will serve as a template for production + development.",
                         "number" : "03/05",

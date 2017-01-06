@@ -224,6 +224,12 @@ $(document).ready(function() {
         $(this).parent().velocity("fadeOut", { duration: 250 });
     });
 
+    // Toggle "More" content for Museum Design Questions
+    $('#ghost-design-questions').click(function(evt) {
+        $('#ghost-design-questions-affect').removeClass('endeavor-reveal');
+        $(this).parent().velocity("fadeOut", { duration: 250 });
+    });
+
     // Create SVG Circle
     function createCircle(_cx, _cy) {
         let svgNS = "http://www.w3.org/2000/svg";  
