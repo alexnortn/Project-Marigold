@@ -206,15 +206,21 @@ $(document).ready(function() {
         $(this).parent().velocity("fadeOut", { duration: 250 });
     });
 
-    // Toggle "More" content for Museum connectomics process
+    // Toggle "More" content for Museum Market Research
     $('#ghost-market-research').click(function(evt) {
         $('#ghost-market-research-affect').removeClass('endeavor-reveal');
         $(this).parent().velocity("fadeOut", { duration: 250 });
     });
 
-    // Toggle "More" content for Museum connectomics process
+    // Toggle "More" content for Museum User Stories
     $('#ghost-user-stories').click(function(evt) {
         $('#ghost-user-stories-affect').removeClass('endeavor-reveal');
+        $(this).parent().velocity("fadeOut", { duration: 250 });
+    });
+
+    // Toggle "More" content for Museum Observations
+    $('#ghost-observations').click(function(evt) {
+        $('#ghost-observations-affect').removeClass('endeavor-reveal');
         $(this).parent().velocity("fadeOut", { duration: 250 });
     });
 

@@ -934,7 +934,9 @@
                     "name" : "endeavorChecklist",
                     "data" : {
                         "header" : "Observations",
-                        "class" : "endeavor-item-125",
+                        "id" : "ghost-observations-affect",
+                        "class" : "endeavor-item-125 endeavor-item-bottom-15",
+                        "class2" : "endeavor-reveal",
                         "icon" : "fa-hand-o-right",
                         "bgColor" : "",
                         "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with.",
@@ -959,9 +961,19 @@
                     }
                 },
                 {
+                    "name" : "endeavorGhostButton",
+                    "data" : {
+                        "class" : "endeavor-item-bottom-125 endeavor-text-left",
+                        "text" : "Look Closer",
+                        "align" : "",
+                        "id" : "ghost-observations",
+                        "textColor" : "#666666"
+                    }
+                },
+                {
                     "name" : "endeavorDesignProcess",
                     "data" : {
-                        "class" : "endeavor-item-no-margin",
+                        "class" : "endeavor-item-top-125",
                         "process" : "Define",
                         "text" : "The strategic decisions make in the Define phase will determine the success or failure of the project. Based on the business goals, a communication strategy for the chosen digital touch points must now be developed. Based on the brand goals, we will create the design principles. With the help of user insights, we will develop guidelines for the user experience. Based on all the goals and requirements, we will define metrics for measuring success.",
                         "number" : "02/05",
