@@ -1049,7 +1049,7 @@
                 {
                     "name" : "endeavorModuleMachine",
                     "data" : {
-                        "bgColor" : "",
+                        "bgColor" : "#e6e6e6",
                         "class" : "endeavor-item-no-margin",
                         "modules" : [
                             {
