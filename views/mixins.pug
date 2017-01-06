@@ -936,7 +936,7 @@ mixin endeavorParagraphChecklist(data)
                 each content, index in contents
                     - var _icon = content.icon
                     ul.fa-ul.endeavor-width-45-prcnt.endeavor-width-100-prcnt-1000.endeavor-max-width-750px.endeavor-padding-vertical-5-mobile.checklist.endeavor-inline-block
-                        p.lil-p.space-after.roman.endeavor-item-top-25.endeavor-item-left-25=content.header
+                        p.lil-p.space-after-1.roman.endeavor-item-top-25.endeavor-item-left-25.endeavor-border-bottom=content.header
                         each bullet, iindex in content.bullets
                             li.endeavor-item-left-25.endeavor-item-bottom-25
                                 i.endeavor-color-gray-75.fa-li.fa.fa-2x(class=`${_icon}`)
