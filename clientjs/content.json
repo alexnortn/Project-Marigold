@@ -811,7 +811,7 @@
                     "data" : {
                         "header" : "Market Research",
                         "id" : "ghost-market-research-affect",
-                        "class" : "endeavor-item-125 endeavor-item-bottom-25",
+                        "class" : "endeavor-item-125 endeavor-item-bottom-15",
                         "class2" : "endeavor-reveal",
                         "bgColor" : "",
                         "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with.",
@@ -842,7 +842,7 @@
                 {
                     "name" : "endeavorGhostButton",
                     "data" : {
-                        "class" : "endeavor-item-bottom-125 endeavor-padding-left-50-responsive endeavor-text-left",
+                        "class" : "endeavor-item-bottom-125 endeavor-text-left",
                         "text" : "Look Closer",
                         "align" : "",
                         "id" : "ghost-market-research",
@@ -854,7 +854,7 @@
                     "data" : {
                         "header" : "User Stories",
                         "id" : "ghost-user-stories-affect",
-                        "class" : "endeavor-item-125 endeavor-item-bottom-25",
+                        "class" : "endeavor-item-125 endeavor-item-bottom-15",
                         "class2" : "endeavor-reveal",
                         "bgColor" : "",
                         "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with.",
@@ -923,7 +923,7 @@
                 {
                     "name" : "endeavorGhostButton",
                     "data" : {
-                        "class" : "endeavor-item-bottom-125 endeavor-padding-left-50-responsive endeavor-text-left",
+                        "class" : "endeavor-item-bottom-125 endeavor-text-left",
                         "text" : "Look Closer",
                         "align" : "",
                         "id" : "ghost-user-stories",

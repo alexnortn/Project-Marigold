@@ -904,7 +904,7 @@ mixin endeavorChecklist(data)
     - var _class = data.class ? data.class : "endeavor-item-125"
     .fsw.endeavor-center.endeavor-padding-left-100-1000.endeavor-padding-left-0-mobile(class=`${_class}`)(style=`background-color: ${bgColor}`)
         h2=header
-        .endeavor-flex-row.endeavor-padding-top-50.endeavor-padding-left-50-responsive
+        .endeavor-flex-row.endeavor-padding-top-15
             p.endeavor-item-bottom-25=description
             .fsw
                 ul.fa-ul.endeavor-width-100-prcnt.endeavor-padding-vertical-5-mobile.checklist.endeavor-border-top.endeavor-padding-top-25
@@ -930,7 +930,7 @@ mixin endeavorParagraphChecklist(data)
     - var _class2 = data.class2 ? data.class2 : ""
     .fsw.endeavor-center.endeavor-padding-left-100-1000.endeavor-padding-left-0-mobile(class=`${_class}`)(style=`background-color: ${bgColor}`)
         h2=header
-        .endeavor-flex-row.endeavor-padding-top-50.endeavor-padding-left-50-responsive
+        .endeavor-flex-row.endeavor-padding-top-15
             p.endeavor-item-bottom-25=description
             .fsw.endeavor-transition-ease-500.endeavor-height-auto.endeavor-no-flow&attributes({'class': _class2}, {'id': _id})
                 each content, index in contents
@@ -958,7 +958,7 @@ mixin endeavorParagraphUsers(data)
     - var _class2 = data.class2 ? data.class2 : ""
     .fsw.endeavor-center.endeavor-padding-left-100-1000.endeavor-padding-left-0-mobile(class=`${_class}`)(style=`background-color: ${bgColor}`)
         h2=header
-        .endeavor-flex-row.endeavor-padding-top-50.endeavor-padding-left-50-responsive
+        .endeavor-flex-row.endeavor-padding-top-15
             p.endeavor-item-bottom-25=description
             .fsw.endeavor-transition-ease-500.endeavor-height-auto.endeavor-no-flow&attributes({'class': _class2}, {'id': _id})
                 each content, index in contents
