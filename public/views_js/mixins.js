@@ -1665,7 +1665,7 @@ var _class = data.class ? data.class : "endeavor-item"
 ;pug_debug_line = 870;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + "\u003Cdiv" + (pug_attr("class", pug_classes(["fsw","endeavor-transition-1000","endeavor-no-flow",`${_class}`], [false,false,false,true]), false, false)+pug_attr("id", `${_id}`, true, false)+pug_attr("style", pug_style(`background-color: ${bgColor}`), true, false)) + "\u003E";
 ;pug_debug_line = 871;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cdiv class=\"endeavor-item-no-vertical-margin endeavor-width-75-prcnt endeavor-max-width-750px endeavor-center\"\u003E";
+pug_html = pug_html + "\u003Cdiv class=\"endeavor-item-no-vertical-margin endeavor-width-75-prcnt endeavor-max-width-750px endeavor-center endeavor-width-100-prcnt-500\"\u003E";
 ;pug_debug_line = 872;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 // iterate process
 var pug_obj15 = process;
@@ -1709,7 +1709,7 @@ if ('number' == typeof pug_obj16.length) {
     var content = pug_obj16[iindex];
 
 ;pug_debug_line = 885;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cdiv class=\"endeavor-width-50-prcnt endeavor-5 analysis\"\u003E";
+pug_html = pug_html + "\u003Cdiv class=\"endeavor-width-50-prcnt endeavor-5 analysis endeavor-item-right-0-500\"\u003E";
 ;pug_debug_line = 886;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + "\u003Cp class=\"copy-small-header\"\u003E";
 ;pug_debug_line = 886;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
@@ -1727,7 +1727,7 @@ pug_html = pug_html + (pug_escape(null == (pug_interp = content.description) ? "
     var content = pug_obj16[iindex];
 
 ;pug_debug_line = 885;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cdiv class=\"endeavor-width-50-prcnt endeavor-5 analysis\"\u003E";
+pug_html = pug_html + "\u003Cdiv class=\"endeavor-width-50-prcnt endeavor-5 analysis endeavor-item-right-0-500\"\u003E";
 ;pug_debug_line = 886;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + "\u003Cp class=\"copy-small-header\"\u003E";
 ;pug_debug_line = 886;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
@@ -1790,7 +1790,7 @@ if ('number' == typeof pug_obj17.length) {
     var content = pug_obj17[iindex];
 
 ;pug_debug_line = 885;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cdiv class=\"endeavor-width-50-prcnt endeavor-5 analysis\"\u003E";
+pug_html = pug_html + "\u003Cdiv class=\"endeavor-width-50-prcnt endeavor-5 analysis endeavor-item-right-0-500\"\u003E";
 ;pug_debug_line = 886;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + "\u003Cp class=\"copy-small-header\"\u003E";
 ;pug_debug_line = 886;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
@@ -1808,7 +1808,7 @@ pug_html = pug_html + (pug_escape(null == (pug_interp = content.description) ? "
     var content = pug_obj17[iindex];
 
 ;pug_debug_line = 885;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cdiv class=\"endeavor-width-50-prcnt endeavor-5 analysis\"\u003E";
+pug_html = pug_html + "\u003Cdiv class=\"endeavor-width-50-prcnt endeavor-5 analysis endeavor-item-right-0-500\"\u003E";
 ;pug_debug_line = 886;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + "\u003Cp class=\"copy-small-header\"\u003E";
 ;pug_debug_line = 886;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
@@ -1880,7 +1880,7 @@ if ('number' == typeof pug_obj18.length) {
     var content = pug_obj18[index];
 
 ;pug_debug_line = 913;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cli class=\"endeavor-item-left-50 endeavor-item-bottom-25 endeavor-inline-block endeavor-max-width-400 checklist\"\u003E";
+pug_html = pug_html + "\u003Cli class=\"endeavor-item-left-50 endeavor-item-bottom-25 endeavor-inline-block endeavor-max-width-400 endeavor-min-width-275px-500 checklist\"\u003E";
 ;pug_debug_line = 914;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + "\u003Ci" + (pug_attr("class", pug_classes(["endeavor-color-gray-75","fa-li","fa","fa-2x",`${_icon}`], [false,false,false,false,true]), false, false)) + "\u003E\u003C\u002Fi\u003E";
 ;pug_debug_line = 915;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
@@ -1900,7 +1900,7 @@ pug_html = pug_html + (pug_escape(null == (pug_interp = content.description) ? "
     var content = pug_obj18[index];
 
 ;pug_debug_line = 913;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cli class=\"endeavor-item-left-50 endeavor-item-bottom-25 endeavor-inline-block endeavor-max-width-400 checklist\"\u003E";
+pug_html = pug_html + "\u003Cli class=\"endeavor-item-left-50 endeavor-item-bottom-25 endeavor-inline-block endeavor-max-width-400 endeavor-min-width-275px-500 checklist\"\u003E";
 ;pug_debug_line = 914;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + "\u003Ci" + (pug_attr("class", pug_classes(["endeavor-color-gray-75","fa-li","fa","fa-2x",`${_icon}`], [false,false,false,false,true]), false, false)) + "\u003E\u003C\u002Fi\u003E";
 ;pug_debug_line = 915;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
@@ -1973,7 +1973,7 @@ if ('number' == typeof pug_obj20.length) {
     var bullet = pug_obj20[iindex];
 
 ;pug_debug_line = 942;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cli class=\"endeavor-item-left-25 endeavor-item-bottom-25 checklist\"\u003E";
+pug_html = pug_html + "\u003Cli class=\"endeavor-item-left-25 endeavor-item-bottom-25 endeavor-min-width-275px-500 checklist\"\u003E";
 ;pug_debug_line = 943;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + "\u003Ci" + (pug_attr("class", pug_classes(["endeavor-color-gray-75","fa-li","fa","fa-2x",`${_icon}`], [false,false,false,false,true]), false, false)) + "\u003E\u003C\u002Fi\u003E";
 ;pug_debug_line = 944;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
@@ -1989,7 +1989,7 @@ pug_html = pug_html + (pug_escape(null == (pug_interp = bullet) ? "" : pug_inter
     var bullet = pug_obj20[iindex];
 
 ;pug_debug_line = 942;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cli class=\"endeavor-item-left-25 endeavor-item-bottom-25 checklist\"\u003E";
+pug_html = pug_html + "\u003Cli class=\"endeavor-item-left-25 endeavor-item-bottom-25 endeavor-min-width-275px-500 checklist\"\u003E";
 ;pug_debug_line = 943;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + "\u003Ci" + (pug_attr("class", pug_classes(["endeavor-color-gray-75","fa-li","fa","fa-2x",`${_icon}`], [false,false,false,false,true]), false, false)) + "\u003E\u003C\u002Fi\u003E";
 ;pug_debug_line = 944;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
@@ -2026,7 +2026,7 @@ if ('number' == typeof pug_obj21.length) {
     var bullet = pug_obj21[iindex];
 
 ;pug_debug_line = 942;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cli class=\"endeavor-item-left-25 endeavor-item-bottom-25 checklist\"\u003E";
+pug_html = pug_html + "\u003Cli class=\"endeavor-item-left-25 endeavor-item-bottom-25 endeavor-min-width-275px-500 checklist\"\u003E";
 ;pug_debug_line = 943;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + "\u003Ci" + (pug_attr("class", pug_classes(["endeavor-color-gray-75","fa-li","fa","fa-2x",`${_icon}`], [false,false,false,false,true]), false, false)) + "\u003E\u003C\u002Fi\u003E";
 ;pug_debug_line = 944;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
@@ -2042,7 +2042,7 @@ pug_html = pug_html + (pug_escape(null == (pug_interp = bullet) ? "" : pug_inter
     var bullet = pug_obj21[iindex];
 
 ;pug_debug_line = 942;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cli class=\"endeavor-item-left-25 endeavor-item-bottom-25 checklist\"\u003E";
+pug_html = pug_html + "\u003Cli class=\"endeavor-item-left-25 endeavor-item-bottom-25 endeavor-min-width-275px-500 checklist\"\u003E";
 ;pug_debug_line = 943;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + "\u003Ci" + (pug_attr("class", pug_classes(["endeavor-color-gray-75","fa-li","fa","fa-2x",`${_icon}`], [false,false,false,false,true]), false, false)) + "\u003E\u003C\u002Fi\u003E";
 ;pug_debug_line = 944;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
@@ -2116,7 +2116,7 @@ if ('number' == typeof pug_obj23.length) {
     var bullet = pug_obj23[iindex];
 
 ;pug_debug_line = 970;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cli class=\"endeavor-item-left-50 endeavor-item-bottom-25 endeavor-inline-block endeavor-max-width-400 checklist\"\u003E";
+pug_html = pug_html + "\u003Cli class=\"endeavor-item-left-50 endeavor-item-bottom-25 endeavor-inline-block endeavor-max-width-400 endeavor-min-width-275px-500 checklist\"\u003E";
 ;pug_debug_line = 971;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + "\u003Ci" + (pug_attr("class", pug_classes(["endeavor-color-gray-75","fa-li","fa","fa-2x",`${_icon}`], [false,false,false,false,true]), false, false)) + "\u003E\u003C\u002Fi\u003E";
 ;pug_debug_line = 972;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
@@ -2136,7 +2136,7 @@ pug_html = pug_html + (pug_escape(null == (pug_interp = bullet.description) ? ""
     var bullet = pug_obj23[iindex];
 
 ;pug_debug_line = 970;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cli class=\"endeavor-item-left-50 endeavor-item-bottom-25 endeavor-inline-block endeavor-max-width-400 checklist\"\u003E";
+pug_html = pug_html + "\u003Cli class=\"endeavor-item-left-50 endeavor-item-bottom-25 endeavor-inline-block endeavor-max-width-400 endeavor-min-width-275px-500 checklist\"\u003E";
 ;pug_debug_line = 971;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + "\u003Ci" + (pug_attr("class", pug_classes(["endeavor-color-gray-75","fa-li","fa","fa-2x",`${_icon}`], [false,false,false,false,true]), false, false)) + "\u003E\u003C\u002Fi\u003E";
 ;pug_debug_line = 972;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
@@ -2177,7 +2177,7 @@ if ('number' == typeof pug_obj24.length) {
     var bullet = pug_obj24[iindex];
 
 ;pug_debug_line = 970;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cli class=\"endeavor-item-left-50 endeavor-item-bottom-25 endeavor-inline-block endeavor-max-width-400 checklist\"\u003E";
+pug_html = pug_html + "\u003Cli class=\"endeavor-item-left-50 endeavor-item-bottom-25 endeavor-inline-block endeavor-max-width-400 endeavor-min-width-275px-500 checklist\"\u003E";
 ;pug_debug_line = 971;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + "\u003Ci" + (pug_attr("class", pug_classes(["endeavor-color-gray-75","fa-li","fa","fa-2x",`${_icon}`], [false,false,false,false,true]), false, false)) + "\u003E\u003C\u002Fi\u003E";
 ;pug_debug_line = 972;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
@@ -2197,7 +2197,7 @@ pug_html = pug_html + (pug_escape(null == (pug_interp = bullet.description) ? ""
     var bullet = pug_obj24[iindex];
 
 ;pug_debug_line = 970;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cli class=\"endeavor-item-left-50 endeavor-item-bottom-25 endeavor-inline-block endeavor-max-width-400 checklist\"\u003E";
+pug_html = pug_html + "\u003Cli class=\"endeavor-item-left-50 endeavor-item-bottom-25 endeavor-inline-block endeavor-max-width-400 endeavor-min-width-275px-500 checklist\"\u003E";
 ;pug_debug_line = 971;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + "\u003Ci" + (pug_attr("class", pug_classes(["endeavor-color-gray-75","fa-li","fa","fa-2x",`${_icon}`], [false,false,false,false,true]), false, false)) + "\u003E\u003C\u002Fi\u003E";
 ;pug_debug_line = 972;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";

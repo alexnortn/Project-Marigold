@@ -549,7 +549,7 @@
                     "data" : {
                         "class" : "endeavor-item-250 endeavor-reveal",
                         "id" : "ghost-connectomics-affect",
-                        "bgColor" : "endeavor-item-no-margin",
+                        "bgColor" : "",
                         "process" : [
                             {
                                 "header" : "Physiology",

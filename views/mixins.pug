@@ -868,7 +868,7 @@ mixin endeavorAnalysisComparision3(data)
     - var _id = data.id ? data.id : "666"
     - var _class = data.class ? data.class : "endeavor-item"
     .fsw.endeavor-transition-1000.endeavor-no-flow(id=`${_id}`)(class=`${_class}`)(style=`background-color: ${bgColor}`)
-        .endeavor-item-no-vertical-margin.endeavor-width-75-prcnt.endeavor-max-width-750px.endeavor-center
+        .endeavor-item-no-vertical-margin.endeavor-width-75-prcnt.endeavor-max-width-750px.endeavor-center.endeavor-width-100-prcnt-500
             each step, index in process
                 - var number = index + 1
                 - var label_id = _id + "_" + number
@@ -882,7 +882,7 @@ mixin endeavorAnalysisComparision3(data)
                                 p.copy-small-subheader.tight=step.header
                             .endeavor-flex-row.endeavor-clear-tablet.endeavor-padding-bottom-35
                                 each content, iindex in step.contents
-                                    .endeavor-width-50-prcnt.endeavor-5.analysis
+                                    .endeavor-width-50-prcnt.endeavor-5.analysis.endeavor-item-right-0-500
                                         p.copy-small-header=content.header
                                         p.copy-small.endeavor-text-left=content.description
                         .endeavor-square-100px.endeavor-flex.endeavor-flex-center.x-out.endeavor-transition-250
@@ -910,7 +910,7 @@ mixin endeavorChecklist(data)
             .fsw.endeavor-transition-ease-500.endeavor-height-auto.endeavor-no-flow&attributes({'class': _class2}, {'id': _id})
                 ul.fa-ul.endeavor-width-100-prcnt.endeavor-padding-vertical-5-mobile.endeavor-border-top.endeavor-padding-top-25
                     each content, index in contents
-                        li.endeavor-item-left-50.endeavor-item-bottom-25.endeavor-inline-block.endeavor-max-width-400.checklist
+                        li.endeavor-item-left-50.endeavor-item-bottom-25.endeavor-inline-block.endeavor-max-width-400.endeavor-min-width-275px-500.checklist
                             i.endeavor-color-gray-75.fa-li.fa.fa-2x(class=`${_icon}`)
                             p.lil-p.space-after.roman=content.header
                             p.lil-p=content.description
@@ -939,7 +939,7 @@ mixin endeavorParagraphChecklist(data)
                     ul.fa-ul.endeavor-width-45-prcnt.endeavor-width-100-prcnt-1000.endeavor-max-width-750px.endeavor-padding-vertical-5-mobile.endeavor-inline-block
                         p.lil-p.space-after-1.roman.endeavor-item-top-25.endeavor-item-left-25.endeavor-border-bottom=content.header
                         each bullet, iindex in content.bullets
-                            li.endeavor-item-left-25.endeavor-item-bottom-25.checklist
+                            li.endeavor-item-left-25.endeavor-item-bottom-25.endeavor-min-width-275px-500.checklist
                                 i.endeavor-color-gray-75.fa-li.fa.fa-2x(class=`${_icon}`)
                                 p.lil-p=bullet
 
@@ -967,7 +967,7 @@ mixin endeavorParagraphUsers(data)
                     p.lil-p.space-after.roman.endeavor-item-top-25.endeavor-item-left-25=content.header
                     ul.fa-ul.endeavor-width-100-prcnt.endeavor-padding-vertical-5-mobile.endeavor-border-top.endeavor-padding-top-25
                         each bullet, iindex in content.bullets
-                            li.endeavor-item-left-50.endeavor-item-bottom-25.endeavor-inline-block.endeavor-max-width-400.checklist
+                            li.endeavor-item-left-50.endeavor-item-bottom-25.endeavor-inline-block.endeavor-max-width-400.endeavor-min-width-275px-500.checklist
                                 i.endeavor-color-gray-75.fa-li.fa.fa-2x(class=`${_icon}`)
                                 p.lil-p.space-after.roman=bullet.header
                                 p.lil-p=bullet.description
