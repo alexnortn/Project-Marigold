@@ -973,6 +973,27 @@ mixin endeavorParagraphUsers(data)
                                 p.lil-p=bullet.description
 
 
+//-  Endeavor Project | 100% Object
+    Requires: <data.modules> <data.modules.data> <data.modules.images[]>
+    Description: Useful for creating expandable image section
+
+mixin endeavorParagraphImages(data)
+    - var bgColor = data.bgColor ? data.bgColor : "transparent"
+    - var header = data.header
+    - var description = data.description
+    - var images = data.images
+    - var _id = data.id ? data.id : "666"
+    - var _class = data.class ? data.class : "endeavor-item-125"
+    - var _class2 = data.class2 ? data.class2 : ""
+    .fsw.endeavor-center.endeavor-padding-left-100-1000.endeavor-padding-left-0-mobile(class=`${_class}`)(style=`background-color: ${bgColor}`)
+        h2=header
+        .endeavor-flex-row.endeavor-padding-top-15
+            p.endeavor-item-bottom-25=description
+            .fsw.endeavor-transition-ease-500.endeavor-height-auto.endeavor-no-flow&attributes({'class': _class2}, {'id': _id})
+                each image, index in images
+                    img.lazyload.endeavor-item.blur-up.fsw(src=image.src_low)&attributes({'data-src': image.src}, {'data-srcset': sources})
+
+
 //- -------------- Hybrid Components ----------------
 
 

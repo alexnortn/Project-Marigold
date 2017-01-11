@@ -236,6 +236,12 @@ $(document).ready(function() {
         $(this).parent().velocity("fadeOut", { duration: 250 });
     });
 
+    // Toggle "More" content for Museum App Overview
+    $('#ghost-app-overview').click(function(evt) {
+        $('#ghost-app-overview-affect').removeClass('endeavor-reveal');
+        $(this).parent().velocity("fadeOut", { duration: 250 });
+    });
+
     // Create SVG Circle
     function createCircle(_cx, _cy) {
         let svgNS = "http://www.w3.org/2000/svg";  
