@@ -593,6 +593,7 @@ mixin endeavorImageNoTop75(data)
 mixin endeavorImageFSList(data)
     - var images = data.images
     each image, index in images
+        - var sources = image.src_standard + " 1x, " + image.src_retina + " 2x"
         img.lazyload.endeavor-item.blur-up.fsw(src=image.src_low)&attributes({'data-src': image.src}, {'data-srcset': sources})
 
 
@@ -991,6 +992,7 @@ mixin endeavorParagraphImages(data)
             p.endeavor-item-bottom-25=description
             .fsw.endeavor-transition-ease-500.endeavor-height-auto.endeavor-no-flow&attributes({'class': _class2}, {'id': _id})
                 each image, index in images
+                    - var sources = image.src_standard + " 1x, " + image.src_retina + " 2x"
                     img.lazyload.endeavor-item.blur-up.fsw(src=image.src_low)&attributes({'data-src': image.src}, {'data-srcset': sources})
 
 
