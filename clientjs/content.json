@@ -1166,6 +1166,29 @@
                     }
                 },
                 {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "museum-app-overview",
+                            "src": "images/projects/museum/standard/museum-app-overview.png",
+                            "src_standard": "images/projects/museum/standard/museum-app-overview.png",
+                            "src_retina": "images/projects/museum/retina/museum-app-overview.png",
+                            "src_low": "images/projects/museum/low-res/museum-app-overview.png",
+                            "src_mobile": "images/projects/museum/hi-res/museum-app-overview.png",
+                            "src_preview": "images/projects/museum/hi-res/museum-app-overview.png",
+                            "caption": "Muwu Research"
+                        }
+                    }
+                },
+                {
                     "name" : "endeavorDesignProcess",
                     "data" : {
                         "class" : "endeavor-item-top-125",
