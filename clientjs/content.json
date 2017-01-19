@@ -1201,7 +1201,7 @@
                 {
                     "name" : "endeavorDesignProcess",
                     "data" : {
-                        "class" : "endeavor-item-125-top",
+                        "class" : "endeavor-item-top-125",
                         "process" : "Design",
                         "text" : "",
                         "number" : "03/05",
@@ -1213,16 +1213,27 @@
                 {
                     "name" : "endeavorModuleMachine",
                     "data" : {
-                        "bgColor" : "#f4f4f4",
+                        "bgColor" : "#f7f7f7",
                         "class" : "endeavor-item-no-margin",
                         "modules" : [
                             {
                                 "name" : "endeavorParagraph",
                                 "data" : {
                                     "header" : "User Journey",
-                                    "class" : "",
+                                    "class" : "endeavor-item-top-125",
                                     "bgColor" : "",
                                     "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with."
+                                }
+                            },
+                            {
+                                "name" : "endeavorGhostButtonURL",
+                                "data" : {
+                                    "class" : "endeavor-item-bottom-125 endeavor-text-left",
+                                    "text" : "Hi-Res",
+                                    "align" : "",
+                                    "id" : "museum-user-journey-pdf",
+                                    "url" : "images/projects/museum/hi-res/museum-user-journey.pdf",
+                                    "textColor" : "#666666"
                                 }
                             }
                         ]

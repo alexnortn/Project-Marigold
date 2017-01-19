@@ -153,6 +153,21 @@ mixin endeavorGhostButton(data)
             h3.endeavor-center.endeavor-text-center.endeavor-transition-250(style=`color: ${textColor}`)=text
 
 
+//-  Endeavor Animated Ghost Button
+    Requires: <data.text><data.id> --> For Js access
+    Description: Full-width element with centered button
+
+mixin endeavorGhostButtonURL(data)
+    - var text = data.text ? data.text : "666"
+    - var _id = data.id ? data.id : "666"
+    - var _url = data.url ? data.url : "666"
+    - var _class = data.class ? data.class : "endeavor-item-125"
+    - var textColor = data.textColor ? data.textColor : "#232323" // $BLACK
+    .fsw.endeavor-text-center(class=`${_class}`)
+        button(id=`${_id}`).endeavor-button.ghost.endeavor-center
+            a.h3.endeavor-center.endeavor-text-center.endeavor-transition-250(href=`${_url}` target="_blank")(style=`color: ${textColor}`)=text
+
+
 //-  Endeavor Design Process Section
     Requires: <data.process><data.number><data.text>
     Description: Full-width element with centered button
