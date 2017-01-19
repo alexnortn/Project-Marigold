@@ -1201,9 +1201,9 @@
                 {
                     "name" : "endeavorDesignProcess",
                     "data" : {
-                        "class" : "endeavor-item-top-125",
+                        "class" : "endeavor-item-125-top",
                         "process" : "Design",
-                        "text" : "In the Design phase, the creative and conceptual direction and information architecture are defined based on the strategic guidelines and, when appropriate, the creative brief. The phase concludes with a comprehensive design and concept document that will serve as a template for production + development.",
+                        "text" : "",
                         "number" : "03/05",
                         "bgColor" : "#e6e6e6",
                         "textColor" : "#bfbfbf",
@@ -1211,11 +1211,53 @@
                     }
                 },
                 {
+                    "name" : "endeavorModuleMachine",
+                    "data" : {
+                        "bgColor" : "#f4f4f4",
+                        "class" : "endeavor-item-no-margin",
+                        "modules" : [
+                            {
+                                "name" : "endeavorParagraph",
+                                "data" : {
+                                    "header" : "User Journey",
+                                    "class" : "",
+                                    "bgColor" : "",
+                                    "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with."
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Image segmentation",
+                            "src": "images/projects/museum/standard/museum-user-journey.jpg",
+                            "src_standard": "images/projects/museum/standard/museum-user-journey.jpg",
+                            "src_retina": "images/projects/museum/retina/museum-user-journey.jpg",
+                            "src_low": "images/projects/museum/low-res/museum-user-journey.jpg",
+                            "src_mobile": "images/projects/museum/hi-res/museum-user-journey.jpg",
+                            "src_preview": "images/projects/museum/hi-res/museum-user-journey.jpg",
+                            "caption": "Image segmentation"
+                        }
+                    }
+                },
+                {
                     "name" : "endeavorDesignProcess",
                     "data" : {
                         "class" : "endeavor-item-no-margin",
                         "process" : "Deploy",
-                        "text" : "In the Design phase, the creative and conceptual direction and information architecture are defined based on the strategic guidelines and, when appropriate, the creative brief. The phase concludes with a comprehensive design and concept document that will serve as a template for production + development.",
+                        "text" : "",
                         "number" : "04/05",
                         "bgColor" : "#e6e6e6",
                         "textColor" : "#bfbfbf",
@@ -1227,7 +1269,7 @@
                     "data" : {
                         "class" : "endeavor-item-no-margin",
                         "process" : "Discussion",
-                        "text" : "In the Design phase, the creative and conceptual direction and information architecture are defined based on the strategic guidelines and, when appropriate, the creative brief. The phase concludes with a comprehensive design and concept document that will serve as a template for production + development.",
+                        "text" : "",
                         "number" : "05/05",
                         "bgColor" : "#e6e6e6",
                         "textColor" : "#bfbfbf",
