@@ -164,8 +164,8 @@ mixin endeavorGhostButtonURL(data)
     - var _class = data.class ? data.class : "endeavor-item-125"
     - var textColor = data.textColor ? data.textColor : "#232323" // $BLACK
     .fsw.endeavor-text-center(class=`${_class}`)
-        button(id=`${_id}`).endeavor-button.ghost.endeavor-center
-            a.h3.endeavor-center.endeavor-text-center.endeavor-transition-250(href=`${_url}` target="_blank")(style=`color: ${textColor}`)=text
+        a(id=`${_id}` href=`${_url}` target="_blank" ).endeavor-button.ghost.endeavor-center.endeavor-inline-flex
+            h3.endeavor-center.endeavor-text-center.endeavor-transition-250.endeavor-flex-self-center(style=`color: ${textColor}`)=text
 
 
 //-  Endeavor Design Process Section
