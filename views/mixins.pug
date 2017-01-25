@@ -923,6 +923,33 @@ mixin endeavorChecklist(data)
         h2=header
         .endeavor-flex-row.endeavor-padding-top-15
             p.endeavor-item-bottom-25=description
+            .fsw.endeavor-transition-ease-500.endeavor-height-auto&attributes({'class': _class2}, {'id': _id})
+                ul.fa-ul.endeavor-width-100-prcnt.endeavor-padding-vertical-5-mobile.endeavor-border-top.endeavor-padding-top-25
+                    each content, index in contents
+                        li.endeavor-item-left-50.endeavor-item-bottom-25.endeavor-inline-block.endeavor-max-width-400.endeavor-min-width-275px-500.checklist
+                            i.endeavor-color-gray-75.fa-li.fa.fa-2x(class=`${_icon}`)
+                            p.lil-p.space-after.roman=content.header
+                            p.lil-p=content.description
+
+
+//-  Endeavor Project | 100% Object
+    Requires: <data.modules> <data.modules.data> 
+    Description: Useful for creating flowing checklists
+
+mixin endeavorChecklistHidden(data)
+    - var bgColor = data.bgColor ? data.bgColor : "transparent"
+    - var header = data.header
+    - var _id = data.id ? data.id : "666"
+    - var subheader = data.subheader
+    - var description = data.description ? data.description : "666"
+    - var _icon = data.icon ? data.icon : "fa-fa-exclamation-circle"
+    - var contents = data.contents
+    - var _class = data.class ? data.class : "endeavor-item-125"
+    - var _class2 = data.class2 ? data.class2 : ""
+    .fsw.endeavor-center.endeavor-padding-left-100-1000.endeavor-padding-left-0-mobile(class=`${_class}`)(style=`background-color: ${bgColor}`)
+        h2=header
+        .endeavor-flex-row.endeavor-padding-top-15
+            p.endeavor-item-bottom-25=description
             .fsw.endeavor-transition-ease-500.endeavor-height-auto.endeavor-no-flow&attributes({'class': _class2}, {'id': _id})
                 ul.fa-ul.endeavor-width-100-prcnt.endeavor-padding-vertical-5-mobile.endeavor-border-top.endeavor-padding-top-25
                     each content, index in contents
@@ -1025,6 +1052,30 @@ mixin endeavorParagraph(data)
         h2=header
         .endeavor-flex-row.endeavor-padding-top-15
             p.endeavor-item-bottom-25=description
+
+
+//-  Endeavor Project | 100% Object
+    Requires: <data.modules> <data.modules.data> <data.modules.image>
+    Description: Side by Side square elements, default: header, description, ghost-link, image:right, 
+
+mixin endeavorSquareLinks(data)
+    - var bgColor = data.bgColor ? data.bgColor : "transparent"
+    - var header = data.header
+    - var description = data.description
+    - var text = data.text ? data.text : "666"
+    - var _id = data.id ? data.id : "666"
+    - var _class = data.class ? data.class : "endeavor-item-125"
+    - var image = data.image
+    - var sources = data.image.src_standard + " 1x, " + data.image.src_retina + " 2x"
+    .fsw.endeavor-center
+        .endeavor-square-width-35.endeavor-50.endeavor-padding-left-0-mobile(class=`${_class}`)(style=`background-color: ${bgColor}`)
+            h2=header
+            .endeavor-flex-row.endeavor-padding-top-15
+                p.endeavor-item-bottom-25=description
+            a(id=`${_id}` href=`${_url}` target="_blank" ).endeavor-button.ghost.endeavor-center.endeavor-inline-flex
+                h3.endeavor-center.endeavor-text-center.endeavor-transition-250.endeavor-flex-self-center(style=`color: ${textColor}`)=text
+        .endeavor-square-width-35.endeavor-50.endeavor-float-left.endeavor-no-flow
+            img.lazyload.endeavor-second.blur-up(src=image.src_low)&attributes({'data-src': image.src}, {'data-srcset': sources}, {'class':sizeClass})
 
 
 //- -------------- Hybrid Components ----------------
