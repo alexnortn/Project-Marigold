@@ -423,41 +423,42 @@
                         "header" : "Key Features",
                         "class" : "endeavor-item-125 endeavor-item-bottom-15",
                         "class2" : "",
+                        "class3" : "",
                         "icon" : "fa-hand-o-right",
                         "bgColor" : "",
-                        "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with.",
+                        "description" : "",
                         "contents" : [
                             {
                                 "header" : "Open Source",
-                                "description" : "Researchers have an excess of data and a lack of investigative power."
+                                "description" : ""
                             },
                             {
                                 "header" : "Neueroscience",
-                                "description" : "The scale of todays scientific challenges demand cross–disciplinary collaboration."
+                                "description" : ""
                             },
                             {
                                 "header" : "Free to Use",
-                                "description" : "Collaboration presents the opportunity for teams to leverage each others specialties to move faster and tackle larger and more important problems."
+                                "description" : ""
                             },
                             {
                                 "header" : "Responsive",
-                                "description" : "Collaboration necessitates sharing, of knowledge, time, ideas,  skills, and increasingly data."
+                                "description" : ""
                             },
                             {
                                 "header" : "Web Application",
-                                "description" : "Collaboration necessitates sharing, of knowledge, time, ideas,  skills, and increasingly data."
+                                "description" : ""
                             },
                             {
                                 "header" : "Interactive Graphs",
-                                "description" : "Collaboration necessitates sharing, of knowledge, time, ideas,  skills, and increasingly data."
+                                "description" : ""
                             },
                             {
                                 "header" : "Figure Generator",
-                                "description" : "Collaboration necessitates sharing, of knowledge, time, ideas,  skills, and increasingly data."
+                                "description" : ""
                             },
                             {
                                 "header" : "Persistant URLs",
-                                "description" : "Collaboration necessitates sharing, of knowledge, time, ideas,  skills, and increasingly data."
+                                "description" : ""
                             }
                         ]
                     }
@@ -476,13 +477,37 @@
                         },
                         "image" : {
                             "name": "Museum About",
-                            "src": "images/projects/museum/standard/museum-pinky.png",
-                            "src_standard": "images/projects/museum/standard/museum-pinky.png",
-                            "src_retina": "images/projects/museum/retina/museum-pinky.png",
-                            "src_low": "images/projects/museum/low-res/museum-pinky.png",
-                            "src_mobile": "images/projects/museum/hi-res/museum-pinky.png",
-                            "src_preview": "images/projects/museum/hi-res/museum-pinky.png",
+                            "src": "images/projects/museum/standard/museum-about.jpg",
+                            "src_standard": "images/projects/museum/standard/museum-about.jpg",
+                            "src_retina": "images/projects/museum/retina/museum-about.jpg",
+                            "src_low": "images/projects/museum/low-res/museum-about.jpg",
+                            "src_mobile": "images/projects/museum/hi-res/museum-about.jpg",
+                            "src_preview": "images/projects/museum/hi-res/museum-about.jpg",
                             "caption": "Museum About"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Museum Pinky Neurons",
+                            "src": "images/projects/museum/standard/museum-pinky.jpg",
+                            "src_standard": "images/projects/museum/standard/museum-pinky.jpg",
+                            "src_retina": "images/projects/museum/retina/museum-pinky.jpg",
+                            "src_low": "images/projects/museum/low-res/museum-pinky.jpg",
+                            "src_mobile": "images/projects/museum/hi-res/museum-pinky.jpg",
+                            "src_preview": "images/projects/museum/hi-res/museum-pinky.jpg",
+                            "caption": "Museum Pinky Neurons"
                         }
                     }
                 },
@@ -495,7 +520,7 @@
                 {
                     "name" : "endeavorImage100vw",
                     "data" : {
-                        "class" : "endeavor-item-no-margin",
+                        "class" : "endeavor-item-top-125 endeavor-item-bottom-none",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -505,21 +530,44 @@
                             "caption" : ""
                         },
                         "image" : {
-                            "name": "Museum iMac Landing",
-                            "src": "images/projects/museum/standard/museum-imac-landing.jpg",
-                            "src_standard": "images/projects/museum/standard/museum-imac-landing.jpg",
-                            "src_retina": "images/projects/museum/retina/museum-imac-landing.jpg",
-                            "src_low": "images/projects/museum/low-res/museum-imac-landing.jpg",
-                            "src_mobile": "images/projects/museum/hi-res/museum-imac-landing.jpg",
-                            "src_preview": "images/projects/museum/hi-res/museum-imac-landing.jpg",
-                            "caption": "Museum iMac Landing"
+                            "name": "Museum iMac Sidebar",
+                            "src": "images/projects/museum/standard/museum-sidebar.jpg",
+                            "src_standard": "images/projects/museum/standard/museum-sidebar.jpg",
+                            "src_retina": "images/projects/museum/retina/museum-sidebar.jpg",
+                            "src_low": "images/projects/museum/low-res/museum-sidebar.jpg",
+                            "src_mobile": "images/projects/museum/hi-res/museum-sidebar.jpg",
+                            "src_preview": "images/projects/museum/hi-res/museum-sidebar.jpg",
+                            "caption": "Museum iMac Sidebar"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Museum Legend",
+                            "src": "images/projects/museum/standard/museum-legend.jpg",
+                            "src_standard": "images/projects/museum/standard/museum-legend.jpg",
+                            "src_retina": "images/projects/museum/retina/museum-legend.jpg",
+                            "src_low": "images/projects/museum/low-res/museum-legend.jpg",
+                            "src_mobile": "images/projects/museum/hi-res/museum-legend.jpg",
+                            "src_preview": "images/projects/museum/hi-res/museum-legend.jpg",
+                            "caption": "Museum Legend"
                         }
                     }
                 },
                 {
                     "name" : "endeavorImage100vw",
                     "data" : {
-                        "class" : "endeavor-item-no-margin",
+                        "class" : "endeavor-item-top-125 endeavor-item-bottom-none",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -536,7 +584,30 @@
                             "src_low": "images/projects/museum/low-res/museum-views-2.jpg",
                             "src_mobile": "images/projects/museum/hi-res/museum-views-2.jpg",
                             "src_preview": "images/projects/museum/hi-res/museum-views-2.jpg",
-                            "caption": "Seunglab Personel"
+                            "caption": "Museum Views 1"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Museum Temporal Gif",
+                            "src": "images/projects/museum/standard/museum-temporal.gif",
+                            "src_standard": "images/projects/museum/standard/museum-temporal.gif",
+                            "src_retina": "images/projects/museum/retina/museum-temporal.gif",
+                            "src_low": "images/projects/museum/low-res/museum-temporal.gif",
+                            "src_mobile": "images/projects/museum/hi-res/museum-temporal.gif",
+                            "src_preview": "images/projects/museum/hi-res/museum-temporal.gif",
+                            "caption": "Museum Temporal Gif"
                         }
                     }
                 },
@@ -1202,6 +1273,7 @@
                         "id" : "ghost-observations-affect",
                         "class" : "endeavor-item-125 endeavor-item-bottom-15",
                         "class2" : "endeavor-reveal",
+                        "class3" : "endeavor-border-top",
                         "icon" : "fa-hand-o-right",
                         "bgColor" : "",
                         "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with.",
@@ -1278,6 +1350,7 @@
                         "id" : "ghost-design-questions-affect",
                         "class" : "endeavor-item-125 endeavor-item-bottom-15",
                         "class2" : "endeavor-reveal",
+                        "class3" : "endeavor-border-top",
                         "icon" : "fa-hand-o-right",
                         "bgColor" : "",
                         "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with.",
