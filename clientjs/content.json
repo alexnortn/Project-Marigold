@@ -477,12 +477,12 @@
                         },
                         "image" : {
                             "name": "Museum About",
-                            "src": "images/projects/museum/standard/museum-about.jpg",
-                            "src_standard": "images/projects/museum/standard/museum-about.jpg",
-                            "src_retina": "images/projects/museum/retina/museum-about.jpg",
-                            "src_low": "images/projects/museum/low-res/museum-about.jpg",
-                            "src_mobile": "images/projects/museum/hi-res/museum-about.jpg",
-                            "src_preview": "images/projects/museum/hi-res/museum-about.jpg",
+                            "src": "images/projects/museum/standard/museum-about-2.jpg",
+                            "src_standard": "images/projects/museum/standard/museum-about-2.jpg",
+                            "src_retina": "images/projects/museum/retina/museum-about-2.jpg",
+                            "src_low": "images/projects/museum/low-res/museum-about-2.jpg",
+                            "src_mobile": "images/projects/museum/hi-res/museum-about-2.jpg",
+                            "src_preview": "images/projects/museum/hi-res/museum-about-2.jpg",
                             "caption": "Museum About"
                         }
                     }
