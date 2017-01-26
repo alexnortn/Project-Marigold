@@ -512,15 +512,85 @@
                     }
                 },
                 {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Museum Views Grid 1",
+                            "src": "images/projects/museum/standard/museum-views-3.jpg",
+                            "src_standard": "images/projects/museum/standard/museum-views-3.jpg",
+                            "src_retina": "images/projects/museum/retina/museum-views-3.jpg",
+                            "src_low": "images/projects/museum/low-res/museum-views-3.jpg",
+                            "src_mobile": "images/projects/museum/hi-res/museum-views-3.jpg",
+                            "src_preview": "images/projects/museum/hi-res/museum-views-3.jpg",
+                            "caption": "Museum Views Grid 1"
+                        }
+                    }
+                },
+                {
                     "name" : "endeavorCaptionFS",
                     "data" : {
                         "caption" : "Augmenting with data has often been seen as overall uninteresting to the general public. Convolve looks to seemingly change that notion almost entirely. The next step is picking data that is worth investigating and of an interest to the viewer. The curation of interesting and dynamic data can change almost everything about how we feel about any given subject. When choosing the data that would be augmented onto the Convolve heads up display we kept those notions in mind."
                     }
                 },
                 {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Museum Views Grid 2",
+                            "src": "images/projects/museum/standard/museum-views-4.jpg",
+                            "src_standard": "images/projects/museum/standard/museum-views-4.jpg",
+                            "src_retina": "images/projects/museum/retina/museum-views-4.jpg",
+                            "src_low": "images/projects/museum/low-res/museum-views-4.jpg",
+                            "src_mobile": "images/projects/museum/hi-res/museum-views-4.jpg",
+                            "src_preview": "images/projects/museum/hi-res/museum-views-4.jpg",
+                            "caption": "Museum Views Grid 1"
+                        }
+                    }
+                },
+                {
                     "name" : "endeavorImage100vw",
                     "data" : {
                         "class" : "endeavor-item-top-125 endeavor-item-bottom-none",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Museum Views 1",
+                            "src": "images/projects/museum/standard/museum-views-2.jpg",
+                            "src_standard": "images/projects/museum/standard/museum-views-2.jpg",
+                            "src_retina": "images/projects/museum/retina/museum-views-2.jpg",
+                            "src_low": "images/projects/museum/low-res/museum-views-2.jpg",
+                            "src_mobile": "images/projects/museum/hi-res/museum-views-2.jpg",
+                            "src_preview": "images/projects/museum/hi-res/museum-views-2.jpg",
+                            "caption": "Museum Views 1"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -565,27 +635,12 @@
                     }
                 },
                 {
-                    "name" : "endeavorImage100vw",
+                    "name" : "endeavorParagraph",
                     "data" : {
-                        "class" : "endeavor-item-top-125 endeavor-item-bottom-none",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "Museum Views 1",
-                            "src": "images/projects/museum/standard/museum-views-2.jpg",
-                            "src_standard": "images/projects/museum/standard/museum-views-2.jpg",
-                            "src_retina": "images/projects/museum/retina/museum-views-2.jpg",
-                            "src_low": "images/projects/museum/low-res/museum-views-2.jpg",
-                            "src_mobile": "images/projects/museum/hi-res/museum-views-2.jpg",
-                            "src_preview": "images/projects/museum/hi-res/museum-views-2.jpg",
-                            "caption": "Museum Views 1"
-                        }
+                        "header" : "Closure Cards",
+                        "class" : "endeavor-item-top-125",
+                        "bgColor" : "",
+                        "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with."
                     }
                 },
                 {
@@ -614,7 +669,7 @@
                 {
                     "name" : "endeavorImage100vw",
                     "data" : {
-                        "class" : "endeavor-item-no-margin",
+                        "class" : "endeavor-item-bottom-125",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -624,46 +679,15 @@
                             "caption" : ""
                         },
                         "image" : {
-                            "name": "Museum About",
-                            "src": "images/projects/museum/standard/museum-macbookpro-classification.jpg",
-                            "src_standard": "images/projects/museum/standard/museum-macbookpro-classification.jpg",
-                            "src_retina": "images/projects/museum/retina/museum-macbookpro-classification.jpg",
-                            "src_low": "images/projects/museum/low-res/museum-macbookpro-classification.jpg",
-                            "src_mobile": "images/projects/museum/hi-res/museum-macbookpro-classification.jpg",
-                            "src_preview": "images/projects/museum/hi-res/museum-macbookpro-classification.jpg",
-                            "caption": "Museum About"
+                            "name": "Museum Charts 1",
+                            "src": "images/projects/museum/standard/museum-charts-1.jpg",
+                            "src_standard": "images/projects/museum/standard/museum-charts-1.jpg",
+                            "src_retina": "images/projects/museum/retina/museum-charts-1.jpg",
+                            "src_low": "images/projects/museum/low-res/museum-charts-1.jpg",
+                            "src_mobile": "images/projects/museum/hi-res/museum-charts-1.jpg",
+                            "src_preview": "images/projects/museum/hi-res/museum-charts-1.jpg",
+                            "caption": "Museum Charts 1"
                         }
-                    }
-                },
-                {
-                    "name" : "endeavorImage100vw",
-                    "data" : {
-                        "class" : "endeavor-item-no-margin",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "Museum About",
-                            "src": "images/projects/museum/standard/museum-mobile-1.jpg",
-                            "src_standard": "images/projects/museum/standard/museum-mobile-1.jpg",
-                            "src_retina": "images/projects/museum/retina/museum-mobile-1.jpg",
-                            "src_low": "images/projects/museum/low-res/museum-mobile-1.jpg",
-                            "src_mobile": "images/projects/museum/hi-res/museum-mobile-1.jpg",
-                            "src_preview": "images/projects/museum/hi-res/museum-mobile-1.jpg",
-                            "caption": "Museum About"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorCaptionFS",
-                    "data" : {
-                        "class" : "endeavor-item-125",
-                        "caption" : "Augmenting with data has often been seen as overall uninteresting to the general public. Convolve looks to seemingly change that notion almost entirely. The next step is picking data that is worth investigating and of an interest to the viewer. The curation of interesting and dynamic data can change almost everything about how we feel about any given subject. When choosing the data that would be augmented onto the Convolve heads up display we kept those notions in mind."
                     }
                 },
                 {
@@ -716,6 +740,7 @@
                         "header" : "Museum in Action",
                         "class" : "endeavor-item-no-margin",
                         "bgColor" : "",
+                        "url" : "http://museum.eyewire.org/",
                         "description" : "Ayy check it out here, you can come party with this guy live live live.",
                         "image" : {
                             "name": "Museum Mobile Palm",
