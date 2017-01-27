@@ -638,10 +638,28 @@ mixin endeavorImage75List(data)
 
 //- This is really slow
 
-mixin endeavorVideoFS(datum)
+mixin endeavorYouTubeFS(datum)
     //- - var video = datum.video
     - var video = "potato"
     iframe.endeavor-item.media-settings.media-frame.video-settings(width="1920" height="1080" src=video.src frameborder="0" allowfullscreen)
+
+
+//-  Endeavor Project | Full-Width Adaptive HTML5 Video
+    Requires: <data.src.webm> <data.src.mp4> <data.src.poster> 
+    Description: Full-Width Embed Video Element
+
+mixin endeavorVideoFS(data)
+    - var webm = data.src.webm
+    - var mp4 = data.src.mp4
+    - var poster = data.src.poster
+    - var loop = data.loop ? data.loop : true
+    - var muted = data.muted ? data.muted : true
+    - var autoplay = data.autoplay ? data.autoplay : false
+    - var _class = data.class ? data.class : "endeavor-item fsw"
+    video(class=_class loop=loop muted=muted autoplay=autoplay)
+        source(src=webm type="video/webm; codecs=vp9,vorbis")
+        source(src=mp4 type="video/mp4")
+        |Your browser is old AF
 
 
 //-  Endeavor Project | Full-Width Adaptive Issuu Digital Publication

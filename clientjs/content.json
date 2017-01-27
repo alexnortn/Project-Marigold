@@ -232,7 +232,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorVideoFS",
+                    "name" : "endeavorYouTubeFS",
                     "data" : {
                         "video" : {
                             "name" : "MSTY",
@@ -692,26 +692,16 @@
                     }
                 },
                 {
-                    "name" : "endeavorImage100vw",
+                    "name" : "endeavorVideoFS",
                     "data" : {
-                        "class" : "endeavor-item-no-margin",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "Museum About",
-                            "src": "images/projects/museum/standard/museum-ipad-video.jpg",
-                            "src_standard": "images/projects/museum/standard/museum-ipad-video.jpg",
-                            "src_retina": "images/projects/museum/retina/museum-ipad-video.jpg",
-                            "src_low": "images/projects/museum/low-res/museum-ipad-video.jpg",
-                            "src_mobile": "images/projects/museum/hi-res/museum-ipad-video.jpg",
-                            "src_preview": "images/projects/museum/hi-res/museum-ipad-video.jpg",
-                            "caption": "Museum About"
+                        "class" : "endeavor-item-no-margin endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/museum/videos/interaction.webm",
+                            "mp4" : "images/projects/museum/videos/interaction.mp4",
+                            "poster" : "images/projects/museum/videos/interaction.jpg"
                         }
                     }
                 },
@@ -765,7 +755,7 @@
                         "header" : "Explore Live",
                         "class" : "endeavor-item-top-125",
                         "bgColor" : "",
-                        "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with."
+                        "description" : ""
                     }
                 },
                 {
@@ -1874,7 +1864,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorVideoFS",
+                    "name" : "endeavorYouTubeFS",
                     "data" : {
                         "video" : {
                             "name" : "MSTY",
@@ -2222,7 +2212,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorVideoFS",
+                    "name" : "endeavorYouTubeFS",
                     "data" : {
                         "video" : {
                             "name" : "MSTY",
@@ -2451,7 +2441,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorVideoFS",
+                    "name" : "endeavorYouTubeFS",
                     "data" : {
                         "video" : {
                             "name" : "MSTY",
@@ -2791,7 +2781,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorVideoFS",
+                    "name" : "endeavorYouTubeFS",
                     "data" : {
                         "video" : {
                             "name" : "MSTY",
@@ -3344,7 +3334,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorVideoFS",
+                    "name" : "endeavorYouTubeFS",
                     "data" : {
                         "video" : {
                             "name" : "Divrcity",
@@ -3453,7 +3443,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorVideoFS",
+                    "name" : "endeavorYouTubeFS",
                     "data" : {
                         "video" : {
                             "name" : "Convolve Prototype",
@@ -4016,7 +4006,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorVideoFS",
+                    "name" : "endeavorYouTubeFS",
                     "data" : {
                         "video" : {
                             "name" : "DigProcess",
@@ -4501,7 +4491,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorVideoFS",
+                    "name" : "endeavorYouTubeFS",
                     "data" : {
                         "video" : {
                             "name" : "DAS Tablet",
@@ -4511,7 +4501,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorVideoFS",
+                    "name" : "endeavorYouTubeFS",
                     "data" : {
                         "video" : {
                             "name" : "DAS Mobile",
@@ -4893,7 +4883,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorVideoFS",
+                    "name" : "endeavorYouTubeFS",
                     "data" : {
                         "video" : {
                             "name" : "Muwu Generative Composition",
@@ -4926,7 +4916,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorVideoFS",
+                    "name" : "endeavorYouTubeFS",
                     "data" : {
                         "video" : {
                             "name" : "Muwu Generative Composition",
@@ -5322,7 +5312,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorVideoFS",
+                    "name" : "endeavorYouTubeFS",
                     "data" : {
                         "video" : {
                             "name" : "Muwu Experiment",
@@ -5332,7 +5322,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorVideoFS",
+                    "name" : "endeavorYouTubeFS",
                     "data" : {
                         "video" : {
                             "name" : "Muwu Experiment",
@@ -5342,7 +5332,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorVideoFS",
+                    "name" : "endeavorYouTubeFS",
                     "data" : {
                         "video" : {
                             "name" : "Muwu Experiment",
@@ -6033,7 +6023,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorVideoFS",
+                    "name" : "endeavorYouTubeFS",
                     "data" : {
                         "video" : {
                             "name" : "MSTY",
