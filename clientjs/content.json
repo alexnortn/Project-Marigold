@@ -736,23 +736,47 @@
                     }
                 },
                 {
-                    "name" : "endeavorSquareLinks",
+                    "name" : "endeavorImage100vw",
                     "data" : {
-                        "header" : "Museum in Action",
                         "class" : "endeavor-item-no-margin",
-                        "bgColor" : "",
-                        "url" : "http://museum.eyewire.org/",
-                        "description" : "Ayy check it out here, you can come party with this guy live live live.",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
                         "image" : {
-                            "name": "Museum Mobile Palm",
-                            "src": "images/projects/museum/standard/museum-connectome-graph.jpg",
-                            "src_standard": "images/projects/museum/standard/museum-connectome-graph.jpg",
-                            "src_retina": "images/projects/museum/retina/museum-connectome-graph.jpg",
-                            "src_low": "images/projects/museum/low-res/museum-connectome-graph.jpg",
-                            "src_mobile": "images/projects/museum/hi-res/museum-connectome-graph.jpg",
-                            "src_preview": "images/projects/museum/hi-res/museum-connectome-graph.jpg",
-                            "caption": "Museum Mobile Palm"
+                            "name": "Museum About",
+                            "src": "images/projects/museum/standard/museum-ipad-video.jpg",
+                            "src_standard": "images/projects/museum/standard/museum-ipad-video.jpg",
+                            "src_retina": "images/projects/museum/retina/museum-ipad-video.jpg",
+                            "src_low": "images/projects/museum/low-res/museum-ipad-video.jpg",
+                            "src_mobile": "images/projects/museum/hi-res/museum-ipad-video.jpg",
+                            "src_preview": "images/projects/museum/hi-res/museum-ipad-video.jpg",
+                            "caption": "Museum About"
                         }
+                    }
+                },
+                {
+                    "name" : "endeavorParagraph",
+                    "data" : {
+                        "header" : "Explore Live",
+                        "class" : "endeavor-item-top-125",
+                        "bgColor" : "",
+                        "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with."
+                    }
+                },
+                {
+                    "name" : "endeavorGhostButtonURL",
+                    "data" : {
+                        "class" : "endeavor-item-bottom-125 endeavor-text-left",
+                        "text" : "Go For It",
+                        "align" : "",
+                        "id" : "museum-live",
+                        "url" : "http://www.museum.eyewire.org",
+                        "textColor" : "#666666"
                     }
                 },
                 {
