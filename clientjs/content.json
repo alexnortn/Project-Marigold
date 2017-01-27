@@ -407,12 +407,12 @@
                         },
                         "image" : {
                             "name": "Museum Devices",
-                            "src": "images/projects/museum/standard/museum-devices-1.jpg",
-                            "src_standard": "images/projects/museum/standard/museum-devices-1.jpg",
-                            "src_retina": "images/projects/museum/retina/museum-devices-1.jpg",
-                            "src_low": "images/projects/museum/low-res/museum-devices-1.jpg",
-                            "src_mobile": "images/projects/museum/hi-res/museum-devices-1.jpg",
-                            "src_preview": "images/projects/museum/hi-res/museum-devices-1.jpg",
+                            "src": "images/projects/museum/standard/museum-mocks.jpg",
+                            "src_standard": "images/projects/museum/standard/museum-mocks.jpg",
+                            "src_retina": "images/projects/museum/retina/museum-mocks.jpg",
+                            "src_low": "images/projects/museum/low-res/museum-mocks.jpg",
+                            "src_mobile": "images/projects/museum/hi-res/museum-mocks.jpg",
+                            "src_preview": "images/projects/museum/hi-res/museum-mocks.jpg",
                             "caption": "Museum Devices"
                         }
                     }
@@ -421,7 +421,7 @@
                     "name" : "endeavorChecklist",
                     "data" : {
                         "header" : "Key Features",
-                        "class" : "endeavor-item-125 endeavor-item-bottom-15",
+                        "class" : "endeavor-item-top endeavor-item-bottom-15",
                         "class2" : "",
                         "class3" : "",
                         "icon" : "fa-hand-o-right",
