@@ -12,6 +12,7 @@ http://alexnortn.com
 let $ = require('jquery');
         require('./jquery.centerIn.js');
         require('lazysizes');
+        require('is-in-viewport');
         require('./cssTransitionEnd.js');
 
 let _site_content = require('./content.json');
@@ -47,7 +48,8 @@ let _projectCurrentId,
     _openProjectState = false,
     _hashChanged = false,
     _closeProject,
-    _endeavor_routes;
+    _endeavor_routes,
+    _videoChecker;
 
 let _itemInteraction,
     _endeavorRouter;
@@ -242,6 +244,22 @@ $(document).ready(function() {
         $(this).parent().velocity("fadeOut", { duration: 250 });
     });
 
+    // Autoplay Videos
+    // Only when in viewport
+    // Call once on load
+    _videoChecker = function() {
+        $('video').each(function() {
+            if ($(this).is(":in-viewport")) {
+                $(this)[0].play();
+            }
+            else {
+                $(this)[0].pause();
+            }
+        });
+    }
+
+    _videoChecker();
+
     // Create SVG Circle
     function createCircle(_cx, _cy) {
         let svgNS = "http://www.w3.org/2000/svg";  
@@ -311,6 +329,18 @@ $(document).ready(function() {
         function updateCurrentProject(index, current_id) {
             let new_id = '#' + currents[index].id;
             updateProjectHandlers(current_id, new_id);
+
+            let timer;
+            // Check video on scroll, with timeout
+            $(new_id).scroll(function() {
+                if (timer) {
+                    window.clearTimeout(timer);
+                }
+
+                timer = window.setTimeout(function() {
+                    _videoChecker();
+                }, 100);
+            });
 
             return new_id;
         }
