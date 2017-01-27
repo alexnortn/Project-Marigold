@@ -775,7 +775,7 @@
                         "text" : "Send It",
                         "align" : "",
                         "id" : "museum-live",
-                        "url" : "http://www.museum.eyewire.org",
+                        "url" : "http://museum.eyewire.org/",
                         "textColor" : "#666666"
                     }
                 },
