@@ -920,6 +920,7 @@ mixin endeavorChecklist(data)
     - var _class = data.class ? data.class : "endeavor-item-125"
     - var _class2 = data.class2 ? data.class2 : ""
     - var _class3 = data.class3 ? data.class3 : ""
+    - var _class4 = data.class4 ? data.class4 : ""
     .fsw.endeavor-center.endeavor-padding-left-100-1000.endeavor-padding-left-0-mobile(class=`${_class}`)(style=`background-color: ${bgColor}`)
         h2=header
         .endeavor-flex-row.endeavor-padding-top-15
@@ -927,7 +928,7 @@ mixin endeavorChecklist(data)
             .fsw.endeavor-transition-ease-500.endeavor-height-auto&attributes({'class': _class2}, {'id': _id})
                 ul.fa-ul.endeavor-width-100-prcnt.endeavor-padding-vertical-5-mobile.endeavor-padding-top-25&attributes({'class': _class3})
                     each content, index in contents
-                        li.endeavor-item-left-50.endeavor-item-bottom-25.endeavor-inline-block.endeavor-max-width-400.endeavor-min-width-275px-500.checklist
+                        li.endeavor-item-left-50.endeavor-item-bottom-25.endeavor-inline-block.endeavor-max-width-400.endeavor-min-width-275px-500.checklist&attributes({'class': _class4})
                             i.endeavor-color-gray-75.fa-li.fa.fa-2x(class=`${_icon}`)
                             p.lil-p.space-after.roman=content.header
                             p.lil-p=content.description
