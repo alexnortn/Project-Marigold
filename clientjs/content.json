@@ -5879,7 +5879,28 @@
                                 "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-cu-2.jpg",
                                 "src_preview": "images/projects/jenga-unchained/hi-res/jenga-cu-2.jpg",
                                 "caption": "Jenga Unchained Item"   
-                            },
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "class" : "endeavor-item-125 endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/jenga-unchained/videos/jenga.webm",
+                            "mp4" : "images/projects/jenga-unchained/videos/jenga.mp4",
+                            "poster" : "images/projects/jenga-unchained/videos/jenga.jpg"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFSList",
+                    "data" : {
+                        "images" : [
                             {
                                 "name": "Jenga Unchained Item",
                                 "src": "images/projects/jenga-unchained/standard/jenga-rules-1.jpg",
@@ -6020,16 +6041,6 @@
                     "name" : "endeavorSubheaderFS",
                     "data" : {
                         "subheader" : "Design Process"
-                    }
-                },
-                {
-                    "name" : "endeavorYouTubeFS",
-                    "data" : {
-                        "video" : {
-                            "name" : "MSTY",
-                            "src" : "https://www.youtube.com/embed/RTS209d1V9Y?autoplay=0&loop=1",
-                            "caption" : "something" 
-                        }
                     }
                 },
                 {
