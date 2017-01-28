@@ -2441,12 +2441,16 @@
                     }
                 },
                 {
-                    "name" : "endeavorYouTubeFS",
+                    "name" : "endeavorVideoFS",
                     "data" : {
-                        "video" : {
-                            "name" : "MSTY",
-                            "src" : "https://www.youtube.com/embed/V2FqFHfjFaM?autoplay=0&loop=1",
-                            "caption" : "something" 
+                        "class" : "endeavor-item-125 endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/msty/videos/msty.webm",
+                            "mp4" : "images/projects/msty/videos/msty.mp4",
+                            "poster" : "images/projects/msty/videos/msty.jpg"
                         }
                     }
                 },
@@ -2476,6 +2480,20 @@
                             "src_mobile": "images/projects/msty/hi-res/msty-intro-1.jpg",
                             "src_preview": "images/projects/msty/hi-res/msty-intro-1.jpg",
                             "caption": "MSTY Intro"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "class" : "endeavor-item-125 endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/msty/videos/msty_idle.webm",
+                            "mp4" : "images/projects/msty/videos/msty_idle.mp4",
+                            "poster" : "images/projects/msty/videos/msty_idle.jpg"
                         }
                     }
                 },
@@ -2555,6 +2573,20 @@
                     }
                 },
                 {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "class" : "endeavor-item-125 endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/msty/videos/msty_awesome.webm",
+                            "mp4" : "images/projects/msty/videos/msty_awesome.mp4",
+                            "poster" : "images/projects/msty/videos/msty_awesome.jpg"
+                        }
+                    }
+                },
+                {
                     "name" : "endeavorImageFS",
                     "data" : {
                         "placeholder" : {
@@ -2578,32 +2610,23 @@
                     }
                 },
                 {
-                    "name" : "endeavorImageFS",
-                    "data" : {
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "MSTY Expressions Gif",
-                            "src": "images/projects/msty/standard/msty-stoked.gif",
-                            "src_standard": "images/projects/msty/standard/msty-stoked.gif",
-                            "src_retina": "images/projects/msty/retina/msty-stoked.gif",
-                            "src_low": "images/projects/msty/low-res/msty-stoked.gif",
-                            "src_mobile": "images/projects/msty/hi-res/msty-stoked.gif",
-                            "src_preview": "images/projects/msty/hi-res/msty-stoked.gif",
-                            "caption": "MSTY Expressions Gif"
-                        }
-                    }
-                },
-                {
                     "name" : "endeavorSubheaderFS",
                     "data" : {
                         "subheader" : "State Machine"
+                    }
+                },
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "class" : "endeavor-item-125 endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/msty/videos/msty_fly.webm",
+                            "mp4" : "images/projects/msty/videos/msty_fly.mp4",
+                            "poster" : "images/projects/msty/videos/msty_fly.jpg"
+                        }
                     }
                 },
                 {
@@ -2781,12 +2804,16 @@
                     }
                 },
                 {
-                    "name" : "endeavorYouTubeFS",
+                    "name" : "endeavorVideoFS",
                     "data" : {
-                        "video" : {
-                            "name" : "MSTY",
-                            "src" : "https://www.youtube.com/embed/AL2U3B6Gci8?autoplay=0&loop=1",
-                            "caption" : "something" 
+                        "class" : "endeavor-item-125 endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/msty/videos/msty_dof.webm",
+                            "mp4" : "images/projects/msty/videos/msty_dof.mp4",
+                            "poster" : "images/projects/msty/videos/msty_dof.jpg"
                         }
                     }
                 },
@@ -3452,12 +3479,16 @@
                     }
                 },
                 {
-                    "name" : "endeavorYouTubeFS",
+                    "name" : "endeavorVideoFS",
                     "data" : {
-                        "video" : {
-                            "name" : "Convolve Prototype",
-                            "src" : "https://www.youtube.com/embed/8imAdvSaGlI?autoplay=0&loop=1",
-                            "caption" : "Convolve // Imemrsive viewing experience." 
+                        "class" : "endeavor-item-125 endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/convolve/videos/convolve.webm",
+                            "mp4" : "images/projects/convolve/videos/convolve.mp4",
+                            "poster" : "images/projects/convolve/videos/convolve.jpg"
                         }
                     }
                 },
@@ -3474,20 +3505,24 @@
                     }
                 },
                 {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "class" : "endeavor-item-125 fsw",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/convolve/videos/convolve.webm",
+                            "mp4" : "images/projects/convolve/videos/convolve.mp4",
+                            "poster" : "images/projects/convolve/videos/convolve.jpg"
+                        }
+                    }
+                },
+                {
                     "name" : "endeavorImageFSList",
                     "data" : {
                         "meta" : "Views",
                         "images" : [
-                            {
-                                "name": "convolve-augment-1",
-                                "src": "images/projects/convolve/standard/convolve-intro.gif",
-                                "src_standard": "images/projects/convolve/standard/convolve-intro.gif",
-                                "src_retina": "images/projects/convolve/retina/convolve-intro.gif",
-                                "src_low": "images/projects/convolve/low-res/convolve-intro.gif",
-                                "src_mobile": "images/projects/convolve/hi-res/convolve-intro.gif",
-                                "src_preview": "images/projects/convolve/hi-res/convolve-intro.gif",
-                                "caption": "Convolve Intro"   
-                            },
                             {
                                 "name": "convolve-screen-3",
                                 "src": "images/projects/convolve/standard/convolve-screen-3.png",
@@ -4500,22 +4535,30 @@
                     }
                 },
                 {
-                    "name" : "endeavorYouTubeFS",
+                    "name" : "endeavorVideoFS",
                     "data" : {
-                        "video" : {
-                            "name" : "DAS Tablet",
-                            "src" : "https://www.youtube.com/embed/6B8QnIVKJEU?autoplay=0&loop=1",
-                            "caption" : "DAS Interactive onboarding" 
+                        "class" : "endeavor-item-125 endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/das-interactive/videos/DAS_mobile.webm",
+                            "mp4" : "images/projects/das-interactive/videos/DAS_mobile.mp4",
+                            "poster" : "images/projects/das-interactive/videos/DAS_mobile.jpg"
                         }
                     }
                 },
                 {
-                    "name" : "endeavorYouTubeFS",
+                    "name" : "endeavorVideoFS",
                     "data" : {
-                        "video" : {
-                            "name" : "DAS Mobile",
-                            "src" : "https://www.youtube.com/embed/LM7G9qog4d8?autoplay=0&loop=1",
-                            "caption" : "DAS Interactive onboarding" 
+                        "class" : "endeavor-item-125 fsw",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/das-interactive/videos/DAS.webm",
+                            "mp4" : "images/projects/das-interactive/videos/DAS.mp4",
+                            "poster" : "images/projects/das-interactive/videos/DAS.jpg"
                         }
                     }
                 },
