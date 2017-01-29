@@ -1658,7 +1658,7 @@
             "image_preview": "images/projects/msty/hi-res/msty-preview.jpg",
             "sections" : [
                 {
-                    "name" : "endeavorImageFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
                         "placeholder" : {
                             "name" : "",
@@ -1681,13 +1681,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorSubheaderFS",
-                    "data" : {
-                        "subheader" : "Final Experience"
-                    }
-                },
-                {
-                    "name" : "endeavorImageFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
                         "placeholder" : {
                             "name" : "",
@@ -1710,7 +1704,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorImageFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
                         "placeholder" : {
                             "name" : "",
@@ -1747,13 +1741,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorSubheaderFS",
-                    "data" : {
-                        "subheader" : "Character Design"
-                    }
-                },
-                {
-                    "name" : "endeavorImageNoBottomFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
                         "placeholder" : {
                             "name" : "",
@@ -1790,7 +1778,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorImageNoMarginFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
                         "placeholder" : {
                             "name" : "",
@@ -1813,7 +1801,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorImageNoTopFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
                         "placeholder" : {
                             "name" : "",
@@ -1836,13 +1824,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorSubheaderFS",
-                    "data" : {
-                        "subheader" : "Expressions"
-                    }
-                },
-                {
-                    "name" : "endeavorImageFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
                         "placeholder" : {
                             "name" : "",
@@ -1902,12 +1884,6 @@
                     }
                 },
                 {
-                    "name" : "endeavorSubheaderFS",
-                    "data" : {
-                        "subheader" : "State Machine"
-                    }
-                },
-                {
                     "name" : "endeavorVideoFS",
                     "data" : {
                         "class" : "endeavor-item-125 endeavor-width-100vw endeavor-pos-rel",
@@ -1922,7 +1898,13 @@
                     }
                 },
                 {
-                    "name" : "endeavorImageFS",
+                    "name" : "endeavorSubheaderFS",
+                    "data" : {
+                        "subheader" : "State Machine"
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
                     "data" : {
                         "placeholder" : {
                             "name" : "",
@@ -1951,13 +1933,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorSubheaderFS",
-                    "data" : {
-                        "subheader" : "Navigation System"
-                    }
-                },
-                {
-                    "name" : "endeavorImageFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
                         "placeholder" : {
                             "name" : "",
@@ -1980,13 +1956,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorSubheaderFS",
-                    "data" : {
-                        "subheader" : "Neuroscience"
-                    }
-                },
-                {
-                    "name" : "endeavorImageFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
                         "placeholder" : {
                             "name" : "",
@@ -2009,13 +1979,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorSubheaderFS",
-                    "data" : {
-                        "subheader" : "Spatial Design"
-                    }
-                },
-                {
-                    "name" : "endeavorImageFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
                         "placeholder" : {
                             "name" : "",
@@ -2044,7 +2008,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorImageFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
                         "placeholder" : {
                             "name" : "",
@@ -2067,7 +2031,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorImageFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
                         "placeholder" : {
                             "name" : "",
@@ -2110,13 +2074,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorSubheaderFS",
-                    "data" : {
-                        "subheader" : "Exhibition"
-                    }
-                },
-                {
-                    "name" : "endeavorImageFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
                         "placeholder" : {
                             "name" : "",
