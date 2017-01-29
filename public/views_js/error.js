@@ -925,9 +925,9 @@ var image = data.image
 ;pug_debug_line = 548;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 var sources = data.image.src_standard + " 1x, " + data.image.src_retina + " 2x"
 ;pug_debug_line = 549;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-var _class = data.class ? data.class : ""
+var _class = data.class ? data.class : "endeavor-item"
 ;pug_debug_line = 550;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cimg" + (pug_attrs(pug_merge([{"class": pug_classes(["lazyload","endeavor-item","blur-up","fsw",_class], [false,false,false,false,true]),"src": pug_escape(image.src_low)},{'data-src': image.src}, {'data-srcset': sources}]), true)) + "\u003E";
+pug_html = pug_html + "\u003Cimg" + (pug_attrs(pug_merge([{"class": pug_classes(["lazyload","blur-up","fsw",_class], [false,false,false,true]),"src": pug_escape(image.src_low)},{'data-src': image.src}, {'data-srcset': sources}]), true)) + "\u003E";
 };
 ;pug_debug_line = 557;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_mixins["endeavorImage100vw"] = pug_interp = function(data){
@@ -2499,7 +2499,7 @@ if ('number' == typeof pug_obj27.length) {
     var content = pug_obj27[pug_index27];
 
 ;pug_debug_line = 1091;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cdiv class=\"endeavor-padding-top-25\"\u003E";
+pug_html = pug_html + "\u003Cdiv class=\"endeavor-padding-top-35\"\u003E";
 ;pug_debug_line = 1092;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + "\u003Ch3 class=\"h3-point endeavor-padding-bottom-15\"\u003E";
 ;pug_debug_line = 1092;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
@@ -2517,7 +2517,7 @@ pug_html = pug_html + (pug_escape(null == (pug_interp = content.description) ? "
     var content = pug_obj27[pug_index27];
 
 ;pug_debug_line = 1091;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cdiv class=\"endeavor-padding-top-25\"\u003E";
+pug_html = pug_html + "\u003Cdiv class=\"endeavor-padding-top-35\"\u003E";
 ;pug_debug_line = 1092;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + "\u003Ch3 class=\"h3-point endeavor-padding-bottom-15\"\u003E";
 ;pug_debug_line = 1092;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";

@@ -2126,21 +2126,7 @@
             "image_preview": "images/projects/divrcity/hi-res/divrcity-preview-6.jpg",
             "sections" : [
                 {
-                    "name" : "endeavorVideoFS",
-                    "data" : {
-                        "class" : "endeavor-item-125 endeavor-width-100vw endeavor-pos-rel",
-                        "loop": "",
-                        "muted": "",
-                        "autoplay": "true",
-                        "src" : {
-                            "webm" : "images/projects/divrcity/videos/Intro.webm",
-                            "mp4" : "images/projects/divrcity/videos/Intro.mp4",
-                            "poster" : "images/projects/divrcity/videos/Intro.jpg"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImageFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
                         "placeholder" : {
                             "name" : "",
@@ -2181,16 +2167,54 @@
                     }
                 },
                 {
-                    "name" : "endeavorSubheaderFS",
+                    "name" : "endeavorVideoFS",
                     "data" : {
-                        "subheader" : "Research Design"
+                        "class" : "endeavor-item-125 endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/divrcity/videos/Intro.webm",
+                            "mp4" : "images/projects/divrcity/videos/Intro.mp4",
+                            "poster" : "images/projects/divrcity/videos/Intro.jpg"
+                        }
                     }
                 },
                 {
-                    "name" : "endeavorPullheaderCaptionFS",
+                    "name" : "endeavorParagraphPoints",
                     "data" : {
-                        "subheader" : "Recipe for a City",
-                        "caption" : "Think of a city as a cake with a specific set of ingredients and preparation instructions. In this analogy, a city’s amenities represent the cake’s ingredients whereas the relative location of these amenities represents the cake’s preparation instructions."
+                        "class" : "endeavor-item endeavor-item-bottom-125",
+                        "bgColor" : "",
+                        "header" : "Research Design",
+                        "contents": [
+                            {
+                                "header": "Recipe for a City",
+                                "description" : "Think of a city as a cake with a specific set of ingredients and preparation instructions. In this analogy, a city’s amenities represent the cake’s ingredients whereas the relative location of these amenities represents the cake’s preparation instructions."
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "das-interactive-loading",
+                            "src": "images/projects/divrcity/standard/divrcity-mobile-bg.jpg",
+                            "src_standard": "images/projects/divrcity/standard/divrcity-mobile-bg.jpg",
+                            "src_retina": "images/projects/divrcity/retina/divrcity-mobile-bg.jpg",
+                            "src_low": "images/projects/divrcity/low-res/divrcity-mobile-bg.jpg",
+                            "src_mobile": "images/projects/divrcity/hi-res/divrcity-mobile-bg.jpg",
+                            "src_preview": "images/projects/divrcity/hi-res/divrcity-mobile-bg.jpg",
+                            "caption": "Boston, MA"
+                        }
                     }
                 },
                 {
@@ -2274,13 +2298,7 @@
                     ]
                 },
                 {
-                    "name" : "endeavorSubheaderFS",
-                    "data" : {
-                        "subheader" : "Data Acquisition"
-                    }
-                },
-                {
-                    "name" : "endeavorImageFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
                         "placeholder" : {
                             "name" : "",
@@ -2303,13 +2321,21 @@
                     }
                 },
                 {
-                    "name" : "endeavorCaptionFS",
+                    "name" : "endeavorParagraphPoints",
                     "data" : {
-                        "caption" : "To examine the relationships between amenities in cities, we collected an extensive dataset including seven million data points from Google Maps API."
+                        "class" : "endeavor-item",
+                        "bgColor" : "",
+                        "header" : "",
+                        "contents": [
+                            {
+                                "header": "Data Acquisition",
+                                "description" : "To examine the relationships between amenities in cities, we collected an extensive dataset including seven million data points from Google Maps API."
+                            }
+                        ]
                     }
                 },
                 {
-                    "name" : "endeavorImageFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
                         "placeholder" : {
                             "name" : "",
@@ -2332,21 +2358,23 @@
                     }
                 },
                 {
-                    "name" : "endeavorCaptionFS",
+                    "name" : "endeavorParagraphPoints",
                     "data" : {
-                        "caption" : "The dataset contains fine-grained locations of commercial and public amenities for 100 cities in the U.S. and Europe."
-                    }
-                },
-                {
-                    "name" : "endeavorSubheaderFS",
-                    "data" : {
-                        "subheader" : "Data + Methods"
+                        "class" : "endeavor-item",
+                        "bgColor" : "",
+                        "header" : "",
+                        "contents": [
+                            {
+                                "header": "Dataset",
+                                "description" : "The dataset contains fine-grained locations of commercial and public amenities for 100 cities in the U.S. and Europe."
+                            }
+                        ]
                     }
                 },
                 {
                     "name" : "endeavorVideoFS",
                     "data" : {
-                        "class" : "endeavor-item-125 endeavor-width-100vw endeavor-pos-rel",
+                        "class" : "endeavor-item endeavor-width-100vw endeavor-pos-rel",
                         "loop": "",
                         "muted": "",
                         "autoplay": "true",
@@ -2378,14 +2406,9 @@
                     }
                 },
                 {
-                    "name" : "endeavorSubheaderFS",
-                    "data" : {
-                        "subheader" : "Results"
-                    }
-                },
-                {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "class": "endeavor-item-bottom",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -2476,7 +2499,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorImageFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
                         "placeholder" : {
                             "name" : "",
@@ -2522,14 +2545,9 @@
                     }
                 },
                 {
-                    "name" : "endeavorSubheaderFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
-                        "subheader" : "Interaction Design"
-                    }
-                },
-                {
-                    "name" : "endeavorImageFS",
-                    "data" : {
+                        "class": "endeavor-item-no-margin",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -2551,8 +2569,9 @@
                     }
                 },
                 {
-                    "name" : "endeavorImageFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
+                        "class": "endeavor-item-no-margin",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -2571,31 +2590,6 @@
                             "src_preview": "images/projects/divrcity/hi-res/divrcity-views.jpg",
                             "caption": "Divrcity Views"
                         }
-                    }
-                },
-                {
-                    "name" : "endeavorParallaxCaptionRight",
-                    "data" : {
-                        "imageBig" : {
-                            "name": "das-interactive-loading",
-                            "src": "images/projects/divrcity/standard/divrcity-mobile-bg.jpg",
-                            "src_standard": "images/projects/divrcity/standard/divrcity-mobile-bg.jpg",
-                            "src_retina": "images/projects/divrcity/retina/divrcity-mobile-bg.jpg",
-                            "src_low": "images/projects/divrcity/low-res/divrcity-mobile-bg.jpg",
-                            "src_mobile": "images/projects/divrcity/hi-res/divrcity-mobile-bg.jpg",
-                            "src_preview": "images/projects/divrcity/hi-res/divrcity-mobile-bg.jpg"
-                        },
-                        "imageParallax" : {
-                            "name": "Devices Mock UP",
-                            "src": "images/projects/divrcity/standard/divrcity-mobile.png",
-                            "src_standard": "images/projects/divrcity/standard/divrcity-mobile.png",
-                            "src_retina": "images/projects/divrcity/retina/divrcity-mobile.png",
-                            "src_low": "images/projects/divrcity/low-res/divrcity-mobile.png",
-                            "src_mobile": "images/projects/divrcity/hi-res/divrcity-mobile.png",
-                            "src_preview": "images/projects/divrcity/hi-res/divrcity-mobile.png",
-                            "caption": "Devices Mock UP"
-                        },
-                        "caption" : "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know?"
                     }
                 },
                 {

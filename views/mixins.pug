@@ -546,8 +546,8 @@ mixin endeavorNestedImageFS(data)
 mixin endeavorImageFS(data)
     - var image = data.image
     - var sources = data.image.src_standard + " 1x, " + data.image.src_retina + " 2x"
-    - var _class = data.class ? data.class : ""
-    img.lazyload.endeavor-item.blur-up.fsw(src=image.src_low class=_class)&attributes({'data-src': image.src}, {'data-srcset': sources})
+    - var _class = data.class ? data.class : "endeavor-item"
+    img.lazyload.blur-up.fsw(src=image.src_low class=_class)&attributes({'data-src': image.src}, {'data-srcset': sources})
 
 
 //-  Endeavor Project | Full-Width Adaptive Image
