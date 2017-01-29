@@ -117,9 +117,23 @@
                     }
                 },
                 {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "class" : "endeavor-item-top-125 endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/museum/videos/interaction.webm",
+                            "mp4" : "images/projects/museum/videos/interaction.mp4",
+                            "poster" : "images/projects/museum/videos/interaction.jpg"
+                        }
+                    }
+                },
+                {
                     "name" : "endeavorImage100vw",
                     "data" : {
-                        "class" : "endeavor-item-125",
+                        "class" : "endeavor-item-no-margin",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -237,20 +251,6 @@
                             "src_mobile": "images/projects/museum/hi-res/museum-views-2.jpg",
                             "src_preview": "images/projects/museum/hi-res/museum-views-2.jpg",
                             "caption": "Museum Views 1"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorVideoFS",
-                    "data" : {
-                        "class" : "endeavor-item-no-margin endeavor-width-100vw endeavor-pos-rel",
-                        "loop": "",
-                        "muted": "",
-                        "autoplay": "true",
-                        "src" : {
-                            "webm" : "images/projects/museum/videos/interaction.webm",
-                            "mp4" : "images/projects/museum/videos/interaction.mp4",
-                            "poster" : "images/projects/museum/videos/interaction.jpg"
                         }
                     }
                 },
@@ -2140,12 +2140,6 @@
                     }
                 },
                 {
-                    "name" : "endeavorSubheaderFS",
-                    "data" : {
-                        "subheader" : "Hypothesis"
-                    }
-                },
-                {
                     "name" : "endeavorImageFS",
                     "data" : {
                         "placeholder" : {
@@ -2169,16 +2163,19 @@
                     }
                 },
                 {
-                    "name" : "endeavorDescriptionsBig",
+                    "name" : "endeavorParagraphPoints",
                     "data" : {
-                        "sections" : [
+                        "class" : "endeavor-item",
+                        "bgColor" : "",
+                        "header" : "Hypothesis",
+                        "contents": [
                             {
-                                "name" : "Spatial Organization",
-                                "content" : "The fundamental problem of cities is the problem of spatial organization. This is the problem of determining the location of businesses, public amenities, infrastructure, and residences with respect to each other."
+                                "header": "Spatial Organization",
+                                "description" : "The fundamental problem of cities is the problem of spatial organization. This is the problem of determining the location of businesses, public amenities, infrastructure, and residences with respect to each other."
                             },
                             {
-                                "name" : "Unconventional Puzzle",
-                                "content" : "The problem of a city’s spacial organization is similar to a puzzle, where parts of different kinds need to come together to create the whole. Though unlike conventional puzzles, cities have many possible solutions."
+                                "header": "Unconventional Puzzle",
+                                "description" : "The problem of a city’s spacial organization is similar to a puzzle, where parts of different kinds need to come together to create the whole. Though unlike conventional puzzles, cities have many possible solutions."
                             }
                         ]
                     }
