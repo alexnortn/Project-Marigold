@@ -1660,6 +1660,7 @@
                 {
                     "name" : "endeavorImage100vw",
                     "data" : {
+                        "class" : "endeavor-item-no-margin",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -1683,6 +1684,7 @@
                 {
                     "name" : "endeavorImage100vw",
                     "data" : {
+                        "class" : "endeavor-item-no-margin",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -1704,32 +1706,9 @@
                     }
                 },
                 {
-                    "name" : "endeavorImage100vw",
-                    "data" : {
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "MSTY Dendrite Fade",
-                            "src": "images/projects/msty/standard/msty-dendrite-fade.jpg",
-                            "src_standard": "images/projects/msty/standard/msty-dendrite-fade.jpg",
-                            "src_retina": "images/projects/msty/retina/msty-dendrite-fade.jpg",
-                            "src_low": "images/projects/msty/low-res/msty-dendrite-fade.jpg",
-                            "src_mobile": "images/projects/msty/hi-res/msty-dendrite-fade.jpg",
-                            "src_preview": "images/projects/msty/hi-res/msty-dendrite-fade.jpg",
-                            "caption": "MSTY Dendrite Fade"
-                        }
-                    }
-                },
-                {
                     "name" : "endeavorVideoFS",
                     "data" : {
-                        "class" : "endeavor-item-125 endeavor-width-100vw endeavor-pos-rel",
+                        "class" : "endeavor-item-no-margin endeavor-width-100vw endeavor-pos-rel",
                         "loop": "",
                         "muted": "",
                         "autoplay": "true",
@@ -1743,6 +1722,7 @@
                 {
                     "name" : "endeavorImage100vw",
                     "data" : {
+                        "class" : "endeavor-item-no-margin",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -1766,7 +1746,7 @@
                 {
                     "name" : "endeavorVideoFS",
                     "data" : {
-                        "class" : "endeavor-item-125 endeavor-width-100vw endeavor-pos-rel",
+                        "class" : "endeavor-width-100vw endeavor-pos-rel",
                         "loop": "",
                         "muted": "",
                         "autoplay": "true",
@@ -1780,6 +1760,7 @@
                 {
                     "name" : "endeavorImage100vw",
                     "data" : {
+                        "class" : "endeavor-item-no-margin",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -1803,6 +1784,7 @@
                 {
                     "name" : "endeavorImage100vw",
                     "data" : {
+                        "class" : "endeavor-item-no-margin",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -1826,6 +1808,7 @@
                 {
                     "name" : "endeavorImage100vw",
                     "data" : {
+                        "class" : "endeavor-item-no-margin",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -1849,7 +1832,7 @@
                 {
                     "name" : "endeavorVideoFS",
                     "data" : {
-                        "class" : "endeavor-item-125 endeavor-width-100vw endeavor-pos-rel",
+                        "class" : "endeavor-item-bottom-125 endeavor-width-100vw endeavor-pos-rel",
                         "loop": "",
                         "muted": "",
                         "autoplay": "true",
@@ -1898,14 +1881,9 @@
                     }
                 },
                 {
-                    "name" : "endeavorSubheaderFS",
+                    "name" : "endeavorImageFS",
                     "data" : {
-                        "subheader" : "State Machine"
-                    }
-                },
-                {
-                    "name" : "endeavorImage100vw",
-                    "data" : {
+                        "class" : "endeavor-item-top-125",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -1929,12 +1907,14 @@
                 {
                     "name" : "endeavorCaptionFS",
                     "data" : {
+                        "class" : "endeavor-item-bottom-125",
                         "caption" : "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know?"
                     }
                 },
                 {
                     "name" : "endeavorImage100vw",
                     "data" : {
+                        "class" : "endeavor-item-no-margin",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -1958,6 +1938,7 @@
                 {
                     "name" : "endeavorImage100vw",
                     "data" : {
+                        "class" : "endeavor-item-no-margin",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -1981,6 +1962,7 @@
                 {
                     "name" : "endeavorImage100vw",
                     "data" : {
+                        "class" : "endeavor-item-no-margin",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -2010,6 +1992,7 @@
                 {
                     "name" : "endeavorImage100vw",
                     "data" : {
+                        "class" : "endeavor-item-no-margin",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -2031,8 +2014,9 @@
                     }
                 },
                 {
-                    "name" : "endeavorImage100vw",
+                    "name" : "endeavorImageFS",
                     "data" : {
+                        "class" : "endeavor-item-top-125 endeavor-item-bottom-50",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -2056,13 +2040,14 @@
                 {
                     "name" : "endeavorCaptionFS",
                     "data" : {
+                        "class": "endeavor-item-bottom-125",
                         "caption" : "Visualizing dynamic depth of field. A depth–mapped image where darker shades of gray represent sharper focus."
                     }
                 },
                 {
                     "name" : "endeavorVideoFS",
                     "data" : {
-                        "class" : "endeavor-item-125 endeavor-width-100vw endeavor-pos-rel",
+                        "class" : "endeavor-item-no-margin endeavor-width-100vw endeavor-pos-rel",
                         "loop": "",
                         "muted": "",
                         "autoplay": "true",
@@ -2076,6 +2061,7 @@
                 {
                     "name" : "endeavorImage100vw",
                     "data" : {
+                        "class" : "endeavor-item-no-margin",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
