@@ -241,6 +241,20 @@
                     }
                 },
                 {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/museum/videos/interaction.webm",
+                            "mp4" : "images/projects/museum/videos/interaction.mp4",
+                            "poster" : "images/projects/museum/videos/interaction.jpg"
+                        }
+                    }
+                },
+                {
                     "name" : "endeavorImage100vw",
                     "data" : {
                         "class" : "endeavor-item-no-margin",
@@ -261,99 +275,6 @@
                             "src_mobile": "images/projects/museum/hi-res/museum-sidebar.jpg",
                             "src_preview": "images/projects/museum/hi-res/museum-sidebar.jpg",
                             "caption": "Museum iMac Sidebar"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImageFS",
-                    "data" : {
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "Museum Legend",
-                            "src": "images/projects/museum/standard/museum-legend.jpg",
-                            "src_standard": "images/projects/museum/standard/museum-legend.jpg",
-                            "src_retina": "images/projects/museum/retina/museum-legend.jpg",
-                            "src_low": "images/projects/museum/low-res/museum-legend.jpg",
-                            "src_mobile": "images/projects/museum/hi-res/museum-legend.jpg",
-                            "src_preview": "images/projects/museum/hi-res/museum-legend.jpg",
-                            "caption": "Museum Legend"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorParagraph",
-                    "data" : {
-                        "header" : "Closure Cards",
-                        "class" : "endeavor-item-top-125",
-                        "bgColor" : "",
-                        "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with."
-                    }
-                },
-                {
-                    "name" : "endeavorImage100vw",
-                    "data" : {
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "Museum Temporal Gif",
-                            "src": "images/projects/museum/standard/museum-temporal.gif",
-                            "src_standard": "images/projects/museum/standard/museum-temporal.gif",
-                            "src_retina": "images/projects/museum/retina/museum-temporal.gif",
-                            "src_low": "images/projects/museum/low-res/museum-temporal.gif",
-                            "src_mobile": "images/projects/museum/hi-res/museum-temporal.gif",
-                            "src_preview": "images/projects/museum/hi-res/museum-temporal.gif",
-                            "caption": "Museum Temporal Gif"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImage100vw",
-                    "data" : {
-                        "class" : "endeavor-item-bottom-125",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "Museum Charts 1",
-                            "src": "images/projects/museum/standard/museum-charts-1.jpg",
-                            "src_standard": "images/projects/museum/standard/museum-charts-1.jpg",
-                            "src_retina": "images/projects/museum/retina/museum-charts-1.jpg",
-                            "src_low": "images/projects/museum/low-res/museum-charts-1.jpg",
-                            "src_mobile": "images/projects/museum/hi-res/museum-charts-1.jpg",
-                            "src_preview": "images/projects/museum/hi-res/museum-charts-1.jpg",
-                            "caption": "Museum Charts 1"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorVideoFS",
-                    "data" : {
-                        "class" : "endeavor-item-125 endeavor-width-100vw endeavor-pos-rel",
-                        "loop": "",
-                        "muted": "",
-                        "autoplay": "true",
-                        "src" : {
-                            "webm" : "images/projects/museum/videos/interaction.webm",
-                            "mp4" : "images/projects/museum/videos/interaction.mp4",
-                            "poster" : "images/projects/museum/videos/interaction.jpg"
                         }
                     }
                 },
@@ -1279,6 +1200,85 @@
                         "class" : "endeavor-item-125",
                         "textColor" : "#666666",
                         "caption" : "Sebastian Seung (pictured above) is a leader in the new field of connectomics, currently the hottest space in neuroscience, which studies, in once-impossible detail, the wiring of the brain."
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Museum Legend",
+                            "src": "images/projects/museum/standard/museum-legend.jpg",
+                            "src_standard": "images/projects/museum/standard/museum-legend.jpg",
+                            "src_retina": "images/projects/museum/retina/museum-legend.jpg",
+                            "src_low": "images/projects/museum/low-res/museum-legend.jpg",
+                            "src_mobile": "images/projects/museum/hi-res/museum-legend.jpg",
+                            "src_preview": "images/projects/museum/hi-res/museum-legend.jpg",
+                            "caption": "Museum Legend"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorParagraph",
+                    "data" : {
+                        "header" : "Closure Cards",
+                        "class" : "endeavor-item-top-125",
+                        "bgColor" : "",
+                        "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with."
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Museum Temporal Gif",
+                            "src": "images/projects/museum/standard/museum-temporal.gif",
+                            "src_standard": "images/projects/museum/standard/museum-temporal.gif",
+                            "src_retina": "images/projects/museum/retina/museum-temporal.gif",
+                            "src_low": "images/projects/museum/low-res/museum-temporal.gif",
+                            "src_mobile": "images/projects/museum/hi-res/museum-temporal.gif",
+                            "src_preview": "images/projects/museum/hi-res/museum-temporal.gif",
+                            "caption": "Museum Temporal Gif"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-bottom-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Museum Charts 1",
+                            "src": "images/projects/museum/standard/museum-charts-1.jpg",
+                            "src_standard": "images/projects/museum/standard/museum-charts-1.jpg",
+                            "src_retina": "images/projects/museum/retina/museum-charts-1.jpg",
+                            "src_low": "images/projects/museum/low-res/museum-charts-1.jpg",
+                            "src_mobile": "images/projects/museum/hi-res/museum-charts-1.jpg",
+                            "src_preview": "images/projects/museum/hi-res/museum-charts-1.jpg",
+                            "caption": "Museum Charts 1"
+                        }
                     }
                 },
                 {
