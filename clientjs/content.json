@@ -17,8 +17,7 @@
             "description" : {
                 "quote": "Accelerating neuroscience research and discovery by open sourcing a collaborative, online platform.",
                 "brief": "At SeungLab scientists study Connectomics, a specialty in the domain of Neuroscience which seeks to understand brain structure and function by constructing comprehensive maps of the connections between neurons. Traditionally, Connectomics is a tedious and time consuming process performed by manually tracing through a volume of micrographs like a 3D coloring book. To glean meaningful information from biological neural networks, many thousands of neurons must be reconstructed. Researchers at SeungLab specialize in volumetric neuron reconstruction and employ sophisticated Machine Learning + Computer Vision techniques in collaboration with expert tracers to rapidly accelerate this process.",
-                "challenge": "To catalogue the complexity of the human brain, researchers at Seunglab are working towards an automated pipeline for gathering and processing experimental data. However, neuroscience has a data problem and Seunglab is no exception. Researchers have an excess of data and a lack of investigative power. The scale of today’s scientific challenges demand cross–disciplinary collaboration. Collaboration presents an opportunity for teams to leverage each others specialties to move faster and tackle larger and more important problems. Collaboration necessitates sharing of knowledge, time, ideas, skills, and increasingly data. How can researchers at Seunglab benefit from collaboration?",
-                "solution": "We partnered with Seunglab to design, develop, and deploy a responsive, open source, web application targeted towards neuroscientists with the goal of assisting researchers in the classification of new neuron typologies. Using Google’s Material Design library as basis for interaction patterns, we rapidly deployed a beta version and began extensive prototyping while seeking usability feedback from a host of researchers and designers. We continued prototyping for two months–refining touch points, tweaking the usability and functionality of charts, improving mesh loading performance, and adding features like auto-complete search to name a few. After the push to production, we handed off our design + development guidelines to the team at Seunglab where researchers continue to grow the platform with feedback from the scientific community."
+                "challenge": "To catalogue the complexity of the human brain, researchers at Seunglab are working towards an automated pipeline for gathering and processing experimental data. However, neuroscience has a data problem and Seunglab is no exception. Researchers have an excess of data and a lack of investigative power. The scale of today’s scientific challenges demand cross–disciplinary collaboration. Collaboration presents an opportunity for teams to leverage each others specialties to move faster and tackle larger and more important problems. Collaboration necessitates sharing of knowledge, time, ideas, skills, and increasingly data. How can researchers at Seunglab benefit from collaboration?"
             },
             "meta" : {
                 "Client" : "SeungLab, Princeton University",
@@ -117,9 +116,33 @@
                     }
                 },
                 {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-top-125 endeavor-item-bottom-none",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Museum Views 1",
+                            "src": "images/projects/museum/standard/museum-views-2.jpg",
+                            "src_standard": "images/projects/museum/standard/museum-views-2.jpg",
+                            "src_retina": "images/projects/museum/retina/museum-views-2.jpg",
+                            "src_low": "images/projects/museum/low-res/museum-views-2.jpg",
+                            "src_mobile": "images/projects/museum/hi-res/museum-views-2.jpg",
+                            "src_preview": "images/projects/museum/hi-res/museum-views-2.jpg",
+                            "caption": "Museum Views 1"
+                        }
+                    }
+                },
+                {
                     "name" : "endeavorVideoFS",
                     "data" : {
-                        "class" : "endeavor-item-top-125 endeavor-width-100vw endeavor-pos-rel",
+                        "class" : "endeavor-item-bottom-125 endeavor-width-100vw endeavor-pos-rel",
                         "loop": "",
                         "muted": "",
                         "autoplay": "true",
@@ -131,9 +154,31 @@
                     }
                 },
                 {
+                    "name" : "endeavorParagraphPoints",
+                    "data" : {
+                        "class" : "endeavor-item",
+                        "bgColor" : "",
+                        "header" : "Solution",
+                        "contents": [
+                            {
+                                "header": "Collaboration",
+                                "description" : "We partnered with Seunglab to design, develop, and deploy a responsive, open source, web application targeted towards neuroscientists with the goal of assisting researchers in the classification of new neuron typologies."
+                            },
+                            {
+                                "header": "Iterative Development",
+                                "description" : "Using Google’s Material Design library as basis for interaction patterns, we rapidly deployed a beta version and began extensive prototyping while seeking usability feedback from a host of researchers and designers. We continued prototyping for two months–refining touch points, tweaking the usability and functionality of charts, improving mesh loading performance, and adding features like auto-complete search to name a few."
+                            },
+                            {
+                                "header": "Looking Forward",
+                                "description" : "After the push to production, we handed off our design + development guidelines to the team at Seunglab where researchers continue to grow the platform with feedback from the scientific community."
+                            }
+                        ]
+                    }
+                },
+                {
                     "name" : "endeavorImage100vw",
                     "data" : {
-                        "class" : "endeavor-item-no-margin",
+                        "class" : "endeavor-item-top-125",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -227,30 +272,6 @@
                             "src_mobile": "images/projects/museum/hi-res/museum-views-4.jpg",
                             "src_preview": "images/projects/museum/hi-res/museum-views-4.jpg",
                             "caption": "Museum Views Grid 1"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImage100vw",
-                    "data" : {
-                        "class" : "endeavor-item-top-125 endeavor-item-bottom-none",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "Museum Views 1",
-                            "src": "images/projects/museum/standard/museum-views-2.jpg",
-                            "src_standard": "images/projects/museum/standard/museum-views-2.jpg",
-                            "src_retina": "images/projects/museum/retina/museum-views-2.jpg",
-                            "src_low": "images/projects/museum/low-res/museum-views-2.jpg",
-                            "src_mobile": "images/projects/museum/hi-res/museum-views-2.jpg",
-                            "src_preview": "images/projects/museum/hi-res/museum-views-2.jpg",
-                            "caption": "Museum Views 1"
                         }
                     }
                 },
@@ -2160,24 +2181,6 @@
                             "src_preview": "images/projects/divrcity/hi-res/divrcity-thesis.jpg",
                             "caption": "Divrcity Thesis"
                         }
-                    }
-                },
-                {
-                    "name" : "endeavorParagraphPoints",
-                    "data" : {
-                        "class" : "endeavor-item",
-                        "bgColor" : "",
-                        "header" : "Hypothesis",
-                        "contents": [
-                            {
-                                "header": "Spatial Organization",
-                                "description" : "The fundamental problem of cities is the problem of spatial organization. This is the problem of determining the location of businesses, public amenities, infrastructure, and residences with respect to each other."
-                            },
-                            {
-                                "header": "Unconventional Puzzle",
-                                "description" : "The problem of a city’s spacial organization is similar to a puzzle, where parts of different kinds need to come together to create the whole. Though unlike conventional puzzles, cities have many possible solutions."
-                            }
-                        ]
                     }
                 },
                 {
