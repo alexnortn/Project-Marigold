@@ -255,6 +255,20 @@
                     }
                 },
                 {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/museum/videos/museum-laptop.webm",
+                            "mp4" : "images/projects/museum/videos/museum-laptop.mp4",
+                            "poster" : "images/projects/museum/videos/museum-laptop.jpg"
+                        }
+                    }
+                },
+                {
                     "name" : "endeavorImage100vw",
                     "data" : {
                         "class" : "endeavor-item-no-margin",
@@ -444,7 +458,7 @@
                     "name" : "endeavorGhostButton",
                     "data" : {
                         "class" : "endeavor-item-bottom-250",
-                        "text" : "Look Closer",
+                        "text" : "+ Look Closer +",
                         "id" : "ghost-connectomics",
                         "textColor" : "#666666"
                     }
@@ -748,7 +762,7 @@
                     "name" : "endeavorGhostButton",
                     "data" : {
                         "class" : "endeavor-item-bottom-125 endeavor-text-left",
-                        "text" : "Look Closer",
+                        "text" : "+ Look Closer +",
                         "align" : "",
                         "id" : "ghost-market-research",
                         "textColor" : "#666666"
@@ -829,7 +843,7 @@
                     "name" : "endeavorGhostButton",
                     "data" : {
                         "class" : "endeavor-item-bottom-125 endeavor-text-left",
-                        "text" : "Look Closer",
+                        "text" : "+ Look Closer +",
                         "align" : "",
                         "id" : "ghost-user-stories",
                         "textColor" : "#666666"
@@ -870,7 +884,7 @@
                     "name" : "endeavorGhostButton",
                     "data" : {
                         "class" : "endeavor-item-bottom-125 endeavor-text-left",
-                        "text" : "Look Closer",
+                        "text" : "+ Look Closer +",
                         "align" : "",
                         "id" : "ghost-observations",
                         "textColor" : "#666666"
@@ -947,7 +961,7 @@
                     "name" : "endeavorGhostButton",
                     "data" : {
                         "class" : "endeavor-item-bottom-125 endeavor-text-left",
-                        "text" : "Look Closer",
+                        "text" : "+ Look Closer +",
                         "align" : "",
                         "id" : "ghost-design-questions",
                         "textColor" : "#666666"
@@ -1066,7 +1080,7 @@
                     "name" : "endeavorGhostButton",
                     "data" : {
                         "class" : "endeavor-item-bottom-125 endeavor-text-left",
-                        "text" : "Look Closer",
+                        "text" : "+ Look Closer +",
                         "align" : "",
                         "id" : "ghost-project-requirements",
                         "textColor" : "#666666"
@@ -1099,7 +1113,7 @@
                     "name" : "endeavorGhostButton",
                     "data" : {
                         "class" : "endeavor-item-bottom-125 endeavor-text-left",
-                        "text" : "Look Closer",
+                        "text" : "+ Look Closer +",
                         "align" : "",
                         "id" : "ghost-app-overview",
                         "textColor" : "#666666"
