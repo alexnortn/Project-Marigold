@@ -290,34 +290,10 @@
                     }
                 },
                 {
-                    "name" : "endeavorImage100vw",
-                    "data" : {
-                        "class" : "endeavor-item-no-margin",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "Museum iMac Sidebar",
-                            "src": "images/projects/museum/standard/museum-sidebar.jpg",
-                            "src_standard": "images/projects/museum/standard/museum-sidebar.jpg",
-                            "src_retina": "images/projects/museum/retina/museum-sidebar.jpg",
-                            "src_low": "images/projects/museum/low-res/museum-sidebar.jpg",
-                            "src_mobile": "images/projects/museum/hi-res/museum-sidebar.jpg",
-                            "src_preview": "images/projects/museum/hi-res/museum-sidebar.jpg",
-                            "caption": "Museum iMac Sidebar"
-                        }
-                    }
-                },
-                {
                     "name" : "endeavorParagraph",
                     "data" : {
                         "header" : "Explore Live",
-                        "class" : "endeavor-item-no-margin",
+                        "class" : "endeavor-item-top-125",
                         "bgColor" : "",
                         "description" : ""
                     }
