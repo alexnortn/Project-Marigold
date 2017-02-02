@@ -1330,12 +1330,12 @@
                         },
                         "image" : {
                             "name": "Museum 3D Controls",
-                            "src": "images/projects/museum/standard/museum-3d-controls.jpg",
-                            "src_standard": "images/projects/museum/standard/museum-3d-controls.jpg",
-                            "src_retina": "images/projects/museum/retina/museum-3d-controls.jpg",
-                            "src_low": "images/projects/museum/low-res/museum-3d-controls.jpg",
-                            "src_mobile": "images/projects/museum/hi-res/museum-3d-controls.jpg",
-                            "src_preview": "images/projects/museum/hi-res/museum-3d-controls.jpg",
+                            "src": "images/projects/museum/standard/museum-3d-controls-2.jpg",
+                            "src_standard": "images/projects/museum/standard/museum-3d-controls-2.jpg",
+                            "src_retina": "images/projects/museum/retina/museum-3d-controls-2.jpg",
+                            "src_low": "images/projects/museum/low-res/museum-3d-controls-2.jpg",
+                            "src_mobile": "images/projects/museum/hi-res/museum-3d-controls-2.jpg",
+                            "src_preview": "images/projects/museum/hi-res/museum-3d-controls-2.jpg",
                             "caption": "Museum 3D Controls"
                         }
                     }
@@ -1352,7 +1352,7 @@
                 {
                     "name" : "endeavorImage100vw",
                     "data" : {
-                        "class" : "endeavor-item-top-125",
+                        "class" : "endeavor-item-125",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -1371,14 +1371,6 @@
                             "src_preview": "images/projects/museum/hi-res/museum-wire-devices.jpg",
                             "caption": "Museum Wires Devices"
                         }
-                    }
-                },
-                {
-                    "name" : "endeavorCaptionFS",
-                    "data" : {
-                        "class" : "endeavor-item endeavor-item-bottom-125",
-                        "textColor" : "#666666",
-                        "caption" : "Sebastian Seung (pictured above) is a leader in the new field of connectomics, currently the hottest space in neuroscience, which studies, in once-impossible detail, the wiring of the brain."
                     }
                 },
                 {
@@ -1427,12 +1419,12 @@
                         },
                         "image" : {
                             "name": "Museum Charts 1",
-                            "src": "images/projects/museum/standard/museum-charts-1.jpg",
-                            "src_standard": "images/projects/museum/standard/museum-charts-1.jpg",
-                            "src_retina": "images/projects/museum/retina/museum-charts-1.jpg",
-                            "src_low": "images/projects/museum/low-res/museum-charts-1.jpg",
-                            "src_mobile": "images/projects/museum/hi-res/museum-charts-1.jpg",
-                            "src_preview": "images/projects/museum/hi-res/museum-charts-1.jpg",
+                            "src": "images/projects/museum/standard/museum-charts-1.1.jpg",
+                            "src_standard": "images/projects/museum/standard/museum-charts-1.1.jpg",
+                            "src_retina": "images/projects/museum/retina/museum-charts-1.1.jpg",
+                            "src_low": "images/projects/museum/low-res/museum-charts-1.1.jpg",
+                            "src_mobile": "images/projects/museum/hi-res/museum-charts-1.1.jpg",
+                            "src_preview": "images/projects/museum/hi-res/museum-charts-1.1.jpg",
                             "caption": "Museum Charts 1"
                         }
                     }
@@ -1474,12 +1466,12 @@
                         },
                         "image" : {
                             "name": "Museum Charts 1",
-                            "src": "images/projects/museum/standard/museum-charts-2.jpg",
-                            "src_standard": "images/projects/museum/standard/museum-charts-2.jpg",
-                            "src_retina": "images/projects/museum/retina/museum-charts-2.jpg",
-                            "src_low": "images/projects/museum/low-res/museum-charts-2.jpg",
-                            "src_mobile": "images/projects/museum/hi-res/museum-charts-2.jpg",
-                            "src_preview": "images/projects/museum/hi-res/museum-charts-2.jpg",
+                            "src": "images/projects/museum/standard/museum-charts-2.1.jpg",
+                            "src_standard": "images/projects/museum/standard/museum-charts-2.1.jpg",
+                            "src_retina": "images/projects/museum/retina/museum-charts-2.1.jpg",
+                            "src_low": "images/projects/museum/low-res/museum-charts-2.1.jpg",
+                            "src_mobile": "images/projects/museum/hi-res/museum-charts-2.1.jpg",
+                            "src_preview": "images/projects/museum/hi-res/museum-charts-2.1.jpg",
                             "caption": "Museum Charts 1"
                         }
                     }
