@@ -1376,7 +1376,7 @@
                 {
                     "name" : "endeavorCaptionFS",
                     "data" : {
-                        "class" : "endeavor-item-bottom-125",
+                        "class" : "endeavor-item endeavor-item-bottom-125",
                         "textColor" : "#666666",
                         "caption" : "Sebastian Seung (pictured above) is a leader in the new field of connectomics, currently the hottest space in neuroscience, which studies, in once-impossible detail, the wiring of the brain."
                     }
@@ -1416,6 +1416,30 @@
                 {
                     "name" : "endeavorImage100vw",
                     "data" : {
+                        "class" : "endeavor-item endeavor-item-top-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Museum Charts 1",
+                            "src": "images/projects/museum/standard/museum-charts-1.jpg",
+                            "src_standard": "images/projects/museum/standard/museum-charts-1.jpg",
+                            "src_retina": "images/projects/museum/retina/museum-charts-1.jpg",
+                            "src_low": "images/projects/museum/low-res/museum-charts-1.jpg",
+                            "src_mobile": "images/projects/museum/hi-res/museum-charts-1.jpg",
+                            "src_preview": "images/projects/museum/hi-res/museum-charts-1.jpg",
+                            "caption": "Museum Charts 1"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -1450,12 +1474,12 @@
                         },
                         "image" : {
                             "name": "Museum Charts 1",
-                            "src": "images/projects/museum/standard/museum-charts-1.jpg",
-                            "src_standard": "images/projects/museum/standard/museum-charts-1.jpg",
-                            "src_retina": "images/projects/museum/retina/museum-charts-1.jpg",
-                            "src_low": "images/projects/museum/low-res/museum-charts-1.jpg",
-                            "src_mobile": "images/projects/museum/hi-res/museum-charts-1.jpg",
-                            "src_preview": "images/projects/museum/hi-res/museum-charts-1.jpg",
+                            "src": "images/projects/museum/standard/museum-charts-2.jpg",
+                            "src_standard": "images/projects/museum/standard/museum-charts-2.jpg",
+                            "src_retina": "images/projects/museum/retina/museum-charts-2.jpg",
+                            "src_low": "images/projects/museum/low-res/museum-charts-2.jpg",
+                            "src_mobile": "images/projects/museum/hi-res/museum-charts-2.jpg",
+                            "src_preview": "images/projects/museum/hi-res/museum-charts-2.jpg",
                             "caption": "Museum Charts 1"
                         }
                     }
