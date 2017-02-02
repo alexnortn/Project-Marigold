@@ -1286,7 +1286,7 @@
                 {
                     "name" : "endeavorImage100vw",
                     "data" : {
-                        "class" : "endeavor-item-no-margin endeavor-item-bottom-125",
+                        "class" : "endeavor-item-bottom-125",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -1308,50 +1308,12 @@
                     }
                 },
                 {
-                    "name" : "endeavorChecklist",
+                    "name" : "endeavorParagraph",
                     "data" : {
                         "header" : "Grid System",
                         "class" : "endeavor-item-top endeavor-item-bottom",
-                        "class2" : "",
-                        "class3" : "",
-                        "class4" : "checklist-simple",
-                        "icon" : "fa-hand-o-right",
                         "bgColor" : "",
-                        "description" : "",
-                        "contents" : [
-                            {
-                                "header" : "Open Source",
-                                "description" : ""
-                            },
-                            {
-                                "header" : "Neueroscience",
-                                "description" : ""
-                            },
-                            {
-                                "header" : "Free to Use",
-                                "description" : ""
-                            },
-                            {
-                                "header" : "Responsive",
-                                "description" : ""
-                            },
-                            {
-                                "header" : "Web Application",
-                                "description" : ""
-                            },
-                            {
-                                "header" : "Interactive Graphs",
-                                "description" : ""
-                            },
-                            {
-                                "header" : "Figure Generator",
-                                "description" : ""
-                            },
-                            {
-                                "header" : "Persistant URLs",
-                                "description" : ""
-                            }
-                        ]
+                        "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with."
                     }
                 },
                 {
@@ -1379,53 +1341,15 @@
                     }
                 },
                 {
-                    "name" : "endeavorChecklist",
+                    "name" : "endeavorParagraph",
                     "data" : {
                         "header" : "3D Controls",
                         "class" : "endeavor-item-top endeavor-item-bottom",
-                        "class2" : "",
-                        "class3" : "",
-                        "class4" : "checklist-simple",
-                        "icon" : "fa-hand-o-right",
                         "bgColor" : "",
-                        "description" : "",
-                        "contents" : [
-                            {
-                                "header" : "Open Source",
-                                "description" : ""
-                            },
-                            {
-                                "header" : "Neueroscience",
-                                "description" : ""
-                            },
-                            {
-                                "header" : "Free to Use",
-                                "description" : ""
-                            },
-                            {
-                                "header" : "Responsive",
-                                "description" : ""
-                            },
-                            {
-                                "header" : "Web Application",
-                                "description" : ""
-                            },
-                            {
-                                "header" : "Interactive Graphs",
-                                "description" : ""
-                            },
-                            {
-                                "header" : "Figure Generator",
-                                "description" : ""
-                            },
-                            {
-                                "header" : "Persistant URLs",
-                                "description" : ""
-                            }
-                        ]
+                        "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with."
                     }
                 },
-                                {
+                {
                     "name" : "endeavorImage100vw",
                     "data" : {
                         "class" : "endeavor-item-top-125",
