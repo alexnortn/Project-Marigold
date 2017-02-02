@@ -2168,7 +2168,7 @@
                 {
                     "name" : "endeavorCaptionFS",
                     "data" : {
-                        "class" : "endeavor-item-bottom-125",
+                        "class" : "endeavor-item endeavor-item-bottom-125",
                         "caption" : "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know?"
                     }
                 },
