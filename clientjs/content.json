@@ -1442,12 +1442,12 @@
                         },
                         "image" : {
                             "name": "Museum Temporal Gif",
-                            "src": "images/projects/museum/standard/museum-temporal.gif",
-                            "src_standard": "images/projects/museum/standard/museum-temporal.gif",
-                            "src_retina": "images/projects/museum/retina/museum-temporal.gif",
-                            "src_low": "images/projects/museum/low-res/museum-temporal.gif",
-                            "src_mobile": "images/projects/museum/hi-res/museum-temporal.gif",
-                            "src_preview": "images/projects/museum/hi-res/museum-temporal.gif",
+                            "src": "images/projects/museum/standard/museum-temporal-1.gif",
+                            "src_standard": "images/projects/museum/standard/museum-temporal-1.gif",
+                            "src_retina": "images/projects/museum/retina/museum-temporal-1.gif",
+                            "src_low": "images/projects/museum/low-res/museum-temporal-1.gif",
+                            "src_mobile": "images/projects/museum/hi-res/museum-temporal-1.gif",
+                            "src_preview": "images/projects/museum/hi-res/museum-temporal-1.gif",
                             "caption": "Museum Temporal Gif"
                         }
                     }
