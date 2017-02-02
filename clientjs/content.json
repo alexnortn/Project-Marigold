@@ -1208,8 +1208,8 @@
                 {
                     "name" : "endeavorModuleMachine",
                     "data" : {
-                        "bgColor" : "FFFFFF",
-                        "class" : "endeavor-item-no-margin",
+                        "bgColor" : "#FFFFFF",
+                        "class" : "endeavor-item-no-margin endeavor-padding-vertical-125",
                         "modules" : [
                             {
                                 "name" : "endeavorImageFS",
@@ -1286,7 +1286,7 @@
                 {
                     "name" : "endeavorImage100vw",
                     "data" : {
-                        "class" : "endeavor-item-no-margin",
+                        "class" : "endeavor-item-no-margin endeavor-item-bottom-125",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -1357,7 +1357,7 @@
                 {
                     "name" : "endeavorImage100vw",
                     "data" : {
-                        "class" : "endeavor-item-no-margin",
+                        "class" : "endeavor-item-125",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -1428,7 +1428,7 @@
                                 {
                     "name" : "endeavorImage100vw",
                     "data" : {
-                        "class" : "endeavor-item-no-margin",
+                        "class" : "endeavor-item-top-125",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -1438,21 +1438,21 @@
                             "caption" : ""
                         },
                         "image" : {
-                            "name": "Museum Grid System",
+                            "name": "Museum Wires Devices",
                             "src": "images/projects/museum/standard/museum-wire-devices.jpg",
                             "src_standard": "images/projects/museum/standard/museum-wire-devices.jpg",
                             "src_retina": "images/projects/museum/retina/museum-wire-devices.jpg",
                             "src_low": "images/projects/museum/low-res/museum-wire-devices.jpg",
                             "src_mobile": "images/projects/museum/hi-res/museum-wire-devices.jpg",
                             "src_preview": "images/projects/museum/hi-res/museum-wire-devices.jpg",
-                            "caption": "Museum Grid System"
+                            "caption": "Museum Wires Devices"
                         }
                     }
                 },
                 {
                     "name" : "endeavorCaptionFS",
                     "data" : {
-                        "class" : "endeavor-item-125",
+                        "class" : "endeavor-item-bottom-125",
                         "textColor" : "#666666",
                         "caption" : "Sebastian Seung (pictured above) is a leader in the new field of connectomics, currently the hottest space in neuroscience, which studies, in once-impossible detail, the wiring of the brain."
                     }
