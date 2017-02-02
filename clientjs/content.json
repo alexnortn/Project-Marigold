@@ -1206,6 +1206,250 @@
                     }
                 },
                 {
+                    "name" : "endeavorModuleMachine",
+                    "data" : {
+                        "bgColor" : "FFFFFF",
+                        "class" : "endeavor-item-no-margin",
+                        "modules" : [
+                            {
+                                "name" : "endeavorImageFS",
+                                "data" : {
+                                    "placeholder" : {
+                                        "name" : "",
+                                        "src" : "",
+                                        "src" : "",
+                                        "src_mobile" : "",
+                                        "src_preview" : "",
+                                        "caption" : ""
+                                    },
+                                    "image" : {
+                                        "name": "Museum Wireframe Desktop Menus",
+                                        "src": "images/projects/museum/standard/museum-desktop-menus.jpg",
+                                        "src_standard": "images/projects/museum/standard/museum-desktop-menus.jpg",
+                                        "src_retina": "images/projects/museum/retina/museum-desktop-menus.jpg",
+                                        "src_low": "images/projects/museum/low-res/museum-desktop-menus.jpg",
+                                        "src_mobile": "images/projects/museum/hi-res/museum-desktop-menus.jpg",
+                                        "src_preview": "images/projects/museum/hi-res/museum-desktop-menus.jpg",
+                                        "caption": "Museum Wireframe Desktop Menus"
+                                    }
+                                }
+                            },
+                            {
+                                "name" : "endeavorImageFS",
+                                "data" : {
+                                    "placeholder" : {
+                                        "name" : "",
+                                        "src" : "",
+                                        "src" : "",
+                                        "src_mobile" : "",
+                                        "src_preview" : "",
+                                        "caption" : ""
+                                    },
+                                    "image" : {
+                                        "name": "Museum Wireframe Tablet Menus",
+                                        "src": "images/projects/museum/standard/museum-tablet-menus.jpg",
+                                        "src_standard": "images/projects/museum/standard/museum-tablet-menus.jpg",
+                                        "src_retina": "images/projects/museum/retina/museum-tablet-menus.jpg",
+                                        "src_low": "images/projects/museum/low-res/museum-tablet-menus.jpg",
+                                        "src_mobile": "images/projects/museum/hi-res/museum-tablet-menus.jpg",
+                                        "src_preview": "images/projects/museum/hi-res/museum-tablet-menus.jpg",
+                                        "caption": "Museum Wireframe Tablet Menus"
+                                    }
+                                }
+                            },
+                            {
+                                "name" : "endeavorImageFS",
+                                "data" : {
+                                    "placeholder" : {
+                                        "name" : "",
+                                        "src" : "",
+                                        "src" : "",
+                                        "src_mobile" : "",
+                                        "src_preview" : "",
+                                        "caption" : ""
+                                    },
+                                    "image" : {
+                                        "name": "Museum Wireframe Mobile Menus",
+                                        "src": "images/projects/museum/standard/museum-mobile-menus.jpg",
+                                        "src_standard": "images/projects/museum/standard/museum-mobile-menus.jpg",
+                                        "src_retina": "images/projects/museum/retina/museum-mobile-menus.jpg",
+                                        "src_low": "images/projects/museum/low-res/museum-mobile-menus.jpg",
+                                        "src_mobile": "images/projects/museum/hi-res/museum-mobile-menus.jpg",
+                                        "src_preview": "images/projects/museum/hi-res/museum-mobile-menus.jpg",
+                                        "caption": "Museum Wireframe Mobile Menus"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Museum Grid System",
+                            "src": "images/projects/museum/standard/museum-grid.jpg",
+                            "src_standard": "images/projects/museum/standard/museum-grid.jpg",
+                            "src_retina": "images/projects/museum/retina/museum-grid.jpg",
+                            "src_low": "images/projects/museum/low-res/museum-grid.jpg",
+                            "src_mobile": "images/projects/museum/hi-res/museum-grid.jpg",
+                            "src_preview": "images/projects/museum/hi-res/museum-grid.jpg",
+                            "caption": "Museum Grid System"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorChecklist",
+                    "data" : {
+                        "header" : "Grid System",
+                        "class" : "endeavor-item-top endeavor-item-bottom",
+                        "class2" : "",
+                        "class3" : "",
+                        "class4" : "checklist-simple",
+                        "icon" : "fa-hand-o-right",
+                        "bgColor" : "",
+                        "description" : "",
+                        "contents" : [
+                            {
+                                "header" : "Open Source",
+                                "description" : ""
+                            },
+                            {
+                                "header" : "Neueroscience",
+                                "description" : ""
+                            },
+                            {
+                                "header" : "Free to Use",
+                                "description" : ""
+                            },
+                            {
+                                "header" : "Responsive",
+                                "description" : ""
+                            },
+                            {
+                                "header" : "Web Application",
+                                "description" : ""
+                            },
+                            {
+                                "header" : "Interactive Graphs",
+                                "description" : ""
+                            },
+                            {
+                                "header" : "Figure Generator",
+                                "description" : ""
+                            },
+                            {
+                                "header" : "Persistant URLs",
+                                "description" : ""
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Museum 3D Controls",
+                            "src": "images/projects/museum/standard/museum-3d-controls.jpg",
+                            "src_standard": "images/projects/museum/standard/museum-3d-controls.jpg",
+                            "src_retina": "images/projects/museum/retina/museum-3d-controls.jpg",
+                            "src_low": "images/projects/museum/low-res/museum-3d-controls.jpg",
+                            "src_mobile": "images/projects/museum/hi-res/museum-3d-controls.jpg",
+                            "src_preview": "images/projects/museum/hi-res/museum-3d-controls.jpg",
+                            "caption": "Museum 3D Controls"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorChecklist",
+                    "data" : {
+                        "header" : "3D Controls",
+                        "class" : "endeavor-item-top endeavor-item-bottom",
+                        "class2" : "",
+                        "class3" : "",
+                        "class4" : "checklist-simple",
+                        "icon" : "fa-hand-o-right",
+                        "bgColor" : "",
+                        "description" : "",
+                        "contents" : [
+                            {
+                                "header" : "Open Source",
+                                "description" : ""
+                            },
+                            {
+                                "header" : "Neueroscience",
+                                "description" : ""
+                            },
+                            {
+                                "header" : "Free to Use",
+                                "description" : ""
+                            },
+                            {
+                                "header" : "Responsive",
+                                "description" : ""
+                            },
+                            {
+                                "header" : "Web Application",
+                                "description" : ""
+                            },
+                            {
+                                "header" : "Interactive Graphs",
+                                "description" : ""
+                            },
+                            {
+                                "header" : "Figure Generator",
+                                "description" : ""
+                            },
+                            {
+                                "header" : "Persistant URLs",
+                                "description" : ""
+                            }
+                        ]
+                    }
+                },
+                                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Museum Grid System",
+                            "src": "images/projects/museum/standard/museum-wire-devices.jpg",
+                            "src_standard": "images/projects/museum/standard/museum-wire-devices.jpg",
+                            "src_retina": "images/projects/museum/retina/museum-wire-devices.jpg",
+                            "src_low": "images/projects/museum/low-res/museum-wire-devices.jpg",
+                            "src_mobile": "images/projects/museum/hi-res/museum-wire-devices.jpg",
+                            "src_preview": "images/projects/museum/hi-res/museum-wire-devices.jpg",
+                            "caption": "Museum Grid System"
+                        }
+                    }
+                },
+                {
                     "name" : "endeavorCaptionFS",
                     "data" : {
                         "class" : "endeavor-item-125",
