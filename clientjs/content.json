@@ -1209,7 +1209,7 @@
                     "name" : "endeavorModuleMachine",
                     "data" : {
                         "bgColor" : "#FFFFFF",
-                        "class" : "endeavor-item-no-margin endeavor-padding-vertical-125",
+                        "class" : "endeavor-item-no-margin endeavor-padding-bottom-125",
                         "modules" : [
                             {
                                 "name" : "endeavorImageFS",
@@ -1247,12 +1247,12 @@
                                     },
                                     "image" : {
                                         "name": "Museum Wireframe Tablet Menus",
-                                        "src": "images/projects/museum/standard/museum-tablet-menus.jpg",
-                                        "src_standard": "images/projects/museum/standard/museum-tablet-menus.jpg",
-                                        "src_retina": "images/projects/museum/retina/museum-tablet-menus.jpg",
-                                        "src_low": "images/projects/museum/low-res/museum-tablet-menus.jpg",
-                                        "src_mobile": "images/projects/museum/hi-res/museum-tablet-menus.jpg",
-                                        "src_preview": "images/projects/museum/hi-res/museum-tablet-menus.jpg",
+                                        "src": "images/projects/museum/standard/museum-tablet-views.gif",
+                                        "src_standard": "images/projects/museum/standard/museum-tablet-views.gif",
+                                        "src_retina": "images/projects/museum/retina/museum-tablet-views.gif",
+                                        "src_low": "images/projects/museum/low-res/museum-tablet-views.gif",
+                                        "src_mobile": "images/projects/museum/hi-res/museum-tablet-views.gif",
+                                        "src_preview": "images/projects/museum/hi-res/museum-tablet-views.gif",
                                         "caption": "Museum Wireframe Tablet Menus"
                                     }
                                 }
