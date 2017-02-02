@@ -1352,7 +1352,7 @@
                 {
                     "name" : "endeavorImage100vw",
                     "data" : {
-                        "class" : "endeavor-item-125",
+                        "class" : "endeavor-item-top-125",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -1370,6 +1370,75 @@
                             "src_mobile": "images/projects/museum/hi-res/museum-wire-devices.jpg",
                             "src_preview": "images/projects/museum/hi-res/museum-wire-devices.jpg",
                             "caption": "Museum Wires Devices"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorDesignProcess",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin",
+                        "process" : "Deploy",
+                        "text" : "",
+                        "number" : "04/05",
+                        "bgColor" : "#e6e6e6",
+                        "textColor" : "#bfbfbf",
+                        "textColor2" : "#d9d9d9"
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-bottom-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Museum Testing Tablet",
+                            "src": "images/projects/museum/standard/museum-ipad-video.jpg",
+                            "src_standard": "images/projects/museum/standard/museum-ipad-video.jpg",
+                            "src_retina": "images/projects/museum/retina/museum-ipad-video.jpg",
+                            "src_low": "images/projects/museum/low-res/museum-ipad-video.jpg",
+                            "src_mobile": "images/projects/museum/hi-res/museum-ipad-video.jpg",
+                            "src_preview": "images/projects/museum/hi-res/museum-ipad-video.jpg",
+                            "caption": "Museum Testing Tablet"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorParagraph",
+                    "data" : {
+                        "header" : "3D Controls",
+                        "class" : "endeavor-item-top endeavor-item-bottom",
+                        "bgColor" : "",
+                        "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with."
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-top-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Museum Sidebar",
+                            "src": "images/projects/museum/standard/museum-sidebar.jpg",
+                            "src_standard": "images/projects/museum/standard/museum-sidebar.jpg",
+                            "src_retina": "images/projects/museum/retina/museum-sidebar.jpg",
+                            "src_low": "images/projects/museum/low-res/museum-sidebar.jpg",
+                            "src_mobile": "images/projects/museum/hi-res/museum-sidebar.jpg",
+                            "src_preview": "images/projects/museum/hi-res/museum-sidebar.jpg",
+                            "caption": "Museum Sidebar"
                         }
                     }
                 },
@@ -1397,12 +1466,9 @@
                     }
                 },
                 {
-                    "name" : "endeavorParagraph",
+                    "name" : "endeavorCaptionFS",
                     "data" : {
-                        "header" : "Closure Cards",
-                        "class" : "endeavor-item-top-125",
-                        "bgColor" : "",
-                        "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with."
+                        "caption" : "Augmenting with data has often been seen as overall uninteresting to the general public. Convolve looks to seemingly change that notion almost entirely. The next step is picking data that is worth investigating and of an interest to the viewer. The curation of interesting and dynamic data can change almost everything about how we feel about any given subject. When choosing the data that would be augmented onto the Convolve heads up display we kept those notions in mind."
                     }
                 },
                 {
@@ -1474,18 +1540,6 @@
                             "src_preview": "images/projects/museum/hi-res/museum-charts-2.1.jpg",
                             "caption": "Museum Charts 1"
                         }
-                    }
-                },
-                {
-                    "name" : "endeavorDesignProcess",
-                    "data" : {
-                        "class" : "endeavor-item-no-margin",
-                        "process" : "Deploy",
-                        "text" : "",
-                        "number" : "04/05",
-                        "bgColor" : "#e6e6e6",
-                        "textColor" : "#bfbfbf",
-                        "textColor2" : "#d9d9d9"
                     }
                 },
                 {
