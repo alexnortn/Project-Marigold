@@ -1466,9 +1466,21 @@
                     }
                 },
                 {
-                    "name" : "endeavorCaptionFS",
+                    "name" : "endeavorModuleMachine",
                     "data" : {
-                        "caption" : "Augmenting with data has often been seen as overall uninteresting to the general public. Convolve looks to seemingly change that notion almost entirely. The next step is picking data that is worth investigating and of an interest to the viewer. The curation of interesting and dynamic data can change almost everything about how we feel about any given subject. When choosing the data that would be augmented onto the Convolve heads up display we kept those notions in mind."
+                        "bgColor" : "#e6e6e6",
+                        "class" : "endeavor-item-top-125 endeavor-padding-bottom-125",
+                        "modules" : [
+                            {
+                                "name" : "endeavorParagraph",
+                                "data" : {
+                                    "header" : "Closure Cards",
+                                    "class" : "endeavor-item-top-125",
+                                    "bgColor" : "",
+                                    "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with."
+                                }
+                            }
+                        ]
                     }
                 },
                 {
