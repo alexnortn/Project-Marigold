@@ -328,7 +328,8 @@ $(document).ready(function() {
 
         function updateCurrentProject(index, current_id) {
             let new_id = '#' + currents[index].id;
-            updateProjectHandlers(current_id, new_id);
+            let timer_height;
+            updateProjectHandlers(current_id, new_id, timer_height);
 
             let timer;
             // Check video on scroll, with timeout
@@ -349,17 +350,37 @@ $(document).ready(function() {
             $('.arrow-container').removeClass('arrow-bottom');
         }
 
-        function updateProjectHandlers(current_id, new_id) {
+        function updateProjectHandlers(current_id, new_id, timer_height) {
 
             if (scrollHandler) {
                 $(current_id).off("scroll", scrollHandler);
             }
+
+            // Calculate section height after page renders...
+            let section_height = 0;;
+
+            if (timer_height) {
+                window.clearTimeout(timer_height);
+            }
+
+            timer_height = window.setTimeout(function() {
+                let content = $(new_id).find(".endeavor-contents").children();
+                for (let i=0; i < content.length; i++) { 
+                    section_height += $(content[i]).outerHeight();
+                }; 
+
+                console.log(section_height);
+
+            }, 1000);
 
             scrollHandler = function() {
                 if ($(new_id).scrollTop() > 0) {
                     $('.arrow-container').addClass('arrow-bottom');
                     $('.arrow-center').addClass('visible');
                     $('#prev').addClass('arrow-left-alt');
+
+                    console.log($(new_id).scrollTop())
+                    console.log($(new_id).scrollTop() / section_height);
                 }
                 else {
                     $('.arrow-container').removeClass('arrow-bottom');
@@ -522,8 +543,8 @@ $(document).ready(function() {
         });
 
         $('.item').each(function(){
-            var $this = $(this);
-            var hammertime = new Hammer(this);
+            let $this = $(this);
+            let hammertime = new Hammer(this);
             hammertime.on("tap", function(evt) {
                 workItemInteraction($(evt.srcEvent.currentTarget).attr('data-project'), evt);
                 _endeavorRouter.setURL($(evt.srcEvent.currentTarget).attr('data-project')); // Internal URL Routing
@@ -1158,7 +1179,7 @@ function sigmoidFactory(k) {
         return 1 / (1 + Math.exp(-k * t)) - 0.5;
     }
 
-    var correction = 0.5 / base(1);
+    let correction = 0.5 / base(1);
 
     return function (t) {
         t = clamp(t, 0, 1);
@@ -1173,10 +1194,10 @@ function clamp(val, lower, upper) {
 function Deferred(fn) {
     fn = fn || function () {};
 
-    var res = void 0,
+    let res = void 0,
         rej = void 0;
 
-    var p = new Promise(function (resolve, reject) {
+    let p = new Promise(function (resolve, reject) {
         fn(resolve, reject);
 
         res = resolve;
@@ -1212,22 +1233,22 @@ function scrollTo(container, target, options) {
         options = {};
     }
 
-    var msec = options.msec || 250;
-    var easing = options.easing || sigmoidFactory(6);
-    var offset = options.offset || 0;
+    let msec = options.msec || 250;
+    let easing = options.easing || sigmoidFactory(6);
+    let offset = options.offset || 0;
 
-    var position_offset = target.offsetTop - container.offsetTop + offset;
+    let position_offset = target.offsetTop - container.offsetTop + offset;
 
     if (position_offset === 0) {
         return Promise.resolve();
     }
 
-    var distance_traveled = 0;
-    var start_pos = container.scrollTop;
+    let distance_traveled = 0;
+    let start_pos = container.scrollTop;
 
-    var req;
+    let req;
 
-    var deferred = Deferred();
+    let deferred = Deferred();
 
     deferred.then(function () {
         container.scrollTop = start_pos + position_offset;
@@ -1237,18 +1258,18 @@ function scrollTo(container, target, options) {
         }
     });
 
-    var start_time = window.performance.now();
+    let start_time = window.performance.now();
 
     function animate() {
-        var now = window.performance.now();
-        var t = (now - start_time) / msec;
+        let now = window.performance.now();
+        let t = (now - start_time) / msec;
 
         if (t >= 1) {
             deferred.resolve();
             return;
         }
 
-        var proportion = easing(t);
+        let proportion = easing(t);
 
         distance_traveled = proportion * position_offset;
         container.scrollTop = start_pos + distance_traveled;
