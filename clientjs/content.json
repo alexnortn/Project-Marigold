@@ -45,6 +45,20 @@
                     }
                 },
                 {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/museum/videos/interaction.webm",
+                            "mp4" : "images/projects/museum/videos/interaction.mp4",
+                            "poster" : "images/projects/museum/videos/interaction.jpg"
+                        }
+                    }
+                },
+                {
                     "name" : "endeavorImage100vw",
                     "data" : {
                         "class" : "endeavor-item-no-margin",
@@ -118,7 +132,7 @@
                 {
                     "name" : "endeavorImage100vw",
                     "data" : {
-                        "class" : "endeavor-item-top-125 endeavor-item-bottom-none",
+                        "class" : "endeavor-item-125",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -129,27 +143,13 @@
                         },
                         "image" : {
                             "name": "Museum Views 1",
-                            "src": "images/projects/museum/standard/museum-views-2.jpg",
-                            "src_standard": "images/projects/museum/standard/museum-views-2.jpg",
-                            "src_retina": "images/projects/museum/retina/museum-views-2.jpg",
-                            "src_low": "images/projects/museum/low-res/museum-views-2.jpg",
-                            "src_mobile": "images/projects/museum/hi-res/museum-views-2.jpg",
-                            "src_preview": "images/projects/museum/hi-res/museum-views-2.jpg",
+                            "src": "images/projects/museum/standard/museum-views-1.1.jpg",
+                            "src_standard": "images/projects/museum/standard/museum-views-1.1.jpg",
+                            "src_retina": "images/projects/museum/retina/museum-views-1.1.jpg",
+                            "src_low": "images/projects/museum/low-res/museum-views-1.1.jpg",
+                            "src_mobile": "images/projects/museum/hi-res/museum-views-1.1.jpg",
+                            "src_preview": "images/projects/museum/hi-res/museum-views-1.1.jpg",
                             "caption": "Museum Views 1"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorVideoFS",
-                    "data" : {
-                        "class" : "endeavor-item-bottom-125 endeavor-width-100vw endeavor-pos-rel",
-                        "loop": "",
-                        "muted": "",
-                        "autoplay": "true",
-                        "src" : {
-                            "webm" : "images/projects/museum/videos/interaction.webm",
-                            "mp4" : "images/projects/museum/videos/interaction.mp4",
-                            "poster" : "images/projects/museum/videos/interaction.jpg"
                         }
                     }
                 },
