@@ -1412,7 +1412,7 @@
                 {
                     "name" : "endeavorParagraph",
                     "data" : {
-                        "header" : "3D Controls",
+                        "header" : "Real Data",
                         "class" : "endeavor-item-top endeavor-item-bottom",
                         "bgColor" : "",
                         "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with."
@@ -1445,7 +1445,7 @@
                 {
                     "name" : "endeavorImage100vw",
                     "data" : {
-                        "class" : "endeavor-item-no-margin",
+                        "class" : "endeavor-item-bottom",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -1467,74 +1467,18 @@
                     }
                 },
                 {
-                    "name" : "endeavorImage100vw",
+                    "name" : "endeavorParagraph",
                     "data" : {
-                        "class" : "endeavor-item-no-margin",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "Museum Sidebar",
-                            "src": "images/projects/museum/standard/museum-sidebar.jpg",
-                            "src_standard": "images/projects/museum/standard/museum-sidebar.jpg",
-                            "src_retina": "images/projects/museum/retina/museum-sidebar.jpg",
-                            "src_low": "images/projects/museum/low-res/museum-sidebar.jpg",
-                            "src_mobile": "images/projects/museum/hi-res/museum-sidebar.jpg",
-                            "src_preview": "images/projects/museum/hi-res/museum-sidebar.jpg",
-                            "caption": "Museum Sidebar"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImageFS",
-                    "data" : {
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "Museum Legend",
-                            "src": "images/projects/museum/standard/museum-legend.jpg",
-                            "src_standard": "images/projects/museum/standard/museum-legend.jpg",
-                            "src_retina": "images/projects/museum/retina/museum-legend.jpg",
-                            "src_low": "images/projects/museum/low-res/museum-legend.jpg",
-                            "src_mobile": "images/projects/museum/hi-res/museum-legend.jpg",
-                            "src_preview": "images/projects/museum/hi-res/museum-legend.jpg",
-                            "caption": "Museum Legend"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorModuleMachine",
-                    "data" : {
-                        "bgColor" : "#e6e6e6",
-                        "class" : "endeavor-item-top-125 endeavor-padding-bottom-125",
-                        "modules" : [
-                            {
-                                "name" : "endeavorParagraph",
-                                "data" : {
-                                    "header" : "Closure Cards",
-                                    "class" : "endeavor-item-top-125",
-                                    "bgColor" : "",
-                                    "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with."
-                                }
-                            }
-                        ]
+                        "header" : "Data Driven Design",
+                        "class" : "endeavor-item-top endeavor-item-bottom",
+                        "bgColor" : "",
+                        "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with."
                     }
                 },
                 {
                     "name" : "endeavorImage100vw",
                     "data" : {
-                        "class" : "endeavor-item-bottom-125",
+                        "class" : "endeavor-item-top",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -1545,13 +1489,45 @@
                         },
                         "image" : {
                             "name": "Museum Chart Process",
-                            "src": "images/projects/museum/standard/museum-chart-process.gif",
-                            "src_standard": "images/projects/museum/standard/museum-chart-process.gif",
-                            "src_retina": "images/projects/museum/retina/museum-chart-process.gif",
-                            "src_low": "images/projects/museum/low-res/museum-chart-process.gif",
-                            "src_mobile": "images/projects/museum/hi-res/museum-chart-process.gif",
-                            "src_preview": "images/projects/museum/hi-res/museum-chart-process.gif",
+                            "src": "images/projects/museum/standard/museum-chart-process.jpg",
+                            "src_standard": "images/projects/museum/standard/museum-chart-process.jpg",
+                            "src_retina": "images/projects/museum/retina/museum-chart-process.jpg",
+                            "src_low": "images/projects/museum/low-res/museum-chart-process.jpg",
+                            "src_mobile": "images/projects/museum/hi-res/museum-chart-process.jpg",
+                            "src_preview": "images/projects/museum/hi-res/museum-chart-process.jpg",
                             "caption": "Museum Chart Process"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorModuleMachine",
+                    "data" : {
+                        "bgColor" : "#e6e6e6",
+                        "class" : "endeavor-item-no-margin endeavor-padding-vertical-125",
+                        "modules" : [
+                            {
+                                "name" : "endeavorParagraph",
+                                "data" : {
+                                    "header" : "Closure Cards",
+                                    "class" : "endeavor-item-no-margin",
+                                    "bgColor" : "",
+                                    "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with."
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/museum/videos/museum-chart.webm",
+                            "mp4" : "images/projects/museum/videos/museum-chart.mp4",
+                            "poster" : "images/projects/museum/videos/museum-chart.jpg"
                         }
                     }
                 },
@@ -1605,6 +1581,76 @@
                 {
                     "name" : "endeavorImage100vw",
                     "data" : {
+                        "class" : "endeavor-item-no-margin",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Museum Sidebar",
+                            "src": "images/projects/museum/standard/museum-sidebar.jpg",
+                            "src_standard": "images/projects/museum/standard/museum-sidebar.jpg",
+                            "src_retina": "images/projects/museum/retina/museum-sidebar.jpg",
+                            "src_low": "images/projects/museum/low-res/museum-sidebar.jpg",
+                            "src_mobile": "images/projects/museum/hi-res/museum-sidebar.jpg",
+                            "src_preview": "images/projects/museum/hi-res/museum-sidebar.jpg",
+                            "caption": "Museum Sidebar"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Museum Legend",
+                            "src": "images/projects/museum/standard/museum-legend.jpg",
+                            "src_standard": "images/projects/museum/standard/museum-legend.jpg",
+                            "src_retina": "images/projects/museum/retina/museum-legend.jpg",
+                            "src_low": "images/projects/museum/low-res/museum-legend.jpg",
+                            "src_mobile": "images/projects/museum/hi-res/museum-legend.jpg",
+                            "src_preview": "images/projects/museum/hi-res/museum-legend.jpg",
+                            "caption": "Museum Legend"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "class" : "endeavor-item-125 endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/museum/videos/museum-autocomplete.webm",
+                            "mp4" : "images/projects/museum/videos/museum-autocomplete.mp4",
+                            "poster" : "images/projects/museum/videos/museum-autocomplete.jpg"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorParagraph",
+                    "data" : {
+                        "header" : "Auto Complete",
+                        "class" : "endeavor-item-top endeavor-item-bottom",
+                        "bgColor" : "",
+                        "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with."
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
                         "class" : "endeavor-item-bottom-125",
                         "placeholder" : {
                             "name" : "",
@@ -1636,319 +1682,6 @@
                         "bgColor" : "#e6e6e6",
                         "textColor" : "#bfbfbf",
                         "textColor2" : "#d9d9d9"
-                    }
-                },
-                {
-                    "name" : "endeavorParallaxBehind",
-                    "data" : {
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "Museum Project Specs",
-                            "src": "images/projects/museum/standard/museum-project-specs.jpg",
-                            "src_standard": "images/projects/museum/standard/museum-project-specs.jpg",
-                            "src_retina": "images/projects/museum/retina/museum-project-specs.jpg",
-                            "src_low": "images/projects/museum/low-res/museum-project-specs.jpg",
-                            "src_mobile": "images/projects/museum/hi-res/museum-project-specs.jpg",
-                            "src_preview": "images/projects/museum/hi-res/museum-project-specs.jpg",
-                            "caption": "Museum Project Specs"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorTwoImageParallaxLeft",
-                    "data" : {
-                        "image1" : {
-                            "name": "hero",
-                            "src": "images/crystal-8.jpg",
-                            "src": "images/crystal-8.jpg",
-                            "src_mobile": "images/crystal-8.jpg",
-                            "src_preview": "images/lamp-sm-0.jpg",
-                            "caption": "Side view of Gestural Lamp. "
-                        },
-                        "image2" : {
-                            "name": "hero",
-                            "src": "images/crystal-8.jpg",
-                            "src": "images/crystal-8.jpg",
-                            "src_mobile": "images/crystal-8.jpg",
-                            "src_preview": "images/lamp-sm-0.jpg",
-                            "caption": "Side view of Gestural Lamp. "
-                        },
-                        "pullQuote" : "The lamp seeks to explore our relationship with dynamic data, for this instance weather."
-                    }
-                },
-                {
-                    "name" : "endeavorImageGridIterator",
-                    "data" : {
-                        "images": [
-                            {
-                                "name": "hero",
-                                "src": "images/crystal-8.jpg",
-                                "src": "images/crystal-8.jpg",
-                                "src_mobile": "images/crystal-8.jpg",
-                                "src_preview": "images/lamp-sm-0.jpg",
-                                "caption": "Side view of Gestural Lamp. "
-                            },
-                            {
-                                "name": "support_1",
-                                "src": "images/crystal-8.jpg",
-                                "src": "images/crystal-8.jpg",
-                                "src_mobile": "images/crystal-8.jpg",
-                                "src_preview": "Images/Sun-sm.png",
-                                "caption": " "
-                            },
-                            {
-                                "name": "support_2",
-                                "src": "images/crystal-8.jpg",
-                                "src": "images/crystal-8.jpg",
-                                "src_mobile": "images/crystal-8.jpg",
-                                "src_preview": "Images/Sun-sm.png",
-                                "caption": " "
-                            },
-                            {
-                                "name": "support_3",
-                                "src": "images/crystal-8.jpg",
-                                "src": "images/crystal-8.jpg",
-                                "src_mobile": "images/crystal-8.jpg",
-                                "src_preview": "Images/Sun-sm.png",
-                                "caption": " "
-                            },
-                            {
-                                "name": "support_4",
-                                "src": "images/crystal-8.jpg",
-                                "src": "images/crystal-8.jpg",
-                                "src_mobile": "images/crystal-8.jpg",
-                                "src_preview": "Images/Sun-sm.png",
-                                "caption": " "
-                            },
-                            {
-                                "name": "support_5",
-                                "src": "images/crystal-8.jpg",
-                                "src": "images/crystal-8.jpg",
-                                "src_mobile": "images/crystal-8.jpg",
-                                "src_preview": "Images/Sun-sm.png",
-                                "caption": " "
-                            }
-                        ]
-                    }
-                },
-                {
-                    "name" : "endeavorParallaxBehind",
-                    "data" : {
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "hero",
-                            "src": "images/crystal-8.jpg",
-                            "src": "images/crystal-8.jpg",
-                            "src_mobile": "images/crystal-8.jpg",
-                            "src_preview": "images/lamp-sm-0.jpg",
-                            "caption": "Side view of Gestural Lamp. "
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImageGridIterator",
-                    "data" : {
-                        "images": [
-                            {
-                                "name": "hero",
-                                "src": "images/crystal-8.jpg",
-                                "src": "images/crystal-8.jpg",
-                                "src_mobile": "images/crystal-8.jpg",
-                                "src_preview": "images/lamp-sm-0.jpg",
-                                "caption": "Side view of Gestural Lamp. "
-                            },
-                            {
-                                "name": "support_1",
-                                "src": "images/crystal-8.jpg",
-                                "src": "images/crystal-8.jpg",
-                                "src_mobile": "images/crystal-8.jpg",
-                                "src_preview": "Images/Sun-sm.png",
-                                "caption": " "
-                            },
-                            {
-                                "name": "support_2",
-                                "src": "images/crystal-8.jpg",
-                                "src": "images/crystal-8.jpg",
-                                "src_mobile": "images/crystal-8.jpg",
-                                "src_preview": "Images/Sun-sm.png",
-                                "caption": " "
-                            },
-                            {
-                                "name": "support_3",
-                                "src": "images/crystal-8.jpg",
-                                "src": "images/crystal-8.jpg",
-                                "src_mobile": "images/crystal-8.jpg",
-                                "src_preview": "Images/Sun-sm.png",
-                                "caption": " "
-                            },
-                            {
-                                "name": "support_4",
-                                "src": "images/crystal-8.jpg",
-                                "src": "images/crystal-8.jpg",
-                                "src_mobile": "images/crystal-8.jpg",
-                                "src_preview": "Images/Sun-sm.png",
-                                "caption": " "
-                            },
-                            {
-                                "name": "support_5",
-                                "src": "images/crystal-8.jpg",
-                                "src": "images/crystal-8.jpg",
-                                "src_mobile": "images/crystal-8.jpg",
-                                "src_preview": "Images/Sun-sm.png",
-                                "caption": " "
-                            }
-                        ]
-                    }
-                },
-                {
-                    "name" : "endeavorTwoImageParallaxRight",
-                    "data" : {
-                        "image1" : {
-                            "name": "hero",
-                            "src": "images/crystal-8.jpg",
-                            "src": "images/crystal-8.jpg",
-                            "src_mobile": "images/crystal-8.jpg",
-                            "src_preview": "images/lamp-sm-0.jpg",
-                            "caption": "Side view of Gestural Lamp. "
-                        },
-                        "image2" : {
-                            "name": "hero",
-                            "src": "images/crystal-8.jpg",
-                            "src": "images/crystal-8.jpg",
-                            "src_mobile": "images/crystal-8.jpg",
-                            "src_preview": "images/lamp-sm-0.jpg",
-                            "caption": "Side view of Gestural Lamp. "
-                        },
-                        "pullQuote" : "The lamp seeks to explore our relationship with dynamic data, for this instance weather."
-                    }
-                },
-                {
-                    "name" : "endeavorYouTubeFS",
-                    "data" : {
-                        "video" : {
-                            "name" : "MSTY",
-                            "src" : "https://www.youtube.com/embed/V2FqFHfjFaM?autoplay=0&loop=1",
-                            "caption" : "something" 
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorParallaxCaptionRight",
-                    "data" : {
-                        "imageBig" : {
-                            "name": "hero",
-                            "src": "images/crystal-8.jpg",
-                            "src": "images/crystal-8.jpg",
-                            "src_mobile": "images/crystal-8.jpg",
-                            "src_preview": "images/lamp-sm-0.jpg",
-                            "caption": "Side view of Gestural Lamp. "
-                        },
-                        "imageParallax" : {
-                            "name": "hero",
-                            "src": "images/crystal-8.jpg",
-                            "src": "images/crystal-8.jpg",
-                            "src_mobile": "images/crystal-8.jpg",
-                            "src_preview": "images/lamp-sm-0.jpg",
-                            "caption": "Side view of Gestural Lamp. "
-                        },
-                        "caption" : "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know?"
-                    }
-                },
-                {
-                    "name" : "endeavorImageCenterCaption",
-                    "data" : {
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "hero",
-                            "src": "images/crystal-8.jpg",
-                            "src": "images/crystal-8.jpg",
-                            "src_mobile": "images/crystal-8.jpg",
-                            "src_preview": "images/lamp-sm-0.jpg",
-                            "caption": "Side view of Gestural Lamp. "
-                        },
-                        "caption" : "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know?"
-                    }
-                },
-                {
-                    "name" : "endeavorImageSlider",
-                    "data" : {
-                        "images": [
-                            {
-                                "name": "hero",
-                                "src": "images/crystal-8.jpg",
-                                "src": "images/crystal-8.jpg",
-                                "src_mobile": "images/crystal-8.jpg",
-                                "src_preview": "images/lamp-sm-0.jpg",
-                                "caption": "Side view of Gestural Lamp. "
-                            },
-                            {
-                                "name": "support_1",
-                                "src": "images/crystal-8.jpg",
-                                "src": "images/crystal-8.jpg",
-                                "src_mobile": "images/crystal-8.jpg",
-                                "src_preview": "Images/Sun-sm.png",
-                                "caption": " "
-                            },
-                            {
-                                "name": "support_2",
-                                "src": "images/crystal-8.jpg",
-                                "src": "images/crystal-8.jpg",
-                                "src_mobile": "images/crystal-8.jpg",
-                                "src_preview": "Images/Sun-sm.png",
-                                "caption": " "
-                            },
-                            {
-                                "name": "support_3",
-                                "src": "images/crystal-8.jpg",
-                                "src": "images/crystal-8.jpg",
-                                "src_mobile": "images/crystal-8.jpg",
-                                "src_preview": "Images/Sun-sm.png",
-                                "caption": " "
-                            },
-                            {
-                                "name": "support_4",
-                                "src": "images/crystal-8.jpg",
-                                "src": "images/crystal-8.jpg",
-                                "src_mobile": "images/crystal-8.jpg",
-                                "src_preview": "Images/Sun-sm.png",
-                                "caption": " "
-                            },
-                            {
-                                "name": "support_5",
-                                "src": "images/crystal-8.jpg",
-                                "src": "images/crystal-8.jpg",
-                                "src_mobile": "images/crystal-8.jpg",
-                                "src_preview": "Images/Sun-sm.png",
-                                "caption": " "
-                            }
-                        ]
-                    }
-                },
-                {
-                    "name" : "endeavorPad",
-                    "data" : {
-                        "class" : "endeavor-item-no-margin endeavor-height-10vw"
                     }
                 }
             ]
