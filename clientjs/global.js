@@ -369,7 +369,7 @@ $(document).ready(function() {
                     section_height += $(content[i]).outerHeight();
                 }; 
 
-                console.log(section_height);
+                // console.log(section_height);
 
             }, 1000);
 
@@ -379,8 +379,8 @@ $(document).ready(function() {
                     $('.arrow-center').addClass('visible');
                     $('#prev').addClass('arrow-left-alt');
 
-                    console.log($(new_id).scrollTop())
-                    console.log($(new_id).scrollTop() / section_height);
+                    // console.log($(new_id).scrollTop())
+                    // console.log($(new_id).scrollTop() / section_height);
                 }
                 else {
                     $('.arrow-container').removeClass('arrow-bottom');

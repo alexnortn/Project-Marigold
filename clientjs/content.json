@@ -1652,7 +1652,7 @@
                 {
                     "name" : "endeavorVideoFS",
                     "data" : {
-                        "class" : "endeavor-item-125 endeavor-width-100vw endeavor-pos-rel",
+                        "class" : "endeavor-item-top-125 endeavor-width-100vw endeavor-pos-rel",
                         "loop": "",
                         "muted": "",
                         "autoplay": "true",
@@ -1667,7 +1667,7 @@
                     "name" : "endeavorParagraph",
                     "data" : {
                         "header" : "Auto Complete",
-                        "class" : "endeavor-item-top endeavor-item-bottom",
+                        "class" : "endeavor-item-125",
                         "bgColor" : "",
                         "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with."
                     }
@@ -1675,7 +1675,7 @@
                 {
                     "name" : "endeavorDesignProcess",
                     "data" : {
-                        "class" : "endeavor-item-no-margin",
+                        "class" : "endeavor-item-top-125",
                         "process" : "Discussion",
                         "text" : "",
                         "number" : "05/05",
