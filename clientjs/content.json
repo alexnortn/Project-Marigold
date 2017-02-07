@@ -1182,6 +1182,30 @@
                     }
                 },
                 {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Museum Sketch Landing",
+                            "src": "images/projects/museum/standard/museum-sketch-landing.jpg",
+                            "src_standard": "images/projects/museum/standard/museum-sketch-landing.jpg",
+                            "src_retina": "images/projects/museum/retina/museum-sketch-landing.jpg",
+                            "src_low": "images/projects/museum/low-res/museum-sketch-landing.jpg",
+                            "src_mobile": "images/projects/museum/hi-res/museum-sketch-landing.jpg",
+                            "src_preview": "images/projects/museum/hi-res/museum-sketch-landing.jpg",
+                            "caption": "Museum Sketch Landing"
+                        }
+                    }
+                },
+                {
                     "name" : "endeavorImage100vw",
                     "data" : {
                         "class" : "endeavor-item-no-margin",
@@ -1202,6 +1226,30 @@
                             "src_mobile": "images/projects/museum/hi-res/museum-sitemap.jpg",
                             "src_preview": "images/projects/museum/hi-res/museum-sitemap.jpg",
                             "caption": "Museum Sitemap"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Museum Sketch Elements",
+                            "src": "images/projects/museum/standard/museum-sketch-2.jpg",
+                            "src_standard": "images/projects/museum/standard/museum-sketch-2.jpg",
+                            "src_retina": "images/projects/museum/retina/museum-sketch-2.jpg",
+                            "src_low": "images/projects/museum/low-res/museum-sketch-2.jpg",
+                            "src_mobile": "images/projects/museum/hi-res/museum-sketch-2.jpg",
+                            "src_preview": "images/projects/museum/hi-res/museum-sketch-2.jpg",
+                            "caption": "Museum Sketch Elements"
                         }
                     }
                 },
