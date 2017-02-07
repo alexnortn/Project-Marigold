@@ -1581,6 +1581,30 @@
                 {
                     "name" : "endeavorImage100vw",
                     "data" : {
+                        "class" : "endeavor-item-bottom-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Museum Charts 1",
+                            "src": "images/projects/museum/standard/museum-charts-2.1.jpg",
+                            "src_standard": "images/projects/museum/standard/museum-charts-2.1.jpg",
+                            "src_retina": "images/projects/museum/retina/museum-charts-2.1.jpg",
+                            "src_low": "images/projects/museum/low-res/museum-charts-2.1.jpg",
+                            "src_mobile": "images/projects/museum/hi-res/museum-charts-2.1.jpg",
+                            "src_preview": "images/projects/museum/hi-res/museum-charts-2.1.jpg",
+                            "caption": "Museum Charts 1"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
                         "class" : "endeavor-item-no-margin",
                         "placeholder" : {
                             "name" : "",
@@ -1646,30 +1670,6 @@
                         "class" : "endeavor-item-top endeavor-item-bottom",
                         "bgColor" : "",
                         "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with."
-                    }
-                },
-                {
-                    "name" : "endeavorImage100vw",
-                    "data" : {
-                        "class" : "endeavor-item-bottom-125",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "Museum Charts 1",
-                            "src": "images/projects/museum/standard/museum-charts-2.1.jpg",
-                            "src_standard": "images/projects/museum/standard/museum-charts-2.1.jpg",
-                            "src_retina": "images/projects/museum/retina/museum-charts-2.1.jpg",
-                            "src_low": "images/projects/museum/low-res/museum-charts-2.1.jpg",
-                            "src_mobile": "images/projects/museum/hi-res/museum-charts-2.1.jpg",
-                            "src_preview": "images/projects/museum/hi-res/museum-charts-2.1.jpg",
-                            "caption": "Museum Charts 1"
-                        }
                     }
                 },
                 {
