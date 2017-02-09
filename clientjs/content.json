@@ -455,7 +455,7 @@
                     "name" : "endeavorGhostButton",
                     "data" : {
                         "class" : "endeavor-item-bottom-250",
-                        "text" : "+ Look Closer +",
+                        "text" : "Look Closer",
                         "id" : "ghost-connectomics",
                         "textColor" : "#666666"
                     }
@@ -759,7 +759,7 @@
                     "name" : "endeavorGhostButton",
                     "data" : {
                         "class" : "endeavor-item-bottom-125 endeavor-text-left",
-                        "text" : "+ Look Closer +",
+                        "text" : "Look Closer",
                         "align" : "",
                         "id" : "ghost-market-research",
                         "textColor" : "#666666"
@@ -840,7 +840,7 @@
                     "name" : "endeavorGhostButton",
                     "data" : {
                         "class" : "endeavor-item-bottom-125 endeavor-text-left",
-                        "text" : "+ Look Closer +",
+                        "text" : "Look Closer",
                         "align" : "",
                         "id" : "ghost-user-stories",
                         "textColor" : "#666666"
@@ -881,7 +881,7 @@
                     "name" : "endeavorGhostButton",
                     "data" : {
                         "class" : "endeavor-item-bottom-125 endeavor-text-left",
-                        "text" : "+ Look Closer +",
+                        "text" : "Look Closer",
                         "align" : "",
                         "id" : "ghost-observations",
                         "textColor" : "#666666"
@@ -958,7 +958,7 @@
                     "name" : "endeavorGhostButton",
                     "data" : {
                         "class" : "endeavor-item-bottom-125 endeavor-text-left",
-                        "text" : "+ Look Closer +",
+                        "text" : "Look Closer",
                         "align" : "",
                         "id" : "ghost-design-questions",
                         "textColor" : "#666666"
@@ -1077,7 +1077,7 @@
                     "name" : "endeavorGhostButton",
                     "data" : {
                         "class" : "endeavor-item-bottom-125 endeavor-text-left",
-                        "text" : "+ Look Closer +",
+                        "text" : "Look Closer",
                         "align" : "",
                         "id" : "ghost-project-requirements",
                         "textColor" : "#666666"
@@ -1110,7 +1110,7 @@
                     "name" : "endeavorGhostButton",
                     "data" : {
                         "class" : "endeavor-item-bottom-125 endeavor-text-left",
-                        "text" : "+ Look Closer +",
+                        "text" : "Look Closer",
                         "align" : "",
                         "id" : "ghost-app-overview",
                         "textColor" : "#666666"
@@ -1126,6 +1126,94 @@
                         "bgColor" : "#e6e6e6",
                         "textColor" : "#bfbfbf",
                         "textColor2" : "#d9d9d9"
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Museum Styleguide Overview",
+                            "src": "images/projects/museum/standard/museum-styleguide-overview.jpg",
+                            "src_standard": "images/projects/museum/standard/museum-styleguide-overview.jpg",
+                            "src_retina": "images/projects/museum/retina/museum-styleguide-overview.jpg",
+                            "src_low": "images/projects/museum/low-res/museum-styleguide-overview.jpg",
+                            "src_mobile": "images/projects/museum/hi-res/museum-styleguide-overview.jpg",
+                            "src_preview": "images/projects/museum/hi-res/museum-styleguide-overview.jpg",
+                            "caption": "Museum Styleguide Overview"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorParagraph",
+                    "data" : {
+                        "header" : "Styleguide",
+                        "class" : "endeavor-item-125",
+                        "bgColor" : "",
+                        "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with."
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Museum Styleguide Compile",
+                            "src": "images/projects/museum/standard/museum-styleguide-compile.jpg",
+                            "src_standard": "images/projects/museum/standard/museum-styleguide-compile.jpg",
+                            "src_retina": "images/projects/museum/retina/museum-styleguide-compile.jpg",
+                            "src_low": "images/projects/museum/low-res/museum-styleguide-compile.jpg",
+                            "src_mobile": "images/projects/museum/hi-res/museum-styleguide-compile.jpg",
+                            "src_preview": "images/projects/museum/hi-res/museum-styleguide-compile.jpg",
+                            "caption": "Museum Styleguide Compile"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorCaptionFS",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "caption" : "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know?"
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "class" : "endeavor-item-bottom-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Museum Styleguide Color Data",
+                            "src": "images/projects/museum/standard/museum-styleguide-color-data-export.jpg",
+                            "src_standard": "images/projects/museum/standard/museum-styleguide-color-data-export.jpg",
+                            "src_retina": "images/projects/museum/retina/museum-styleguide-color-data-export.jpg",
+                            "src_low": "images/projects/museum/low-res/museum-styleguide-color-data-export.jpg",
+                            "src_mobile": "images/projects/museum/hi-res/museum-styleguide-color-data-export.jpg",
+                            "src_preview": "images/projects/museum/hi-res/museum-styleguide-color-data-export.jpg",
+                            "caption": "Museum Styleguide Color Data"
+                        }
                     }
                 },
                 {
