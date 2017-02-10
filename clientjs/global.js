@@ -384,7 +384,9 @@ $(document).ready(function() {
                     $('#prev').addClass('arrow-left-alt');
 
                     // console.log($(new_id).scrollTop())
-                    console.log($(new_id).scrollTop() / section_height);
+                    let value = $(new_id).scrollTop() / section_height;
+                        value = (Math.round(value * 100) / 100) * 100
+                        console.log(value + "%");
                 }
                 else {
                     $('.arrow-container').removeClass('arrow-bottom');
