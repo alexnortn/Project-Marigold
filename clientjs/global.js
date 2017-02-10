@@ -55,7 +55,7 @@ let _itemInteraction,
     _endeavorRouter;
 
 let _state = {
-    "sectionHeight": 0
+    "sectionHeight": Infinity
 };
 
 
@@ -356,6 +356,7 @@ $(document).ready(function() {
         }
 
         function updateProjectHandlers(current_id, new_id, timer_height) {
+            _state.sectionHeight = Infinity;
 
             if (scrollHandler) {
                 $(current_id).off("scroll", scrollHandler);
@@ -370,10 +371,8 @@ $(document).ready(function() {
             }
 
             timer_height = window.setTimeout(function() {
-
                 calcSectionHeight();
-
-            }, 2000);
+            }, 1000);
 
             function calcSectionHeight() {
                 let children = "." + $(new_id).children().attr("class") + " > *";
@@ -397,8 +396,9 @@ $(document).ready(function() {
 
                     // console.log($(new_id).scrollTop())
                     let value = $(new_id).scrollTop() / _state.sectionHeight;
-                        value = (Math.round(value * 100) / 100) * 100
+                        value = (Math.round(value * 100) / 100) * 100;
                         console.log(value + "%");
+
                 }
                 else {
                     $('.arrow-container').removeClass('arrow-bottom');
