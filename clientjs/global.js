@@ -364,14 +364,18 @@ $(document).ready(function() {
             }
 
             timer_height = window.setTimeout(function() {
-                let content = $(new_id).find(".endeavor-contents").children();
-                for (let i=0; i < content.length; i++) { 
-                    section_height += $(content[i]).outerHeight();
-                }; 
 
-                // console.log(section_height);
+                $(new_id).find(".case-study-contents > *").each(function () {
+                    section_height += $(this).outerHeight();
+                })
 
-            }, 1000);
+                // Correct for viewport
+                // Recalculate on resize -> means make this it's own func
+                // Global state
+
+                section_height -= window.innerHeight;
+
+            }, 2000);
 
             scrollHandler = function() {
                 if ($(new_id).scrollTop() > 0) {
@@ -380,7 +384,7 @@ $(document).ready(function() {
                     $('#prev').addClass('arrow-left-alt');
 
                     // console.log($(new_id).scrollTop())
-                    // console.log($(new_id).scrollTop() / section_height);
+                    console.log($(new_id).scrollTop() / section_height);
                 }
                 else {
                     $('.arrow-container').removeClass('arrow-bottom');
