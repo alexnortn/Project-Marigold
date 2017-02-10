@@ -248,6 +248,12 @@ $(document).ready(function() {
         $(this).parent().velocity("fadeOut", { duration: 250 });
     });
 
+    // Toggle "More" content for Museum Reflecting
+    $('#ghost-reflecting').click(function(evt) {
+        $('#ghost-reflecting-affect').removeClass('endeavor-reveal');
+        $(this).parent().velocity("fadeOut", { duration: 250 });
+    });
+
     // Autoplay Videos
     // Only when in viewport
     // Call once on load
