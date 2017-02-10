@@ -54,6 +54,10 @@ let _projectCurrentId,
 let _itemInteraction,
     _endeavorRouter;
 
+let _state = {
+    "sectionHeight": 0
+};
+
 
     // attachFastClick = require('fastclick');    
 
@@ -320,6 +324,7 @@ $(document).ready(function() {
             projects = $('.project-view').toArray(),
             currents = [],
             scrollHandler,
+            resizeHandler,
             project_id; 
 
         let captureScrollHandler = function(evt) {
@@ -356,8 +361,9 @@ $(document).ready(function() {
                 $(current_id).off("scroll", scrollHandler);
             }
 
-            // Calculate section height after page renders...
-            let section_height = 0;;
+            if (resizeHandler) {
+                $(window).off("resize", resizeHandler);
+            }
 
             if (timer_height) {
                 window.clearTimeout(timer_height);
@@ -365,17 +371,23 @@ $(document).ready(function() {
 
             timer_height = window.setTimeout(function() {
 
-                $(new_id).find(".case-study-contents > *").each(function () {
-                    section_height += $(this).outerHeight();
-                })
-
-                // Correct for viewport
-                // Recalculate on resize -> means make this it's own func
-                // Global state
-
-                section_height -= window.innerHeight;
+                calcSectionHeight();
 
             }, 2000);
+
+            function calcSectionHeight() {
+                let children = "." + $(new_id).children().attr("class") + " > *";
+                    _state.sectionHeight = 0; // Reset height
+
+                $(new_id).find(children).each(function () {
+                    _state.sectionHeight += $(this).outerHeight();
+                });
+
+                // Correct for viewport
+                _state.sectionHeight -= window.innerHeight;
+
+                console.log('section height calculated');
+            }
 
             scrollHandler = function() {
                 if ($(new_id).scrollTop() > 0) {
@@ -384,7 +396,7 @@ $(document).ready(function() {
                     $('#prev').addClass('arrow-left-alt');
 
                     // console.log($(new_id).scrollTop())
-                    let value = $(new_id).scrollTop() / section_height;
+                    let value = $(new_id).scrollTop() / _state.sectionHeight;
                         value = (Math.round(value * 100) / 100) * 100
                         console.log(value + "%");
                 }
@@ -395,7 +407,12 @@ $(document).ready(function() {
                 }
             }
 
+            resizeHandler = function() {
+                calcSectionHeight();   
+            }
+
             $(new_id).scroll(scrollHandler);
+            $(window).resize(function() { resizeHandler() });
         }
 
         function updateArrow() {
