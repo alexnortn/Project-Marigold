@@ -163,7 +163,7 @@ $(document).ready(function() {
         $('.scroll-arrow').velocity("fadeOut", { duration: 250 }); // Fade it out | They get it
     }, {passive:true});
 
-    // --------------------------------------
+    // ------------------------------------------------------------------------
     // Event Handlers
 
 
@@ -206,51 +206,15 @@ $(document).ready(function() {
         animation.scrollToVelocity(_sectionCurrent); // Navigate
     });
 
-    // Toggle "More" content for Museum connectomics process
-    $('#ghost-connectomics').click(function(evt) {
-        $('#ghost-connectomics-affect').removeClass('endeavor-reveal');
-        $(this).parent().velocity("fadeOut", { duration: 250 });
-    });
 
-    // Toggle "More" content for Museum Market Research
-    $('#ghost-market-research').click(function(evt) {
-        $('#ghost-market-research-affect').removeClass('endeavor-reveal');
-        $(this).parent().velocity("fadeOut", { duration: 250 });
-    });
-
-    // Toggle "More" content for Museum User Stories
-    $('#ghost-user-stories').click(function(evt) {
-        $('#ghost-user-stories-affect').removeClass('endeavor-reveal');
-        $(this).parent().velocity("fadeOut", { duration: 250 });
-    });
-
-    // Toggle "More" content for Museum Observations
-    $('#ghost-observations').click(function(evt) {
-        $('#ghost-observations-affect').removeClass('endeavor-reveal');
-        $(this).parent().velocity("fadeOut", { duration: 250 });
-    });
-
-    // Toggle "More" content for Museum Design Questions
-    $('#ghost-design-questions').click(function(evt) {
-        $('#ghost-design-questions-affect').removeClass('endeavor-reveal');
-        $(this).parent().velocity("fadeOut", { duration: 250 });
-    });
-
-    // Toggle "More" content for Museum Project Requirements
-    $('#ghost-project-requirements').click(function(evt) {
-        $('#ghost-project-requirements-affect').removeClass('endeavor-reveal');
-        $(this).parent().velocity("fadeOut", { duration: 250 });
-    });
-
-    // Toggle "More" content for Museum App Overview
-    $('#ghost-app-overview').click(function(evt) {
-        $('#ghost-app-overview-affect').removeClass('endeavor-reveal');
-        $(this).parent().velocity("fadeOut", { duration: 250 });
-    });
-
-    // Toggle "More" content for Museum Reflecting
-    $('#ghost-reflecting').click(function(evt) {
-        $('#ghost-reflecting-affect').removeClass('endeavor-reveal');
+    // Toggle project "reveeal" sections
+    // Important -> Naming schema:
+    //  + effected element id -> "ghost-something-affect"
+    //  + button class ->        "endeavor-button-reveal"
+    //  + button id ->           "ghost-something"
+    $('.endeavor-button-reveal').click(function(evt) {
+        let affect_div = "#" + this.id + "-affect"; // Construct affective <div> lookup
+        $(affect_div).removeClass('endeavor-reveal');
         $(this).parent().velocity("fadeOut", { duration: 250 });
     });
 

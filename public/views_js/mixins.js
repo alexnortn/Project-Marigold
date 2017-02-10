@@ -234,7 +234,7 @@ var textColor = data.textColor ? data.textColor : "#232323" // $BLACK
 ;pug_debug_line = 148;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + "\u003Cdiv" + (pug_attr("class", pug_classes(["fsw","endeavor-text-center",`${_class}`], [false,false,true]), false, false)) + "\u003E";
 ;pug_debug_line = 149;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cbutton" + (" class=\"endeavor-button ghost endeavor-center\""+pug_attr("id", `${_id}`, true, false)) + "\u003E";
+pug_html = pug_html + "\u003Cbutton" + (" class=\"endeavor-button-reveal endeavor-button ghost endeavor-center\""+pug_attr("id", `${_id}`, true, false)) + "\u003E";
 ;pug_debug_line = 150;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + "\u003Ch3" + (" class=\"endeavor-center endeavor-text-center endeavor-transition-250\""+pug_attr("style", pug_style(`color: ${textColor}`), true, false)) + "\u003E";
 ;pug_debug_line = 150;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
