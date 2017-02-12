@@ -3007,20 +3007,6 @@
                     }
                 },
                 {
-                    "name" : "endeavorVideoFS",
-                    "data" : {
-                        "class" : "endeavor-item-125 fsw",
-                        "loop": "",
-                        "muted": "",
-                        "autoplay": "true",
-                        "src" : {
-                            "webm" : "images/projects/convolve/videos/convolve.webm",
-                            "mp4" : "images/projects/convolve/videos/convolve.mp4",
-                            "poster" : "images/projects/convolve/videos/convolve.jpg"
-                        }
-                    }
-                },
-                {
                     "name" : "endeavorImageFSList",
                     "data" : {
                         "meta" : "Views",
