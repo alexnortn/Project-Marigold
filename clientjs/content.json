@@ -668,7 +668,7 @@
                             {
                                 "name" : "endeavorPad",
                                 "data" : {
-                                    "class" : "endeavor-item-no-margin endeavor-height-10vw"
+                                    "class" : "endeavor-height-200px-responsive endeavor-item-no-margin endeavor-height-10vw"
                                 }
                             },
                             {
@@ -716,7 +716,7 @@
                             {
                                 "name" : "endeavorPad",
                                 "data" : {
-                                    "class" : "endeavor-item-no-margin endeavor-height-100px"
+                                    "class" : "endeavor-height-200px-responsive endeavor-item-no-margin endeavor-height-100px"
                                 }
                             }
                         ]
@@ -1908,7 +1908,7 @@
                 {
                     "name" : "endeavorPad",
                     "data" : {
-                        "class" : "endeavor-item-no-margin endeavor-height-10vw"
+                        "class" : "endeavor-height-200px-responsive endeavor-item-no-margin endeavor-height-10vw"
                     }
                 }
             ]
@@ -2378,7 +2378,7 @@
                 {
                     "name" : "endeavorPad",
                     "data" : {
-                        "class" : "endeavor-item-no-margin endeavor-height-10vw"
+                        "class" : "endeavor-height-200px-responsive endeavor-item-no-margin endeavor-height-10vw"
                     }
                 }
             ]
@@ -2884,7 +2884,7 @@
                 {
                     "name" : "endeavorPad",
                     "data" : {
-                        "class" : "endeavor-item-no-margin endeavor-height-10vw"
+                        "class" : "endeavor-height-200px-responsive endeavor-item-no-margin endeavor-height-10vw"
                     }
                 }
             ]
@@ -2923,14 +2923,33 @@
             "image_preview": "images/projects/convolve/hi-res/convolve-preview.jpg",
             "sections" : [
                 {
-                    "name" : "endeavorSubheaderFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
-                        "subheader" : "Views"
+                        "class" : "endeavor-item-125",
+                        "placeholder" : { 
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "convolve-mock-1",
+                            "src": "images/projects/convolve/standard/convolve-mock-1.jpg",
+                            "src_standard": "images/projects/convolve/standard/convolve-mock-1.jpg",
+                            "src_retina": "images/projects/convolve/retina/convolve-mock-1.jpg",
+                            "src_low": "images/projects/convolve/low-res/convolve-mock-1.jpg",
+                            "src_mobile": "images/projects/convolve/hi-res/convolve-mock-1.jpg",
+                            "src_preview": "images/projects/convolve/hi-res/convolve-mock-1.jpg",
+                            "caption": "Dig Poster"
+                        }
                     }
                 },
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "class" : "endeavor-item-125",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -2952,38 +2971,9 @@
                     }
                 },
                 {
-                    "name" : "endeavorImageFS",
-                    "data" : {
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "convolve-mock-1",
-                            "src": "images/projects/convolve/standard/convolve-mock-1.jpg",
-                            "src_standard": "images/projects/convolve/standard/convolve-mock-1.jpg",
-                            "src_retina": "images/projects/convolve/retina/convolve-mock-1.jpg",
-                            "src_low": "images/projects/convolve/low-res/convolve-mock-1.jpg",
-                            "src_mobile": "images/projects/convolve/hi-res/convolve-mock-1.jpg",
-                            "src_preview": "images/projects/convolve/hi-res/convolve-mock-1.jpg",
-                            "caption": "Dig Poster"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorSubheaderFS",
-                    "data" : {
-                        "subheader" : "HUD Prototype"
-                    }
-                },
-                {
                     "name" : "endeavorVideoFS",
                     "data" : {
-                        "class" : "endeavor-item-125 endeavor-width-100vw endeavor-pos-rel",
+                        "class" : "endeavor-item-top-125 endeavor-width-100vw endeavor-pos-rel",
                         "loop": "",
                         "muted": "",
                         "autoplay": "true",
@@ -2995,33 +2985,36 @@
                     }
                 },
                 {
-                    "name" : "endeavorCaptionFS",
+                    "name" : "endeavorParagraph",
                     "data" : {
-                        "caption" : "Our research culminated in an animated walkthrough. The animation demonstrates working aspects of the concept as well as gives the viewer an appreciation for the usability and aesthetics."
+                        "header" : "HUD Prototype",
+                        "class" : "endeavor-item-125",
+                        "bgColor" : "",
+                        "description" : "Our research culminated in an animated walkthrough. The animation demonstrates working aspects of the concept as well as gives the viewer an appreciation for the usability and aesthetics."
                     }
                 },
                 {
-                    "name" : "endeavorSubheaderFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
-                        "subheader" : "Interactive Contextualization"
-                    }
-                },
-                {
-                    "name" : "endeavorImageFSList",
-                    "data" : {
-                        "meta" : "Views",
-                        "images" : [
-                            {
-                                "name": "convolve-screen-3",
-                                "src": "images/projects/convolve/standard/convolve-screen-3.png",
-                                "src_standard": "images/projects/convolve/standard/convolve-screen-3.png",
-                                "src_retina": "images/projects/convolve/retina/convolve-screen-3.png",
-                                "src_low": "images/projects/convolve/low-res/convolve-screen-3.png",
-                                "src_mobile": "images/projects/convolve/hi-res/convolve-screen-3.png",
-                                "src_preview": "images/projects/convolve/hi-res/convolve-screen-3.png",
-                                "caption": "Convolve Screen 1"   
-                            }
-                        ]
+                        "class" : "endeavor-item-bottom-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "convolve-screen-3",
+                            "src": "images/projects/convolve/standard/convolve-screen-3.png",
+                            "src_standard": "images/projects/convolve/standard/convolve-screen-3.png",
+                            "src_retina": "images/projects/convolve/retina/convolve-screen-3.png",
+                            "src_low": "images/projects/convolve/low-res/convolve-screen-3.png",
+                            "src_mobile": "images/projects/convolve/hi-res/convolve-screen-3.png",
+                            "src_preview": "images/projects/convolve/hi-res/convolve-screen-3.png",
+                            "caption": "Convolve Screen 1"
+                        }
                     }
                 },
                 {
@@ -3031,20 +3024,34 @@
                     }
                 },
                 {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class": "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "convolve-augment-1",
+                            "src": "images/projects/convolve/standard/convolve-augment-1.jpg",
+                            "src_standard": "images/projects/convolve/standard/convolve-augment-1.jpg",
+                            "src_retina": "images/projects/convolve/retina/convolve-augment-1.jpg",
+                            "src_low": "images/projects/convolve/low-res/convolve-augment-1.jpg",
+                            "src_mobile": "images/projects/convolve/hi-res/convolve-augment-1.jpg",
+                            "src_preview": "images/projects/convolve/hi-res/convolve-augment-1.jpg",
+                            "caption": "Convolve Intro"  
+                        }
+                    }
+                },
+                {
                     "name" : "endeavorImageFSList",
                     "data" : {
                         "meta" : "Views",
                         "images" : [
-                            {
-                                "name": "convolve-augment-1",
-                                "src": "images/projects/convolve/standard/convolve-augment-1.jpg",
-                                "src_standard": "images/projects/convolve/standard/convolve-augment-1.jpg",
-                                "src_retina": "images/projects/convolve/retina/convolve-augment-1.jpg",
-                                "src_low": "images/projects/convolve/low-res/convolve-augment-1.jpg",
-                                "src_mobile": "images/projects/convolve/hi-res/convolve-augment-1.jpg",
-                                "src_preview": "images/projects/convolve/hi-res/convolve-augment-1.jpg",
-                                "caption": "Convolve Intro"   
-                            },
                             {
                                 "name": "convolve-augment-1.1",
                                 "src": "images/projects/convolve/standard/convolve-augment-1.1.jpg",
@@ -3069,14 +3076,9 @@
                     }
                 },
                 {
-                    "name" : "endeavorSubheaderFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
-                        "subheader" : "Convolve Icon System"
-                    }
-                },
-                {
-                    "name" : "endeavorImageFS",
-                    "data" : {
+                        "class": "endeavor-item-top-125",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -3098,13 +3100,16 @@
                     }
                 },
                 {
-                    "name" : "endeavorCaptionFS",
+                    "name" : "endeavorParagraph",
                     "data" : {
-                        "caption" : "We focused in on subjects such as geography, architecture, paradox, allegory, metaphor, chance, games, roles, and totems. Using this as a base we developed a HUD that would share this information with its user and allow navigation and filtering based on one or all simultaneously."
+                        "header" : "Convolve Icon System",
+                        "class" : "endeavor-item-125",
+                        "bgColor" : "",
+                        "description" : "We focused in on subjects such as geography, architecture, paradox, allegory, metaphor, chance, games, roles, and totems. Using this as a base we developed a HUD that would share this information with its user and allow navigation and filtering based on one or all simultaneously."
                     }
                 },
                 {
-                    "name" : "endeavorImageFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
                         "placeholder" : {
                             "name" : "",
@@ -3163,7 +3168,7 @@
                 {
                     "name" : "endeavorPad",
                     "data" : {
-                        "class" : "endeavor-item-no-margin endeavor-height-10vw"
+                        "class" : "endeavor-height-200px-responsive endeavor-item-no-margin endeavor-height-10vw"
                     }
                 }
             ]
@@ -3538,12 +3543,16 @@
                     }
                 },
                 {
-                    "name" : "endeavorYouTubeFS",
+                    "name" : "endeavorVideoFS",
                     "data" : {
-                        "video" : {
-                            "name" : "DigProcess",
-                            "src" : "https://www.youtube.com/embed/p5DGhmvRtOA?autoplay=0&loop=1",
-                            "caption" : "Alex Norton DiG Programing Process." 
+                        "class" : "endeavor-item-125 endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/dig/videos/dig.webm",
+                            "mp4" : "images/projects/dig/videos/dig.mp4",
+                            "poster" : "images/projects/dig/videos/dig.jpg"
                         }
                     }
                 },
@@ -3608,7 +3617,7 @@
                 {
                     "name" : "endeavorPad",
                     "data" : {
-                        "class" : "endeavor-item-no-margin endeavor-height-10vw"
+                        "class" : "endeavor-height-200px-responsive endeavor-item-no-margin endeavor-height-10vw"
                     }
                 }
             ]
@@ -3911,7 +3920,7 @@
                 {
                     "name" : "endeavorPad",
                     "data" : {
-                        "class" : "endeavor-item-no-margin endeavor-height-10vw"
+                        "class" : "endeavor-height-200px-responsive endeavor-item-no-margin endeavor-height-10vw"
                     }
                 }
             ]
@@ -4211,7 +4220,7 @@
                 {
                     "name" : "endeavorPad",
                     "data" : {
-                        "class" : "endeavor-item-no-margin endeavor-height-10vw"
+                        "class" : "endeavor-height-200px-responsive endeavor-item-no-margin endeavor-height-10vw"
                     }
                 }
             ]
@@ -4962,7 +4971,7 @@
                 {
                     "name" : "endeavorPad",
                     "data" : {
-                        "class" : "endeavor-item-no-margin endeavor-height-10vw"
+                        "class" : "endeavor-height-200px-responsive endeavor-item-no-margin endeavor-height-10vw"
                     }
                 }
                   
@@ -5206,7 +5215,7 @@
                 {
                     "name" : "endeavorPad",
                     "data" : {
-                        "class" : "endeavor-item-no-margin endeavor-height-10vw"
+                        "class" : "endeavor-height-200px-responsive endeavor-item-no-margin endeavor-height-10vw"
                     }
                 }
             ]
@@ -5340,7 +5349,7 @@
                 {
                     "name" : "endeavorPad",
                     "data" : {
-                        "class" : "endeavor-item-no-margin endeavor-height-10vw"
+                        "class" : "endeavor-height-200px-responsive endeavor-item-no-margin endeavor-height-10vw"
                     }
                 }
             ]
@@ -5586,7 +5595,7 @@
                 {
                     "name" : "endeavorPad",
                     "data" : {
-                        "class" : "endeavor-item-no-margin endeavor-height-10vw"
+                        "class" : "endeavor-height-200px-responsive endeavor-item-no-margin endeavor-height-10vw"
                     }
                 }
             ]
