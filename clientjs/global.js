@@ -355,7 +355,7 @@ $(document).ready(function() {
                 // Correct for viewport
                 _state.sectionHeight -= window.innerHeight;
 
-                console.log('section height calculated');
+                // console.log('section height calculated');
             }
 
             scrollHandler = function() {
@@ -367,7 +367,7 @@ $(document).ready(function() {
                     // console.log($(new_id).scrollTop())
                     let value = $(new_id).scrollTop() / _state.sectionHeight;
                         value = (Math.round(value * 100) / 100) * 100;
-                        console.log(value + "%");
+                        // console.log(value + "%");
 
                 }
                 else {

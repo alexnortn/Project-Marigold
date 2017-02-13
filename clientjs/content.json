@@ -3102,7 +3102,7 @@
                 {
                     "name" : "endeavorParagraph",
                     "data" : {
-                        "header" : "Convolve Icon System",
+                        "header" : "Icon System",
                         "class" : "endeavor-item-125",
                         "bgColor" : "",
                         "description" : "We focused in on subjects such as geography, architecture, paradox, allegory, metaphor, chance, games, roles, and totems. Using this as a base we developed a HUD that would share this information with its user and allow navigation and filtering based on one or all simultaneously."
@@ -3111,6 +3111,7 @@
                 {
                     "name" : "endeavorImage100vw",
                     "data" : {
+                        "class" : "endeavor-item-no-margin",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -3134,6 +3135,7 @@
                 {
                     "name" : "endeavorCaptionFS",
                     "data" : {
+                        "class" : "endeavor-item-125",
                         "caption" : "We also took advantage of the time scrubber as a way to not only navigate viewing time but to link users to what dream state was currently being experienced within the film. Outer most layer was being awake and the center most point being limbo. The scrubber shown is simply a prototype."
                     }
                 },
