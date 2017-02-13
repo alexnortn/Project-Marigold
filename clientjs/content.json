@@ -3661,17 +3661,18 @@
             "image_preview": "images/projects/das/hi-res/das-preview.jpg",
             "sections" : [
                 {
-                    "name" : "endeavorSubheaderFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
-                        "subheader" : "Physical Publication"
-                    }
-                },
-                {
-                    "name" : "endeavorImageFSList",
-                    "data" : {
-                        "meta" : "DAS Intro",
-                        "images" : [
-                            {
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
                                 "name": "DAS Intro",
                                 "src": "images/projects/das/standard/das-pub-0.jpg",
                                 "src_standard": "images/projects/das/standard/das-pub-0.jpg",
@@ -3679,19 +3680,47 @@
                                 "src_low": "images/projects/das/low-res/das-pub-0.jpg",
                                 "src_mobile": "images/projects/das/hi-res/das-pub-0.jpg",
                                 "src_preview": "images/projects/das/hi-res/das-pub-0.jpg",
-                                "caption": "DAS Cover"   
-                            },
-                            {
-                                "name": "DAS Contents",
-                                "src": "images/projects/das/standard/das-pub-1.jpg",
-                                "src_standard": "images/projects/das/standard/das-pub-1.jpg",
-                                "src_retina": "images/projects/das/retina/das-pub-1.jpg",
-                                "src_low": "images/projects/das/low-res/das-pub-1.jpg",
-                                "src_mobile": "images/projects/das/hi-res/das-pub-1.jpg",
-                                "src_preview": "images/projects/das/hi-res/das-pub-1.jpg",
-                                "caption": "DAS Contents"   
-                            },
-                            {
+                                "caption": "DAS Cover"  
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "DAS Contents",
+                            "src": "images/projects/das/standard/das-pub-1.jpg",
+                            "src_standard": "images/projects/das/standard/das-pub-1.jpg",
+                            "src_retina": "images/projects/das/retina/das-pub-1.jpg",
+                            "src_low": "images/projects/das/low-res/das-pub-1.jpg",
+                            "src_mobile": "images/projects/das/hi-res/das-pub-1.jpg",
+                            "src_preview": "images/projects/das/hi-res/das-pub-1.jpg",
+                            "caption": "DAS Contents"   
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
                                 "name": "DAS Intro",
                                 "src": "images/projects/das/standard/das-pub-2.jpg",
                                 "src_standard": "images/projects/das/standard/das-pub-2.jpg",
@@ -3699,9 +3728,8 @@
                                 "src_low": "images/projects/das/low-res/das-pub-2.jpg",
                                 "src_mobile": "images/projects/das/hi-res/das-pub-2.jpg",
                                 "src_preview": "images/projects/das/hi-res/das-pub-2.jpg",
-                                "caption": "DAS Contents CU"   
-                            }
-                        ]
+                                "caption": "DAS Contents"  
+                        }
                     }
                 },
                 {
@@ -3711,8 +3739,9 @@
                     }
                 },
                 {
-                    "name" : "endeavorImageFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
+                        "class" : "endeavor-item-125",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -3824,8 +3853,9 @@
                     }
                 },
                 {
-                    "name" : "endeavorImageFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
+                        "class" : "endeavor-item-125",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -3853,60 +3883,123 @@
                     }
                 },
                 {
-                    "name" : "endeavorImageFSList",
+                    "name" : "endeavorImage100vw",
                     "data" : {
-                        "images" : [
-                            {
-                                "name": "DAS Computation 6",
-                                "src": "images/projects/das/standard/das-pub-12.jpg",
-                                "src_standard": "images/projects/das/standard/das-pub-12.jpg",
-                                "src_retina": "images/projects/das/retina/das-pub-12.jpg",
-                                "src_low": "images/projects/das/low-res/das-pub-12.jpg",
-                                "src_mobile": "images/projects/das/hi-res/das-pub-12.jpg",
-                                "src_preview": "images/projects/das/hi-res/das-pub-12.jpg",
-                                "caption": "DAS Computation 6"   
-                            },
-                            {
-                                "name": "DAS Computation 7",
-                                "src": "images/projects/das/standard/das-pub-13.jpg",
-                                "src_standard": "images/projects/das/standard/das-pub-13.jpg",
-                                "src_retina": "images/projects/das/retina/das-pub-13.jpg",
-                                "src_low": "images/projects/das/low-res/das-pub-13.jpg",
-                                "src_mobile": "images/projects/das/hi-res/das-pub-13.jpg",
-                                "src_preview": "images/projects/das/hi-res/das-pub-13.jpg",
-                                "caption": "DAS Computation 7"   
-                            },
-                            {
-                                "name": "DAS Computation 8",
-                                "src": "images/projects/das/standard/das-pub-14.jpg",
-                                "src_standard": "images/projects/das/standard/das-pub-14.jpg",
-                                "src_retina": "images/projects/das/retina/das-pub-14.jpg",
-                                "src_low": "images/projects/das/low-res/das-pub-14.jpg",
-                                "src_mobile": "images/projects/das/hi-res/das-pub-14.jpg",
-                                "src_preview": "images/projects/das/hi-res/das-pub-14.jpg",
-                                "caption": "DAS Computation 8"   
-                            },
-                            {
-                                "name": "DAS Computation 9",
-                                "src": "images/projects/das/standard/das-pub-15.jpg",
-                                "src_standard": "images/projects/das/standard/das-pub-15.jpg",
-                                "src_retina": "images/projects/das/retina/das-pub-15.jpg",
-                                "src_low": "images/projects/das/low-res/das-pub-15.jpg",
-                                "src_mobile": "images/projects/das/hi-res/das-pub-15.jpg",
-                                "src_preview": "images/projects/das/hi-res/das-pub-15.jpg",
-                                "caption": "DAS Computation 9"   
-                            },
-                            {
-                                "name": "DAS Computation 10",
-                                "src": "images/projects/das/standard/das-pub-16.jpg",
-                                "src_standard": "images/projects/das/standard/das-pub-16.jpg",
-                                "src_retina": "images/projects/das/retina/das-pub-16.jpg",
-                                "src_low": "images/projects/das/low-res/das-pub-16.jpg",
-                                "src_mobile": "images/projects/das/hi-res/das-pub-16.jpg",
-                                "src_preview": "images/projects/das/hi-res/das-pub-16.jpg",
-                                "caption": "DAS Computation 10"   
-                            }
-                        ]
+                        "class" : "endeavor-item-top-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "DAS Computation 6",
+                            "src": "images/projects/das/standard/das-pub-12.jpg",
+                            "src_standard": "images/projects/das/standard/das-pub-12.jpg",
+                            "src_retina": "images/projects/das/retina/das-pub-12.jpg",
+                            "src_low": "images/projects/das/low-res/das-pub-12.jpg",
+                            "src_mobile": "images/projects/das/hi-res/das-pub-12.jpg",
+                            "src_preview": "images/projects/das/hi-res/das-pub-12.jpg",
+                            "caption": "DAS Computation 6"   
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "DAS Computation 7",
+                            "src": "images/projects/das/standard/das-pub-13.jpg",
+                            "src_standard": "images/projects/das/standard/das-pub-13.jpg",
+                            "src_retina": "images/projects/das/retina/das-pub-13.jpg",
+                            "src_low": "images/projects/das/low-res/das-pub-13.jpg",
+                            "src_mobile": "images/projects/das/hi-res/das-pub-13.jpg",
+                            "src_preview": "images/projects/das/hi-res/das-pub-13.jpg",
+                            "caption": "DAS Computation 7"  
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-bottom-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "DAS Computation 8",
+                            "src": "images/projects/das/standard/das-pub-14.jpg",
+                            "src_standard": "images/projects/das/standard/das-pub-14.jpg",
+                            "src_retina": "images/projects/das/retina/das-pub-14.jpg",
+                            "src_low": "images/projects/das/low-res/das-pub-14.jpg",
+                            "src_mobile": "images/projects/das/hi-res/das-pub-14.jpg",
+                            "src_preview": "images/projects/das/hi-res/das-pub-14.jpg",
+                            "caption": "DAS Computation 8"  
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "DAS Computation 9",
+                            "src": "images/projects/das/standard/das-pub-15.jpg",
+                            "src_standard": "images/projects/das/standard/das-pub-15.jpg",
+                            "src_retina": "images/projects/das/retina/das-pub-15.jpg",
+                            "src_low": "images/projects/das/low-res/das-pub-15.jpg",
+                            "src_mobile": "images/projects/das/hi-res/das-pub-15.jpg",
+                            "src_preview": "images/projects/das/hi-res/das-pub-15.jpg",
+                            "caption": "DAS Computation 9"  
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "DAS Computation 10",
+                            "src": "images/projects/das/standard/das-pub-16.jpg",
+                            "src_standard": "images/projects/das/standard/das-pub-16.jpg",
+                            "src_retina": "images/projects/das/retina/das-pub-16.jpg",
+                            "src_low": "images/projects/das/low-res/das-pub-16.jpg",
+                            "src_mobile": "images/projects/das/hi-res/das-pub-16.jpg",
+                            "src_preview": "images/projects/das/hi-res/das-pub-16.jpg",
+                            "caption": "DAS Computation 10"   
+                        }
                     }
                 },
                 {
@@ -3964,14 +4057,9 @@
             "image_preview": "images/projects/das-interactive/hi-res/das-interactive-preview.jpg",
             "sections" : [
                 {
-                    "name" : "endeavorSubheaderFS",
-                    "data" : {
-                        "subheader" : "Physical Publication"
-                    }
-                },
-                {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "class" : "endeavor-item-125",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -3999,14 +4087,9 @@
                     }
                 },
                 {
-                    "name" : "endeavorSubheaderFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
-                        "subheader" : "Digital Publication"
-                    }
-                },
-                {
-                    "name" : "endeavorImageFS",
-                    "data" : {
+                        "class" : "endeavor-item-top-125",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -4028,15 +4111,9 @@
                     }
                 },
                 {
-                    "name" : "endeavorSubheaderFS",
-                    "data" : {
-                        "subheader" : "Prototype"
-                    }
-                },
-                {
                     "name" : "endeavorVideoFS",
                     "data" : {
-                        "class" : "endeavor-item-125 endeavor-width-100vw endeavor-pos-rel",
+                        "class" : "endeavor-item-bottom-125 endeavor-width-100vw endeavor-pos-rel",
                         "loop": "",
                         "muted": "",
                         "autoplay": "true",
@@ -4062,8 +4139,9 @@
                     }
                 },
                 {
-                    "name" : "endeavorImageFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
+                        "class" : "endeavor-item-125",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -4087,12 +4165,14 @@
                 {
                     "name" : "endeavorCaptionFS",
                     "data" : {
+                        "class" : "endeavor-item-bottom-125",
                         "caption" : "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know?"
                     }
                 },
                 {
                     "name" : "endeavorParallaxCaptionRight",
                     "data" : {
+
                         "imageBig" : {
                             "name": "hero",
                             "name": "das-interactive-loading",
@@ -4116,8 +4196,9 @@
                     }
                 },
                 {
-                    "name" : "endeavorImageFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
+                        "class" : "endeavor-item-no-margin",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -4139,14 +4220,18 @@
                     }
                 },
                 {
-                    "name" : "endeavorSubheaderFS",
+                    "name" : "endeavorParagraph",
                     "data" : {
-                        "subheader" : "Information Architecture"
+                        "header" : "Information Architecture",
+                        "class" : "endeavor-item-125",
+                        "bgColor" : "",
+                        "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with."
                     }
                 },
                 {
-                    "name" : "endeavorImageFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
+                        "class" : "endeavor-item-no-margin",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -4168,14 +4253,9 @@
                     }
                 },
                 {
-                    "name" : "endeavorSubheaderFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
-                        "subheader" : "Context Menus"
-                    }
-                },
-                {
-                    "name" : "endeavorImageFS",
-                    "data" : {
+                        "class" : "endeavor-item-no-margin",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -4197,8 +4277,9 @@
                     }
                 },
                 {
-                    "name" : "endeavorImageFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
+                        "class" : "endeavor-item-no-margin",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -4434,12 +4515,16 @@
                     }
                 },
                 {
-                    "name" : "endeavorYouTubeFS",
+                    "name" : "endeavorVideoFS",
                     "data" : {
-                        "video" : {
-                            "name" : "Muwu Generative Composition",
-                            "src" : "https://www.youtube.com/embed/pHdr4EWM3vk?autoplay=0&loop=1",
-                            "caption" : "Muwu Generative Composition" 
+                        "class" : "endeavor-item-125 endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/muwu/videos/muwu_music_of_changes.webm",
+                            "mp4" : "images/projects/muwu/videos/muwu_music_of_changes.mp4",
+                            "poster" : "images/projects/muwu/videos/muwu_music_of_changes.jpg"
                         }
                     }
                 },
@@ -4467,12 +4552,16 @@
                     }
                 },
                 {
-                    "name" : "endeavorYouTubeFS",
+                    "name" : "endeavorVideoFS",
                     "data" : {
-                        "video" : {
-                            "name" : "Muwu Generative Composition",
-                            "src" : "https://www.youtube.com/embed/hsm9OmLwtMo?autoplay=0&loop=1",
-                            "caption" : "Muwu Generative Composition" 
+                        "class" : "endeavor-item-125 endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/muwu/videos/muwuw_dreams.webm",
+                            "mp4" : "images/projects/muwu/videos/muwuw_dreams.mp4",
+                            "poster" : "images/projects/muwu/videos/muwuw_dreams.jpg"
                         }
                     }
                 },
@@ -4863,32 +4952,44 @@
                     }
                 },
                 {
-                    "name" : "endeavorYouTubeFS",
+                    "name" : "endeavorVideoFS",
                     "data" : {
-                        "video" : {
-                            "name" : "Muwu Experiment",
-                            "src" : "https://www.youtube.com/embed/Rb8voJnauJI?autoplay=0&loop=1",
-                            "caption" : "Muwu Experiment" 
+                        "class" : "endeavor-item-125 endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/muwu/videos/muwu_experiment_126.webm",
+                            "mp4" : "images/projects/muwu/videos/muwu_experiment_126.mp4",
+                            "poster" : "images/projects/muwu/videos/muwu_experiment_126.jpg"
                         }
                     }
                 },
                 {
-                    "name" : "endeavorYouTubeFS",
+                    "name" : "endeavorVideoFS",
                     "data" : {
-                        "video" : {
-                            "name" : "Muwu Experiment",
-                            "src" : "https://www.youtube.com/embed/qgAEdzmkngE?autoplay=0&loop=1",
-                            "caption" : "Muwu Experiment" 
+                        "class" : "endeavor-item-125 endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/muwu/videos/muwu_experiment_1522.webm",
+                            "mp4" : "images/projects/muwu/videos/muwu_experiment_1522.mp4",
+                            "poster" : "images/projects/muwu/videos/muwu_experiment_1522.jpg"
                         }
                     }
                 },
                 {
-                    "name" : "endeavorYouTubeFS",
+                    "name" : "endeavorVideoFS",
                     "data" : {
-                        "video" : {
-                            "name" : "Muwu Experiment",
-                            "src" : "https://www.youtube.com/embed/EQtCQfhMmRk?autoplay=0&loop=1",
-                            "caption" : "Muwu Experiment" 
+                        "class" : "endeavor-item-125 endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/muwu/videos/muwu_experiment_342.webm",
+                            "mp4" : "images/projects/muwu/videos/muwu_experiment_342.mp4",
+                            "poster" : "images/projects/muwu/videos/muwu_experiment_342.jpg"
                         }
                     }
                 },
