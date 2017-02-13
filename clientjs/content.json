@@ -3216,9 +3216,27 @@
             "image_preview": "images/projects/dig/hi-res/dig-preview.jpg",
             "sections" : [
                 {
-                    "name" : "endeavorSubheaderFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
-                        "subheader" : "Branding"
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "dig-logo-black",
+                            "src": "images/projects/dig/standard/dig-logo-black.gif",
+                            "src_standard": "images/projects/dig/standard/dig-logo-black.gif",
+                            "src_retina": "images/projects/dig/retina/dig-logo-black.gif",
+                            "src_low": "images/projects/dig/low-res/dig-logo-black.gif",
+                            "src_mobile": "images/projects/dig/hi-res/dig-logo-black.gif",
+                            "src_preview": "images/projects/dig/hi-res/dig-logo-black.gif",
+                            "caption": "Dig gif image"
+                        }
                     }
                 },
                 {
@@ -3245,30 +3263,34 @@
                     }
                 },
                 {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "dig-logo-white",
+                            "src": "images/projects/dig/standard/dig-logo-white.gif",
+                            "src_standard": "images/projects/dig/standard/dig-logo-white.gif",
+                            "src_retina": "images/projects/dig/retina/dig-logo-white.gif",
+                            "src_low": "images/projects/dig/low-res/dig-logo-white.gif",
+                            "src_mobile": "images/projects/dig/hi-res/dig-logo-white.gif",
+                            "src_preview": "images/projects/dig/hi-res/dig-logo-white.gif",
+                            "caption": "Dig gif image" 
+                        }
+                    }
+                },
+                {
                     "name" : "endeavorImageFSList",
                     "data" : {
                         "meta" : "Branding",
                         "images" : [
-                            {
-                                "name": "dig-logo-black",
-                                "src": "images/projects/dig/standard/dig-logo-black.gif",
-                                "src_standard": "images/projects/dig/standard/dig-logo-black.gif",
-                                "src_retina": "images/projects/dig/retina/dig-logo-black.gif",
-                                "src_low": "images/projects/dig/low-res/dig-logo-black.gif",
-                                "src_mobile": "images/projects/dig/hi-res/dig-logo-black.gif",
-                                "src_preview": "images/projects/dig/hi-res/dig-logo-black.gif",
-                                "caption": "Dig gif image"   
-                            },
-                            {
-                                "name": "dig-logo-white",
-                                "src": "images/projects/dig/standard/dig-logo-white.gif",
-                                "src_standard": "images/projects/dig/standard/dig-logo-white.gif",
-                                "src_retina": "images/projects/dig/retina/dig-logo-white.gif",
-                                "src_low": "images/projects/dig/low-res/dig-logo-white.gif",
-                                "src_mobile": "images/projects/dig/hi-res/dig-logo-white.gif",
-                                "src_preview": "images/projects/dig/hi-res/dig-logo-white.gif",
-                                "caption": "Dig gif image"   
-                            },
                             {
                                 "name": "dig-grid",
                                 "src": "images/projects/dig/standard/dig-grid.jpg",
@@ -3283,14 +3305,10 @@
                     }
                 },
                 {
-                    "name" : "endeavorSubheaderFS",
+                    "name" : "endeavorImage100vwList",
                     "data" : {
-                        "subheader" : "Identity System"
-                    }
-                },
-                {
-                    "name" : "endeavorImageFSList",
-                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "class2" : "endeavor-item-no-margin",
                         "meta" : "BrandBook",
                         "images" : [
                             {
@@ -3367,14 +3385,9 @@
                     }
                 },
                 {
-                    "name" : "endeavorSubheaderFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
-                        "subheader" : "Application"
-                    }
-                },
-                {
-                    "name" : "endeavorImageFS",
-                    "data" : {
+                        "class" : "endeavor-item-125",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -3434,41 +3447,75 @@
                     }
                 },
                 {
-                    "name" : "endeavorImageFSList",
+                    "name" : "endeavorImage100vw",
                     "data" : {
-                        "meta" : "Branding",
-                        "images" : [
-                            {
-                                "name": "dig-poster-sem-2",
-                                "src": "images/projects/dig/standard/dig-poster-sem-2.jpg",
-                                "src_standard": "images/projects/dig/standard/dig-poster-sem-2.jpg",
-                                "src_retina": "images/projects/dig/retina/dig-poster-sem-2.jpg",
-                                "src_low": "images/projects/dig/low-res/dig-poster-sem-2.jpg",
-                                "src_mobile": "images/projects/dig/hi-res/dig-poster-sem-2.jpg",
-                                "src_preview": "images/projects/dig/hi-res/dig-poster-sem-2.jpg",
-                                "caption": "Dig Poster"   
-                            },
-                            {
-                                "name": "dig-poster-2-application-1",
-                                "src": "images/projects/dig/standard/dig-poster-2-application-1.jpg",
-                                "src_standard": "images/projects/dig/standard/dig-poster-2-application-1.jpg",
-                                "src_retina": "images/projects/dig/retina/dig-poster-2-application-1.jpg",
-                                "src_low": "images/projects/dig/low-res/dig-poster-2-application-1.jpg",
-                                "src_mobile": "images/projects/dig/hi-res/dig-poster-2-application-1.jpg",
-                                "src_preview": "images/projects/dig/hi-res/dig-poster-2-application-1.jpg",
-                                "caption": "Dig Poster"   
-                            },
-                            {
-                                "name": "dig-poster-2-application-2",
-                                "src": "images/projects/dig/standard/dig-poster-2-application-2.jpg",
-                                "src_standard": "images/projects/dig/standard/dig-poster-2-application-2.jpg",
-                                "src_retina": "images/projects/dig/retina/dig-poster-2-application-2.jpg",
-                                "src_low": "images/projects/dig/low-res/dig-poster-2-application-2.jpg",
-                                "src_mobile": "images/projects/dig/hi-res/dig-poster-2-application-2.jpg",
-                                "src_preview": "images/projects/dig/hi-res/dig-poster-2-application-2.jpg",
-                                "caption": "Dig Poster"   
-                            }
-                        ]
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "dig-poster-sem-2",
+                            "src": "images/projects/dig/standard/dig-poster-sem-2.jpg",
+                            "src_standard": "images/projects/dig/standard/dig-poster-sem-2.jpg",
+                            "src_retina": "images/projects/dig/retina/dig-poster-sem-2.jpg",
+                            "src_low": "images/projects/dig/low-res/dig-poster-sem-2.jpg",
+                            "src_mobile": "images/projects/dig/hi-res/dig-poster-sem-2.jpg",
+                            "src_preview": "images/projects/dig/hi-res/dig-poster-sem-2.jpg",
+                            "caption": "Dig Poster"  
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "dig-poster-2-application-1",
+                            "src": "images/projects/dig/standard/dig-poster-2-application-1.jpg",
+                            "src_standard": "images/projects/dig/standard/dig-poster-2-application-1.jpg",
+                            "src_retina": "images/projects/dig/retina/dig-poster-2-application-1.jpg",
+                            "src_low": "images/projects/dig/low-res/dig-poster-2-application-1.jpg",
+                            "src_mobile": "images/projects/dig/hi-res/dig-poster-2-application-1.jpg",
+                            "src_preview": "images/projects/dig/hi-res/dig-poster-2-application-1.jpg",
+                            "caption": "Dig Poster"  
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "dig-poster-2-application-2",
+                            "src": "images/projects/dig/standard/dig-poster-2-application-2.jpg",
+                            "src_standard": "images/projects/dig/standard/dig-poster-2-application-2.jpg",
+                            "src_retina": "images/projects/dig/retina/dig-poster-2-application-2.jpg",
+                            "src_low": "images/projects/dig/low-res/dig-poster-2-application-2.jpg",
+                            "src_mobile": "images/projects/dig/hi-res/dig-poster-2-application-2.jpg",
+                            "src_preview": "images/projects/dig/hi-res/dig-poster-2-application-2.jpg",
+                            "caption": "Dig Poster"   
+                        }
                     }
                 },
                 {
@@ -3478,52 +3525,90 @@
                     }
                 },
                 {
-                    "name" : "endeavorImageFSList",
+                    "name" : "endeavorImage100vw",
                     "data" : {
-                        "meta" : "Sectors",
-                        "images" : [
-                            {
-                                "name": "dig-sector-1",
-                                "src": "images/projects/dig/standard/dig-sector-1.jpg",
-                                "src_standard": "images/projects/dig/standard/dig-sector-1.jpg",
-                                "src_retina": "images/projects/dig/retina/dig-sector-1.jpg",
-                                "src_low": "images/projects/dig/low-res/dig-sector-1.jpg",
-                                "src_mobile": "images/projects/dig/hi-res/dig-sector-1.jpg",
-                                "src_preview": "images/projects/dig/hi-res/dig-sector-1.jpg",
-                                "caption": "Dig gif image"   
-                            },
-                            {
-                                "name": "dig-sector-gif",
-                                "src": "images/projects/dig/standard/dig-sector-gif.gif",
-                                "src_standard": "images/projects/dig/standard/dig-sector-gif.gif",
-                                "src_retina": "images/projects/dig/retina/dig-sector-gif.gif",
-                                "src_low": "images/projects/dig/low-res/dig-sector-gif.gif",
-                                "src_mobile": "images/projects/dig/hi-res/dig-sector-gif.gif",
-                                "src_preview": "images/projects/dig/hi-res/dig-sector-gif.gif",
-                                "caption": "Dig gif image"   
-                            },
-                            {
-                                "name": "dig-sector-2",
-                                "src": "images/projects/dig/standard/dig-sector-2.jpg",
-                                "src_standard": "images/projects/dig/standard/dig-sector-2.jpg",
-                                "src_retina": "images/projects/dig/retina/dig-sector-2.jpg",
-                                "src_low": "images/projects/dig/low-res/dig-sector-2.jpg",
-                                "src_mobile": "images/projects/dig/hi-res/dig-sector-2.jpg",
-                                "src_preview": "images/projects/dig/hi-res/dig-sector-2.jpg",
-                                "caption": "Dig gif image"   
-                            }
-                        ]
-                    }
-                },
-                {
-                    "name" : "endeavorSubheaderFS",
-                    "data" : {
-                        "subheader" : "Algorithms + Process"
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "dig-sector-1",
+                            "src": "images/projects/dig/standard/dig-sector-1.jpg",
+                            "src_standard": "images/projects/dig/standard/dig-sector-1.jpg",
+                            "src_retina": "images/projects/dig/retina/dig-sector-1.jpg",
+                            "src_low": "images/projects/dig/low-res/dig-sector-1.jpg",
+                            "src_mobile": "images/projects/dig/hi-res/dig-sector-1.jpg",
+                            "src_preview": "images/projects/dig/hi-res/dig-sector-1.jpg",
+                            "caption": "Dig gif image"  
+                        }
                     }
                 },
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "dig-sector-gif",
+                            "src": "images/projects/dig/standard/dig-sector-gif.gif",
+                            "src_standard": "images/projects/dig/standard/dig-sector-gif.gif",
+                            "src_retina": "images/projects/dig/retina/dig-sector-gif.gif",
+                            "src_low": "images/projects/dig/low-res/dig-sector-gif.gif",
+                            "src_mobile": "images/projects/dig/hi-res/dig-sector-gif.gif",
+                            "src_preview": "images/projects/dig/hi-res/dig-sector-gif.gif",
+                            "caption": "Dig gif image"  
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "dig-sector-2",
+                            "src": "images/projects/dig/standard/dig-sector-2.jpg",
+                            "src_standard": "images/projects/dig/standard/dig-sector-2.jpg",
+                            "src_retina": "images/projects/dig/retina/dig-sector-2.jpg",
+                            "src_low": "images/projects/dig/low-res/dig-sector-2.jpg",
+                            "src_mobile": "images/projects/dig/hi-res/dig-sector-2.jpg",
+                            "src_preview": "images/projects/dig/hi-res/dig-sector-2.jpg",
+                            "caption": "Dig gif image"  
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorParagraph",
+                    "data" : {
+                        "header" : "Algorithms + Process",
+                        "class" : "endeavor-item-125",
+                        "bgColor" : "",
+                        "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with."
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-125",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",

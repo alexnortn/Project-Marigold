@@ -611,6 +611,20 @@ mixin endeavorImageFSList(data)
         img.lazyload.fsw(src=image.src_low class=_class)&attributes({'data-src': image.src}, {'data-srcset': sources})
 
 
+//-  Endeavor Project | 100vw Width Adaptive Image
+    Requires: <datum.images[[>
+    Description: Full-Width Image Elements Array
+
+mixin endeavorImage100vwList(data)
+    - var images = data.images
+    - var _class = data.class ? data.class : "endeavor-item"
+    - var _class2 = data.class2 ? data.class2 : "endeavor-item"
+    .endeavor-width-100vw.endeavor-pos-rel(class=_class)
+        each image, index in images
+            - var sources = image.src_standard + " 1x, " + image.src_retina + " 2x"
+            img.lazyload.fsw(src=image.src_low class=_class2)&attributes({'data-src': image.src}, {'data-srcset': sources})
+
+
 //-  Endeavor Project | 75%-Width Adaptive Image
     Requires: <datum.img.scr>
     Description: Full-Width Image Element
