@@ -5781,52 +5781,105 @@
             "image_preview": "images/projects/jenga-unchained/hi-res/jenga-preview.jpg",
             "sections" : [
                 {
-                    "name" : "endeavorSubheaderFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
-                        "subheader" : "Jenga Unchained Gameplay"
+                        "class" : "endeavor-item-125-top",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Jenga Unchained Item",
+                            "src": "images/projects/jenga-unchained/standard/jenga-cu-3.jpg",
+                            "src_standard": "images/projects/jenga-unchained/standard/jenga-cu-3.jpg",
+                            "src_retina": "images/projects/jenga-unchained/retina/jenga-cu-3.jpg",
+                            "src_low": "images/projects/jenga-unchained/low-res/jenga-cu-3.jpg",
+                            "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-cu-3.jpg",
+                            "src_preview": "images/projects/jenga-unchained/hi-res/jenga-cu-3.jpg",
+                            "caption": "Jenga Unchained Item"   
+                        }
                     }
                 },
                 {
-                    "name" : "endeavorImageFSList",
+                    "name" : "endeavorImage100vw",
                     "data" : {
-                        "images" : [
-                            {
-                                "name": "Jenga Unchained Item",
-                                "src": "images/projects/jenga-unchained/standard/jenga-cu-3.jpg",
-                                "src_standard": "images/projects/jenga-unchained/standard/jenga-cu-3.jpg",
-                                "src_retina": "images/projects/jenga-unchained/retina/jenga-cu-3.jpg",
-                                "src_low": "images/projects/jenga-unchained/low-res/jenga-cu-3.jpg",
-                                "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-cu-3.jpg",
-                                "src_preview": "images/projects/jenga-unchained/hi-res/jenga-cu-3.jpg",
-                                "caption": "Jenga Unchained Item"   
-                            },
-                            {
-                                "name": "Jenga Unchained Item",
-                                "src": "images/projects/jenga-unchained/standard/jenga-cu-1.jpg",
-                                "src_standard": "images/projects/jenga-unchained/standard/jenga-cu-1.jpg",
-                                "src_retina": "images/projects/jenga-unchained/retina/jenga-cu-1.jpg",
-                                "src_low": "images/projects/jenga-unchained/low-res/jenga-cu-1.jpg",
-                                "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-cu-1.jpg",
-                                "src_preview": "images/projects/jenga-unchained/hi-res/jenga-cu-1.jpg",
-                                "caption": "Jenga Unchained Item"   
-                            },
-                            {
-                                "name": "Jenga Unchained Item",
-                                "src": "images/projects/jenga-unchained/standard/jenga-cu-2.jpg",
-                                "src_standard": "images/projects/jenga-unchained/standard/jenga-cu-2.jpg",
-                                "src_retina": "images/projects/jenga-unchained/retina/jenga-cu-2.jpg",
-                                "src_low": "images/projects/jenga-unchained/low-res/jenga-cu-2.jpg",
-                                "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-cu-2.jpg",
-                                "src_preview": "images/projects/jenga-unchained/hi-res/jenga-cu-2.jpg",
-                                "caption": "Jenga Unchained Item"   
-                            }
-                        ]
+                        "class" : "endeavor-item-125-bottom",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Jenga Unchained Item",
+                            "src": "images/projects/jenga-unchained/standard/jenga-cu-1.jpg",
+                            "src_standard": "images/projects/jenga-unchained/standard/jenga-cu-1.jpg",
+                            "src_retina": "images/projects/jenga-unchained/retina/jenga-cu-1.jpg",
+                            "src_low": "images/projects/jenga-unchained/low-res/jenga-cu-1.jpg",
+                            "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-cu-1.jpg",
+                            "src_preview": "images/projects/jenga-unchained/hi-res/jenga-cu-1.jpg",
+                            "caption": "Jenga Unchained Item"    
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-125-bottom",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Jenga Unchained Item",
+                            "src": "images/projects/jenga-unchained/standard/jenga-rules-1.jpg",
+                            "src_standard": "images/projects/jenga-unchained/standard/jenga-rules-1.jpg",
+                            "src_retina": "images/projects/jenga-unchained/retina/jenga-rules-1.jpg",
+                            "src_low": "images/projects/jenga-unchained/low-res/jenga-rules-1.jpg",
+                            "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-rules-1.jpg",
+                            "src_preview": "images/projects/jenga-unchained/hi-res/jenga-rules-1.jpg",
+                            "caption": "Jenga Unchained Item"    
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "class" : "endeavor-item-top endeavor-item-bottom-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Jenga Unchained Item",
+                            "src": "images/projects/jenga-unchained/standard/jenga-cu-2.jpg",
+                            "src_standard": "images/projects/jenga-unchained/standard/jenga-cu-2.jpg",
+                            "src_retina": "images/projects/jenga-unchained/retina/jenga-cu-2.jpg",
+                            "src_low": "images/projects/jenga-unchained/low-res/jenga-cu-2.jpg",
+                            "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-cu-2.jpg",
+                            "src_preview": "images/projects/jenga-unchained/hi-res/jenga-cu-2.jpg",
+                            "caption": "Jenga Unchained Item"       
+                        }
                     }
                 },
                 {
                     "name" : "endeavorVideoFS",
                     "data" : {
-                        "class" : "endeavor-item-125 endeavor-width-100vw endeavor-pos-rel",
+                        "class" : "endeavor-item-bottom-125 endeavor-width-100vw endeavor-pos-rel",
                         "loop": "",
                         "muted": "",
                         "autoplay": "true",
@@ -5841,16 +5894,6 @@
                     "name" : "endeavorImageFSList",
                     "data" : {
                         "images" : [
-                            {
-                                "name": "Jenga Unchained Item",
-                                "src": "images/projects/jenga-unchained/standard/jenga-rules-1.jpg",
-                                "src_standard": "images/projects/jenga-unchained/standard/jenga-rules-1.jpg",
-                                "src_retina": "images/projects/jenga-unchained/retina/jenga-rules-1.jpg",
-                                "src_low": "images/projects/jenga-unchained/low-res/jenga-rules-1.jpg",
-                                "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-rules-1.jpg",
-                                "src_preview": "images/projects/jenga-unchained/hi-res/jenga-rules-1.jpg",
-                                "caption": "Jenga Unchained Item"   
-                            },
                             {
                                 "name": "Jenga Unchained Item",
                                 "src": "images/projects/jenga-unchained/standard/jenga-0.jpg",
@@ -5873,36 +5916,6 @@
                             },
                             {
                                 "name": "Jenga Unchained Item",
-                                "src": "images/projects/jenga-unchained/standard/jenga-2.jpg",
-                                "src_standard": "images/projects/jenga-unchained/standard/jenga-2.jpg",
-                                "src_retina": "images/projects/jenga-unchained/retina/jenga-2.jpg",
-                                "src_low": "images/projects/jenga-unchained/low-res/jenga-2.jpg",
-                                "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-2.jpg",
-                                "src_preview": "images/projects/jenga-unchained/hi-res/jenga-2.jpg",
-                                "caption": "Jenga Unchained Item"   
-                            },
-                            {
-                                "name": "Jenga Unchained Item",
-                                "src": "images/projects/jenga-unchained/standard/jenga-3.jpg",
-                                "src_standard": "images/projects/jenga-unchained/standard/jenga-3.jpg",
-                                "src_retina": "images/projects/jenga-unchained/retina/jenga-3.jpg",
-                                "src_low": "images/projects/jenga-unchained/low-res/jenga-3.jpg",
-                                "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-3.jpg",
-                                "src_preview": "images/projects/jenga-unchained/hi-res/jenga-3.jpg",
-                                "caption": "Jenga Unchained Item"   
-                            },
-                            {
-                                "name": "Jenga Unchained Item",
-                                "src": "images/projects/jenga-unchained/standard/jenga-5.jpg",
-                                "src_standard": "images/projects/jenga-unchained/standard/jenga-5.jpg",
-                                "src_retina": "images/projects/jenga-unchained/retina/jenga-5.jpg",
-                                "src_low": "images/projects/jenga-unchained/low-res/jenga-5.jpg",
-                                "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-5.jpg",
-                                "src_preview": "images/projects/jenga-unchained/hi-res/jenga-5.jpg",
-                                "caption": "Jenga Unchained Item"   
-                            },
-                            {
-                                "name": "Jenga Unchained Item",
                                 "src": "images/projects/jenga-unchained/standard/jenga-6.jpg",
                                 "src_standard": "images/projects/jenga-unchained/standard/jenga-6.jpg",
                                 "src_retina": "images/projects/jenga-unchained/retina/jenga-6.jpg",
@@ -5910,24 +5923,113 @@
                                 "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-6.jpg",
                                 "src_preview": "images/projects/jenga-unchained/hi-res/jenga-6.jpg",
                                 "caption": "Jenga Unchained Item"   
-                            },
-                            {
-                                "name": "Jenga Unchained Item",
-                                "src": "images/projects/jenga-unchained/standard/jenga-7.jpg",
-                                "src_standard": "images/projects/jenga-unchained/standard/jenga-7.jpg",
-                                "src_retina": "images/projects/jenga-unchained/retina/jenga-7.jpg",
-                                "src_low": "images/projects/jenga-unchained/low-res/jenga-7.jpg",
-                                "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-7.jpg",
-                                "src_preview": "images/projects/jenga-unchained/hi-res/jenga-7.jpg",
-                                "caption": "Jenga Unchained Item"   
                             }
                         ]
                     }
                 },
                 {
-                    "name" : "endeavorSubheaderFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
-                        "subheader" : "CAD Designs"
+                        "class" : "endeavor-item-top-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Jenga Unchained Item",
+                            "src": "images/projects/jenga-unchained/standard/jenga-3.jpg",
+                            "src_standard": "images/projects/jenga-unchained/standard/jenga-3.jpg",
+                            "src_retina": "images/projects/jenga-unchained/retina/jenga-3.jpg",
+                            "src_low": "images/projects/jenga-unchained/low-res/jenga-3.jpg",
+                            "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-3.jpg",
+                            "src_preview": "images/projects/jenga-unchained/hi-res/jenga-3.jpg",
+                            "caption": "Jenga Unchained Item"     
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-125-bottom",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Jenga Unchained Item",
+                            "src": "images/projects/jenga-unchained/standard/jenga-5.jpg",
+                            "src_standard": "images/projects/jenga-unchained/standard/jenga-5.jpg",
+                            "src_retina": "images/projects/jenga-unchained/retina/jenga-5.jpg",
+                            "src_low": "images/projects/jenga-unchained/low-res/jenga-5.jpg",
+                            "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-5.jpg",
+                            "src_preview": "images/projects/jenga-unchained/hi-res/jenga-5.jpg",
+                            "caption": "Jenga Unchained Item"      
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Jenga Unchained Item",
+                            "src": "images/projects/jenga-unchained/standard/jenga-2.jpg",
+                            "src_standard": "images/projects/jenga-unchained/standard/jenga-2.jpg",
+                            "src_retina": "images/projects/jenga-unchained/retina/jenga-2.jpg",
+                            "src_low": "images/projects/jenga-unchained/low-res/jenga-2.jpg",
+                            "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-2.jpg",
+                            "src_preview": "images/projects/jenga-unchained/hi-res/jenga-2.jpg",
+                            "caption": "Jenga Unchained Item"        
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Jenga Unchained Item",
+                            "src": "images/projects/jenga-unchained/standard/jenga-7.jpg",
+                            "src_standard": "images/projects/jenga-unchained/standard/jenga-7.jpg",
+                            "src_retina": "images/projects/jenga-unchained/retina/jenga-7.jpg",
+                            "src_low": "images/projects/jenga-unchained/low-res/jenga-7.jpg",
+                            "src_mobile": "images/projects/jenga-unchained/hi-res/jenga-7.jpg",
+                            "src_preview": "images/projects/jenga-unchained/hi-res/jenga-7.jpg",
+                            "caption": "Jenga Unchained Item"      
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorParagraph",
+                    "data" : {
+                        "header" : "CAD Designs",
+                        "class" : "endeavor-item-125",
+                        "bgColor" : "",
+                        "description" : "Our research culminated in an animated walkthrough. The animation demonstrates working aspects of the concept as well as gives the viewer an appreciation for the usability and aesthetics."
                     }
                 },
                 {
@@ -5975,12 +6077,6 @@
                                 "caption": "Jenga Unchained CAD"   
                             }
                         ]
-                    }
-                },
-                {
-                    "name" : "endeavorSubheaderFS",
-                    "data" : {
-                        "subheader" : "Design Process"
                     }
                 },
                 {
