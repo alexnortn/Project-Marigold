@@ -5595,45 +5595,81 @@
             "image_preview": "images/projects/cards/hi-res/cards-preview.jpg",
             "sections" : [
                 {
-                    "name" : "endeavorSubheaderFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
-                        "subheader" : "Physical Cabin Card"
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Cabin Cards Item",
+                            "src": "images/projects/cards/standard/cards-0.jpg",
+                            "src_standard": "images/projects/cards/standard/cards-0.jpg",
+                            "src_retina": "images/projects/cards/retina/cards-0.jpg",
+                            "src_low": "images/projects/cards/low-res/cards-0.jpg",
+                            "src_mobile": "images/projects/cards/hi-res/cards-0.jpg",
+                            "src_preview": "images/projects/cards/hi-res/cards-0.jpg",
+                            "caption": "Cabin Cards Item"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Cabin Cards Item",
+                            "src": "images/projects/cards/standard/cards-1.jpg",
+                            "src_standard": "images/projects/cards/standard/cards-1.jpg",
+                            "src_retina": "images/projects/cards/retina/cards-1.jpg",
+                            "src_low": "images/projects/cards/low-res/cards-1.jpg",
+                            "src_mobile": "images/projects/cards/hi-res/cards-1.jpg",
+                            "src_preview": "images/projects/cards/hi-res/cards-1.jpg",
+                            "caption": "Cabin Cards Item"   
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Cabin Cards Item",
+                            "src": "images/projects/cards/standard/cards-2.jpg",
+                            "src_standard": "images/projects/cards/standard/cards-2.jpg",
+                            "src_retina": "images/projects/cards/retina/cards-2.jpg",
+                            "src_low": "images/projects/cards/low-res/cards-2.jpg",
+                            "src_mobile": "images/projects/cards/hi-res/cards-2.jpg",
+                            "src_preview": "images/projects/cards/hi-res/cards-2.jpg",
+                            "caption": "Cabin Cards Item"
+                        }
                     }
                 },
                 {
                     "name" : "endeavorImageFSList",
                     "data" : {
                         "images" : [
-                            {
-                                "name": "Cabin Cards Item",
-                                "src": "images/projects/cards/standard/cards-0.jpg",
-                                "src_standard": "images/projects/cards/standard/cards-0.jpg",
-                                "src_retina": "images/projects/cards/retina/cards-0.jpg",
-                                "src_low": "images/projects/cards/low-res/cards-0.jpg",
-                                "src_mobile": "images/projects/cards/hi-res/cards-0.jpg",
-                                "src_preview": "images/projects/cards/hi-res/cards-0.jpg",
-                                "caption": "Cabin Cards Item"   
-                            },
-                            {
-                                "name": "Cabin Cards Item",
-                                "src": "images/projects/cards/standard/cards-1.jpg",
-                                "src_standard": "images/projects/cards/standard/cards-1.jpg",
-                                "src_retina": "images/projects/cards/retina/cards-1.jpg",
-                                "src_low": "images/projects/cards/low-res/cards-1.jpg",
-                                "src_mobile": "images/projects/cards/hi-res/cards-1.jpg",
-                                "src_preview": "images/projects/cards/hi-res/cards-1.jpg",
-                                "caption": "Cabin Cards Item"   
-                            },
-                            {
-                                "name": "Cabin Cards Item",
-                                "src": "images/projects/cards/standard/cards-2.jpg",
-                                "src_standard": "images/projects/cards/standard/cards-2.jpg",
-                                "src_retina": "images/projects/cards/retina/cards-2.jpg",
-                                "src_low": "images/projects/cards/low-res/cards-2.jpg",
-                                "src_mobile": "images/projects/cards/hi-res/cards-2.jpg",
-                                "src_preview": "images/projects/cards/hi-res/cards-2.jpg",
-                                "caption": "Cabin Cards Item"   
-                            },
                             {
                                 "name": "Cabin Cards Item",
                                 "src": "images/projects/cards/standard/cards-3.jpg",
@@ -5673,18 +5709,32 @@
                                 "src_mobile": "images/projects/cards/hi-res/cards-6.jpg",
                                 "src_preview": "images/projects/cards/hi-res/cards-6.jpg",
                                 "caption": "Cabin Cards Item"   
-                            },
-                            {
-                                "name": "Cabin Cards Item",
-                                "src": "images/projects/cards/standard/cards-7.jpg",
-                                "src_standard": "images/projects/cards/standard/cards-7.jpg",
-                                "src_retina": "images/projects/cards/retina/cards-7.jpg",
-                                "src_low": "images/projects/cards/low-res/cards-7.jpg",
-                                "src_mobile": "images/projects/cards/hi-res/cards-7.jpg",
-                                "src_preview": "images/projects/cards/hi-res/cards-7.jpg",
-                                "caption": "Cabin Cards Item"   
                             }
                         ]
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Cabin Cards Item",
+                            "src": "images/projects/cards/standard/cards-7.jpg",
+                            "src_standard": "images/projects/cards/standard/cards-7.jpg",
+                            "src_retina": "images/projects/cards/retina/cards-7.jpg",
+                            "src_low": "images/projects/cards/low-res/cards-7.jpg",
+                            "src_mobile": "images/projects/cards/hi-res/cards-7.jpg",
+                            "src_preview": "images/projects/cards/hi-res/cards-7.jpg",
+                            "caption": "Cabin Cards Item"  
+                        }
                     }
                 },
                 {
