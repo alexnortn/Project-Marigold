@@ -5205,45 +5205,82 @@
             "image_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-preview.jpg",
             "sections" : [
                 {
-                    "name" : "endeavorSubheaderFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
-                        "subheader" : "Physical Publication"
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Our Epigenomes Item",
+                            "src": "images/projects/our-epigenomes/standard/our-epigenomes-0.jpg",
+                            "src_standard": "images/projects/our-epigenomes/standard/our-epigenomes-0.jpg",
+                            "src_retina": "images/projects/our-epigenomes/retina/our-epigenomes-0.jpg",
+                            "src_low": "images/projects/our-epigenomes/low-res/our-epigenomes-0.jpg",
+                            "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-0.jpg",
+                            "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-0.jpg",
+                            "caption": "Our Epigenomes Item"  
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Our Epigenomes Item",
+                            "src": "images/projects/our-epigenomes/standard/our-epigenomes-1.jpg",
+                            "src_standard": "images/projects/our-epigenomes/standard/our-epigenomes-1.jpg",
+                            "src_retina": "images/projects/our-epigenomes/retina/our-epigenomes-1.jpg",
+                            "src_low": "images/projects/our-epigenomes/low-res/our-epigenomes-1.jpg",
+                            "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-1.jpg",
+                            "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-1.jpg",
+                            "caption": "Our Epigenomes Item"  
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Our Epigenomes Item",
+                            "src": "images/projects/our-epigenomes/standard/our-epigenomes-2.jpg",
+                            "src_standard": "images/projects/our-epigenomes/standard/our-epigenomes-2.jpg",
+                            "src_retina": "images/projects/our-epigenomes/retina/our-epigenomes-2.jpg",
+                            "src_low": "images/projects/our-epigenomes/low-res/our-epigenomes-2.jpg",
+                            "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-2.jpg",
+                            "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-2.jpg",
+                            "caption": "Our Epigenomes Item"
+                        }
                     }
                 },
                 {
                     "name" : "endeavorImageFSList",
                     "data" : {
+                        "class" : "",
                         "images" : [
-                            {
-                                "name": "Our Epigenomes Item",
-                                "src": "images/projects/our-epigenomes/standard/our-epigenomes-0.jpg",
-                                "src_standard": "images/projects/our-epigenomes/standard/our-epigenomes-0.jpg",
-                                "src_retina": "images/projects/our-epigenomes/retina/our-epigenomes-0.jpg",
-                                "src_low": "images/projects/our-epigenomes/low-res/our-epigenomes-0.jpg",
-                                "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-0.jpg",
-                                "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-0.jpg",
-                                "caption": "Our Epigenomes Item"   
-                            },
-                            {
-                                "name": "Our Epigenomes Item",
-                                "src": "images/projects/our-epigenomes/standard/our-epigenomes-1.jpg",
-                                "src_standard": "images/projects/our-epigenomes/standard/our-epigenomes-1.jpg",
-                                "src_retina": "images/projects/our-epigenomes/retina/our-epigenomes-1.jpg",
-                                "src_low": "images/projects/our-epigenomes/low-res/our-epigenomes-1.jpg",
-                                "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-1.jpg",
-                                "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-1.jpg",
-                                "caption": "Our Epigenomes Item"   
-                            },
-                            {
-                                "name": "Our Epigenomes Item",
-                                "src": "images/projects/our-epigenomes/standard/our-epigenomes-2.jpg",
-                                "src_standard": "images/projects/our-epigenomes/standard/our-epigenomes-2.jpg",
-                                "src_retina": "images/projects/our-epigenomes/retina/our-epigenomes-2.jpg",
-                                "src_low": "images/projects/our-epigenomes/low-res/our-epigenomes-2.jpg",
-                                "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-2.jpg",
-                                "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-2.jpg",
-                                "caption": "Our Epigenomes Item"   
-                            },
                             {
                                 "name": "Our Epigenomes Item",
                                 "src": "images/projects/our-epigenomes/standard/our-epigenomes-3.jpg",
@@ -5273,77 +5310,182 @@
                                 "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-5.jpg",
                                 "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-5.jpg",
                                 "caption": "Our Epigenomes Item"   
-                            },
-                            {
-                                "name": "Our Epigenomes Item",
-                                "src": "images/projects/our-epigenomes/standard/our-epigenomes-6.jpg",
-                                "src_standard": "images/projects/our-epigenomes/standard/our-epigenomes-6.jpg",
-                                "src_retina": "images/projects/our-epigenomes/retina/our-epigenomes-6.jpg",
-                                "src_low": "images/projects/our-epigenomes/low-res/our-epigenomes-6.jpg",
-                                "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-6.jpg",
-                                "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-6.jpg",
-                                "caption": "Our Epigenomes Item"   
-                            },
-                            {
-                                "name": "Our Epigenomes Item",
-                                "src": "images/projects/our-epigenomes/standard/our-epigenomes-7.jpg",
-                                "src_standard": "images/projects/our-epigenomes/standard/our-epigenomes-7.jpg",
-                                "src_retina": "images/projects/our-epigenomes/retina/our-epigenomes-7.jpg",
-                                "src_low": "images/projects/our-epigenomes/low-res/our-epigenomes-7.jpg",
-                                "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-7.jpg",
-                                "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-7.jpg",
-                                "caption": "Our Epigenomes Item"   
-                            },
-                            {
-                                "name": "Our Epigenomes Item",
-                                "src": "images/projects/our-epigenomes/standard/our-epigenomes-8.jpg",
-                                "src_standard": "images/projects/our-epigenomes/standard/our-epigenomes-8.jpg",
-                                "src_retina": "images/projects/our-epigenomes/retina/our-epigenomes-8.jpg",
-                                "src_low": "images/projects/our-epigenomes/low-res/our-epigenomes-8.jpg",
-                                "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-8.jpg",
-                                "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-8.jpg",
-                                "caption": "Our Epigenomes Item"   
-                            },
-                            {
-                                "name": "Our Epigenomes Item",
-                                "src": "images/projects/our-epigenomes/standard/our-epigenomes-9.jpg",
-                                "src_standard": "images/projects/our-epigenomes/standard/our-epigenomes-9.jpg",
-                                "src_retina": "images/projects/our-epigenomes/retina/our-epigenomes-9.jpg",
-                                "src_low": "images/projects/our-epigenomes/low-res/our-epigenomes-9.jpg",
-                                "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-9.jpg",
-                                "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-9.jpg",
-                                "caption": "Our Epigenomes Item"   
-                            },
-                            {
-                                "name": "Our Epigenomes Item",
-                                "src": "images/projects/our-epigenomes/standard/our-epigenomes-10.jpg",
-                                "src_standard": "images/projects/our-epigenomes/standard/our-epigenomes-10.jpg",
-                                "src_retina": "images/projects/our-epigenomes/retina/our-epigenomes-10.jpg",
-                                "src_low": "images/projects/our-epigenomes/low-res/our-epigenomes-10.jpg",
-                                "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-10.jpg",
-                                "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-10.jpg",
-                                "caption": "Our Epigenomes Item"   
-                            },
-                            {
-                                "name": "Our Epigenomes Item",
-                                "src": "images/projects/our-epigenomes/standard/our-epigenomes-11.jpg",
-                                "src_standard": "images/projects/our-epigenomes/standard/our-epigenomes-11.jpg",
-                                "src_retina": "images/projects/our-epigenomes/retina/our-epigenomes-11.jpg",
-                                "src_low": "images/projects/our-epigenomes/low-res/our-epigenomes-11.jpg",
-                                "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-11.jpg",
-                                "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-11.jpg",
-                                "caption": "Our Epigenomes Item"   
-                            },
-                            {
-                                "name": "Our Epigenomes Item",
-                                "src": "images/projects/our-epigenomes/standard/our-epigenomes-12.jpg",
-                                "src_standard": "images/projects/our-epigenomes/standard/our-epigenomes-12.jpg",
-                                "src_retina": "images/projects/our-epigenomes/retina/our-epigenomes-12.jpg",
-                                "src_low": "images/projects/our-epigenomes/low-res/our-epigenomes-12.jpg",
-                                "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-12.jpg",
-                                "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-12.jpg",
-                                "caption": "Our Epigenomes Item"   
-                            },
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-top-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Our Epigenomes Item",
+                            "src": "images/projects/our-epigenomes/standard/our-epigenomes-6.jpg",
+                            "src_standard": "images/projects/our-epigenomes/standard/our-epigenomes-6.jpg",
+                            "src_retina": "images/projects/our-epigenomes/retina/our-epigenomes-6.jpg",
+                            "src_low": "images/projects/our-epigenomes/low-res/our-epigenomes-6.jpg",
+                            "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-6.jpg",
+                            "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-6.jpg",
+                            "caption": "Our Epigenomes Item"  
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-bottom-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Our Epigenomes Item",
+                            "src": "images/projects/our-epigenomes/standard/our-epigenomes-7.jpg",
+                            "src_standard": "images/projects/our-epigenomes/standard/our-epigenomes-7.jpg",
+                            "src_retina": "images/projects/our-epigenomes/retina/our-epigenomes-7.jpg",
+                            "src_low": "images/projects/our-epigenomes/low-res/our-epigenomes-7.jpg",
+                            "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-7.jpg",
+                            "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-7.jpg",
+                            "caption": "Our Epigenomes Item"  
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Our Epigenomes Item",
+                            "src": "images/projects/our-epigenomes/standard/our-epigenomes-8.jpg",
+                            "src_standard": "images/projects/our-epigenomes/standard/our-epigenomes-8.jpg",
+                            "src_retina": "images/projects/our-epigenomes/retina/our-epigenomes-8.jpg",
+                            "src_low": "images/projects/our-epigenomes/low-res/our-epigenomes-8.jpg",
+                            "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-8.jpg",
+                            "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-8.jpg",
+                            "caption": "Our Epigenomes Item" 
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Our Epigenomes Item",
+                            "src": "images/projects/our-epigenomes/standard/our-epigenomes-9.jpg",
+                            "src_standard": "images/projects/our-epigenomes/standard/our-epigenomes-9.jpg",
+                            "src_retina": "images/projects/our-epigenomes/retina/our-epigenomes-9.jpg",
+                            "src_low": "images/projects/our-epigenomes/low-res/our-epigenomes-9.jpg",
+                            "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-9.jpg",
+                            "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-9.jpg",
+                            "caption": "Our Epigenomes Item"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Our Epigenomes Item",
+                            "src": "images/projects/our-epigenomes/standard/our-epigenomes-10.jpg",
+                            "src_standard": "images/projects/our-epigenomes/standard/our-epigenomes-10.jpg",
+                            "src_retina": "images/projects/our-epigenomes/retina/our-epigenomes-10.jpg",
+                            "src_low": "images/projects/our-epigenomes/low-res/our-epigenomes-10.jpg",
+                            "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-10.jpg",
+                            "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-10.jpg",
+                            "caption": "Our Epigenomes Item" 
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-top-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Our Epigenomes Item",
+                            "src": "images/projects/our-epigenomes/standard/our-epigenomes-11.jpg",
+                            "src_standard": "images/projects/our-epigenomes/standard/our-epigenomes-11.jpg",
+                            "src_retina": "images/projects/our-epigenomes/retina/our-epigenomes-11.jpg",
+                            "src_low": "images/projects/our-epigenomes/low-res/our-epigenomes-11.jpg",
+                            "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-11.jpg",
+                            "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-11.jpg",
+                            "caption": "Our Epigenomes Item"  
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-bottom-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Our Epigenomes Item",
+                            "src": "images/projects/our-epigenomes/standard/our-epigenomes-12.jpg",
+                            "src_standard": "images/projects/our-epigenomes/standard/our-epigenomes-12.jpg",
+                            "src_retina": "images/projects/our-epigenomes/retina/our-epigenomes-12.jpg",
+                            "src_low": "images/projects/our-epigenomes/low-res/our-epigenomes-12.jpg",
+                            "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-12.jpg",
+                            "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-12.jpg",
+                            "caption": "Our Epigenomes Item"  
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFSList",
+                    "data" : {
+                        "images" : [
                             {
                                 "name": "Our Epigenomes Item",
                                 "src": "images/projects/our-epigenomes/standard/our-epigenomes-13.jpg",
@@ -5373,24 +5515,32 @@
                                 "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-15.jpg",
                                 "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-15.jpg",
                                 "caption": "Our Epigenomes Item"   
-                            },
-                            {
-                                "name": "Our Epigenomes Item",
-                                "src": "images/projects/our-epigenomes/standard/our-epigenomes-16.jpg",
-                                "src_standard": "images/projects/our-epigenomes/standard/our-epigenomes-16.jpg",
-                                "src_retina": "images/projects/our-epigenomes/retina/our-epigenomes-16.jpg",
-                                "src_low": "images/projects/our-epigenomes/low-res/our-epigenomes-16.jpg",
-                                "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-16.jpg",
-                                "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-16.jpg",
-                                "caption": "Our Epigenomes Item"   
                             }
                         ]
                     }
                 },
                 {
-                    "name" : "endeavorSubheaderFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
-                        "subheader" : "Digital Publication"
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Our Epigenomes Item",
+                            "src": "images/projects/our-epigenomes/standard/our-epigenomes-16.jpg",
+                            "src_standard": "images/projects/our-epigenomes/standard/our-epigenomes-16.jpg",
+                            "src_retina": "images/projects/our-epigenomes/retina/our-epigenomes-16.jpg",
+                            "src_low": "images/projects/our-epigenomes/low-res/our-epigenomes-16.jpg",
+                            "src_mobile": "images/projects/our-epigenomes/hi-res/our-epigenomes-16.jpg",
+                            "src_preview": "images/projects/our-epigenomes/hi-res/our-epigenomes-16.jpg",
+                            "caption": "Our Epigenomes Item"  
+                        }
                     }
                 },
                 {
