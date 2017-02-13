@@ -4344,14 +4344,9 @@
             "image_preview": "images/projects/muwu/hi-res/muwu-preview-2.jpg",
             "sections" : [
                 {
-                    "name" : "endeavorSubheaderFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
-                        "subheader" : "John Cage"
-                    }
-                },
-                {
-                    "name" : "endeavorImageFS",
-                    "data" : {
+                        "class" : "endeavor-item-125",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -4373,9 +4368,123 @@
                     }
                 },
                 {
-                    "name" : "endeavorSubheaderFS",
+                    "name" : "endeavorImageFS",
                     "data" : {
-                        "subheader" : "Physical Volume"
+                        "class" : "endeavor-item-top-125 endeavor-item-bottom",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "muwu-book-10",
+                            "src": "images/projects/muwu/standard/muwu-book-10.jpg",
+                            "src_standard": "images/projects/muwu/standard/muwu-book-10.jpg",
+                            "src_retina": "images/projects/muwu/retina/muwu-book-10.jpg",
+                            "src_low": "images/projects/muwu/low-res/muwu-book-10.jpg",
+                            "src_mobile": "images/projects/muwu/hi-res/muwu-book-10.jpg",
+                            "src_preview": "images/projects/muwu/hi-res/muwu-book-10.jpg",
+                            "caption": "Muwu Book 10"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "class" : "endeavor-item-bottom-125 endeavor-item-top",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "muwu-book-12",
+                            "src": "images/projects/muwu/standard/muwu-book-12.jpg",
+                            "src_standard": "images/projects/muwu/standard/muwu-book-12.jpg",
+                            "src_retina": "images/projects/muwu/retina/muwu-book-12.jpg",
+                            "src_low": "images/projects/muwu/low-res/muwu-book-12.jpg",
+                            "src_mobile": "images/projects/muwu/hi-res/muwu-book-12.jpg",
+                            "src_preview": "images/projects/muwu/hi-res/muwu-book-12.jpg",
+                            "caption": "Muwu Book 12"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "muwu-book-11",
+                            "src": "images/projects/muwu/standard/muwu-book-11.jpg",
+                            "src_standard": "images/projects/muwu/standard/muwu-book-11.jpg",
+                            "src_retina": "images/projects/muwu/retina/muwu-book-11.jpg",
+                            "src_low": "images/projects/muwu/low-res/muwu-book-11.jpg",
+                            "src_mobile": "images/projects/muwu/hi-res/muwu-book-11.jpg",
+                            "src_preview": "images/projects/muwu/hi-res/muwu-book-11.jpg",
+                            "caption": "Muwu Book 11"   
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "muwu-book-7",
+                            "src": "images/projects/muwu/standard/muwu-book-7.jpg",
+                            "src_standard": "images/projects/muwu/standard/muwu-book-7.jpg",
+                            "src_retina": "images/projects/muwu/retina/muwu-book-7.jpg",
+                            "src_low": "images/projects/muwu/low-res/muwu-book-7.jpg",
+                            "src_mobile": "images/projects/muwu/hi-res/muwu-book-7.jpg",
+                            "src_preview": "images/projects/muwu/hi-res/muwu-book-7.jpg",
+                            "caption": "Muwu Book 7"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "muwu-empty-2",
+                            "src": "images/projects/muwu/standard/muwu-empty-4.jpg",
+                            "src_standard": "images/projects/muwu/standard/muwu-empty-4.jpg",
+                            "src_retina": "images/projects/muwu/retina/muwu-empty-4.jpg",
+                            "src_low": "images/projects/muwu/low-res/muwu-empty-4.jpg",
+                            "src_mobile": "images/projects/muwu/hi-res/muwu-empty-4.jpg",
+                            "src_preview": "images/projects/muwu/hi-res/muwu-empty-4.jpg",
+                            "caption": "Muwu Empty Poster" 
+                        }
                     }
                 },
                 {
@@ -4383,56 +4492,6 @@
                     "data" : {
                         "meta" : "Muwu Book",
                         "images" : [
-                            {
-                                "name": "muwu-book-10",
-                                "src": "images/projects/muwu/standard/muwu-book-10.jpg",
-                                "src_standard": "images/projects/muwu/standard/muwu-book-10.jpg",
-                                "src_retina": "images/projects/muwu/retina/muwu-book-10.jpg",
-                                "src_low": "images/projects/muwu/low-res/muwu-book-10.jpg",
-                                "src_mobile": "images/projects/muwu/hi-res/muwu-book-10.jpg",
-                                "src_preview": "images/projects/muwu/hi-res/muwu-book-10.jpg",
-                                "caption": "Muwu Book 10"   
-                            },
-                            {
-                                "name": "muwu-book-12",
-                                "src": "images/projects/muwu/standard/muwu-book-12.jpg",
-                                "src_standard": "images/projects/muwu/standard/muwu-book-12.jpg",
-                                "src_retina": "images/projects/muwu/retina/muwu-book-12.jpg",
-                                "src_low": "images/projects/muwu/low-res/muwu-book-12.jpg",
-                                "src_mobile": "images/projects/muwu/hi-res/muwu-book-12.jpg",
-                                "src_preview": "images/projects/muwu/hi-res/muwu-book-12.jpg",
-                                "caption": "Muwu Book 12"   
-                            },
-                            {
-                                "name": "muwu-book-11",
-                                "src": "images/projects/muwu/standard/muwu-book-11.jpg",
-                                "src_standard": "images/projects/muwu/standard/muwu-book-11.jpg",
-                                "src_retina": "images/projects/muwu/retina/muwu-book-11.jpg",
-                                "src_low": "images/projects/muwu/low-res/muwu-book-11.jpg",
-                                "src_mobile": "images/projects/muwu/hi-res/muwu-book-11.jpg",
-                                "src_preview": "images/projects/muwu/hi-res/muwu-book-11.jpg",
-                                "caption": "Muwu Book 11"   
-                            },
-                            {
-                                "name": "muwu-book-7",
-                                "src": "images/projects/muwu/standard/muwu-book-7.jpg",
-                                "src_standard": "images/projects/muwu/standard/muwu-book-7.jpg",
-                                "src_retina": "images/projects/muwu/retina/muwu-book-7.jpg",
-                                "src_low": "images/projects/muwu/low-res/muwu-book-7.jpg",
-                                "src_mobile": "images/projects/muwu/hi-res/muwu-book-7.jpg",
-                                "src_preview": "images/projects/muwu/hi-res/muwu-book-7.jpg",
-                                "caption": "Muwu Book 7"   
-                            },
-                            {
-                                "name": "muwu-empty-2",
-                                "src": "images/projects/muwu/standard/muwu-empty-4.jpg",
-                                "src_standard": "images/projects/muwu/standard/muwu-empty-4.jpg",
-                                "src_retina": "images/projects/muwu/retina/muwu-empty-4.jpg",
-                                "src_low": "images/projects/muwu/low-res/muwu-empty-4.jpg",
-                                "src_mobile": "images/projects/muwu/hi-res/muwu-empty-4.jpg",
-                                "src_preview": "images/projects/muwu/hi-res/muwu-empty-4.jpg",
-                                "caption": "Muwu Empty Poster"   
-                            },
                             {
                                 "name": "muwu-book-13",
                                 "src": "images/projects/muwu/standard/muwu-book-13.jpg",
@@ -4461,19 +4520,33 @@
                                 "src_low": "images/projects/muwu/low-res/muwu-book-5.jpg",
                                 "src_mobile": "images/projects/muwu/hi-res/muwu-book-5.jpg",
                                 "src_preview": "images/projects/muwu/hi-res/muwu-book-5.jpg",
-                                "caption": "Muwu Book 5"   
-                            },
-                            {
-                                "name": "muwu-book-4",
-                                "src": "images/projects/muwu/standard/muwu-book-4.jpg",
-                                "src_standard": "images/projects/muwu/standard/muwu-book-4.jpg",
-                                "src_retina": "images/projects/muwu/retina/muwu-book-4.jpg",
-                                "src_low": "images/projects/muwu/low-res/muwu-book-4.jpg",
-                                "src_mobile": "images/projects/muwu/hi-res/muwu-book-4.jpg",
-                                "src_preview": "images/projects/muwu/hi-res/muwu-book-4.jpg",
-                                "caption": "Muwu Book 4"   
+                                "caption": "Muwu Book 5"  
                             }
                         ]
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "muwu-book-4",
+                            "src": "images/projects/muwu/standard/muwu-book-4.jpg",
+                            "src_standard": "images/projects/muwu/standard/muwu-book-4.jpg",
+                            "src_retina": "images/projects/muwu/retina/muwu-book-4.jpg",
+                            "src_low": "images/projects/muwu/low-res/muwu-book-4.jpg",
+                            "src_mobile": "images/projects/muwu/hi-res/muwu-book-4.jpg",
+                            "src_preview": "images/projects/muwu/hi-res/muwu-book-4.jpg",
+                            "caption": "Muwu Book 4"
+                        }
                     }
                 },
                 {
@@ -4522,9 +4595,9 @@
                         "muted": "",
                         "autoplay": "true",
                         "src" : {
-                            "webm" : "images/projects/muwu/videos/muwu_music_of_changes.webm",
-                            "mp4" : "images/projects/muwu/videos/muwu_music_of_changes.mp4",
-                            "poster" : "images/projects/muwu/videos/muwu_music_of_changes.jpg"
+                            "webm" : "images/projects/muwu/videos/muwu_music_of_changes.webm#t=120",
+                            "mp4" : "images/projects/muwu/videos/muwu_music_of_changes.mp4#t=120",
+                            "poster" : "images/projects/muwu/videos/muwu_music_of_changes.jpg#t=120"
                         }
                     }
                 },
@@ -4559,9 +4632,9 @@
                         "muted": "",
                         "autoplay": "true",
                         "src" : {
-                            "webm" : "images/projects/muwu/videos/muwuw_dreams.webm",
-                            "mp4" : "images/projects/muwu/videos/muwuw_dreams.mp4",
-                            "poster" : "images/projects/muwu/videos/muwuw_dreams.jpg"
+                            "webm" : "images/projects/muwu/videos/muwu_dreams.webm#t=120",
+                            "mp4" : "images/projects/muwu/videos/muwu_dreams.mp4#t=120",
+                            "poster" : "images/projects/muwu/videos/muwu_dreams.jpg#t=120"
                         }
                     }
                 },
@@ -4604,14 +4677,9 @@
                     }
                 },
                 {
-                    "name" : "endeavorSubheaderFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
-                        "subheader" : "Research"
-                    }
-                },
-                {
-                    "name" : "endeavorImageFS",
-                    "data" : {
+                        "class" : "endeavor-item-125",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -4633,14 +4701,18 @@
                     }
                 },
                 {
-                    "name" : "endeavorSubheaderFS",
+                    "name" : "endeavorParagraph",
                     "data" : {
-                        "subheader" : "Methods"
+                        "header" : "Research",
+                        "class" : "endeavor-item-no-margin",
+                        "bgColor" : "",
+                        "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with."
                     }
                 },
                 {
-                    "name" : "endeavorImageFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
+                        "class" : "endeavor-item-no-margin",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -4662,32 +4734,42 @@
                     }
                 },
                 {
-                    "name" : "endeavorImageFSList",
+                    "name" : "endeavorParagraph",
                     "data" : {
-                        "meta" : "Branding",
-                        "images" : [
-                            {
-                                "name": "muwu-methods",
-                                "src": "images/projects/muwu/standard/muwu-methods-2.jpg",
-                                "src_standard": "images/projects/muwu/standard/muwu-methods-2.jpg",
-                                "src_retina": "images/projects/muwu/retina/muwu-methods-2.jpg",
-                                "src_low": "images/projects/muwu/low-res/muwu-methods-2.jpg",
-                                "src_mobile": "images/projects/muwu/hi-res/muwu-methods-2.jpg",
-                                "src_preview": "images/projects/muwu/hi-res/muwu-methods-2.jpg",
-                                "caption": "Muwu Methods"   
-                            }
-                        ]
+                        "header" : "Methods",
+                        "class" : "endeavor-item-125",
+                        "bgColor" : "",
+                        "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with."
                     }
                 },
                 {
-                    "name" : "endeavorCaptionFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
-                        "caption" : "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know?"
+                        "class" : "endeavor-item-no-margin",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "muwu-methods",
+                            "src": "images/projects/muwu/standard/muwu-methods-2.jpg",
+                            "src_standard": "images/projects/muwu/standard/muwu-methods-2.jpg",
+                            "src_retina": "images/projects/muwu/retina/muwu-methods-2.jpg",
+                            "src_low": "images/projects/muwu/low-res/muwu-methods-2.jpg",
+                            "src_mobile": "images/projects/muwu/hi-res/muwu-methods-2.jpg",
+                            "src_preview": "images/projects/muwu/hi-res/muwu-methods-2.jpg",
+                            "caption": "Muwu Methods"  
+                        }
                     }
                 },
                 {
                     "name" : "endeavorImageSlider",
                     "data" : {
+                        "class" : "endeavor-item-125",
                         "meta" : "Muwu Methods Iterator",
                         "images" : [
                             {
@@ -4774,14 +4856,18 @@
                     }
                 },
                 {
-                    "name" : "endeavorSubheaderFS",
+                    "name" : "endeavorParagraph",
                     "data" : {
-                        "subheader" : "Layout Machine"
+                        "header" : "Layout Machine",
+                        "class" : "endeavor-item-top-250",
+                        "bgColor" : "",
+                        "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with."
                     }
                 },
                 {
-                    "name" : "endeavorImageFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
+                        "class" : "endeavor-item-no-margin",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -4803,105 +4889,18 @@
                     }
                 },
                 {
-                    "name" : "endeavorImageGridIterator",
+                    "name" : "endeavorParagraph",
                     "data" : {
-                        "images": [
-                            {
-                                "name": "muwu-layout-option",
-                                "src": "images/projects/muwu/standard/muwu-layout-1.jpg",
-                                "src_standard": "images/projects/muwu/standard/muwu-layout-1.jpg",
-                                "src_retina": "images/projects/muwu/retina/muwu-layout-1.jpg",
-                                "src_low": "images/projects/muwu/low-res/muwu-layout-1.jpg",
-                                "src_mobile": "images/projects/muwu/hi-res/muwu-layout-1.jpg",
-                                "src_preview": "images/projects/muwu/hi-res/muwu-layout-1.jpg",
-                                "caption": "Muwu Layout Option"
-                            },
-                            {
-                                "name": "muwu-layout-option",
-                                "src": "images/projects/muwu/standard/muwu-layout-2.jpg",
-                                "src_standard": "images/projects/muwu/standard/muwu-layout-2.jpg",
-                                "src_retina": "images/projects/muwu/retina/muwu-layout-2.jpg",
-                                "src_low": "images/projects/muwu/low-res/muwu-layout-2.jpg",
-                                "src_mobile": "images/projects/muwu/hi-res/muwu-layout-2.jpg",
-                                "src_preview": "images/projects/muwu/hi-res/muwu-layout-2.jpg",
-                                "caption": "Muwu Layout Option"
-                            },
-                            {
-                                "name": "muwu-layout-option",
-                                "src": "images/projects/muwu/standard/muwu-layout-3.jpg",
-                                "src_standard": "images/projects/muwu/standard/muwu-layout-3.jpg",
-                                "src_retina": "images/projects/muwu/retina/muwu-layout-3.jpg",
-                                "src_low": "images/projects/muwu/low-res/muwu-layout-3.jpg",
-                                "src_mobile": "images/projects/muwu/hi-res/muwu-layout-3.jpg",
-                                "src_preview": "images/projects/muwu/hi-res/muwu-layout-3.jpg",
-                                "caption": "Muwu Layout Option"
-                            },
-                            {
-                                "name": "muwu-layout-option",
-                                "src": "images/projects/muwu/standard/muwu-layout-4.jpg",
-                                "src_standard": "images/projects/muwu/standard/muwu-layout-4.jpg",
-                                "src_retina": "images/projects/muwu/retina/muwu-layout-4.jpg",
-                                "src_low": "images/projects/muwu/low-res/muwu-layout-4.jpg",
-                                "src_mobile": "images/projects/muwu/hi-res/muwu-layout-4.jpg",
-                                "src_preview": "images/projects/muwu/hi-res/muwu-layout-4.jpg",
-                                "caption": "Muwu Layout Option"
-                            },
-                            {
-                                "name": "muwu-layout-option",
-                                "src": "images/projects/muwu/standard/muwu-layout-5.jpg",
-                                "src_standard": "images/projects/muwu/standard/muwu-layout-5.jpg",
-                                "src_retina": "images/projects/muwu/retina/muwu-layout-5.jpg",
-                                "src_low": "images/projects/muwu/low-res/muwu-layout-5.jpg",
-                                "src_mobile": "images/projects/muwu/hi-res/muwu-layout-5.jpg",
-                                "src_preview": "images/projects/muwu/hi-res/muwu-layout-5.jpg",
-                                "caption": "Muwu Layout Option"
-                            },
-                            {
-                                "name": "muwu-layout-option",
-                                "src": "images/projects/muwu/standard/muwu-layout-6.jpg",
-                                "src_standard": "images/projects/muwu/standard/muwu-layout-6.jpg",
-                                "src_retina": "images/projects/muwu/retina/muwu-layout-6.jpg",
-                                "src_low": "images/projects/muwu/low-res/muwu-layout-6.jpg",
-                                "src_mobile": "images/projects/muwu/hi-res/muwu-layout-6.jpg",
-                                "src_preview": "images/projects/muwu/hi-res/muwu-layout-6.jpg",
-                                "caption": "Muwu Layout Option"
-                            }
-                        ]
+                        "header" : "Layout Synthesis",
+                        "class" : "endeavor-item-125",
+                        "bgColor" : "",
+                        "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with."
                     }
                 },
                 {
-                    "name" : "endeavorImageCenterCaption",
+                    "name" : "endeavorImage100vw",
                     "data" : {
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "Layout Machine Selection",
-                            "src": "images/projects/muwu/standard/muwu-layout.jpg",
-                            "src_standard": "images/projects/muwu/standard/muwu-layout.jpg",
-                            "src_retina": "images/projects/muwu/retina/muwu-layout.jpg",
-                            "src_low": "images/projects/muwu/low-res/muwu-layout.jpg",
-                            "src_mobile": "images/projects/muwu/hi-res/muwu-layout.jpg",
-                            "src_preview": "images/projects/muwu/hi-res/muwu-layout.jpg",
-                            "caption": "Muwu Layout Selection"
-                        },
-                        "caption" : "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know?"
-                    }
-                },
-                {
-                    "name" : "endeavorSubheaderFS",
-                    "data" : {
-                        "subheader" : "Layout Synthesis"
-                    }
-                },
-                {
-                    "name" : "endeavorImageFS",
-                    "data" : {
+                        "class" : "endeavor-item-125",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -4923,14 +4922,18 @@
                     }
                 },
                 {
-                    "name" : "endeavorSubheaderFS",
+                    "name" : "endeavorParagraph",
                     "data" : {
-                        "subheader" : "Generative Composition"
+                        "header" : "Generative Algorithms",
+                        "class" : "endeavor-item-125",
+                        "bgColor" : "",
+                        "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with."
                     }
                 },
                 {
-                    "name" : "endeavorImageFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
+                        "class" : "endeavor-item-125",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",

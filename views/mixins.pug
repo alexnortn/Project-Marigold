@@ -782,7 +782,8 @@ mixin endeavorImageCenterCaption(data)
 
 mixin endeavorImageSlider(data)
     - var images = data.images
-    .endeavor-item.endeavor-image-slider
+    - var _class = data.class ? data.class : "endeavor-item"
+    .endeavor-image-slider(class=_class)
         each image, i in images
             img.lazyload.endeavor-image-slider-color.fsw(src=image.src_low)&attributes({'data-src': images[i].src})
 
@@ -793,7 +794,8 @@ mixin endeavorImageSlider(data)
 
 mixin endeavorImageSlider75(data)
     - var images = data.images
-    .endeavor-item.endeavor-image-slider.endeavor-width-75-prcnt.endeavor-center
+    - var _class = data.class ? data.class : "endeavor-item"
+    .endeavor-image-slider.endeavor-width-75-prcnt.endeavor-center(class=_class)
         each image, i in images
             img.lazyload.endeavor-image-slider-color.fsw(src=image.src_low)&attributes({'data-src': images[i].src})
 
