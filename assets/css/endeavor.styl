@@ -2355,16 +2355,19 @@ p.center-caption
 		height 200px
 
 
-/* ----------- Retina Screens ----------- */
-@media screen and (max-width: 500px) and (min-resolution: 2dppx) and (min-resolution: 96dpi)
+/* ----------- Non-Retina Screens ----------- */
+@media screen and (max-width: 500px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)
 	.endeavor
 		min-width 104vw
 		
 	.endeavor-contents
-		margin-top -35px
-		
+		margin-top 0
+
 	.endeavor-width-102vw
 		left calc((104vw - 85vw) / -2) // 102vw width | 85~ Contents relative width
+		
+	.endeavor-width-100vw
+		left calc((102vw - 85vw) / -2) // 1200~ Max contents relative width
 		
 	.endeavor-description
 		width 100%
@@ -2445,10 +2448,12 @@ p.center-caption
 		width 100%	
 
 	.checklist
-		width 100%
-		
-	.checklist p
+		width 90%
+		min-width 200px
 		max-width 375px
+		
+	.checklist p 
+		width 95%
 		
 	.checklist:nth-child(odd)
 		margin-right 0px
@@ -2465,10 +2470,13 @@ p.center-caption
 		min-width 104vw
 		
 	.endeavor-contents
-		margin-top -35px
+		margin-top 0
 		
 	.endeavor-width-102vw
 		left calc((104vw - 85vw) / -2) // 102vw width | 85~ Contents relative width
+		
+	.endeavor-width-100vw
+		left calc((102vw - 85vw) / -2) // 1200~ Max contents relative width
 		
 	.endeavor-description
 		width 100%
@@ -2541,9 +2549,6 @@ p.center-caption
 	.endeavor-item-right-0-500
 		margin-right 0px
 		
-	.endeavor-item-right-0-500
-		margin-right 0px
-		
 	.analysis:nth-child(odd)
 		width 100%
 		margin-right 0px
@@ -2552,10 +2557,12 @@ p.center-caption
 		width 100%	
 
 	.checklist
-		width 100%
-		
-	.checklist p
+		width 90%
+		min-width 200px
 		max-width 375px
+		
+	.checklist p 
+		width 95%
 		
 	.checklist:nth-child(odd)
 		margin-right 0px
