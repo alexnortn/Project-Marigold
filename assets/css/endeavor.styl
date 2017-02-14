@@ -1826,6 +1826,9 @@ p.center-caption
 	.endeavor-width-102vw
 		left calc((102vw - 1000px) / -2) // 102vw width | 85~ Contents relative width	
 		
+	.endeavor-width-100vw
+		left calc((101vw - 1000px) / -2) // 1200~ Max contents relative width
+		
 
 /*---------------------------------------------------------------*/
 /* Breakpoint 1 | Medium Screen */
@@ -1843,7 +1846,7 @@ p.center-caption
 		left calc((102vw - 85vw) / -2) // 102vw width | 85~ Contents relative width
 		
 	.endeavor-width-100vw
-		left calc((101vw - 1000px) / -2) // 1200~ Max contents relative width
+		left calc((101vw - 85vw) / -2) // 1200~ Max contents relative width
 		
 	.endeavor-contents
 		margin-top 65vh
@@ -1905,7 +1908,7 @@ p.center-caption
 		margin-top 25px
 		
 	.endeavor-item-bottom
-		margin-bottom 25px
+		margin-bottom 35px
 		
 	.endeavor-item-bottom-50
 		margin-bottom 25px
@@ -1915,21 +1918,21 @@ p.center-caption
 		margin-bottom 15px
 	
 	.endeavor-item-top-25
-		margin-top 15px		
+		margin-top 15px	
 
 	.endeavor-item-bottom-25
-		margin-bottom 15px
-		
+		margin-bottom 15px	
+
 	.endeavor-item-15
 		margin-top 10px
 		margin-bottom 10px
 		
 	.endeavor-item-top-15
 		margin-top 10px
-		
+
 	.endeavor-item-bottom-15
 		margin-bottom 10px
-
+		
 	.endeavor-item-10
 		margin-top 5px
 		margin-bottom 5px
@@ -2155,9 +2158,9 @@ p.center-caption
 		
 	.endeavor-overview .description
 		width 200px
-		height 250px
-		min-width 250px
-		min-height 250px
+		height 200px
+		min-width 200px
+		min-height 200px
 		
 	.endeavor-overview .description p 
 		font-size 14px
@@ -2175,14 +2178,15 @@ p.center-caption
 		
 	.endeavor-pull-quote
 		font-size 24px
+		line-height 1.5em
 		
 	.endeavor-caption-2
 		font-size 14px
 		
 	.endeavor-flex-row-nowrap
+		justify-content center
 		flex-direction column
 		flex-wrap wrap
-		justify-content center
 		
 	.endeavor-description-big p
 		font-size 24px
