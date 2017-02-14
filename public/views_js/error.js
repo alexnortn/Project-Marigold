@@ -30,8 +30,6 @@ pug_html = pug_html + "\u003Clink rel=\"stylesheet\" href=\"https:\u002F\u002Fma
 pug_html = pug_html + "\u003Clink rel=\"stylesheet\" ref=\"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Source+Sans+Pro:200,300,400,600,700\"\u003E";
 ;pug_debug_line = 11;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Flayout.pug";
 pug_html = pug_html + "\u003C!-- https:\u002F\u002Fstackoverflow.com\u002Fquestions\u002F26960703\u002Fhow-to-change-the-color-of-header-bar-and-address-bar-in-newest-android-chrome-v --\u003E\n\u003C!-- Chrome, Firefox OS and Opera --\u003E\n\u003Cmeta name=\"theme-color\" content=\"#232323\"\u003E\n\u003C!-- Windows Phone --\u003E\n\u003Cmeta name=\"msapplication-navbutton-color\" content=\"#232323\"\u003E\n\u003C!-- iOS Safari --\u003E\n\u003Cmeta name=\"apple-mobile-web-app-status-bar-style\" content=\"#232323\"\u003E\n\u003Cmeta name=\"viewport\" content=\"user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1\"\u003E";
-;pug_debug_line = 1;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cc\u003E\u003C\u002Fc\u003E";
 ;pug_debug_line = 19;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_mixins["caseStudyPreview"] = pug_interp = function(data, index){
 var block = (this && this.block), attributes = (this && this.attributes) || {};
@@ -2074,7 +2072,7 @@ pug_html = pug_html + (pug_escape(null == (pug_interp = description) ? "" : pug_
 ;pug_debug_line = 988;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + "\u003Cdiv" + (pug_attrs(pug_merge([{"class": "fsw endeavor-transition-ease-500 endeavor-height-auto endeavor-no-flow"},{'class': _class2}, {'id': _id}]), true)) + "\u003E";
 ;pug_debug_line = 989;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cul class=\"fa-ul endeavor-width-100-prcnt endeavor-padding-vertical-5-mobile endeavor-border-top endeavor-padding-top-25\"\u003E";
+pug_html = pug_html + "\u003Cul class=\"fa-ul endeavor-width-100-prcnt endeavor-padding-vertical-5-mobile endeavor-border-top endeavor-padding-top-25 endeavor-500-width-auto\"\u003E";
 ;pug_debug_line = 990;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 // iterate contents
 var pug_obj20 = contents;
@@ -2310,7 +2308,7 @@ pug_html = pug_html + "\u003Cp class=\"lil-p space-after roman endeavor-item-top
 ;pug_debug_line = 1045;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + (pug_escape(null == (pug_interp = content.header) ? "" : pug_interp)) + "\u003C\u002Fp\u003E";
 ;pug_debug_line = 1046;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cul class=\"fa-ul endeavor-width-100-prcnt endeavor-padding-vertical-5-mobile endeavor-border-top endeavor-padding-top-25\"\u003E";
+pug_html = pug_html + "\u003Cul class=\"fa-ul endeavor-width-100-prcnt endeavor-padding-vertical-5-mobile endeavor-border-top endeavor-padding-top-25 endeavor-500-width-auto\"\u003E";
 ;pug_debug_line = 1047;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 // iterate content.bullets
 var pug_obj25 = content.bullets;
@@ -2371,7 +2369,7 @@ pug_html = pug_html + "\u003Cp class=\"lil-p space-after roman endeavor-item-top
 ;pug_debug_line = 1045;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 pug_html = pug_html + (pug_escape(null == (pug_interp = content.header) ? "" : pug_interp)) + "\u003C\u002Fp\u003E";
 ;pug_debug_line = 1046;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
-pug_html = pug_html + "\u003Cul class=\"fa-ul endeavor-width-100-prcnt endeavor-padding-vertical-5-mobile endeavor-border-top endeavor-padding-top-25\"\u003E";
+pug_html = pug_html + "\u003Cul class=\"fa-ul endeavor-width-100-prcnt endeavor-padding-vertical-5-mobile endeavor-border-top endeavor-padding-top-25 endeavor-500-width-auto\"\u003E";
 ;pug_debug_line = 1047;pug_debug_filename = "\u002FUsers\u002Falexnortn\u002FDocuments\u002FGithub\u002FPortfolio\u002Fviews\u002Fmixins.pug";
 // iterate content.bullets
 var pug_obj26 = content.bullets;
