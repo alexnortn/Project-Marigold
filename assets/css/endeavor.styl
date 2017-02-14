@@ -1846,7 +1846,7 @@ p.center-caption
 		left calc((101vw - 1000px) / -2) // 1200~ Max contents relative width
 		
 	.endeavor-contents
-		margin-top 0
+		margin-top 65vh
 		
 	.endeavor-contents blockquote
 		font-size 45px
@@ -1982,7 +1982,7 @@ p.center-caption
 		left calc((101vw - 85vw) / -2) // 1200~ Max contents relative width
 		
 	.endeavor-contents
-		margin-top 0
+		margin-top 65vh
 		
 	.endeavor-contents blockquote
 		font-size 45px
@@ -2360,6 +2360,9 @@ p.center-caption
 	.endeavor
 		min-width 104vw
 		
+	.endeavor-contents
+		margin-top -35px
+		
 	.endeavor-width-102vw
 		left calc((104vw - 85vw) / -2) // 102vw width | 85~ Contents relative width
 		
@@ -2444,6 +2447,9 @@ p.center-caption
 	.checklist
 		width 100%
 		
+	.checklist p
+		max-width 375px
+		
 	.checklist:nth-child(odd)
 		margin-right 0px
 		
@@ -2457,6 +2463,9 @@ p.center-caption
 @media screen and (max-width: 500px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
 	.endeavor
 		min-width 104vw
+		
+	.endeavor-contents
+		margin-top -35px
 		
 	.endeavor-width-102vw
 		left calc((104vw - 85vw) / -2) // 102vw width | 85~ Contents relative width
@@ -2544,6 +2553,9 @@ p.center-caption
 
 	.checklist
 		width 100%
+		
+	.checklist p
+		max-width 375px
 		
 	.checklist:nth-child(odd)
 		margin-right 0px
