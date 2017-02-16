@@ -206,6 +206,21 @@ $(document).ready(function() {
         animation.scrollToVelocity(_sectionCurrent); // Navigate
     });
 
+    // Video audio toggle
+    $(".video-toggle").click( function (){
+        $(this).siblings().prop('muted', !$(this).siblings().prop('muted'));
+        
+        if ($(this).find('.fa-volume-up').hasClass('hidden')) {
+            $(this).find('.fa-volume-up').removeClass('hidden');
+            $(this).find('.fa-volume-off').addClass('hidden');
+        } 
+        else {
+            $(this).find('.fa-volume-up').addClass('hidden');
+            $(this).find('.fa-volume-off').removeClass('hidden');  
+        } 
+        
+    });
+
 
     // Toggle project "reveeal" sections
     // Important -> Naming schema:

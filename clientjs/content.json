@@ -2976,6 +2976,7 @@
                         "class" : "endeavor-item-top-125 endeavor-width-100vw endeavor-pos-rel",
                         "loop": "",
                         "muted": "",
+                        "audio_toggle" : "true",
                         "autoplay": "true",
                         "src" : {
                             "webm" : "images/projects/convolve/videos/convolve.webm",
@@ -4669,6 +4670,7 @@
                         "class" : "endeavor-item-125 endeavor-width-100vw endeavor-pos-rel",
                         "loop": "",
                         "muted": "",
+                        "audio_toggle" : "true",
                         "autoplay": "true",
                         "src" : {
                             "webm" : "images/projects/muwu/videos/muwu_music_of_changes.webm#t=120",
@@ -4706,6 +4708,7 @@
                         "class" : "endeavor-item-125 endeavor-width-100vw endeavor-pos-rel",
                         "loop": "",
                         "muted": "",
+                        "audio_toggle" : "true",
                         "autoplay": "true",
                         "src" : {
                             "webm" : "images/projects/muwu/videos/muwu_dreams.webm#t=120",
@@ -5873,6 +5876,7 @@
                         "class" : "endeavor-item-bottom-125 endeavor-width-100vw endeavor-pos-rel",
                         "loop": "",
                         "muted": "",
+                        "audio_toggle" : "true",
                         "autoplay": "true",
                         "src" : {
                             "webm" : "images/projects/jenga-unchained/videos/jenga.webm",

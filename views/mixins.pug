@@ -667,12 +667,17 @@ mixin endeavorVideoFS(data)
     - var poster = data.src.poster
     - var loop = data.loop ? data.loop : true
     - var muted = data.muted ? data.muted : true
+    - var audio_toggle = data.audio_toggle ? "" : "hidden"
     - var autoplay = data.autoplay ? data.autoplay : false
     - var _class = data.class ? data.class : "endeavor-item fsw"
-    video(class=_class loop=loop muted=muted autoplay=autoplay)
-        source(src=webm type="video/webm; codecs=vp9,vorbis")
-        source(src=mp4 type="video/mp4")
-        |Your browser is old AF
+    div(class=_class)
+        .video-toggle(class=audio_toggle)
+            i(class="fa fa-volume-up fa-2x toggle-center-within")
+            i(class="hidden fa fa-volume-off fa-2x toggle-center-within endeavor-item-left-neg-5")
+        video.fsw(loop=loop muted=muted autoplay=autoplay)
+            source(src=webm type="video/webm; codecs=vp9,vorbis")
+            source(src=mp4 type="video/mp4")
+            |Your browser is old AF
 
 
 //-  Endeavor Project | Full-Width Adaptive Issuu Digital Publication
