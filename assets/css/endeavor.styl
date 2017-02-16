@@ -2381,11 +2381,14 @@ p.center-caption
 
 /* ----------- Non-Retina Screens ----------- */
 @media screen and (max-width: 500px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)
+	.hero
+		margin-top -25px
+		
 	.endeavor
 		min-width 104vw
 		
 	.endeavor-contents
-		margin-top 0
+		margin-top 70px
 
 	.endeavor-width-102vw
 		left calc((104vw - 85vw) / -2) // 102vw width | 85~ Contents relative width
@@ -2418,8 +2421,11 @@ p.center-caption
 		left -1%
 		padding 0
 		padding 10%
-		top -35%
+		top -15%
 		box-shadow none
+		
+		height 150px
+		min-height 100px
 		
 	.endeavor-item-all-15-mobile
 		margin 15px
@@ -2493,11 +2499,14 @@ p.center-caption
 
 /* ----------- Retina Screens ----------- */
 @media screen and (max-width: 500px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
+	.hero
+		margin-top -25px
+		
 	.endeavor
 		min-width 104vw
 		
 	.endeavor-contents
-		margin-top 0
+		margin-top 70px
 		
 	.endeavor-width-102vw
 		left calc((104vw - 85vw) / -2) // 102vw width | 85~ Contents relative width
@@ -2530,8 +2539,11 @@ p.center-caption
 		left -1%
 		padding 0
 		padding 10%
-		top -35%
+		top -15%
 		box-shadow none
+		
+		height 150px
+		min-height 150px
 		
 	.endeavor-item-all-15-mobile
 		margin 15px
