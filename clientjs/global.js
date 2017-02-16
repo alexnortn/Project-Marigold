@@ -354,8 +354,6 @@ $(document).ready(function() {
 
                 // Correct for viewport
                 _state.sectionHeight -= window.innerHeight;
-
-                // console.log('section height calculated');
             }
 
             scrollHandler = function() {
@@ -364,10 +362,8 @@ $(document).ready(function() {
                     $('.arrow-center').addClass('visible');
                     $('#prev').addClass('arrow-left-alt');
 
-                    // console.log($(new_id).scrollTop())
                     let value = $(new_id).scrollTop() / _state.sectionHeight;
                         value = (Math.round(value * 100) / 100) * 100;
-                        // console.log(value + "%");
 
                 }
                 else {
@@ -419,7 +415,7 @@ $(document).ready(function() {
                 x_pos = evt.pointers[0].screenX;
                 y_pos = evt.pointers[0].screenY;
 
-                $currentTarget = $(evt.srcEvent.currentTarget);
+                $currentTarget = $(evt.target.closest('.item'));
 
             }
             else if (evt instanceof jQuery) { // For URL Routing
@@ -445,17 +441,19 @@ $(document).ready(function() {
                 container = $('.project-container');
             }
 
+            if (!container) debugger;
+
             // Setup Slick
             let bottomSlick = container.find('.endeavor-image-slider');
-                if (!bottomSlick.hasClass('slick-initialized')) { 
-                    addSlick(bottomSlick, true);
-                    bottomSlick.slick('slickNext')
-                               .slick('slickNext')
-                               .slick('slickNext')
-                               .slick('slickGoTo', 0, false)
-                               .slick('slickGoTo', 1, false)
-                               .slick('slickGoTo', 0, false);
-                };
+            if (!bottomSlick.hasClass('slick-initialized')) { 
+                addSlick(bottomSlick, true);
+                bottomSlick.slick('slickNext')
+                           .slick('slickNext')
+                           .slick('slickNext')
+                           .slick('slickGoTo', 0, false)
+                           .slick('slickGoTo', 1, false)
+                           .slick('slickGoTo', 0, false);
+            }
 
             currents.forEach(function(project_item, index) {
                 if (project_item.id === project_id) {
@@ -497,7 +495,6 @@ $(document).ready(function() {
                                 $.Velocity.animate( $transitionSVG, "fadeOut", { duration: 500 } )
                                     .then(function(elements) {
                                         $('.arrow-container').removeClass('transparent');
-                                        console.log("pop");
                                         
                                         _$projectCurrentContents = $(project_id).find('.contents');
                                         setupMedia(_$projectCurrentContents); // Resize Video players
@@ -531,18 +528,22 @@ $(document).ready(function() {
         // Project Event Handlers
 
         $('.item').on('click', function(evt) {
+            evt.stopPropagation();
             workItemInteraction($(this).attr('data-project'), evt); 
             _endeavorRouter.setURL($(this).attr('data-project')); // Internal URL Routing
         });
 
         $('.item').each(function(){
             let $this = $(this);
+
             let hammertime = new Hammer(this);
-            hammertime.on("tap", function(evt) {
-                workItemInteraction($(evt.srcEvent.currentTarget).attr('data-project'), evt);
-                _endeavorRouter.setURL($(evt.srcEvent.currentTarget).attr('data-project')); // Internal URL Routing
-                return false;
-            });
+                hammertime.options.domEvents = true; // Support for event delegation
+                hammertime.on("tap", function(evt) {
+                    evt.preventDefault();
+                    workItemInteraction($(evt.target.closest('.item')).attr('data-project'), evt);
+                    _endeavorRouter.setURL($(evt.target.closest('.item')).attr('data-project')); // Internal URL Routing
+                    return false;
+                });
         });
  
         // Scroll to previous project
@@ -842,7 +843,6 @@ _endeavorRouter = function() {
             setTimeout(function() { // Currently a hack for avoinding deferred Velocity Animation
                 $('.arrow-container-main').removeClass('transparent');
                 $('.arrow-container').addClass('transparent');
-                console.log('popout');
             }, 2000);
 
             _sectionCurrent = $(_sections).index($('#works')); // Set #works as current
