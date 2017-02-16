@@ -776,9 +776,9 @@ $(document).ready(function() {
     // --------------------------------------
     // Mobile
 
-    // Hide Case study option
+    // Hide Web-Lab
     if (_mobile) {
-        // $('.case-study').addClass('hidden');
+        $('#web-lab').addClass('hidden');
     }
 
     /*
