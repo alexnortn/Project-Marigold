@@ -800,7 +800,7 @@ $(document).ready(function() {
 
     $('#select-more').click(function() {
         $(this).velocity("fadeOut", { duration: 500 });
-        $('#select-work li:nth-child(n+8)').velocity("fadeIn", { duration: 500 });
+        $('#select-work li:nth-child(n+7)').velocity("fadeIn", { duration: 500 });
     });
 
     // Close Project
