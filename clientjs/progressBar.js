@@ -3,10 +3,10 @@
 
 "use strict";
 
-let $ = require('jquery')
-	hammertime  = require('hammerjs'),
-	velocity    = require('velocity-animate'),
-    velocity_ui = require('velocity-ui-pack');
+// let $ = require('jquery')
+// 	hammertime  = require('hammerjs'),
+// 	velocity    = require('velocity-animate'),
+//     velocity_ui = require('velocity-ui-pack');
 
 
 class ProgressBar {
@@ -62,7 +62,7 @@ class ProgressBar {
     	let _this = this;
         
     	// Create Self
-    	create();
+    	this.create(this._components);
 
     };
 
@@ -77,59 +77,61 @@ class ProgressBar {
     }
 
     // Create progress bar, append to container
-    create() {
-		for (var prop in components) {
-			if (components.hasOwnProperty(prop)) {
-				console.log('obj.' + prop + ' = ' + components[prop]); // create dom elements, add them to this object
-				this.prop = document.createElement(components[prop].tagName);
-				this.prop.classList.add(components[prop].classList);
-			} 
-		}
+    create(components) {
+    	let _this = this;
+
+		// for (var prop in components) {
+		// 	if (components.hasOwnProperty(prop)) {
+		// 		console.log('obj.' + prop + ' = ' + components[prop]); // create dom elements, add them to this object
+		// 		this.prop = document.createElement(components[prop].tagName);
+		// 		this.prop.classList.add(components[prop].classList);
+		// 	} 
+		// }
 
 		// Create DOM elements
-		_this._capsule = document.createElement(_this.components.capsule.tagName);	
-		_this._capsule.classList.add(_this.components.capsule.classList);
+		_this._capsule = document.createElement(components._capsule.tagName);	
+		_this._capsule.classList.add(components._capsule.classList);
 
-		_this._progress = document.createElement(_this.components.progress.tagName);	
-		_this._progress.classList.add(_this.components.progress.classList);
+		_this._progress = document.createElement(components._progress.tagName);	
+		_this._progress.classList.add(components._progress.classList);
 
-		_this._progress_bg = document.createElement(_this.components.progress_bg.tagName);	
-		_this._progress_bg.classList.add(_this.components.progress_bg.classList);
+		_this._progress_bg = document.createElement(components._progress_bg.tagName);	
+		_this._progress_bg.classList.add(components._progress_bg.classList);
 
 		
 		// Add elements to DOM
-		_this.container.appendChild(_this._capsule);
+		_this._container.appendChild(_this._capsule);
 		_this._capsule.appendChild(_this._progress);
 		_this._capsule.appendChild(_this._progress_bg);
 
 		// If endeavor has sections..
 		_this._sections.forEach(function(section) {
-			_this._section = document.createElement(_this.components.section.tagName);	
-			_this._section.classList.add(_this.components.section.classList);
+			_this._section = document.createElement(components._section.tagName);	
+			_this._section.classList.add(components._section.classList);
 
-			_this._section_name = document.createElement(_this.components.section_name.tagName);	
-			_this._section_name.classList.add(_this.components.section_name.classList);
+			_this._section_name = document.createElement(components._section_name.tagName);	
+			_this._section_name.classList.add(components._section_name.classList);
 
-			_this._section_node = document.createElement(_this.components.section_node.tagName);	
-			_this._section_node.classList.add(_this.components.section_node.classList);
+			_this._section_node = document.createElement(components._section_node.tagName);	
+			_this._section_node.classList.add(components._section_node.classList);
 
 		});
 
-		if (!_this.sections.length) {
+		if (!_this._sections.length) {
 			return;
 		}
 
-		_this.sections.map(function(s) {
-			let section = document.createElement(_this.components.section.tagName);	
-				section.classList.add(_this.components.section.classList);
+		_this._sections.map(function(s) {
+			let section = document.createElement(components._section.tagName);	
+				section.classList.add(components._section.classList);
 				section.dataset.section = s;
 
-			let section_name = document.createElement(_this.components.section_name.tagName);	
-				section_name.classList.add(_this.components.section_name.classList);
+			let section_name = document.createElement(components._section_name.tagName);	
+				section_name.classList.add(components._section_name.classList);
 				section_name.innerHTML = s;
 
-			let section_node = document.createElement(_this.components.section_node.tagName);	
-				section_node.classList.add(_this.components.section_node.classList);
+			let section_node = document.createElement(components._section_node.tagName);	
+				section_node.classList.add(components._section_node.classList);
 				section_node.addEventListener('click', this._scrollTo, false);
 
 			// Add elements to DOM

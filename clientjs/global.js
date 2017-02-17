@@ -72,6 +72,9 @@ $(document).ready(function() {
         _mobile = true;
     }
 
+    let pb = new ProgressBar();
+    debugger;
+
     // Set Greeting
     setGreeting();
 
