@@ -165,8 +165,8 @@ $StickyOffsetMeta = 20vh
 	border 1px solid $GRAY
 	
 
-.endeavor-border-dark
-	border 1px solid $GRAY50
+.endeavor-border-dashed
+	border-style dashed
 
 
 .endeavor-page 
@@ -705,6 +705,10 @@ p.center-caption
 	z-index 1
 	
 
+.endeavor-push-2
+	z-index 2
+	
+
 /* -------------------------------------- */
 /* Image Grid */
 	
@@ -1199,9 +1203,17 @@ p.center-caption
 	flex-wrap none
 	
 
+.endeavor-flex-nowrap
+	flex-wrap none
+	
+
 .endeavor-flex-center
 	justify-content center
 	align-items center
+	
+
+.endeavor-flex-justify-center
+	justify-content center
 	
 
 .endeavor-flex-center-main
@@ -1492,6 +1504,11 @@ p.center-caption
 
 .endeavor-square-35px
 	width 35px
+	height @width
+	
+
+.endeavor-square-5px
+	width 5px
 	height @width
 	
 	

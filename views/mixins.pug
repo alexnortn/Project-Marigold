@@ -18,13 +18,19 @@
 
 //- How to populate this with data? -> Access wrt project open
 mixin progressBar()
+    - var sections = [1,2,3,4,5]
     //- - var sections = data.sections ? data.sections : ""
     //- - var name = data.name ? data.name : "Endeavor"
     //- - var type = data.type ? data.type : "Project"
     //- - var _class = data.class ? data.class : "Project"
-    #progress-container.endeavor-flex.endeavor-width-75-prcnt.endeavor-center.endeavor-flex-center.endeavor-height-100-prcnt(class=_class)
-        .progress.endeavor-border-dark.endeavor-left-0.endeavor-width-35-prcnt.endeavor-pos-abs.endeavor-top-50-prcnt.endeavor-push-1.header-hover-grow
-        .progress_bg.endeavor-border.endeavor-left-0.fsw.endeavor-pos-abs.endeavor-top-50-prcnt.header-hover-grow
+    #progress-container.endeavor-flex.endeavor-flex-nowrap.endeavor-flex-between.endeavor-width-75-prcnt.endeavor-center.endeavor-flex-center.endeavor-height-100-prcnt(class=_class)
+        .progress.endeavor-border.medium-border-1.endeavor-left-0.endeavor-width-35-prcnt.endeavor-pos-abs.endeavor-top-50-prcnt.endeavor-push-1.header-hover-grow
+        .progress_bg.endeavor-border.medium-border-1.endeavor-border-dashed.endeavor-left-0.fsw.endeavor-pos-abs.endeavor-top-50-prcnt.header-hover-grow
+        each section, i in sections
+            .section-pagination.endeavor-flex-column.endeavor-flex-justify-center.endeavor-push-2
+                h4.endeavor-text-center.medium-text-1
+                    | Hello 
+                .endeavor-square-5px.endeavor-circle.endeavor-flex-self-center.medium-bg-1
 
 
 //-  Case-Study Preview
