@@ -73,7 +73,6 @@ $(document).ready(function() {
     }
 
     let pb = new ProgressBar();
-    debugger;
 
     // Set Greeting
     setGreeting();

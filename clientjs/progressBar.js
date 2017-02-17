@@ -80,6 +80,7 @@ class ProgressBar {
     create(components) {
     	let _this = this;
 
+    	// Iterate through Obj
 		// for (var prop in components) {
 		// 	if (components.hasOwnProperty(prop)) {
 		// 		console.log('obj.' + prop + ' = ' + components[prop]); // create dom elements, add them to this object
@@ -90,13 +91,19 @@ class ProgressBar {
 
 		// Create DOM elements
 		_this._capsule = document.createElement(components._capsule.tagName);	
-		_this._capsule.classList.add(components._capsule.classList);
+			for (let i in components._capsule.classList) {
+				_this._capsule.classList.add(components._capsule.classList[i]);
+			}
 
 		_this._progress = document.createElement(components._progress.tagName);	
-		_this._progress.classList.add(components._progress.classList);
+			for (let i in components._progress.classList) {
+				_this._progress.classList.add(components._progress.classList[i]);
+			}
 
-		_this._progress_bg = document.createElement(components._progress_bg.tagName);	
-		_this._progress_bg.classList.add(components._progress_bg.classList);
+		_this._progress_bg = document.createElement(components._progress_bg.tagName);
+			for (let i in components._progress_bg.classList) {
+				_this._progress_bg.classList.add(components._progress_bg.classList[i]);
+			}
 
 		
 		// Add elements to DOM
@@ -107,17 +114,24 @@ class ProgressBar {
 		// If endeavor has sections..
 		_this._sections.forEach(function(section) {
 			_this._section = document.createElement(components._section.tagName);	
-			_this._section.classList.add(components._section.classList);
+				for (let i in components._section.classList) {
+					_this._section.classList.add(components._section.classList[i]);
+				}
 
 			_this._section_name = document.createElement(components._section_name.tagName);	
-			_this._section_name.classList.add(components._section_name.classList);
+				for (let i in components._section_name.classList) {
+					_this._section_name.classList.add(components._section_name.classList[i]);
+				}
 
 			_this._section_node = document.createElement(components._section_node.tagName);	
-			_this._section_node.classList.add(components._section_node.classList);
+				for (let i in components._section_node.classList) {
+					_this._section_node.classList.add(components._section_node.classList[i]);
+				}
 
 		});
 
 		if (!_this._sections.length) {
+			console.log('no sections')
 			return;
 		}
 
