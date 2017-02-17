@@ -15,6 +15,10 @@ Project Progress Bar + Interaction
 	display flex
 	align-items center
 	
+	visibility visible
+	display none
+
+	
 
 .section-pagination
 	width 100px
@@ -34,11 +38,11 @@ Project Progress Bar + Interaction
 /* ----------- Non-Retina Screens ----------- */
 @media screen and (max-width: 768px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)
 	#progress-container
-		display hidden	
+		visibility hidden	
 
 
 
 /* ----------- Retina Screens ----------- */
 @media screen and (max-width: 768px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
 	#progress-container
-		display hidden
+		visibility hidden
