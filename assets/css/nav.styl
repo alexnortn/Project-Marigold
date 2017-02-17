@@ -25,16 +25,16 @@ Navigation Elements
 	margin-left auto
 	margin-right auto
 	margin-bottom 25px
-	border 1px solid rgba(0,0,0,0.25)
+	border 1px solid rgba(0,0,0,0.35)
 	transition all ease-in-out 100ms
 
 
 .pagination-active 
-	background-color $BLACK_BG3
+	background-color $GRAY50
 
 
 .paginationhover 
-	background-color $BLACK_BG3
+	background-color $GRAY50
 	border 1px solid rgba(0,0,0,0)
 	cursor pointer
 
@@ -42,7 +42,7 @@ Navigation Elements
 .paginationactive 
 	transformscale(1.25,1.25)
 	background-color $GRAY
-	border 1px solid $BLACK_BG3	
+	border 1px solid $GRAY50	
 
 
 #pagination 
@@ -146,6 +146,10 @@ label[for="nav-trigger"]
 
 label[for="nav-trigger"]:hover
 	transform scale(1.1,1.1)
+	
+
+label[for="nav-trigger"]:hover hr
+	background-color $GRAY50
 
 
 label[for="nav-trigger"] hr 
@@ -154,8 +158,8 @@ label[for="nav-trigger"] hr
 	border none
 	margin-bottom 0
 	opacity 1
-	color $BLACK
-	background-color $BLACK
+	color $GRAY75
+	background-color $GRAY65
 	margin-top 5px
 	
 	transition all 250ms ease-in-out
@@ -179,12 +183,12 @@ label[for="nav-trigger"] hr:nth-child(3)
 
 .nav-trigger:checked + label hr:nth-child(2) 
 	transform rotate(45deg)
-	background-color $BLACK
+	background-color $GRAY75
 
 
 .nav-trigger:checked + label hr:nth-child(3) 
 	transform rotate(-45deg)
-	background-color $BLACK
+	background-color $GRAY75
 
 
 .nav-trigger:checked ~ .nav 
@@ -264,17 +268,24 @@ nav .social a // Open social links in new tabs
 	margin-left 35px
 	user-select none
 	display inline-block
+	
+	transition all ease-in-out 100ms
 
 
 .logo:hover 
 	cursor pointer
+	
+.logo:hover img
+	opacity 0.5
 
 
 .logo img 
 	width 45px
 	position relative
 	display block
-	opacity 0.8
+	opacity 0.35
+	
+	transition all ease-in-out 100ms
 
 
 .logo p 
@@ -320,7 +331,7 @@ nav .social a // Open social links in new tabs
 	width 200px
 	
 	opacity 0
-	color $BLACK
+	color $GRAY50
 	
 	content attr(data-content)
 	
@@ -331,7 +342,7 @@ nav .social a // Open social links in new tabs
 	opacity 1
 	
 .pagination:hover
-	background-color $BLACK
+	background-color $GRAY50
 	cursor pointer
 	
 	
@@ -369,7 +380,7 @@ nav .social a // Open social links in new tabs
 	position absolute
 	text-align center
 	border-radius 100%
-	border solid 1px rgba(0,0,0,0)
+	border solid 1px $GRAY65
 	padding 25px
 	height 25px
 	width 25px
@@ -379,13 +390,14 @@ nav .social a // Open social links in new tabs
 
 .scroll-arrow:hover
 	border solid 1px rgba(0,0,0,1)
+	opacity 0.25
 	animation-play-state paused
 	cursor pointer
 
 
 .scroll-arrow:active
 	border solid 1px rgba(0,0,0,1)
-	opacity 0.25
+	opacity 0.35
 	animation-play-state paused
 	
 
