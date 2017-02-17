@@ -8,3 +8,36 @@ Project Progress Bar + Interaction
 @require 'animations.styl'
 @require 'color.styl'
 @require 'const.styl'
+
+
+
+#progress-container
+	display flex
+	align-items center
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------------*/
+/* Breakpoint 2 | Tiny Screen || iPad */
+
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen and (max-width: 768px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)
+	#progress-container
+		display hidden	
+
+
+
+/* ----------- Retina Screens ----------- */
+@media screen and (max-width: 768px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
+	#progress-container
+		display hidden

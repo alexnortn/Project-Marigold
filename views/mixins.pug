@@ -4,7 +4,27 @@
     a^N 
     http://alexnortn.com
 
-    Pug Mixins for Modular Implementation
+    Pug Mixins for Modular Component Implementation
+
+
+
+//-  Progress Bar Component
+    Requires: <data> 
+        + data.endeavor_name <string>
+        + data.endeavor_type <string>
+        + data.sections <array>
+        + data.sections[·].name -> Map to target
+        + data.class -> Optional class modifier
+
+//- How to populate this with data? -> Access wrt project open
+mixin progressBar()
+    //- - var sections = data.sections ? data.sections : ""
+    //- - var name = data.name ? data.name : "Endeavor"
+    //- - var type = data.type ? data.type : "Project"
+    //- - var _class = data.class ? data.class : "Project"
+    #progress-container.endeavor-flex.endeavor-width-75-prcnt.endeavor-center.endeavor-flex-center.endeavor-height-100-prcnt(class=_class)
+        .progress.endeavor-border-dark.endeavor-left-0.endeavor-width-35-prcnt.endeavor-pos-abs.endeavor-top-50-prcnt.endeavor-push-1.header-hover-grow
+        .progress_bg.endeavor-border.endeavor-left-0.fsw.endeavor-pos-abs.endeavor-top-50-prcnt.header-hover-grow
 
 
 //-  Case-Study Preview
