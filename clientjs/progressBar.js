@@ -68,6 +68,8 @@ class ProgressBar {
 
     	let _this = this;
 
+        debugger;
+
         // Create Self
         let promise = new Promise(
             function(resolve, reject) {;
@@ -155,6 +157,7 @@ class ProgressBar {
 
             let section_node_hit = document.createElement(components.section_node_hit.tagName); 
                 section_node_hit.addEventListener('click', this._scrollTo, false);
+                section_node_hit.dataset.section = value.dataset.process;
                 for (let i in components.section_node_hit.classList) {
                     section_node_hit.classList.add(components.section_node_hit.classList[i]);
                 }
@@ -194,7 +197,7 @@ class ProgressBar {
     // Call before rendering to DOM
     fadeIn() {
         let _this = this;
-        $("#" + _this.capsule.id).velocity("fadeIn", { duration: 500 });
+        $("#" + _this.capsule.id).velocity("fadeIn", { duration: 500, display: "flex" });
 
         console.log("Welcome to the Interzone");
     }
