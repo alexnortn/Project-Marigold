@@ -423,8 +423,6 @@ $(document).ready(function() {
 
             let $currentTarget;
 
-            console.log('work item interaction');
-
             if (evt.type === "click") {
                 x_pos = evt.clientX;
                 y_pos = evt.clientY;
