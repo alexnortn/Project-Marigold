@@ -394,11 +394,12 @@ $(document).ready(function() {
                     $('#prev').addClass('arrow-left-alt');
 
                     let value = $(new_id).scrollTop() / _state.sectionHeight;
-                        value = (Math.round(value * 100) / 100) * 100;
 
-                    // Update Progress Bar <t> here
-                    // Clamp @ (0, 1)
-                    console.log(value);
+                    if (_state.progressBar.exist) {
+                        _state.progressBar.update(value);
+                    }
+
+                    // console.log((Math.round(value * 100) / 100) * 100);
 
                 }
                 else {
@@ -410,7 +411,6 @@ $(document).ready(function() {
 
             resizeHandler = function() {
                 calcSectionHeight();
-                // Update Progress Bar here -> Actually you don't need to!   
             }
 
             $(new_id).scroll(scrollHandler);

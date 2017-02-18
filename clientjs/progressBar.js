@@ -6,7 +6,8 @@
 let $ = require('jquery'),
 	hammertime  = require('hammerjs'),
 	velocity    = require('velocity-animate'),
-    velocity_ui = require('velocity-ui-pack');
+    velocity_ui = require('velocity-ui-pack'),
+    animation   = require('./animation.js');
 
 
 class ProgressBar {
@@ -23,7 +24,7 @@ class ProgressBar {
     		},
     		"progress" : {
     			classList : [
-    				"progress","medium-bg-1","endeavor-left-0","endeavor-width-35-prcnt","endeavor-pos-abs","endeavor-push-1","header-hover-grow"
+    				"progress","medium-bg-1","endeavor-left-0","endeavor-pos-abs","endeavor-push-1","header-hover-grow"
     			],
     			tagName : "div"
     		},
@@ -67,8 +68,6 @@ class ProgressBar {
         this.exist = true;
 
     	let _this = this;
-
-        debugger;
 
         // Create Self
         let promise = new Promise(
@@ -133,7 +132,6 @@ class ProgressBar {
 
 
         if (!_this.sections.length) {
-            console.log('no sections')
             return;
         }
 
@@ -156,7 +154,9 @@ class ProgressBar {
                 }
 
             let section_node_hit = document.createElement(components.section_node_hit.tagName); 
-                section_node_hit.addEventListener('click', this._scrollTo, false);
+                section_node_hit.addEventListener('click', function(){
+                    _this.scrollTo(value.dataset.process);
+                }, false);
                 section_node_hit.dataset.section = value.dataset.process;
                 for (let i in components.section_node_hit.classList) {
                     section_node_hit.classList.add(components.section_node_hit.classList[i]);
@@ -174,32 +174,35 @@ class ProgressBar {
 
     }
 
-	scrollTo() {
-		// Use Velocity to scroll <current endeavor> to <evt.target -> data.section>
-        console.log('scrollTo');
+	scrollTo(target) {
+        let _this = this;
+        debugger;
+        let scrollTarget =  $(_this.scrollContainer).find("[data-process='" + target + "']");
+        $(scrollTarget).velocity("scroll", { duration: 750, container: $(_this.scrollContainer), easing: 'ease-in-out' }); // Scroll to next section
+        console.log('scrollTo');        
 	}
 
 
     // Update progress bar position wrt scroll state
     // Call this from <ScrollHandler>
     update(t) {
-        console.log('updating t');
+        let _this = this;
+        _this._t = Math.min(Math.max(t, 0), 1); // Clamp _t [0, 1]
+        _this._t *= 100;
+
+        _this.progress.style.width = _this._t + "%"
     }
 
     // Call before Destroy
     fadeOut() {
         let _this = this;
         $("#" + _this.capsule.id).velocity("fadeOut", { duration: 500 });
-
-        console.log("You feel much lighter");
     } 
 
     // Call before rendering to DOM
     fadeIn() {
         let _this = this;
         $("#" + _this.capsule.id).velocity("fadeIn", { duration: 500, display: "flex" });
-
-        console.log("Welcome to the Interzone");
     }
 
     // Remove this instance of class from DOM
@@ -211,8 +214,6 @@ class ProgressBar {
                 $(el).remove();
                 // Destroy self
                 _this = null;
-
-                console.log("I am disappeared");
             })
             .catch(function(reason) { 
                 console.log("Rejected because " + reason);
