@@ -279,6 +279,12 @@ $(document).ready(function() {
                 return;
             }
 
+            // Remove ProgressBar
+            if (_state.progressBar) {
+                _state.progressBar.destroy();
+                _state.progressBar = null;
+            }
+
             $( this ).addClass('passive');
             $('#content-wrapper').removeClass('visibility-hidden');
 
@@ -359,9 +365,11 @@ $(document).ready(function() {
                 window.clearTimeout(timer_height);
             }
 
-            _state.progressBar = new ProgressBar ({
-                    scrollContainer: new_id,
-            });
+            if (!_state.progressBar) {
+                _state.progressBar = new ProgressBar ({
+                        scrollContainer: new_id,
+                });
+            }
 
             timer_height = window.setTimeout(function() {
                 calcSectionHeight();

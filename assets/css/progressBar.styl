@@ -17,17 +17,65 @@ Project Progress Bar + Interaction
 	
 	visibility visible
 	display none
-
 	
+
+.progress
+	height 3px 
+	top 49%
+	
+
+.progress_bg
+	height 1px 
+	top 50%
+		
 
 .section-pagination
 	width 100px
 	
 
-.section-pagination h4
+.section-pagination h5
 	position absolute
 	top 20px
 	width 100px
+	opacity 0
+	
+
+.section-pagination .node_hit
+	width 20px
+	height @width
+	border-radius 100%
+	
+
+.section-pagination .node
+	width 5px
+	height @width
+	border-radius 100%
+	
+
+.section-pagination .node_visited
+	width 7.5px
+	height @width
+	border-radius 100%
+	
+
+.section-pagination .node_hit:hover
+	cursor pointer
+	
+
+.section-pagination .node_hit:hover .node
+	width 10px
+	height @width
+	
+
+.section-pagination .node_hit:hover h5
+	opacity 1
+	
+
+.section-pagination .node:active
+	width 5px
+	height @width
+	border-radius 100%
+	
 
 
 

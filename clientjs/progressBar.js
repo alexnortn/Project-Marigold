@@ -23,13 +23,13 @@ class ProgressBar {
     		},
     		"progress" : {
     			classList : [
-    				"progress","endeavor-border-medium-1","medium-border-1","endeavor-left-0","endeavor-width-35-prcnt","endeavor-pos-abs","endeavor-top-50-prcnt","endeavor-push-1","header-hover-grow"
+    				"progress","medium-bg-1","endeavor-left-0","endeavor-width-35-prcnt","endeavor-pos-abs","endeavor-push-1","header-hover-grow"
     			],
     			tagName : "div"
     		},
     		"progress_bg" : { 
     			classList : [
-    				"progress_bg","endeavor-border-medium-1","medium-border-1","endeavor-border-dashed","endeavor-left-0","fsw","endeavor-pos-abs","endeavor-top-50-prcnt","header-hover-grow"
+    				"progress_bg","medium-bg-1","endeavor-left-0","fsw","endeavor-pos-abs","header-hover-grow"
     			],
     			tagName : "div"
     		},
@@ -41,26 +41,30 @@ class ProgressBar {
     		},
     		"section_name" : {
     			classList : [
-                    "endeavor-text-center", "medium-text-1"
+                    "endeavor-text-center","medium-text-1","endeavor-transition-ease-250"
                 ],
+    			tagName : "h5"
+    		},
+    		"section_node_hit" : {
+    			classList : [
+    				"endeavor-flex","endeavor-flex-center","node_hit","endeavor-flex-self-center"
+    			],
     			tagName : "div"
     		},
-    		"section_node" : {
-    			classList : [
-    				"endeavor-square-5px","endeavor-circle","endeavor-flex-self-center","medium-bg-1"
-    			],
-    			tagName : "h5"
-    		}
-    	}
-
-    	this.section = {
-
+            "section_node" : {
+                classList : [
+                    "node","endeavor-flex-self-center","medium-bg-1","endeavor-transition-ease-250"
+                ],
+                tagName : "div"
+            }
     	}
 
     	this.container = args.container                || document.getElementById("header");
     	this.scrollContainer = args.scrollContainer    || document.window;
     	this.sections = args.sections                  || $(this.scrollContainer).find('.endeavor-process');
     	this._t = args.t                               || 0;
+
+        this.exist = true;
 
     	let _this = this;
 
@@ -104,7 +108,7 @@ class ProgressBar {
 
 		// Create DOM elements
 		_this.capsule = document.createElement(components.capsule.tagName);	
-            _this.capsule.id = "#" + components.capsule.id;
+            _this.capsule.id = components.capsule.id;
 			for (let i in components.capsule.classList) {
 				_this.capsule.classList.add(components.capsule.classList[i]);
 			}
@@ -132,21 +136,33 @@ class ProgressBar {
         }
 
 		_this.sections.map(function(i, value) {
-			let section = document.createElement(components.section.tagName);	
-				section.classList.add(components.section.classList);
-				section.dataset.section = value.dataset.process;
+			let section = document.createElement(components.section.tagName);
+                section.dataset.section = value.dataset.process;
+                for (let i in components.section.classList) {
+                    section.classList.add(components.section.classList[i]);
+                }
 
 			let section_name = document.createElement(components.section_name.tagName);	
-				section_name.classList.add(components.section_name.classList);
 				section_name.innerHTML = value.dataset.process;
+                for (let i in components.section_name.classList) {
+                    section_name.classList.add(components.section_name.classList[i]);
+                }
 
 			let section_node = document.createElement(components.section_node.tagName);	
-				section_node.classList.add(components.section_node.classList);
-				section_node.addEventListener('click', this._scrollTo, false);
+                for (let i in components.section_node.classList) {
+                    section_node.classList.add(components.section_node.classList[i]);
+                }
 
-			// Add elements to DOM
-			section.appendChild(section_name);
-			section.appendChild(section_node);
+            let section_node_hit = document.createElement(components.section_node_hit.tagName); 
+                section_node_hit.addEventListener('click', this._scrollTo, false);
+                for (let i in components.section_node_hit.classList) {
+                    section_node_hit.classList.add(components.section_node_hit.classList[i]);
+                }
+
+            // Add elements to DOM
+            section_node_hit.appendChild(section_name);
+            section_node_hit.appendChild(section_node)
+            section.appendChild(section_node_hit);
 
 			_this.capsule.appendChild(section);
 
@@ -170,7 +186,7 @@ class ProgressBar {
     // Call before Destroy
     fadeOut() {
         let _this = this;
-        $(_this.capsule.id).velocity("fadeOut", { duration: 500 });
+        $("#" + _this.capsule.id).velocity("fadeOut", { duration: 500 });
 
         console.log("You feel much lighter");
     } 
@@ -178,7 +194,7 @@ class ProgressBar {
     // Call before rendering to DOM
     fadeIn() {
         let _this = this;
-        $(_this.capsule.id).velocity("fadeIn", { duration: 500 });
+        $("#" + _this.capsule.id).velocity("fadeIn", { duration: 500 });
 
         console.log("Welcome to the Interzone");
     }
@@ -186,18 +202,18 @@ class ProgressBar {
     // Remove this instance of class from DOM
     destroy() {
         let _this = this;
-    	$.Velocity.animate( $(_this.capsule.id), "fadeOut", { duration: 500 })
+    	$.Velocity.animate( $("#" + _this.capsule.id), "fadeOut", { duration: 500 })
             .then(function(el) {
                 // Remove container from DOM
-                $(this).remove();
+                $(el).remove();
                 // Destroy self
                 _this = null;
+
+                console.log("I am disappeared");
             })
             .catch(function(reason) { 
                 console.log("Rejected because " + reason);
             });
-
-        console.log("I am disappeared");
     }
 }
 
