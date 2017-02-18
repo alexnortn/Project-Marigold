@@ -176,7 +176,7 @@ class ProgressBar {
 
 	scrollTo(target) {
         let _this = this;
-        debugger;
+        // Working but buggy, possibly because of some offset -> Look into
         let scrollTarget =  $(_this.scrollContainer).find("[data-process='" + target + "']");
         $(scrollTarget).velocity("scroll", { duration: 750, container: $(_this.scrollContainer), easing: 'ease-in-out' }); // Scroll to next section
         console.log('scrollTo');        
@@ -191,6 +191,8 @@ class ProgressBar {
         _this._t *= 100;
 
         _this.progress.style.width = _this._t + "%"
+
+        // Wll need additional logic to account for sections
     }
 
     // Call before Destroy
