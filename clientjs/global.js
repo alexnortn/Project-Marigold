@@ -359,6 +359,10 @@ $(document).ready(function() {
                 window.clearTimeout(timer_height);
             }
 
+            _state.progressBar = new ProgressBar ({
+                    scrollContainer: new_id,
+            });
+
             timer_height = window.setTimeout(function() {
                 calcSectionHeight();
             }, 1000);
@@ -384,6 +388,10 @@ $(document).ready(function() {
                     let value = $(new_id).scrollTop() / _state.sectionHeight;
                         value = (Math.round(value * 100) / 100) * 100;
 
+                    // Update Progress Bar <t> here
+                    // Clamp @ (0, 1)
+                    console.log(value);
+
                 }
                 else {
                     $('.arrow-container').removeClass('arrow-bottom');
@@ -393,7 +401,8 @@ $(document).ready(function() {
             }
 
             resizeHandler = function() {
-                calcSectionHeight();   
+                calcSectionHeight();
+                // Update Progress Bar here -> Actually you don't need to!   
             }
 
             $(new_id).scroll(scrollHandler);
@@ -459,8 +468,6 @@ $(document).ready(function() {
                 currents = projects;
                 container = $('.project-container');
             }
-
-            if (!container) debugger;
 
             // Setup Slick
             let bottomSlick = container.find('.endeavor-image-slider');

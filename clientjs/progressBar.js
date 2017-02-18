@@ -13,7 +13,7 @@ class ProgressBar {
     constructor(args) {
     	args = args || {};
 
-    	this._components = {
+    	this.components = {
     		"capsule" : {
                 "id" : "progress-capsule",
     			classList : [
@@ -40,7 +40,9 @@ class ProgressBar {
     			tagName : "div"
     		},
     		"section_name" : {
-    			classList : "endeavor-text-center medium-text-1",
+    			classList : [
+                    "endeavor-text-center", "medium-text-1"
+                ],
     			tagName : "div"
     		},
     		"section_node" : {
@@ -55,10 +57,10 @@ class ProgressBar {
 
     	}
 
-    	this.container = args.container || document.getElementById("header");
-    	this.scroller = args.scroller   || document.window;
-    	this.sections = args.sections   || [];
-    	this._t = args.t || 0;
+    	this.container = args.container                || document.getElementById("header");
+    	this.scrollContainer = args.scrollContainer    || document.window;
+    	this.sections = args.sections                  || $(this.scrollContainer).find('.endeavor-process');
+    	this._t = args.t                               || 0;
 
     	let _this = this;
 
@@ -102,7 +104,7 @@ class ProgressBar {
 
 		// Create DOM elements
 		_this.capsule = document.createElement(components.capsule.tagName);	
-            _this.capsule.id = components.capsule.id;
+            _this.capsule.id = "#" + components.capsule.id;
 			for (let i in components.capsule.classList) {
 				_this.capsule.classList.add(components.capsule.classList[i]);
 			}
@@ -123,38 +125,20 @@ class ProgressBar {
 		_this.capsule.appendChild(_this.progress);
 		_this.capsule.appendChild(_this.progress_bg);
 
-		// If endeavor has sections..
-		_this.sections.forEach(function(section) {
-			_this.section = document.createElement(components.section.tagName);	
-				for (let i in components.section.classList) {
-					_this.section.classList.add(components.section.classList[i]);
-				}
 
-			_this.section_name = document.createElement(components.section_name.tagName);	
-				for (let i in components.section_name.classList) {
-					_this.section_name.classList.add(components.section_name.classList[i]);
-				}
+        if (!_this.sections.length) {
+            console.log('no sections')
+            return;
+        }
 
-			_this.section_node = document.createElement(components.section_node.tagName);	
-				for (let i in components.section_node.classList) {
-					_this.section_node.classList.add(components.section_node.classList[i]);
-				}
-
-		});
-
-		if (!_this.sections.length) {
-			console.log('no sections')
-			return;
-		}
-
-		_this.sections.map(function(s) {
+		_this.sections.map(function(i, value) {
 			let section = document.createElement(components.section.tagName);	
 				section.classList.add(components.section.classList);
-				section.dataset.section = s;
+				section.dataset.section = value.dataset.process;
 
 			let section_name = document.createElement(components.section_name.tagName);	
 				section_name.classList.add(components.section_name.classList);
-				section_name.innerHTML = s;
+				section_name.innerHTML = value.dataset.process;
 
 			let section_node = document.createElement(components.section_node.tagName);	
 				section_node.classList.add(components.section_node.classList);
