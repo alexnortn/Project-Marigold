@@ -197,12 +197,12 @@ mixin endeavorGhostButtonURL(data)
 
 mixin endeavorDesignProcess(data)
     - var text = data.text ? data.text : "666"
-    - var process = data.process ? data.process : "666"
+    - var process = data.process ? data.process : ""
     - var number = data.number ? data.number : "666"
     - var _class = data.class ? data.class : "endeavor-item-125"
     - var textColor = data.textColor ? data.textColor : "#232323" // $BLACK
     - var textColor2 = data.textColor2 ? data.textColor2 : "#232323" // $BLACK
-    .endeavor-process.endeavor-pos-rel.endeavor-width-100vw.endeavor-height-750px.endeavor-height-500px-1000.endeavor-bg-graydient(class=`${_class}`)
+    .endeavor-process.endeavor-pos-rel.endeavor-width-100vw.endeavor-height-750px.endeavor-height-500px-1000.endeavor-bg-graydient(class=`${_class}`)&attributes({ 'data-process': process })
         .endeavor-width-norm.endeavor-flex.endeavor-flex-center.endeavor-center.endeavor-height-100-prcnt
             h3.endeavor-top-left.endeavor-padding-top-50(style=`color: ${textColor}`) Design Process
             h3.endeavor-top-right.endeavor-padding-top-50(style=`color: ${textColor}`) D5
@@ -711,7 +711,8 @@ mixin endeavorVideoFS(data)
     Description: Full-Width Embeded Digital Publication
 
 mixin endeavorPubFS(datum)
-    - var pub = datum.pub
+    //- - var pub = datum.pub ? datum.pub : ""
+    - var pub = ""
     iframe.endeavor-item.media-settings.media-frame.pub-settings(src=pub.src frameborder="0" allowfullscreen)
 
 

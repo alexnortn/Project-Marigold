@@ -3,10 +3,10 @@
 
 "use strict";
 
-// let $ = require('jquery')
-// 	hammertime  = require('hammerjs'),
-// 	velocity    = require('velocity-animate'),
-//     velocity_ui = require('velocity-ui-pack');
+let $ = require('jquery'),
+	hammertime  = require('hammerjs'),
+	velocity    = require('velocity-animate'),
+    velocity_ui = require('velocity-ui-pack');
 
 
 class ProgressBar {

@@ -58,7 +58,8 @@ let _itemInteraction,
     _endeavorRouter;
 
 let _state = {
-    "sectionHeight": Infinity
+    "sectionHeight": Infinity,
+    "progressBar" : ""
 };
 
 
@@ -71,8 +72,6 @@ $(document).ready(function() {
     if (isMobile.tablet || isMobile.phone) {
         _mobile = true;
     }
-
-    let pb = new ProgressBar();
 
     // Set Greeting
     setGreeting();
@@ -423,6 +422,8 @@ $(document).ready(function() {
                 y_pos;
 
             let $currentTarget;
+
+            console.log('work item interaction');
 
             if (evt.type === "click") {
                 x_pos = evt.clientX;
