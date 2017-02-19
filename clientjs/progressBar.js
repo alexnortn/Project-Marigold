@@ -23,12 +23,14 @@ class ProgressBar {
     			tagName : "div"
     		},
     		"progress" : {
+                "id" : "progress-bar",
     			classList : [
     				"progress","medium-bg-1","endeavor-left-0","endeavor-pos-abs","endeavor-push-1","header-hover-grow"
     			],
     			tagName : "div"
     		},
     		"progress_bg" : { 
+                "id" : "progress-bar-bg",
     			classList : [
     				"progress_bg","medium-bg-1","endeavor-left-0","fsw","endeavor-pos-abs","header-hover-grow"
     			],
@@ -115,12 +117,14 @@ class ProgressBar {
 			}
 
 		_this.progress = document.createElement(components.progress.tagName);	
-			for (let i in components.progress.classList) {
+			_this.progress.id = components.progress.id;
+            for (let i in components.progress.classList) {
 				_this.progress.classList.add(components.progress.classList[i]);
 			}
 
 		_this.progress_bg = document.createElement(components.progress_bg.tagName);
-			for (let i in components.progress_bg.classList) {
+			_this.progress_bg.id = components.progress_bg.id;
+            for (let i in components.progress_bg.classList) {
 				_this.progress_bg.classList.add(components.progress_bg.classList[i]);
 			}
 
@@ -193,6 +197,12 @@ class ProgressBar {
         _this.progress.style.width = _this._t + "%"
 
         // Wll need additional logic to account for sections
+    }
+
+    // Animate bar progress -> 0
+    reset() {
+        let _this = this;
+        $("#" + _this.progress.id).velocity({ width: 0 }, { duration: 500 }, "easeInSine");
     }
 
     // Call before Destroy

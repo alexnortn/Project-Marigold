@@ -369,6 +369,8 @@ $(document).ready(function() {
                 _state.progressBar = new ProgressBar ({
                         scrollContainer: new_id,
                 });
+            } else {
+                _state.progressBar.reset();
             }
 
             timer_height = window.setTimeout(function() {
