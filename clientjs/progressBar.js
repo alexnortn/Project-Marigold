@@ -182,7 +182,8 @@ class ProgressBar {
         let _this = this;
         // Working but buggy, possibly because of some offset -> Look into
         let scrollTarget =  $(_this.scrollContainer).find("[data-process='" + target + "']");
-        $(scrollTarget).velocity("scroll", { duration: 750, container: $(_this.scrollContainer), easing: 'ease-in-out' }); // Scroll to next section
+        $(_this.scrollContainer).scrollTop(0);
+        $(scrollTarget).velocity("scroll", { duration: 0, offset: 750, container: $(_this.scrollContainer), easing: 'ease-in-out' }); // Scroll to next section
         console.log('scrollTo');        
 	}
 
