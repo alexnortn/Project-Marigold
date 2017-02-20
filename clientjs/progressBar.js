@@ -68,14 +68,14 @@ class ProgressBar {
     	this._t = args.t                               || 0;
 
         this.exist = true;
-        this.section_offsets = [];
+        this.sectionState = [];
 
     	let _this = this;
 
         // Create Self
         let promise = new Promise(
             function(resolve, reject) {;
-                _this.create();
+                _this.create();                
                 _this.updateOffset();
                 resolve();
             }
@@ -110,6 +110,11 @@ class ProgressBar {
 		// 		this.prop.classList.add(components[prop].classList);
 		// 	} 
 		// }
+
+        // Set up sectionMap
+        $(_this.scrollContainer).find('.endeavor-process').each(function(i, value) {
+            _this.sectionState.push({"name": this.dataset.process, "offset": 0, "visited": false});
+        });
 
 		// Create DOM elements
 		_this.capsule = document.createElement(components.capsule.tagName);	
@@ -182,21 +187,18 @@ class ProgressBar {
 
     updateOffset() {
         let _this = this;         
-
-         let height = 0;
-         console.log('update');
-         _this.section_offsets.length = 0;
+        let height = 0;
 
         $(_this.scrollContainer).find('.endeavor-element').each(function(i, value) { 
             height += $(this).outerHeight(true); // Include margins
             if ($(this).hasClass('endeavor-process')) {
-                _this.section_offsets.push({ "name": this.dataset.process, "offset": height });
+                _this.sectionState.find(element => element.name === this.dataset.process).offset = height;
             }
         });
 
-        _this.section_offsets.forEach(function(section) {
-            section.offset = section.offset/height;
-        });
+        for (let item of _this.sectionState) {
+            item.offset /= height;
+        }
     }
 
 	scrollTo(target) {
@@ -212,13 +214,45 @@ class ProgressBar {
     update(t) {
         let _this = this;
         _this._t = Math.min(Math.max(t, 0), 1); // Clamp _t [0, 1]
+        _this.currentSection = "";
 
-        _this.section_offsets.forEach(function(section) {
-            if (section.offset < _this._t) {
-                section.visited = true;
-                // console.log(section.name, 'visited');
+        // for (let [key, value] of _this.sectionMap.entries()) {
+        //     if (value.offset < _this._t) {
+        //         value.visited = true;
+        //         _this.currentSection = key;
+        //         debugger;
+        //         console.log(key, 'visited');
+        //     }
+        //     else {
+        //         value.visited = false;
+        //         console.log(key, 'unvisited');
+        //     }
+        // }
+
+
+        for (let item of _this.sectionState) {
+            if (item.offset < _this._t) {
+                item.visited = true;
+                _this.currentSection = item;
+                console.log(item.name, 'visited');
             }
-        })
+            else {
+                item.visited = false;
+                console.log(item.name, 'unvisited');
+            }
+        }
+
+        // switch(_this.currentSection) {
+        //     case "Discussion": // Last
+        //         // Do stuff 1 - t
+
+        //     case default: // Middle Sections
+        //         // Do stuff (t+1) - t
+        //         _this.sectionMap.values().next().value.offset // Get next key!
+        // }
+
+        // if not yet visited · remap first value in sectionMap
+        // _this.t = remap(_this.sectionMap.values().next().value.offset, 0, 1, 0, )
 
         _this._t *= 100;
 
@@ -226,6 +260,10 @@ class ProgressBar {
 
         function remap(value, inMin, inMax, outMin, outMax) {
             return outMin + (outMax - outMin) * (value - inMin) / (inMax - inMin);
+        }
+
+        function getKeyByValue(object, value) {
+            return Object.keys(object).find(key => object[key] === value);
         }
     }
 
