@@ -33,13 +33,13 @@ Navigation Elements
 	background-color $GRAY50
 
 
-.paginationhover 
+.pagination:hover 
 	background-color $GRAY50
 	border 1px solid rgba(0,0,0,0)
 	cursor pointer
 
 
-.paginationactive 
+.pagination:active 
 	transformscale(1.25,1.25)
 	background-color $GRAY
 	border 1px solid $GRAY50	
@@ -325,7 +325,7 @@ nav .social a // Open social links in new tabs
 	text-align right
 	
 	position absolute
-	right 30px
+	right 15px
 	bottom -3px
 	
 	width 200px
@@ -335,11 +335,12 @@ nav .social a // Open social links in new tabs
 	
 	content attr(data-content)
 	
-	transition opacity 250ms
+	transition all ease-in-out 250ms
 	
 
 .pagination:hover::before
 	opacity 1
+	right 20px
 	
 .pagination:hover
 	background-color $GRAY50
@@ -348,6 +349,7 @@ nav .social a // Open social links in new tabs
 	
 .pagination-active-before::before
 	opacity 1 
+	right 20px
 	
 
 // --------------------------------------

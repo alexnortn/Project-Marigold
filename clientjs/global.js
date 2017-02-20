@@ -378,7 +378,7 @@ $(document).ready(function() {
                 // Correct for viewport
                 _state.sectionHeight -= window.innerHeight;
 
-                if (_state.progressBar.exist) {
+                if (_state.progressBar) {
                     _state.progressBar.updateOffset();
                 }
             }
