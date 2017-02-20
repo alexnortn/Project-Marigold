@@ -373,7 +373,6 @@ $(document).ready(function() {
 
                 $(new_id).find(children).each(function () {
                     _state.sectionHeight += $(this).outerHeight();
-                    console.log($(this), $(this).outerHeight());
                 });
 
                 // Correct for viewport

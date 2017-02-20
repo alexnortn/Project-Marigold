@@ -38,7 +38,7 @@ class ProgressBar {
     		},
     		"section" : {
     			classList : [
-    				"section-pagination","endeavor-flex-column","endeavor-flex-justify-center","endeavor-push-2"
+    				"endeavor-pos-abs","section-pagination","endeavor-flex-column","endeavor-flex-justify-center","endeavor-push-2"
     			],
     			tagName : "div"
     		},
@@ -69,6 +69,7 @@ class ProgressBar {
 
         this.exist = true;
         this.sectionState = [];
+
 
     	let _this = this;
 
@@ -101,15 +102,6 @@ class ProgressBar {
     create() {
     	let _this = this;
         let components = _this.components;
-
-    	// Iterate through Obj
-		// for (var prop in components) {
-		// 	if (components.hasOwnProperty(prop)) {
-		// 		console.log('obj.' + prop + ' = ' + components[prop]); // create dom elements, add them to this object
-		// 		this.prop = document.createElement(components[prop].tagName);
-		// 		this.prop.classList.add(components[prop].classList);
-		// 	} 
-		// }
 
         // Set up sectionMap
         $(_this.scrollContainer).find('.endeavor-process').each(function(i, value) {
@@ -196,9 +188,11 @@ class ProgressBar {
             }
         });
 
-        for (let item of _this.sectionState) {
+        _this.sectionState.forEach(function(item, i) {
             item.offset /= height;
-        }
+            let left = (item.offset * 100) + "%";
+            $(_this.capsule).find('.section-pagination')[i].style.left = left;
+        });
     }
 
 	scrollTo(target) {
@@ -214,57 +208,24 @@ class ProgressBar {
     update(t) {
         let _this = this;
         _this._t = Math.min(Math.max(t, 0), 1); // Clamp _t [0, 1]
-        _this.currentSection = "";
-
-        // for (let [key, value] of _this.sectionMap.entries()) {
-        //     if (value.offset < _this._t) {
-        //         value.visited = true;
-        //         _this.currentSection = key;
-        //         debugger;
-        //         console.log(key, 'visited');
-        //     }
-        //     else {
-        //         value.visited = false;
-        //         console.log(key, 'unvisited');
-        //     }
-        // }
 
 
-        for (let item of _this.sectionState) {
+        _this.sectionState.forEach(function(item, i) {
             if (item.offset < _this._t) {
                 item.visited = true;
                 _this.currentSection = item;
-                console.log(item.name, 'visited');
+                
+                if (i < _this.sectionState.length-1) {
+                    _this.nextSection = _this.sectionState[i+1];
+                }
             }
             else {
                 item.visited = false;
-                console.log(item.name, 'unvisited');
             }
-        }
-
-        // switch(_this.currentSection) {
-        //     case "Discussion": // Last
-        //         // Do stuff 1 - t
-
-        //     case default: // Middle Sections
-        //         // Do stuff (t+1) - t
-        //         _this.sectionMap.values().next().value.offset // Get next key!
-        // }
-
-        // if not yet visited · remap first value in sectionMap
-        // _this.t = remap(_this.sectionMap.values().next().value.offset, 0, 1, 0, )
+        });
 
         _this._t *= 100;
-
         _this.progress.style.width = _this._t + "%"
-
-        function remap(value, inMin, inMax, outMin, outMax) {
-            return outMin + (outMax - outMin) * (value - inMin) / (inMax - inMin);
-        }
-
-        function getKeyByValue(object, value) {
-            return Object.keys(object).find(key => object[key] === value);
-        }
     }
 
     // Animate bar progress -> 0
