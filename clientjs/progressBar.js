@@ -68,6 +68,7 @@ class ProgressBar {
     	this._t = args.t                               || 0;
 
         this.exist = true;
+        this.section_offsets = [];
 
     	let _this = this;
 
@@ -75,6 +76,7 @@ class ProgressBar {
         let promise = new Promise(
             function(resolve, reject) {;
                 _this.create();
+                _this.updateOffset();
                 resolve();
             }
         );
@@ -178,13 +180,30 @@ class ProgressBar {
 
     }
 
+    updateOffset() {
+        let _this = this;         
+
+         let height = 0;
+         console.log('update');
+         _this.section_offsets.length = 0;
+
+        $(_this.scrollContainer).find('.endeavor-element').each(function(i, value) { 
+            height += $(this).outerHeight(true); // Include margins
+            if ($(this).hasClass('endeavor-process')) {
+                _this.section_offsets.push({ "name": this.dataset.process, "offset": height });
+            }
+        });
+
+        _this.section_offsets.forEach(function(section) {
+            section.offset = section.offset/height;
+        });
+    }
+
 	scrollTo(target) {
         let _this = this;
-        // Working but buggy, possibly because of some offset -> Look into
         let scrollTarget =  $(_this.scrollContainer).find("[data-process='" + target + "']");
-        $(_this.scrollContainer).scrollTop(0);
-        $(scrollTarget).velocity("scroll", { duration: 0, offset: 750, container: $(_this.scrollContainer), easing: 'ease-in-out' }); // Scroll to next section
-        console.log('scrollTo');        
+        $(_this.scrollContainer).scrollTop(0); // Reset scroll
+        $(scrollTarget).velocity("scroll", { duration: 0, offset: 788, container: $(_this.scrollContainer), easing: 'ease-in-out' }); // Scroll to next section (788 calculate offset)
 	}
 
 
@@ -193,11 +212,21 @@ class ProgressBar {
     update(t) {
         let _this = this;
         _this._t = Math.min(Math.max(t, 0), 1); // Clamp _t [0, 1]
+
+        _this.section_offsets.forEach(function(section) {
+            if (section.offset < _this._t) {
+                section.visited = true;
+                // console.log(section.name, 'visited');
+            }
+        })
+
         _this._t *= 100;
 
         _this.progress.style.width = _this._t + "%"
 
-        // Wll need additional logic to account for sections
+        function remap(value, inMin, inMax, outMin, outMax) {
+            return outMin + (outMax - outMin) * (value - inMin) / (inMax - inMin);
+        }
     }
 
     // Animate bar progress -> 0

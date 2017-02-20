@@ -59,7 +59,8 @@ let _itemInteraction,
 
 let _state = {
     "sectionHeight": Infinity,
-    "progressBar" : ""
+    "progressBar" : "",
+    "siteContent": _site_content
 };
 
 
@@ -331,18 +332,6 @@ $(document).ready(function() {
             let timer_height;
             updateProjectHandlers(current_id, new_id, timer_height);
 
-            let timer;
-            // Check video on scroll, with timeout
-            $(new_id).scroll(function() {
-                if (timer) {
-                    window.clearTimeout(timer);
-                }
-
-                timer = window.setTimeout(function() {
-                    _videoChecker();
-                }, 100);
-            });
-
             return new_id;
         }
 
@@ -368,6 +357,7 @@ $(document).ready(function() {
             if (!_state.progressBar) {
                 _state.progressBar = new ProgressBar ({
                         scrollContainer: new_id,
+                        maxHeight:_state.sectionHeight,
                 });
             } else {
                 _state.progressBar.reset();
@@ -383,10 +373,15 @@ $(document).ready(function() {
 
                 $(new_id).find(children).each(function () {
                     _state.sectionHeight += $(this).outerHeight();
+                    console.log($(this), $(this).outerHeight());
                 });
 
                 // Correct for viewport
                 _state.sectionHeight -= window.innerHeight;
+
+                if (_state.progressBar.exist) {
+                    _state.progressBar.updateOffset();
+                }
             }
 
             scrollHandler = function() {
@@ -415,7 +410,18 @@ $(document).ready(function() {
                 calcSectionHeight();
             }
 
-            $(new_id).scroll(scrollHandler);
+            let timer;
+            $(new_id).scroll(function() {
+                if (timer) {
+                    window.clearTimeout(timer);
+                }
+
+                timer = window.setTimeout(function() {
+                    _videoChecker();
+                    scrollHandler();
+                }, 10);
+            });
+
             $(window).resize(function() { resizeHandler() });
         }
 
