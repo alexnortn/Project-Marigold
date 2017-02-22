@@ -123,7 +123,7 @@
                                 "description" : ""
                             },
                             {
-                                "header" : "Persistant URLs",
+                                "header" : "Persistant URLs (permalinks)",
                                 "description" : ""
                             }
                         ]
@@ -249,7 +249,8 @@
                 {
                     "name" : "endeavorCaptionFS",
                     "data" : {
-                        "caption" : "Augmenting with data has often been seen as overall uninteresting to the general public. Convolve looks to seemingly change that notion almost entirely. The next step is picking data that is worth investigating and of an interest to the viewer. The curation of interesting and dynamic data can change almost everything about how we feel about any given subject. When choosing the data that would be augmented onto the Convolve heads up display we kept those notions in mind."
+
+                        "caption" : "Through the Museum, scientists can access thousands of neuron reconstructions. When viewed individually each cell is rendered in white to shift focus towards the unique formal characteristics."
                     }
                 },
                 {
@@ -730,26 +731,26 @@
                         "class" : "endeavor-item-125 endeavor-item-bottom-15",
                         "class2" : "endeavor-reveal",
                         "bgColor" : "",
-                        "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with.",
+                        "description" : "Given the academic nature of the Museum, we viewed Market Reaserch as an oppertunity to learn from peer successes and failures—essentially compile a list of best practices for engaging with data and the scientific community at large.",
                         "contents" : [
                             {
                                 "header" : "Do's",
                                 "icon" : "fa-thumbs-o-up",
                                 "bullets" : [
-                                    "Researchers have an excess of data and a lack of investigative power.",
-                                    "The scale of todays scientific challenges demand cross–disciplinary collaboration.",
-                                    "Collaboration presents the opportunity for teams to leverage each others specialties to move faster and tackle larger and more important problems.",
-                                    "Collaboration necessitates sharing, of knowledge, time, ideas,  skills, and increasingly data."
+                                    "Projects generally include a wealth of data along with supporting methods, empiracle results, and sometimes publications.",
+                                    "Most data + figures support permalink option for robust citations.",
+                                    "Good tools for filtering and exploring the data.",
+                                    "Projects may include SDK + API packages for building custom applications from data."
                                 ]
                             },
                             {
                                 "header" : "Dont's",
                                 "icon" : "fa-thumbs-o-down",
                                 "bullets" : [
-                                    "Researchers have an excess of data and a lack of investigative power.",
-                                    "The scale of todays scientific challenges demand cross–disciplinary collaboration.",
-                                    "Collaboration presents the opportunity for teams to leverage each others specialties to move faster and tackle larger and more important problems.",
-                                    "Collaboration necessitates sharing, of knowledge, time, ideas,  skills, and increasingly data."
+                                    "Information design could benifit from a designers touch. Complex jargon can inhibit glanceability for all but seasoned experts.",
+                                    "Repository generally not responsive, useful only on desktop.",
+                                    "Information architecture mostly flat, could benifit from chunking, progressive disclosure. Lack of onboarding.",
+                                    "Navigation often ambiguous at best."
                                 ]
                             }
                         ]
@@ -773,7 +774,7 @@
                         "class" : "endeavor-item-125 endeavor-item-bottom-15",
                         "class2" : "endeavor-reveal",
                         "bgColor" : "",
-                        "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with.",
+                        "description" : "Given our small team size, in order to have maximum impact before comensing with design or development, we conducted interviews, site visits, and other forms of ethnographic research to gain insight into the lives of our potential users.",
                         "contents" : [
                             {
                                 "header" : "Stakeholders",
@@ -781,7 +782,7 @@
                                 "bullets" : [
                                     {
                                         "header" : "SeungLab",
-                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                        "description" : "Researchers at SeungLab are highly skilled at gathering, managing data and thus have an excess of it but a lack of investigative power."
                                     }
                                 ]
                             },
@@ -791,27 +792,27 @@
                                 "bullets" : [
                                     {
                                         "header" : "Neuroscientist",
-                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                        "description" : "Has hypotheses that may require additional data for substantiation. Needs general information about cell typologies."
                                     },
                                     {
                                         "header" : "Neuroanatomist",
-                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                        "description" : "Has hypotheses that may require additional data for substantiation. Needs specific information about cell morphology and physiology."
                                     },
                                     {
                                         "header" : "Student: Undergrad",
-                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                        "description" : "The brain is the most complex system in the known universe, learning by interacting with real cells + data leads to deeper processing and increased retention."
                                     },
                                     {
                                         "header" : "Student: Graduate",
-                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                        "description" : "Graduate students in search of a first publication can explore the museum in search of supporting evidence."
                                     },
                                     {
                                         "header" : "Gamer: Eyewire",
-                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                        "description" : "The museum functions as a repository of all the cells mapped by gamers on Eyewire. Here, players can come explore their work and marvel at the complex beauty of the cells."
                                     },
                                     {
                                         "header" : "Curious Surfer",
-                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                        "description" : "Neuroscience and the brain are at once beautiful and mysterious. Why not spend a few hours browsing through the basis of thought?"
                                     }
                                 ]
                             },
@@ -821,15 +822,15 @@
                                 "bullets" : [
                                     {
                                         "header" : "Lab",
-                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                        "description" : "Research labs all have unique specializations. The museum may be contain just the data necessary for their next paper."
                                     },
                                     {
                                         "header" : "University",
-                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                        "description" : "University professors often balance an active research practice alongside their teaching careers. The museum offers another aid for explaining the brain at the cellular level."
                                     },
                                     {
                                         "header" : "Eyewire",
-                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                        "description" : "As a leading citizen science project, Eyewire is tasked with sharing the beauty and complexity of the brain with non-experts."
                                     }
                                 ]
                             }
