@@ -934,7 +934,7 @@
                         "class3" : "endeavor-border-top",
                         "icon" : "fa-hand-o-right",
                         "bgColor" : "",
-                        "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with.",
+                        "description" :"We approached the Museum project through the lens of Human Centered Design—more than a system of design principles, Human Centered Design means believing that the people who face those problems every day are the ones who hold the key to their answer.",
                         "contents" : [
                             {
                                 "header" : "What is the problem you're trying to solve?",
@@ -942,15 +942,15 @@
                             },
                             {
                                 "header" : "What is the ultimate impact that you're trying to have?",
-                                "description" : "The scale of todays scientific challenges demand cross–disciplinary collaboration."
+                                "description" : "Enable more people, both expert and non-experts, to engage with neuroscience."
                             },
                             {
                                 "header" : "What are some possible solutions to your problem?",
-                                "description" : "Collaboration presents the opportunity for teams to leverage each others specialties to move faster and tackle larger and more important problems."
+                                "description" : "Given the ease of scalability and potential for rapid development, creating a web-based application seems to be the most feasible option."
                             },
                             {
                                 "header" : "What are some of the constraints + context?",
-                                "description" : "Collaboration necessitates sharing, of knowledge, time, ideas,  skills, and increasingly data."
+                                "description" : "We have a small team for both design, research, and development, and shorter than expected schedule for launching a usable product."
                             }
                         ]
                     }
@@ -976,7 +976,7 @@
                                 "data" : {
                                     "margin" : "endeavor-item-250",
                                     "header" : "Hello, User",
-                                    "subtext" : "At Seunglab scientists study Connectomics, a specialty in the domain of Neuroscience which seeks to understand brain structure and function by constructing comprehensive maps of the connections between neurons.",
+                                    "subtext" : "Our research concluded that we should focus our efforts on designing a product for neuroscientists, as they are the demographic that aligns most closely with our available data and (after students) the most numerable.",
                                     "bgColor" : "",
                                     "class" : "",
                                     "textColor" : "#666666"
