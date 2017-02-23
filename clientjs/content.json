@@ -1059,39 +1059,39 @@
                                 "bullets" : [
                                     {
                                         "header" : "Browse Data",
-                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                        "description" : "Progressively disclose infomration for users engagement."
                                     },
                                     {
                                         "header" : "Filter Data",
-                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                        "description" : "Dynamically filter through connectomic dataset with respect to classification system."
                                     },
                                     {
                                         "header" : "Search Data",
-                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                        "description" : "Auto-complete search throught connectomic data—by same categories available in filter."
                                     },
                                     {
                                         "header" : "Compare Data",
-                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                        "description" : "Overlay connectomic information to see trends in both 2D and 3D contexts"
                                     },
                                     {
                                         "header" : "Explore Data",
-                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                        "description" : "Freely engage with connectomic data in both 2D and 3D contexts."
                                     },
                                     {
                                         "header" : "Manipulate Data",
-                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                        "description" : "Quickly toggle, overlay, browse, filter, and search through connectomic information."
                                     },
                                     {
                                         "header" : "3D Navigation",
-                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                        "description" : "Freely manipulate neuron meshes in 3D context using familiar interaction models."
                                     },
                                     {
                                         "header" : "Learn More (Context)",
-                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                        "description" : "Where possible, provide additional context through user interaction or external links."
                                     },
                                     {
                                         "header" : "Share Views",
-                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                        "description" : "Figure generator for quickly sharing publication–quality scientific figures."
                                     }
                                 ]
                             }
