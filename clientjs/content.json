@@ -993,15 +993,15 @@
                         "class" : "endeavor-item-125 endeavor-item-bottom-15",
                         "class2" : "endeavor-reveal",
                         "bgColor" : "",
-                        "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with.",
+                        "description" : "The Museum will function as an open repository for connectomic neuron reconstructions of neruons from Seung Lab. Below is an overview of the design and development considerations.",
                         "contents" : [
                             {
                                 "header" : "Context",
                                 "icon" : " fa-info",
                                 "bullets" : [
                                     {
-                                        "header" : "SeungLab",
-                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                        "header" : "Application",
+                                        "description" : "Create a responsive web application for visualizing and exploring connectomic data powered by a leading framework."
                                     }
                                 ]
                             },
@@ -1010,16 +1010,16 @@
                                 "icon" : "fa-database",
                                 "bullets" : [
                                     {
-                                        "header" : "Lab",
-                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                        "header" : "Mesh Delivery",
+                                        "description" : "An efficient pipeline for delivering and displaying 3D neuron meshes."
                                     },
                                     {
-                                        "header" : "University",
-                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                        "header" : "Data Delivery",
+                                        "description" : "A system for delivering supplementary connectomic data for neuron meshes."
                                     },
                                     {
-                                        "header" : "Eyewire",
-                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                        "header" : "Citation",
+                                        "description" : "A system for generating semantic and persistant publication–quality citations."
                                     }
                                 ]
                             },
@@ -1028,28 +1028,28 @@
                                 "icon" : "fa-pie-chart",
                                 "bullets" : [
                                     {
-                                        "header" : "Neuroscientist",
-                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                        "header" : "Onboarding Diagrams",
+                                        "description" : "Create an introudction to the project, data and Museum interation model."
                                     },
                                     {
-                                        "header" : "Neuroanatomist",
-                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                        "header" : "3D Viewer",
+                                        "description" : "A 3D environment capable of accurately displaying neuron meshes and supporting annotations."
                                     },
                                     {
-                                        "header" : "Student: Undergrad",
-                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                        "header" : "Skeleton Density",
+                                        "description" : "An interactive graph displaying stratification density information for neuron meshes."
                                     },
                                     {
-                                        "header" : "Student: Graduate",
-                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                        "header" : "Directional Response",
+                                        "description" : "An interactive graph displaying directional response information for neuron meshes."
                                     },
                                     {
-                                        "header" : "Gamer: Eyewire",
-                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                        "header" : "Temporal Response",
+                                        "description" : "An interactive graph displaying temporal density information for neuron meshes."
                                     },
                                     {
-                                        "header" : "Curious Surfer",
-                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                        "header" : "Supporting Meta–Data",
+                                        "description" : "Context relavant information supporting both 2D and 3D visuals."
                                     }
                                 ]
                             },
@@ -1058,15 +1058,39 @@
                                 "icon" : "fa-dot-circle-o",
                                 "bullets" : [
                                     {
-                                        "header" : "Lab",
+                                        "header" : "Browse Data",
                                         "description" : "Researchers have an excess of data and a lack of investigative power."
                                     },
                                     {
-                                        "header" : "University",
+                                        "header" : "Filter Data",
                                         "description" : "Researchers have an excess of data and a lack of investigative power."
                                     },
                                     {
-                                        "header" : "Eyewire",
+                                        "header" : "Search Data",
+                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                    },
+                                    {
+                                        "header" : "Compare Data",
+                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                    },
+                                    {
+                                        "header" : "Explore Data",
+                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                    },
+                                    {
+                                        "header" : "Manipulate Data",
+                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                    },
+                                    {
+                                        "header" : "3D Navigation",
+                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                    },
+                                    {
+                                        "header" : "Learn More (Context)",
+                                        "description" : "Researchers have an excess of data and a lack of investigative power."
+                                    },
+                                    {
+                                        "header" : "Share Views",
                                         "description" : "Researchers have an excess of data and a lack of investigative power."
                                     }
                                 ]
