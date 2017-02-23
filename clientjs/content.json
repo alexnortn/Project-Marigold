@@ -826,7 +826,7 @@
                                     },
                                     {
                                         "header" : "University",
-                                        "description" : "University professors often balance an active research practice alongside their teaching careers. The museum offers another aid for explaining the brain at the cellular level."
+                                        "description" : "Professors often balance an active research practice alongside their teaching careers. The museum offers another aid for explaining the brain at the cellular level."
                                     },
                                     {
                                         "header" : "Eyewire",
@@ -857,7 +857,7 @@
                         "class3" : "endeavor-border-top",
                         "icon" : "fa-hand-o-right",
                         "bgColor" : "",
-                        "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with.",
+                        "description" : "We conclude the Discover stage by focusing the values, needs, and challenges of our subjects.",
                         "contents" : [
                             {
                                 "header" : "Publish or Perish",
@@ -927,14 +927,14 @@
                 {
                     "name" : "endeavorChecklistHidden",
                     "data" : {
-                        "header" : "Design Questions",
+                        "header" : "Framing our Challenge",
                         "id" : "ghost-design-questions-affect",
                         "class" : "endeavor-item-125 endeavor-item-bottom-15",
                         "class2" : "endeavor-reveal",
                         "class3" : "endeavor-border-top",
                         "icon" : "fa-hand-o-right",
                         "bgColor" : "",
-                        "description" :"We approached the Museum project through the lens of Human Centered Design—more than a system of design principles, Human Centered Design means believing that the people who face those problems every day are the ones who hold the key to their answer.",
+                        "description" :"During the Discover phase we go super wide to understand the problem space and gain perspective from the point of view of our users. The Define phase presents an oppertunity to focus our research and frame our challenge through a series of simple internal questions.",
                         "contents" : [
                             {
                                 "header" : "What is the problem you're trying to solve?",
