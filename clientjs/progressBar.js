@@ -211,8 +211,6 @@ class ProgressBar {
 
         $(_this.capsule).children().children().removeClass('section-pagination-active');
 
-        console.log("setting current section to ", _this.currentSection.name);
-
         _this.activeSection = $(_this.capsule).children().find("[data-section='" + _this.currentSection.name + "']");
         _this.activeSection.addClass('section-pagination-active');
     }
@@ -244,7 +242,6 @@ class ProgressBar {
             _this.currentSection = currentSection;
             if (_this.currentSection.name !== undefined) { // Feels sort of hacky..
                 _this.setActiveSection(); // Update active section
-                console.log("we exist");
             }
         }
 
