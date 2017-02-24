@@ -69,6 +69,7 @@ class ProgressBar {
 
         this.exist = true;
         this.sectionState = [];
+        this.currentSection = { "name": undefined, "offset": 0, "visted": false };
 
 
     	let _this = this;
@@ -203,17 +204,32 @@ class ProgressBar {
 	}
 
 
+    // Update pagination active states
+    // How to detect active change? -> current !== this.current; placeholder variable
+    setActiveSection() {
+        let _this = this;
+
+        $(_this.capsule).children().children().removeClass('section-pagination-active');
+
+        console.log("setting current section to ", _this.currentSection.name);
+
+        _this.activeSection = $(_this.capsule).children().find("[data-section='" + _this.currentSection.name + "']");
+        _this.activeSection.addClass('section-pagination-active');
+    }
+
     // Update progress bar position wrt scroll state
     // Call this from <ScrollHandler>
     update(t) {
         let _this = this;
+        let currentSection = {};
+
         _this._t = Math.min(Math.max(t, 0), 1); // Clamp _t [0, 1]
 
 
         _this.sectionState.forEach(function(item, i) {
             if (item.offset < _this._t) {
                 item.visited = true;
-                _this.currentSection = item;
+                currentSection = item;
                 
                 if (i < _this.sectionState.length-1) {
                     _this.nextSection = _this.sectionState[i+1];
@@ -223,6 +239,14 @@ class ProgressBar {
                 item.visited = false;
             }
         });
+
+        if (currentSection !== _this.currentSection) {
+            _this.currentSection = currentSection;
+            if (_this.currentSection.name !== undefined) { // Feels sort of hacky..
+                _this.setActiveSection(); // Update active section
+                console.log("we exist");
+            }
+        }
 
         _this._t *= 100;
         _this.progress.style.width = _this._t + "%"
