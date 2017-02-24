@@ -1672,7 +1672,7 @@
                                     "header" : "Closure Cards",
                                     "class" : "endeavor-item-no-margin",
                                     "bgColor" : "",
-                                    "description" : "Elements that are close together are perceived to be more related than elements that are farther apart. We used this basic"
+                                    "description" : "Elements that are close together are perceived to be more related than elements that are farther apart. We used the pricnple of proximity to design a card system to encapsulate information and interative elements within relavant components."
                                 }
                             }
                         ]
@@ -1830,7 +1830,7 @@
                         "header" : "Auto Complete",
                         "class" : "endeavor-item-125",
                         "bgColor" : "",
-                        "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with."
+                        "description" : "The problem of search in the Museum is knotty. Most classification categories are barely human-readible and cell names are stored as five or six digit strings. Searching can start from a place of uncertainty. A simple implementation of auto–complete text entry offers attractive advantages in both speed and usability."
                     }
                 },
                 {
