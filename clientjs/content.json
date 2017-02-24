@@ -5779,10 +5779,10 @@
                 "Game Design"
             ],
             "description" : {
-                "quote": "A traditional Japanese lamp that responds gesturally to weather phenomena.",
-                "brief": "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know? When is a qualitative understanding of data sufficient? The lamp is also a sort of commentary on the current state of culture in Japan. It is no coincidence that the lamp resembles a tower crane. The lamp bridges the gap between traditional Japanese culture and Japan as a world-leading technological hub. The Lamp is a collaboration between Massart’s graphic design program and MIT’s Architectural Computation department. The following pages detail the CAD models and a bit of the building process for the first of the 3 proposed lamps, this is the smallest desk lamp. Further on there is a glimpse into the program written to aggregate weather sources as well as a web-interface designed to program + control the lamp.",
-                "challenge": "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know? When is a qualitative understanding of data sufficient? The lamp is also a sort of commentary on the current state of culture in Japan.",
-                "solution": "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know? When is a qualitative understanding of data sufficient? The lamp is also a sort of commentary on the current state of culture in Japan."
+                "quote": "Compete or collaborate in a constructivist boardgame inspired by tetris and jenga.",
+                "brief": "Jenga Unchained was concieved during to Neri Oxman's 'Design Across Scales' course at MIT Media Lab. The prompt was simple, create a response that embodies 'The design of play.'' Instead of trying to invent a new game from scratch we explored classic game design concepts by totally reversing the rules. If the game was played in 2D, how would it feel in 3D? If the game was about destruction, how would it feel being constructed? After loads of playful conversations and paper prototyes, we settled on a concept for a game that could be played either competitively or collaboratively. We called this game Jenga Unchained.",
+                "challenge": "I worked on an interdiscplinary team including two architects and an economist. I found it super interesting learning about the motivations of my fellow teammates. Each of us had a different notion of the concept of play, so initial brainstorms were all over the place. What immediately felt like a hinderance led us to a successful melding of minds. The architects pushed for 3D forms with haptics, the economist wanted a system that could be exploited for value, and I was intrigued by the possibility given by modularity. The final game felt like the combination of our unique ideas.",
+                "solution": ""
             },
             "meta" : {
                 "Client" : "MIT Media Lab",
@@ -6047,7 +6047,7 @@
                         "header" : "CAD Designs",
                         "class" : "endeavor-item-125",
                         "bgColor" : "",
-                        "description" : "Our research culminated in an animated walkthrough. The animation demonstrates working aspects of the concept as well as gives the viewer an appreciation for the usability and aesthetics."
+                        "description" : "Before moving to our final design phase, we prototyped a multiplicity of tetris-inspired stackable 3D shapes."
                     }
                 },
                 {
