@@ -1214,7 +1214,7 @@
                     "name" : "endeavorCaptionFS",
                     "data" : {
                         "class" : "endeavor-item-125",
-                        "caption" : "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know?"
+                        "caption" : "An excerpt from the Identity section of the styleguide. We formatted each section to be modular to enable rapid iteration cycles between design and development. Below, the Color section utilizes a decidedly conflicting pallet to promote uniqueness across many data streams."
                     }
                 },
                 {
@@ -1253,7 +1253,7 @@
                                     "header" : "User Journey",
                                     "class" : "endeavor-item-top-125",
                                     "bgColor" : "",
-                                    "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with."
+                                    "description" : "We focused our user journey map on the experience of a first time neuroscientist user. While extensive, the map is not meant to include all possible touch points of the Museum, rather it serves to detail the flow of a single user from their perspective."
                                 }
                             },
                             {
@@ -1474,7 +1474,7 @@
                         "header" : "Grid System",
                         "class" : "endeavor-item-top endeavor-item-bottom",
                         "bgColor" : "",
-                        "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with."
+                        "description" : "By this point in the process we had established the use of Angular as a front-end framework. This motivated an increasingly modular design language of nested + encapsualted components. Written content on the Museum consists of mostly static descriptions and labels. Without having to account for dynamically generated CMS content, the grid was able to remain in a relatively simple 8pt x 4pt system."
                     }
                 },
                 {
@@ -1507,7 +1507,7 @@
                         "header" : "3D Controls",
                         "class" : "endeavor-item-top endeavor-item-bottom",
                         "bgColor" : "",
-                        "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with."
+                        "description" : "3D navigation is complex. Our research revealed that most scientists are interested in viewing the neurons from just two specific orientations: top and side. The accuracy of these views is dramatically improved by implementing virtual cameras with othographic projection as an alternative to standard perpsective projection. To facilitate swift comparisions we created a set of 3D control buttons for quick snapping between views and projections."
                     }
                 },
                 {
@@ -1576,7 +1576,7 @@
                         "header" : "Real Data",
                         "class" : "endeavor-item-top endeavor-item-bottom",
                         "bgColor" : "",
-                        "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with."
+                        "description" : "Having a solid understanding of content is critical when designing with technical materials. It turns out the end goal isn't to reduce the amount of complexity but rather to manage the level of it in a given view or interaction."
                     }
                 },
                 {
@@ -1633,7 +1633,7 @@
                         "header" : "Data Driven Design",
                         "class" : "endeavor-item-top endeavor-item-bottom",
                         "bgColor" : "",
-                        "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with."
+                        "description" : "In the context of the Museum, data driven design means approaching the design of graphs and resulting information architecture through the lens of a scientist. We asked what data are most important and what is the best format for communication Our iteration process moved from digesting raw data to a cycle of sketching, implementing, user testing and refining through interative prototypes."
                     }
                 },
                 {
@@ -1672,7 +1672,7 @@
                                     "header" : "Closure Cards",
                                     "class" : "endeavor-item-no-margin",
                                     "bgColor" : "",
-                                    "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with."
+                                    "description" : "Elements that are close together are perceived to be more related than elements that are farther apart. We used this basic"
                                 }
                             }
                         ]
