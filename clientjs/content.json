@@ -3751,10 +3751,9 @@
                 "User Experience Design"
             ],
             "description" : {
-                "quote": "A traditional Japanese lamp that responds gesturally to weather phenomena.",
-                "brief": "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know? When is a qualitative understanding of data sufficient? The lamp is also a sort of commentary on the current state of culture in Japan. It is no coincidence that the lamp resembles a tower crane. The lamp bridges the gap between traditional Japanese culture and Japan as a world-leading technological hub. The Lamp is a collaboration between Massart’s graphic design program and MIT’s Architectural Computation department. The following pages detail the CAD models and a bit of the building process for the first of the 3 proposed lamps, this is the smallest desk lamp. Further on there is a glimpse into the program written to aggregate weather sources as well as a web-interface designed to program + control the lamp.",
-                "challenge": "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know? When is a qualitative understanding of data sufficient? The lamp is also a sort of commentary on the current state of culture in Japan.",
-                "solution": "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know? When is a qualitative understanding of data sufficient? The lamp is also a sort of commentary on the current state of culture in Japan."
+                "quote": "Design is not a discipline, but a way of looking at the world",
+                "brief": "Real-world challenges require, perhaps more than ever, a deep, but interdisciplinary skill set combined with an ability to operate across multiple scales with creativity. Inspired by Neri Oxman's + Meejin Yoon's 'Design Across Scales' MIT Media Lab course, and naturally, Charles and Ray Eames’ canonical Powers of Ten, DAS explores the relationship between science and engineering through the lens of Design. It examines how transformations in science and technology have influenced design thinking, and vice versa. It explores interdisciplinary tools and methods to represent, model, design and fabricate objects, machines, and systems. DAS is organized by scale, topics ranging from the macro to micro are investigated across multiple problem contexts to demonstrate that design is not a discipline, but a way of looking at the world; one that promotes the synthesis of interdisciplinary knowledge across scales in order to create objects and systems for the greater good.",
+                "challenge": "Create a concept and deliverable for a minimalist quarterly publication operating at the intersection of design, technology, and people. Design the layout system, develop the brand and identity system, and assemble all of the content. And make it affordable—make it monochromatic. Can you design something people will actually want—imagine a journal for creative frontiers, a journal for the anti-discpliplinary, a journal for design across scales and problem contexts."
             },
             "meta" : {
                 "Client" : "MassArt",
@@ -3844,7 +3843,7 @@
                 {
                     "name" : "endeavorCaptionFS",
                     "data" : {
-                        "caption" : "Augmenting with data has often been seen as overall uninteresting to the general public. Convolve looks to seemingly change that notion almost entirely. The next step is picking data that is worth investigating and of an interest to the viewer. The curation of interesting and dynamic data can change almost everything about how we feel about any given subject. When choosing the data that would be augmented onto the Convolve heads up display we kept those notions in mind."
+                        "caption" : "DAS Quarterly is organized both by content and by scale. This affords a new reading experience offering the reader another context to engage with the content. A system of minimalist icons were developed to accompany each major section."
                     }
                 },
                 {
@@ -3988,7 +3987,7 @@
                 {
                     "name" : "endeavorCaptionFS",
                     "data" : {
-                        "caption" : "We also took advantage of the time scrubber as a way to not only navigate viewing time but to link users to what dream state was currently being experienced within the film. Outer most layer was being awake and the center most point being limbo. The scrubber shown is simply a prototype."
+                        "caption" : "Playful, yet subtle typographic annomolies offer an entry point for lengthy compositions while the use of bold, artful photography empowers subject matter—even in black + white."
                     }
                 },
                 {
@@ -4148,9 +4147,7 @@
             ],
             "description" : {
                 "quote": "Design is not a discipline, but a way of looking at the world",
-                "brief": "
-                
-                Real-world challenges require, perhaps more than ever, a deep, but interdisciplinary skill set combined with an ability to operate across multiple scales with creativity. Inspired by Neri Oxman's + Meejin Yoon's 'Design Across Scales' MIT Media Lab course, and naturally, Charles and Ray Eames’ canonical Powers of Ten, DAS explores the relationship between science and engineering through the lens of Design. It examines how transformations in science and technology have influenced design thinking, and vice versa. It explores interdisciplinary tools and methods to represent, model, design and fabricate objects, machines, and systems. DAS is organized by scale, topics ranging from the macro to micro are investigated across multiple problem contexts to demonstrate that design is not a discipline, but a way of looking at the world; one that promotes the synthesis of interdisciplinary knowledge across scales in order to create objects and systems for the greater good.",
+                "brief": "Real-world challenges require, perhaps more than ever, a deep, but interdisciplinary skill set combined with an ability to operate across multiple scales with creativity. Inspired by Neri Oxman's + Meejin Yoon's 'Design Across Scales' MIT Media Lab course, and naturally, Charles and Ray Eames’ canonical Powers of Ten, DAS explores the relationship between science and engineering through the lens of Design. It examines how transformations in science and technology have influenced design thinking, and vice versa. It explores interdisciplinary tools and methods to represent, model, design and fabricate objects, machines, and systems. DAS is organized by scale, topics ranging from the macro to micro are investigated across multiple problem contexts to demonstrate that design is not a discipline, but a way of looking at the world; one that promotes the synthesis of interdisciplinary knowledge across scales in order to create objects and systems for the greater good.",
                 "challenge": "Create a concept and deliverable for a minimalist quarterly publication operating at the intersection of design, technology, and people. Design the layout system, develop the brand and identity system, and assemble all of the content. And make it affordable—make it monochromatic. Can you design something people will actually want—imagine a journal for creative frontiers, a journal for the anti-discpliplinary, a journal for design across scales and problem contexts."
             },
             "meta" : {
