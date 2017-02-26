@@ -3751,7 +3751,7 @@
                 "User Experience Design"
             ],
             "description" : {
-                "quote": "Design is not a discipline, but a way of looking at the world",
+                "quote": "Design is not a discipline, but a way of looking at the world.",
                 "brief": "Real-world challenges require, perhaps more than ever, a deep, but interdisciplinary skill set combined with an ability to operate across multiple scales with creativity. Inspired by Neri Oxman's + Meejin Yoon's 'Design Across Scales' MIT Media Lab course, and naturally, Charles and Ray Eames’ canonical Powers of Ten, DAS explores the relationship between science and engineering through the lens of Design. It examines how transformations in science and technology have influenced design thinking, and vice versa. It explores interdisciplinary tools and methods to represent, model, design and fabricate objects, machines, and systems. DAS is organized by scale, topics ranging from the macro to micro are investigated across multiple problem contexts to demonstrate that design is not a discipline, but a way of looking at the world; one that promotes the synthesis of interdisciplinary knowledge across scales in order to create objects and systems for the greater good.",
                 "challenge": "Create a concept and deliverable for a minimalist quarterly publication operating at the intersection of design, technology, and people. Design the layout system, develop the brand and identity system, and assemble all of the content. And make it affordable—make it monochromatic. Can you design something people will actually want—imagine a journal for creative frontiers, a journal for the anti-discpliplinary, a journal for design across scales and problem contexts."
             },
@@ -4146,9 +4146,9 @@
                 "User Experience Design"
             ],
             "description" : {
-                "quote": "Design is not a discipline, but a way of looking at the world",
+                "quote": "Design is not a discipline, but a way of looking at the world.",
                 "brief": "Real-world challenges require, perhaps more than ever, a deep, but interdisciplinary skill set combined with an ability to operate across multiple scales with creativity. Inspired by Neri Oxman's + Meejin Yoon's 'Design Across Scales' MIT Media Lab course, and naturally, Charles and Ray Eames’ canonical Powers of Ten, DAS explores the relationship between science and engineering through the lens of Design. It examines how transformations in science and technology have influenced design thinking, and vice versa. It explores interdisciplinary tools and methods to represent, model, design and fabricate objects, machines, and systems. DAS is organized by scale, topics ranging from the macro to micro are investigated across multiple problem contexts to demonstrate that design is not a discipline, but a way of looking at the world; one that promotes the synthesis of interdisciplinary knowledge across scales in order to create objects and systems for the greater good.",
-                "challenge": "Create a concept and deliverable for a minimalist quarterly publication operating at the intersection of design, technology, and people. Design the layout system, develop the brand and identity system, and assemble all of the content. And make it affordable—make it monochromatic. Can you design something people will actually want—imagine a journal for creative frontiers, a journal for the anti-discpliplinary, a journal for design across scales and problem contexts."
+                "challenge": "Adapt a physical quarterly publication operating at the intersection of design, technology, and people for responsive, digital environments. Design the layout system, adapt the brand and identity system. The solution must offer a thorough investigation of the responsive characterists demanded by a digital publication. How will navigation invite users to continue reading? How would related and archived content flow with new material? How will motion design influence user expectations?"
             },
             "meta" : {
                 "Client" : "MassArt",
@@ -4190,7 +4190,7 @@
                 {
                     "name" : "endeavorCaptionFS",
                     "data" : {
-                        "caption" : "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know?"
+                        "caption" : "DAS Interactive is a digital adapatation of the physical DAS Quarterly publication. Careful consideration is given to prevesering the brand and identity systems established in the physical publication."
                     }
                 },
                 {
@@ -4273,7 +4273,7 @@
                     "name" : "endeavorCaptionFS",
                     "data" : {
                         "class" : "endeavor-item-bottom-125",
-                        "caption" : "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know?"
+                        "caption" : "A simple but natural loading animation indicator distracts from potential network latency and creates a timely pause and reset for entering the publication."
                     }
                 },
                 {
