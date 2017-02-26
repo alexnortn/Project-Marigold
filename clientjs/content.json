@@ -4425,10 +4425,9 @@
                 "Programing"
             ],
             "description" : {
-                "quote": "A traditional Japanese lamp that responds gesturally to weather phenomena.",
-                "brief": "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know? When is a qualitative understanding of data sufficient? The lamp is also a sort of commentary on the current state of culture in Japan. It is no coincidence that the lamp resembles a tower crane. The lamp bridges the gap between traditional Japanese culture and Japan as a world-leading technological hub. The Lamp is a collaboration between Massart’s graphic design program and MIT’s Architectural Computation department. The following pages detail the CAD models and a bit of the building process for the first of the 3 proposed lamps, this is the smallest desk lamp. Further on there is a glimpse into the program written to aggregate weather sources as well as a web-interface designed to program + control the lamp.",
-                "challenge": "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know? When is a qualitative understanding of data sufficient? The lamp is also a sort of commentary on the current state of culture in Japan.",
-                "solution": "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know? When is a qualitative understanding of data sufficient? The lamp is also a sort of commentary on the current state of culture in Japan."
+                "quote": "How would algorithms mediate a conversation with the late composer, John Cage?",
+                "brief": "Simply put, MuWu is a collection of the thoughts and the experience of John Cage. Inspired by the classic text, I Ching, MuWu is intended to ask questions. How is a book composed? What is language and how does it flow? After a single trip to China, John Cage was converted to a Taoist believer. He incorporated chance operations, found in the I Ching, into most of his artworks for the rest of his life. Letting go of intention and embracing the natural flow of tao led Cage to create some of the 20th century's most influential artworks. MuWu pays homaged to to late John Cage by continuing where he left off. The book uses a computational approach to to story telling to fill up exactly 64 body pages with unique content from the compilation, Conversing with Cage. The length was chosen in response to the 64 hexagrams of the I Ching. MuWu attempts to assemble completely new and unique thoughts from the any dialogues found in Conversing with Cage. This approach shifts creative control from the designer towards the algorithm.",
+                "challenge": "Mu an the East Asian word descibing literally 'nothing', or 'un'. It is very curious that this is nearly the same meaning as the Greek letter 'μ' pronounced 'mu' which in modern academia is reference to a very small measurement. The title is appropriate as this text seeks to distance hte design from the final outcome. Both the content and layout of the MuWu are algorithmically sampled. MuWu was sort of my introduction to the possibilities of generative design."
             },
             "meta" : {
                 "Client" : "Self (MIT)",
@@ -4746,16 +4745,6 @@
                         "meta" : "Muwu Book II",
                         "images" : [
                             {
-                                "name": "muwu-book-1",
-                                "src": "images/projects/muwu/standard/muwu-book-1.jpg",
-                                "src_standard": "images/projects/muwu/standard/muwu-book-1.jpg",
-                                "src_retina": "images/projects/muwu/retina/muwu-book-1.jpg",
-                                "src_low": "images/projects/muwu/low-res/muwu-book-1.jpg",
-                                "src_mobile": "images/projects/muwu/hi-res/muwu-book-1.jpg",
-                                "src_preview": "images/projects/muwu/hi-res/muwu-book-1.jpg",
-                                "caption": "Muwu Book 1"   
-                            },
-                            {
                                 "name": "muwu-book-14",
                                 "src": "images/projects/muwu/standard/muwu-book-14.jpg",
                                 "src_standard": "images/projects/muwu/standard/muwu-book-14.jpg",
@@ -4808,7 +4797,7 @@
                         "header" : "Research",
                         "class" : "endeavor-item-no-margin",
                         "bgColor" : "",
-                        "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with."
+                        "description" : "I found myself drawn towards the I Ching. It's system of trigrams and hexagrams felt like a sort of analog-computer. I designed a series of posters to better appreciate both the mechanisms and expanse of the divination system. Would it be possible to map these Taoist symbols into a robust and meaningful layout system?"
                     }
                 },
                 {
@@ -4841,7 +4830,7 @@
                         "header" : "Methods",
                         "class" : "endeavor-item-125",
                         "bgColor" : "",
-                        "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with."
+                        "description" : "Mu an the East Asian word descibing literally 'nothing', or 'un'. It is very curious that this is nearly the same meaning as the Greek letter 'μ' pronounced 'mu' which in modern academia is reference to a very small measurement. The title is appropriate as this text seeks to distance hte design from the final outcome. Both the content and layout of the MuWu are algorithmically sampled. MuWu was sort of my introduction to the possibilities of generative design."
                     }
                 },
                 {
@@ -4963,7 +4952,7 @@
                         "header" : "Layout Machine",
                         "class" : "endeavor-item-top-250",
                         "bgColor" : "",
-                        "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with."
+                        "description" : "Layout Machine was developed to create unique book layout based on a predefined set of probabilities. It operates as a specialized, automated I Ching, which John Cage used to create chance operations and indeterminate series for much of his work. Layout machine computes general, systematic layouts; it specifies the type of layout for a given page but not necessarily how it should be designed. "
                     }
                 },
                 {
@@ -4996,7 +4985,7 @@
                         "header" : "Layout Synthesis",
                         "class" : "endeavor-item-125",
                         "bgColor" : "",
-                        "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with."
+                        "description" : "I created a series of posters to visualize the output of Layout Machine and it's supporting algorithms. It's interesting to examine the form and continuity across the algorithmically generated designs."
                     }
                 },
                 {
@@ -5029,7 +5018,7 @@
                         "header" : "Generative Algorithms",
                         "class" : "endeavor-item-125",
                         "bgColor" : "",
-                        "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with."
+                        "description" : "Muwu was my first project that leveraged the power and potential of generative design. Though highly conceptual, the project proved a gateway to many new ways of thinking and doing. The speed and flexibility of a new parametric graphic design became immediately clear, instead of pushing pixels and setting control points, I was pushing data, and controlling process flow. I used Processing, a language developed for creative coding to generate the content and much of the layout for Muwu."
                     }
                 },
                 {
