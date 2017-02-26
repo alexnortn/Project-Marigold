@@ -774,7 +774,7 @@
                         "class" : "endeavor-item-125 endeavor-item-bottom-15",
                         "class2" : "endeavor-reveal",
                         "bgColor" : "",
-                        "description" : "Given our small team size, in order to have maximum impact before comensing with design or development, we conducted interviews, site visits, and other forms of ethnographic research to gain insight into the lives of our potential users.",
+                        "description" : "Before comensing with design and development, we conducted interviews, site visits, and other forms of ethnographic research to gain insight into the lives of our potential users.",
                         "contents" : [
                             {
                                 "header" : "Stakeholders",
@@ -1474,7 +1474,7 @@
                         "header" : "Grid System",
                         "class" : "endeavor-item-top endeavor-item-bottom",
                         "bgColor" : "",
-                        "description" : "By this point in the process we had established the use of Angular as a front-end framework. This motivated an increasingly modular design language of nested + encapsualted components. Written content on the Museum consists of mostly static descriptions and labels. Without having to account for dynamically generated CMS content, the grid was able to remain in a relatively simple 8pt x 4pt system."
+                        "description" : "By this point in the process we had established Angular our a front-end framework. This motivated an increasingly modular design language of nested + encapsualted components. Written content on the Museum consists of mostly static descriptions and labels. Without having to account for dynamically generated CMS content, the grid was able to remain in a relatively simple 8pt x 4pt system."
                     }
                 },
                 {
@@ -1853,7 +1853,7 @@
                         "class" : "endeavor-item-125 endeavor-item-bottom-15",
                         "class2" : "endeavor-reveal",
                         "bgColor" : "",
-                        "description" : "The Museum was sort of like a perfect storm of a project. Extensive ethnographic research paved the way for a truly human-centered design process. Our team was able to match user needs with stakeholder expectations and deliver a full functional product ahead of schedule. We tackled a complex problem with an iterative development cycle. Not every proposed feature made it to the current release but an extensive styleguide and robust development framework allow for extenability by a skeleton team of ressearchers at SeungLab.",
+                        "description" : "The Museum was a perfect storm of a project. Extensive ethnographic research paved the way for a truly human-centered design process. Our team was able to match user needs with stakeholder expectations and deliver a fully functional product ahead of schedule. We tackled a complex problem with an iterative development cycle. Not every proposed feature made it to the current release but an extensive styleguide and robust development framework allow for extendability by a skeleton team of ressearchers at SeungLab.",
                         "contents" : [
                             {
                                 "header" : "Do's",
