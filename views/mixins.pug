@@ -788,10 +788,9 @@ mixin endeavorParallaxCaptionRight(data)
     - var imageParallax = data.imageParallax
     - var sources = data.imageParallax.src_standard + " 1x, " + data.imageParallax.src_retina + " 2x"
     - var caption = data.caption
-    .endeavor-element.endeavor-item.fsw.endeavor-parallax-hybrid.parallax__group  
+    .endeavor-element.endeavor-item.endeavor-pos-rel.endeavor-width-100vw.endeavor-parallax-hybrid.parallax__group  
         .endeavor-parallax-hybrid-color(style=`background-image: url(${imageBig.src})`)
-        img.lazyload.img-box.endeavor-parallax-hybrid-left-img-box.parallax__layer.parallax__layer--fore(src=`${imageParallax.src_low}`)&attributes({'data-src': imageParallax.src}, {'data-srcset': sources})
-        p.endeavor-parallax-hybrid-left-caption.caption=caption
+        img.lazyload.img-box.endeavor-parallax-hybrid-left-img-box.parallax__layer.parallax__layer--fore(src=`${imageParallax.src_low}`)&attributes({'data-src': imageParallax.src}, {'data-srcset': sources}) 
 
 
 //-  Endeavor Parallax Left + Caption Right
@@ -803,10 +802,9 @@ mixin endeavorParallaxCaptionLeft(data)
     - var imageParallax = data.imageParallax
     - var sources = data.imageParallax.src_standard + " 1x, " + data.imageParallax.src_retina + " 2x"
     - var caption = data.caption
-    .endeavor-element.endeavor-item.fsw.endeavor-parallax-hybrid.parallax__group  
+    .endeavor-element.endeavor-item.endeavor-pos-rel.endeavor-width-100vw.endeavor-parallax-hybrid.parallax__group  
         .endeavor-parallax-hybrid-color(style=`background-image: url(${imageBig})`)
         img.lazyload.img-box.endeavor-parallax-hybrid-right-img-box.parallax__layer.parallax__layer--fore(src=`${imageParallax.src_low}`)&attributes({'data-src': imageParallax.src}, {'data-srcset': sources})
-        p.endeavor-parallax-hybrid-right-caption.caption=caption
 
 
 //-  Endeavor Image Centered + Caption
