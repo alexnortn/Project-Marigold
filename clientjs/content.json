@@ -3216,10 +3216,9 @@
                 "Generative Design"
             ],
             "description" : {
-                "quote": "A traditional Japanese lamp that responds gesturally to weather phenomena.",
-                "brief": "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know? When is a qualitative understanding of data sufficient? The lamp is also a sort of commentary on the current state of culture in Japan. It is no coincidence that the lamp resembles a tower crane. The lamp bridges the gap between traditional Japanese culture and Japan as a world-leading technological hub. The Lamp is a collaboration between Massart’s graphic design program and MIT’s Architectural Computation department. The following pages detail the CAD models and a bit of the building process for the first of the 3 proposed lamps, this is the smallest desk lamp. Further on there is a glimpse into the program written to aggregate weather sources as well as a web-interface designed to program + control the lamp.",
-                "challenge": "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know? When is a qualitative understanding of data sufficient? The lamp is also a sort of commentary on the current state of culture in Japan.",
-                "solution": "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know? When is a qualitative understanding of data sufficient? The lamp is also a sort of commentary on the current state of culture in Japan."
+                "quote": "Journey into the depths of the retina with the Dig, Eyewire's next big Adventure.",
+                "brief": "Eyewire is a game to map the brain that originated at Sebastian Seung's Lab at MIT. This citizen science human-based computation game challenges players to map 3D neurons in a retina. Eyewire was officially launched on December 10, 2012 and has since grown to over 200,000 players from 150 countries. Eyewire gameplay advances neuroscience by helping researchers discover how neurons connect to process visual information. Anyone, anywhere can help neuroscientists develop advanced artificial intelligence and computational technologies for mapping the connectome. In Eyewire, gamers solve 3D puzzles. As they solve the puzzles, they are actually reconstructing 3D models of neurons at nanoscale resolution from electron microscopy images. Eyewire requires no scientific background to play and works best on high speed internet.",
+                "challenge": "I was tasked with directing and developing the identity system, supporting brand materials, and promotional assets for 'The DiG', Eyewire's next big Adventure. Based on the nature of the game and a potential throwback to pychedelic rock anthem, we framed the challenge as a 'Journey into the depths of the retina'. The formal language was inspired by digital aspects of the neuron reconstruction, while the asset behavior was inspired by the computational processes of active neurons and cellular automata. The wordmark is composed of sixteen individual squares relating to the sixteen sectors of the scientific endeavor."
             },
             "pull_quotes": [
                 " The lamp seeks to explore our relationship with dynamic data, for this instance weather.",
@@ -3545,7 +3544,7 @@
                 {
                     "name" : "endeavorCaptionFS",
                     "data" : {
-                        "caption" : "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know?"
+                        "caption" : "Posters were printed and distributed across many Boston universities for a special local competition pitting students head-to-head for science!"
                     }
                 },
                 {
@@ -3626,7 +3625,7 @@
                         "header" : "Algorithms + Process",
                         "class" : "endeavor-item-125",
                         "bgColor" : "",
-                        "description" : "Perhaps these stories could be prefaced by a quick paragraph stating the importance of User Stories and their particular relevance to this project. Following could be a figure to summarize the relative knowledge + complexity of user needs / features most likely to engage with."
+                        "description" : "We developed a dynamic, generative, identity system with behavior inspired by the neuron reconstruction process and cellular automata. The algorithm afforded a nearly infinite range of original content for social media outlets. The denisity of black squares was designed to be related to the progress of the Dig."
                     }
                 },
                 {
