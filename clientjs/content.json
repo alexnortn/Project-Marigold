@@ -2349,7 +2349,7 @@
                 {
                     "name" : "endeavorParagraphPoints",
                     "data" : {
-                        "class" : "endeavor-item",
+                        "class" : "endeavor-item-bottom",
                         "bgColor" : "",
                         "header" : "",
                         "contents": [
