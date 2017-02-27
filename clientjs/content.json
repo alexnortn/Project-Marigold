@@ -2927,10 +2927,9 @@
                 "Programing"
             ],
             "description" : {
-                "quote": "A traditional Japanese lamp that responds gesturally to weather phenomena.",
-                "brief": "Sean & I created a prototype for a fully immersive heads up display that would augment Inception in a way that enhanced the viewing experience. When using any media player the user often experiences the heads up display as an interruption, intrusion and invasion onto the stage of the screen. What if you could make a user really miss those moments? What if, the user was just as interested in the data on a heads up display as the movie itself?",
-                "challenge": "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know? When is a qualitative understanding of data sufficient? The lamp is also a sort of commentary on the current state of culture in Japan.",
-                "solution": "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know? When is a qualitative understanding of data sufficient? The lamp is also a sort of commentary on the current state of culture in Japan."
+                "quote": "Unpacking a dream within a dream within an interface.",
+                "brief": "Inception is full of puzzling paradox. The 2010 movie offers a thrilling glimpse into an alternate reality where a new technology, enables people to experience dreams together. Cobb, the movies protogonist, played by Leonardo DeCaprio, is tasked with not stealing but planting an idea into the mind of a CEO. The movie descends through colvoluted levels of dreams within dreams. As the heroes move deeper, the stakes quickly rise. Director, Christopher Nolan leaves the audience with an ambiguous ending—has Cobb finally returned to his family or does he remain in limbo?",
+                "challenge": "Can design help us to understand the film's final resolution? My partner Sean and I asked why not find inspiration in the very complexity that we seek to understand. Instead of attempting to reduce the Inception's inherent comlexity, which I would argue is sort of the point, could we design a system of tools inspired by themes found within the movie? In responsve we created a prototype for an immersive heads up display to enhance Inception in a way that augments the viewing experience. A typical media player interface is an intrusion onto stage of the screen. Could the viewer be as interested in the data on a heads up display as the movie itself?"
             },
             "meta" : {
                 "Client" : "Student",
@@ -3544,7 +3543,7 @@
                 {
                     "name" : "endeavorCaptionFS",
                     "data" : {
-                        "caption" : "Posters were printed and distributed across many Boston universities for a special local competition pitting students head-to-head for science!"
+                        "caption" : "(above) Posters were printed and distributed across many Boston universities for a special local competition pitting students head-to-head for science! (below) The Dig consists of sixteen sectors, we created a count-up graphic to visualize player progress."
                     }
                 },
                 {
