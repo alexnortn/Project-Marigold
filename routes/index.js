@@ -18,7 +18,6 @@ fs.readFile('./clientjs/content.json', handleFile);
 
 function handleFile(err, data) {
     if (err) {
-        console.log('meow');
         throw err;
     }
 
