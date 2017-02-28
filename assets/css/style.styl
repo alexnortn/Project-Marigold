@@ -24,7 +24,7 @@ body
 	height 100%
 	width 100%
 	min-width 400px
-	overflow-y visible
+	overflow-y hidden
 	overflow-x hidden
 	margin 0
 	
@@ -41,6 +41,9 @@ body::selection
 
 div::selection
 	background $GREY
+	
+.body-loaded
+	overflow-y visible
 	
 section
 	display flex
@@ -103,7 +106,7 @@ strong
 	height 100vh
 	background-color $WHITE_BG
 	z-index 100000
-	display flex
+	position fixed
 	align-items center
 	
 	

@@ -69,12 +69,10 @@ let _state = {
 
 // DOM Ready =============================================================
 $(document).ready(function() {
-    // Check mobile
     if (isMobile.tablet || isMobile.phone) {
         _mobile = true;
     }
 
-    // Set Greeting
     setGreeting();
 
     // Parse Contents
@@ -83,40 +81,57 @@ $(document).ready(function() {
         case_studies: []
     };
 
+    // Setup Case Studies
     _site_content.case_studies.forEach(function(item) {
         _endeavor_routes.case_studies.push(item.route);    
     });
 
+    // Setup Projects
     _site_content.projects.forEach(function(item) {
         _endeavor_routes.projects.push(item.route);    
     });    
 
-    // Intro loader
-    $.Velocity.animate( $('.loader'), "fadeOut", { duration: 750 })
-        .then(function(elements) {
-            setTimeout(function() {
-                _endeavorRouter.initialRoute(window.location.pathname.slice(1)); // Initial Page Routing => No Animation
-                hashChanged();
-                window.addEventListener('popstate', function(event) {
-                    hashChanged();
-                    _endeavorRouter.route(event.state); // Event handler for History state change
-                }, false);
-            }, 0);
-        })
-        .catch(function(error) { 
-            console.log("Rejected.");
-        });
-
     // Call pagination
-    pagination(_sections);
-    paginationUpdate(_sectionCurrent);
+    new Promise((resolve, reject) => {
+        pagination(_sections);
+        console.log('setup pagination');
+        
+        resolve();
+    })
+    .then(() => {
+        $('#pagination').alwaysCenterIn(window, { direction: 'vertical' });
+        paginationUpdate(_sectionCurrent);
+    })
+    .then(() => {
+        _endeavorRouter.initialRoute(window.location.pathname.slice(1)); // Initial Page Routing => No Animation
+        hashChanged();
+    })
+    .then(() => {
+        setTimeout(() => {
+            // Intro loader
+            $.Velocity.animate( $('.loader'), "fadeOut", { duration: 1000 })
+            .then(function(elements) {
+                setTimeout(function() {
+                    $('body').addClass('body-loaded');
+                }, 0);
+            })
+            .catch(function(error) { 
+                console.log("Rejected.");
+            });
+        }, 0);
+    })
+    .catch((reason) => {
+        console.log('promise rejected for ' + reason);
+    });
+
+    window.addEventListener('popstate', function(event) {
+        hashChanged();
+        _endeavorRouter.route(event.state); // Event handler for History state change
+    }, false);
 
     stickyUpdate();
 
     _closeProject = closeProject; // Set up close project global
-
-    // Center In
-    $('#pagination').alwaysCenterIn(window, { direction: 'vertical' });
 
     // Set media size + aspect ratio
     function setupMedia($elem = null) {
@@ -141,9 +156,11 @@ $(document).ready(function() {
 
     }
 
-    // When the window is resized some fancy ui positioning
-    $(window).resize(function() {
+    
+    // ------------------------------------------------------------------------
+    // Event Handlers
 
+    $(window).resize(function() {
         stickyUpdate();
         setupMedia();
 
@@ -160,26 +177,16 @@ $(document).ready(function() {
         // timer = setTimeout(function() {
         //     $('#wrapper').removeClass('resize-window');
         // }, 500);
-
     });
 
-    // Check current position relative to top of page
     window.addEventListener('scroll', function(e) {
-        $('.scroll-arrow').velocity("fadeOut", { duration: 250 }); // Fade it out | They get it
+        $('.scroll-arrow').velocity("fadeOut", { duration: 250 });
     }, {passive:true});
 
-    // ------------------------------------------------------------------------
-    // Event Handlers
-
-
-    // Bios page button
+    // Bios Button
     $('#bios-button').click(function() {
         $(this).velocity("fadeOut", { duration: 500 });
         $('#long').velocity("fadeIn", { delay: 500, duration: 666 });
-        setTimeout(
-            function(e) {
-                // $('#bios-content').centerIn('#bios', { top: "-3%" });   
-        }, 750);
     });
 
     // Header navigation | JS Interaction
@@ -189,7 +196,7 @@ $(document).ready(function() {
 
     });   
 
-    // Close the nav overlay
+    // Close navigation overlay
     function closeNav() {
         document.getElementById("nav-trigger").checked = false;
     }
@@ -203,7 +210,7 @@ $(document).ready(function() {
     // Navigation
     $('#web-lab-nav').click(function() {
         let target = getEventTarget(event);
-        _sectionCurrent = target.getAttribute('data-nav'); // Get target id from data attr
+        _sectionCurrent = target.getAttribute('data-nav');
         closeNav(); // Close Section
 
         closeProject();
@@ -226,18 +233,6 @@ $(document).ready(function() {
         
     });
 
-
-    // Toggle project "reveeal" sections
-    // Important -> Naming schema:
-    //  + effected element id -> "ghost-something-affect"
-    //  + button class ->        "endeavor-button-reveal"
-    //  + button id ->           "ghost-something"
-    $('.endeavor-button-reveal').click(function(evt) {
-        let affect_div = "#" + this.id + "-affect"; // Construct affective <div> lookup
-        $(affect_div).removeClass('endeavor-reveal');
-        $(this).parent().velocity("fadeOut", { duration: 250 });
-    });
-
     // Autoplay Videos
     // Only when in viewport
     // Call once on load
@@ -254,7 +249,18 @@ $(document).ready(function() {
 
     _videoChecker();
 
-    // Create SVG Circle
+    // Toggle project "reveal" sections
+    // Important -> Naming schema:
+    //  + effected element id -> "ghost-something-affect"
+    //  + button class ->        "endeavor-button-reveal"
+    //  + button id ->           "ghost-something"
+
+    $('.endeavor-button-reveal').click(function(evt) {
+        let affect_div = "#" + this.id + "-affect";
+        $(affect_div).removeClass('endeavor-reveal');
+        $(this).parent().velocity("fadeOut", { duration: 250 });
+    });
+
     function createCircle(_cx, _cy) {
         let svgNS = "http://www.w3.org/2000/svg";  
         let myCircle = document.createElementNS(svgNS, "circle");
@@ -270,7 +276,6 @@ $(document).ready(function() {
         return $('.transition-svg');
     }      
 
-    // Close overlay project
     function closeProject() {
         let transition = false;
 
@@ -394,9 +399,6 @@ $(document).ready(function() {
                     if (_state.progressBar.exist) {
                         _state.progressBar.update(value);
                     }
-
-                    // console.log((Math.round(value * 100) / 100) * 100);
-
                 }
                 else {
                     $('.arrow-container').removeClass('arrow-bottom');
@@ -440,7 +442,7 @@ $(document).ready(function() {
             }
         }
 
-        function workItemInteraction(_project_id, evt, animate = false) {
+        function workItemInteraction(_project_id, evt, animate=true) {
             // Testing for touch || click
             let x_pos,
                 y_pos;
@@ -513,11 +515,11 @@ $(document).ready(function() {
 
             let $transitionSVG = createCircle(x_pos, y_pos);
 
-            $('#pagination').velocity("fadeOut", { duration: 500 });
+            let slide_duration = animate ? 750 : 1; // Flag for instantaneous animation
 
-            let slide_duration = animate ? 750 : 0; // Flag for instantaneous animation
+            $('#pagination').velocity("fadeOut", { duration: (slide_duration * 0.75) });
 
-            $.Velocity.animate( $transitionSVG, { r: 2000 }, { duration: 750 - slide_duration },  "ease-out" )
+            $.Velocity.animate( $transitionSVG, { r: 2000 }, { duration: slide_duration },  "ease-out" )
                 .then(function(elements) {
                     $('body').addClass('endeavor-open');
                     
@@ -533,7 +535,7 @@ $(document).ready(function() {
                                     return;
                                 }
 
-                                $.Velocity.animate( $transitionSVG, "fadeOut", { duration: 500 } )
+                                $.Velocity.animate( $transitionSVG, "fadeOut", { duration: (slide_duration * 0.75) } )
                                     .then(function(elements) {
                                         $('.arrow-container').removeClass('transparent');
                                         
@@ -587,7 +589,7 @@ $(document).ready(function() {
                 });
         });
  
-        // Scroll to previous project
+        // To previous project
         $('#prev').click(function(evt) {
             if (!_openProjectState) {
                 return;
@@ -616,7 +618,7 @@ $(document).ready(function() {
             }
         });
 
-        // Scroll to next project
+        // To next project
         $('#next').click(function(evt) {
             if (!_openProjectState) {
                 return;
@@ -645,7 +647,7 @@ $(document).ready(function() {
             }
         });
 
-        // Scroll to next project
+        // Close project handler
         $('#close').click(function(evt) {
             if (_openProjectState) {
                 closeProject();
@@ -663,7 +665,6 @@ $(document).ready(function() {
             }, 500);
         });
 
-        // Closure
         return {
             workItemInteraction: function(_project_id, evt, animate) {
                 workItemInteraction(_project_id, evt, animate);
@@ -724,7 +725,8 @@ $(document).ready(function() {
 
             $slickInitClass.slick('slickGoTo', slideIndex, true);   // Do not animate to first position
 
-        } else {
+        } 
+        else {
             $slickInitClass.slick('slickGoTo', slideIndex, false);  // Once loaded, animate to new position
         }
 
@@ -757,7 +759,6 @@ $(document).ready(function() {
     // Header navigation --> Go Home (clicking 'a' sends the users to /#bios)
     $('.logo').click(function(){
         
-        //  Close current project
         closeProject();
         closeNav();
 
@@ -861,7 +862,7 @@ _endeavorRouter = function() {
     let loaded;
     let _sections = $('.section');
 
-    function route(state, animate = true) {
+    function route(state, animate) {
 
         // If the user requests the index page, redirect to #web-lab
         if ((state === "home") || (state === "")) { // If the user requests the index page, redirect to #web-lab
@@ -896,7 +897,7 @@ _endeavorRouter = function() {
                 if (state === item) {
                     setTimeout(function() {
                        _itemInteraction.workItemInteraction(item, $('.case-study-item'), animate);
-                    }, 500); // I'm sorry : (
+                    }, 0);
 
                     _sectionCurrent = $(_sections).index($('#works')); // Set #works as current
                     return;
@@ -910,7 +911,7 @@ _endeavorRouter = function() {
                 if (state === item) {
                     setTimeout(function() {
                        _itemInteraction.workItemInteraction(item, $('.project-item'), animate);
-                    }, 500); // I'm sorry : (
+                    }, 0);
 
                     _sectionCurrent = $(_sections).index($('#works')); // Set #works as current
                     return;
@@ -937,10 +938,10 @@ _endeavorRouter = function() {
     // Closure
     return {
         route: function(state) {
-            route(state);
+            route(state, true);
         },
         initialRoute: function(state) {
-            initialRoute(state);
+            initialRoute(state, false);
         },
         resetURL: function() {
             window.history.pushState('home', "", "/"); // Update browser state without refreshing the page
