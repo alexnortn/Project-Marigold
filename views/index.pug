@@ -27,7 +27,7 @@ block content
                         +endeavorHeader(item)
                         .endeavor-contents.parallax__group.contents
                             +endeavorIntro(item)
-                            each section, iindex in item.sections
+                            each section, iindex in `{$item.sections}`
                                 +#{section.name}(section.data)
         // /CASE STUDY ITERATOR
     //-     // PROJECT ITERATOR
