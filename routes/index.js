@@ -5,8 +5,6 @@
 let express = require('express');
 let router  = express.Router();
 
-
-// Declare letiables
 let fs = require('fs'),
     endeavors,
     bios_text,
@@ -16,15 +14,14 @@ let fs = require('fs'),
     case_studies,
     contact;
 
-// Read the file and send to the callback
-fs.readFile('./clientjs/content.json', handleFile)
+fs.readFile('./clientjs/content.json', handleFile);
 
-// Write the callback function
 function handleFile(err, data) {
-    if (err) throw err
-    endeavors = JSON.parse(data)
-    // You can now play with your datas
-    // console.log(endeavors);
+    if (err) {
+        throw err;
+    }
+
+    endeavors = JSON.parse(data);
     case_studies = endeavors.case_studies;
     projects = endeavors.projects;
     feature = endeavors.feature;
