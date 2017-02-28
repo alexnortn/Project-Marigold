@@ -7,7 +7,6 @@ let express = require('express'),
     logger = require('morgan'),
     cookieParser = require('cookie-parser'),
     bodyParser = require('body-parser'),
-	runtime = require('pug-runtime'),
     path = require('path'),
     http = require('http');
 
@@ -40,7 +39,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public'))); // What is this pointing towards?
 
 app.use('/', routes);
-app.use('*', routes); // Could be a little hacky
+app.use('*', routes); // Could be a little hacky ->  route all unknown to index
 app.use('/users', users);
 
 http.createServer(app).listen(app.get('port'), function(){
