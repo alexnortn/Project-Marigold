@@ -22,12 +22,13 @@ block content
         // CASE STUDY ITERATOR
         .endeavor-container.case-study-container
             each item, index in case_studies
-                .endeavor.endeavor-view.case-study-view.parallax&attributes({'data-inproject': false}, {'data-projectIndex': index}, {'id': item.route})
+                - var item2 = item;
+                .endeavor.endeavor-view.case-study-view.parallax&attributes({'data-inproject': false}, {'data-projectIndex': index}, {'id': item2.route})
                     .endeavor-content-container
-                        +endeavorHeader(item)
+                        +endeavorHeader(item2)
                         .endeavor-contents.parallax__group.contents
-                            +endeavorIntro(item)
-                            each section, iindex in item.sections
+                            +endeavorIntro(item2)
+                            each section, iindex in item2.sections
                                 +#{section.name}(section.data)
         // /CASE STUDY ITERATOR
         // PROJECT ITERATOR
