@@ -63,8 +63,6 @@ let _state = {
     "siteContent": _site_content
 };
 
-console.log(_site_content);
-
 
     // attachFastClick = require('fastclick');    
 

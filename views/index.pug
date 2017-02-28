@@ -20,26 +20,26 @@ block content
         // /ARROW INTERACTION CONTAINER
 
         // CASE STUDY ITERATOR
-        .endeavor-container.case-study-container
-            each case_study, index in case_studies
-                .endeavor.endeavor-view.case-study-view.parallax&attributes({'data-inproject': false}, {'data-projectIndex': index}, {'id': case_study.route})
-                    .endeavor-content-container
-                        +endeavorHeader(case_study)
-                        .endeavor-contents.parallax__group.contents
-                            +endeavorIntro(case_study)
-                            each section, iindex in case_study.sections
-                                +#{section.name}(section.data)
+        //- .endeavor-container.case-study-container
+        //-     each case_study, index in case_studies
+        //-         .endeavor.endeavor-view.case-study-view.parallax&attributes({'data-inproject': false}, {'data-projectIndex': index}, {'id': case_study.route})
+        //-             .endeavor-content-container
+        //-                 +endeavorHeader(case_study)
+        //-                 .endeavor-contents.parallax__group.contents
+        //-                     +endeavorIntro(case_study)
+        //-                     each section, iindex in case_study.sections
+        //-                         +#{section.name}(section.data)
         // /CASE STUDY ITERATOR
         // PROJECT ITERATOR
-        .endeavor-container.project-container
-            each project, index in projects
-                .endeavor.endeavor-view.project-view.parallax&attributes({'data-inproject': false}, {'data-projectIndex': index}, {'id': project.route})
-                    .endeavor-content-container
-                        +endeavorHeader(project)
-                        .endeavor-contents.parallax__group.contents
-                            +endeavorIntro(project)
-                            each section, iindex in project.sections
-                                +#{section.name}(section.data)
+        //- .endeavor-container.project-container
+        //-     each project, index in projects
+        //-         .endeavor.endeavor-view.project-view.parallax&attributes({'data-inproject': false}, {'data-projectIndex': index}, {'id': project.route})
+        //-             .endeavor-content-container
+        //-                 +endeavorHeader(project)
+        //-                 .endeavor-contents.parallax__group.contents
+        //-                     +endeavorIntro(project)
+        //-                     each section, iindex in project.sections
+        //-                         +#{section.name}(section.data)
         // /PROJECT ITERATOR
 
     // NAV MENU
