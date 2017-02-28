@@ -33,12 +33,13 @@ block content
         // PROJECT ITERATOR
         .endeavor-container.project-container
             each project, index in projects
+                - var project2 = project;
                 .endeavor.endeavor-view.project-view.parallax&attributes({'data-inproject': false}, {'data-projectIndex': index}, {'id': project.route})
                     .endeavor-content-container
                         +endeavorHeader(project)
                         .endeavor-contents.parallax__group.contents
                             +endeavorIntro(project)
-                            each section, iindex in project.sections
+                            each section, iindex in project2.sections
                                 +#{section.name}(section.data)
         // /PROJECT ITERATOR
 
