@@ -130,7 +130,7 @@ mixin endeavorIntro(data)
     - var meta = data.meta
     .endeavor-element.endeavor-intro.cf
         .endeavor-description 
-            q=description.quote
+            q=`{$description.quote}`
             h4 Brief
             p.tamer=description.brief
             h4 Challenge
