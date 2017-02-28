@@ -30,7 +30,7 @@ let velocity    = require('velocity-animate'),
 let bower_url = '../bower_components/';
 
 // External Scripts
-let ProgressBar = require('./ProgressBar.js');
+let ProgressBar = require('./progressBar.js');
 
 // Userlist data array for filling in info box
 let userListData = [],
