@@ -16,6 +16,7 @@ let $ = require('jquery');
         require('./cssTransitionEnd.js');
 
 let _site_content = require('./content2.json');
+    console.log(_site_content);
 
 // Module Dependencies
 let velocity    = require('velocity-animate'),
