@@ -27,189 +27,189 @@ block content
                         +endeavorHeader(item)
                         .endeavor-contents.parallax__group.contents
                             +endeavorIntro(item)
-                            each section, iindex in item.sections
-                                +#{section.name}(section.data)
-        // /CASE STUDY ITERATOR
-        // PROJECT ITERATOR
-        .endeavor-container.project-container
-            each project, index in projects
-                .endeavor.endeavor-view.project-view.parallax&attributes({'data-inproject': false}, {'data-projectIndex': index}, {'id': project.route})
-                    .endeavor-content-container
-                        +endeavorHeader(project)
-                        .endeavor-contents.parallax__group.contents
-                            +endeavorIntro(project)
-                            each section, iindex in project.sections
-                                +#{section.name}(section.data)
-        // /PROJECT ITERATOR
+    //-                         each section, iindex in item.sections
+    //-                             +#{section.name}(section.data)
+    //-     // /CASE STUDY ITERATOR
+    //-     // PROJECT ITERATOR
+    //-     .endeavor-container.project-container
+    //-         each project, index in projects
+    //-             .endeavor.endeavor-view.project-view.parallax&attributes({'data-inproject': false}, {'data-projectIndex': index}, {'id': project.route})
+    //-                 .endeavor-content-container
+    //-                     +endeavorHeader(project)
+    //-                     .endeavor-contents.parallax__group.contents
+    //-                         +endeavorIntro(project)
+    //-                         each section, iindex in project.sections
+    //-                             +#{section.name}(section.data)
+    //-     // /PROJECT ITERATOR
 
-    // NAV MENU
-    input(type="checkbox" id="nav-trigger" class="nav-trigger")
-    label(for="nav-trigger").plus_plus_plus
-        hr
-        hr
-        hr
-        hr
+    //- // NAV MENU
+    //- input(type="checkbox" id="nav-trigger" class="nav-trigger")
+    //- label(for="nav-trigger").plus_plus_plus
+    //-     hr
+    //-     hr
+    //-     hr
+    //-     hr
     
-    nav.nav.plus_plus
-        .header.header-open
-            .logo
-                img(src = "/images/logo.svg" alt = "main logo")
-        .nav-content
-            ul#web-lab-nav
-                li
-                    a(href="#web-lab")&attributes({'data-nav': "web-lab"}) Web Lab
-                li
-                    a(href="#bios")&attributes({'data-nav': "bios"}) Bios
-                li
-                    a(href="#works")&attributes({'data-nav': "works"}) Works
-                li
-                    a(href="#contact")&attributes({'data-nav': "contact"}) Contact
-        .social
-            a(href='google.com')
-                i.fa.fa-envelope.fa-2x
-            a(href='https://twitter.com/alexnortn' target="_blank")
-                i.fa.fa-twitter.fa-2x
-            a(href='google.com')
-                i.fa.fa-vimeo-square.fa-2x
-            a(href='https://github.com/alexnortn' target="_blank")
-                i.fa.fa-github.fa-2x
-            a(href='google.com')
-                i.fa.fa-behance-square.fa-2x
-    // /NAV MENU
+    //- nav.nav.plus_plus
+    //-     .header.header-open
+    //-         .logo
+    //-             img(src = "/images/logo.svg" alt = "main logo")
+    //-     .nav-content
+    //-         ul#web-lab-nav
+    //-             li
+    //-                 a(href="#web-lab")&attributes({'data-nav': "web-lab"}) Web Lab
+    //-             li
+    //-                 a(href="#bios")&attributes({'data-nav': "bios"}) Bios
+    //-             li
+    //-                 a(href="#works")&attributes({'data-nav': "works"}) Works
+    //-             li
+    //-                 a(href="#contact")&attributes({'data-nav': "contact"}) Contact
+    //-     .social
+    //-         a(href='google.com')
+    //-             i.fa.fa-envelope.fa-2x
+    //-         a(href='https://twitter.com/alexnortn' target="_blank")
+    //-             i.fa.fa-twitter.fa-2x
+    //-         a(href='google.com')
+    //-             i.fa.fa-vimeo-square.fa-2x
+    //-         a(href='https://github.com/alexnortn' target="_blank")
+    //-             i.fa.fa-github.fa-2x
+    //-         a(href='google.com')
+    //-             i.fa.fa-behance-square.fa-2x
+    //- // /NAV MENU
 
 
-    // PAGINATION | INJECTED
-    #pagination.plus
-    // /PAGINATION
+    //- // PAGINATION | INJECTED
+    //- #pagination.plus
+    //- // /PAGINATION
 
 
-    // HEADER
-    #header.header.plus
-        .logo
-            img(src = "/images/logo.svg" alt = "main logo")
-        //- Progress Bar
-        //- +progressBar
+    //- // HEADER
+    //- #header.header.plus
+    //-     .logo
+    //-         img(src = "/images/logo.svg" alt = "main logo")
+    //-     //- Progress Bar
+    //-     //- +progressBar
 
-    // /HEADER  
-
-
-    // SITE content
-    #content-wrapper
-
-        // INTERACTIVE PAGE
-        section#web-lab.section&attributes({'data-inproject': true})
-            summary#greeting.plus
-                p
-                p=welcome_text.greeting_text
-                p=welcome_text.discipline_text
-
-            .lab-options.plus
-                input(type="checkbox" id="lab-options-element" class="lab-options-element")
-                label(for="lab-options-element").button
-                    p f(x)
-                .lab-menu
-                    ul
-                        li
-                            input(type="radio" name="lab-radio" id="fluid-radio" class="lab-radio" value="1" checked="checked")
-                            label(for="fluid-radio") Fluid
-                        li
-                            input(type="radio" name="lab-radio" id="perlin-radio" class="lab-radio" value="2")
-                            label(for="perlin-radio") Perlin
-                        li
-                            input(type="radio" name="lab-radio" id="debug-radio" class="lab-radio" value="3") 
-                            label(for="debug-radio") Debug
+    //- // /HEADER  
 
 
-            .lab-what.plus
-                input(type="checkbox" id="lab-what-element" class="lab-what-element")
-                label(for="lab-what-element").button
-                    p ?
-                .lab-details
-                    p Glyph simulation rendered using p5js<br>Physics applied using toxiclibs
+    //- // SITE content
+    //- #content-wrapper
 
-            .scroll-arrow.plus_plus
-                i(class="fa  fa-angle-down fa-2x medium-text-2")           
+    //-     // INTERACTIVE PAGE
+    //-     section#web-lab.section&attributes({'data-inproject': true})
+    //-         summary#greeting.plus
+    //-             p
+    //-             p=welcome_text.greeting_text
+    //-             p=welcome_text.discipline_text
 
-        // /INTERACTIVE
-
-
-        //BIOS SECTION
-        section#bios.section&attributes({'data-inproject': false})
-            #bios-wrapper
-                #bios-title.bios-title.sticky
-                    img(src = "/images/name.svg" alt = "Alex Norton")
-                    p#bios-title-p !{bios_text.title}
-                #bios-content.bios-content
-                    img(src = "/images/self.jpg" alt = "Alex Norton Portrait")
-                    .copy
-                        q !{bios_text.description_pull}
-                        h4 About
-                        p#self-short.tamerp.lil-p !{bios_text.description_short}
-                        p#self-long.tamerp.lil-p !{bios_text.description_long}
-                        a#resume
-                            button.endeavor-button.flat.endeavor-center-mobile(href="/images/Norton-Alex-Resume.pdf" target="_blank")
-                                h3.endeavor-center.endeavor-text-center.endeavor-transition-500.medium-text-2 Résumé
-                        button#bios-more.endeavor-button.ghost
-                                h3.endeavor-center.endeavor-text-center.endeavor-transition-500 more
-        // /BIOS SECTION  
+    //-         .lab-options.plus
+    //-             input(type="checkbox" id="lab-options-element" class="lab-options-element")
+    //-             label(for="lab-options-element").button
+    //-                 p f(x)
+    //-             .lab-menu
+    //-                 ul
+    //-                     li
+    //-                         input(type="radio" name="lab-radio" id="fluid-radio" class="lab-radio" value="1" checked="checked")
+    //-                         label(for="fluid-radio") Fluid
+    //-                     li
+    //-                         input(type="radio" name="lab-radio" id="perlin-radio" class="lab-radio" value="2")
+    //-                         label(for="perlin-radio") Perlin
+    //-                     li
+    //-                         input(type="radio" name="lab-radio" id="debug-radio" class="lab-radio" value="3") 
+    //-                         label(for="debug-radio") Debug
 
 
-        //WORKS SECTION
-        section#works.section&attributes({'data-inproject': false})
-            #works-wrapper
-                // CASE STUDY ITERATOR
-                each case_study, index in case_studies
-                    +caseStudyPreview(case_study, index)
-                // /CASE STUDY ITERATOR
+    //-         .lab-what.plus
+    //-             input(type="checkbox" id="lab-what-element" class="lab-what-element")
+    //-             label(for="lab-what-element").button
+    //-                 p ?
+    //-             .lab-details
+    //-                 p Glyph simulation rendered using p5js<br>Physics applied using toxiclibs
 
-                //SELECT WORK GRID SECTION
-                #select-work.select-work.endeavor-padding-bottom-5vw
-                    #select-work-wrapper
-                        ul
-                            each project, index in projects
-                                +projectPreview(project, index)
-                        .fsw.endeavor-item-125.endeavor-text-center
-                            button#select-more.endeavor-button.endeavor-center
-                                h3.endeavor-center.endeavor-text-center.endeavor-transition-500 more
-                // /SELECT WORK GRID SECTION
-        // /WORKS SECTION 
+    //-         .scroll-arrow.plus_plus
+    //-             i(class="fa  fa-angle-down fa-2x medium-text-2")           
+
+    //-     // /INTERACTIVE
 
 
-        //FEATURE SECTION
-        section#feature.feature.endeavor-padding-vertical-125.endeavor-bg-graydient
-            #feature-wrapper
-                ul
-                    // FEATURE ITERATOR
-                    each result, index in feature
-                        li.img-load(style=`background-image: url(${result.logo})`)
-                            a(href=`${result.link}` target="_blank")
-        // /FEATURE SECTION  
+    //-     //BIOS SECTION
+    //-     section#bios.section&attributes({'data-inproject': false})
+    //-         #bios-wrapper
+    //-             #bios-title.bios-title.sticky
+    //-                 img(src = "/images/name.svg" alt = "Alex Norton")
+    //-                 p#bios-title-p !{bios_text.title}
+    //-             #bios-content.bios-content
+    //-                 img(src = "/images/self.jpg" alt = "Alex Norton Portrait")
+    //-                 .copy
+    //-                     q !{bios_text.description_pull}
+    //-                     h4 About
+    //-                     p#self-short.tamerp.lil-p !{bios_text.description_short}
+    //-                     p#self-long.tamerp.lil-p !{bios_text.description_long}
+    //-                     a#resume
+    //-                         button.endeavor-button.flat.endeavor-center-mobile(href="/images/Norton-Alex-Resume.pdf" target="_blank")
+    //-                             h3.endeavor-center.endeavor-text-center.endeavor-transition-500.medium-text-2 Résumé
+    //-                     button#bios-more.endeavor-button.ghost
+    //-                             h3.endeavor-center.endeavor-text-center.endeavor-transition-500 more
+    //-     // /BIOS SECTION  
 
 
-        //CONTACT PAGE
-        section#contact.contact.section&attributes({'data-inproject': false})
+    //-     //WORKS SECTION
+    //-     section#works.section&attributes({'data-inproject': false})
+    //-         #works-wrapper
+    //-             // CASE STUDY ITERATOR
+    //-             each case_study, index in case_studies
+    //-                 +caseStudyPreview(case_study, index)
+    //-             // /CASE STUDY ITERATOR
+
+    //-             //SELECT WORK GRID SECTION
+    //-             #select-work.select-work.endeavor-padding-bottom-5vw
+    //-                 #select-work-wrapper
+    //-                     ul
+    //-                         each project, index in projects
+    //-                             +projectPreview(project, index)
+    //-                     .fsw.endeavor-item-125.endeavor-text-center
+    //-                         button#select-more.endeavor-button.endeavor-center
+    //-                             h3.endeavor-center.endeavor-text-center.endeavor-transition-500 more
+    //-             // /SELECT WORK GRID SECTION
+    //-     // /WORKS SECTION 
+
+
+    //-     //FEATURE SECTION
+    //-     section#feature.feature.endeavor-padding-vertical-125.endeavor-bg-graydient
+    //-         #feature-wrapper
+    //-             ul
+    //-                 // FEATURE ITERATOR
+    //-                 each result, index in feature
+    //-                     li.img-load(style=`background-image: url(${result.logo})`)
+    //-                         a(href=`${result.link}` target="_blank")
+    //-     // /FEATURE SECTION  
+
+
+    //-     //CONTACT PAGE
+    //-     section#contact.contact.section&attributes({'data-inproject': false})
             
-            // CONTACT BOX
-            #contact-wrapper
-                .shout-out
-                    h1=contact.shout_out
-                    p=contact.shout_out_sub
-                .cta
-                    h1=contact.cta
-                    .contact-social
-                        a(href="mailto:alexnortn@gmail.com")
-                            i.fa.fa-envelope.fa-2x
-                        a(href='https://twitter.com/alexnortn' target="_blank")
-                            i.fa.fa-twitter.fa-2x
-                        a(href='https://github.com/alexnortn' target="_blank")
-                            i.fa.fa-github.fa-2x
-                    p=contact.email
-                    p=contact.phone
-                .copywrite
-                    p=contact.copywrite
+    //-         // CONTACT BOX
+    //-         #contact-wrapper
+    //-             .shout-out
+    //-                 h1=contact.shout_out
+    //-                 p=contact.shout_out_sub
+    //-             .cta
+    //-                 h1=contact.cta
+    //-                 .contact-social
+    //-                     a(href="mailto:alexnortn@gmail.com")
+    //-                         i.fa.fa-envelope.fa-2x
+    //-                     a(href='https://twitter.com/alexnortn' target="_blank")
+    //-                         i.fa.fa-twitter.fa-2x
+    //-                     a(href='https://github.com/alexnortn' target="_blank")
+    //-                         i.fa.fa-github.fa-2x
+    //-                 p=contact.email
+    //-                 p=contact.phone
+    //-             .copywrite
+    //-                 p=contact.copywrite
 
-        // /CONTACT BOX
+    //-     // /CONTACT BOX
 
-        // /CONTACT PAGE   
+    //-     // /CONTACT PAGE   
 
-    // /SITE CONTENT
+    //- // /SITE CONTENT
