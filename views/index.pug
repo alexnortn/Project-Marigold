@@ -19,27 +19,27 @@ block content
                     i(class="fa  fa-close fa-2x")
         // /ARROW INTERACTION CONTAINER
 
-        //- // CASE STUDY ITERATOR
-        //- .endeavor-container.case-study-container
-        //-     each item, index in case_studies
-        //-         .endeavor.endeavor-view.case-study-view.parallax&attributes({'data-inproject': false}, {'data-projectIndex': index}, {'id': item.route})
-        //-             .endeavor-content-container
-        //-                 +endeavorHeader(item)
-        //-                 .endeavor-contents.parallax__group.contents
-        //-                     +endeavorIntro(item)
-        //-                     each section, iindex in item.sections
-        //-                         +#{section.name}(section.data)
-        //- // /CASE STUDY ITERATOR
-        //- // PROJECT ITERATOR
-        //- .endeavor-container.project-container
-        //-     each project, index in projects
-        //-         .endeavor.endeavor-view.project-view.parallax&attributes({'data-inproject': false}, {'data-projectIndex': index}, {'id': project.route})
-        //-             .endeavor-content-container
-        //-                 +endeavorHeader(project)
-        //-                 .endeavor-contents.parallax__group.contents
-        //-                     +endeavorIntro(project)
-        //-                     each section, iindex in project.sections
-        //-                         +#{section.name}(section.data)
+        // CASE STUDY ITERATOR
+        .endeavor-container.case-study-container
+            each item, index in case_studies
+                .endeavor.endeavor-view.case-study-view.parallax&attributes({'data-inproject': false}, {'data-projectIndex': index}, {'id': item.route})
+                    .endeavor-content-container
+                        +endeavorHeader(item)
+                        .endeavor-contents.parallax__group.contents
+                            +endeavorIntro(item)
+                            each section, iindex in item.sections
+                                +#{section.name}(section.data)
+        // /CASE STUDY ITERATOR
+        // PROJECT ITERATOR
+        .endeavor-container.project-container
+            each project, index in projects
+                .endeavor.endeavor-view.project-view.parallax&attributes({'data-inproject': false}, {'data-projectIndex': index}, {'id': project.route})
+                    .endeavor-content-container
+                        +endeavorHeader(project)
+                        .endeavor-contents.parallax__group.contents
+                            +endeavorIntro(project)
+                            each section, iindex in project.sections
+                                +#{section.name}(section.data)
         // /PROJECT ITERATOR
 
     // NAV MENU
@@ -154,25 +154,25 @@ block content
         // /BIOS SECTION  
 
 
-        //- //WORKS SECTION
-        //- section#works.section&attributes({'data-inproject': false})
-        //-     #works-wrapper
-        //-         // CASE STUDY ITERATOR
-        //-         each case_study, index in case_studies
-        //-             +caseStudyPreview(case_study, index)
-        //-         // /CASE STUDY ITERATOR
+        //WORKS SECTION
+        section#works.section&attributes({'data-inproject': false})
+            #works-wrapper
+                // CASE STUDY ITERATOR
+                each case_study, index in case_studies
+                    +caseStudyPreview(case_study, index)
+                // /CASE STUDY ITERATOR
 
-        //-         //SELECT WORK GRID SECTION
-        //-         #select-work.select-work.endeavor-padding-bottom-5vw
-        //-             #select-work-wrapper
-        //-                 ul
-        //-                     each project, index in projects
-        //-                         +projectPreview(project, index)
-        //-                 .fsw.endeavor-item-125.endeavor-text-center
-        //-                     button#select-more.endeavor-button.endeavor-center
-        //-                         h3.endeavor-center.endeavor-text-center.endeavor-transition-500 more
-        //-         // /SELECT WORK GRID SECTION
-        //- // /WORKS SECTION 
+                //SELECT WORK GRID SECTION
+                #select-work.select-work.endeavor-padding-bottom-5vw
+                    #select-work-wrapper
+                        ul
+                            each project, index in projects
+                                +projectPreview(project, index)
+                        .fsw.endeavor-item-125.endeavor-text-center
+                            button#select-more.endeavor-button.endeavor-center
+                                h3.endeavor-center.endeavor-text-center.endeavor-transition-500 more
+                // /SELECT WORK GRID SECTION
+        // /WORKS SECTION 
 
 
         //FEATURE SECTION

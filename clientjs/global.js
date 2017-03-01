@@ -15,7 +15,7 @@ let $ = require('jquery');
         require('is-in-viewport');
         require('./cssTransitionEnd.js');
 
-let _site_content = require('./content.json');
+let _site_content = require('./content2.json');
 
 // Module Dependencies
 let velocity    = require('velocity-animate'),

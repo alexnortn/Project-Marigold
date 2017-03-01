@@ -14,7 +14,7 @@ let fs = require('fs'),
     case_studies,
     contact;
 
-fs.readFile('./clientjs/content.json', handleFile);
+fs.readFile('./clientjs/content2.json', handleFile);
 
 function handleFile(err, data) {
     if (err) {
