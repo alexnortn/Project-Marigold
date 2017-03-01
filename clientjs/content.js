@@ -12,6 +12,7 @@
             "technique": [
                 "Data Visualization",
                 "UX/UI Design",
+                "Design Research",
                 "Programing"
             ],
             "description" : {

@@ -129,38 +129,37 @@ mixin endeavorIntro(data)
     - var description = data.description
     - var meta = data.meta
     .endeavor-element.endeavor-intro.cf
-        .endeavor-description
-            p=description 
-        //-     q=description.quote
-        //-     h4 Brief
-        //-     p.tamer=description.brief
-        //-     h4 Challenge
-        //-     p.tamer=description.challenge
-        //- .meta-data
-        //-     ul
-        //-         li Client
-        //-         li=meta.Client
-        //-     ul
-        //-         li Year
-        //-         li=meta.Year
-        //-     ul
-        //-         li Role
-        //-         li=meta.Role
-        //-     ul
-        //-         li Team
-        //-         li=meta.Team
-        //-     ul
-        //-         li Discipline
-        //-         li=meta.Discipline
-        //-     ul
-        //-         li Medium
-        //-         li=meta.Medium
-        //-     ul
-        //-         li Technologies
-        //-         li=meta.Technologies
-        //-     ul
-        //-         li Duration
-        //-         li=meta.Duration
+        .endeavor-description 
+            q=description.quote
+            h4 Brief
+            p.tamer=description.brief
+            h4 Challenge
+            p.tamer=description.challenge
+        .meta-data
+            ul
+                li Client
+                li=meta.Client
+            ul
+                li Year
+                li=meta.Year
+            ul
+                li Role
+                li=meta.Role
+            ul
+                li Team
+                li=meta.Team
+            ul
+                li Discipline
+                li=meta.Discipline
+            ul
+                li Medium
+                li=meta.Medium
+            ul
+                li Technologies
+                li=meta.Technologies
+            ul
+                li Duration
+                li=meta.Duration
 
 
 //-  Endeavor Animated Ghost Button
