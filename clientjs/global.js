@@ -12,6 +12,7 @@ http://alexnortn.com
 let $ = require('jquery');
         require('./jquery.centerIn.js');
         require('lazysizes');
+        require('lazysizes/plugins/unveilhooks/ls.unveilhooks.min.js');
         require('is-in-viewport');
         require('./cssTransitionEnd.js');
 
@@ -93,9 +94,7 @@ $(document).ready(function() {
 
     // Call pagination
     new Promise((resolve, reject) => {
-        pagination(_sections);
-        console.log('setup pagination');
-        
+        pagination(_sections);        
         resolve();
     })
     .then(() => {

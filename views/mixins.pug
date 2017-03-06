@@ -690,20 +690,21 @@ mixin endeavorYouTubeFS(datum)
 mixin endeavorVideoFS(data)
     - var webm = data.src.webm
     - var mp4 = data.src.mp4
+    - var sources = webm + " " + mp4
     - var poster = data.src.poster
     - var loop = data.loop ? data.loop : true
     - var muted = data.muted ? data.muted : true
     - var audio_toggle = data.audio_toggle ? "" : "hidden"
     - var autoplay = data.autoplay ? data.autoplay : false
     - var _class = data.class ? data.class : "endeavor-item fsw"
-    //- div.endeavor-element(class=_class)
-    //-     .video-toggle(class=audio_toggle)
-    //-         i(class="fa fa-volume-up fa-2x toggle-center-within")
-    //-         i(class="hidden fa fa-volume-off fa-2x toggle-center-within endeavor-item-left-neg-5")
-    //-     video.fsw(loop=loop muted=muted autoplay=autoplay)
-    //-         source(src=webm type="video/webm; codecs=vp9,vorbis")
-    //-         source(src=mp4 type="video/mp4")
-    //-         |Your browser is old AF
+    div.endeavor-element(class=_class)
+        .video-toggle(class=audio_toggle)
+            i(class="fa fa-volume-up fa-2x toggle-center-within")
+            i(class="hidden fa fa-volume-off fa-2x toggle-center-within endeavor-item-left-neg-5")
+        video.lazyload.fsw(loop=loop muted=muted autoplay=autoplay data-poster=poster preload="none" data-src=webm data-srcset=sources)
+            source(type="video/webm; codecs=vp9,vorbis")
+            source(type="video/mp4")
+            |Your browser is old AF
 
 
 //-  Endeavor Project | Full-Width Adaptive Issuu Digital Publication
