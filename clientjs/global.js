@@ -133,7 +133,7 @@ $(document).ready(function() {
 
     _closeProject = closeProject; // Set up close project global
 
-    // Set media size + aspect ratio
+    // Set dynamic media size + aspect ratio
     function setupMedia($elem = null) {
         if ($elem === null) {
             if (_$projectCurrentContents === null) {
