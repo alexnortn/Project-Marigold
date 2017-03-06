@@ -419,7 +419,7 @@ mixin endeavorTextLeftImageFS(data)
     - var sizeClass = data.sizeClass
 
     .endeavor-element.endeavor-item.endeavor-horizontal-10vw.endeavor-flex-row-nowrap.endeavor-flex-center-main.endeavor-flex-between.fsw(style=`background-color: ${bgColor}`)
-        img.lazyload.endeavor-second.blur-up(src="../assets/images/empty.gif")&attributes({'data-src': image.src}, {'data-srcset': sources}, {'class':sizeClass})
+        img.lazyload.endeavor-second.blur-up(src=image.src_low)&attributes({'data-src': image.src}, {'data-srcset': sources}, {'class':sizeClass})
         .endeavor-block
             h3.endeavor-text-left(style=`color: ${textColor}`)=data.superText
             p.endeavor-pulltext.endeavor-text-left(style=`color: ${textColor}`)=data.text
@@ -438,7 +438,7 @@ mixin endeavorTextLeftImage2FS(data)
     - var sizeClass = data.sizeClass
 
     .endeavor-element.endeavor-item.endeavor-horizontal-10vw.endeavor-flex-row-nowrap.endeavor-flex-center-main.endeavor-flex-between.fsw(style=`background-color: ${bgColor}`)
-        img.lazyload.endeavor-second.blur-up(src="../assets/images/empty.gif")&attributes({'data-src': image.src}, {'data-srcset': sources}, {'class':sizeClass})
+        img.lazyload.endeavor-second.blur-up(src=image.src_low)&attributes({'data-src': image.src}, {'data-srcset': sources}, {'class':sizeClass})
         .endeavor-block
             p.endeavor-caption-4.endeavor-text-left(style=`color: ${textColor}`)=data.text
 
@@ -457,7 +457,7 @@ mixin endeavorTextRightImageFS(data)
     - var sizeClass = data.sizeClass
 
     .endeavor-element.endeavor-item.endeavor-horizontal-10vw.endeavor-flex-row-nowrap.endeavor-flex-center-main.endeavor-flex-between.fsw(style=`background-color: ${bgColor}`)
-        img.lazyload.blur-up(src="../assets/images/empty.gif")&attributes({'data-src': image.src}, {'data-srcset': sources}, {'class':sizeClass})
+        img.lazyload.blur-up(src=image.src_low)&attributes({'data-src': image.src}, {'data-srcset': sources}, {'class':sizeClass})
         .endeavor-block.endeavor-second
             h3.endeavor-text-left(style=`color: ${textColor}`)=data.superText
             p.endeavor-pulltext.endeavor-text-left(style=`color: ${textColor}`)=data.text
@@ -476,7 +476,7 @@ mixin endeavorTextRightImage2FS(data)
     - var sizeClass = data.sizeClass
 
     .endeavor-element.endeavor-item.endeavor-horizontal-10vw.endeavor-flex-row-nowrap.endeavor-flex-center-main.endeavor-flex-between.fsw(style=`background-color: ${bgColor}`)
-        img.lazyload.blur-up(src="../assets/images/empty.gif")&attributes({'data-src': image.src}, {'data-srcset': sources}, {'class':sizeClass})
+        img.lazyload.blur-up(src=image.src_low)&attributes({'data-src': image.src}, {'data-srcset': sources}, {'class':sizeClass})
         .endeavor-block.endeavor-second
             p.endeavor-caption-4.endeavor-text-left(style=`color: ${textColor}`)=data.text
 
@@ -495,7 +495,7 @@ mixin endeavorLeftImageFS(data)
 
     .endeavor-element.endeavor-item.endeavor-item-no-margin.endeavor-horizontal-10vw.endeavor-flex-row-nowrap.endeavor-flex-center-main.endeavor-flex-start.fsw(style=`background-color: ${bgColor}`)
         .endeavor-contaner.endeavor-flex.endeavor-flex-center(class=`${sizeClass}`)
-            img.lazyload.blur-up(style=`width: ${size};height: ${size}`)(src="../assets/images/empty.gif")&attributes({'data-src': image.src}, {'data-srcset': sources})
+            img.lazyload.blur-up(style=`width: ${size};height: ${size}`)(src=image.src_low)&attributes({'data-src': image.src}, {'data-srcset': sources})
 
 
 //-  Endeavor Project | Full-Width, Text Right, Left-Aligned Square Image
@@ -511,7 +511,7 @@ mixin endeavorRightImageFS(data)
 
     .endeavor-element.endeavor-item.endeavor-item-no-margin.endeavor-horizontal-10vw.endeavor-flex-row-nowrap.endeavor-flex-center-main.endeavor-flex-end.fsw(style=`background-color: ${bgColor}`)
         .endeavor-contaner.endeavor-flex.endeavor-flex-center(class=`${sizeClass}`)
-            img.lazyload.blur-up(style=`width: ${size};height: ${size}`)(src="../assets/images/empty.gif")&attributes({'data-src': image.src}, {'data-srcset': sources})
+            img.lazyload.blur-up(style=`width: ${size};height: ${size}`)(src=image.src_low)&attributes({'data-src': image.src}, {'data-srcset': sources})
 
 
 //-  Endeavor Project | Full-Width, Text Left
@@ -557,8 +557,8 @@ mixin endeavorNestedImageFS(data)
     - var sources2 = data.image2.src_standard + " 1x, " + data.image2.src_retina + " 2x"
     - var marginBottom = data.margin ? data.margin : "" // $BLACK
     .endeavor-element.endeavor-item.endeavor-flex-column.endeavor-flex-center-main(style=`margin-bottom: ${marginBottom}`)
-        img.lazyload.blur-up.fsw(src="../assets/images/empty.gif")&attributes({'data-src': image.src}, {'data-srcset': sources}) 
-        img.lazyload.blur-up.endeavor-width-40-prcnt.endeavor-pos-rel.endeavor-top-minus-10vw.endeavor-flex-self-center.endeavor-shadow-50(src="../assets/images/empty.gif")&attributes({'data-src': image2.src}, {'data-srcset': sources2}) 
+        img.lazyload.blur-up.fsw(src=image.src_low)&attributes({'data-src': image.src}, {'data-srcset': sources}) 
+        img.lazyload.blur-up.endeavor-width-40-prcnt.endeavor-pos-rel.endeavor-top-minus-10vw.endeavor-flex-self-center.endeavor-shadow-50(src=image.src_low)&attributes({'data-src': image2.src}, {'data-srcset': sources2}) 
 
 
 
@@ -571,7 +571,7 @@ mixin endeavorImageFS(data)
     - var image = data.image
     - var sources = data.image.src_standard + " 1x, " + data.image.src_retina + " 2x"
     - var _class = data.class ? data.class : "endeavor-item"
-    img.endeavor-element.lazyload.blur-up.fsw(src="../assets/images/empty.gif" class=_class)&attributes({'data-src': image.src}, {'data-srcset': sources})
+    img.endeavor-element.lazyload.blur-up.fsw(src=image.src_low class=_class)&attributes({'data-src': image.src}, {'data-srcset': sources})
 
 
 //-  Endeavor Project | Full-Width Adaptive Image
@@ -582,7 +582,7 @@ mixin endeavorImage100vw(data)
     - var image = data.image
     - var sources = data.image.src_standard + " 1x, " + data.image.src_retina + " 2x"
     - var _class = data.class ? data.class : "endeavor-item"
-    img.endeavor-element.lazyload.blur-up.endeavor-width-100vw.endeavor-pos-rel(src="../assets/images/empty.gif")(class=`${_class}`)&attributes({'data-src': image.src}, {'data-srcset': sources})
+    img.endeavor-element.lazyload.blur-up.endeavor-width-100vw.endeavor-pos-rel(src=image.src_low)(class=`${_class}`)&attributes({'data-src': image.src}, {'data-srcset': sources})
 
 
 //-  Endeavor Project | Full-Width Adaptive Image // No Top Margin
@@ -592,7 +592,7 @@ mixin endeavorImage100vw(data)
 mixin endeavorImageNoTopFS(data)
     - var image = data.image
     - var sources = data.image.src_standard + " 1x, " + data.image.src_retina + " 2x"
-    img.endeavor-element.lazyload.endeavor-item-top-none.blur-up.fsw(src="../assets/images/empty.gif")&attributes({'data-src': image.src}, {'data-srcset': sources})
+    img.endeavor-element.lazyload.endeavor-item-top-none.blur-up.fsw(src=image.src_low)&attributes({'data-src': image.src}, {'data-srcset': sources})
 
 
 //-  Endeavor Project | Full-Width Adaptive Image // No Margin
@@ -602,7 +602,7 @@ mixin endeavorImageNoTopFS(data)
 mixin endeavorImageNoMarginFS(data)
     - var image = data.image
     - var sources = data.image.src_standard + " 1x, " + data.image.src_retina + " 2x"
-    img.endeavor-element.lazyload.endeavor-item-no-margin.blur-up.fsw(src="../assets/images/empty.gif")&attributes({'data-src': image.src}, {'data-srcset': sources})
+    img.endeavor-element.lazyload.endeavor-item-no-margin.blur-up.fsw(src=image.src_low)&attributes({'data-src': image.src}, {'data-srcset': sources})
 
 
 //-  Endeavor Project | Full-Width Adaptive Image // No Top Margin
@@ -612,7 +612,7 @@ mixin endeavorImageNoMarginFS(data)
 mixin endeavorImageNoBottomFS(data)
     - var image = data.image
     - var sources = data.image.src_standard + " 1x, " + data.image.src_retina + " 2x"
-    img.endeavor-element.lazyload.endeavor-item.endeavor-item-bottom-none.blur-up.fsw(src="../assets/images/empty.gif")&attributes({'data-src': image.src}, {'data-srcset': sources})
+    img.endeavor-element.lazyload.endeavor-item.endeavor-item-bottom-none.blur-up.fsw(src=image.src_low)&attributes({'data-src': image.src}, {'data-srcset': sources})
 
 
 //-  Endeavor Project | 75%-Width Adaptive Image // No Top Margin
@@ -622,7 +622,7 @@ mixin endeavorImageNoBottomFS(data)
 mixin endeavorImageNoTop75(data)
     - var image = data.image
     - var sources = data.image.src_standard + " 1x, " + data.image.src_retina + " 2x"
-    img.endeavor-element.lazyload.endeavor-item-top-none.blur-up.endeavor-width-75-percent(src="../assets/images/empty.gif")&attributes({'data-src': image.src}, {'data-srcset': sources})
+    img.endeavor-element.lazyload.endeavor-item-top-none.blur-up.endeavor-width-75-percent(src=image.src_low)&attributes({'data-src': image.src}, {'data-srcset': sources})
 
 
 //-  Endeavor Project | Full-Width Adaptive Image
@@ -634,7 +634,7 @@ mixin endeavorImageFSList(data)
     - var _class = data.class ? data.class : "endeavor-item"
     each image, index in images
         - var sources = image.src_standard + " 1x, " + image.src_retina + " 2x"
-        img.endeavor-element.lazyload.fsw(src="../assets/images/empty.gif" class=_class)&attributes({'data-src': image.src}, {'data-srcset': sources})
+        img.endeavor-element.lazyload.fsw(src=image.src_low class=_class)&attributes({'data-src': image.src}, {'data-srcset': sources})
 
 
 //-  Endeavor Project | 100vw Width Adaptive Image
@@ -648,7 +648,7 @@ mixin endeavorImage100vwList(data)
     .endeavor-element.endeavor-width-100vw.endeavor-pos-rel(class=_class)
         each image, index in images
             - var sources = image.src_standard + " 1x, " + image.src_retina + " 2x"
-            img.lazyload.fsw(src="../assets/images/empty.gif" class=_class2)&attributes({'data-src': image.src}, {'data-srcset': sources})
+            img.lazyload.fsw(src=image.src_low class=_class2)&attributes({'data-src': image.src}, {'data-srcset': sources})
 
 
 //-  Endeavor Project | 75%-Width Adaptive Image
@@ -658,7 +658,7 @@ mixin endeavorImage100vwList(data)
 mixin endeavorImage75(data)
     - var image = data.image
     - var sources = data.image.src_standard + " 1x, " + data.image.src_retina + " 2x"
-    img.endeavor-element.lazyload.endeavor-item.blur-up.endeavor-width-75-percent(src="../assets/images/empty.gif")&attributes({'data-src': image.src}, {'data-srcset': sources})
+    img.endeavor-element.lazyload.endeavor-item.blur-up.endeavor-width-75-percent(src=image.src_low)&attributes({'data-src': image.src}, {'data-srcset': sources})
 
 
 //-  Endeavor Project | 75%-Width Adaptive Image
@@ -668,7 +668,7 @@ mixin endeavorImage75(data)
 mixin endeavorImage75List(data)
     - var images = data.images
     each image, index in images
-        img.endeavor-element.lazyload.endeavor-item-25.blur-up.endeavor-width-75-percent(src="../assets/images/empty.gif")&attributes({'data-src': image.src}, {'data-srcset': sources})
+        img.endeavor-element.lazyload.endeavor-item-25.blur-up.endeavor-width-75-percent(src=image.src_low)&attributes({'data-src': image.src}, {'data-srcset': sources})
 
 
 //-  Endeavor Project | Full-Width Adaptive Youtube Video
@@ -763,7 +763,7 @@ mixin endeavorImageGridIterator(data)
         .grid-slider.slider-transition
             each image, i in images
                 div.fill-area
-                    img.lazyload.limit-width-50vw.big-moment-3-color.endeavor-image-box--center(src=`${"../assets/images/empty.gif"}`)&attributes({'data-src': image.src}, {'data-srcset': sources})
+                    img.lazyload.limit-width-50vw.big-moment-3-color.endeavor-image-box--center(src=`${image.src_low}`)&attributes({'data-src': image.src}, {'data-srcset': sources})
         each image, i in images
             .image-grid-container.bounce&attributes({'data-slide': i})
                 .image-grid(style=`background-image: url(${image.src_preview})`) 
@@ -816,7 +816,7 @@ mixin endeavorImageCenterCaption(data)
     - var sources = data.image.src_standard + " 1x, " + data.image.src_retina + " 2x"
     - var caption = data.caption
     .endeavor-element.endeavor-item.endeavor-para-box.fsw.endeavor-flex-column
-        img.lazyload.endeavor-width-50-prcnt.img-box.endeavor-image-box--center(src=`${"../assets/images/empty.gif"}`)&attributes({'data-src': image.src}, {'data-srcset': sources})
+        img.lazyload.endeavor-width-50-prcnt.img-box.endeavor-image-box--center(src=`${image.src_low}`)&attributes({'data-src': image.src}, {'data-srcset': sources})
         p.caption.center-caption=caption
 
 
@@ -829,7 +829,7 @@ mixin endeavorImageSlider(data)
     - var _class = data.class ? data.class : "endeavor-item"
     .endeavor-element.endeavor-image-slider(class=_class)
         each image, i in images
-            img.lazyload.endeavor-image-slider-color.fsw(src="../assets/images/empty.gif")&attributes({'data-src': images[i].src})
+            img.lazyload.endeavor-image-slider-color.fsw(src=image.src_low)&attributes({'data-src': images[i].src})
 
 
 //-  Endeavor Swipable Image Slider 75
@@ -841,7 +841,7 @@ mixin endeavorImageSlider75(data)
     - var _class = data.class ? data.class : "endeavor-item"
     .endeavor-element.endeavor-image-slider.endeavor-width-75-prcnt.endeavor-center(class=_class)
         each image, i in images
-            img.lazyload.endeavor-image-slider-color.fsw(src="../assets/images/empty.gif")&attributes({'data-src': images[i].src})
+            img.lazyload.endeavor-image-slider-color.fsw(src=image.src_low)&attributes({'data-src': images[i].src})
 
 
 //-  Endeavor Display Card + Image
@@ -859,7 +859,7 @@ mixin endeavorCardCenter(data)
     .endeavor-element.endeavor-item-no-margin.endeavor-flex-center.endeavor-flex
         .endeavor-card.endeavor-radius-50px.endeavor-flex-center-main.endeavor-square-250px.endeavor-flex-column(style=`background-color: ${bgColor}`)
             .endeavor-item-50-25.endeavor-square-60px.endeavor-center.endeavor-circle.endeavor-flex.endeavor-flex-center.endeavor-item-bottom-25(style=`background-color: ${bgColor2}`)
-                img.lazyload.endeavor-width-40-prcnt(src=`${"../assets/images/empty.gif"}`)&attributes({'data-src': image.src}, {'data-srcset': sources})
+                img.lazyload.endeavor-width-40-prcnt(src=`${image.src_low}`)&attributes({'data-src': image.src}, {'data-srcset': sources})
             h2.card-header.endeavor-text-center(style=`color: ${textColor}`)=header
 
 
@@ -882,7 +882,7 @@ mixin endeavorVerticalComparison(data)
     .endeavor-element.endeavor-item-no-margin.endeavor-flex-center.endeavor-flex-column.endeavor-height-200px
         .endeavor-vertical-rule.endeavor-pos-abs.endeavor-height-200px(style=`background-color: ${lineColor}`)(class=`${classd}`)
         .endeavor-item-25.endeavor-square-60px.endeavor-center.endeavor-circle.endeavor-flex.endeavor-flex-center.endeavor-push-1(style=`background-color: ${bgColor2}`)
-            img.lazyload.endeavor-width-40-prcnt(src=`${"../assets/images/empty.gif"}`)&attributes({'data-src': image.src}, {'data-srcset': sources})
+            img.lazyload.endeavor-width-40-prcnt(src=`${image.src_low}`)&attributes({'data-src': image.src}, {'data-srcset': sources})
             p.endeavor-pos-abs.endeavor-width-150px.endeavor-left-100px.endeavor-text-left(style=`color: ${textColor};font-weight: ${weight}`)=textLeft
             p.endeavor-pos-abs.endeavor-width-150px.endeavor-right-100px.endeavor-text-right(style=`color: ${textColor};font-weight: ${weight}`)=textRight
 
@@ -1100,7 +1100,7 @@ mixin endeavorParagraphImages(data)
             .fsw.endeavor-transition-ease-500.endeavor-height-auto.endeavor-no-flow&attributes({'class': _class2}, {'id': _id})
                 each image, index in images
                     - var sources = image.src_standard + " 1x, " + image.src_retina + " 2x"
-                    img.lazyload.endeavor-item.blur-up.fsw(src="../assets/images/empty.gif")&attributes({'data-src': image.src}, {'data-srcset': sources})
+                    img.lazyload.endeavor-item.blur-up.fsw(src=image.src_low)&attributes({'data-src': image.src}, {'data-srcset': sources})
 
 
 //-  Endeavor Project | 100% Object
@@ -1160,7 +1160,7 @@ mixin endeavorSquareLinks(data)
             a(id=`${_id}` href=`${_url}` target="_blank" ).endeavor-button.ghost.endeavor-center.endeavor-inline-flex
                 h3.endeavor-center.endeavor-text-center.endeavor-transition-250.endeavor-flex-self-center(style=`color: ${textColor}`)=text
         .endeavor-square-width-30.endeavor-50.endeavor-float-left.endeavor-no-flow
-            img.lazyload.endeavor-second.blur-up(src="../assets/images/empty.gif")&attributes({'data-src': image.src}, {'data-srcset': sources}, {'class':sizeClass})
+            img.lazyload.endeavor-second.blur-up(src=image.src_low)&attributes({'data-src': image.src}, {'data-srcset': sources}, {'class':sizeClass})
 
 
 //- -------------- Hybrid Components ----------------
@@ -1194,7 +1194,7 @@ mixin endeavorImageHeader(data, _width)
         h4.endeavor-item-bottom-15.endeavor-text-center.endeavor-item-top-50=header
         each image, index in images
             - var sources = image.src_standard + " 1x, " + image.src_retina + " 2x"
-            img.lazyload.blur-up.fsw(src=`${"../assets/images/empty.gif"}`)&attributes({'data-src': image.src}, {'data-srcset': sources})
+            img.lazyload.blur-up.fsw(src=`${image.src_low}`)&attributes({'data-src': image.src}, {'data-srcset': sources})
 
 
 //-  Endeavor Project | Adaptive Horizontal Column Element Iterator
