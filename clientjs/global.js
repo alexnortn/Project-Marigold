@@ -236,15 +236,26 @@ $(document).ready(function() {
     // Only when in viewport
     // Call once on load
     _videoChecker = function() {
-        $('video').each(function() {
-            if ($(this).is(":in-viewport")) {
-                $(this)[0].play();
+        return new Promise(function(f, r) {
+            $('video').each(function() {
+                if (this.HAVE_ENOUGH_DATA) {
+                    f(this);
+                }
+            });
+        })
+        .then(function(elem){
+            if ($(elem).is(":in-viewport")) {
+                $(elem)[0].play();
             }
             else {
-                $(this)[0].pause();
+                $(elem)[0].pause();
             }
+        })
+        .catch(function(reason) {
+            console.log('video promise rejected for', reason);
         });
     }
+
 
     _videoChecker();
 
@@ -410,16 +421,23 @@ $(document).ready(function() {
                 calcSectionHeight();
             }
 
-            let timer;
+            let timer, timer2;
             $(new_id).scroll(function() {
                 if (timer) {
                     window.clearTimeout(timer);
                 }
 
+                if (timer2) {
+                    window.clearTimeout(timer2);
+                }
+
                 timer = window.setTimeout(function() {
-                    _videoChecker();
                     scrollHandler();
                 }, 10);
+
+                timer2 = window.setTimeout(function() {
+                    _videoChecker();
+                }, 50);
             });
 
             $(window).resize(function() { resizeHandler() });
