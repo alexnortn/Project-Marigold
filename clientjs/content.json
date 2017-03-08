@@ -1974,6 +1974,29 @@
             "image_preview": "images/projects/explore/hi-res/explore-preview.jpg",
             "sections" : [
                 {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Neuron Pattern GIF",
+                            "src": "images/projects/explore/standard/explore-neuron-pattern.gif",
+                            "src_standard": "images/projects/explore/standard/explore-neuron-pattern.gif",
+                            "src_retina": "images/projects/explore/retina/explore-neuron-pattern.gif",
+                            "src_low": "images/projects/explore/low-res/explore-neuron-pattern.gif",
+                            "src_mobile": "images/projects/explore/hi-res/explore-neuron-pattern.gif",
+                            "src_preview": "images/projects/explore/hi-res/explore-neuron-pattern.gif",
+                            "caption": "Neuron Pattern GIF"
+                        }
+                    }
+                },
+                {
                     "name" : "endeavorPad",
                     "data" : {
                         "class" : "endeavor-height-200px-responsive endeavor-item-no-margin endeavor-height-10vw"
