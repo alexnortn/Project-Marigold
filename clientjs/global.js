@@ -53,7 +53,7 @@ let _projectCurrentId,
     _hashChanged = false,
     _closeProject,
     _endeavor_routes,
-    _videoChecker;
+    _videoHandler;
 
 let _itemInteraction,
     _endeavorRouter;
@@ -233,31 +233,37 @@ $(document).ready(function() {
     });
 
     // Autoplay Videos
-    // Only when in viewport
-    // Call once on load
-    _videoChecker = function() {
-        return new Promise(function(f, r) {
-            $('video').each(function() {
-                if (this.HAVE_ENOUGH_DATA) {
-                    f(this);
-                }
-            });
-        })
-        .then(function(elem){
+    _videoHandler = function(container) {
+        $(container).find('video').each(function(item) {
+            if (this === undefined) {
+                return;
+            }
+            if (this.HAVE_ENOUGH_DATA === 4) { // Asset loaded
+                videoControl(this);
+            }
+            else {
+                new Promise((f, r) => {
+                    if (this.HAVE_ENOUGH_DATA === 4) { // Asset loaded
+                            f(this);
+                    }
+                })
+                .then(function(elem){
+                    videoControl(elem);
+                })
+                .catch(function(reason) {
+                });
+            }
+        });
+
+        function videoControl(elem) {
             if ($(elem).is(":in-viewport")) {
                 $(elem)[0].play();
             }
             else {
                 $(elem)[0].pause();
             }
-        })
-        .catch(function(reason) {
-            console.log('video promise rejected for', reason);
-        });
+        }
     }
-
-
-    _videoChecker();
 
     // Toggle project "reveal" sections
     // Important -> Naming schema:
@@ -436,7 +442,7 @@ $(document).ready(function() {
                 }, 10);
 
                 timer2 = window.setTimeout(function() {
-                    _videoChecker();
+                    _videoHandler(new_id);
                 }, 50);
             });
 
@@ -537,43 +543,43 @@ $(document).ready(function() {
             $('#pagination').velocity("fadeOut", { duration: (slide_duration * 0.75) });
 
             $.Velocity.animate( $transitionSVG, { r: 2000 }, { duration: slide_duration },  "ease-out" )
-                .then(function(elements) {
-                    $('body').addClass('endeavor-open');
-                    
-                    container.addClass('flex-row');
+            .then(function(elements) {
+                $('body').addClass('endeavor-open');
+                
+                container.addClass('flex-row');
 
-                    $.Velocity.animate( $(project_id), "scroll", { axis: "x", duration: slide_duration, container: container })
-                        .then(function(elems) {
-                            $(project_id).scrollTop(0);     // Reset project scroll             
-                            container.addClass('visible')
-                        
-                            $('#fx-container').addClass('opaque').onCSSTransitionEnd( function() { 
-                                if (opaque) {
-                                    return;
-                                }
+                $.Velocity.animate( $(project_id), "scroll", { axis: "x", duration: slide_duration, container: container })
+                .then(function(elems) {
+                    $(project_id).scrollTop(0);     // Reset project scroll             
+                    container.addClass('visible')
+                
+                    $('#fx-container').addClass('opaque').onCSSTransitionEnd( function() { 
+                        if (opaque) {
+                            return;
+                        }
 
-                                $.Velocity.animate( $transitionSVG, "fadeOut", { duration: (slide_duration * 0.75) } )
-                                    .then(function(elements) {
-                                        $('.arrow-container').removeClass('transparent');
-                                        
-                                        _$projectCurrentContents = $(project_id).find('.contents');
-                                        setupMedia(_$projectCurrentContents); // Resize Video players
+                        $.Velocity.animate( $transitionSVG, "fadeOut", { duration: (slide_duration * 0.75) } )
+                        .then(function(elements) {
+                            $('.arrow-container').removeClass('transparent');
+                            
+                            _$projectCurrentContents = $(project_id).find('.contents');
+                            setupMedia(_$projectCurrentContents); // Resize Video players
 
-                                        $transitionSVG.remove();
-                                    })
-                                    .catch(function(error) { 
-                                        console.log("Rejected.");
-                                    });
-
-                                opaque = true;
-
-                            });
-
+                            $transitionSVG.remove();
                         })
                         .catch(function(error) { 
                             console.log("Rejected.");
                         });
+
+                        opaque = true;
+
+                    });
+
+                })
+                .catch(function(error) { 
+                    console.log("Rejected.");
                 });
+            });
 
             _openProjectState = true;
 
