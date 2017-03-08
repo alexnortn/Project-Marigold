@@ -1974,6 +1974,30 @@
             "image_preview": "images/projects/explore/hi-res/explore-preview.jpg",
             "sections" : [
                 {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Explore NNN",
+                            "src": "images/projects/explore/standard/explore-nnn.jpg",
+                            "src_standard": "images/projects/explore/standard/explore-nnn.jpg",
+                            "src_retina": "images/projects/explore/retina/explore-nnn.jpg",
+                            "src_low": "images/projects/explore/low-res/explore-nnn.jpg",
+                            "src_mobile": "images/projects/explore/hi-res/explore-nnn.jpg",
+                            "src_preview": "images/projects/explore/hi-res/explore-nnn.jpg",
+                            "caption": "Explore NNN"
+                        }
+                    }
+                },
+                {
                     "name" : "endeavorImageFS",
                     "data" : {
                         "placeholder" : {
