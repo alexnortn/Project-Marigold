@@ -1940,6 +1940,177 @@
     ],
     "projects" : [
         {
+            "route" :"explore-project",
+            "name"  : "Explore",
+            "project_type"  : "Project",
+            "year"  : "2015",
+            "preview" :"explore-preview",
+            "medium": [
+                "Paper",
+                "Wood",
+                "Arduino"
+            ],
+            "technique": [
+                "Laser Cutter",
+                "Wood Working",
+                "Programing"
+            ],
+            "description" : {
+                "quote": "Bringing the future of neuroscience exploration and education to virtual realms using the Oculus Rift.",
+                "brief": "In October of 2016, president Barrack Obama called upon a coalition of pioneering researchers, designers, technologists, and diplomats to gather at Carnegie Mellon University to demonstrate the very leading frontiers of technology. We were invited to this White House Frontiers conference to present our latest virtual reality experience: MSTY. The three pound organ sitting behind y our eyes is nothing short of extraordinary. Symphonic activity among billions of neurons gives rise to thoughts, feelings, and ultimately, the perspective and personality that turn a brain into a mind. Thanks to cutting edge AI, nanoscale resolution imaging, and the help of a quarter million gamers from around the world, crowdsources neuroscience sets the pace for a new wave of discovery. The creators of Eyewire reveal the first glimpse of Neo a cortical game coming 2017 that will invite gamers to solve the puzzles of perception.",
+                "challenge": "MSTY VR is our most recent virtual reality experience. It features a knotty entanglement of neuron reconstructions from cortex—the outer most layer of brain tissue responsible for perception. MSTY, so named for the particular flavor of AI involved in the reconstruction process, was intended to be a mostly passive safari-type experience. The user would be accompanied by a friendly, derpy, but exceedingly capable AI companion—MSTY. Inspired by Google's early ImageNet dataset and success in training neural networks to recognize cats in Youtube videos, we conceived MSTY as a hovering cat–like robot with paw–like arms. The experience lasted approximately 5 minutes, during which MSTY intelligently and naturally navigates toward areas of interest acting as a sort of subliminal tour guide."
+            },
+            "meta" : {
+                "Client" : "Self (MIT)",
+                "Year" : 2015,
+                "Role" : "Designer / Developer",
+                "Team" : "—",
+                "Discipline" : "Fabrication / Industrial Design",
+                "Medium" : "Internet of Things / Wood",
+                "Technologies" : "Arduino / Woodshop",
+                "Duration" : "Two Months"
+            },
+            "image_hero": "images/projects/explore/hi-res/explore-hero.jpg",
+            "image_preview": "images/projects/explore/hi-res/explore-preview.jpg",
+            "sections" : [
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Explore NNN",
+                            "src": "images/projects/explore/standard/explore-nnn.jpg",
+                            "src_standard": "images/projects/explore/standard/explore-nnn.jpg",
+                            "src_retina": "images/projects/explore/retina/explore-nnn.jpg",
+                            "src_low": "images/projects/explore/low-res/explore-nnn.jpg",
+                            "src_mobile": "images/projects/explore/hi-res/explore-nnn.jpg",
+                            "src_preview": "images/projects/explore/hi-res/explore-nnn.jpg",
+                            "caption": "Explore NNN"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Neuron Pattern GIF",
+                            "src": "images/projects/explore/standard/explore-neuron-pattern.gif",
+                            "src_standard": "images/projects/explore/standard/explore-neuron-pattern.gif",
+                            "src_retina": "images/projects/explore/retina/explore-neuron-pattern.gif",
+                            "src_low": "images/projects/explore/low-res/explore-neuron-pattern.gif",
+                            "src_mobile": "images/projects/explore/hi-res/explore-neuron-pattern.gif",
+                            "src_preview": "images/projects/explore/hi-res/explore-neuron-pattern.gif",
+                            "caption": "Neuron Pattern GIF"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Explore L-Systems",
+                            "src": "images/projects/explore/standard/explore-l-systems.jpg",
+                            "src_standard": "images/projects/explore/standard/explore-l-systems.jpg",
+                            "src_retina": "images/projects/explore/retina/explore-l-systems.jpg",
+                            "src_low": "images/projects/explore/low-res/explore-l-systems.jpg",
+                            "src_mobile": "images/projects/explore/hi-res/explore-l-systems.jpg",
+                            "src_preview": "images/projects/explore/hi-res/explore-l-systems.jpg",
+                            "caption": "Explore L-Systems"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageSlider",
+                    "data" : {
+                        "meta" : "Graph-Traversal",
+                        "images" : [
+                            {
+                                "name": "explore-graph-single-1",
+                                "src": "images/projects/explore/standard/explore-graph-single-1.jpg",
+                                "src_standard": "images/projects/explore/standard/explore-graph-single-1.jpg",
+                                "src_retina": "images/projects/explore/retina/explore-graph-single-1.jpg",
+                                "src_low": "images/projects/explore/low-res/explore-graph-single-1.jpg",
+                                "src_mobile": "images/projects/explore/hi-res/explore-graph-single-1.jpg",
+                                "src_preview": "images/projects/explore/hi-res/explore-graph-single-1.jpg",
+                                "caption": "Explore Graph Traversal"   
+                            },
+                            {
+                                "name": "explore-graph-single-2",
+                                "src": "images/projects/explore/standard/explore-graph-single-2.jpg",
+                                "src_standard": "images/projects/explore/standard/explore-graph-single-2.jpg",
+                                "src_retina": "images/projects/explore/retina/explore-graph-single-2.jpg",
+                                "src_low": "images/projects/explore/low-res/explore-graph-single-2.jpg",
+                                "src_mobile": "images/projects/explore/hi-res/explore-graph-single-2.jpg",
+                                "src_preview": "images/projects/explore/hi-res/explore-graph-single-2.jpg",
+                                "caption": "Explore Graph Traversal"   
+                            },
+                            {
+                                "name": "explore-graph-single-3",
+                                "src": "images/projects/explore/standard/explore-graph-single-3.jpg",
+                                "src_standard": "images/projects/explore/standard/explore-graph-single-3.jpg",
+                                "src_retina": "images/projects/explore/retina/explore-graph-single-3.jpg",
+                                "src_low": "images/projects/explore/low-res/explore-graph-single-3.jpg",
+                                "src_mobile": "images/projects/explore/hi-res/explore-graph-single-3.jpg",
+                                "src_preview": "images/projects/explore/hi-res/explore-graph-single-3.jpg",
+                                "caption": "Explore Graph Traversal"   
+                            },
+                            {
+                                "name": "explore-graph-single-4",
+                                "src": "images/projects/explore/standard/explore-graph-single-4.jpg",
+                                "src_standard": "images/projects/explore/standard/explore-graph-single-4.jpg",
+                                "src_retina": "images/projects/explore/retina/explore-graph-single-4.jpg",
+                                "src_low": "images/projects/explore/low-res/explore-graph-single-4.jpg",
+                                "src_mobile": "images/projects/explore/hi-res/explore-graph-single-4.jpg",
+                                "src_preview": "images/projects/explore/hi-res/explore-graph-single-4.jpg",
+                                "caption": "Explore Graph Traversal"   
+                            },
+                            {
+                                "name": "explore-graph-single-5",
+                                "src": "images/projects/explore/standard/explore-graph-single-5.jpg",
+                                "src_standard": "images/projects/explore/standard/explore-graph-single-5.jpg",
+                                "src_retina": "images/projects/explore/retina/explore-graph-single-5.jpg",
+                                "src_low": "images/projects/explore/low-res/explore-graph-single-5.jpg",
+                                "src_mobile": "images/projects/explore/hi-res/explore-graph-single-5.jpg",
+                                "src_preview": "images/projects/explore/hi-res/explore-graph-single-5.jpg",
+                                "caption": "Explore Graph Traversal"   
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorPad",
+                    "data" : {
+                        "class" : "endeavor-height-200px-responsive endeavor-item-no-margin endeavor-height-10vw"
+                    }
+                }
+            ]
+        },
+        {
             "route" :"msty-project",
             "name"  : "MSTY VR",
             "project_type"  : "Project",
