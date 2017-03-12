@@ -2243,7 +2243,7 @@
                     "name" : "endeavorDesignProcess",
                     "data" : {
                         "class" : "endeavor-item-no-margin",
-                        "process" : "Generative Design",
+                        "process" : "Generative",
                         "text" : "",
                         "number" : "03/04",
                         "bgColor" : "#e6e6e6",
