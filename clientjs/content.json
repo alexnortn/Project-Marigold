@@ -2197,13 +2197,46 @@
                 {
                     "name" : "endeavorDesignProcess",
                     "data" : {
-                        "class" : "endeavor-item-no-margin",
-                        "process" : "Layout",
+                        "class" : "endeavor-item-top-125",
+                        "process" : "Styles",
                         "text" : "",
                         "number" : "02/04",
                         "bgColor" : "#e6e6e6",
                         "textColor" : "#bfbfbf",
                         "textColor2" : "#d9d9d9"
+                    }
+                },
+                {
+                    "name" : "endeavorParagraph",
+                    "data" : {
+                        "header" : "Styles",
+                        "class" : "endeavor-item-top-125",
+                        "bgColor" : "",
+                        "description" : "To ensure consistency across application elements and devices we created a set of standards ranging from idenity to typography, to color and interation models. We organized our styleguide into 6 progressive sections: Identity, Elements, Components, Compositions, Layout, and Views."
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Explore Style",
+                            "src": "images/projects/explore/standard/explore-style.jpg",
+                            "src_standard": "images/projects/explore/standard/explore-style.jpg",
+                            "src_retina": "images/projects/explore/retina/explore-style.jpg",
+                            "src_low": "images/projects/explore/low-res/explore-style.jpg",
+                            "src_mobile": "images/projects/explore/hi-res/explore-style.jpg",
+                            "src_preview": "images/projects/explore/hi-res/explore-style.jpg",
+                            "caption": "Explore Style"
+                        }
                     }
                 },
                 {
