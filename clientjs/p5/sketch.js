@@ -1152,9 +1152,11 @@ let glyph = function (p) {
 
 	// Scroll Accumulator
 	$( window ).scroll(function() {
-		let scroll_top = $(window).scrollTop();
-		if (scroll_top < p.height)  { // We only care if it's happening around p5 environment
-			_bounce.bounceFactory(scroll_top);
+		if (!_options.mobile) {
+			let scroll_top = $(window).scrollTop();
+			if (scroll_top < p.height)  { // We only care if it's happening around p5 environment
+				_bounce.bounceFactory(scroll_top);
+			}
 		}
 	});
 
