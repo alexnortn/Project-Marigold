@@ -1974,6 +1974,251 @@
             "image_preview": "images/projects/explore/hi-res/explore-preview.jpg",
             "sections" : [
                 {
+                    "name" : "endeavorDesignProcess",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin",
+                        "process" : "Deliverable",
+                        "text" : "",
+                        "number" : "01/04",
+                        "bgColor" : "#e6e6e6",
+                        "textColor" : "#bfbfbf",
+                        "textColor2" : "#d9d9d9"
+                    }
+                },
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/explore/videos/explore-walkthrough-window-loop.webm",
+                            "mp4" : "images/projects/explore/videos/explore-walkthrough-window-loop.mp4",
+                            "poster" : "images/projects/explore/videos/explore-walkthrough-window-loop.jpg"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorChecklist",
+                    "data" : {
+                        "header" : "Key Features",
+                        "class" : "endeavor-item-top endeavor-item-bottom-15",
+                        "class2" : "",
+                        "class3" : "",
+                        "class4" : "checklist-simple",
+                        "icon" : "fa-hand-o-right",
+                        "bgColor" : "",
+                        "description" : "",
+                        "contents" : [
+                            {
+                                "header" : "Generative Design",
+                                "description" : ""
+                            },
+                            {
+                                "header" : "Interactive Narrative",
+                                "description" : ""
+                            },
+                            {
+                                "header" : "Responsive",
+                                "description" : ""
+                            },
+                            {
+                                "header" : "p5.js",
+                                "description" : ""
+                            },
+                            {
+                                "header" : "Custom Front-End Framework",
+                                "description" : ""
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Explore Illustration",
+                            "src": "images/projects/explore/standard/explore-animation-lineup.jpg",
+                            "src_standard": "images/projects/explore/standard/explore-animation-lineup.jpg",
+                            "src_retina": "images/projects/explore/retina/explore-animation-lineup.jpg",
+                            "src_low": "images/projects/explore/low-res/explore-animation-lineup.jpg",
+                            "src_mobile": "images/projects/explore/hi-res/explore-animation-lineup.jpg",
+                            "src_preview": "images/projects/explore/hi-res/explore-animation-lineup.jpg",
+                            "caption": "Explore Illustration"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/explore/videos/explore-window-animations.webm",
+                            "mp4" : "images/projects/explore/videos/explore-window-animations.mp4",
+                            "poster" : "images/projects/explore/videos/explore-window-animations.jpg"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorParagraph",
+                    "data" : {
+                        "header" : "Generative Animations",
+                        "class" : "endeavor-item-125",
+                        "bgColor" : "",
+                        "description" : "To ensure consistency across application elements and devices we created a set of standards ranging from idenity to typography, to color and interation models. We organized our styleguide into 6 progressive sections: Identity, Elements, Components, Compositions, Layout, and Views."
+                    }
+                },
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/explore/videos/explore-window-neurons.webm",
+                            "mp4" : "images/projects/explore/videos/explore-window-neurons.mp4",
+                            "poster" : "images/projects/explore/videos/explore-window-neurons.jpg"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Explore Neuron Views",
+                            "src": "images/projects/explore/standard/explore-views-neuron-stack.jpg",
+                            "src_standard": "images/projects/explore/standard/explore-views-neuron-stack.jpg",
+                            "src_retina": "images/projects/explore/retina/explore-views-neuron-stack.jpg",
+                            "src_low": "images/projects/explore/low-res/explore-views-neuron-stack.jpg",
+                            "src_mobile": "images/projects/explore/hi-res/explore-views-neuron-stack.jpg",
+                            "src_preview": "images/projects/explore/hi-res/explore-views-neuron-stack.jpg",
+                            "caption": "Explore Neuron Views"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/explore/videos/explore-window-cube.webm",
+                            "mp4" : "images/projects/explore/videos/explore-window-cube.mp4",
+                            "poster" : "images/projects/explore/videos/explore-window-cube.jpg"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Explore Illustration Wonderers",
+                            "src": "images/projects/explore/standard/explore-animation-wonderers.jpg",
+                            "src_standard": "images/projects/explore/standard/explore-animation-wonderers.jpg",
+                            "src_retina": "images/projects/explore/retina/explore-animation-wonderers.jpg",
+                            "src_low": "images/projects/explore/low-res/explore-animation-wonderers.jpg",
+                            "src_mobile": "images/projects/explore/hi-res/explore-animation-wonderers.jpg",
+                            "src_preview": "images/projects/explore/hi-res/explore-animation-wonderers.jpg",
+                            "caption": "Explore Neuron Views"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorParagraph",
+                    "data" : {
+                        "header" : "Inlcusion",
+                        "class" : "endeavor-item-125",
+                        "bgColor" : "",
+                        "description" : "To ensure consistency across application elements and devices we created a set of standards ranging from idenity to typography, to color and interation models. We organized our styleguide into 6 progressive sections: Identity, Elements, Components, Compositions, Layout, and Views."
+                    }
+                },
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/explore/videos/explore-responsive.webm",
+                            "mp4" : "images/projects/explore/videos/explore-responsive.mp4",
+                            "poster" : "images/projects/explore/videos/explore-responsive.jpg"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorParagraphPoints",
+                    "data" : {
+                        "class" : "endeavor-item",
+                        "bgColor" : "",
+                        "header" : "",
+                        "contents": [
+                            {
+                                "header": "Responsive Design",
+                                "description" : "To examine the relationships between amenities in cities, we collected an extensive dataset including seven million data points from Google Maps API."
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorDesignProcess",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin",
+                        "process" : "Layout",
+                        "text" : "",
+                        "number" : "02/04",
+                        "bgColor" : "#e6e6e6",
+                        "textColor" : "#bfbfbf",
+                        "textColor2" : "#d9d9d9"
+                    }
+                },
+                {
+                    "name" : "endeavorDesignProcess",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin",
+                        "process" : "Generative Design",
+                        "text" : "",
+                        "number" : "03/04",
+                        "bgColor" : "#e6e6e6",
+                        "textColor" : "#bfbfbf",
+                        "textColor2" : "#d9d9d9"
+                    }
+                },
+                {
                     "name" : "endeavorImage100vw",
                     "data" : {
                         "class" : "endeavor-item-no-margin",
@@ -2138,6 +2383,101 @@
                             "src_preview": "images/projects/explore/hi-res/explore-neuron-renders.jpg",
                             "caption": "Explore Neuron Test"
                         }
+                    }
+                },
+                {
+                    "name" : "endeavorDesignProcess",
+                    "data" : {
+                        "class" : "endeavor-item-top-125",
+                        "process" : "Discussion",
+                        "text" : "",
+                        "number" : "04/04",
+                        "bgColor" : "#e6e6e6",
+                        "textColor" : "#bfbfbf",
+                        "textColor2" : "#d9d9d9"
+                    }
+                },
+                {
+                    "name" : "endeavorParagraphChecklist",
+                    "data" : {
+                        "header" : "Reflecting",
+                        "id" : "ghost-reflecting-affect",
+                        "class" : "endeavor-item-125 endeavor-item-bottom-15",
+                        "class2" : "endeavor-reveal",
+                        "bgColor" : "",
+                        "description" : "The Museum was a perfect storm of a project. Extensive ethnographic research paved the way for a truly human-centered design process. Our team was able to match user needs with stakeholder expectations and deliver a fully functional product ahead of schedule. We tackled a complex problem with an iterative development cycle. Not every proposed feature made it to the current release but an extensive styleguide and robust development framework allow for extendability by a skeleton team of ressearchers at SeungLab.",
+                        "contents" : [
+                            {
+                                "header" : "Do's",
+                                "icon" : "fa-thumbs-o-up",
+                                "bullets" : [
+                                    "Front-end frameworks are powerful ways to think about both the development and design cycles for web applications",
+                                    "Sharing design prototypes early on with both stakeholders and users helps to keep the project grounded.",
+                                    "Leveraging existing design systems like Google's Material Design Lite accelerate both design and development.",
+                                    "Thinking small to go big helped to keep feature creep to a minimum."
+                                ]
+                            },
+                            {
+                                "header" : "Dont's",
+                                "icon" : "fa-thumbs-o-down",
+                                "bullets" : [
+                                    "You are not your user. Don't make the mistake of thinking you (as a designer) know best when it comes to prioritizing features.",
+                                    "You don't have to go it alone. Don't be afraid to ask for input from team members when diving in to the dev space, making a relable and readible code is what counts."
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorGhostButton",
+                    "data" : {
+                        "class" : "endeavor-item-bottom-125 endeavor-text-left",
+                        "text" : "Look Closer",
+                        "align" : "",
+                        "id" : "ghost-reflecting",
+                        "textColor" : "#666666"
+                    }
+                },
+                {
+                    "name" : "endeavorParagraphPoints",
+                    "data" : {
+                        "class" : "endeavor-item",
+                        "bgColor" : "",
+                        "header" : "",
+                        "contents": [
+                            {
+                                "header": "Collaboration",
+                                "description" : "We partnered with Seunglab to design, develop, and deploy a responsive, open source, web application targeted towards neuroscientists with the goal of assisting researchers in the classification of new neuron typologies."
+                            },
+                            {
+                                "header": "Iterative Development",
+                                "description" : "Using Google’s Material Design library as basis for interaction patterns, we rapidly deployed a beta version and began extensive prototyping while seeking usability feedback from a host of researchers and designers. We continued prototyping for two months–refining touch points, tweaking the usability and functionality of charts, improving mesh loading performance, and adding features like auto-complete search to name a few."
+                            },
+                            {
+                                "header": "Looking Forward",
+                                "description" : "After the push to production, we handed off our design + development guidelines to the team at Seunglab where researchers continue to grow the platform with feedback from the scientific community."
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorParagraph",
+                    "data" : {
+                        "header" : "Explore Live",
+                        "class" : "endeavor-item-top-125",
+                        "bgColor" : "",
+                        "description" : ""
+                    }
+                },
+                {
+                    "name" : "endeavorGhostButtonURL",
+                    "data" : {
+                        "class" : "endeavor-item-bottom-125 endeavor-text-left",
+                        "text" : "Send It",
+                        "align" : "",
+                        "id" : "museum-live",
+                        "url" : "http://museum.eyewire.org/",
+                        "textColor" : "#666666"
                     }
                 },
                 {
