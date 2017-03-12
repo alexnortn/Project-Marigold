@@ -713,7 +713,7 @@ mixin endeavorVideoFS(data)
 
 mixin endeavorPubFS(datum)
     - var pub = datum.pub ? datum.pub : ""
-    iframe.endeavor-element.endeavor-item.media-settings.media-frame.pub-settings(src=pub.src frameborder="0" allowfullscreen)
+    iframe.endeavor-element.endeavor-item.lazyload.media-settings.media-frame.pub-settings(src="" frameborder="0" allowfullscreen)&attributes({'data-src': pub.src})
 
 
 //-  Endeavor Project | End Pad
