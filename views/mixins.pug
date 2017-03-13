@@ -1066,14 +1066,14 @@ mixin endeavorParagraphHidden(data)
     - var _class2 = data.class2 ? data.class2 : ""
     .endeavor-element.fsw.endeavor-center.endeavor-padding-left-100-1000.endeavor-padding-left-0-mobile(class=`${_class}`)(style=`background-color: ${bgColor}`)
         h2=header
-        .endeavor-flex-row.endeavor-padding-top-15
-            p.endeavor-item-bottom-25=description
-        .fsw.endeavor-flex.endeavor-flex-between.endeavor-flex-wrap.endeavor-transition-ease-500.endeavor-height-auto.endeavor-no-flow&attributes({'class': _class2}, {'id': _id})
+        .endeavor-flex-row.endeavor-padding-top-15.endeavor-width-100-prcnt-600px
+            p.endeavor-item-bottom-25.endeavor-padding-left-50-responsive=description
+        .endeavor-width-100-prcnt-600px.endeavor-flex.endeavor-flex-between.endeavor-flex-wrap.endeavor-transition-ease-500.endeavor-height-auto.endeavor-no-flow&attributes({'class': _class2}, {'id': _id})
             .endeavor-padding-left-50-responsive.endeavor-item-top-25
                 for content in contents
                     .endeavor-padding-top-35
                         h3.h3-point.endeavor-padding-bottom-15=content.header
-                        p=content.description
+                        p.lil-p=content.description
 
 
 //-  Endeavor Project | 100% Object

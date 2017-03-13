@@ -2546,7 +2546,7 @@
                     "name" : "endeavorCaptionFS",
                     "data" : {
                         "class" : "endeavor-item-bottom-125",
-                        "caption" : "(above) First eight iteration cycles of an experiment using l-systems to grow a SAC neuron. Initial results tended towards bushy trees."
+                        "caption" : "(above) Inspired by techiniques in Daniel Shiffmans 'The Nature of Code,' the next Processing prototype used my own version of a traditional flocking algorithm."
                     }
                 },
                 {
@@ -2557,23 +2557,23 @@
                         "class2" : "endeavor-reveal",
                         "bgColor" : "",
                         "header" : "Physical System",
-                        "description" : "My first strategy for growing life-like neurons was to use a developmental approach inspired by cellular division.",
+                        "description" : "During development, neurons extend their branches by following chemical gradients through diverse tissues. I attempted to simulate this behavior with a swarm of autonomous agents governed by a physical system in Processing. This emergent behavior can be described by a surprisingly simple set of rules.",
                         "contents": [
                             {
                                 "header": "Cohesion",
-                                "description" : "We partnered with Seunglab to design, develop, and deploy a responsive, open source, web application targeted towards neuroscientists with the goal of assisting researchers in the classification of new neuron typologies."
+                                "description" : "Steer towards average position of neighbors (long range attraction)"
                             },
                             {
                                 "header": "Separation",
-                                "description" : "Using Google’s Material Design library as basis for interaction patterns, we rapidly deployed a beta version and began extensive prototyping while seeking usability feedback from a host of researchers and designers. We continued prototyping for two months–refining touch points, tweaking the usability and functionality of charts, improving mesh loading performance, and adding features like auto-complete search to name a few."
+                                "description" : "Avoid crowding neighbors (short range repulsion)"
                             },
                             {
                                 "header": "Alignment",
-                                "description" : "After the push to production, we handed off our design + development guidelines to the team at Seunglab where researchers continue to grow the platform with feedback from the scientific community."
+                                "description" : "Steer towards average heading of neighbors"
                             },
                             {
                                 "header": "Wander",
-                                "description" : "After the push to production, we handed off our design + development guidelines to the team at Seunglab where researchers continue to grow the platform with feedback from the scientific community."
+                                "description" : "Randomly change heading by a small amount each update step."
                             }
                         ]
                     }
