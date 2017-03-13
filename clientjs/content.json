@@ -2553,30 +2553,6 @@
                     }
                 },
                 {
-                    "name" : "endeavorImage100vw",
-                    "data" : {
-                        "class" : "endeavor-item-125",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "Explore Neuron Mosaic",
-                            "src": "images/projects/explore/standard/explore-neuron-levels.jpg",
-                            "src_standard": "images/projects/explore/standard/explore-neuron-levels.jpg",
-                            "src_retina": "images/projects/explore/retina/explore-neuron-levels.jpg",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/explore/hi-res/explore-neuron-levels.jpg",
-                            "src_preview": "images/projects/explore/hi-res/explore-neuron-levels.jpg",
-                            "caption": "Explore Neuron Mosaic"
-                        }
-                    }
-                },
-                {
                     "name" : "endeavorParagraph",
                     "data" : {
                         "header" : "Complexity",
