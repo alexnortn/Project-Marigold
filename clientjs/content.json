@@ -2047,65 +2047,67 @@
                             "caption" : ""
                         },
                         "image" : {
-                            "name": "Explore Illustration",
-                            "src": "images/projects/explore/standard/explore-animation-lineup.jpg",
-                            "src_standard": "images/projects/explore/standard/explore-animation-lineup.jpg",
-                            "src_retina": "images/projects/explore/retina/explore-animation-lineup.jpg",
+                            "name": "Explore Views Angle",
+                            "src": "images/projects/explore/standard/explore-views-angle.jpg",
+                            "src_standard": "images/projects/explore/standard/explore-views-angle.jpg",
+                            "src_retina": "images/projects/explore/retina/explore-views-angle.jpg",
                             "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/explore/hi-res/explore-animation-lineup.jpg",
-                            "src_preview": "images/projects/explore/hi-res/explore-animation-lineup.jpg",
-                            "caption": "Explore Illustration"
+                            "src_mobile": "images/projects/explore/hi-res/explore-views-angle.jpg",
+                            "src_preview": "images/projects/explore/hi-res/explore-views-angle.jpg",
+                            "caption": "Explore Views Angle"
                         }
                     }
                 },
                 {
-                    "name" : "endeavorCaptionFS",
+                    "name" : "endeavorParagraphPoints",
                     "data" : {
-                        "class" : "endeavor-item-bottom-125",
-                        "caption" : "(above) Posters were printed and distributed across many Boston universities for a special local competition pitting students head-to-head for science! (below) The Dig consists of sixteen sectors, we created a count-up graphic to visualize player progress."
-                    }
-                },
-                {
-                    "name" : "endeavorVideoFS",
-                    "data" : {
-                        "class" : "endeavor-item-no-margin endeavor-width-100vw endeavor-pos-rel",
-                        "loop": "",
-                        "muted": "",
-                        "autoplay": "true",
-                        "src" : {
-                            "webm" : "images/projects/explore/videos/explore-window-animations.webm",
-                            "mp4" : "images/projects/explore/videos/explore-window-animations.mp4",
-                            "poster" : "images/projects/explore/videos/explore-window-animations.jpg"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorParagraph",
-                    "data" : {
-                        "header" : "Generative Animations",
-                        "class" : "endeavor-item-125",
+                        "class" : "endeavor-item",
                         "bgColor" : "",
-                        "description" : "To ensure consistency across application elements and devices we created a set of standards ranging from idenity to typography, to color and interation models. We organized our styleguide into 6 progressive sections: Identity, Elements, Components, Compositions, Layout, and Views."
-                    }
-                },
-                {
-                    "name" : "endeavorVideoFS",
-                    "data" : {
-                        "class" : "endeavor-item-no-margin endeavor-width-100vw endeavor-pos-rel",
-                        "loop": "",
-                        "muted": "",
-                        "autoplay": "true",
-                        "src" : {
-                            "webm" : "images/projects/explore/videos/explore-window-neurons.webm",
-                            "mp4" : "images/projects/explore/videos/explore-window-neurons.mp4",
-                            "poster" : "images/projects/explore/videos/explore-window-neurons.jpg"
-                        }
+                        "header" : "Solution",
+                        "contents": [
+                            {
+                                "header": "Collaboration",
+                                "description" : "We partnered with Seunglab to design, develop, and deploy a responsive, open source, web application targeted towards neuroscientists with the goal of assisting researchers in the classification of new neuron typologies."
+                            },
+                            {
+                                "header": "Iterative Development",
+                                "description" : "Using Google’s Material Design library as basis for interaction patterns, we rapidly deployed a beta version and began extensive prototyping while seeking usability feedback from a host of researchers and designers. We continued prototyping for two months–refining touch points, tweaking the usability and functionality of charts, improving mesh loading performance, and adding features like auto-complete search to name a few."
+                            },
+                            {
+                                "header": "Looking Forward",
+                                "description" : "After the push to production, we handed off our design + development guidelines to the team at Seunglab where researchers continue to grow the platform with feedback from the scientific community."
+                            }
+                        ]
                     }
                 },
                 {
                     "name" : "endeavorImage100vw",
                     "data" : {
-                        "class" : "endeavor-item-no-margin",
+                        "class" : "endeavor-item endeavor-item-top-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Explore Illustration",
+                            "src": "images/projects/explore/standard/explore-animation-wonderers.jpg",
+                            "src_standard": "images/projects/explore/standard/explore-animation-wonderers.jpg",
+                            "src_retina": "images/projects/explore/retina/explore-animation-wonderers.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/explore/hi-res/explore-animation-wonderers.jpg",
+                            "src_preview": "images/projects/explore/hi-res/explore-animation-wonderers.jpg",
+                            "caption": "Explore Illustration"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "class" : "endeavor-item",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -2116,23 +2118,21 @@
                         },
                         "image" : {
                             "name": "Explore Illustration Wonderers",
-                            "src": "images/projects/explore/standard/explore-animation-wonderers.jpg",
-                            "src_standard": "images/projects/explore/standard/explore-animation-wonderers.jpg",
-                            "src_retina": "images/projects/explore/retina/explore-animation-wonderers.jpg",
+                            "src": "images/projects/explore/standard/explore-animation-lineup.jpg",
+                            "src_standard": "images/projects/explore/standard/explore-animation-lineup.jpg",
+                            "src_retina": "images/projects/explore/retina/explore-animation-lineup.jpg",
                             "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/explore/hi-res/explore-animation-wonderers.jpg",
-                            "src_preview": "images/projects/explore/hi-res/explore-animation-wonderers.jpg",
+                            "src_mobile": "images/projects/explore/hi-res/explore-animation-lineup.jpg",
+                            "src_preview": "images/projects/explore/hi-res/explore-animation-lineup.jpg",
                             "caption": "Explore Neuron Views"
                         }
                     }
                 },
                 {
-                    "name" : "endeavorParagraph",
+                    "name" : "endeavorCaptionFS",
                     "data" : {
-                        "header" : "Inlcusion",
-                        "class" : "endeavor-item-125",
-                        "bgColor" : "",
-                        "description" : "To ensure consistency across application elements and devices we created a set of standards ranging from idenity to typography, to color and interation models. We organized our styleguide into 6 progressive sections: Identity, Elements, Components, Compositions, Layout, and Views."
+                        "class" : "endeavor-item-bottom-125",
+                        "caption" : "(above) Posters were printed and distributed across many Boston universities for a special local competition pitting students head-to-head for science! (below) The Dig consists of sixteen sectors, we created a count-up graphic to visualize player progress."
                     }
                 },
                 {
@@ -2166,7 +2166,7 @@
                 {
                     "name" : "endeavorDesignProcess",
                     "data" : {
-                        "class" : "endeavor-item-no-margin",
+                        "class" : "endeavor-item-top-250",
                         "process" : "Narrative",
                         "text" : "",
                         "number" : "03/04",
