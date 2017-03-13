@@ -2608,7 +2608,7 @@
                         "header" : "Poisson Disc Sampling",
                         "class" : "endeavor-item-top-125",
                         "bgColor" : "",
-                        "description" : "To ensure consistency across application elements and devices we created a set of standards ranging from idenity to typography, to color and interation models. We organized our styleguide into 6 progressive sections: Identity, Elements, Components, Compositions, Layout, and Views."
+                        "description" : "(Below) The human retina has a beautiful solution to sampling in its placement of photoreceptor cells. The cells cover the retina densely and evenly and yet the cells’ relative positions are irregular. This is called a Poisson-disc distribution because it maintains a minimum distance between cells, avoiding occlusion and thus wasted photoreceptors. (source: Mike Bostock, Visualizing Algorithms)"
                     }
                 },
                 {
@@ -2636,39 +2636,6 @@
                     }
                 },
                 {
-                    "name" : "endeavorParagraph",
-                    "data" : {
-                        "header" : "Complexity",
-                        "class" : "endeavor-item",
-                        "bgColor" : "",
-                        "description" : "To ensure consistency across application elements and devices we created a set of standards ranging from idenity to typography, to color and interation models. We organized our styleguide into 6 progressive sections: Identity, Elements, Components, Compositions, Layout, and Views."
-                    }
-                },
-                {
-                    "name" : "endeavorImageFS",
-                    "data" : {
-                        "class" : "endeavor-item",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "Explore Neuron Physics",
-                            "src": "images/projects/explore/standard/explore-neuron-physics-3.jpg",
-                            "src_standard": "images/projects/explore/standard/explore-neuron-physics-3.jpg",
-                            "src_retina": "images/projects/explore/retina/explore-neuron-physics-3.jpg",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/explore/hi-res/explore-neuron-physics-3.jpg",
-                            "src_preview": "images/projects/explore/hi-res/explore-neuron-physics-3.jpg",
-                            "caption": "Explore Neuron Physics"
-                        }
-                    }
-                },
-                {
                     "name" : "endeavorVideoFS",
                     "data" : {
                         "class" : "endeavor-item-no-margin endeavor-width-100vw endeavor-pos-rel",
@@ -2686,9 +2653,9 @@
                     "name" : "endeavorParagraph",
                     "data" : {
                         "header" : "Signal Propogation",
-                        "class" : "endeavor-item-top-75",
+                        "class" : "endeavor-item-top-125",
                         "bgColor" : "",
-                        "description" : "To ensure consistency across application elements and devices we created a set of standards ranging from idenity to typography, to color and interation models. We organized our styleguide into 6 progressive sections: Identity, Elements, Components, Compositions, Layout, and Views."
+                        "description" : "To facilitate neural transmission-like activity in the simulated neurons, I studied up on various graph traversal algorithms, Dijkstra, depth first search (DFS), and breadth first search (BFS). I settled on something in the realm of a BFS which is visualized below. Red dots are representative of signal transmission and green lines correspond to the current branch segment."
                     }
                 },
                 {
@@ -2737,63 +2704,73 @@
                         "class" : "endeavor-item-125 endeavor-item-bottom-15",
                         "class2" : "endeavor-reveal",
                         "bgColor" : "",
-                        "description" : "Before comensing with design and development, we conducted interviews, site visits, and other forms of ethnographic research to gain insight into the lives of our potential users.",
+                        "description" : "Intergrating the neuron simulation with the rest of the explore page pushed my development skills to a new level. I learned new programing patterns and ways of thinking. The animation controller is composed of a series of small interconnected programs and supporting algorithms which coordinate the network of cells and mediate state with the rest of the experience.",
                         "contents" : [
                             {
-                                "header" : "Stakeholders",
-                                "icon" : "fa-institution",
+                                "header" : "Enivornment",
+                                "icon" : "fa-cube",
                                 "bullets" : [
                                     {
-                                        "header" : "SeungLab",
+                                        "header" : "Explore Page",
                                         "description" : "Researchers at SeungLab are highly skilled at gathering, managing data and thus have an excess of it but a lack of investigative power."
                                     }
                                 ]
                             },
                             {
-                                "header" : "Individuals",
-                                "icon" : "fa-user",
+                                "header" : "Support Program",
+                                "icon" : "fa-cog",
                                 "bullets" : [
                                     {
-                                        "header" : "Neuroscientist",
+                                        "header" : "Neuron Coordinator",
                                         "description" : "Has hypotheses that may require additional data for substantiation. Needs general information about cell typologies."
                                     },
                                     {
-                                        "header" : "Neuroanatomist",
+                                        "header" : "Neurostate",
                                         "description" : "Has hypotheses that may require additional data for substantiation. Needs specific information about cell morphology and physiology."
                                     },
                                     {
-                                        "header" : "Student: Undergrad",
+                                        "header" : "Neurotransmitter",
                                         "description" : "The brain is the most complex system in the known universe, learning by interacting with real cells + data leads to deeper processing and increased retention."
-                                    },
-                                    {
-                                        "header" : "Student: Graduate",
-                                        "description" : "Graduate students in search of a first publication can explore the museum in search of supporting evidence."
-                                    },
-                                    {
-                                        "header" : "Gamer: Eyewire",
-                                        "description" : "The museum functions as a repository of all the cells mapped by gamers on Eyewire. Here, players can come explore their work and marvel at the complex beauty of the cells."
-                                    },
-                                    {
-                                        "header" : "Curious Surfer",
-                                        "description" : "Neuroscience and the brain are at once beautiful and mysterious. Why not spend a few hours browsing through the basis of thought?"
                                     }
                                 ]
                             },
                             {
-                                "header" : "Organization",
-                                "icon" : "fa-users",
+                                "header" : "Neural Network",
+                                "icon" : "fa-cogs",
                                 "bullets" : [
                                     {
-                                        "header" : "Lab",
-                                        "description" : "Research labs all have unique specializations. The museum may be contain just the data necessary for their next paper."
+                                        "header" : "NNN",
+                                        "description" : "Has hypotheses that may require additional data for substantiation. Needs general information about cell typologies."
                                     },
                                     {
-                                        "header" : "University",
-                                        "description" : "Professors often balance an active research practice alongside their teaching careers. The museum offers another aid for explaining the brain at the cellular level."
+                                        "header" : "Neuron",
+                                        "description" : "Has hypotheses that may require additional data for substantiation. Needs specific information about cell morphology and physiology."
                                     },
                                     {
-                                        "header" : "Eyewire",
-                                        "description" : "As a leading citizen science project, Eyewire is tasked with sharing the beauty and complexity of the brain with non-experts."
+                                        "header" : "Node",
+                                        "description" : "The brain is the most complex system in the known universe, learning by interacting with real cells + data leads to deeper processing and increased retention."
+                                    },
+                                    {
+                                        "header" : "Bouton",
+                                        "description" : "The brain is the most complex system in the known universe, learning by interacting with real cells + data leads to deeper processing and increased retention."
+                                    }
+                                ]
+                            },
+                            {
+                                "header" : "Utility Algorithms",
+                                "icon" : "fa-code",
+                                "bullets" : [
+                                    {
+                                        "header" : "Poisson-Disc",
+                                        "description" : "Has hypotheses that may require additional data for substantiation. Needs general information about cell typologies."
+                                    },
+                                    {
+                                        "header" : "Kruskal-MST",
+                                        "description" : "Has hypotheses that may require additional data for substantiation. Needs specific information about cell morphology and physiology."
+                                    },
+                                    {
+                                        "header" : "Parse-SVG",
+                                        "description" : "The brain is the most complex system in the known universe, learning by interacting with real cells + data leads to deeper processing and increased retention."
                                     }
                                 ]
                             }
@@ -2851,16 +2828,6 @@
                                 ]
                             }
                         ]
-                    }
-                },
-                {
-                    "name" : "endeavorGhostButton",
-                    "data" : {
-                        "class" : "endeavor-item-bottom-125 endeavor-text-left",
-                        "text" : "Look Closer",
-                        "align" : "",
-                        "id" : "ghost-reflecting",
-                        "textColor" : "#666666"
                     }
                 },
                 {
