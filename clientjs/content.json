@@ -2667,18 +2667,114 @@
                     }
                 },
                 {
-                    "name" : "endeavorParagraph",
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Explore Animation Controller",
+                            "src": "images/projects/explore/standard/explore-animation-controller.jpg",
+                            "src_standard": "images/projects/explore/standard/explore-animation-controller.jpg",
+                            "src_retina": "images/projects/explore/retina/explore-animation-controller.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/explore/hi-res/explore-animation-controller.jpg",
+                            "src_preview": "images/projects/explore/hi-res/explore-animation-controller.jpg",
+                            "caption": "Explore Animation Controller"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorParagraphUsers",
                     "data" : {
                         "header" : "Animation Controller",
-                        "class" : "endeavor-item-top-250",
+                        "id" : "ghost-animation-controller-affect",
+                        "class" : "endeavor-item-125 endeavor-item-bottom-15",
+                        "class2" : "endeavor-reveal",
                         "bgColor" : "",
-                        "description" : "To ensure consistency across application elements and devices we created a set of standards ranging from idenity to typography, to color and interation models. We organized our styleguide into 6 progressive sections: Identity, Elements, Components, Compositions, Layout, and Views."
+                        "description" : "Before comensing with design and development, we conducted interviews, site visits, and other forms of ethnographic research to gain insight into the lives of our potential users.",
+                        "contents" : [
+                            {
+                                "header" : "Stakeholders",
+                                "icon" : "fa-institution",
+                                "bullets" : [
+                                    {
+                                        "header" : "SeungLab",
+                                        "description" : "Researchers at SeungLab are highly skilled at gathering, managing data and thus have an excess of it but a lack of investigative power."
+                                    }
+                                ]
+                            },
+                            {
+                                "header" : "Individuals",
+                                "icon" : "fa-user",
+                                "bullets" : [
+                                    {
+                                        "header" : "Neuroscientist",
+                                        "description" : "Has hypotheses that may require additional data for substantiation. Needs general information about cell typologies."
+                                    },
+                                    {
+                                        "header" : "Neuroanatomist",
+                                        "description" : "Has hypotheses that may require additional data for substantiation. Needs specific information about cell morphology and physiology."
+                                    },
+                                    {
+                                        "header" : "Student: Undergrad",
+                                        "description" : "The brain is the most complex system in the known universe, learning by interacting with real cells + data leads to deeper processing and increased retention."
+                                    },
+                                    {
+                                        "header" : "Student: Graduate",
+                                        "description" : "Graduate students in search of a first publication can explore the museum in search of supporting evidence."
+                                    },
+                                    {
+                                        "header" : "Gamer: Eyewire",
+                                        "description" : "The museum functions as a repository of all the cells mapped by gamers on Eyewire. Here, players can come explore their work and marvel at the complex beauty of the cells."
+                                    },
+                                    {
+                                        "header" : "Curious Surfer",
+                                        "description" : "Neuroscience and the brain are at once beautiful and mysterious. Why not spend a few hours browsing through the basis of thought?"
+                                    }
+                                ]
+                            },
+                            {
+                                "header" : "Organization",
+                                "icon" : "fa-users",
+                                "bullets" : [
+                                    {
+                                        "header" : "Lab",
+                                        "description" : "Research labs all have unique specializations. The museum may be contain just the data necessary for their next paper."
+                                    },
+                                    {
+                                        "header" : "University",
+                                        "description" : "Professors often balance an active research practice alongside their teaching careers. The museum offers another aid for explaining the brain at the cellular level."
+                                    },
+                                    {
+                                        "header" : "Eyewire",
+                                        "description" : "As a leading citizen science project, Eyewire is tasked with sharing the beauty and complexity of the brain with non-experts."
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorGhostButton",
+                    "data" : {
+                        "class" : "endeavor-item-bottom-125 endeavor-text-left",
+                        "text" : "Look Closer",
+                        "align" : "",
+                        "id" : "ghost-animation-controller",
+                        "textColor" : "#666666"
                     }
                 },
                 {
                     "name" : "endeavorDesignProcess",
                     "data" : {
-                        "class" : "endeavor-item-top-125",
+                        "class" : "endeavor-item-250",
                         "process" : "Discussion",
                         "text" : "",
                         "number" : "04/04",
@@ -2692,7 +2788,7 @@
                     "data" : {
                         "header" : "Reflecting",
                         "id" : "ghost-reflecting-affect",
-                        "class" : "endeavor-item-125 endeavor-item-bottom-15",
+                        "class" : "endeavor-item-bottom-125 endeavor-item-bottom-15",
                         "class2" : "endeavor-reveal",
                         "bgColor" : "",
                         "description" : "The Museum was a perfect storm of a project. Extensive ethnographic research paved the way for a truly human-centered design process. Our team was able to match user needs with stakeholder expectations and deliver a fully functional product ahead of schedule. We tackled a complex problem with an iterative development cycle. Not every proposed feature made it to the current release but an extensive styleguide and robust development framework allow for extendability by a skeleton team of ressearchers at SeungLab.",
