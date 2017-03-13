@@ -2712,7 +2712,7 @@
                                 "bullets" : [
                                     {
                                         "header" : "Explore Page",
-                                        "description" : "Researchers at SeungLab are highly skilled at gathering, managing data and thus have an excess of it but a lack of investigative power."
+                                        "description" : "We designed a custom front-end framework, duely named 'Synapse' which synchronizes the different animation modules using a global 'T' time."
                                     }
                                 ]
                             },
@@ -2722,15 +2722,15 @@
                                 "bullets" : [
                                     {
                                         "header" : "Neuron Coordinator",
-                                        "description" : "Has hypotheses that may require additional data for substantiation. Needs general information about cell typologies."
+                                        "description" : "Neuron Coordinator is the main controller for the neural network. It synchronizes neuron-time with global 'T' time to ensure the experience stays in sync."
                                     },
                                     {
                                         "header" : "Neurostate",
-                                        "description" : "Has hypotheses that may require additional data for substantiation. Needs specific information about cell morphology and physiology."
+                                        "description" : "Each animation sequence within the neural network has a unique neuostate which governs the networks behavior with respect to 'T' time."
                                     },
                                     {
                                         "header" : "Neurotransmitter",
-                                        "description" : "The brain is the most complex system in the known universe, learning by interacting with real cells + data leads to deeper processing and increased retention."
+                                        "description" : "Each Neurostate has an associated Neurotransmitter which monitors the networks state."
                                     }
                                 ]
                             },
@@ -2740,19 +2740,19 @@
                                 "bullets" : [
                                     {
                                         "header" : "NNN",
-                                        "description" : "Has hypotheses that may require additional data for substantiation. Needs general information about cell typologies."
+                                        "description" : "NNN, (short for Nortons Neural Network) is a super–class wich directly controls each of the neuron class objects."
                                     },
                                     {
                                         "header" : "Neuron",
-                                        "description" : "Has hypotheses that may require additional data for substantiation. Needs specific information about cell morphology and physiology."
+                                        "description" : "Neurons are controlled by the NNN class but exhibit control over both Node and Bouton classes."
                                     },
                                     {
                                         "header" : "Node",
-                                        "description" : "The brain is the most complex system in the known universe, learning by interacting with real cells + data leads to deeper processing and increased retention."
+                                        "description" : "Nodes are controlled directly the Neuron class and operate as autonomous agents in the context of each Neuron."
                                     },
                                     {
                                         "header" : "Bouton",
-                                        "description" : "The brain is the most complex system in the known universe, learning by interacting with real cells + data leads to deeper processing and increased retention."
+                                        "description" : "The Bouton class is controlled by the Neuron class and is responsible for two specific actions. First, Boutons are displayed at the tips of branches to mark the neuron growth process complete. Second, Boutons may move along the neuron branch to simulate signal propogation."
                                     }
                                 ]
                             },
@@ -2762,15 +2762,15 @@
                                 "bullets" : [
                                     {
                                         "header" : "Poisson-Disc",
-                                        "description" : "Has hypotheses that may require additional data for substantiation. Needs general information about cell typologies."
+                                        "description" : "A sampling algorithm which nicely mirrors the spatial distribution of photoreceptors in our retinas. This algorithm is used to create the initial distribution of the neurons."
                                     },
                                     {
                                         "header" : "Kruskal-MST",
-                                        "description" : "Has hypotheses that may require additional data for substantiation. Needs specific information about cell morphology and physiology."
+                                        "description" : "A Javascript implementation of a classic minimum spanning tree (MST) algorithm used to pass signals around from neuron to neuron in the network."
                                     },
                                     {
                                         "header" : "Parse-SVG",
-                                        "description" : "The brain is the most complex system in the known universe, learning by interacting with real cells + data leads to deeper processing and increased retention."
+                                        "description" : "A simple SVG parser to convert vector graphics into usable data format for animation in p5js."
                                     }
                                 ]
                             }
@@ -2790,13 +2790,34 @@
                 {
                     "name" : "endeavorDesignProcess",
                     "data" : {
-                        "class" : "endeavor-item-250",
+                        "class" : "endeavor-item-top-250",
                         "process" : "Discussion",
                         "text" : "",
                         "number" : "06/06",
                         "bgColor" : "#e6e6e6",
                         "textColor" : "#bfbfbf",
                         "textColor2" : "#d9d9d9"
+                    }
+                },
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/explore/videos/explore-walkthrough-window-loop.webm",
+                            "mp4" : "images/projects/explore/videos/explore-walkthrough-window-loop.mp4",
+                            "poster" : "images/projects/explore/videos/explore-walkthrough-window-loop.jpg"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorCaptionFS",
+                    "data" : {
+                        "class" : "endeavor-item-bottom-125",
+                        "caption" : "(above) Complete explore page experience, as viewed on desktop."
                     }
                 },
                 {
@@ -2807,27 +2828,8 @@
                         "class" : "endeavor-item-bottom-125 endeavor-item-bottom-15",
                         "class2" : "endeavor-reveal",
                         "bgColor" : "",
-                        "description" : "The Museum was a perfect storm of a project. Extensive ethnographic research paved the way for a truly human-centered design process. Our team was able to match user needs with stakeholder expectations and deliver a fully functional product ahead of schedule. We tackled a complex problem with an iterative development cycle. Not every proposed feature made it to the current release but an extensive styleguide and robust development framework allow for extendability by a skeleton team of ressearchers at SeungLab.",
-                        "contents" : [
-                            {
-                                "header" : "Do's",
-                                "icon" : "fa-thumbs-o-up",
-                                "bullets" : [
-                                    "Front-end frameworks are powerful ways to think about both the development and design cycles for web applications",
-                                    "Sharing design prototypes early on with both stakeholders and users helps to keep the project grounded.",
-                                    "Leveraging existing design systems like Google's Material Design Lite accelerate both design and development.",
-                                    "Thinking small to go big helped to keep feature creep to a minimum."
-                                ]
-                            },
-                            {
-                                "header" : "Dont's",
-                                "icon" : "fa-thumbs-o-down",
-                                "bullets" : [
-                                    "You are not your user. Don't make the mistake of thinking you (as a designer) know best when it comes to prioritizing features.",
-                                    "You don't have to go it alone. Don't be afraid to ask for input from team members when diving in to the dev space, making a relable and readible code is what counts."
-                                ]
-                            }
-                        ]
+                        "description" : "This is usually the part of a project where I invite you two engage with the experience in real life—the explore page is a little different. Though the experience is fully functional, it was never pushed to production. Performance issues and inconsistencies plagued the neuron animation system. If I were to critic myself, I would admit that I bit off a whole lot more than I could handle. I designed + developed the Explore Page for close to six months but there is a point of diminishing returns where a design becomes more of a personal endeavor than one of service. I'm thankful for the many lessons learned, in the future I will seek to iteratively improve up on good design—rather than aim for a pillar of perfection.",
+                        "contents": ""
                     }
                 },
                 {
@@ -2838,16 +2840,16 @@
                         "header" : "",
                         "contents": [
                             {
-                                "header": "Collaboration",
-                                "description" : "We partnered with Seunglab to design, develop, and deploy a responsive, open source, web application targeted towards neuroscientists with the goal of assisting researchers in the classification of new neuron typologies."
+                                "header": "Story–Telling",
+                                "description" : "Eyewire is a citizen science project founded in Sebastian Sueng's neuroscience lab at MIT. The project aims to gamify the process of assisting advanced machine learning algorithms in the reconstruction of 3D neurons from microscope images. This endeavor is unprecedented, even the elevator pitch for this game is a mouthful. Could we connect players more deeply to the science and vision of the lab with an interative experience?"
                             },
                             {
-                                "header": "Iterative Development",
-                                "description" : "Using Google’s Material Design library as basis for interaction patterns, we rapidly deployed a beta version and began extensive prototyping while seeking usability feedback from a host of researchers and designers. We continued prototyping for two months–refining touch points, tweaking the usability and functionality of charts, improving mesh loading performance, and adding features like auto-complete search to name a few."
+                                "header": "Creative Coding",
+                                "description" : "This project was my first attempt to align my passion for programming with my professional design practice. I worked primarily with Processing for prototyping and its Js cousin p5 for the final implementation. Early prototyping with Processing was swift and revealed lots of possible visual and behaviorial directions for the simulations. I learned a lot of hard lessons converting my native Processing code to work in the browser. Performance considerations across devices and inconsistencies across browswers lead to many hours of perfomance tuning and code reviews with our devlopers to help make the vision a reality."
                             },
                             {
-                                "header": "Looking Forward",
-                                "description" : "After the push to production, we handed off our design + development guidelines to the team at Seunglab where researchers continue to grow the platform with feedback from the scientific community."
+                                "header": "Experiments",
+                                "description" : "The explore page was sort of an experiment in browser-based narrative. We asked ourselves, what is the fastest, most lightweight way to deliver a message? In response, we explored a variety of story–telling techniques including generative design, infinite looping gifs and embeded video."
                             }
                         ]
                     }
