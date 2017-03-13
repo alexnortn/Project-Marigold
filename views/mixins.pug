@@ -1155,11 +1155,11 @@ mixin endeavorParagraphPoints(data)
     - var _class = data.class ? data.class : "endeavor-item-125"
     .endeavor-element.fsw.endeavor-center.endeavor-padding-left-0-mobile(class=`${_class}` style=`background-color: ${bgColor}`)
         h2=header
-        .endeavor-padding-left-50-responsive.endeavor-item-top-25
+        .endeavor-flex-row.endeavor-padding-top-15.endeavor-width-100-prcnt-600px.endeavor-padding-left-50-responsive
             for content in contents
                 .endeavor-padding-top-35
                     h3.h3-point.endeavor-padding-bottom-15=content.header
-                    p=content.description
+                    p.lil-p=content.description
 
 
 //-  Endeavor Project | 100% Object
