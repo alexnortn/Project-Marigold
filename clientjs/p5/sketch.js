@@ -26,7 +26,8 @@ let _options = {
 	tablet: false,
 };
 
-let _canvas = $.Deferred();
+let _canvas = $.Deferred(),
+	_render = true;
 
 
 // Running the sketch in instance mode, don't forget to preface all P5 methods with { p }
@@ -198,6 +199,12 @@ let glyph = function (p) {
 	}
 
 	p.draw = function() {
+
+		if (!_render) {
+			return;
+		}
+
+		console.log('render');
 
 		// Update the physics world
 		physics.update();
@@ -1167,6 +1174,10 @@ let glyph = function (p) {
 		let scroll_top = $(window).scrollTop();
 		if (scroll_top < p.height)  { // We only care if it's happening around p5 environment
 			_bounce.bounceFactory(scroll_top);
+			_render = true;
+		}
+		else {
+			_render = false;
 		}
 	});
 

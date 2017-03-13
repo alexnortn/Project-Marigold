@@ -2162,11 +2162,11 @@
                     "name" : "endeavorParagraphHidden",
                     "data" : {
                         "id" : "ghost-explore-story-affect",
-                        "class" : "endeavor-item",
+                        "class" : "endeavor-item-no-margin",
                         "class2" : "endeavor-reveal",
                         "bgColor" : "",
                         "header" : "Explore Story",
-                        "description" : "To examine the relationships between amenities in cities, we collected an extensive dataset including seven million data points from Google Maps API.",
+                        "description" : "",
                         "contents": [
                             {
                                 "header": "Part I",
@@ -2277,7 +2277,7 @@
                     "name" : "endeavorCaptionFS",
                     "data" : {
                         "class" : "endeavor-item-bottom-125",
-                        "caption" : "(above) Posters were printed and distributed across many Boston universities for a special local competition pitting students head-to-head for science! (below) The Dig consists of sixteen sectors, we created a count-up graphic to visualize player progress."
+                        "caption" : "(above) Storyboarding narrative content components and animation architecture."
                     }
                 },
                 {
@@ -2380,13 +2380,13 @@
                     "name" : "endeavorCaptionFS",
                     "data" : {
                         "class" : "endeavor-item-bottom-125",
-                        "caption" : "(above) Posters were printed and distributed across many Boston universities for a special local competition pitting students head-to-head for science! (below) The Dig consists of sixteen sectors, we created a count-up graphic to visualize player progress."
+                        "caption" : "(above) I provided creative direction for an amazing illustrator + animator, Hyuna Choi. Together, we were able to create a cohesive color system and  consistent visual style that captured the playful curiosity of the brand."
                     }
                 },
                 {
                     "name" : "endeavorDesignProcess",
                     "data" : {
-                        "class" : "endeavor-item-top-125",
+                        "class" : "endeavor-item-top-250",
                         "process" : "Generative",
                         "text" : "",
                         "number" : "05/06",
@@ -2472,7 +2472,7 @@
                         "contents": [
                             {
                                 "header": "Starburst Amacrine Cell",
-                                "description" : "To examine the relationships between amenities in cities, we collected an extensive dataset including seven million data points from Google Maps API."
+                                "description" : "One of the most common cell types found in Eyewire, the Starburst Amacrine Cell (SAC) is a retinal neuron that assists in motion detection. Its symetrical, circular branching pattern and flat prolile make it a good candidate for 2D generative design."
                             }
                         ]
                     }
@@ -2480,7 +2480,7 @@
                 {
                     "name" : "endeavorImage100vw",
                     "data" : {
-                        "class" : "endeavor-item-125",
+                        "class" : "endeavor-item endeavor-item-top-125",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -2502,17 +2502,37 @@
                     }
                 },
                 {
-                    "name" : "endeavorParagraphPoints",
+                    "name" : "endeavorCaptionFS",
                     "data" : {
-                        "class" : "endeavor-item endeavor-item-top-125",
+                        "class" : "endeavor-item-bottom-125",
+                        "caption" : "(above) First eight iteration cycles of an experiment using l-systems to grow a SAC neuron. Initial results tended towards bushy trees."
+                    }
+                },
+                {
+                    "name" : "endeavorParagraphHidden",
+                    "data" : {
+                        "id" : "ghost-explore-story-affect",
+                        "class" : "endeavor-item-bottom-25 endeavor-item-top-125",
+                        "class2" : "endeavor-reveal",
                         "bgColor" : "",
                         "header" : "Developmental System",
+                        "description" : "My first strategy for growing life-like neurons was to use a developmental approach inspired by cellular division.",
                         "contents": [
                             {
                                 "header": "L-Systems",
-                                "description" : "We partnered with Seunglab to design, develop, and deploy a responsive, open source, web application targeted towards neuroscientists with the goal of assisting researchers in the classification of new neuron typologies."
+                                "description" : "An L-system or Lindenmayer system is a parallel rewriting system and a type of formal grammar. An L-system consists of an alphabet of symbols that can be used to make strings, a collection of production rules that expand each symbol into some larger string of symbols, an initial axiom string from which to begin construction, and a mechanism for translating the generated strings into geometric structures (source Wikipedia)."
                             }
                         ]
+                    }
+                },
+                {
+                    "name" : "endeavorGhostButton",
+                    "data" : {
+                        "class" : "endeavor-item-bottom-125 endeavor-text-left",
+                        "text" : "Read More",
+                        "align" : "",
+                        "id" : "ghost-explore-story",
+                        "textColor" : "#666666"
                     }
                 },
                 {
