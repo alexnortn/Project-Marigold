@@ -39,7 +39,7 @@
                         "class" : "endeavor-item-no-margin",
                         "process" : "Deliverable",
                         "text" : "",
-                        "number" : "00/05",
+                        "number" : "00/06",
                         "bgColor" : "#e6e6e6",
                         "textColor" : "#bfbfbf",
                         "textColor2" : "#d9d9d9"
@@ -317,7 +317,7 @@
                         "class" : "endeavor-item-no-margin",
                         "process" : "Discover",
                         "text" : "The Discover phase aims to know your client, their brand and their customers while gaining a full understanding of the project. This is essential to allow the design team to understand the task, develop a feel for the client’s business or interest, become familiar with the user and empathize with the brand.",
-                        "number" : "01/05",
+                        "number" : "01/06",
                         "bgColor" : "#e6e6e6",
                         "textColor" : "#bfbfbf",
                         "textColor2" : "#d9d9d9"
@@ -895,7 +895,7 @@
                         "class" : "endeavor-item-top-125",
                         "process" : "Define",
                         "text" : "The strategic decisions make in the Define phase will determine the success or failure of the project. Based on the business goals, a communication strategy for the chosen digital touch points must now be developed. Based on the brand goals, we will create the design principles. With the help of user insights, we will develop guidelines for the user experience. Based on all the goals and requirements, we will define metrics for measuring success.",
-                        "number" : "02/05",
+                        "number" : "02/06",
                         "bgColor" : "#e6e6e6",
                         "textColor" : "#bfbfbf",
                         "textColor2" : "#d9d9d9"
@@ -1148,7 +1148,7 @@
                         "class" : "endeavor-item-top-125",
                         "process" : "Design",
                         "text" : "",
-                        "number" : "03/05",
+                        "number" : "03/06",
                         "bgColor" : "#e6e6e6",
                         "textColor" : "#bfbfbf",
                         "textColor2" : "#d9d9d9"
@@ -1541,7 +1541,7 @@
                         "class" : "endeavor-item-no-margin",
                         "process" : "Deploy",
                         "text" : "",
-                        "number" : "04/05",
+                        "number" : "04/06",
                         "bgColor" : "#e6e6e6",
                         "textColor" : "#bfbfbf",
                         "textColor2" : "#d9d9d9"
@@ -1840,7 +1840,7 @@
                         "class" : "endeavor-item-top-125",
                         "process" : "Discussion",
                         "text" : "",
-                        "number" : "05/05",
+                        "number" : "05/06",
                         "bgColor" : "#e6e6e6",
                         "textColor" : "#bfbfbf",
                         "textColor2" : "#d9d9d9"
@@ -1940,19 +1940,942 @@
     ],
     "projects" : [
         {
+            "route" :"explore-project",
+            "name"  : "Eyewire Explore",
+            "project_type"  : "Project",
+            "year"  : "2015-2016",
+            "preview" :"explore-preview",
+            "medium": [
+                "Digital",
+                "Web Application"
+            ],
+            "technique": [
+                "User Experience",
+                "Interaction Design",
+                "Creative Coding",
+                "Writing"
+            ],
+            "description" : {
+                "quote": "Refreshing Eyewire’s landing page with the addition of an interactive narrative-driven explore section.",
+                "brief": "Eyewire is a game to map the brain in collaboration with the Seung Lab at Princeton. Anyone can play and you need no scientific background—over 200,000 people from 145 countries already do. Together they are mapping the 3D structure of neurons; advancing the quest to understand ourselves. To achieve viral and sustained growth, Eyewire will need to invest in improved user experience design. UX design is the process of enhancing user satisfaction and loyalty by improving the usability, ease of use, and pleasure provided in the interaction between the user and the product. ",
+                "challenge": "I challenged my team to design a mobile friendly solution for connecting prospective Eyewire players to the science and the story behind the citizen science project. Better UX through interative narrative will result in increased conversion and retension rates. I proposed a refresh to Eyewire’s current landing page and the addition of an explore section featuring complete support for mobile, tablet, and desktop devices. The increased context will allow prospective players to engage with Eyewire before entering the tutorial leading to substaintially increased conversion rates."
+            },
+            "meta" : {
+                "Client" : "Eyewire",
+                "Year" : "2015-2016",
+                "Role" : "Designer / Developer",
+                "Team" : "Eyewire: Amy Robinson, William Silversmith, Chris Jordan, Hyuna Choi",
+                "Discipline" : "Interaction Design, Creative Coding, Story–Telling",
+                "Medium" : "Web Application · Experience",
+                "Technologies" : "Custom Web Application Framework, p5.js, Processing",
+                "Duration" : "Six Months"
+            },
+            "image_hero": "images/projects/explore/hi-res/explore-hero.jpg",
+            "image_preview": "images/projects/explore/hi-res/explore-preview.jpg",
+            "sections" : [
+                {
+                    "name" : "endeavorDesignProcess",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin",
+                        "process" : "Deliverable",
+                        "text" : "",
+                        "number" : "01/06",
+                        "bgColor" : "#e6e6e6",
+                        "textColor" : "#bfbfbf",
+                        "textColor2" : "#d9d9d9"
+                    }
+                },
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/explore/videos/explore-walkthrough-window-loop.webm",
+                            "mp4" : "images/projects/explore/videos/explore-walkthrough-window-loop.mp4",
+                            "poster" : "images/projects/explore/videos/explore-walkthrough-window-loop.jpg"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorChecklist",
+                    "data" : {
+                        "header" : "Key Features",
+                        "class" : "endeavor-item-125",
+                        "class2" : "",
+                        "class3" : "",
+                        "class4" : "checklist-simple",
+                        "icon" : "fa-hand-o-right",
+                        "bgColor" : "",
+                        "description" : "",
+                        "contents" : [
+                            {
+                                "header" : "Generative Design",
+                                "description" : ""
+                            },
+                            {
+                                "header" : "Interactive Narrative",
+                                "description" : ""
+                            },
+                            {
+                                "header" : "Responsive",
+                                "description" : ""
+                            },
+                            {
+                                "header" : "Creative Code Prototyping",
+                                "description" : ""
+                            },
+                            {
+                                "header" : "Custom Front-End Framework",
+                                "description" : ""
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Explore Views Angle",
+                            "src": "images/projects/explore/standard/explore-views-angle.jpg",
+                            "src_standard": "images/projects/explore/standard/explore-views-angle.jpg",
+                            "src_retina": "images/projects/explore/retina/explore-views-angle.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/explore/hi-res/explore-views-angle.jpg",
+                            "src_preview": "images/projects/explore/hi-res/explore-views-angle.jpg",
+                            "caption": "Explore Views Angle"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorParagraphPoints",
+                    "data" : {
+                        "class" : "endeavor-item",
+                        "bgColor" : "",
+                        "header" : "Solution",
+                        "contents": [
+                            {
+                                "header": "Story–Telling",
+                                "description" : "Eyewire is a citizen science project founded in Sebastian Sueng's neuroscience lab at MIT. The project aims to gamify the process of assisting advanced machine learning algorithms in the reconstruction of 3D neurons from microscope images. This endeavor is unprecedented, even the elevator pitch for this game is a mouthful. Could we connect players more deeply to the science and vision of the lab with an interative experience?"
+                            },
+                            {
+                                "header": "Creative Coding",
+                                "description" : "This project was my first attempt to align my passion for programming with my professional design practice. I worked primarily with Processing for prototyping and its Js cousin p5 for the final implementation. Early prototyping with Processing was swift and revealed lots of possible visual and behaviorial directions for the simulations. I learned a lot of hard lessons converting my native Processing code to work in the browser. Performance considerations across devices and inconsistencies across browswers lead to many hours of perfomance tuning and code reviews with our devlopers to help make the vision a reality."
+                            },
+                            {
+                                "header": "Experiments",
+                                "description" : "The explore page was sort of an experiment in browser-based narrative. We asked ourselves, what is the fastest, most lightweight way to deliver a message? In response, we explored a variety of story–telling techniques including generative design, infinite looping gifs and embeded video."
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "class" : "endeavor-item-125 endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/explore/videos/explore-narrative-experiments.webm",
+                            "mp4" : "images/projects/explore/videos/explore-narrative-experiments.mp4",
+                            "poster" : "images/projects/explore/videos/explore-narrative-experiments.jpg"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Explore Views Angle",
+                            "src": "images/projects/explore/standard/explore-views-neuron-stack.jpg",
+                            "src_standard": "images/projects/explore/standard/explore-views-neuron-stack.jpg",
+                            "src_retina": "images/projects/explore/retina/explore-views-neuron-stack.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/explore/hi-res/explore-views-neuron-stack.jpg",
+                            "src_preview": "images/projects/explore/hi-res/explore-views-neuron-stack.jpg",
+                            "caption": "Explore Views Angle"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/explore/videos/explore-responsive.webm",
+                            "mp4" : "images/projects/explore/videos/explore-responsive.mp4",
+                            "poster" : "images/projects/explore/videos/explore-responsive.jpg"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorParagraphPoints",
+                    "data" : {
+                        "class" : "endeavor-item",
+                        "bgColor" : "",
+                        "header" : "",
+                        "contents": [
+                            {
+                                "header": "Responsive Design",
+                                "description" : "Applying simple CSS transitions to responsive content can have delightful side effects like bringing heroes of neuroscience to life!"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorDesignProcess",
+                    "data" : {
+                        "class" : "endeavor-item-top-250",
+                        "process" : "Narrative",
+                        "text" : "",
+                        "number" : "02/06",
+                        "bgColor" : "#e6e6e6",
+                        "textColor" : "#bfbfbf",
+                        "textColor2" : "#d9d9d9"
+                    }
+                },
+                {
+                    "name" : "endeavorParagraphHidden",
+                    "data" : {
+                        "id" : "ghost-explore-story-affect",
+                        "class" : "endeavor-item-no-margin",
+                        "class2" : "endeavor-reveal",
+                        "bgColor" : "",
+                        "header" : "Explore Story",
+                        "description" : "",
+                        "contents": [
+                            {
+                                "header": "Part I",
+                                "description" : "Your brain makes you amazing / it allows you to learn intricate skills/ dream fantastic dreams / even laugh at goofy cat videos. But how?"
+                            },
+                            {
+                                "header": "Part II",
+                                "description" : "This question has puzzled scientists for centuries. Your brain contains 80 billion neurons / connected through 100 milliion synapses. Working together, these cells make you, you. However, most of their circuits are still uncharted. When Galileo first peered through a telescope, it began a revolution in the way we see the world around us. Today, neuroscience is revolutionizing how we see the world within us. We're calling on gamers to help connect the dots by creating a visual 3D map of the brain."
+                            },
+                            {
+                                "header": "Part III",
+                                "description" : "We are wonderers."
+                            },
+                            {
+                                "header": "Part IV",
+                                "description" : "Eyewire is the first of its kind / its a 3D puzzle game / as you solve puzzles / you're mapping the brain."
+                            },
+                            {
+                                "header": "Part V",
+                                "description" : "Collaborate and compete for science!"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorGhostButton",
+                    "data" : {
+                        "class" : "endeavor-item-bottom-125 endeavor-text-left",
+                        "text" : "Read More",
+                        "align" : "",
+                        "id" : "ghost-explore-story",
+                        "textColor" : "#666666"
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Explore Sketch 2",
+                            "src": "images/projects/explore/standard/explore-sketch-2.jpg",
+                            "src_standard": "images/projects/explore/standard/explore-sketch-2.jpg",
+                            "src_retina": "images/projects/explore/retina/explore-sketch-2.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/explore/hi-res/explore-sketch-2.jpg",
+                            "src_preview": "images/projects/explore/hi-res/explore-sketch-2.jpg",
+                            "caption": "Explore Sketch 2"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "class" : "endeavor-item",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Explore Narrative Whiteboard 1",
+                            "src": "images/projects/explore/standard/explore-process-whiteboard-1.jpg",
+                            "src_standard": "images/projects/explore/standard/explore-process-whiteboard-1.jpg",
+                            "src_retina": "images/projects/explore/retina/explore-process-whiteboard-1.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/explore/hi-res/explore-process-whiteboard-1.jpg",
+                            "src_preview": "images/projects/explore/hi-res/explore-process-whiteboard-1.jpg",
+                            "caption": "Explore Narrative Whiteboard 1"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "class" : "endeavor-item",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Explore Story 1",
+                            "src": "images/projects/explore/standard/explore-story-1.jpg",
+                            "src_standard": "images/projects/explore/standard/explore-story-1.jpg",
+                            "src_retina": "images/projects/explore/retina/explore-story-1.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/explore/hi-res/explore-story-1.jpg",
+                            "src_preview": "images/projects/explore/hi-res/explore-story-1.jpg",
+                            "caption": "Explore Story 1"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorCaptionFS",
+                    "data" : {
+                        "class" : "endeavor-item-bottom-125",
+                        "caption" : "(above) Storyboarding narrative content components and animation architecture."
+                    }
+                },
+                {
+                    "name" : "endeavorDesignProcess",
+                    "data" : {
+                        "class" : "endeavor-item-top-250",
+                        "process" : "Styles",
+                        "text" : "",
+                        "number" : "03/06",
+                        "bgColor" : "#e6e6e6",
+                        "textColor" : "#bfbfbf",
+                        "textColor2" : "#d9d9d9"
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-bottom-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Explore Style",
+                            "src": "images/projects/explore/standard/explore-style.jpg",
+                            "src_standard": "images/projects/explore/standard/explore-style.jpg",
+                            "src_retina": "images/projects/explore/retina/explore-style.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/explore/hi-res/explore-style.jpg",
+                            "src_preview": "images/projects/explore/hi-res/explore-style.jpg",
+                            "caption": "Explore Style"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorDesignProcess",
+                    "data" : {
+                        "class" : "endeavor-item-top-125",
+                        "process" : "Illustration",
+                        "text" : "",
+                        "number" : "04/06",
+                        "bgColor" : "#e6e6e6",
+                        "textColor" : "#bfbfbf",
+                        "textColor2" : "#d9d9d9"
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item endeavor-item-top-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Explore Illustration",
+                            "src": "images/projects/explore/standard/explore-animation-wonderers.jpg",
+                            "src_standard": "images/projects/explore/standard/explore-animation-wonderers.jpg",
+                            "src_retina": "images/projects/explore/retina/explore-animation-wonderers.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/explore/hi-res/explore-animation-wonderers.jpg",
+                            "src_preview": "images/projects/explore/hi-res/explore-animation-wonderers.jpg",
+                            "caption": "Explore Illustration"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "class" : "endeavor-item",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Explore Illustration Wonderers",
+                            "src": "images/projects/explore/standard/explore-animation-lineup.jpg",
+                            "src_standard": "images/projects/explore/standard/explore-animation-lineup.jpg",
+                            "src_retina": "images/projects/explore/retina/explore-animation-lineup.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/explore/hi-res/explore-animation-lineup.jpg",
+                            "src_preview": "images/projects/explore/hi-res/explore-animation-lineup.jpg",
+                            "caption": "Explore Neuron Views"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorCaptionFS",
+                    "data" : {
+                        "class" : "endeavor-item-bottom-125",
+                        "caption" : "(above) I provided creative direction for an amazing illustrator + animator, Hyuna Choi. Together, we were able to create a cohesive color system and  consistent visual style that captured the playful curiosity of the brand."
+                    }
+                },
+                {
+                    "name" : "endeavorDesignProcess",
+                    "data" : {
+                        "class" : "endeavor-item-top-250",
+                        "process" : "Generative",
+                        "text" : "",
+                        "number" : "05/06",
+                        "bgColor" : "#e6e6e6",
+                        "textColor" : "#bfbfbf",
+                        "textColor2" : "#d9d9d9"
+                    }
+                },
+                {
+                    "name" : "endeavorModuleMachine",
+                    "data" : {
+                        "bgColor" : "#191919",
+                        "class" : "endeavor-item-no-margin",
+                        "modules" : [
+                            {
+                                "name" : "endeavorPad",
+                                "data" : {
+                                    "class" : "endeavor-height-200px-responsive endeavor-item-no-margin endeavor-height-10vw"
+                                }
+                            },
+                            {
+                                "name" : "endeavorImageFS",
+                                "data" : {
+                                    "placeholder" : {
+                                        "name" : "",
+                                        "src" : "",
+                                        "src" : "",
+                                        "src_mobile" : "",
+                                        "src_preview" : "",
+                                        "caption" : ""
+                                    },
+                                    "image" : {
+                                        "name": "Explore NNN",
+                                        "src": "images/projects/explore/standard/explore-nnn.jpg",
+                                        "src_standard": "images/projects/explore/standard/explore-nnn.jpg",
+                                        "src_retina": "images/projects/explore/retina/explore-nnn.jpg",
+                                        "src_low": "images/empty.gif",
+                                        "src_mobile": "images/projects/explore/hi-res/explore-nnn.jpg",
+                                        "src_preview": "images/projects/explore/hi-res/explore-nnn.jpg",
+                                        "caption": "Explore NNN"
+                                    }
+                                }
+                            },
+                            {
+                                "name" : "endeavorPad",
+                                "data" : {
+                                    "class" : "endeavor-height-200px-responsive endeavor-item-no-margin endeavor-height-10vw"
+                                }
+                            }
+                        ]
+                    }
+                }, 
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "class" : "endeavor-item-top-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Explore Neuron SAC",
+                            "src": "images/projects/explore/standard/explore-neuron-sac.jpg",
+                            "src_standard": "images/projects/explore/standard/explore-neuron-sac.jpg",
+                            "src_retina": "images/projects/explore/retina/explore-neuron-sac.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/explore/hi-res/explore-neuron-sac.jpg",
+                            "src_preview": "images/projects/explore/hi-res/explore-neuron-sac.jpg",
+                            "caption": "Explore Neuron SAC"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorCaptionFS",
+                    "data" : {
+                        "class" : "endeavor-item",
+                        "caption" : "(above) One of the most common cell types found in Eyewire, the Starburst Amacrine Cell (SAC) is a retinal neuron that assists in motion detection. Its symetrical, circular branching pattern and flat prolile make it a good candidate for 2D generative design."
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item endeavor-item-top-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Explore L-Systems",
+                            "src": "images/projects/explore/standard/explore-l-systems.jpg",
+                            "src_standard": "images/projects/explore/standard/explore-l-systems.jpg",
+                            "src_retina": "images/projects/explore/retina/explore-l-systems.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/explore/hi-res/explore-l-systems.jpg",
+                            "src_preview": "images/projects/explore/hi-res/explore-l-systems.jpg",
+                            "caption": "Explore L-Systems"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorCaptionFS",
+                    "data" : {
+                        "class" : "endeavor-item-bottom-125",
+                        "caption" : "(above) First eight iteration cycles of an experiment using l-systems to grow a SAC neuron. Initial results tended towards bushy trees."
+                    }
+                },
+                {
+                    "name" : "endeavorParagraphHidden",
+                    "data" : {
+                        "id" : "ghost-developmental-system-affect",
+                        "class" : "endeavor-item-bottom-25 endeavor-item-top-125",
+                        "class2" : "endeavor-reveal",
+                        "bgColor" : "",
+                        "header" : "Developmental System",
+                        "description" : "My first strategy for growing life-like neurons was to use a developmental approach inspired by cellular division.",
+                        "contents": [
+                            {
+                                "header": "L-Systems",
+                                "description" : "An L-system or Lindenmayer system is a parallel rewriting system and a type of formal grammar. An L-system consists of an alphabet of symbols that can be used to make strings, a collection of production rules that expand each symbol into some larger string of symbols, an initial axiom string from which to begin construction, and a mechanism for translating the generated strings into geometric structures (source Wikipedia)."
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorGhostButton",
+                    "data" : {
+                        "class" : "endeavor-item-bottom-125 endeavor-text-left",
+                        "text" : "Read More",
+                        "align" : "",
+                        "id" : "ghost-developmental-system",
+                        "textColor" : "#666666"
+                    }
+                },
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "class" : "endeavor-item endeavor-item-top-250 endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/explore/videos/sprout.webm",
+                            "mp4" : "images/projects/explore/videos/sprout.mp4",
+                            "poster" : "images/projects/explore/videos/sprout.jpg"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorCaptionFS",
+                    "data" : {
+                        "class" : "endeavor-item-bottom-125",
+                        "caption" : "(above) Inspired by techiniques in Daniel Shiffmans 'The Nature of Code,' the next Processing prototype used my own version of a traditional flocking algorithm."
+                    }
+                },
+                {
+                    "name" : "endeavorParagraphHidden",
+                    "data" : {
+                        "id" : "ghost-physical-system-affect",
+                        "class" : "endeavor-item-bottom-25 endeavor-item-top-125",
+                        "class2" : "endeavor-reveal",
+                        "bgColor" : "",
+                        "header" : "Physical System",
+                        "description" : "During development, neurons extend their branches by following chemical gradients through diverse tissues. I attempted to simulate this behavior with a swarm of autonomous agents governed by a physical system in Processing. This emergent behavior can be described by a surprisingly simple set of rules.",
+                        "contents": [
+                            {
+                                "header": "Cohesion",
+                                "description" : "Steer towards average position of neighbors (long range attraction)"
+                            },
+                            {
+                                "header": "Separation",
+                                "description" : "Avoid crowding neighbors (short range repulsion)"
+                            },
+                            {
+                                "header": "Alignment",
+                                "description" : "Steer towards average heading of neighbors"
+                            },
+                            {
+                                "header": "Wander",
+                                "description" : "Randomly change heading by a small amount each update step."
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorGhostButton",
+                    "data" : {
+                        "class" : "endeavor-item-bottom-125 endeavor-text-left",
+                        "text" : "Read More",
+                        "align" : "",
+                        "id" : "ghost-physical-system",
+                        "textColor" : "#666666"
+                    }
+                },
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "class" : "endeavor-item-125 endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/explore/videos/explore-poisson-disc.webm",
+                            "mp4" : "images/projects/explore/videos/explore-poisson-disc.mp4",
+                            "poster" : "images/projects/explore/videos/explore-poisson-disc.jpg"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorParagraph",
+                    "data" : {
+                        "header" : "Poisson Disc Sampling",
+                        "class" : "endeavor-item-top-125",
+                        "bgColor" : "",
+                        "description" : "(Below) The human retina has a beautiful solution to sampling in its placement of photoreceptor cells. The cells cover the retina densely and evenly and yet the cells’ relative positions are irregular. This is called a Poisson-disc distribution because it maintains a minimum distance between cells, avoiding occlusion and thus wasted photoreceptors. (source: Mike Bostock, Visualizing Algorithms)"
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "class" : "endeavor-item",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Explore Retinal Mosaic",
+                            "src": "images/projects/explore/standard/explore-retinal-mosaic.jpg",
+                            "src_standard": "images/projects/explore/standard/explore-retinal-mosaic.jpg",
+                            "src_retina": "images/projects/explore/retina/explore-retinal-mosaic.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/explore/hi-res/explore-retinal-mosaic.jpg",
+                            "src_preview": "images/projects/explore/hi-res/explore-retinal-mosaic.jpg",
+                            "caption": "Explore Retinal Mosaic"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/explore/videos/explore-neuron-propogate.webm",
+                            "mp4" : "images/projects/explore/videos/explore-neuron-propogate.mp4",
+                            "poster" : "images/projects/explore/videos/explore-neuron-propogate.jpg"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorParagraph",
+                    "data" : {
+                        "header" : "Signal Propogation",
+                        "class" : "endeavor-item-top-125",
+                        "bgColor" : "",
+                        "description" : "To facilitate neural transmission-like activity in the simulated neurons, I studied up on various graph traversal algorithms, Dijkstra, depth first search (DFS), and breadth first search (BFS). I settled on something in the realm of a BFS which is visualized below. Red dots are representative of signal transmission and green lines correspond to the current branch segment."
+                    }
+                },
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/explore/videos/explore-propogate.webm",
+                            "mp4" : "images/projects/explore/videos/explore-propogate.mp4",
+                            "poster" : "images/projects/explore/videos/explore-propogate.jpg"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Explore Animation Controller",
+                            "src": "images/projects/explore/standard/explore-animation-controller.jpg",
+                            "src_standard": "images/projects/explore/standard/explore-animation-controller.jpg",
+                            "src_retina": "images/projects/explore/retina/explore-animation-controller.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/explore/hi-res/explore-animation-controller.jpg",
+                            "src_preview": "images/projects/explore/hi-res/explore-animation-controller.jpg",
+                            "caption": "Explore Animation Controller"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorParagraphUsers",
+                    "data" : {
+                        "header" : "Animation Controller",
+                        "id" : "ghost-animation-controller-affect",
+                        "class" : "endeavor-item-125 endeavor-item-bottom-15",
+                        "class2" : "endeavor-reveal",
+                        "bgColor" : "",
+                        "description" : "Intergrating the neuron simulation with the rest of the explore page pushed my development skills to a new level. I learned new programing patterns and ways of thinking. The animation controller is composed of a series of small interconnected programs and supporting algorithms which coordinate the network of cells and mediate state with the rest of the experience.",
+                        "contents" : [
+                            {
+                                "header" : "Enivornment",
+                                "icon" : "fa-cube",
+                                "bullets" : [
+                                    {
+                                        "header" : "Explore Page",
+                                        "description" : "We designed a custom front-end framework, duely named 'Synapse' which synchronizes the different animation modules using a global 'T' time."
+                                    }
+                                ]
+                            },
+                            {
+                                "header" : "Support Program",
+                                "icon" : "fa-cog",
+                                "bullets" : [
+                                    {
+                                        "header" : "Neuron Coordinator",
+                                        "description" : "Neuron Coordinator is the main controller for the neural network. It synchronizes neuron-time with global 'T' time to ensure the experience stays in sync."
+                                    },
+                                    {
+                                        "header" : "Neurostate",
+                                        "description" : "Each animation sequence within the neural network has a unique neuostate which governs the networks behavior with respect to 'T' time."
+                                    },
+                                    {
+                                        "header" : "Neurotransmitter",
+                                        "description" : "Each Neurostate has an associated Neurotransmitter which monitors the networks state."
+                                    }
+                                ]
+                            },
+                            {
+                                "header" : "Neural Network",
+                                "icon" : "fa-cogs",
+                                "bullets" : [
+                                    {
+                                        "header" : "NNN",
+                                        "description" : "NNN, (short for Nortons Neural Network) is a super–class wich directly controls each of the neuron class objects."
+                                    },
+                                    {
+                                        "header" : "Neuron",
+                                        "description" : "Neurons are controlled by the NNN class but exhibit control over both Node and Bouton classes."
+                                    },
+                                    {
+                                        "header" : "Node",
+                                        "description" : "Nodes are controlled directly the Neuron class and operate as autonomous agents in the context of each Neuron."
+                                    },
+                                    {
+                                        "header" : "Bouton",
+                                        "description" : "The Bouton class is controlled by the Neuron class and is responsible for two specific actions. First, Boutons are displayed at the tips of branches to mark the neuron growth process complete. Second, Boutons may move along the neuron branch to simulate signal propogation."
+                                    }
+                                ]
+                            },
+                            {
+                                "header" : "Utility Algorithms",
+                                "icon" : "fa-code",
+                                "bullets" : [
+                                    {
+                                        "header" : "Poisson-Disc",
+                                        "description" : "A sampling algorithm which nicely mirrors the spatial distribution of photoreceptors in our retinas. This algorithm is used to create the initial distribution of the neurons."
+                                    },
+                                    {
+                                        "header" : "Kruskal-MST",
+                                        "description" : "A Javascript implementation of a classic minimum spanning tree (MST) algorithm used to pass signals around from neuron to neuron in the network."
+                                    },
+                                    {
+                                        "header" : "Parse-SVG",
+                                        "description" : "A simple SVG parser to convert vector graphics into usable data format for animation in p5js."
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorGhostButton",
+                    "data" : {
+                        "class" : "endeavor-item-bottom-125 endeavor-text-left",
+                        "text" : "Look Closer",
+                        "align" : "",
+                        "id" : "ghost-animation-controller",
+                        "textColor" : "#666666"
+                    }
+                },
+                {
+                    "name" : "endeavorDesignProcess",
+                    "data" : {
+                        "class" : "endeavor-item-top-250",
+                        "process" : "Discussion",
+                        "text" : "",
+                        "number" : "06/06",
+                        "bgColor" : "#e6e6e6",
+                        "textColor" : "#bfbfbf",
+                        "textColor2" : "#d9d9d9"
+                    }
+                },
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/explore/videos/explore-walkthrough-window-loop.webm",
+                            "mp4" : "images/projects/explore/videos/explore-walkthrough-window-loop.mp4",
+                            "poster" : "images/projects/explore/videos/explore-walkthrough-window-loop.jpg"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorCaptionFS",
+                    "data" : {
+                        "class" : "endeavor-item-bottom-125",
+                        "caption" : "(above) Complete explore page experience, as viewed on desktop."
+                    }
+                },
+                {
+                    "name" : "endeavorParagraphChecklist",
+                    "data" : {
+                        "header" : "Reflecting",
+                        "id" : "ghost-reflecting-affect",
+                        "class" : "endeavor-item-bottom-125 endeavor-item-bottom-15",
+                        "class2" : "endeavor-reveal",
+                        "bgColor" : "",
+                        "description" : "This is usually the part of a project where I invite you two engage with the experience in real life—the explore page is a little different. Though the experience is fully functional, it was never pushed to production. Performance issues and inconsistencies plagued the neuron animation system. If I were to critic myself, I would admit that I bit off a whole lot more than I could handle. I designed + developed the Explore Page for close to six months but there is a point of diminishing returns where a design becomes more of a personal endeavor than one of service. I'm thankful for the many lessons learned, in the future I will seek to iteratively improve up on good design—rather than aim for a pillar of perfection.",
+                        "contents": ""
+                    }
+                },
+                {
+                    "name" : "endeavorParagraphPoints",
+                    "data" : {
+                        "class" : "endeavor-item",
+                        "bgColor" : "",
+                        "header" : "",
+                        "contents": [
+                            {
+                                "header": "Story–Telling",
+                                "description" : "Eyewire is a citizen science project founded in Sebastian Sueng's neuroscience lab at MIT. The project aims to gamify the process of assisting advanced machine learning algorithms in the reconstruction of 3D neurons from microscope images. This endeavor is unprecedented, even the elevator pitch for this game is a mouthful. Could we connect players more deeply to the science and vision of the lab with an interative experience?"
+                            },
+                            {
+                                "header": "Creative Coding",
+                                "description" : "This project was my first attempt to align my passion for programming with my professional design practice. I worked primarily with Processing for prototyping and its Js cousin p5 for the final implementation. Early prototyping with Processing was swift and revealed lots of possible visual and behaviorial directions for the simulations. I learned a lot of hard lessons converting my native Processing code to work in the browser. Performance considerations across devices and inconsistencies across browswers lead to many hours of perfomance tuning and code reviews with our devlopers to help make the vision a reality."
+                            },
+                            {
+                                "header": "Experiments",
+                                "description" : "The explore page was sort of an experiment in browser-based narrative. We asked ourselves, what is the fastest, most lightweight way to deliver a message? In response, we explored a variety of story–telling techniques including generative design, infinite looping gifs and embeded video."
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorPad",
+                    "data" : {
+                        "class" : "endeavor-height-200px-responsive endeavor-item-no-margin endeavor-height-10vw"
+                    }
+                }
+            ]
+        },
+        {
             "route" :"msty-project",
             "name"  : "MSTY VR",
             "project_type"  : "Project",
             "year"  : "2014",
             "preview" :"msty-preview",
             "medium": [
-                "Paper",
-                "Wood",
-                "Arduino"
+                "Virtual Reality",
+                "Unity",
+                "Immersive Experience"
             ],
             "technique": [
-                "Laser Cutter",
-                "Wood Working",
+                "VR",
+                "3D Animation",
                 "Programing"
             ],
             "description" : {
@@ -1961,14 +2884,14 @@
                 "challenge": "MSTY VR is our most recent virtual reality experience. It features a knotty entanglement of neuron reconstructions from cortex—the outer most layer of brain tissue responsible for perception. MSTY, so named for the particular flavor of AI involved in the reconstruction process, was intended to be a mostly passive safari-type experience. The user would be accompanied by a friendly, derpy, but exceedingly capable AI companion—MSTY. Inspired by Google's early ImageNet dataset and success in training neural networks to recognize cats in Youtube videos, we conceived MSTY as a hovering cat–like robot with paw–like arms. The experience lasted approximately 5 minutes, during which MSTY intelligently and naturally navigates toward areas of interest acting as a sort of subliminal tour guide."
             },
             "meta" : {
-                "Client" : "Self (MIT)",
-                "Year" : 2015,
-                "Role" : "Designer / Developer",
-                "Team" : "—",
-                "Discipline" : "Fabrication / Industrial Design",
-                "Medium" : "Internet of Things / Wood",
-                "Technologies" : "Arduino / Woodshop",
-                "Duration" : "Two Months"
+                "Client" : "Whitehouse Frontiers",
+                "Year" : 2016,
+                "Role" : "Designer/Developer/Animator",
+                "Team" : "Jordi Valladaras",
+                "Discipline" : "Game Design, Interaction Design, Character Animation, Game Development Neuroscience",
+                "Medium" : "Virtual Reality",
+                "Technologies" : "Unity, HTC Vive, Oculus Rift",
+                "Duration" : "One Month"
             },
             "image_hero": "images/projects/msty/hi-res/msty-hero-2.jpg",
             "image_preview": "images/projects/msty/hi-res/msty-preview.jpg",
@@ -2426,8 +3349,7 @@
             "description" : {
                 "quote": "What are the relationships between people and amenities that create successful cities?",
                 "brief": "The goal of this thesis is to create metrics to characterize the distances between amenities, of the same type and different types, within cities. These metrics will be used to explore and compare the patterns of spatial organization for different cities in search for the laws describing the location of amenities as a function of distance and other amenities. Finally, we will explore how these metrics can be used to advice policy makers and developers involved in the construction of new cities.",
-                "challenge": "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know? When is a qualitative understanding of data sufficient? The lamp is also a sort of commentary on the current state of culture in Japan.",
-                "solution": "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know? When is a qualitative understanding of data sufficient? The lamp is also a sort of commentary on the current state of culture in Japan."
+                "challenge": "Design and prototype a dashboard to assist researchers quest to understand the relationships between people and amenities in successful cities."
             },
             "meta" : {
                 "Client" : "MIT Media Lab",
@@ -4412,28 +5334,28 @@
             "year"  : "2014",
             "preview" :"muwu-preview",
             "medium": [
-                "Paper",
-                "Wood",
-                "Arduino"
+                "Bookbinding",
+                "Reaserch+Development",
+                "Creative Coding"
             ],
             "technique": [
-                "Laser Cutter",
-                "Wood Working",
-                "Programing"
+                "Book Binding",
+                "Typesetting",
+                "Creative Coding"
             ],
             "description" : {
                 "quote": "How would algorithms mediate a conversation with the late composer, John Cage?",
-                "brief": "Simply put, MuWu is a collection of the thoughts and the experience of John Cage. Inspired by the classic text, I Ching, MuWu is intended to ask questions. How is a book composed? What is language and how does it flow? After a single trip to China, John Cage was converted to a Taoist believer. He incorporated chance operations, found in the I Ching, into most of his artworks for the rest of his life. Letting go of intention and embracing the natural flow of tao led Cage to create some of the 20th century's most influential artworks. MuWu pays homaged to to late John Cage by continuing where he left off. The book uses a computational approach to to story telling to fill up exactly 64 body pages with unique content from the compilation, Conversing with Cage. The length was chosen in response to the 64 hexagrams of the I Ching. MuWu attempts to assemble completely new and unique thoughts from the any dialogues found in Conversing with Cage. This approach shifts creative control from the designer towards the algorithm.",
+                "brief": "MuWu is a collection of the thoughts and the experience of John Cage. Inspired by the classic text, I Ching, MuWu is intended to ask questions. How is a book composed? What is language and how does it flow? After a single trip to China, John Cage was converted to a Taoist believer. He incorporated chance operations, found in the I Ching, into most of his artworks for the rest of his life. Letting go of intention and embracing the natural flow of tao led Cage to create some of the 20th century's most influential artworks. MuWu pays homaged to to late John Cage by continuing where he left off. The book uses a computational approach to to story telling to fill up exactly 64 body pages with unique content from the compilation, Conversing with Cage. The length was chosen in response to the 64 hexagrams of the I Ching. MuWu attempts to assemble completely new and unique thoughts from the any dialogues found in Conversing with Cage. This approach shifts creative control from the designer towards the algorithm.",
                 "challenge": "MuWu was concieved as a student project during my junior year of university. At the time, I was still quite new to programing and just getting my feet wet with the possibilities of design mediated computation. It was a serious risk to take on a full book publication using an unfamiliar technology and ambitious concept. Through the patience of my professors, many, many late evenings debugging, researching, and most importantly a marked propensity for experimentation MuWu came into existance. The final deliverable consisted of a set of eight hand-printed and hard-cover, hand-bound books of exceptional quality. When you leaf through MuWu, you feel none of the struggle, only a clear and simple concept and formal delivery."
             },
             "meta" : {
-                "Client" : "Self (MIT)",
+                "Client" : "University",
                 "Year" : 2015,
-                "Role" : "Designer / Developer",
+                "Role" : "Designer/Editor",
                 "Team" : "—",
-                "Discipline" : "Fabrication / Industrial Design",
-                "Medium" : "Internet of Things / Wood",
-                "Technologies" : "Arduino / Woodshop",
+                "Discipline" : "Book Design, Creative Coding, Editing",
+                "Medium" : "Graphic Design, Book Design",
+                "Technologies" : "Bookbinding, Processing",
                 "Duration" : "Two Months"
             },
             "image_hero": "images/projects/muwu/hi-res/muwu-hero-3.jpg",
@@ -6133,7 +7055,7 @@
             "project": "Eyewire",
             "logo": "images/nytimes-logo.png",
             "caption": "How the brain's wiring makes you, you.",
-            "link": "http://www.nytimes.com/2014/05/27/science/all-circuits-are-busy.html"
+            "link": "http://www.nytimes.com/2014/06/27/science/all-circuits-are-busy.html"
         },
         {
             "feature": "Nature",

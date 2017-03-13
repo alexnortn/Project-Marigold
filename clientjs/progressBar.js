@@ -252,7 +252,14 @@ class ProgressBar {
     // Animate bar progress -> 0
     reset() {
         let _this = this;
-        $("#" + _this.progress.id).velocity({ width: 0 }, { duration: 500 }, "easeInSine");
+
+        return $.Velocity.animate( $("#" + _this.progress.id), { width: 0 }, { duration: 500 }, "easeInSine")
+        .then((el) => {
+            return _this.destroy();
+        })
+        .catch(function(reason) { 
+            console.log("Rejected because " + reason);
+        });
     }
 
     // Call before Destroy
@@ -270,7 +277,8 @@ class ProgressBar {
     // Remove this instance of class from DOM
     destroy() {
         let _this = this;
-    	$.Velocity.animate( $("#" + _this.capsule.id), "fadeOut", { duration: 500 })
+
+    	return $.Velocity.animate( $("#" + _this.capsule.id), "fadeOut", { duration: 500 })
             .then(function(el) {
                 // Remove container from DOM
                 $(el).remove();

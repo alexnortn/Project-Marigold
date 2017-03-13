@@ -26,7 +26,8 @@ let _options = {
 	tablet: false,
 };
 
-let _canvas = $.Deferred();
+let _canvas = $.Deferred(),
+	_render = true;
 
 
 // Running the sketch in instance mode, don't forget to preface all P5 methods with { p }
@@ -199,6 +200,11 @@ let glyph = function (p) {
 
 	p.draw = function() {
 
+		// Only render if glyph is in view
+		if (!_render || window._openProjectState) {
+			return;
+		}
+
 		// Update the physics world
 		physics.update();
 		p.clear();
@@ -277,7 +283,7 @@ let glyph = function (p) {
 		if (_options.mobile) {
 			return;
 		}
-
+		
 		p.resizeCanvas(p.windowWidth, p.windowHeight);
 		w = p.windowWidth;
 		h = p.windowHeight;
@@ -1065,6 +1071,10 @@ let glyph = function (p) {
 
 	// Deal with resize events
 	window.onresize = function() { 
+		if (_options.mobile) {
+			return;
+		}
+
 		let timer;
 
 		clearTimeout(timer);
@@ -1159,9 +1169,17 @@ let glyph = function (p) {
 		if (_options.mobile) {
 			return;
 		}
+<<<<<<< HEAD
+=======
+		
+>>>>>>> master
 		let scroll_top = $(window).scrollTop();
 		if (scroll_top < p.height)  { // We only care if it's happening around p5 environment
 			_bounce.bounceFactory(scroll_top);
+			_render = true;
+		}
+		else {
+			_render = false;
 		}
 	});
 
