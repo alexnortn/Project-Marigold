@@ -2390,29 +2390,9 @@
                     }
                 }, 
                 {
-                    "name" : "endeavorModuleMachine",
-                    "data" : {
-                        "bgColor" : "",
-                        "class" : "endeavor-item-no-margin",
-                        "modules" : [
-                            {
-                                "name" : "endeavorIntroFS",
-                                "data" : {
-                                    "margin" : "endeavor-item-250",
-                                    "header" : "Hello, Seunglab",
-                                    "subtext" : "At Seunglab scientists study Connectomics, a specialty in the domain of Neuroscience which seeks to understand brain structure and function by constructing comprehensive maps of the connections between neurons.",
-                                    "bgColor" : "",
-                                    "class" : "",
-                                    "textColor" : "#666666"
-                                }
-                            }
-                        ]
-                    }
-                },
-                {
                     "name" : "endeavorImageFS",
                     "data" : {
-                        "class" : "endeavor-item-no-margin",
+                        "class" : "endeavor-item-top-125",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
