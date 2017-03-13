@@ -2197,6 +2197,106 @@
                 {
                     "name" : "endeavorDesignProcess",
                     "data" : {
+                        "class" : "endeavor-item-no-margin",
+                        "process" : "Narrative",
+                        "text" : "",
+                        "number" : "03/04",
+                        "bgColor" : "#e6e6e6",
+                        "textColor" : "#bfbfbf",
+                        "textColor2" : "#d9d9d9"
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-bottom-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Explore Sketch 2",
+                            "src": "images/projects/explore/standard/explore-sketch-2.jpg",
+                            "src_standard": "images/projects/explore/standard/explore-sketch-2.jpg",
+                            "src_retina": "images/projects/explore/retina/explore-sketch-2.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/explore/hi-res/explore-sketch-2.jpg",
+                            "src_preview": "images/projects/explore/hi-res/explore-sketch-2.jpg",
+                            "caption": "Explore Sketch 2"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorParagraph",
+                    "data" : {
+                        "header" : "Story",
+                        "class" : "endeavor-item-125",
+                        "bgColor" : "",
+                        "description" : "To ensure consistency across application elements and devices we created a set of standards ranging from idenity to typography, to color and interation models. We organized our styleguide into 6 progressive sections: Identity, Elements, Components, Compositions, Layout, and Views."
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "class" : "endeavor-item",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Explore Narrative Whiteboard 1",
+                            "src": "images/projects/explore/standard/explore-process-whiteboard-1.jpg",
+                            "src_standard": "images/projects/explore/standard/explore-process-whiteboard-1.jpg",
+                            "src_retina": "images/projects/explore/retina/explore-process-whiteboard-1.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/explore/hi-res/explore-process-whiteboard-1.jpg",
+                            "src_preview": "images/projects/explore/hi-res/explore-process-whiteboard-1.jpg",
+                            "caption": "Explore Narrative Whiteboard 1"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "class" : "endeavor-item",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Explore Story 1",
+                            "src": "images/projects/explore/standard/explore-story-1.jpg",
+                            "src_standard": "images/projects/explore/standard/explore-story-1.jpg",
+                            "src_retina": "images/projects/explore/retina/explore-story-1.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/explore/hi-res/explore-story-1.jpg",
+                            "src_preview": "images/projects/explore/hi-res/explore-story-1.jpg",
+                            "caption": "Explore Story 1"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorCaptionFS",
+                    "data" : {
+                        "class" : "endeavor-item-bottom-125",
+                        "caption" : "(above) Posters were printed and distributed across many Boston universities for a special local competition pitting students head-to-head for science! (below) The Dig consists of sixteen sectors, we created a count-up graphic to visualize player progress."
+                    }
+                },
+                {
+                    "name" : "endeavorDesignProcess",
+                    "data" : {
                         "class" : "endeavor-item-top-125",
                         "process" : "Styles",
                         "text" : "",
@@ -2204,15 +2304,6 @@
                         "bgColor" : "#e6e6e6",
                         "textColor" : "#bfbfbf",
                         "textColor2" : "#d9d9d9"
-                    }
-                },
-                {
-                    "name" : "endeavorParagraph",
-                    "data" : {
-                        "header" : "Styles",
-                        "class" : "endeavor-item-top-125",
-                        "bgColor" : "",
-                        "description" : "To ensure consistency across application elements and devices we created a set of standards ranging from idenity to typography, to color and interation models. We organized our styleguide into 6 progressive sections: Identity, Elements, Components, Compositions, Layout, and Views."
                     }
                 },
                 {
@@ -2252,32 +2343,53 @@
                     }
                 },
                 {
-                    "name" : "endeavorImage100vw",
+                    "name" : "endeavorModuleMachine",
                     "data" : {
+                        "bgColor" : "#191919",
                         "class" : "endeavor-item-no-margin",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "Explore NNN",
-                            "src": "images/projects/explore/standard/explore-nnn.jpg",
-                            "src_standard": "images/projects/explore/standard/explore-nnn.jpg",
-                            "src_retina": "images/projects/explore/retina/explore-nnn.jpg",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/explore/hi-res/explore-nnn.jpg",
-                            "src_preview": "images/projects/explore/hi-res/explore-nnn.jpg",
-                            "caption": "Explore NNN"
-                        }
+                        "modules" : [
+                            {
+                                "name" : "endeavorPad",
+                                "data" : {
+                                    "class" : "endeavor-height-200px-responsive endeavor-item-no-margin endeavor-height-10vw"
+                                }
+                            },
+                            {
+                                "name" : "endeavorImageFS",
+                                "data" : {
+                                    "placeholder" : {
+                                        "name" : "",
+                                        "src" : "",
+                                        "src" : "",
+                                        "src_mobile" : "",
+                                        "src_preview" : "",
+                                        "caption" : ""
+                                    },
+                                    "image" : {
+                                        "name": "Explore NNN",
+                                        "src": "images/projects/explore/standard/explore-nnn.jpg",
+                                        "src_standard": "images/projects/explore/standard/explore-nnn.jpg",
+                                        "src_retina": "images/projects/explore/retina/explore-nnn.jpg",
+                                        "src_low": "images/empty.gif",
+                                        "src_mobile": "images/projects/explore/hi-res/explore-nnn.jpg",
+                                        "src_preview": "images/projects/explore/hi-res/explore-nnn.jpg",
+                                        "caption": "Explore NNN"
+                                    }
+                                }
+                            },
+                            {
+                                "name" : "endeavorPad",
+                                "data" : {
+                                    "class" : "endeavor-height-200px-responsive endeavor-item-no-margin endeavor-height-10vw"
+                                }
+                            }
+                        ]
                     }
-                },
+                }, 
                 {
                     "name" : "endeavorImageFS",
                     "data" : {
+                        "class" : "endeavor-item endeavor-item-top-125",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -2287,21 +2399,27 @@
                             "caption" : ""
                         },
                         "image" : {
-                            "name": "Neuron Pattern GIF",
-                            "src": "images/projects/explore/standard/explore-neuron-pattern.gif",
-                            "src_standard": "images/projects/explore/standard/explore-neuron-pattern.gif",
-                            "src_retina": "images/projects/explore/retina/explore-neuron-pattern.gif",
+                            "name": "Explore Neuron SAC",
+                            "src": "images/projects/explore/standard/explore-neuron-sac.jpg",
+                            "src_standard": "images/projects/explore/standard/explore-neuron-sac.jpg",
+                            "src_retina": "images/projects/explore/retina/explore-neuron-sac.jpg",
                             "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/explore/hi-res/explore-neuron-pattern.gif",
-                            "src_preview": "images/projects/explore/hi-res/explore-neuron-pattern.gif",
-                            "caption": "Neuron Pattern GIF"
+                            "src_mobile": "images/projects/explore/hi-res/explore-neuron-sac.jpg",
+                            "src_preview": "images/projects/explore/hi-res/explore-neuron-sac.jpg",
+                            "caption": "Explore Neuron SAC"
                         }
+                    }
+                },
+                {
+                    "name" : "endeavorCaptionFS",
+                    "data" : {
+                        "caption" : "(above) Posters were printed and distributed across many Boston universities for a special local competition pitting students head-to-head for science! (below) The Dig consists of sixteen sectors, we created a count-up graphic to visualize player progress."
                     }
                 },
                 {
                     "name" : "endeavorImage100vw",
                     "data" : {
-                        "class" : "endeavor-item-no-margin",
+                        "class" : "endeavor-item-125",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -2323,59 +2441,15 @@
                     }
                 },
                 {
-                    "name" : "endeavorImageSlider",
+                    "name" : "endeavorParagraphPoints",
                     "data" : {
-                        "meta" : "Graph-Traversal",
-                        "images" : [
+                        "class" : "endeavor-item",
+                        "bgColor" : "",
+                        "header" : "Developmental System",
+                        "contents": [
                             {
-                                "name": "explore-graph-single-1",
-                                "src": "images/projects/explore/standard/explore-graph-single-1.jpg",
-                                "src_standard": "images/projects/explore/standard/explore-graph-single-1.jpg",
-                                "src_retina": "images/projects/explore/retina/explore-graph-single-1.jpg",
-                                "src_low": "images/empty.gif",
-                                "src_mobile": "images/projects/explore/hi-res/explore-graph-single-1.jpg",
-                                "src_preview": "images/projects/explore/hi-res/explore-graph-single-1.jpg",
-                                "caption": "Explore Graph Traversal"   
-                            },
-                            {
-                                "name": "explore-graph-single-2",
-                                "src": "images/projects/explore/standard/explore-graph-single-2.jpg",
-                                "src_standard": "images/projects/explore/standard/explore-graph-single-2.jpg",
-                                "src_retina": "images/projects/explore/retina/explore-graph-single-2.jpg",
-                                "src_low": "images/empty.gif",
-                                "src_mobile": "images/projects/explore/hi-res/explore-graph-single-2.jpg",
-                                "src_preview": "images/projects/explore/hi-res/explore-graph-single-2.jpg",
-                                "caption": "Explore Graph Traversal"   
-                            },
-                            {
-                                "name": "explore-graph-single-3",
-                                "src": "images/projects/explore/standard/explore-graph-single-3.jpg",
-                                "src_standard": "images/projects/explore/standard/explore-graph-single-3.jpg",
-                                "src_retina": "images/projects/explore/retina/explore-graph-single-3.jpg",
-                                "src_low": "images/empty.gif",
-                                "src_mobile": "images/projects/explore/hi-res/explore-graph-single-3.jpg",
-                                "src_preview": "images/projects/explore/hi-res/explore-graph-single-3.jpg",
-                                "caption": "Explore Graph Traversal"   
-                            },
-                            {
-                                "name": "explore-graph-single-4",
-                                "src": "images/projects/explore/standard/explore-graph-single-4.jpg",
-                                "src_standard": "images/projects/explore/standard/explore-graph-single-4.jpg",
-                                "src_retina": "images/projects/explore/retina/explore-graph-single-4.jpg",
-                                "src_low": "images/empty.gif",
-                                "src_mobile": "images/projects/explore/hi-res/explore-graph-single-4.jpg",
-                                "src_preview": "images/projects/explore/hi-res/explore-graph-single-4.jpg",
-                                "caption": "Explore Graph Traversal"   
-                            },
-                            {
-                                "name": "explore-graph-single-5",
-                                "src": "images/projects/explore/standard/explore-graph-single-5.jpg",
-                                "src_standard": "images/projects/explore/standard/explore-graph-single-5.jpg",
-                                "src_retina": "images/projects/explore/retina/explore-graph-single-5.jpg",
-                                "src_low": "images/empty.gif",
-                                "src_mobile": "images/projects/explore/hi-res/explore-graph-single-5.jpg",
-                                "src_preview": "images/projects/explore/hi-res/explore-graph-single-5.jpg",
-                                "caption": "Explore Graph Traversal"   
+                                "header": "L-Systems",
+                                "description" : "We partnered with Seunglab to design, develop, and deploy a responsive, open source, web application targeted towards neuroscientists with the goal of assisting researchers in the classification of new neuron typologies."
                             }
                         ]
                     }
@@ -2383,7 +2457,7 @@
                 {
                     "name" : "endeavorVideoFS",
                     "data" : {
-                        "class" : "endeavor-item-no-margin endeavor-width-100vw endeavor-pos-rel",
+                        "class" : "endeavor-item-125 endeavor-width-100vw endeavor-pos-rel",
                         "loop": "",
                         "muted": "",
                         "autoplay": "true",
@@ -2395,9 +2469,58 @@
                     }
                 },
                 {
-                    "name" : "endeavorImage100vw",
+                    "name" : "endeavorParagraphPoints",
                     "data" : {
-                        "class" : "endeavor-item-no-margin",
+                        "class" : "endeavor-item-125",
+                        "bgColor" : "",
+                        "header" : "Physical System",
+                        "contents": [
+                            {
+                                "header": "Cohesion",
+                                "description" : "We partnered with Seunglab to design, develop, and deploy a responsive, open source, web application targeted towards neuroscientists with the goal of assisting researchers in the classification of new neuron typologies."
+                            },
+                            {
+                                "header": "Separation",
+                                "description" : "Using Google’s Material Design library as basis for interaction patterns, we rapidly deployed a beta version and began extensive prototyping while seeking usability feedback from a host of researchers and designers. We continued prototyping for two months–refining touch points, tweaking the usability and functionality of charts, improving mesh loading performance, and adding features like auto-complete search to name a few."
+                            },
+                            {
+                                "header": "Alignment",
+                                "description" : "After the push to production, we handed off our design + development guidelines to the team at Seunglab where researchers continue to grow the platform with feedback from the scientific community."
+                            },
+                            {
+                                "header": "Wander",
+                                "description" : "After the push to production, we handed off our design + development guidelines to the team at Seunglab where researchers continue to grow the platform with feedback from the scientific community."
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "class" : "endeavor-item-125 endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/explore/videos/explore-poisson-disc.webm",
+                            "mp4" : "images/projects/explore/videos/explore-poisson-disc.mp4",
+                            "poster" : "images/projects/explore/videos/explore-poisson-disc.jpg"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorParagraph",
+                    "data" : {
+                        "header" : "Poisson Disc Sampling",
+                        "class" : "endeavor-item-top-125",
+                        "bgColor" : "",
+                        "description" : "To ensure consistency across application elements and devices we created a set of standards ranging from idenity to typography, to color and interation models. We organized our styleguide into 6 progressive sections: Identity, Elements, Components, Compositions, Layout, and Views."
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "class" : "endeavor-item",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -2407,14 +2530,108 @@
                             "caption" : ""
                         },
                         "image" : {
-                            "name": "Explore Neuron Test",
-                            "src": "images/projects/explore/standard/explore-neuron-renders.jpg",
-                            "src_standard": "images/projects/explore/standard/explore-neuron-renders.jpg",
-                            "src_retina": "images/projects/explore/retina/explore-neuron-renders.jpg",
+                            "name": "Explore Retinal Mosaic",
+                            "src": "images/projects/explore/standard/explore-retinal-mosaic.jpg",
+                            "src_standard": "images/projects/explore/standard/explore-retinal-mosaic.jpg",
+                            "src_retina": "images/projects/explore/retina/explore-retinal-mosaic.jpg",
                             "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/explore/hi-res/explore-neuron-renders.jpg",
-                            "src_preview": "images/projects/explore/hi-res/explore-neuron-renders.jpg",
-                            "caption": "Explore Neuron Test"
+                            "src_mobile": "images/projects/explore/hi-res/explore-retinal-mosaic.jpg",
+                            "src_preview": "images/projects/explore/hi-res/explore-retinal-mosaic.jpg",
+                            "caption": "Explore Retinal Mosaic"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Explore Neuron Mosaic",
+                            "src": "images/projects/explore/standard/explore-neuron-levels.jpg",
+                            "src_standard": "images/projects/explore/standard/explore-neuron-levels.jpg",
+                            "src_retina": "images/projects/explore/retina/explore-neuron-levels.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/explore/hi-res/explore-neuron-levels.jpg",
+                            "src_preview": "images/projects/explore/hi-res/explore-neuron-levels.jpg",
+                            "caption": "Explore Neuron Mosaic"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorParagraph",
+                    "data" : {
+                        "header" : "Complexity",
+                        "class" : "endeavor-item-top-125",
+                        "bgColor" : "",
+                        "description" : "To ensure consistency across application elements and devices we created a set of standards ranging from idenity to typography, to color and interation models. We organized our styleguide into 6 progressive sections: Identity, Elements, Components, Compositions, Layout, and Views."
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "class" : "endeavor-item",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Explore Neuron Physics",
+                            "src": "images/projects/explore/standard/explore-neuron-physics-3.jpg",
+                            "src_standard": "images/projects/explore/standard/explore-neuron-physics-3.jpg",
+                            "src_retina": "images/projects/explore/retina/explore-neuron-physics-3.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/explore/hi-res/explore-neuron-physics-3.jpg",
+                            "src_preview": "images/projects/explore/hi-res/explore-neuron-physics-3.jpg",
+                            "caption": "Explore Neuron Physics"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/explore/videos/explore-neuron-propogate.webm",
+                            "mp4" : "images/projects/explore/videos/explore-neuron-propogate.mp4",
+                            "poster" : "images/projects/explore/videos/explore-neuron-propogate.jpg"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorParagraph",
+                    "data" : {
+                        "header" : "Signal Propogation",
+                        "class" : "endeavor-item-top-125",
+                        "bgColor" : "",
+                        "description" : "To ensure consistency across application elements and devices we created a set of standards ranging from idenity to typography, to color and interation models. We organized our styleguide into 6 progressive sections: Identity, Elements, Components, Compositions, Layout, and Views."
+                    }
+                },
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/explore/videos/explore-propogate.webm",
+                            "mp4" : "images/projects/explore/videos/explore-propogate.mp4",
+                            "poster" : "images/projects/explore/videos/explore-propogate.jpg"
                         }
                     }
                 },
