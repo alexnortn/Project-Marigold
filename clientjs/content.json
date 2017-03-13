@@ -2867,13 +2867,13 @@
             "year"  : "2014",
             "preview" :"msty-preview",
             "medium": [
-                "Paper",
-                "Wood",
-                "Arduino"
+                "Virtual Reality",
+                "Unity",
+                "Immersive Experience"
             ],
             "technique": [
-                "Laser Cutter",
-                "Wood Working",
+                "VR",
+                "3D Animation",
                 "Programing"
             ],
             "description" : {
@@ -2882,14 +2882,14 @@
                 "challenge": "MSTY VR is our most recent virtual reality experience. It features a knotty entanglement of neuron reconstructions from cortex—the outer most layer of brain tissue responsible for perception. MSTY, so named for the particular flavor of AI involved in the reconstruction process, was intended to be a mostly passive safari-type experience. The user would be accompanied by a friendly, derpy, but exceedingly capable AI companion—MSTY. Inspired by Google's early ImageNet dataset and success in training neural networks to recognize cats in Youtube videos, we conceived MSTY as a hovering cat–like robot with paw–like arms. The experience lasted approximately 5 minutes, during which MSTY intelligently and naturally navigates toward areas of interest acting as a sort of subliminal tour guide."
             },
             "meta" : {
-                "Client" : "Self (MIT)",
-                "Year" : 2015,
-                "Role" : "Designer / Developer",
-                "Team" : "—",
-                "Discipline" : "Fabrication / Industrial Design",
-                "Medium" : "Internet of Things / Wood",
-                "Technologies" : "Arduino / Woodshop",
-                "Duration" : "Two Months"
+                "Client" : "Whitehouse Frontiers",
+                "Year" : 2016,
+                "Role" : "Designer/Developer/Animator",
+                "Team" : "Jordi Valladaras",
+                "Discipline" : "Game Design, Interaction Design, Character Animation, Game Development Neuroscience",
+                "Medium" : "Virtual Reality",
+                "Technologies" : "Unity, HTC Vive, Oculus Rift",
+                "Duration" : "One Month"
             },
             "image_hero": "images/projects/msty/hi-res/msty-hero-2.jpg",
             "image_preview": "images/projects/msty/hi-res/msty-preview.jpg",
@@ -3347,8 +3347,7 @@
             "description" : {
                 "quote": "What are the relationships between people and amenities that create successful cities?",
                 "brief": "The goal of this thesis is to create metrics to characterize the distances between amenities, of the same type and different types, within cities. These metrics will be used to explore and compare the patterns of spatial organization for different cities in search for the laws describing the location of amenities as a function of distance and other amenities. Finally, we will explore how these metrics can be used to advice policy makers and developers involved in the construction of new cities.",
-                "challenge": "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know? When is a qualitative understanding of data sufficient? The lamp is also a sort of commentary on the current state of culture in Japan.",
-                "solution": "A traditional Japanese lamp that responds gesturally to weather phenomena using an integrated micro controller + Connectivity to remote weather stations. The lamp seeks to explore our relationship with dynamic data, for this instance weather. How much do we really need to know? When is a qualitative understanding of data sufficient? The lamp is also a sort of commentary on the current state of culture in Japan."
+                "challenge": "Design and prototype a dashboard to assist researchers quest to understand the relationships between people and amenities in successful cities."
             },
             "meta" : {
                 "Client" : "MIT Media Lab",
@@ -5333,28 +5332,28 @@
             "year"  : "2014",
             "preview" :"muwu-preview",
             "medium": [
-                "Paper",
-                "Wood",
-                "Arduino"
+                "Bookbinding",
+                "Reaserch+Development",
+                "Creative Coding"
             ],
             "technique": [
-                "Laser Cutter",
-                "Wood Working",
-                "Programing"
+                "Book Binding",
+                "Typesetting",
+                "Creative Coding"
             ],
             "description" : {
                 "quote": "How would algorithms mediate a conversation with the late composer, John Cage?",
-                "brief": "Simply put, MuWu is a collection of the thoughts and the experience of John Cage. Inspired by the classic text, I Ching, MuWu is intended to ask questions. How is a book composed? What is language and how does it flow? After a single trip to China, John Cage was converted to a Taoist believer. He incorporated chance operations, found in the I Ching, into most of his artworks for the rest of his life. Letting go of intention and embracing the natural flow of tao led Cage to create some of the 20th century's most influential artworks. MuWu pays homaged to to late John Cage by continuing where he left off. The book uses a computational approach to to story telling to fill up exactly 64 body pages with unique content from the compilation, Conversing with Cage. The length was chosen in response to the 64 hexagrams of the I Ching. MuWu attempts to assemble completely new and unique thoughts from the any dialogues found in Conversing with Cage. This approach shifts creative control from the designer towards the algorithm.",
+                "brief": "MuWu is a collection of the thoughts and the experience of John Cage. Inspired by the classic text, I Ching, MuWu is intended to ask questions. How is a book composed? What is language and how does it flow? After a single trip to China, John Cage was converted to a Taoist believer. He incorporated chance operations, found in the I Ching, into most of his artworks for the rest of his life. Letting go of intention and embracing the natural flow of tao led Cage to create some of the 20th century's most influential artworks. MuWu pays homaged to to late John Cage by continuing where he left off. The book uses a computational approach to to story telling to fill up exactly 64 body pages with unique content from the compilation, Conversing with Cage. The length was chosen in response to the 64 hexagrams of the I Ching. MuWu attempts to assemble completely new and unique thoughts from the any dialogues found in Conversing with Cage. This approach shifts creative control from the designer towards the algorithm.",
                 "challenge": "MuWu was concieved as a student project during my junior year of university. At the time, I was still quite new to programing and just getting my feet wet with the possibilities of design mediated computation. It was a serious risk to take on a full book publication using an unfamiliar technology and ambitious concept. Through the patience of my professors, many, many late evenings debugging, researching, and most importantly a marked propensity for experimentation MuWu came into existance. The final deliverable consisted of a set of eight hand-printed and hard-cover, hand-bound books of exceptional quality. When you leaf through MuWu, you feel none of the struggle, only a clear and simple concept and formal delivery."
             },
             "meta" : {
-                "Client" : "Self (MIT)",
+                "Client" : "University",
                 "Year" : 2015,
-                "Role" : "Designer / Developer",
+                "Role" : "Designer/Editor",
                 "Team" : "—",
-                "Discipline" : "Fabrication / Industrial Design",
-                "Medium" : "Internet of Things / Wood",
-                "Technologies" : "Arduino / Woodshop",
+                "Discipline" : "Book Design, Creative Coding, Editing",
+                "Medium" : "Graphic Design, Book Design",
+                "Technologies" : "Bookbinding, Processing",
                 "Duration" : "Two Months"
             },
             "image_hero": "images/projects/muwu/hi-res/muwu-hero-3.jpg",
