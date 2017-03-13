@@ -283,7 +283,7 @@ let glyph = function (p) {
 		if (_options.mobile) {
 			return;
 		}
-		
+
 		p.resizeCanvas(p.windowWidth, p.windowHeight);
 		w = p.windowWidth;
 		h = p.windowHeight;
@@ -1169,10 +1169,7 @@ let glyph = function (p) {
 		if (_options.mobile) {
 			return;
 		}
-<<<<<<< HEAD
-=======
 		
->>>>>>> master
 		let scroll_top = $(window).scrollTop();
 		if (scroll_top < p.height)  { // We only care if it's happening around p5 environment
 			_bounce.bounceFactory(scroll_top);
