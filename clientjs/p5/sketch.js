@@ -200,11 +200,10 @@ let glyph = function (p) {
 
 	p.draw = function() {
 
+		// Only render if glyph is in view
 		if (!_render) {
 			return;
 		}
-
-		console.log('render');
 
 		// Update the physics world
 		physics.update();

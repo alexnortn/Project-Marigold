@@ -2464,17 +2464,10 @@
                     }
                 },
                 {
-                    "name" : "endeavorParagraphPoints",
+                    "name" : "endeavorCaptionFS",
                     "data" : {
                         "class" : "endeavor-item",
-                        "bgColor" : "",
-                        "header" : "",
-                        "contents": [
-                            {
-                                "header": "Starburst Amacrine Cell",
-                                "description" : "One of the most common cell types found in Eyewire, the Starburst Amacrine Cell (SAC) is a retinal neuron that assists in motion detection. Its symetrical, circular branching pattern and flat prolile make it a good candidate for 2D generative design."
-                            }
-                        ]
+                        "caption" : "(above) One of the most common cell types found in Eyewire, the Starburst Amacrine Cell (SAC) is a retinal neuron that assists in motion detection. Its symetrical, circular branching pattern and flat prolile make it a good candidate for 2D generative design."
                     }
                 },
                 {
@@ -2511,7 +2504,7 @@
                 {
                     "name" : "endeavorParagraphHidden",
                     "data" : {
-                        "id" : "ghost-explore-story-affect",
+                        "id" : "ghost-developmental-system-affect",
                         "class" : "endeavor-item-bottom-25 endeavor-item-top-125",
                         "class2" : "endeavor-reveal",
                         "bgColor" : "",
@@ -2531,14 +2524,14 @@
                         "class" : "endeavor-item-bottom-125 endeavor-text-left",
                         "text" : "Read More",
                         "align" : "",
-                        "id" : "ghost-explore-story",
+                        "id" : "ghost-developmental-system",
                         "textColor" : "#666666"
                     }
                 },
                 {
                     "name" : "endeavorVideoFS",
                     "data" : {
-                        "class" : "endeavor-item-250 endeavor-width-100vw endeavor-pos-rel",
+                        "class" : "endeavor-item endeavor-item-top-250 endeavor-width-100vw endeavor-pos-rel",
                         "loop": "",
                         "muted": "",
                         "autoplay": "true",
@@ -2550,11 +2543,21 @@
                     }
                 },
                 {
-                    "name" : "endeavorParagraphPoints",
+                    "name" : "endeavorCaptionFS",
                     "data" : {
-                        "class" : "endeavor-item",
+                        "class" : "endeavor-item-bottom-125",
+                        "caption" : "(above) First eight iteration cycles of an experiment using l-systems to grow a SAC neuron. Initial results tended towards bushy trees."
+                    }
+                },
+                {
+                    "name" : "endeavorParagraphHidden",
+                    "data" : {
+                        "id" : "ghost-physical-system-affect",
+                        "class" : "endeavor-item-bottom-25 endeavor-item-top-125",
+                        "class2" : "endeavor-reveal",
                         "bgColor" : "",
                         "header" : "Physical System",
+                        "description" : "My first strategy for growing life-like neurons was to use a developmental approach inspired by cellular division.",
                         "contents": [
                             {
                                 "header": "Cohesion",
@@ -2573,6 +2576,16 @@
                                 "description" : "After the push to production, we handed off our design + development guidelines to the team at Seunglab where researchers continue to grow the platform with feedback from the scientific community."
                             }
                         ]
+                    }
+                },
+                {
+                    "name" : "endeavorGhostButton",
+                    "data" : {
+                        "class" : "endeavor-item-bottom-125 endeavor-text-left",
+                        "text" : "Read More",
+                        "align" : "",
+                        "id" : "ghost-physical-system",
+                        "textColor" : "#666666"
                     }
                 },
                 {
