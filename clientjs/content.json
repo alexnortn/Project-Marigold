@@ -2059,6 +2059,13 @@
                     }
                 },
                 {
+                    "name" : "endeavorCaptionFS",
+                    "data" : {
+                        "class" : "endeavor-item-bottom-125",
+                        "caption" : "(above) Posters were printed and distributed across many Boston universities for a special local competition pitting students head-to-head for science! (below) The Dig consists of sixteen sectors, we created a count-up graphic to visualize player progress."
+                    }
+                },
+                {
                     "name" : "endeavorVideoFS",
                     "data" : {
                         "class" : "endeavor-item-no-margin endeavor-width-100vw endeavor-pos-rel",
@@ -2092,44 +2099,6 @@
                             "webm" : "images/projects/explore/videos/explore-window-neurons.webm",
                             "mp4" : "images/projects/explore/videos/explore-window-neurons.mp4",
                             "poster" : "images/projects/explore/videos/explore-window-neurons.jpg"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImage100vw",
-                    "data" : {
-                        "class" : "endeavor-item-no-margin",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "Explore Neuron Views",
-                            "src": "images/projects/explore/standard/explore-views-neuron-stack.jpg",
-                            "src_standard": "images/projects/explore/standard/explore-views-neuron-stack.jpg",
-                            "src_retina": "images/projects/explore/retina/explore-views-neuron-stack.jpg",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/explore/hi-res/explore-views-neuron-stack.jpg",
-                            "src_preview": "images/projects/explore/hi-res/explore-views-neuron-stack.jpg",
-                            "caption": "Explore Neuron Views"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorVideoFS",
-                    "data" : {
-                        "class" : "endeavor-item-no-margin endeavor-width-100vw endeavor-pos-rel",
-                        "loop": "",
-                        "muted": "",
-                        "autoplay": "true",
-                        "src" : {
-                            "webm" : "images/projects/explore/videos/explore-window-cube.webm",
-                            "mp4" : "images/projects/explore/videos/explore-window-cube.mp4",
-                            "poster" : "images/projects/explore/videos/explore-window-cube.jpg"
                         }
                     }
                 },
@@ -2231,15 +2200,6 @@
                     }
                 },
                 {
-                    "name" : "endeavorParagraph",
-                    "data" : {
-                        "header" : "Story",
-                        "class" : "endeavor-item-125",
-                        "bgColor" : "",
-                        "description" : "To ensure consistency across application elements and devices we created a set of standards ranging from idenity to typography, to color and interation models. We organized our styleguide into 6 progressive sections: Identity, Elements, Components, Compositions, Layout, and Views."
-                    }
-                },
-                {
                     "name" : "endeavorImageFS",
                     "data" : {
                         "class" : "endeavor-item",
@@ -2297,7 +2257,7 @@
                 {
                     "name" : "endeavorDesignProcess",
                     "data" : {
-                        "class" : "endeavor-item-top-125",
+                        "class" : "endeavor-item-top-250",
                         "process" : "Styles",
                         "text" : "",
                         "number" : "02/04",
@@ -2309,7 +2269,7 @@
                 {
                     "name" : "endeavorImage100vw",
                     "data" : {
-                        "class" : "endeavor-item-125",
+                        "class" : "endeavor-item-bottom-125",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -2333,7 +2293,7 @@
                 {
                     "name" : "endeavorDesignProcess",
                     "data" : {
-                        "class" : "endeavor-item-no-margin",
+                        "class" : "endeavor-item-top-125",
                         "process" : "Generative",
                         "text" : "",
                         "number" : "03/04",
@@ -2387,9 +2347,29 @@
                     }
                 }, 
                 {
+                    "name" : "endeavorModuleMachine",
+                    "data" : {
+                        "bgColor" : "",
+                        "class" : "endeavor-item-no-margin",
+                        "modules" : [
+                            {
+                                "name" : "endeavorIntroFS",
+                                "data" : {
+                                    "margin" : "endeavor-item-250",
+                                    "header" : "Hello, Seunglab",
+                                    "subtext" : "At Seunglab scientists study Connectomics, a specialty in the domain of Neuroscience which seeks to understand brain structure and function by constructing comprehensive maps of the connections between neurons.",
+                                    "bgColor" : "",
+                                    "class" : "",
+                                    "textColor" : "#666666"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
                     "name" : "endeavorImageFS",
                     "data" : {
-                        "class" : "endeavor-item endeavor-item-top-125",
+                        "class" : "endeavor-item-no-margin",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -2411,9 +2391,17 @@
                     }
                 },
                 {
-                    "name" : "endeavorCaptionFS",
+                    "name" : "endeavorParagraphPoints",
                     "data" : {
-                        "caption" : "(above) Posters were printed and distributed across many Boston universities for a special local competition pitting students head-to-head for science! (below) The Dig consists of sixteen sectors, we created a count-up graphic to visualize player progress."
+                        "class" : "endeavor-item",
+                        "bgColor" : "",
+                        "header" : "",
+                        "contents": [
+                            {
+                                "header": "Starburst Amacrine Cell",
+                                "description" : "To examine the relationships between amenities in cities, we collected an extensive dataset including seven million data points from Google Maps API."
+                            }
+                        ]
                     }
                 },
                 {
@@ -2443,7 +2431,7 @@
                 {
                     "name" : "endeavorParagraphPoints",
                     "data" : {
-                        "class" : "endeavor-item",
+                        "class" : "endeavor-item endeavor-item-top-125",
                         "bgColor" : "",
                         "header" : "Developmental System",
                         "contents": [
@@ -2457,7 +2445,7 @@
                 {
                     "name" : "endeavorVideoFS",
                     "data" : {
-                        "class" : "endeavor-item-125 endeavor-width-100vw endeavor-pos-rel",
+                        "class" : "endeavor-item-250 endeavor-width-100vw endeavor-pos-rel",
                         "loop": "",
                         "muted": "",
                         "autoplay": "true",
@@ -2471,7 +2459,7 @@
                 {
                     "name" : "endeavorParagraphPoints",
                     "data" : {
-                        "class" : "endeavor-item-125",
+                        "class" : "endeavor-item",
                         "bgColor" : "",
                         "header" : "Physical System",
                         "contents": [
@@ -2633,6 +2621,15 @@
                             "mp4" : "images/projects/explore/videos/explore-propogate.mp4",
                             "poster" : "images/projects/explore/videos/explore-propogate.jpg"
                         }
+                    }
+                },
+                {
+                    "name" : "endeavorParagraph",
+                    "data" : {
+                        "header" : "Animation Controller",
+                        "class" : "endeavor-item-top-125",
+                        "bgColor" : "",
+                        "description" : "To ensure consistency across application elements and devices we created a set of standards ranging from idenity to typography, to color and interation models. We organized our styleguide into 6 progressive sections: Identity, Elements, Components, Compositions, Layout, and Views."
                     }
                 },
                 {
