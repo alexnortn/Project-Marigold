@@ -201,7 +201,7 @@ let glyph = function (p) {
 	p.draw = function() {
 
 		// Only render if glyph is in view
-		if (!_render) {
+		if (!_render || window._openProjectState) {
 			return;
 		}
 

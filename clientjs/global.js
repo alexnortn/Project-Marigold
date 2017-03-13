@@ -49,7 +49,6 @@ let stickyfill = Stickyfill();
 let _mobile;
 
 let _projectCurrentId,
-    _openProjectState = false,
     _hashChanged = false,
     _closeProject,
     _endeavor_routes,
@@ -63,6 +62,9 @@ let _state = {
     "progressBar" : "",
     "siteContent": _site_content
 };
+
+// Global for interacting with glyph
+window._openProjectState = false,
 
 
     // attachFastClick = require('fastclick');    
@@ -322,7 +324,7 @@ $(document).ready(function() {
             $('body').removeClass('endeavor-open');
 
             $('#pagination').velocity("fadeIn", { duration: 500 });
-                _openProjectState = false;
+                window._openProjectState = false;
 
             transition = true;
 
@@ -588,7 +590,7 @@ $(document).ready(function() {
                 });
             });
 
-            _openProjectState = true;
+            window._openProjectState = true;
 
 
             // Lazysizes configuration
@@ -621,7 +623,7 @@ $(document).ready(function() {
  
         // To previous project
         $('#prev').click(function(evt) {
-            if (!_openProjectState) {
+            if (!window._openProjectState) {
                 return;
             }
 
@@ -650,7 +652,7 @@ $(document).ready(function() {
 
         // To next project
         $('#next').click(function(evt) {
-            if (!_openProjectState) {
+            if (!window._openProjectState) {
                 return;
             }
 
@@ -679,7 +681,7 @@ $(document).ready(function() {
 
         // Close project handler
         $('#close').click(function(evt) {
-            if (_openProjectState) {
+            if (window._openProjectState) {
                 closeProject();
             }
         });
@@ -902,7 +904,7 @@ _endeavorRouter = function() {
             loaded = true;
         }
         else if ( window.location.pathname === "/" ) {
-            if (!_openProjectState) {
+            if (!window._openProjectState) {
                 return;
             }
             
