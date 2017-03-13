@@ -255,7 +255,6 @@ class ProgressBar {
 
         return $.Velocity.animate( $("#" + _this.progress.id), { width: 0 }, { duration: 500 }, "easeInSine")
         .then((el) => {
-            console.log('destroy');
             return _this.destroy();
         })
         .catch(function(reason) { 

@@ -378,7 +378,6 @@ $(document).ready(function() {
             if (_state.progressBar) {
                 _state.progressBar.reset()
                 .then(() => {
-                    console.log('make again');
                     _state.progressBar = new ProgressBar ({
                         scrollContainer: new_id,
                         maxHeight:_state.sectionHeight,
