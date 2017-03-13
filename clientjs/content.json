@@ -2176,9 +2176,52 @@
                     }
                 },
                 {
+                    "name" : "endeavorParagraphHidden",
+                    "data" : {
+                        "id" : "ghost-explore-story-affect",
+                        "class" : "endeavor-item",
+                        "class2" : "endeavor-reveal",
+                        "bgColor" : "",
+                        "header" : "Explore Story",
+                        "description" : "To examine the relationships between amenities in cities, we collected an extensive dataset including seven million data points from Google Maps API.",
+                        "contents": [
+                            {
+                                "header": "Part I",
+                                "description" : "Your brain makes you amazing / it allows you to learn intricate skills/ dream fantastic dreams / even laugh at goofy cat videos. But how?"
+                            },
+                            {
+                                "header": "Part II",
+                                "description" : "This question has puzzled scientists for centuries. Your brain contains 80 billion neurons / connected through 100 milliion synapses. Working together, these cells make you, you. However, most of their circuits are still uncharted. When Galileo first peered through a telescope, it began a revolution in the way we see the world around us. Today, neuroscience is revolutionizing how we see the world within us. We're calling on gamers to help connect the dots by creating a visual 3D map of the brain."
+                            },
+                            {
+                                "header": "Part III",
+                                "description" : "We are wonderers."
+                            },
+                            {
+                                "header": "Part IV",
+                                "description" : "Eyewire is the first of its kind / its a 3D puzzle game / as you solve puzzles / you're mapping the brain."
+                            },
+                            {
+                                "header": "Part V",
+                                "description" : "Collaborate and compete for science!"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorGhostButton",
+                    "data" : {
+                        "class" : "endeavor-item-bottom-125 endeavor-text-left",
+                        "text" : "Read More",
+                        "align" : "",
+                        "id" : "ghost-explore-story",
+                        "textColor" : "#666666"
+                    }
+                },
+                {
                     "name" : "endeavorImage100vw",
                     "data" : {
-                        "class" : "endeavor-item-bottom-125",
+                        "class" : "endeavor-item-125",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -2557,7 +2600,7 @@
                     "name" : "endeavorParagraph",
                     "data" : {
                         "header" : "Complexity",
-                        "class" : "endeavor-item-top-125",
+                        "class" : "endeavor-item",
                         "bgColor" : "",
                         "description" : "To ensure consistency across application elements and devices we created a set of standards ranging from idenity to typography, to color and interation models. We organized our styleguide into 6 progressive sections: Identity, Elements, Components, Compositions, Layout, and Views."
                     }
@@ -2604,7 +2647,7 @@
                     "name" : "endeavorParagraph",
                     "data" : {
                         "header" : "Signal Propogation",
-                        "class" : "endeavor-item-top-125",
+                        "class" : "endeavor-item-top-75",
                         "bgColor" : "",
                         "description" : "To ensure consistency across application elements and devices we created a set of standards ranging from idenity to typography, to color and interation models. We organized our styleguide into 6 progressive sections: Identity, Elements, Components, Compositions, Layout, and Views."
                     }
@@ -2627,7 +2670,7 @@
                     "name" : "endeavorParagraph",
                     "data" : {
                         "header" : "Animation Controller",
-                        "class" : "endeavor-item-top-125",
+                        "class" : "endeavor-item-top-250",
                         "bgColor" : "",
                         "description" : "To ensure consistency across application elements and devices we created a set of standards ranging from idenity to typography, to color and interation models. We organized our styleguide into 6 progressive sections: Identity, Elements, Components, Compositions, Layout, and Views."
                     }
@@ -2705,26 +2748,6 @@
                                 "description" : "After the push to production, we handed off our design + development guidelines to the team at Seunglab where researchers continue to grow the platform with feedback from the scientific community."
                             }
                         ]
-                    }
-                },
-                {
-                    "name" : "endeavorParagraph",
-                    "data" : {
-                        "header" : "Explore Live",
-                        "class" : "endeavor-item-top-125",
-                        "bgColor" : "",
-                        "description" : ""
-                    }
-                },
-                {
-                    "name" : "endeavorGhostButtonURL",
-                    "data" : {
-                        "class" : "endeavor-item-bottom-125 endeavor-text-left",
-                        "text" : "Send It",
-                        "align" : "",
-                        "id" : "museum-live",
-                        "url" : "http://museum.eyewire.org/",
-                        "textColor" : "#666666"
                     }
                 },
                 {
