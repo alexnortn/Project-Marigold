@@ -100,7 +100,7 @@
                                 "description" : ""
                             },
                             {
-                                "header" : "Neueroscience",
+                                "header" : "Neuroscience",
                                 "description" : ""
                             },
                             {
@@ -1475,7 +1475,7 @@
                         "header" : "Grid System",
                         "class" : "endeavor-item-top endeavor-item-bottom",
                         "bgColor" : "",
-                        "description" : "By this point in the process we had established Angular our a front-end framework. This motivated an increasingly modular design language of nested + encapsualted components. Written content on the Museum consists of mostly static descriptions and labels. Without having to account for dynamically generated CMS content, the grid was able to remain in a relatively simple 8pt x 4pt system."
+                        "description" : "By this point in the process we had established Angular as our a front-end framework. This motivated an increasingly modular design language of nested + encapsualted components. Written content on the Museum consists of mostly static descriptions and labels. Without having to account for dynamically generated CMS content, the grid was able to remain in a relatively simple 8pt x 4pt system."
                     }
                 },
                 {
