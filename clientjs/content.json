@@ -2005,9 +2005,9 @@
                         "muted": "",
                         "autoplay": "true",
                         "src" : {
-                            "webm" : "images/projects/synapse/videos/synapse.webm",
-                            "mp4" : "images/projects/synapse/videos/synapse.mp4",
-                            "poster" : "images/projects/synapse/videos/synapse.jpg"
+                            "webm" : "images/projects/synapse/videos/synapse-framer.webm",
+                            "mp4" : "images/projects/synapse/videos/synapse-framer.mp4",
+                            "poster" : "images/projects/synapse/videos/synapse-framer.jpg"
                         }
                     }
                 },
