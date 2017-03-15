@@ -338,6 +338,7 @@ $(document).ready(function() {
     // Project Grid Handlers
     _itemInteraction = function() { // For lexical scoping
         let current_index = 0,
+            active = false,
             container,
             case_studies = $('.case-study-view').toArray(),
             projects = $('.project-view').toArray(),
@@ -420,6 +421,16 @@ $(document).ready(function() {
                     $('#prev').addClass('arrow-left-alt');
 
                     let value = $(new_id).scrollTop() / _state.sectionHeight;
+
+                    // Toggle next-arrow open
+                    if (value > 0.75 && !active) {
+                        $('#next').addClass('next-active');
+                        active = true;
+                    } 
+                    else if (value < 0.75) {
+                        active = false;
+                        $('#next').removeClass('next-active');
+                    }
 
                     if (_state.progressBar.exist) {
                         _state.progressBar.update(value);
