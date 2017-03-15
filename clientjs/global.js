@@ -423,7 +423,7 @@ $(document).ready(function() {
                     let value = $(new_id).scrollTop() / _state.sectionHeight;
 
                     // Toggle next-arrow open
-                    if (value > 0.75 && !active) {
+                    if (value > 0.75 && !active && !_mobile) {
                         $('#next').addClass('next-active');
                         active = true;
                     } 
