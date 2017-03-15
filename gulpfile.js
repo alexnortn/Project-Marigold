@@ -151,9 +151,9 @@ gulp.task('watch', function () {
         'components/**'
     ], [ 'js' ]);
 
-    // gulp.watch([
-    //     'views/**',
-    // ], [ 'pug' ]);
+    gulp.watch([
+        'views/**',
+    ], [ 'pug' ]);
 });
 
 // Only CSS + PUG + IMAGES (conserve juice)
@@ -166,7 +166,7 @@ gulp.task('watch-lite', function () {
         'assets/images/**'
     ], [ 'images' ]);
 
-    // gulp.watch([
-    //     'views/**',
-    // ], [ 'pug' ]);
+    gulp.watch([
+        'views/**',
+    ], [ 'pug' ]);
 });
