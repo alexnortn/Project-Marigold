@@ -2321,27 +2321,41 @@
                     }
                 },
                 {
-                    "name" : "endeavorImageFS",
+                    "name" : "endeavorImageSlider",
                     "data" : {
-                        "class" : "endeavor-item endeavor-item-bottom-125",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "Syanpse Overview",
-                            "src": "images/projects/synapse/standard/synapse-overview.jpg",
-                            "src_standard": "images/projects/synapse/standard/synapse-overview.jpg",
-                            "src_retina": "images/projects/synapse/retina/synapse-overview.jpg",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/synapse/hi-res/synapse-overview.jpg",
-                            "src_preview": "images/projects/synapse/hi-res/synapse-overview.jpg",
-                            "caption": "Syanpse Overview"
-                        }
+                        "meta" : "Algorithmic",
+                        "images" : [
+                            {
+                                "name": "Synapse Sketch 1",
+                                "src": "images/projects/synapse/standard/synapse-sketch-1.jpg",
+                                "src_standard": "images/projects/synapse/standard/synapse-sketch-1.jpg",
+                                "src_retina": "images/projects/synapse/retina/synapse-sketch-1.jpg",
+                                "src_low": "images/empty.gif",
+                                "src_mobile": "images/projects/synapse/hi-res/synapse-sketch-1.jpg",
+                                "src_preview": "images/projects/synapse/hi-res/synapse-sketch-1.jpg",
+                                "caption": "Dig gif image"   
+                            },
+                            {
+                                "name": "Synapse Sketch 2",
+                                "src": "images/projects/synapse/standard/synapse-sketch-2.jpg",
+                                "src_standard": "images/projects/synapse/standard/synapse-sketch-2.jpg",
+                                "src_retina": "images/projects/synapse/retina/synapse-sketch-2.jpg",
+                                "src_low": "images/empty.gif",
+                                "src_mobile": "images/projects/synapse/hi-res/synapse-sketch-2.jpg",
+                                "src_preview": "images/projects/synapse/hi-res/synapse-sketch-2.jpg",
+                                "caption": "Dig gif image"   
+                            },
+                            {
+                                "name": "Synapse Sketch 3",
+                                "src": "images/projects/synapse/standard/synapse-sketch-3.jpg",
+                                "src_standard": "images/projects/synapse/standard/synapse-sketch-3.jpg",
+                                "src_retina": "images/projects/synapse/retina/synapse-sketch-3.jpg",
+                                "src_low": "images/empty.gif",
+                                "src_mobile": "images/projects/synapse/hi-res/synapse-sketch-3.jpg",
+                                "src_preview": "images/projects/synapse/hi-res/synapse-sketch-3.jpg",
+                                "caption": "Dig gif image"   
+                            }
+                        ]
                     }
                 },
                 {
