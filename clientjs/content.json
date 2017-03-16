@@ -1974,33 +1974,9 @@
             "image_preview": "images/projects/synapse/hi-res/synapse-preview.jpg",
             "sections" : [
                 {
-                    "name" : "endeavorImageFS",
-                    "data" : {
-                        "class" : "endeavor-item-125",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "Syanpse Overview",
-                            "src": "images/projects/synapse/standard/synapse-hero.jpg",
-                            "src_standard": "images/projects/synapse/standard/synapse-hero.jpg",
-                            "src_retina": "images/projects/synapse/retina/synapse-hero.jpg",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/synapse/hi-res/synapse-hero.jpg",
-                            "src_preview": "images/projects/synapse/hi-res/synapse-hero.jpg",
-                            "caption": "Syanpse Overview"
-                        }
-                    }
-                },
-                {
                     "name" : "endeavorVideoFS",
                     "data" : {
-                        "class" : "endeavor-item-no-margin endeavor-width-100vw endeavor-pos-rel",
+                        "class" : "endeavor-item-bottom-250 endeavor-width-100vw endeavor-pos-rel",
                         "loop": "",
                         "muted": "",
                         "autoplay": "true",
@@ -2012,10 +1988,76 @@
                     }
                 },
                 {
+                    "name" : "endeavorChecklist",
+                    "data" : {
+                        "header" : "Key Features",
+                        "class" : "endeavor-item-125",
+                        "class2" : "",
+                        "class3" : "",
+                        "class4" : "checklist-simple",
+                        "icon" : "fa-hand-o-right",
+                        "bgColor" : "",
+                        "description" : "",
+                        "contents" : [
+                            {
+                                "header" : "Generative Design",
+                                "description" : ""
+                            },
+                            {
+                                "header" : "Interactive Narrative",
+                                "description" : ""
+                            },
+                            {
+                                "header" : "Responsive",
+                                "description" : ""
+                            },
+                            {
+                                "header" : "Creative Code Prototyping",
+                                "description" : ""
+                            },
+                            {
+                                "header" : "Custom Front-End Framework",
+                                "description" : ""
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item endeavor-item-top-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Synapse Overview",
+                            "src": "images/projects/synapse/standard/synapse-hero.jpg",
+                            "src_standard": "images/projects/synapse/standard/synapse-hero.jpg",
+                            "src_retina": "images/projects/synapse/retina/synapse-hero.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/synapse/hi-res/synapse-hero.jpg",
+                            "src_preview": "images/projects/synapse/hi-res/synapse-hero.jpg",
+                            "caption": "Synapse Overview"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorCaptionFS",
+                    "data" : {
+                        "class" : "endeavor-item-bottom-125",
+                        "caption" : "(above) Eyewire is a citizen science project founded in Sebastian Seung's neuroscience lab at MIT. The project aims to gamify the process of assisting advanced machine learning algorithms in the reconstruction of 3D neurons from microscope images. This endeavor is unprecedented, even the elevator pitch for this game is a mouthful"
+                    }
+                },
+                {
                     "name" : "endeavorParagraph",
                     "data" : {
                         "header" : "Try it Live",
-                        "class" : "endeavor-item-top-250",
+                        "class" : "endeavor-item-top-125",
                         "bgColor" : "",
                         "description" : ""
                     }
@@ -2032,33 +2074,9 @@
                     }
                 },
                 {
-                    "name" : "endeavorImageFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
-                        "class" : "endeavor-item endeavor-item-top-125",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "Synapse Overview",
-                            "src": "images/projects/synapse/standard/synapse-overview.jpg",
-                            "src_standard": "images/projects/synapse/standard/synapse-overview.jpg",
-                            "src_retina": "images/projects/synapse/retina/synapse-overview.jpg",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/synapse/hi-res/synapse-overview.jpg",
-                            "src_preview": "images/projects/synapse/hi-res/synapse-overview.jpg",
-                            "caption": "Synapse Overview"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImageFS",
-                    "data" : {
-                        "class" : "endeavor-item endeavor-item-bottom-125",
+                        "class" : "endeavor-item-125",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -2077,6 +2095,220 @@
                             "src_preview": "images/projects/synapse/hi-res/synapse-announcements.jpg",
                             "caption": "Synapse Announcements"
                         }
+                    }
+                },
+                {
+                    "name" : "endeavorParagraph",
+                    "data" : {
+                        "header" : "Notification System",
+                        "class" : "endeavor-item-top-125",
+                        "bgColor" : "",
+                        "description" : "(Below) The human retina has a beautiful solution to sampling in its placement of photoreceptor cells. The cells cover the retina densely and evenly and yet the cells’ relative positions are irregular. This is called a Poisson-disc distribution because it maintains a minimum distance between cells, avoiding occlusion and thus wasted photoreceptors. (source: Mike Bostock, Visualizing Algorithms)"
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Syanpse Overview",
+                            "src": "images/projects/synapse/standard/synapse-overview.jpg",
+                            "src_standard": "images/projects/synapse/standard/synapse-overview.jpg",
+                            "src_retina": "images/projects/synapse/retina/synapse-overview.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/synapse/hi-res/synapse-overview.jpg",
+                            "src_preview": "images/projects/synapse/hi-res/synapse-overview.jpg",
+                            "caption": "Syanpse Overview"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Synapse Symbols",
+                            "src": "images/projects/synapse/standard/synapse-symbols-grid.jpg",
+                            "src_standard": "images/projects/synapse/standard/synapse-symbols-grid.jpg",
+                            "src_retina": "images/projects/synapse/retina/synapse-symbols-grid.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/synapse/hi-res/synapse-symbols-grid.jpg",
+                            "src_preview": "images/projects/synapse/hi-res/synapse-symbols-grid.jpg",
+                            "caption": "Synapse Symbols"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorChecklistHidden",
+                    "data" : {
+                        "header" : "Atomic Design",
+                        "id" : "ghost-atomic-design-affect",
+                        "class" : "endeavor-item-125 endeavor-item-bottom-15",
+                        "class2" : "endeavor-reveal",
+                        "class3" : "endeavor-border-top",
+                        "icon" : "fa-hand-o-right",
+                        "bgColor" : "",
+                        "description" :"During the Discover phase we go super wide to understand the problem space and gain perspective from the point of view of our users. The Define phase presents an oppertunity to focus our research and frame our challenge through a series of simple internal questions.",
+                        "contents" : [
+                            {
+                                "header" : "Identity?",
+                                "description" : "Researchers have an excess of data and a lack of investigative power."
+                            },
+                            {
+                                "header" : "Elements?",
+                                "description" : "Enable more people, both expert and non-experts, to engage with neuroscience."
+                            },
+                            {
+                                "header" : "Components?",
+                                "description" : "Given the ease of scalability and potential for rapid development, creating a web-based application seems to be the most feasible option."
+                            },
+                            {
+                                "header" : "Compositions",
+                                "description" : "We have a small team for both design, research, and development, and shorter than expected schedule for launching a usable product."
+                            },
+                            {
+                                "header" : "Layout",
+                                "description" : "We have a small team for both design, research, and development, and shorter than expected schedule for launching a usable product."
+                            },
+                            {
+                                "header" : "Views",
+                                "description" : "We have a small team for both design, research, and development, and shorter than expected schedule for launching a usable product."
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorGhostButton",
+                    "data" : {
+                        "class" : "endeavor-item-bottom-125 endeavor-text-left",
+                        "text" : "Read More",
+                        "align" : "",
+                        "id" : "ghost-atomic-design",
+                        "textColor" : "#666666"
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item endeavor-item-bottom-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Synapse Notifications",
+                            "src": "images/projects/synapse/standard/synapse-notification.jpg",
+                            "src_standard": "images/projects/synapse/standard/synapse-notification.jpg",
+                            "src_retina": "images/projects/synapse/retina/synapse-notification.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/synapse/hi-res/synapse-notification.jpg",
+                            "src_preview": "images/projects/synapse/hi-res/synapse-notification.jpg",
+                            "caption": "Synapse Notifications"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item endeavor-item-top-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Synapse Overview",
+                            "src": "images/projects/synapse/standard/synapse-sketch-system.jpg",
+                            "src_standard": "images/projects/synapse/standard/synapse-sketch-system.jpg",
+                            "src_retina": "images/projects/synapse/retina/synapse-sketch-system.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/synapse/hi-res/synapse-sketch-system.jpg",
+                            "src_preview": "images/projects/synapse/hi-res/synapse-sketch-system.jpg",
+                            "caption": "Synapse Overview"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "class" : "endeavor-item",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Synapse Announcements",
+                            "src": "images/projects/synapse/standard/synapse-composition-grid.jpg",
+                            "src_standard": "images/projects/synapse/standard/synapse-composition-grid.jpg",
+                            "src_retina": "images/projects/synapse/retina/synapse-composition-grid.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/synapse/hi-res/synapse-composition-grid.jpg",
+                            "src_preview": "images/projects/synapse/hi-res/synapse-composition-grid.jpg",
+                            "caption": "Synapse Announcements"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Synapse Overview",
+                            "src": "images/projects/synapse/standard/synapse-chart.gif",
+                            "src_standard": "images/projects/synapse/standard/synapse-chart.gif",
+                            "src_retina": "images/projects/synapse/retina/synapse-chart.gif",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/synapse/hi-res/synapse-chart.gif",
+                            "src_preview": "images/projects/synapse/hi-res/synapse-chart.gif",
+                            "caption": "Synapse Overview"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorParagraphChecklist",
+                    "data" : {
+                        "header" : "Reflecting",
+                        "id" : "ghost-reflecting-affect",
+                        "class" : "endeavor-item-250",
+                        "class2" : "endeavor-reveal",
+                        "bgColor" : "",
+                        "description" : "This is usually the part of a project where I invite you two engage with the experience in real life—the explore page is a little different. Though the experience is fully functional, it was never pushed to production. Performance issues and inconsistencies plagued the neuron animation system. If I were to critic myself, I would admit that I bit off a whole lot more than I could handle. I designed + developed the Explore Page for close to six months but there is a point of diminishing returns where a design becomes more of a personal endeavor than one of service. I'm thankful for the many lessons learned, in the future I will seek to iteratively improve up on good design—rather than aim for a pillar of perfection.",
+                        "contents": ""
                     }
                 },
                 {
