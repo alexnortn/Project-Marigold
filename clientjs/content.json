@@ -2033,7 +2033,7 @@
                         "description" : "",
                         "contents" : [
                             {
-                                "header" : "Atomic Design",
+                                "header" : "Atomic Design System",
                                 "description" : ""
                             },
                             {
@@ -2053,7 +2053,7 @@
                                 "description" : ""
                             },
                             {
-                                "header" : "Iterative Design",
+                                "header" : "Iterative Design Cycle",
                                 "description" : ""
                             }
                         ]
@@ -2284,15 +2284,15 @@
                         "description" :"Iterative design + development strategy demands the systematic organization of project assets. I have found the principles of Atomic Design conducive to this process. Inspired by physics of the natural world and possibly the divide and conquer algorithms of computer science space, Atomic Design reduces project asset clutter into six unique types: Identity, Elements, Components, Compositions, Layout, and Views.",
                         "contents" : [
                             {
-                                "header" : "Identity?",
+                                "header" : "Identity",
                                 "description" : "Styles: Typefaces, Typography, Color, Brand Assets"
                             },
                             {
-                                "header" : "Elements?",
+                                "header" : "Elements",
                                 "description" : "The simplest reusable items: Buttons, Drop–Downs, Nav–Bars, Footers, Switches, Toggles, etc"
                             },
                             {
-                                "header" : "Components?",
+                                "header" : "Components",
                                 "description" : "Reusable combinations of elements: Cards, Dialogs, Forms, Prompts, etc"
                             },
                             {
