@@ -1967,7 +1967,7 @@
                 "Team" : "-",
                 "Discipline" : "Interaction Design, Prototyping",
                 "Medium" : "Responsive Web Application",
-                "Technologies" : "Sketch, FramerJs",
+                "Technologies" : "Dropbox Paper, Sketch, FramerJs, SublimeText",
                 "Duration" : "One Month"
             },
             "image_hero": "images/projects/synapse/hi-res/synapse-hero.jpg",
@@ -1976,7 +1976,7 @@
                 {
                     "name" : "endeavorVideoFS",
                     "data" : {
-                        "class" : "endeavor-item-bottom-250 endeavor-width-100vw endeavor-pos-rel",
+                        "class" : "endeavor-item-no-margin endeavor-width-100vw endeavor-pos-rel",
                         "loop": "",
                         "muted": "",
                         "autoplay": "true",
@@ -1985,6 +1985,39 @@
                             "mp4" : "images/projects/synapse/videos/synapse-framer.mp4",
                             "poster" : "images/projects/synapse/videos/synapse-framer.jpg"
                         }
+                    }
+                },
+                {
+                    "name" : "endeavorModuleMachine",
+                    "data" : {
+                        "bgColor" : "#ececec",
+                        "class" : "endeavor-item-bottom-250",
+                        "modules" : [
+                            {
+                                "name" : "endeavorImageFS",
+                                "data" : {
+                                    "class" : "endeavor-item-125",
+                                    "placeholder" : {
+                                        "name" : "",
+                                        "src" : "",
+                                        "src" : "",
+                                        "src_mobile" : "",
+                                        "src_preview" : "",
+                                        "caption" : ""
+                                    },
+                                    "image" : {
+                                        "name": "Syanpse Sponsors",
+                                        "src": "images/projects/synapse/standard/synapse-sponsors-3.png",
+                                        "src_standard": "images/projects/synapse/standard/synapse-sponsors-3.png",
+                                        "src_retina": "images/projects/synapse/retina/synapse-sponsors-3.png",
+                                        "src_low": "images/empty.gif",
+                                        "src_mobile": "images/projects/synapse/hi-res/synapse-sponsors-3.png",
+                                        "src_preview": "images/projects/synapse/hi-res/synapse-sponsors-3.png",
+                                        "caption": "Syanpse Sponsors"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
