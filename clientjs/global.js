@@ -1128,7 +1128,7 @@ function paginationUpdate(sectionUpdate) {
 
 
 // Setup for Slick slider plugin Grid #1
-function addSlick($elem, _dotsBool, _autoplay = false) {
+function addSlick($elem, _dotsBool, _autoplay = true) {
 
     $elem.slick({
         arrows:             false,

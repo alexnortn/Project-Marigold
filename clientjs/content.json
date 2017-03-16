@@ -1965,7 +1965,7 @@
                 "Year" : "2016++",
                 "Role" : "Designer/Developer",
                 "Team" : "-",
-                "Discipline" : "Interaction Design, Prototyping",
+                "Discipline" : "Interaction Design, Design Research, Prototyping",
                 "Medium" : "Responsive Web Application",
                 "Technologies" : "Dropbox Paper, Sketch, Craft, Sublime Text, FramerJs, threejs, openCTM",
                 "Duration" : "One Month"
@@ -2033,23 +2033,27 @@
                         "description" : "",
                         "contents" : [
                             {
-                                "header" : "Generative Design",
+                                "header" : "Atomic Design",
                                 "description" : ""
                             },
                             {
-                                "header" : "Interactive Narrative",
+                                "header" : "Framer Prototype",
                                 "description" : ""
                             },
                             {
-                                "header" : "Responsive",
+                                "header" : "Notification System",
                                 "description" : ""
                             },
                             {
-                                "header" : "Creative Code Prototyping",
+                                "header" : "8pt Grid System",
                                 "description" : ""
                             },
                             {
-                                "header" : "Custom Front-End Framework",
+                                "header" : "Blur–Behind Style",
+                                "description" : ""
+                            },
+                            {
+                                "header" : "Iterative Design",
                                 "description" : ""
                             }
                         ]
@@ -2083,7 +2087,7 @@
                     "name" : "endeavorCaptionFS",
                     "data" : {
                         "class" : "endeavor-item-bottom-125",
-                        "caption" : "(above) Eyewire is a citizen science project founded in Sebastian Seung's neuroscience lab at MIT. The project aims to gamify the process of assisting advanced machine learning algorithms in the reconstruction of 3D neurons from microscope images. This endeavor is unprecedented, even the elevator pitch for this game is a mouthful"
+                        "caption" : "(Above) Synapse was designed as a vision. Free of cross-browser limitations, I explored formal and stylistic possibilities usually reserved for native applications. I found that the blur–behind effect (currently only available in Webkit–based browsers) was quite useful in preserving 3D content, while providing a futuristic aesthetic. It also complimented the dark-UI, shifting the users focus to the 3D neuron."
                     }
                 },
                 {
@@ -2131,12 +2135,92 @@
                     }
                 },
                 {
-                    "name" : "endeavorParagraph",
+                    "name" : "endeavorParagraphUsers",
                     "data" : {
                         "header" : "Notification System",
-                        "class" : "endeavor-item-top-125",
+                        "id" : "ghost-notification-system-affect",
+                        "class" : "endeavor-item-125 endeavor-item-bottom-15",
+                        "class2" : "endeavor-reveal",
                         "bgColor" : "",
-                        "description" : "(Below) The human retina has a beautiful solution to sampling in its placement of photoreceptor cells. The cells cover the retina densely and evenly and yet the cells’ relative positions are irregular. This is called a Poisson-disc distribution because it maintains a minimum distance between cells, avoiding occlusion and thus wasted photoreceptors. (source: Mike Bostock, Visualizing Algorithms)"
+                        "description" : "The primary motivation for this project was to prototype a new in-game notification system. We began this process with a series of brainstorming sessions where we listed and categorized all the possible game states in Eyewire. From there we chose to pursue announcement notifications for our initial MVP. Announcement notifications are notifications that appear when a new game state has been reached. They come in three flavors: Individual, Targeted, and Global.",
+                        "contents" : [
+                            {
+                                "header" : "Individual Examples (Personalized messages to individual players)",
+                                "icon" : "fa-cube",
+                                "bullets" : [
+                                    {
+                                        "header" : "Success",
+                                        "description" : "You completed 10x growth with project Neo!"
+                                    },
+                                    {
+                                        "header" : "Top Player of Day",
+                                        "description" : "You were yesterday’s top player of the day with xxxxx points!"
+                                    },
+                                    {
+                                        "header" : "Top Ten Monthly",
+                                        "description" : "You were in the top 10 players for this month at #7!"
+                                    },
+                                    {
+                                        "header" : "Promotion",
+                                        "description" : "You were promoted to the role of Scout."
+                                    }
+                                ]
+                            },
+                            {
+                                "header" : "Targeted Examples (Personalized messages to targeted player groups)",
+                                "icon" : "fa-cog",
+                                "bullets" : [
+                                    {
+                                        "header" : "Competition",
+                                        "description" : "The competition ends in 30 mins!  Time to make your move."
+                                    },
+                                    {
+                                        "header" : "Competition",
+                                        "description" : "The competition has ended.  Check the leaderboard for final scores."
+                                    },
+                                    {
+                                        "header" : "Competition (Candy World)",
+                                        "description" : "On 12/17 get catapulted into a tooth-achingly sweet world(link to blog)."
+                                    },
+                                    {
+                                        "header" : "Challenge (Mergamatic)",
+                                        "description" : "Find a merger in the current overview cell."
+                                    }
+                                ]
+                            },
+                            {
+                                "header" : "Global Examples (General messages intended for the entire player base)",
+                                "icon" : "fa-cogs",
+                                "bullets" : [
+                                    {
+                                        "header" : "Big News",
+                                        "description" : "Eyewire just published a paper on xyz (link)."
+                                    },
+                                    {
+                                        "header" : "Big News",
+                                        "description" : "We just completed sector 5 in The Dig (link)."
+                                    },
+                                    {
+                                        "header" : "Telegram",
+                                        "description" : "We need some players to help us finish cell xxxxxxx."
+                                    },
+                                    {
+                                        "header" : "Tech Fail",
+                                        "description" : "Grim’s stuck in the servers again!  Try panda cam while you wait (link)."
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorGhostButton",
+                    "data" : {
+                        "class" : "endeavor-item-bottom-125 endeavor-text-left",
+                        "text" : "Read More",
+                        "align" : "",
+                        "id" : "ghost-notification-system",
+                        "textColor" : "#666666"
                     }
                 },
                 {
@@ -2197,31 +2281,31 @@
                         "class3" : "endeavor-border-top",
                         "icon" : "fa-hand-spock-o",
                         "bgColor" : "",
-                        "description" :"During the Discover phase we go super wide to understand the problem space and gain perspective from the point of view of our users. The Define phase presents an oppertunity to focus our research and frame our challenge through a series of simple internal questions.",
+                        "description" :"Iterative design + development strategy demands the systematic organization of project assets. I have found the principles of Atomic Design conducive to this process. Inspired by physics of the natural world and possibly the divide and conquer algorithms of computer science space, Atomic Design reduces project asset clutter into six unique types: Identity, Elements, Components, Compositions, Layout, and Views.",
                         "contents" : [
                             {
                                 "header" : "Identity?",
-                                "description" : "Researchers have an excess of data and a lack of investigative power."
+                                "description" : "Styles: Typefaces, Typography, Color, Brand Assets"
                             },
                             {
                                 "header" : "Elements?",
-                                "description" : "Enable more people, both expert and non-experts, to engage with neuroscience."
+                                "description" : "The simplest reusable items: Buttons, Drop–Downs, Nav–Bars, Footers, Switches, Toggles, etc"
                             },
                             {
                                 "header" : "Components?",
-                                "description" : "Given the ease of scalability and potential for rapid development, creating a web-based application seems to be the most feasible option."
+                                "description" : "Reusable combinations of elements: Cards, Dialogs, Forms, Prompts, etc"
                             },
                             {
                                 "header" : "Compositions",
-                                "description" : "We have a small team for both design, research, and development, and shorter than expected schedule for launching a usable product."
+                                "description" : "Reusable collections of Components: Sidebars, Pop-Ups, etc "
                             },
                             {
                                 "header" : "Layout",
-                                "description" : "We have a small team for both design, research, and development, and shorter than expected schedule for launching a usable product."
+                                "description" : "Grid System: I make use of two grids, one for local layout (8pt x 4pt) and another for global organization (8-12 responsive columns)."
                             },
                             {
                                 "header" : "Views",
-                                "description" : "We have a small team for both design, research, and development, and shorter than expected schedule for launching a usable product."
+                                "description" : "Collections of Compositions, Components, and Elements: Overview, In-Cube, Scouts' Log, etc"
                             }
                         ]
                     }
@@ -2340,7 +2424,7 @@
                         "class" : "endeavor-item-250",
                         "class2" : "endeavor-reveal",
                         "bgColor" : "",
-                        "description" : "This is usually the part of a project where I invite you two engage with the experience in real life—the explore page is a little different. Though the experience is fully functional, it was never pushed to production. Performance issues and inconsistencies plagued the neuron animation system. If I were to critic myself, I would admit that I bit off a whole lot more than I could handle. I designed + developed the Explore Page for close to six months but there is a point of diminishing returns where a design becomes more of a personal endeavor than one of service. I'm thankful for the many lessons learned, in the future I will seek to iteratively improve up on good design—rather than aim for a pillar of perfection.",
+                        "description" : "I started this project by interviewing Eyewire players and stakeholders. I then quickly worked alongside game admins and our game dev team to generate rough specifications for an MVP notification system. After a lot of initial sketching I move to building out a solid file structure in Sketch in preparation for an iterative design cycle. Working between static assets in Sketch and the dynamic world of Framer. The Synapse prototype has been my first experience heavily integrating Framer into my design process. Though Framer has a significantly higher learning curve than something like Invision or Flinto, once you put in that effort, the potential is incredible. Having a strong foundation in programing, I find that Framer simplifies the development cycle for a number of common interaction design challenges like tuning microinteractions, designing with real data, and testing application behavior + feedback loops. Framer integrates super well with Sketch symbols speeding the refinement process for the app design language from sort of parametrically like many CAD software packages (Solid Works, 3ds Max, etc). I'm really looking forward to working more with Framer.",
                         "contents": ""
                     }
                 },
@@ -2880,7 +2964,7 @@
                     "name" : "endeavorCaptionFS",
                     "data" : {
                         "class" : "endeavor-item",
-                        "caption" : "(above) One of the most common cell types found in Eyewire, the Starburst Amacrine Cell (SAC) is a retinal neuron that assists in motion detection. Its symetrical, circular branching pattern and flat prolile make it a good candidate for 2D generative design."
+                        "caption" : "(above) One of the most common cell types found in Eyewire, the Starburst Amacrine Cell (SAC) is a retinal neuron that assists in motion detection. Its symetrical, circular branching pattern and flat profile make it a good candidate for 2D generative design."
                     }
                 },
                 {
