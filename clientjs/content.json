@@ -2107,7 +2107,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorImageFS",
+                    "name" : "endeavorImage100vw",
                     "data" : {
                         "class" : "endeavor-item-125",
                         "placeholder" : {
@@ -2119,14 +2119,14 @@
                             "caption" : ""
                         },
                         "image" : {
-                            "name": "Syanpse Overview",
-                            "src": "images/projects/synapse/standard/synapse-overview.jpg",
-                            "src_standard": "images/projects/synapse/standard/synapse-overview.jpg",
-                            "src_retina": "images/projects/synapse/retina/synapse-overview.jpg",
+                            "name": "Synapse Notifications",
+                            "src": "images/projects/synapse/standard/synapse-notification.jpg",
+                            "src_standard": "images/projects/synapse/standard/synapse-notification.jpg",
+                            "src_retina": "images/projects/synapse/retina/synapse-notification.jpg",
                             "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/synapse/hi-res/synapse-overview.jpg",
-                            "src_preview": "images/projects/synapse/hi-res/synapse-overview.jpg",
-                            "caption": "Syanpse Overview"
+                            "src_mobile": "images/projects/synapse/hi-res/synapse-notification.jpg",
+                            "src_preview": "images/projects/synapse/hi-res/synapse-notification.jpg",
+                            "caption": "Synapse Notifications"
                         }
                     }
                 },
@@ -2162,7 +2162,7 @@
                         "class" : "endeavor-item-125 endeavor-item-bottom-15",
                         "class2" : "endeavor-reveal",
                         "class3" : "endeavor-border-top",
-                        "icon" : "fa-hand-o-right",
+                        "icon" : "fa-hand-spock-o",
                         "bgColor" : "",
                         "description" :"During the Discover phase we go super wide to understand the problem space and gain perspective from the point of view of our users. The Define phase presents an oppertunity to focus our research and frame our challenge through a series of simple internal questions.",
                         "contents" : [
@@ -2204,7 +2204,7 @@
                     }
                 },
                 {
-                    "name" : "endeavorImage100vw",
+                    "name" : "endeavorImageFS",
                     "data" : {
                         "class" : "endeavor-item endeavor-item-bottom-125",
                         "placeholder" : {
@@ -2216,14 +2216,14 @@
                             "caption" : ""
                         },
                         "image" : {
-                            "name": "Synapse Notifications",
-                            "src": "images/projects/synapse/standard/synapse-notification.jpg",
-                            "src_standard": "images/projects/synapse/standard/synapse-notification.jpg",
-                            "src_retina": "images/projects/synapse/retina/synapse-notification.jpg",
+                            "name": "Syanpse Overview",
+                            "src": "images/projects/synapse/standard/synapse-overview.jpg",
+                            "src_standard": "images/projects/synapse/standard/synapse-overview.jpg",
+                            "src_retina": "images/projects/synapse/retina/synapse-overview.jpg",
                             "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/synapse/hi-res/synapse-notification.jpg",
-                            "src_preview": "images/projects/synapse/hi-res/synapse-notification.jpg",
-                            "caption": "Synapse Notifications"
+                            "src_mobile": "images/projects/synapse/hi-res/synapse-overview.jpg",
+                            "src_preview": "images/projects/synapse/hi-res/synapse-overview.jpg",
+                            "caption": "Syanpse Overview"
                         }
                     }
                 },
