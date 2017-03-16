@@ -1962,12 +1962,12 @@
             },
             "meta" : {
                 "Client" : "Eyewire",
-                "Year" : 2016,
+                "Year" : "2016++",
                 "Role" : "Designer/Developer",
                 "Team" : "-",
                 "Discipline" : "Interaction Design, Prototyping",
                 "Medium" : "Responsive Web Application",
-                "Technologies" : "Dropbox Paper, Sketch, FramerJs, SublimeText",
+                "Technologies" : "Dropbox Paper, Sketch, Craft, Sublime Text, FramerJs, threejs, openCTM",
                 "Duration" : "One Month"
             },
             "image_hero": "images/projects/synapse/hi-res/synapse-hero.jpg",

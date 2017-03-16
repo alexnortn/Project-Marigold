@@ -529,18 +529,6 @@ $(document).ready(function() {
                 container = $('.project-container');
             }
 
-            // Setup Slick
-            let bottomSlick = container.find('.endeavor-image-slider');
-            if (!bottomSlick.hasClass('slick-initialized')) { 
-                addSlick(bottomSlick, true);
-                bottomSlick.slick('slickNext')
-                           .slick('slickNext')
-                           .slick('slickNext')
-                           .slick('slickGoTo', 0, false)
-                           .slick('slickGoTo', 1, false)
-                           .slick('slickGoTo', 0, false);
-            }
-
             currents.forEach(function(project_item, index) {
                 if (project_item.id === project_id) {
                     current_index = index;
@@ -552,6 +540,20 @@ $(document).ready(function() {
 
             project_id = "#" + project_id;
             let opaque = false;
+
+            // Setup Slick
+            let bottomSlick = $(project_id).find('.endeavor-image-slider');
+            if (!bottomSlick.hasClass('slick-initialized')) { 
+                bottomSlick.children().each(function() { lazySizes.loader.unveil(this) });
+                
+                addSlick(bottomSlick, true);
+                bottomSlick.slick('slickNext')
+                           .slick('slickNext')
+                           .slick('slickNext')
+                           .slick('slickGoTo', 0, false)
+                           .slick('slickGoTo', 1, false)
+                           .slick('slickGoTo', 0, false);
+            }
 
             $('#fx-container').removeClass('passive');
             $('#content-wrapper').addClass('visibility-hidden');
@@ -1126,14 +1128,14 @@ function paginationUpdate(sectionUpdate) {
 
 
 // Setup for Slick slider plugin Grid #1
-function addSlick($elem, _dotsBool, _autoplay = true) {
+function addSlick($elem, _dotsBool, _autoplay = false) {
 
     $elem.slick({
         arrows:             false,
         pauseOnHover:       true,
         autoplay:           _autoplay,
         dots:               _dotsBool,
-        lazyLoad:           'progressive',
+        lazyLoad:           'on-demand',
         adaptiveHeight:     true
     });
 }

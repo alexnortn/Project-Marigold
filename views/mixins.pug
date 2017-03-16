@@ -829,7 +829,7 @@ mixin endeavorImageSlider(data)
     - var _class = data.class ? data.class : "endeavor-item"
     .endeavor-element.endeavor-image-slider(class=_class)
         each image, i in images
-            img.lazyload.endeavor-image-slider-color.fsw(src=image.src_low)&attributes({'data-src': images[i].src})
+            img.endeavor-image-slider-color.fsw(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==")&attributes({'data-src': images[i].src})
 
 
 //-  Endeavor Swipable Image Slider 75
@@ -841,7 +841,7 @@ mixin endeavorImageSlider75(data)
     - var _class = data.class ? data.class : "endeavor-item"
     .endeavor-element.endeavor-image-slider.endeavor-width-75-prcnt.endeavor-center(class=_class)
         each image, i in images
-            img.lazyload.endeavor-image-slider-color.fsw(src=image.src_low)&attributes({'data-src': images[i].src})
+            img.endeavor-image-slider-color.fsw(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==")&attributes({'data-src': images[i].src})
 
 
 //-  Endeavor Display Card + Image
