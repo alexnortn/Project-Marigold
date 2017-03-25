@@ -2451,6 +2451,520 @@
             ]
         },
         {
+            "route" :"brainvr-project",
+            "name"  : "BrainVR",
+            "project_type"  : "Project",
+            "year"  : "2016",
+            "preview" :"brainvr-preview",
+            "medium": [
+                "Prototype",
+                "Digital",
+                "VR",
+                "Unity"
+            ],
+            "technique": [
+                "Sketch",
+                "Unity",
+                "TiltBrush",
+                "MeshLab",
+                "3DS Max"
+            ],
+            "description" : {
+                "quote": "How does a brain make a mind?",
+                "brief": "Eyewire is a game to map the brain in collaboration with the Seung Lab at Princeton. Anyone can play and you need no scientific background—over 200,000 people from 145 countries already do. Together they are mapping the 3D structure of neurons; advancing the quest to understand ourselves. To achieve viral and sustained growth, Eyewire will need to invest in improved user experience design. UX design is the process of enhancing user satisfaction and loyalty by improving the usability, ease of use, and pleasure provided in the interaction between the user and the product.",
+                "challenge": "What would the future of Eyewire look like? How would it behave? Shrugging aside current browser limitations, I set to work designing and prototyping my vision for the future of Eyewire. This prototype uses elements from a new design language I've been developing, it's built using a combination of Sketch, FramerJs and threejs."
+            },
+            "meta" : {
+                "Client" : "Eyewire",
+                "Year" : "2016++",
+                "Role" : "Designer/Developer",
+                "Team" : "-",
+                "Discipline" : "Interaction Design, Design Research, Prototyping",
+                "Medium" : "Responsive Web Application",
+                "Technologies" : "Dropbox Paper, Sketch, Craft, Sublime Text, FramerJs, threejs, openCTM",
+                "Duration" : "One Month"
+            },
+            "image_hero": "images/projects/brainvr/hi-res/brainvr-hero.jpg",
+            "image_preview": "images/projects/brainvr/hi-res/brainvr-preview.jpg",
+            "sections" : [
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/synapse/videos/synapse-framer.webm",
+                            "mp4" : "images/projects/synapse/videos/synapse-framer.mp4",
+                            "poster" : "images/projects/synapse/videos/synapse-framer.jpg"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorModuleMachine",
+                    "data" : {
+                        "bgColor" : "#ececec",
+                        "class" : "endeavor-item-bottom-250",
+                        "modules" : [
+                            {
+                                "name" : "endeavorImageFS",
+                                "data" : {
+                                    "class" : "endeavor-item-125",
+                                    "placeholder" : {
+                                        "name" : "",
+                                        "src" : "",
+                                        "src" : "",
+                                        "src_mobile" : "",
+                                        "src_preview" : "",
+                                        "caption" : ""
+                                    },
+                                    "image" : {
+                                        "name": "Syanpse Sponsors",
+                                        "src": "images/projects/synapse/standard/synapse-sponsors-3.png",
+                                        "src_standard": "images/projects/synapse/standard/synapse-sponsors-3.png",
+                                        "src_retina": "images/projects/synapse/retina/synapse-sponsors-3.png",
+                                        "src_low": "images/empty.gif",
+                                        "src_mobile": "images/projects/synapse/hi-res/synapse-sponsors-3.png",
+                                        "src_preview": "images/projects/synapse/hi-res/synapse-sponsors-3.png",
+                                        "caption": "Syanpse Sponsors"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorChecklist",
+                    "data" : {
+                        "header" : "Key Features",
+                        "class" : "endeavor-item-125",
+                        "class2" : "",
+                        "class3" : "",
+                        "class4" : "checklist-simple",
+                        "icon" : "fa-hand-o-right",
+                        "bgColor" : "",
+                        "description" : "",
+                        "contents" : [
+                            {
+                                "header" : "Atomic Design System",
+                                "description" : ""
+                            },
+                            {
+                                "header" : "Framer Prototype",
+                                "description" : ""
+                            },
+                            {
+                                "header" : "Notification System",
+                                "description" : ""
+                            },
+                            {
+                                "header" : "8pt Grid System",
+                                "description" : ""
+                            },
+                            {
+                                "header" : "Blur–Behind Style",
+                                "description" : ""
+                            },
+                            {
+                                "header" : "Iterative Design Cycle",
+                                "description" : ""
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item endeavor-item-top-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Synapse Overview",
+                            "src": "images/projects/synapse/standard/synapse-hero.jpg",
+                            "src_standard": "images/projects/synapse/standard/synapse-hero.jpg",
+                            "src_retina": "images/projects/synapse/retina/synapse-hero.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/synapse/hi-res/synapse-hero.jpg",
+                            "src_preview": "images/projects/synapse/hi-res/synapse-hero.jpg",
+                            "caption": "Synapse Overview"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorCaptionFS",
+                    "data" : {
+                        "class" : "endeavor-item-bottom-125",
+                        "caption" : "(Above) Synapse was designed as a vision. Free of cross-browser limitations, I explored formal and stylistic possibilities usually reserved for native applications. I found that the blur–behind effect (currently only available in Webkit–based browsers) was quite useful in preserving 3D content, while providing a futuristic aesthetic. It also complimented the dark-UI, shifting the users focus to the 3D neuron."
+                    }
+                },
+                {
+                    "name" : "endeavorParagraph",
+                    "data" : {
+                        "header" : "Try it Live",
+                        "class" : "endeavor-item-top-125",
+                        "bgColor" : "",
+                        "description" : ""
+                    }
+                },
+                {
+                    "name" : "endeavorGhostButtonURL",
+                    "data" : {
+                        "class" : "endeavor-item-bottom-125 endeavor-text-left",
+                        "text" : "Go For It",
+                        "align" : "",
+                        "id" : "museum-live",
+                        "url" : "https://framer.cloud/TRSiM",
+                        "textColor" : "#666666"
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Synapse Announcements",
+                            "src": "images/projects/synapse/standard/synapse-announcements.jpg",
+                            "src_standard": "images/projects/synapse/standard/synapse-announcements.jpg",
+                            "src_retina": "images/projects/synapse/retina/synapse-announcements.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/synapse/hi-res/synapse-announcements.jpg",
+                            "src_preview": "images/projects/synapse/hi-res/synapse-announcements.jpg",
+                            "caption": "Synapse Announcements"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorParagraphUsers",
+                    "data" : {
+                        "header" : "Notification System",
+                        "id" : "ghost-notification-system-affect",
+                        "class" : "endeavor-item-125 endeavor-item-bottom-15",
+                        "class2" : "endeavor-reveal",
+                        "bgColor" : "",
+                        "description" : "The primary motivation for this project was to prototype a new in-game notification system. We began this process with a series of brainstorming sessions where we listed and categorized all the possible game states in Eyewire. From there we chose to pursue announcement notifications for our initial MVP. Announcement notifications are notifications that appear when a new game state has been reached. They come in three flavors: Individual, Targeted, and Global.",
+                        "contents" : [
+                            {
+                                "header" : "Individual Examples (Personalized messages to individual players)",
+                                "icon" : "fa-cube",
+                                "bullets" : [
+                                    {
+                                        "header" : "Success",
+                                        "description" : "You completed 10x growth with project Neo!"
+                                    },
+                                    {
+                                        "header" : "Top Player of Day",
+                                        "description" : "You were yesterday’s top player of the day with xxxxx points!"
+                                    },
+                                    {
+                                        "header" : "Top Ten Monthly",
+                                        "description" : "You were in the top 10 players for this month at #7!"
+                                    },
+                                    {
+                                        "header" : "Promotion",
+                                        "description" : "You were promoted to the role of Scout."
+                                    }
+                                ]
+                            },
+                            {
+                                "header" : "Targeted Examples (Personalized messages to targeted player groups)",
+                                "icon" : "fa-cog",
+                                "bullets" : [
+                                    {
+                                        "header" : "Competition",
+                                        "description" : "The competition ends in 30 mins!  Time to make your move."
+                                    },
+                                    {
+                                        "header" : "Competition",
+                                        "description" : "The competition has ended.  Check the leaderboard for final scores."
+                                    },
+                                    {
+                                        "header" : "Competition (Candy World)",
+                                        "description" : "On 12/17 get catapulted into a tooth-achingly sweet world(link to blog)."
+                                    },
+                                    {
+                                        "header" : "Challenge (Mergamatic)",
+                                        "description" : "Find a merger in the current overview cell."
+                                    }
+                                ]
+                            },
+                            {
+                                "header" : "Global Examples (General messages intended for the entire player base)",
+                                "icon" : "fa-cogs",
+                                "bullets" : [
+                                    {
+                                        "header" : "Big News",
+                                        "description" : "Eyewire just published a paper on xyz (link)."
+                                    },
+                                    {
+                                        "header" : "Big News",
+                                        "description" : "We just completed sector 5 in The Dig (link)."
+                                    },
+                                    {
+                                        "header" : "Telegram",
+                                        "description" : "We need some players to help us finish cell xxxxxxx."
+                                    },
+                                    {
+                                        "header" : "Tech Fail",
+                                        "description" : "Grim’s stuck in the servers again!  Try panda cam while you wait (link)."
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorGhostButton",
+                    "data" : {
+                        "class" : "endeavor-item-bottom-125 endeavor-text-left",
+                        "text" : "Read More",
+                        "align" : "",
+                        "id" : "ghost-notification-system",
+                        "textColor" : "#666666"
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Synapse Notifications",
+                            "src": "images/projects/synapse/standard/synapse-notification.jpg",
+                            "src_standard": "images/projects/synapse/standard/synapse-notification.jpg",
+                            "src_retina": "images/projects/synapse/retina/synapse-notification.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/synapse/hi-res/synapse-notification.jpg",
+                            "src_preview": "images/projects/synapse/hi-res/synapse-notification.jpg",
+                            "caption": "Synapse Notifications"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Synapse Symbols",
+                            "src": "images/projects/synapse/standard/synapse-symbols-grid.jpg",
+                            "src_standard": "images/projects/synapse/standard/synapse-symbols-grid.jpg",
+                            "src_retina": "images/projects/synapse/retina/synapse-symbols-grid.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/synapse/hi-res/synapse-symbols-grid.jpg",
+                            "src_preview": "images/projects/synapse/hi-res/synapse-symbols-grid.jpg",
+                            "caption": "Synapse Symbols"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorChecklistHidden",
+                    "data" : {
+                        "header" : "Atomic Design",
+                        "id" : "ghost-atomic-design-affect",
+                        "class" : "endeavor-item-125 endeavor-item-bottom-15",
+                        "class2" : "endeavor-reveal",
+                        "class3" : "endeavor-border-top",
+                        "icon" : "fa-hand-spock-o",
+                        "bgColor" : "",
+                        "description" :"Iterative design + development strategy demands the systematic organization of project assets. I have found the principles of Atomic Design conducive to this process. Inspired by physics of the natural world and possibly the divide and conquer algorithms of computer science space, Atomic Design reduces project asset clutter into six unique types: Identity, Elements, Components, Compositions, Layout, and Views.",
+                        "contents" : [
+                            {
+                                "header" : "Identity",
+                                "description" : "Styles: Typefaces, Typography, Color, Brand Assets"
+                            },
+                            {
+                                "header" : "Elements",
+                                "description" : "The simplest reusable items: Buttons, Drop–Downs, Nav–Bars, Footers, Switches, Toggles, etc"
+                            },
+                            {
+                                "header" : "Components",
+                                "description" : "Reusable combinations of elements: Cards, Dialogs, Forms, Prompts, etc"
+                            },
+                            {
+                                "header" : "Compositions",
+                                "description" : "Reusable collections of Components: Sidebars, Pop-Ups, etc "
+                            },
+                            {
+                                "header" : "Layout",
+                                "description" : "Grid System: I make use of two grids, one for local layout (8pt x 4pt) and another for global organization (8-12 responsive columns)."
+                            },
+                            {
+                                "header" : "Views",
+                                "description" : "Collections of Compositions, Components, and Elements: Overview, In-Cube, Scouts' Log, etc"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorGhostButton",
+                    "data" : {
+                        "class" : "endeavor-item-bottom-125 endeavor-text-left",
+                        "text" : "Read More",
+                        "align" : "",
+                        "id" : "ghost-atomic-design",
+                        "textColor" : "#666666"
+                    }
+                },
+                {
+                    "name" : "endeavorImageSlider",
+                    "data" : {
+                        "meta" : "Algorithmic",
+                        "images" : [
+                            {
+                                "name": "Synapse Sketch 1",
+                                "src": "images/projects/synapse/standard/synapse-sketch-1.jpg",
+                                "src_standard": "images/projects/synapse/standard/synapse-sketch-1.jpg",
+                                "src_retina": "images/projects/synapse/retina/synapse-sketch-1.jpg",
+                                "src_low": "images/empty.gif",
+                                "src_mobile": "images/projects/synapse/hi-res/synapse-sketch-1.jpg",
+                                "src_preview": "images/projects/synapse/hi-res/synapse-sketch-1.jpg",
+                                "caption": "Dig gif image"   
+                            },
+                            {
+                                "name": "Synapse Sketch 2",
+                                "src": "images/projects/synapse/standard/synapse-sketch-2.jpg",
+                                "src_standard": "images/projects/synapse/standard/synapse-sketch-2.jpg",
+                                "src_retina": "images/projects/synapse/retina/synapse-sketch-2.jpg",
+                                "src_low": "images/empty.gif",
+                                "src_mobile": "images/projects/synapse/hi-res/synapse-sketch-2.jpg",
+                                "src_preview": "images/projects/synapse/hi-res/synapse-sketch-2.jpg",
+                                "caption": "Dig gif image"   
+                            },
+                            {
+                                "name": "Synapse Sketch 3",
+                                "src": "images/projects/synapse/standard/synapse-sketch-3.jpg",
+                                "src_standard": "images/projects/synapse/standard/synapse-sketch-3.jpg",
+                                "src_retina": "images/projects/synapse/retina/synapse-sketch-3.jpg",
+                                "src_low": "images/empty.gif",
+                                "src_mobile": "images/projects/synapse/hi-res/synapse-sketch-3.jpg",
+                                "src_preview": "images/projects/synapse/hi-res/synapse-sketch-3.jpg",
+                                "caption": "Dig gif image"   
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item endeavor-item-top-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Synapse Overview",
+                            "src": "images/projects/synapse/standard/synapse-sketch-system.jpg",
+                            "src_standard": "images/projects/synapse/standard/synapse-sketch-system.jpg",
+                            "src_retina": "images/projects/synapse/retina/synapse-sketch-system.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/synapse/hi-res/synapse-sketch-system.jpg",
+                            "src_preview": "images/projects/synapse/hi-res/synapse-sketch-system.jpg",
+                            "caption": "Synapse Overview"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "class" : "endeavor-item",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Synapse Announcements",
+                            "src": "images/projects/synapse/standard/synapse-composition-grid.jpg",
+                            "src_standard": "images/projects/synapse/standard/synapse-composition-grid.jpg",
+                            "src_retina": "images/projects/synapse/retina/synapse-composition-grid.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/synapse/hi-res/synapse-composition-grid.jpg",
+                            "src_preview": "images/projects/synapse/hi-res/synapse-composition-grid.jpg",
+                            "caption": "Synapse Announcements"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Synapse Overview",
+                            "src": "images/projects/synapse/standard/synapse-chart.gif",
+                            "src_standard": "images/projects/synapse/standard/synapse-chart.gif",
+                            "src_retina": "images/projects/synapse/retina/synapse-chart.gif",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/synapse/hi-res/synapse-chart.gif",
+                            "src_preview": "images/projects/synapse/hi-res/synapse-chart.gif",
+                            "caption": "Synapse Overview"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorParagraphChecklist",
+                    "data" : {
+                        "header" : "Reflecting",
+                        "id" : "ghost-reflecting-affect",
+                        "class" : "endeavor-item-250",
+                        "class2" : "endeavor-reveal",
+                        "bgColor" : "",
+                        "description" : "I started this project by interviewing Eyewire players and stakeholders. I then quickly worked alongside game admins and our game dev team to generate rough specifications for an MVP notification system. After a lot of initial sketching I moved to building out a solid file structure in preparation for an iterative design cycle between static assets in Sketch and the dynamic world of Framer. The Synapse prototype has been my first experience heavily integrating Framer into my design process. Though Framer has a significantly higher learning curve than something like Invision or Flinto, the potential is incredible. Having a strong foundation in programing, I find that Framer simplifies the development cycle for a number of common interaction design challenges like tuning microinteractions, designing with real data, and testing application behavior + feedback loops. Framer integrates super well with Sketch symbols speeding the refinement process for design language towards a sort of parametric system like many CAD software packages (Solid Works, 3ds Max, etc). I'm looking forward to working more with Framer.",
+                        "contents": ""
+                    }
+                },
+                {
+                    "name" : "endeavorPad",
+                    "data" : {
+                        "class" : "endeavor-height-200px-responsive endeavor-item-no-margin endeavor-height-10vw"
+                    }
+                }
+            ]
+        },
+        {
             "route" :"explore-project",
             "name"  : "Eyewire Explore",
             "project_type"  : "Project",
@@ -6985,6 +7499,287 @@
                             "name" : "DigBrandBook",
                             "src" : "//e.issuu.com/embed.html#22891629/32843107",
                             "caption" : "Alex Norton DiG Brand Book." 
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorPad",
+                    "data" : {
+                        "class" : "endeavor-height-200px-responsive endeavor-item-no-margin endeavor-height-10vw"
+                    }
+                }
+            ]
+        },
+        {
+            "route" :"emergentForms-project",
+            "name"  : "Emergent Forms",
+            "project_type"  : "Project",
+            "year"  : "2014",
+            "preview" :"emergentForms-preview",
+            "medium": [
+                "Prototype",
+                "Digital",
+                "Generative",
+                "Material"
+            ],
+            "technique": [
+                "Sketch",
+                "Unity",
+                "TiltBrush",
+                "MeshLab",
+                "3DS Max"
+            ],
+            "description" : {
+                "quote": "How does a brain make a mind?",
+                "brief": "Eyewire is a game to map the brain in collaboration with the Seung Lab at Princeton. Anyone can play and you need no scientific background—over 200,000 people from 145 countries already do. Together they are mapping the 3D structure of neurons; advancing the quest to understand ourselves. To achieve viral and sustained growth, Eyewire will need to invest in improved user experience design. UX design is the process of enhancing user satisfaction and loyalty by improving the usability, ease of use, and pleasure provided in the interaction between the user and the product.",
+                "challenge": "What would the future of Eyewire look like? How would it behave? Shrugging aside current browser limitations, I set to work designing and prototyping my vision for the future of Eyewire. This prototype uses elements from a new design language I've been developing, it's built using a combination of Sketch, FramerJs and threejs."
+            },
+            "meta" : {
+                "Client" : "Eyewire",
+                "Year" : "2016++",
+                "Role" : "Designer/Developer",
+                "Team" : "-",
+                "Discipline" : "Interaction Design, Design Research, Prototyping",
+                "Medium" : "Responsive Web Application",
+                "Technologies" : "Dropbox Paper, Sketch, Craft, Sublime Text, FramerJs, threejs, openCTM",
+                "Duration" : "One Month"
+            },
+            "image_hero": "images/projects/emergentForms/hi-res/emergentForms-hero.jpg",
+            "image_preview": "images/projects/emergentForms/hi-res/emergentForms-preview.jpg",
+            "sections" : [
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "class" : "endeavor-item-bottom-125 endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "audio_toggle" : "true",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/emergentForms/videos/emergent-forms.webm",
+                            "mp4" : "images/projects/emergentForms/videos/emergent-forms.mp4",
+                            "poster" : "images/projects/emergentForms/videos/emergent-forms.jpg"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorChecklist",
+                    "data" : {
+                        "header" : "Key Features",
+                        "class" : "endeavor-item-250",
+                        "class2" : "",
+                        "class3" : "",
+                        "class4" : "checklist-simple",
+                        "icon" : "fa-hand-o-right",
+                        "bgColor" : "",
+                        "description" : "",
+                        "contents" : [
+                            {
+                                "header" : "Atomic Design System",
+                                "description" : ""
+                            },
+                            {
+                                "header" : "Framer Prototype",
+                                "description" : ""
+                            },
+                            {
+                                "header" : "Notification System",
+                                "description" : ""
+                            },
+                            {
+                                "header" : "8pt Grid System",
+                                "description" : ""
+                            },
+                            {
+                                "header" : "Blur–Behind Style",
+                                "description" : ""
+                            },
+                            {
+                                "header" : "Iterative Design Cycle",
+                                "description" : ""
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vwList",
+                    "data" : {
+                        "class" : "endeavor-item-bottom-125",
+                        "class2" : "endeavor-item-no-margin",
+                        "images" : [
+                            {
+                                "name": "Emergent Forms DLA",
+                                "src": "images/projects/emergentForms/standard/emergentForms-4.jpg",
+                                "src_standard": "images/projects/emergentForms/standard/emergentForms-4.jpg",
+                                "src_retina": "images/projects/emergentForms/retina/emergentForms-4.jpg",
+                                "src_low": "images/empty.gif",
+                                "src_mobile": "images/projects/emergentForms/hi-res/emergentForms-4.jpg",
+                                "src_preview": "images/projects/emergentForms/hi-res/emergentForms-4.jpg",
+                                "caption": "Emergent Forms DLA"
+                            },
+                            {
+                                "name": "Emergent Forms View",
+                                "src": "images/projects/emergentForms/standard/emergentForms-dla.jpg",
+                                "src_standard": "images/projects/emergentForms/standard/emergentForms-dla.jpg",
+                                "src_retina": "images/projects/emergentForms/retina/emergentForms-dla.jpg",
+                                "src_low": "images/empty.gif",
+                                "src_mobile": "images/projects/emergentForms/hi-res/emergentForms-dla.jpg",
+                                "src_preview": "images/projects/emergentForms/hi-res/emergentForms-dla.jpg",
+                                "caption": "Emergent Forms View"
+                            },
+                            {
+                                "name": "Emergent Forms Figure",
+                                "src": "images/projects/emergentForms/standard/emergentForms-figure.jpg",
+                                "src_standard": "images/projects/emergentForms/standard/emergentForms-figure.jpg",
+                                "src_retina": "images/projects/emergentForms/retina/emergentForms-figure.jpg",
+                                "src_low": "images/empty.gif",
+                                "src_mobile": "images/projects/emergentForms/hi-res/emergentForms-figure.jpg",
+                                "src_preview": "images/projects/emergentForms/hi-res/emergentForms-figure.jpg",
+                                "caption": "Emergent Forms Figure"
+                            },
+                            {
+                                "name": "Emergent Forms View",
+                                "src": "images/projects/emergentForms/standard/emergentForms-1.jpg",
+                                "src_standard": "images/projects/emergentForms/standard/emergentForms-1.jpg",
+                                "src_retina": "images/projects/emergentForms/retina/emergentForms-1.jpg",
+                                "src_low": "images/empty.gif",
+                                "src_mobile": "images/projects/emergentForms/hi-res/emergentForms-1.jpg",
+                                "src_preview": "images/projects/emergentForms/hi-res/emergentForms-1.jpg",
+                                "caption": "Emergent Forms View"
+                            },
+                            {
+                                "name": "Emergent Forms View",
+                                "src": "images/projects/emergentForms/standard/emergentForms-7.jpg",
+                                "src_standard": "images/projects/emergentForms/standard/emergentForms-7.jpg",
+                                "src_retina": "images/projects/emergentForms/retina/emergentForms-7.jpg",
+                                "src_low": "images/empty.gif",
+                                "src_mobile": "images/projects/emergentForms/hi-res/emergentForms-7.jpg",
+                                "src_preview": "images/projects/emergentForms/hi-res/emergentForms-7.jpg",
+                                "caption": "Emergent Forms View"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorImageFSList",
+                    "data" : {
+                        "images" : [
+                            {
+                                "name": "Emergent Forms View",
+                                "src": "images/projects/emergentForms/standard/emergentForms-5.jpg",
+                                "src_standard": "images/projects/emergentForms/standard/emergentForms-5.jpg",
+                                "src_retina": "images/projects/emergentForms/retina/emergentForms-5.jpg",
+                                "src_low": "images/empty.gif",
+                                "src_mobile": "images/projects/emergentForms/hi-res/emergentForms-5.jpg",
+                                "src_preview": "images/projects/emergentForms/hi-res/emergentForms-5.jpg",
+                                "caption": "Emergent Forms View"
+                            },
+                            {
+                                "name": "Emergent Forms View",
+                                "src": "images/projects/emergentForms/standard/emergentForms-2.jpg",
+                                "src_standard": "images/projects/emergentForms/standard/emergentForms-2.jpg",
+                                "src_retina": "images/projects/emergentForms/retina/emergentForms-2.jpg",
+                                "src_low": "images/empty.gif",
+                                "src_mobile": "images/projects/emergentForms/hi-res/emergentForms-2.jpg",
+                                "src_preview": "images/projects/emergentForms/hi-res/emergentForms-2.jpg",
+                                "caption": "Emergent Forms View"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Emergent Forms View",
+                            "src": "images/projects/emergentForms/standard/emergentForms-6.jpg",
+                            "src_standard": "images/projects/emergentForms/standard/emergentForms-6.jpg",
+                            "src_retina": "images/projects/emergentForms/retina/emergentForms-6.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/emergentForms/hi-res/emergentForms-6.jpg",
+                            "src_preview": "images/projects/emergentForms/hi-res/emergentForms-6.jpg",
+                            "caption": "Emergent Forms View"   
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "class" : "endeavor-item",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Emergent Forms View",
+                            "src": "images/projects/emergentForms/standard/emergentForms-9.jpg",
+                            "src_standard": "images/projects/emergentForms/standard/emergentForms-9.jpg",
+                            "src_retina": "images/projects/emergentForms/retina/emergentForms-9.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/emergentForms/hi-res/emergentForms-9.jpg",
+                            "src_preview": "images/projects/emergentForms/hi-res/emergentForms-9.jpg",
+                            "caption": "Emergent Forms View"   
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Emergent Forms View",
+                            "src": "images/projects/emergentForms/standard/emergentForms-8.jpg",
+                            "src_standard": "images/projects/emergentForms/standard/emergentForms-8.jpg",
+                            "src_retina": "images/projects/emergentForms/retina/emergentForms-8.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/emergentForms/hi-res/emergentForms-8.jpg",
+                            "src_preview": "images/projects/emergentForms/hi-res/emergentForms-8.jpg",
+                            "caption": "Emergent Forms View"   
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "class" : "endeavor-item",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Emergent Forms View",
+                            "src": "images/projects/emergentForms/standard/emergentForms-3.jpg",
+                            "src_standard": "images/projects/emergentForms/standard/emergentForms-3.jpg",
+                            "src_retina": "images/projects/emergentForms/retina/emergentForms-3.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/emergentForms/hi-res/emergentForms-3.jpg",
+                            "src_preview": "images/projects/emergentForms/hi-res/emergentForms-3.jpg",
+                            "caption": "Emergent Forms View"   
                         }
                     }
                 },
