@@ -882,6 +882,7 @@ $(document).ready(function() {
 
     $('#bios-more').click(function() {
         $(this).velocity("fadeOut", { duration: 500 });
+        $('#bios-about').velocity("fadeIn", { duration: 250 });
         $('#self-long').velocity("fadeIn", { duration: 500 });
     });
 

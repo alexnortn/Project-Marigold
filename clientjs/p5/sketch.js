@@ -15,7 +15,9 @@ let toxi = require('toxiclibsjs'),
 
 	// p5.dom
 	// let dom = require('../../node_modules/p5/lib/addons/p5.dom.js');
-	require('p5/lib/addons/p5.dom');
+	
+	// Previous 2018 working line « note removed in 2021 due to library addition into principal p5 codebase
+	// require('p5/lib/addons/p5.dom');
 
 let _options = {
 	width: 100,
