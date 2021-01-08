@@ -1,7 +1,285 @@
 {
     "case_studies" : [
         {
-            "route" :"museum-cs",
+            "route" :"travel-project",
+            "name" : "Google Travel",
+            "project_type" : "Case Study",
+            "preview" :"travel-preview",
+            "year" : "2020",
+            "medium": [
+                "Responsive, Web Application"
+            ],
+            "technique": [
+                "Product Design",
+                "Design Research",
+                "Machine Learning",
+                "Computational Design"
+            ],
+            "description" : {
+                "quote": "Be the trusted place where travelers go for the most useful information to make fast, effortless decisions.",
+                "brief": "Since joining Google, I’ve had the privilege to build products in the service of hundreds of millions. Most notably, I led the unification of the Google Travel products under a single brand and navigation structure. This entailed inspiring and motivating a coalition of executive sponsors who were skeptical of a cohesive offering. I believe the lasting partnerships I formed and the credibility I gained were a function of diligence in my preparedness, on-the-fly adaptability, and the time I committed to over-communicate key toggle points in our strategy."
+            },
+            "meta" : {
+                "Client" : "Google Travel",
+                "Year" : 20202,
+                "Role" : "Product Designer",
+                "Discipline" : "Product Designer",
+                "Medium" : "Web Application",
+                "Duration" : "3 years"
+            },
+            "image_hero": "images/projects/travel/hi-res/travel-hero.jpg",
+            "image_preview": "images/projects/travel/hi-res/travel-hero.jpg",
+            "sections" : [
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "class" : "endeavor-item-top-125 endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/travel/videos/google-trip.webm",
+                            "mp4" : "images/projects/travel/videos/google-trip.mp4",
+                            "poster" : "images/projects/travel/videos/google-trip.jpg"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "class" : "endeavor-item-top-125 endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/travel/videos/travel-brand.webm",
+                            "mp4" : "images/projects/travel/videos/travel-brand.mp4",
+                            "poster" : "images/projects/travel/videos/travel-brand.jpg"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-top-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Google Travel",
+                            "src": "images/projects/travel/standard/travel-1.png",
+                            "src_standard": "images/projects/travel/standard/travel-1.png",
+                            "src_retina": "images/projects/travel/retina/travel-1.png",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/travel/hi-res/travel-1.png",
+                            "src_preview": "images/projects/travel/hi-res/travel-1.png",
+                            "caption": "Google Travel"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-top-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Google Travel",
+                            "src": "images/projects/travel/standard/travel-2.png",
+                            "src_standard": "images/projects/travel/standard/travel-2.png",
+                            "src_retina": "images/projects/travel/retina/travel-2.png",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/travel/hi-res/travel-2.png",
+                            "src_preview": "images/projects/travel/hi-res/travel-2.png",
+                            "caption": "Google Travel"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-top-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Google Travel",
+                            "src": "images/projects/travel/standard/travel-3.png",
+                            "src_standard": "images/projects/travel/standard/travel-3.png",
+                            "src_retina": "images/projects/travel/retina/travel-3.png",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/travel/hi-res/travel-3.png",
+                            "src_preview": "images/projects/travel/hi-res/travel-3.png",
+                            "caption": "Google Travel"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-top-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Google Travel",
+                            "src": "images/projects/travel/standard/travel-4.png",
+                            "src_standard": "images/projects/travel/standard/travel-4.png",
+                            "src_retina": "images/projects/travel/retina/travel-4.png",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/travel/hi-res/travel-4.png",
+                            "src_preview": "images/projects/travel/hi-res/travel-4.png",
+                            "caption": "Google Travel"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-top-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Google Travel",
+                            "src": "images/projects/travel/standard/travel-5.png",
+                            "src_standard": "images/projects/travel/standard/travel-5.png",
+                            "src_retina": "images/projects/travel/retina/travel-5.png",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/travel/hi-res/travel-5.png",
+                            "src_preview": "images/projects/travel/hi-res/travel-5.png",
+                            "caption": "Google Travel"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-top-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Google Travel",
+                            "src": "images/projects/travel/standard/travel-6.png",
+                            "src_standard": "images/projects/travel/standard/travel-6.png",
+                            "src_retina": "images/projects/travel/retina/travel-6.png",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/travel/hi-res/travel-6.png",
+                            "src_preview": "images/projects/travel/hi-res/travel-6.png",
+                            "caption": "Google Travel"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-top-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Google Travel",
+                            "src": "images/projects/travel/standard/travel-7.png",
+                            "src_standard": "images/projects/travel/standard/travel-7.png",
+                            "src_retina": "images/projects/travel/retina/travel-7.png",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/travel/hi-res/travel-7.png",
+                            "src_preview": "images/projects/travel/hi-res/travel-7.png",
+                            "caption": "Google Travel"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-top-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Google Travel",
+                            "src": "images/projects/travel/standard/travel-8.png",
+                            "src_standard": "images/projects/travel/standard/travel-8.png",
+                            "src_retina": "images/projects/travel/retina/travel-8.png",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/travel/hi-res/travel-8.png",
+                            "src_preview": "images/projects/travel/hi-res/travel-8.png",
+                            "caption": "Google Travel"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-top-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "Google Travel",
+                            "src": "images/projects/travel/standard/travel-9.png",
+                            "src_standard": "images/projects/travel/standard/travel-9.png",
+                            "src_retina": "images/projects/travel/retina/travel-9.png",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/travel/hi-res/travel-9.png",
+                            "src_preview": "images/projects/travel/hi-res/travel-9.png",
+                            "caption": "Google Travel"
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "projects" : [
+        {
+            "route" :"museum-project",
             "name"  : "Museum",
             "project_type"  : "Case Study",
             "preview" :"museum-preview",
@@ -308,7 +586,7 @@
                         "align" : "",
                         "id" : "museum-live",
                         "url" : "http://museum.eyewire.org/",
-                        "textColor" : "#666666"
+                        "textColor" : "#1a1a1a"
                     }
                 },
                 {
@@ -351,7 +629,7 @@
                     "name" : "endeavorCaptionFS",
                     "data" : {
                         "class" : "endeavor-item",
-                        "textColor" : "#666666",
+                        "textColor" : "#1a1a1a",
                         "caption" : "Sebastian Seung (pictured above) is a leader in the new field of connectomics, currently the hottest space in neuroscience, which studies, in once-impossible detail, the wiring of the brain."
                     }
                 },
@@ -369,7 +647,7 @@
                                     "subtext" : "At Seunglab scientists study Connectomics, a specialty in the domain of Neuroscience which seeks to understand brain structure and function by constructing comprehensive maps of the connections between neurons.",
                                     "bgColor" : "",
                                     "class" : "",
-                                    "textColor" : "#666666"
+                                    "textColor" : "#1a1a1a"
                                 }
                             }
                         ]
@@ -402,7 +680,7 @@
                 {
                     "name" : "endeavorCaptionHeaderGrid",
                     "data" : {
-                        "textColor" : "#666666",
+                        "textColor" : "#1a1a1a",
                         "contents" : [ 
                             {
                                 "header" : "Traditional Connectomics",
@@ -450,7 +728,7 @@
                         "header" : "Connectomics",
                         "subtext" : "The production and study of connectomes, may range in scale from a detailed map of the full set of neurons and synapses within part or all of the nervous system of an organism to a macro scale description of the functional and structural connectivity.",
                         "bgColor" : "",
-                        "textColor" : "#666666"
+                        "textColor" : "#1a1a1a"
                     }
                 },
                 {
@@ -459,7 +737,7 @@
                         "class" : "endeavor-item-bottom-250",
                         "text" : "Look Closer",
                         "id" : "ghost-connectomics",
-                        "textColor" : "#666666"
+                        "textColor" : "#1a1a1a"
                     }
                 },
                 {
@@ -710,7 +988,7 @@
                             {
                                 "name" : "endeavorPullheaderCaptionFS",
                                 "data" : {
-                                    "textColor" : "#666666",
+                                    "textColor" : "#1a1a1a",
                                     "subheader" : "C. Elegans",
                                     "caption" : "So far, C. elegans is the only organism that boasts a complete connectome. Researchers are also working on connectomes for the fruit fly nervous system and the mouse brain."
                                 }
@@ -764,7 +1042,7 @@
                         "text" : "Look Closer",
                         "align" : "",
                         "id" : "ghost-market-research",
-                        "textColor" : "#666666"
+                        "textColor" : "#1a1a1a"
                     }
                 },
                 {
@@ -845,7 +1123,7 @@
                         "text" : "Look Closer",
                         "align" : "",
                         "id" : "ghost-user-stories",
-                        "textColor" : "#666666"
+                        "textColor" : "#1a1a1a"
                     }
                 },
                 {
@@ -886,7 +1164,7 @@
                         "text" : "Look Closer",
                         "align" : "",
                         "id" : "ghost-observations",
-                        "textColor" : "#666666"
+                        "textColor" : "#1a1a1a"
                     }
                 },
                 {
@@ -963,7 +1241,7 @@
                         "text" : "Look Closer",
                         "align" : "",
                         "id" : "ghost-design-questions",
-                        "textColor" : "#666666"
+                        "textColor" : "#1a1a1a"
                     }
                 },
                 {
@@ -980,7 +1258,7 @@
                                     "subtext" : "Our research concluded that we should focus our efforts on designing a product for neuroscientists, as they are the demographic that aligns most closely with our available data and (after students) the most numerable.",
                                     "bgColor" : "",
                                     "class" : "",
-                                    "textColor" : "#666666"
+                                    "textColor" : "#1a1a1a"
                                 }
                             }
                         ]
@@ -1106,7 +1384,7 @@
                         "text" : "Look Closer",
                         "align" : "",
                         "id" : "ghost-project-requirements",
-                        "textColor" : "#666666"
+                        "textColor" : "#1a1a1a"
                     }
                 },
                 {
@@ -1139,7 +1417,7 @@
                         "text" : "Look Closer",
                         "align" : "",
                         "id" : "ghost-app-overview",
-                        "textColor" : "#666666"
+                        "textColor" : "#1a1a1a"
                     }
                 },
                 {
@@ -1265,7 +1543,7 @@
                                     "align" : "",
                                     "id" : "museum-user-journey-pdf",
                                     "url" : "images/projects/museum/hi-res/museum-user-journey.pdf",
-                                    "textColor" : "#666666"
+                                    "textColor" : "#1a1a1a"
                                 }
                             }
                         ]
@@ -1884,7 +2162,7 @@
                         "text" : "Look Closer",
                         "align" : "",
                         "id" : "ghost-reflecting",
-                        "textColor" : "#666666"
+                        "textColor" : "#1a1a1a"
                     }
                 },
                 {
@@ -1926,7 +2204,7 @@
                         "align" : "",
                         "id" : "museum-live",
                         "url" : "http://museum.eyewire.org/",
-                        "textColor" : "#666666"
+                        "textColor" : "#1a1a1a"
                     }
                 },
                 {
@@ -1936,9 +2214,7 @@
                     }
                 }
             ]
-        }
-    ],
-    "projects" : [
+        },
         {
             "route" :"synapse-project",
             "name"  : "Synapse",
@@ -2107,7 +2383,7 @@
                         "align" : "",
                         "id" : "museum-live",
                         "url" : "https://framer.cloud/TRSiM",
-                        "textColor" : "#666666"
+                        "textColor" : "#1a1a1a"
                     }
                 },
                 {
@@ -2220,7 +2496,7 @@
                         "text" : "Read More",
                         "align" : "",
                         "id" : "ghost-notification-system",
-                        "textColor" : "#666666"
+                        "textColor" : "#1a1a1a"
                     }
                 },
                 {
@@ -2317,7 +2593,7 @@
                         "text" : "Read More",
                         "align" : "",
                         "id" : "ghost-atomic-design",
-                        "textColor" : "#666666"
+                        "textColor" : "#1a1a1a"
                     }
                 },
                 {
@@ -2709,7 +2985,7 @@
                         "text" : "Read More",
                         "align" : "",
                         "id" : "ghost-explore-story",
-                        "textColor" : "#666666"
+                        "textColor" : "#1a1a1a"
                     }
                 },
                 {
@@ -3036,7 +3312,7 @@
                         "text" : "Read More",
                         "align" : "",
                         "id" : "ghost-developmental-system",
-                        "textColor" : "#666666"
+                        "textColor" : "#1a1a1a"
                     }
                 },
                 {
@@ -3096,7 +3372,7 @@
                         "text" : "Read More",
                         "align" : "",
                         "id" : "ghost-physical-system",
-                        "textColor" : "#666666"
+                        "textColor" : "#1a1a1a"
                     }
                 },
                 {
@@ -3295,7 +3571,7 @@
                         "text" : "Look Closer",
                         "align" : "",
                         "id" : "ghost-animation-controller",
-                        "textColor" : "#666666"
+                        "textColor" : "#1a1a1a"
                     }
                 },
                 {

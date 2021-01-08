@@ -137,8 +137,9 @@ block content
         section#bios.section&attributes({'data-inproject': false})
             #bios-wrapper
                 #bios-title.bios-title.sticky
+                    //- h1#logo Alex Norton
                     img(src = "/images/name.svg" alt = "Alex Norton")
-                    p#bios-title-p !{bios_text.title}
+                    //- p#bios-title-p !{bios_text.title}
                 #bios-content.bios-content
                     img(src = "/images/alexnorton-hs2.jpg" alt = "Alex Norton Portrait")
                     .copy
@@ -147,7 +148,7 @@ block content
                         p#self-short.tamerp.lil-p !{bios_text.description_short_2}
                         p#self-long.tamerp.lil-p !{bios_text.description_long}
                         button#bios-more.endeavor-button.ghost
-                                h3.endeavor-center.endeavor-text-center.endeavor-transition-500 read more
+                                h3.endeavor-center.endeavor-text-center.endeavor-transition-500 Read more
                         a#resume(href="/images/Norton-Alex-Resume.pdf" target="_blank")
                             button.endeavor-button.flat.endeavor-center-mobile
                                 h3.endeavor-center.endeavor-text-center.endeavor-transition-500.medium-text-2 Résumé
@@ -170,7 +171,7 @@ block content
                                 +projectPreview(project, index)
                         .fsw.endeavor-item-125.endeavor-text-center
                             button#select-more.endeavor-button.endeavor-center
-                                h3.endeavor-center.endeavor-text-center.endeavor-transition-500 more
+                                h3.endeavor-center.endeavor-text-center.endeavor-transition-500 More
                 // /SELECT WORK GRID SECTION
         // /WORKS SECTION 
 
