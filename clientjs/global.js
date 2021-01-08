@@ -608,7 +608,7 @@ $(document).ready(function() {
 
             // Lazysizes configuration
             window.lazySizesConfig = window.lazySizesConfig || {};
-            window.lazySizesConfig.expand = 100; // Loading offset
+            window.lazySizesConfig.expand = 1000; // Loading offset
             window.lazySizesConfig.expFactor = 10; // Loading offset
         }
 

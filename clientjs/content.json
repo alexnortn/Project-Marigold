@@ -76,7 +76,7 @@
                 {
                     "name" : "endeavorVideoFS",
                     "data" : {
-                        "class" : "endeavor-item-top-125 endeavor-width-100vw endeavor-pos-rel",
+                        "class" : "endeavor-item-none endeavor-width-100vw endeavor-pos-rel",
                         "loop": "",
                         "muted": "",
                         "autoplay": "true",
@@ -90,7 +90,7 @@
                 {
                     "name" : "endeavorImage100vw",
                     "data" : {
-                        "class" : "endeavor-item-top-125",
+                        "class" : "endeavor-item-top-25",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -114,7 +114,7 @@
                 {
                     "name" : "endeavorImage100vw",
                     "data" : {
-                        "class" : "endeavor-item-top-125",
+                        "class" : "endeavor-item-top-25",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -138,7 +138,7 @@
                 {
                     "name" : "endeavorImage100vw",
                     "data" : {
-                        "class" : "endeavor-item-top-125",
+                        "class" : "endeavor-item-top-25",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -162,7 +162,7 @@
                 {
                     "name" : "endeavorImage100vw",
                     "data" : {
-                        "class" : "endeavor-item-top-125",
+                        "class" : "endeavor-item-top-25",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -186,7 +186,7 @@
                 {
                     "name" : "endeavorImage100vw",
                     "data" : {
-                        "class" : "endeavor-item-top-125",
+                        "class" : "endeavor-item-top-25",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -210,7 +210,7 @@
                 {
                     "name" : "endeavorImage100vw",
                     "data" : {
-                        "class" : "endeavor-item-top-125",
+                        "class" : "endeavor-item-top-25",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -234,7 +234,7 @@
                 {
                     "name" : "endeavorImage100vw",
                     "data" : {
-                        "class" : "endeavor-item-top-125",
+                        "class" : "endeavor-item-top-25",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -258,7 +258,7 @@
                 {
                     "name" : "endeavorImage100vw",
                     "data" : {
-                        "class" : "endeavor-item-top-125",
+                        "class" : "endeavor-item-top-25",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -282,7 +282,7 @@
                 {
                     "name" : "endeavorImage100vw",
                     "data" : {
-                        "class" : "endeavor-item-top-125",
+                        "class" : "endeavor-item-top-25",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
