@@ -38,20 +38,6 @@
                         "muted": "",
                         "autoplay": "true",
                         "src" : {
-                            "webm" : "images/projects/travel/videos/google-trip.webm",
-                            "mp4" : "images/projects/travel/videos/google-trip.mp4",
-                            "poster" : "images/projects/travel/videos/google-trip.jpg"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorVideoFS",
-                    "data" : {
-                        "class" : "endeavor-item-top-125 endeavor-width-100vw endeavor-pos-rel",
-                        "loop": "",
-                        "muted": "",
-                        "autoplay": "true",
-                        "src" : {
                             "webm" : "images/projects/travel/videos/travel-brand.webm",
                             "mp4" : "images/projects/travel/videos/travel-brand.mp4",
                             "poster" : "images/projects/travel/videos/travel-brand.jpg"
