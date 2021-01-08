@@ -13,15 +13,16 @@
                 "Product Design",
                 "Design Research",
                 "Machine Learning",
-                "Computational Design"
+                "Branding"
             ],
             "description" : {
                 "quote": "Be the trusted place where travelers go for the most useful information to make fast, effortless decisions.",
-                "brief": "Since joining Google, I’ve had the privilege to build products in the service of hundreds of millions. Most notably, I led the unification of the Google Travel products under a single brand and navigation structure. This entailed inspiring and motivating a coalition of executive sponsors who were skeptical of a cohesive offering. I believe the lasting partnerships I formed and the credibility I gained were a function of diligence in my preparedness, on-the-fly adaptability, and the time I committed to over-communicate key toggle points in our strategy."
+                "brief": "Since joining Google, I’ve had the privilege to build products in the service of hundreds of millions. Most notably, I led the unification of the Google Travel products under a single brand and navigation structure.",
+                "challenge": "This entailed inspiring and motivating a coalition of executive sponsors who were skeptical of a cohesive offering. I believe the lasting partnerships I formed and the credibility I gained were a function of diligence in my preparedness, on-the-fly adaptability, and the time I committed to over-communicate key toggle points in our strategy."
             },
             "meta" : {
                 "Client" : "Google Travel",
-                "Year" : 20202,
+                "Year" : 2020,
                 "Role" : "Product Designer",
                 "Discipline" : "Product Designer",
                 "Medium" : "Web Application",
@@ -33,6 +34,34 @@
                 {
                     "name" : "endeavorVideoFS",
                     "data" : {
+                        "class" : "endeavor-item-top-125 endeavor-width-100-prcnt endeavor-border-32-responsive endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/travel/videos/google-travel.webm",
+                            "mp4" : "images/projects/travel/videos/google-travel.mp4",
+                            "poster" : "images/projects/travel/videos/google-travel.jpg"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "class" : "endeavor-item-top-125 endeavor-width-100-prcnt endeavor-border-32-responsive endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/travel/videos/google-trip.webm",
+                            "mp4" : "images/projects/travel/videos/google-trip.mp4",
+                            "poster" : "images/projects/travel/videos/google-trip.jpg"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
                         "class" : "endeavor-item-top-125 endeavor-width-100vw endeavor-pos-rel",
                         "loop": "",
                         "muted": "",
@@ -41,6 +70,20 @@
                             "webm" : "images/projects/travel/videos/travel-brand.webm",
                             "mp4" : "images/projects/travel/videos/travel-brand.mp4",
                             "poster" : "images/projects/travel/videos/travel-brand.jpg"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "class" : "endeavor-item-top-125 endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/travel/videos/travel-brand-2.webm",
+                            "mp4" : "images/projects/travel/videos/travel-brand-2.mp4",
+                            "poster" : "images/projects/travel/videos/travel-brand-2.jpg"
                         }
                     }
                 },
