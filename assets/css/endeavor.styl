@@ -147,6 +147,7 @@ $StickyOffsetMeta = 20vh
 .endeavor-overview 
 	width 100%
 	height 70vh
+	max-height 650px
 	min-height 400px
 	position absolute
 	left 0
@@ -967,6 +968,9 @@ p.center-caption
 	box-sizing border-box
 	margin-top 50px
 	margin-bottom 50px
+
+.endeavor-item-none
+	margin none
 	
 
 .endeavor-item-250
@@ -993,6 +997,9 @@ p.center-caption
 
 .endeavor-item-bottom-125
 	margin-bottom 125px
+
+.endeavor-item-bottom-125-responsive
+	margin-bottom 125px
 	
 
 .endeavor-item-top
@@ -1009,6 +1016,9 @@ p.center-caption
 	
 
 .endeavor-item-top-25
+	margin-top 25px
+
+.endeavor-item-top-25-responsive
 	margin-top 25px
 
 
@@ -1967,9 +1977,6 @@ p.center-caption
 		min-width 250px
 		min-height 250px
 		
-	.endeavor-overview
-		height 60vh
-		
 	.endeavor-width-102vw
 		left calc((102vw - 85vw) / -2) // 102vw width | 85~ Contents relative width
 		
@@ -2106,9 +2113,6 @@ p.center-caption
 		height 250px
 		min-width 250px
 		min-height 250px
-		
-	.endeavor-overview
-		height 60vh
 		
 	.endeavor-width-102vw
 		left calc((102vw - 85vw) / -2) // 102vw width | 85~ Contents relative width
@@ -2408,6 +2412,9 @@ p.center-caption
 		
 	.endeavor-parallax-hybrid
 		margin-bottom 75px
+
+	.endeavor-overview .description 
+		bottom 0
 		
 	.endeavor-overview .description p 
 		font-size 14px
@@ -2482,15 +2489,9 @@ p.center-caption
 
 
 /* ----------- Non-Retina Screens ----------- */
-@media screen and (max-width: 500px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)
-	.hero
-		margin-top -25px
-		
+@media screen and (max-width: 500px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)		
 	.endeavor
 		min-width 104vw
-
-	.endeavor-overview
-		height calc(100vw * 1.5)
 		
 	.endeavor-contents
 		margin-top 70px
@@ -2503,6 +2504,9 @@ p.center-caption
 		
 	.endeavor-description
 		width 100%
+
+	.endeavor-overview .description 
+		bottom 0
 		
 	.endeavor-description p
 		font-size 16px
@@ -2602,19 +2606,19 @@ p.center-caption
 	.endeavor-border-32-responsive
 		border-radius 16px
 
+	.endeavor-item-top-25-responsive
+		margin-top 0
+
+	.endeavor-item-bottom-125-responsive
+		margin-bottom 125px
+
 		
 		
 
 /* ----------- Retina Screens ----------- */
-@media screen and (max-width: 500px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
-	.hero
-		margin-top -25px
-		
+@media screen and (max-width: 500px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)		
 	.endeavor
 		min-width 104vw
-
-	.endeavor-overview
-		height calc(100vw * 1.5)
 		
 	.endeavor-contents
 		margin-top 70px
@@ -2725,5 +2729,11 @@ p.center-caption
 
 	.endeavor-border-32-responsive
 		border-radius 16px
+	
+	.endeavor-item-top-25-responsive
+		margin-top 0
+	
+	.endeavor-item-bottom-125-responsive
+		margin-bottom 125px
 
 
