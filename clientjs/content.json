@@ -587,548 +587,6 @@
             ]
         },
         {
-            "route" :"tedx-project",
-            "name" : "TEDxBeaconStreet",
-            "project_type" : "Project",
-            "preview" :"tedx-preview",
-            "year" : "2017",    
-            "medium": [
-                "Art direction, Experience design"
-            ],
-            "technique": [
-                "Art Direction",
-                "Experience Design",
-                "Design Research",
-                "Computational Design"
-            ],
-            "description" : {
-                "quote": "Volunteering as design director to create a distinct and memorable brand for a Boston TEDx chapter.",
-                "brief": "Growing up, TED talks were an indispensable source of inspiration for me. Through TED talks I was afforded access to a world full of ideas and possibility. One talk in particular by Kevin Slavin titled “How algorithms shape our world” had a profound impact in shaping my own world. To this day I am in awe of his delivery, pacing, and the way he weaved together just the right metaphors to convey his message in a memorable way. I never could have imagined that years later, I’d be collaborating with him directly, at MIT Media Lab.",
-                "challenge": "Volunteering to be the design director for TEDxBeaconStreet was the first time I was able to use my professional skills to give back to a community that profoundly shaped me. TEDxBeaconStreet is funded by a non-profit organization. So I deployed my background in computational design to develop data-driven branding techniques, and multimedia installations at a fraction of the cost."
-            },
-            "meta" : {
-                "Client" : "Ideas in Action",
-                "Year" : 2017,
-                "Role" : "Design Director",
-                "Team" : "Annie Zeng",
-                "Discipline" : "Art direction",
-                "Medium" : "Digital design",
-                "Technologies": "Visual design, computational design",
-                "Duration" : "6 Months"
-            },
-            "image_hero": "images/projects/tedx/hi-res/tedx-hero.jpg",
-            "image_preview": "images/projects/tedx/hi-res/tedx-hero.jpg",
-            "sections" : [
-                {
-                    "name" : "endeavorVideoFS",
-                    "data" : {
-                        "class" : "endeavor-item-none endeavor-width-100vw endeavor-pos-rel",
-                        "loop": "",
-                        "muted": "",
-                        "autoplay": "true",
-                        "src" : {
-                            "webm" : "images/projects/tedx/videos/tedx-1.webm",
-                            "mp4" : "images/projects/tedx/videos/tedx-1.mp4",
-                            "poster" : "images/projects/tedx/videos/tedx-1.jpg"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImage100vw",
-                    "data" : {
-                        "class" : "endeavor-item-top-25-responsive",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "TEDxBeaconStreet",
-                            "src": "images/projects/tedx/standard/tedx-2.jpg",
-                            "src_standard": "images/projects/tedx/standard/tedx-2.jpg",
-                            "src_retina": "images/projects/tedx/retina/tedx-2.jpg",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/tedx/hi-res/tedx-2.jpg",
-                            "src_preview": "images/projects/tedx/hi-res/tedx-2.jpg",
-                            "caption": "TEDxBeaconStreet"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImage100vw",
-                    "data" : {
-                        "class" : "endeavor-item-top-25-responsive",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "TEDxBeaconStreet",
-                            "src": "images/projects/tedx/standard/tedx-3.jpg",
-                            "src_standard": "images/projects/tedx/standard/tedx-3.jpg",
-                            "src_retina": "images/projects/tedx/retina/tedx-3.jpg",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/tedx/hi-res/tedx-3.jpg",
-                            "src_preview": "images/projects/tedx/hi-res/tedx-3.jpg",
-                            "caption": "TEDxBeaconStreet"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImage100vw",
-                    "data" : {
-                        "class" : "endeavor-item-top-25-responsive",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "TEDxBeaconStreet",
-                            "src": "images/projects/tedx/standard/tedx-4.jpg",
-                            "src_standard": "images/projects/tedx/standard/tedx-4.jpg",
-                            "src_retina": "images/projects/tedx/retina/tedx-4.jpg",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/tedx/hi-res/tedx-4.jpg",
-                            "src_preview": "images/projects/tedx/hi-res/tedx-4.jpg",
-                            "caption": "TEDxBeaconStreet"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImage100vw",
-                    "data" : {
-                        "class" : "endeavor-item-top-25-responsive",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "TEDxBeaconStreet",
-                            "src": "images/projects/tedx/standard/tedx-5.jpg",
-                            "src_standard": "images/projects/tedx/standard/tedx-5.jpg",
-                            "src_retina": "images/projects/tedx/retina/tedx-5.jpg",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/tedx/hi-res/tedx-5.jpg",
-                            "src_preview": "images/projects/tedx/hi-res/tedx-5.jpg",
-                            "caption": "TEDxBeaconStreet"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImage100vw",
-                    "data" : {
-                        "class" : "endeavor-item-top-25-responsive",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "TEDxBeaconStreet",
-                            "src": "images/projects/tedx/standard/tedx-6.jpg",
-                            "src_standard": "images/projects/tedx/standard/tedx-6.jpg",
-                            "src_retina": "images/projects/tedx/retina/tedx-6.jpg",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/tedx/hi-res/tedx-6.jpg",
-                            "src_preview": "images/projects/tedx/hi-res/tedx-6.jpg",
-                            "caption": "TEDxBeaconStreet"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImage100vw",
-                    "data" : {
-                        "class" : "endeavor-item-top-25-responsive",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "TEDxBeaconStreet",
-                            "src": "images/projects/tedx/standard/tedx-7.jpg",
-                            "src_standard": "images/projects/tedx/standard/tedx-7.jpg",
-                            "src_retina": "images/projects/tedx/retina/tedx-7.jpg",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/tedx/hi-res/tedx-7.jpg",
-                            "src_preview": "images/projects/tedx/hi-res/tedx-7.jpg",
-                            "caption": "TEDxBeaconStreet"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorVideoFS",
-                    "data" : {
-                        "class" : "endeavor-item-none endeavor-width-100vw endeavor-pos-rel",
-                        "loop": "",
-                        "muted": "",
-                        "autoplay": "true",
-                        "src" : {
-                            "webm" : "images/projects/tedx/videos/tedx-8.webm",
-                            "mp4" : "images/projects/tedx/videos/tedx-8.mp4",
-                            "poster" : "images/projects/tedx/videos/tedx-8.png"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImage100vw",
-                    "data" : {
-                        "class" : "endeavor-item-top-25-responsive",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "TEDxBeaconStreet",
-                            "src": "images/projects/tedx/standard/tedx-9.jpg",
-                            "src_standard": "images/projects/tedx/standard/tedx-9.jpg",
-                            "src_retina": "images/projects/tedx/retina/tedx-9.jpg",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/tedx/hi-res/tedx-9.jpg",
-                            "src_preview": "images/projects/tedx/hi-res/tedx-9.jpg",
-                            "caption": "TEDxBeaconStreet"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImage100vw",
-                    "data" : {
-                        "class" : "endeavor-item-top-25-responsive",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "TEDxBeaconStreet",
-                            "src": "images/projects/tedx/standard/tedx-10.jpg",
-                            "src_standard": "images/projects/tedx/standard/tedx-10.jpg",
-                            "src_retina": "images/projects/tedx/retina/tedx-10.jpg",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/tedx/hi-res/tedx-10.jpg",
-                            "src_preview": "images/projects/tedx/hi-res/tedx-10.jpg",
-                            "caption": "TEDxBeaconStreet"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImage100vw",
-                    "data" : {
-                        "class" : "endeavor-item-top-25-responsive",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "TEDxBeaconStreet",
-                            "src": "images/projects/tedx/standard/tedx-11.jpg",
-                            "src_standard": "images/projects/tedx/standard/tedx-11.jpg",
-                            "src_retina": "images/projects/tedx/retina/tedx-11.jpg",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/tedx/hi-res/tedx-11.jpg",
-                            "src_preview": "images/projects/tedx/hi-res/tedx-11.jpg",
-                            "caption": "TEDxBeaconStreet"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImageFS",
-                    "data" : {
-                        "class" : "endeavor-item-top-125 endeavor-width-100-prcnt endeavor-border-32-responsive endeavor-pos-rel",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "TEDxBeaconStreet",
-                            "src": "images/projects/tedx/standard/tedx-12.jpg",
-                            "src_standard": "images/projects/tedx/standard/tedx-12.jpg",
-                            "src_retina": "images/projects/tedx/retina/tedx-12.jpg",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/tedx/hi-res/tedx-12.jpg",
-                            "src_preview": "images/projects/tedx/hi-res/tedx-12.jpg",
-                            "caption": "TEDxBeaconStreet"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImage100vw",
-                    "data" : {
-                        "class" : "endeavor-item-top-125",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "TEDxBeaconStreet",
-                            "src": "images/projects/tedx/standard/tedx-13.jpg",
-                            "src_standard": "images/projects/tedx/standard/tedx-13.jpg",
-                            "src_retina": "images/projects/tedx/retina/tedx-13.jpg",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/tedx/hi-res/tedx-13.jpg",
-                            "src_preview": "images/projects/tedx/hi-res/tedx-13.jpg",
-                            "caption": "TEDxBeaconStreet"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorPad",
-                    "data" : {
-                        "class" : "endeavor-height-200px-responsive endeavor-item-no-margin endeavor-height-10vw"
-                    }
-                }
-            ]
-        },
-        {
-            "route" :"brainvr-project",
-            "name" : "BrainVR",
-            "project_type" : "Project",
-            "preview" :"brainvr-preview",
-            "year" : "2016",    
-            "medium": [
-                "Virtual Reality, Neuroscience, Brain Mapping"
-            ],
-            "technique": [
-                "Experience Design",
-                "Design Research",
-                "Machine Learning",
-                "Virtual Reality"
-            ],
-            "description" : {
-                "quote": "How does a brain make a mind? Experience the wonder in virtual reality at Tribeca Film Festival.",
-                "brief": "Thanks to cutting edge artificial intelligence, nanoscale resolution imaging, seriously powerful computers, high resolution portable displays and unprecedented international collaboration, Eyewire and the Fluid Interfaces Group at MIT Media Lab brought a never-before-seen interactive immersive neuroscience visualization to Tribeca Film Festival on April 18, 2016. In Virtual Reality, visitors were able to teleport into a foreign yet familiar world to explore a new pathway of narrative - the electrophysical connections among neurons. They ventured into a freshly discovered circuit of cells responsible in part for the brain’s ability to perceive motion - the very ebb and flow of story itself.",
-                "challenge": "Working on the People + AI Guidebook has been a life changing endeavor for me. Fiercely advocating for even stronger human sensibility and values within machine intelligence has stretched and deepened my own design philosophy. Working alongside passionate teammates filled me with bottomless energy and I loved the process of distilling opaque academic theory into concrete and actionable recommendations."
-            },
-            "meta" : {
-                "Client" : "Eyewire + MIT Media Lab",
-                "Year" : 2016,
-                "Role" : "Experience Designer",
-                "Team" : "Amy Sterling, Scott Greenwald, Daniel Citron",
-                "Discipline" : "Experience Designer",
-                "Medium" : "Virtual Reality",
-                "Technologies": "Machine Learning, VR, Neuroscience",
-                "Duration" : "6 Months"
-            },
-            "image_hero": "images/projects/brainvr/hi-res/brainvr-hero.jpg",
-            "image_preview": "images/projects/brainvr/hi-res/brainvr-hero.jpg",
-            "sections" : [
-                {
-                    "name" : "endeavorImage100vw",
-                    "data" : {
-                        "class" : "endeavor-item-top-25-responsive",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "BrainVR",
-                            "src": "images/projects/brainvr/standard/brainvr-1.gif",
-                            "src_standard": "images/projects/brainvr/standard/brainvr-1.gif",
-                            "src_retina": "images/projects/brainvr/retina/brainvr-1.gif",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/brainvr/hi-res/brainvr-1.gif",
-                            "src_preview": "images/projects/brainvr/hi-res/brainvr-1.gif",
-                            "caption": "BrainVR"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImage100vw",
-                    "data" : {
-                        "class" : "endeavor-item-top-25-responsive",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "BrainVR",
-                            "src": "images/projects/brainvr/standard/brainvr-2.gif",
-                            "src_standard": "images/projects/brainvr/standard/brainvr-2.gif",
-                            "src_retina": "images/projects/brainvr/retina/brainvr-2.gif",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/brainvr/hi-res/brainvr-2.gif",
-                            "src_preview": "images/projects/brainvr/hi-res/brainvr-2.gif",
-                            "caption": "BrainVR"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImageFS",
-                    "data" : {
-                        "class" : "endeavor-item-top-125 endeavor-width-100-prcnt endeavor-border-32-responsive endeavor-pos-rel",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "BrainVR",
-                            "src": "images/projects/brainvr/standard/brainvr-3.gif",
-                            "src_standard": "images/projects/brainvr/standard/brainvr-3.gif",
-                            "src_retina": "images/projects/brainvr/retina/brainvr-3.gif",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/brainvr/hi-res/brainvr-3.gif",
-                            "src_preview": "images/projects/brainvr/hi-res/brainvr-3.gif",
-                            "caption": "BrainVR"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImage100vw",
-                    "data" : {
-                        "class" : "endeavor-item-top-125",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "BrainVR",
-                            "src": "images/projects/brainvr/standard/brainvr-4.gif",
-                            "src_standard": "images/projects/brainvr/standard/brainvr-4.gif",
-                            "src_retina": "images/projects/brainvr/retina/brainvr-4.gif",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/brainvr/hi-res/brainvr-4.gif",
-                            "src_preview": "images/projects/brainvr/hi-res/brainvr-4.gif",
-                            "caption": "BrainVR"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImage100vw",
-                    "data" : {
-                        "class" : "endeavor-item-top-25-responsive",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "BrainVR",
-                            "src": "images/projects/brainvr/standard/brainvr-5.gif",
-                            "src_standard": "images/projects/brainvr/standard/brainvr-5.gif",
-                            "src_retina": "images/projects/brainvr/retina/brainvr-5.gif",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/brainvr/hi-res/brainvr-5.gif",
-                            "src_preview": "images/projects/brainvr/hi-res/brainvr-5.gif",
-                            "caption": "BrainVR"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImageFS",
-                    "data" : {
-                        "class" : "endeavor-item-top-125 endeavor-width-100-prcnt endeavor-border-32-responsive endeavor-pos-rel",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "BrainVR",
-                            "src": "images/projects/brainvr/standard/brainvr-6.jpg",
-                            "src_standard": "images/projects/brainvr/standard/brainvr-6.jpg",
-                            "src_retina": "images/projects/brainvr/retina/brainvr-6.jpg",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/brainvr/hi-res/brainvr-6.jpg",
-                            "src_preview": "images/projects/brainvr/hi-res/brainvr-6.jpg",
-                            "caption": "BrainVR"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImage100vw",
-                    "data" : {
-                        "class" : "endeavor-item-top-125",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "BrainVR",
-                            "src": "images/projects/brainvr/standard/brainvr-7.jpg",
-                            "src_standard": "images/projects/brainvr/standard/brainvr-7.jpg",
-                            "src_retina": "images/projects/brainvr/retina/brainvr-7.jpg",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/brainvr/hi-res/brainvr-7.jpg",
-                            "src_preview": "images/projects/brainvr/hi-res/brainvr-7.jpg",
-                            "caption": "BrainVR"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorPad",
-                    "data" : {
-                        "class" : "endeavor-height-200px-responsive endeavor-item-no-margin endeavor-height-10vw"
-                    }
-                }
-            ]
-        },
-        {
             "route" :"museum-project",
             "name"  : "Museum",
             "project_type"  : "Case Study",
@@ -3055,6 +2513,548 @@
                         "id" : "museum-live",
                         "url" : "http://museum.eyewire.org/",
                         "textColor" : "#1a1a1a"
+                    }
+                },
+                {
+                    "name" : "endeavorPad",
+                    "data" : {
+                        "class" : "endeavor-height-200px-responsive endeavor-item-no-margin endeavor-height-10vw"
+                    }
+                }
+            ]
+        },
+        {
+            "route" :"tedx-project",
+            "name" : "TEDxBeaconStreet",
+            "project_type" : "Project",
+            "preview" :"tedx-preview",
+            "year" : "2017",    
+            "medium": [
+                "Art direction, Experience design"
+            ],
+            "technique": [
+                "Art Direction",
+                "Experience Design",
+                "Design Research",
+                "Computational Design"
+            ],
+            "description" : {
+                "quote": "Volunteering as design director to create a distinct and memorable brand for a Boston TEDx chapter.",
+                "brief": "Growing up, TED talks were an indispensable source of inspiration for me. Through TED talks I was afforded access to a world full of ideas and possibility. One talk in particular by Kevin Slavin titled “How algorithms shape our world” had a profound impact in shaping my own world. To this day I am in awe of his delivery, pacing, and the way he weaved together just the right metaphors to convey his message in a memorable way. I never could have imagined that years later, I’d be collaborating with him directly, at MIT Media Lab.",
+                "challenge": "Volunteering to be the design director for TEDxBeaconStreet was the first time I was able to use my professional skills to give back to a community that profoundly shaped me. TEDxBeaconStreet is funded by a non-profit organization. So I deployed my background in computational design to develop data-driven branding techniques, and multimedia installations at a fraction of the cost."
+            },
+            "meta" : {
+                "Client" : "Ideas in Action",
+                "Year" : 2017,
+                "Role" : "Design Director",
+                "Team" : "Annie Zeng",
+                "Discipline" : "Art direction",
+                "Medium" : "Digital design",
+                "Technologies": "Visual design, computational design",
+                "Duration" : "6 Months"
+            },
+            "image_hero": "images/projects/tedx/hi-res/tedx-hero.jpg",
+            "image_preview": "images/projects/tedx/hi-res/tedx-hero.jpg",
+            "sections" : [
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "class" : "endeavor-item-none endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/tedx/videos/tedx-1.webm",
+                            "mp4" : "images/projects/tedx/videos/tedx-1.mp4",
+                            "poster" : "images/projects/tedx/videos/tedx-1.jpg"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-top-25-responsive",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "TEDxBeaconStreet",
+                            "src": "images/projects/tedx/standard/tedx-2.jpg",
+                            "src_standard": "images/projects/tedx/standard/tedx-2.jpg",
+                            "src_retina": "images/projects/tedx/retina/tedx-2.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/tedx/hi-res/tedx-2.jpg",
+                            "src_preview": "images/projects/tedx/hi-res/tedx-2.jpg",
+                            "caption": "TEDxBeaconStreet"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-top-25-responsive",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "TEDxBeaconStreet",
+                            "src": "images/projects/tedx/standard/tedx-3.jpg",
+                            "src_standard": "images/projects/tedx/standard/tedx-3.jpg",
+                            "src_retina": "images/projects/tedx/retina/tedx-3.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/tedx/hi-res/tedx-3.jpg",
+                            "src_preview": "images/projects/tedx/hi-res/tedx-3.jpg",
+                            "caption": "TEDxBeaconStreet"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-top-25-responsive",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "TEDxBeaconStreet",
+                            "src": "images/projects/tedx/standard/tedx-4.jpg",
+                            "src_standard": "images/projects/tedx/standard/tedx-4.jpg",
+                            "src_retina": "images/projects/tedx/retina/tedx-4.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/tedx/hi-res/tedx-4.jpg",
+                            "src_preview": "images/projects/tedx/hi-res/tedx-4.jpg",
+                            "caption": "TEDxBeaconStreet"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-top-25-responsive",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "TEDxBeaconStreet",
+                            "src": "images/projects/tedx/standard/tedx-5.jpg",
+                            "src_standard": "images/projects/tedx/standard/tedx-5.jpg",
+                            "src_retina": "images/projects/tedx/retina/tedx-5.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/tedx/hi-res/tedx-5.jpg",
+                            "src_preview": "images/projects/tedx/hi-res/tedx-5.jpg",
+                            "caption": "TEDxBeaconStreet"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-top-25-responsive",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "TEDxBeaconStreet",
+                            "src": "images/projects/tedx/standard/tedx-6.jpg",
+                            "src_standard": "images/projects/tedx/standard/tedx-6.jpg",
+                            "src_retina": "images/projects/tedx/retina/tedx-6.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/tedx/hi-res/tedx-6.jpg",
+                            "src_preview": "images/projects/tedx/hi-res/tedx-6.jpg",
+                            "caption": "TEDxBeaconStreet"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-top-25-responsive",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "TEDxBeaconStreet",
+                            "src": "images/projects/tedx/standard/tedx-7.jpg",
+                            "src_standard": "images/projects/tedx/standard/tedx-7.jpg",
+                            "src_retina": "images/projects/tedx/retina/tedx-7.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/tedx/hi-res/tedx-7.jpg",
+                            "src_preview": "images/projects/tedx/hi-res/tedx-7.jpg",
+                            "caption": "TEDxBeaconStreet"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "class" : "endeavor-item-none endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/tedx/videos/tedx-8.webm",
+                            "mp4" : "images/projects/tedx/videos/tedx-8.mp4",
+                            "poster" : "images/projects/tedx/videos/tedx-8.png"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-top-25-responsive",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "TEDxBeaconStreet",
+                            "src": "images/projects/tedx/standard/tedx-9.jpg",
+                            "src_standard": "images/projects/tedx/standard/tedx-9.jpg",
+                            "src_retina": "images/projects/tedx/retina/tedx-9.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/tedx/hi-res/tedx-9.jpg",
+                            "src_preview": "images/projects/tedx/hi-res/tedx-9.jpg",
+                            "caption": "TEDxBeaconStreet"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-top-25-responsive",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "TEDxBeaconStreet",
+                            "src": "images/projects/tedx/standard/tedx-10.jpg",
+                            "src_standard": "images/projects/tedx/standard/tedx-10.jpg",
+                            "src_retina": "images/projects/tedx/retina/tedx-10.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/tedx/hi-res/tedx-10.jpg",
+                            "src_preview": "images/projects/tedx/hi-res/tedx-10.jpg",
+                            "caption": "TEDxBeaconStreet"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-top-25-responsive",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "TEDxBeaconStreet",
+                            "src": "images/projects/tedx/standard/tedx-11.jpg",
+                            "src_standard": "images/projects/tedx/standard/tedx-11.jpg",
+                            "src_retina": "images/projects/tedx/retina/tedx-11.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/tedx/hi-res/tedx-11.jpg",
+                            "src_preview": "images/projects/tedx/hi-res/tedx-11.jpg",
+                            "caption": "TEDxBeaconStreet"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "class" : "endeavor-item-top-125 endeavor-width-100-prcnt endeavor-border-32-responsive endeavor-pos-rel",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "TEDxBeaconStreet",
+                            "src": "images/projects/tedx/standard/tedx-12.jpg",
+                            "src_standard": "images/projects/tedx/standard/tedx-12.jpg",
+                            "src_retina": "images/projects/tedx/retina/tedx-12.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/tedx/hi-res/tedx-12.jpg",
+                            "src_preview": "images/projects/tedx/hi-res/tedx-12.jpg",
+                            "caption": "TEDxBeaconStreet"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-top-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "TEDxBeaconStreet",
+                            "src": "images/projects/tedx/standard/tedx-13.jpg",
+                            "src_standard": "images/projects/tedx/standard/tedx-13.jpg",
+                            "src_retina": "images/projects/tedx/retina/tedx-13.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/tedx/hi-res/tedx-13.jpg",
+                            "src_preview": "images/projects/tedx/hi-res/tedx-13.jpg",
+                            "caption": "TEDxBeaconStreet"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorPad",
+                    "data" : {
+                        "class" : "endeavor-height-200px-responsive endeavor-item-no-margin endeavor-height-10vw"
+                    }
+                }
+            ]
+        },
+        {
+            "route" :"brainvr-project",
+            "name" : "BrainVR",
+            "project_type" : "Project",
+            "preview" :"brainvr-preview",
+            "year" : "2016",    
+            "medium": [
+                "Virtual Reality, Neuroscience, Brain Mapping"
+            ],
+            "technique": [
+                "Experience Design",
+                "Design Research",
+                "Machine Learning",
+                "Virtual Reality"
+            ],
+            "description" : {
+                "quote": "How does a brain make a mind? Experience the wonder in virtual reality at Tribeca Film Festival.",
+                "brief": "Thanks to cutting edge artificial intelligence, nanoscale resolution imaging, seriously powerful computers, high resolution portable displays and unprecedented international collaboration, Eyewire and the Fluid Interfaces Group at MIT Media Lab brought a never-before-seen interactive immersive neuroscience visualization to Tribeca Film Festival on April 18, 2016. In Virtual Reality, visitors were able to teleport into a foreign yet familiar world to explore a new pathway of narrative - the electrophysical connections among neurons. They ventured into a freshly discovered circuit of cells responsible in part for the brain’s ability to perceive motion - the very ebb and flow of story itself.",
+                "challenge": "Working on the People + AI Guidebook has been a life changing endeavor for me. Fiercely advocating for even stronger human sensibility and values within machine intelligence has stretched and deepened my own design philosophy. Working alongside passionate teammates filled me with bottomless energy and I loved the process of distilling opaque academic theory into concrete and actionable recommendations."
+            },
+            "meta" : {
+                "Client" : "Eyewire + MIT Media Lab",
+                "Year" : 2016,
+                "Role" : "Experience Designer",
+                "Team" : "Amy Sterling, Scott Greenwald, Daniel Citron",
+                "Discipline" : "Experience Designer",
+                "Medium" : "Virtual Reality",
+                "Technologies": "Machine Learning, VR, Neuroscience",
+                "Duration" : "6 Months"
+            },
+            "image_hero": "images/projects/brainvr/hi-res/brainvr-hero.jpg",
+            "image_preview": "images/projects/brainvr/hi-res/brainvr-hero.jpg",
+            "sections" : [
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-top-25-responsive",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "BrainVR",
+                            "src": "images/projects/brainvr/standard/brainvr-1.gif",
+                            "src_standard": "images/projects/brainvr/standard/brainvr-1.gif",
+                            "src_retina": "images/projects/brainvr/retina/brainvr-1.gif",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/brainvr/hi-res/brainvr-1.gif",
+                            "src_preview": "images/projects/brainvr/hi-res/brainvr-1.gif",
+                            "caption": "BrainVR"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-top-25-responsive",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "BrainVR",
+                            "src": "images/projects/brainvr/standard/brainvr-2.gif",
+                            "src_standard": "images/projects/brainvr/standard/brainvr-2.gif",
+                            "src_retina": "images/projects/brainvr/retina/brainvr-2.gif",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/brainvr/hi-res/brainvr-2.gif",
+                            "src_preview": "images/projects/brainvr/hi-res/brainvr-2.gif",
+                            "caption": "BrainVR"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "class" : "endeavor-item-top-125 endeavor-width-100-prcnt endeavor-border-32-responsive endeavor-pos-rel",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "BrainVR",
+                            "src": "images/projects/brainvr/standard/brainvr-3.gif",
+                            "src_standard": "images/projects/brainvr/standard/brainvr-3.gif",
+                            "src_retina": "images/projects/brainvr/retina/brainvr-3.gif",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/brainvr/hi-res/brainvr-3.gif",
+                            "src_preview": "images/projects/brainvr/hi-res/brainvr-3.gif",
+                            "caption": "BrainVR"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-top-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "BrainVR",
+                            "src": "images/projects/brainvr/standard/brainvr-4.gif",
+                            "src_standard": "images/projects/brainvr/standard/brainvr-4.gif",
+                            "src_retina": "images/projects/brainvr/retina/brainvr-4.gif",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/brainvr/hi-res/brainvr-4.gif",
+                            "src_preview": "images/projects/brainvr/hi-res/brainvr-4.gif",
+                            "caption": "BrainVR"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-top-25-responsive",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "BrainVR",
+                            "src": "images/projects/brainvr/standard/brainvr-5.gif",
+                            "src_standard": "images/projects/brainvr/standard/brainvr-5.gif",
+                            "src_retina": "images/projects/brainvr/retina/brainvr-5.gif",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/brainvr/hi-res/brainvr-5.gif",
+                            "src_preview": "images/projects/brainvr/hi-res/brainvr-5.gif",
+                            "caption": "BrainVR"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "class" : "endeavor-item-top-125 endeavor-width-100-prcnt endeavor-border-32-responsive endeavor-pos-rel",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "BrainVR",
+                            "src": "images/projects/brainvr/standard/brainvr-6.jpg",
+                            "src_standard": "images/projects/brainvr/standard/brainvr-6.jpg",
+                            "src_retina": "images/projects/brainvr/retina/brainvr-6.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/brainvr/hi-res/brainvr-6.jpg",
+                            "src_preview": "images/projects/brainvr/hi-res/brainvr-6.jpg",
+                            "caption": "BrainVR"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-top-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "BrainVR",
+                            "src": "images/projects/brainvr/standard/brainvr-7.jpg",
+                            "src_standard": "images/projects/brainvr/standard/brainvr-7.jpg",
+                            "src_retina": "images/projects/brainvr/retina/brainvr-7.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/brainvr/hi-res/brainvr-7.jpg",
+                            "src_preview": "images/projects/brainvr/hi-res/brainvr-7.jpg",
+                            "caption": "BrainVR"
+                        }
                     }
                 },
                 {
