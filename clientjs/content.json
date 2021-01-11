@@ -3577,6 +3577,474 @@
             ]
         },
         {
+            "route" :"msty-project",
+            "name"  : "MSTY VR",
+            "project_type"  : "Project",
+            "year"  : "2014",
+            "preview" :"msty-preview",
+            "medium": [
+                "Virtual Reality",
+                "Unity",
+                "Immersive Experience"
+            ],
+            "technique": [
+                "VR",
+                "3D Animation",
+                "Programing"
+            ],
+            "description" : {
+                "quote": "Bringing the future of neuroscience exploration and education to virtual realms using the Oculus Rift.",
+                "brief": "In October of 2016, president Barrack Obama called upon a coalition of pioneering researchers, designers, technologists, and diplomats to gather at Carnegie Mellon University to demonstrate the very leading frontiers of technology. We were invited to this White House Frontiers conference to present our latest virtual reality experience: MSTY. The three pound organ sitting behind y our eyes is nothing short of extraordinary. Symphonic activity among billions of neurons gives rise to thoughts, feelings, and ultimately, the perspective and personality that turn a brain into a mind. Thanks to cutting edge AI, nanoscale resolution imaging, and the help of a quarter million gamers from around the world, crowdsources neuroscience sets the pace for a new wave of discovery. The creators of Eyewire reveal the first glimpse of Neo a cortical game coming 2017 that will invite gamers to solve the puzzles of perception.",
+                "challenge": "MSTY VR is our most recent virtual reality experience. It features a knotty entanglement of neuron reconstructions from cortex—the outer most layer of brain tissue responsible for perception. MSTY, so named for the particular flavor of AI involved in the reconstruction process, was intended to be a mostly passive safari-type experience. The user would be accompanied by a friendly, derpy, but exceedingly capable AI companion—MSTY. Inspired by Google's early ImageNet dataset and success in training neural networks to recognize cats in Youtube videos, we conceived MSTY as a hovering cat–like robot with paw–like arms. The experience lasted approximately 5 minutes, during which MSTY intelligently and naturally navigates toward areas of interest acting as a sort of subliminal tour guide."
+            },
+            "meta" : {
+                "Client" : "Whitehouse Frontiers",
+                "Year" : 2016,
+                "Role" : "Designer/Developer/Animator",
+                "Team" : "Jordi Valladaras",
+                "Discipline" : "Game Design, Interaction Design, Character Animation, Game Development Neuroscience",
+                "Medium" : "Virtual Reality",
+                "Technologies" : "Unity, HTC Vive, Oculus Rift",
+                "Duration" : "One Month"
+            },
+            "image_hero": "images/projects/msty/hi-res/msty-hero-2.jpg",
+            "image_preview": "images/projects/msty/hi-res/msty-preview.jpg",
+            "sections" : [
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "MSTY Oculus",
+                            "src": "images/projects/msty/standard/msty-oculus.jpg",
+                            "src_standard": "images/projects/msty/standard/msty-oculus.jpg",
+                            "src_retina": "images/projects/msty/retina/msty-oculus.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/msty/hi-res/msty-oculus.jpg",
+                            "src_preview": "images/projects/msty/hi-res/msty-oculus.jpg",
+                            "caption": "MSTY Oculus"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "MSTY Pow",
+                            "src": "images/projects/msty/standard/msty-pow.jpg",
+                            "src_standard": "images/projects/msty/standard/msty-pow.jpg",
+                            "src_retina": "images/projects/msty/retina/msty-pow.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/msty/hi-res/msty-pow.jpg",
+                            "src_preview": "images/projects/msty/hi-res/msty-pow.jpg",
+                            "caption": "MSTY Pow"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/msty/videos/msty.webm",
+                            "mp4" : "images/projects/msty/videos/msty.mp4",
+                            "poster" : "images/projects/msty/videos/msty.jpg"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "MSTY Intro",
+                            "src": "images/projects/msty/standard/msty-intro-1.jpg",
+                            "src_standard": "images/projects/msty/standard/msty-intro-1.jpg",
+                            "src_retina": "images/projects/msty/retina/msty-intro-1.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/msty/hi-res/msty-intro-1.jpg",
+                            "src_preview": "images/projects/msty/hi-res/msty-intro-1.jpg",
+                            "caption": "MSTY Intro"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "class" : "endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/msty/videos/msty_idle.webm",
+                            "mp4" : "images/projects/msty/videos/msty_idle.mp4",
+                            "poster" : "images/projects/msty/videos/msty_idle.jpg"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "MSTY Intro",
+                            "src": "images/projects/msty/standard/msty-intro-2.jpg",
+                            "src_standard": "images/projects/msty/standard/msty-intro-2.jpg",
+                            "src_retina": "images/projects/msty/retina/msty-intro-2.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/msty/hi-res/msty-intro-2.jpg",
+                            "src_preview": "images/projects/msty/hi-res/msty-intro-2.jpg",
+                            "caption": "MSTY Intro"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "MSTY Intro",
+                            "src": "images/projects/msty/standard/msty-intro-3.jpg",
+                            "src_standard": "images/projects/msty/standard/msty-intro-3.jpg",
+                            "src_retina": "images/projects/msty/retina/msty-intro-3.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/msty/hi-res/msty-intro-3.jpg",
+                            "src_preview": "images/projects/msty/hi-res/msty-intro-3.jpg",
+                            "caption": "MSTY Intro"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "MSTY Expressions",
+                            "src": "images/projects/msty/standard/msty-many.jpg",
+                            "src_standard": "images/projects/msty/standard/msty-many.jpg",
+                            "src_retina": "images/projects/msty/retina/msty-many.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/msty/hi-res/msty-many.jpg",
+                            "src_preview": "images/projects/msty/hi-res/msty-many.jpg",
+                            "caption": "MSTY Expressions"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "class" : "endeavor-item-bottom-125 endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/msty/videos/msty_awesome.webm",
+                            "mp4" : "images/projects/msty/videos/msty_awesome.mp4",
+                            "poster" : "images/projects/msty/videos/msty_awesome.jpg"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "MSTY Lineup",
+                            "src": "images/projects/msty/standard/msty-lineup.jpg",
+                            "src_standard": "images/projects/msty/standard/msty-lineup.jpg",
+                            "src_retina": "images/projects/msty/retina/msty-lineup.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/msty/hi-res/msty-lineup.jpg",
+                            "src_preview": "images/projects/msty/hi-res/msty-lineup.jpg",
+                            "caption": "MSTY Lineup"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "class" : "endeavor-item-125 endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/msty/videos/msty_fly.webm",
+                            "mp4" : "images/projects/msty/videos/msty_fly.mp4",
+                            "poster" : "images/projects/msty/videos/msty_fly.jpg"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "class" : "endeavor-item-top-125",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "MSTY State Machine",
+                            "src": "images/projects/msty/standard/msty-fsm.jpg",
+                            "src_standard": "images/projects/msty/standard/msty-fsm.jpg",
+                            "src_retina": "images/projects/msty/retina/msty-fsm.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/msty/hi-res/msty-fsm.jpg",
+                            "src_preview": "images/projects/msty/hi-res/msty-fsm.jpg",
+                            "caption": "MSTY State Machine"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorCaptionFS",
+                    "data" : {
+                        "class" : "endeavor-item endeavor-item-bottom-125",
+                        "caption" : "(above) MSTY's brain, or a finite state machine created to naturally transition between all of MSTY's facial expressions and movement states. The particular state machine shown above included states for MSTY's location and interaction patterns."
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "MSTY Navigation System",
+                            "src": "images/projects/msty/standard/msty-navigation.jpg",
+                            "src_standard": "images/projects/msty/standard/msty-navigation.jpg",
+                            "src_retina": "images/projects/msty/retina/msty-navigation.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/msty/hi-res/msty-navigation.jpg",
+                            "src_preview": "images/projects/msty/hi-res/msty-navigation.jpg",
+                            "caption": "MSTY Navigation System"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "MSTY Neuroscience",
+                            "src": "images/projects/msty/standard/msty-meshes.jpg",
+                            "src_standard": "images/projects/msty/standard/msty-meshes.jpg",
+                            "src_retina": "images/projects/msty/retina/msty-meshes.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/msty/hi-res/msty-meshes.jpg",
+                            "src_preview": "images/projects/msty/hi-res/msty-meshes.jpg",
+                            "caption": "MSTY Neuroscience"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "MSTY Spatial Design",
+                            "src": "images/projects/msty/standard/msty-space.jpg",
+                            "src_standard": "images/projects/msty/standard/msty-space.jpg",
+                            "src_retina": "images/projects/msty/retina/msty-space.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/msty/hi-res/msty-space.jpg",
+                            "src_preview": "images/projects/msty/hi-res/msty-space.jpg",
+                            "caption": "MSTY Spatial Design"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "MSTY Dynamic Depth of Field",
+                            "src": "images/projects/msty/standard/msty-dynamic-dof-1.jpg",
+                            "src_standard": "images/projects/msty/standard/msty-dynamic-dof-1.jpg",
+                            "src_retina": "images/projects/msty/retina/msty-dynamic-dof-1.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/msty/hi-res/msty-dynamic-dof-1.jpg",
+                            "src_preview": "images/projects/msty/hi-res/msty-dynamic-dof-1.jpg",
+                            "caption": "MSTY Dynamic Depth of Field"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImageFS",
+                    "data" : {
+                        "class" : "endeavor-item-top-125 endeavor-item-bottom-50",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "MSTY Dynamic Depth of Field",
+                            "src": "images/projects/msty/standard/msty-dynamic-dof-2.jpg",
+                            "src_standard": "images/projects/msty/standard/msty-dynamic-dof-2.jpg",
+                            "src_retina": "images/projects/msty/retina/msty-dynamic-dof-2.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/msty/hi-res/msty-dynamic-dof-2.jpg",
+                            "src_preview": "images/projects/msty/hi-res/msty-dynamic-dof-2.jpg",
+                            "caption": "MSTY Dynamic Depth of Field"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorParagraphPoints",
+                    "data" : {
+                        "class" : "endeavor-item-bottom",
+                        "bgColor" : "",
+                        "header" : "",
+                        "contents": [
+                            {
+                                "header": "Dynamic Depth of Field",
+                                "description" : "Visualizing dynamic depth of field. A depth–mapped image where darker shades of gray represent sharper focus."
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name" : "endeavorVideoFS",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin endeavor-width-100vw endeavor-pos-rel",
+                        "loop": "",
+                        "muted": "",
+                        "autoplay": "true",
+                        "src" : {
+                            "webm" : "images/projects/msty/videos/msty_dof.webm",
+                            "mp4" : "images/projects/msty/videos/msty_dof.mp4",
+                            "poster" : "images/projects/msty/videos/msty_dof.jpg"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorImage100vw",
+                    "data" : {
+                        "class" : "endeavor-item-no-margin",
+                        "placeholder" : {
+                            "name" : "",
+                            "src" : "",
+                            "src" : "",
+                            "src_mobile" : "",
+                            "src_preview" : "",
+                            "caption" : ""
+                        },
+                        "image" : {
+                            "name": "MSTY Exhibition",
+                            "src": "images/projects/msty/standard/msty-exhibition.jpg",
+                            "src_standard": "images/projects/msty/standard/msty-exhibition.jpg",
+                            "src_retina": "images/projects/msty/retina/msty-exhibition.jpg",
+                            "src_low": "images/empty.gif",
+                            "src_mobile": "images/projects/msty/hi-res/msty-exhibition.jpg",
+                            "src_preview": "images/projects/msty/hi-res/msty-exhibition.jpg",
+                            "caption": "MSTY Exhibition"
+                        }
+                    }
+                },
+                {
+                    "name" : "endeavorPad",
+                    "data" : {
+                        "class" : "endeavor-height-200px-responsive endeavor-item-no-margin endeavor-height-10vw"
+                    }
+                }
+            ]
+        },
+        {
             "route" :"explore-project",
             "name"  : "Eyewire Explore",
             "project_type"  : "Project",
@@ -4489,474 +4957,6 @@
                                 "description" : "The explore page was sort of an experiment in browser-based narrative. We asked ourselves, what is the fastest, most lightweight way to deliver a message? In response, we explored a variety of story–telling techniques including generative design, infinite looping gifs and embeded video."
                             }
                         ]
-                    }
-                },
-                {
-                    "name" : "endeavorPad",
-                    "data" : {
-                        "class" : "endeavor-height-200px-responsive endeavor-item-no-margin endeavor-height-10vw"
-                    }
-                }
-            ]
-        },
-        {
-            "route" :"msty-project",
-            "name"  : "MSTY VR",
-            "project_type"  : "Project",
-            "year"  : "2014",
-            "preview" :"msty-preview",
-            "medium": [
-                "Virtual Reality",
-                "Unity",
-                "Immersive Experience"
-            ],
-            "technique": [
-                "VR",
-                "3D Animation",
-                "Programing"
-            ],
-            "description" : {
-                "quote": "Bringing the future of neuroscience exploration and education to virtual realms using the Oculus Rift.",
-                "brief": "In October of 2016, president Barrack Obama called upon a coalition of pioneering researchers, designers, technologists, and diplomats to gather at Carnegie Mellon University to demonstrate the very leading frontiers of technology. We were invited to this White House Frontiers conference to present our latest virtual reality experience: MSTY. The three pound organ sitting behind y our eyes is nothing short of extraordinary. Symphonic activity among billions of neurons gives rise to thoughts, feelings, and ultimately, the perspective and personality that turn a brain into a mind. Thanks to cutting edge AI, nanoscale resolution imaging, and the help of a quarter million gamers from around the world, crowdsources neuroscience sets the pace for a new wave of discovery. The creators of Eyewire reveal the first glimpse of Neo a cortical game coming 2017 that will invite gamers to solve the puzzles of perception.",
-                "challenge": "MSTY VR is our most recent virtual reality experience. It features a knotty entanglement of neuron reconstructions from cortex—the outer most layer of brain tissue responsible for perception. MSTY, so named for the particular flavor of AI involved in the reconstruction process, was intended to be a mostly passive safari-type experience. The user would be accompanied by a friendly, derpy, but exceedingly capable AI companion—MSTY. Inspired by Google's early ImageNet dataset and success in training neural networks to recognize cats in Youtube videos, we conceived MSTY as a hovering cat–like robot with paw–like arms. The experience lasted approximately 5 minutes, during which MSTY intelligently and naturally navigates toward areas of interest acting as a sort of subliminal tour guide."
-            },
-            "meta" : {
-                "Client" : "Whitehouse Frontiers",
-                "Year" : 2016,
-                "Role" : "Designer/Developer/Animator",
-                "Team" : "Jordi Valladaras",
-                "Discipline" : "Game Design, Interaction Design, Character Animation, Game Development Neuroscience",
-                "Medium" : "Virtual Reality",
-                "Technologies" : "Unity, HTC Vive, Oculus Rift",
-                "Duration" : "One Month"
-            },
-            "image_hero": "images/projects/msty/hi-res/msty-hero-2.jpg",
-            "image_preview": "images/projects/msty/hi-res/msty-preview.jpg",
-            "sections" : [
-                {
-                    "name" : "endeavorImage100vw",
-                    "data" : {
-                        "class" : "endeavor-item-no-margin",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "MSTY Oculus",
-                            "src": "images/projects/msty/standard/msty-oculus.jpg",
-                            "src_standard": "images/projects/msty/standard/msty-oculus.jpg",
-                            "src_retina": "images/projects/msty/retina/msty-oculus.jpg",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/msty/hi-res/msty-oculus.jpg",
-                            "src_preview": "images/projects/msty/hi-res/msty-oculus.jpg",
-                            "caption": "MSTY Oculus"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImage100vw",
-                    "data" : {
-                        "class" : "endeavor-item-no-margin",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "MSTY Pow",
-                            "src": "images/projects/msty/standard/msty-pow.jpg",
-                            "src_standard": "images/projects/msty/standard/msty-pow.jpg",
-                            "src_retina": "images/projects/msty/retina/msty-pow.jpg",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/msty/hi-res/msty-pow.jpg",
-                            "src_preview": "images/projects/msty/hi-res/msty-pow.jpg",
-                            "caption": "MSTY Pow"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorVideoFS",
-                    "data" : {
-                        "class" : "endeavor-item-no-margin endeavor-width-100vw endeavor-pos-rel",
-                        "loop": "",
-                        "muted": "",
-                        "autoplay": "true",
-                        "src" : {
-                            "webm" : "images/projects/msty/videos/msty.webm",
-                            "mp4" : "images/projects/msty/videos/msty.mp4",
-                            "poster" : "images/projects/msty/videos/msty.jpg"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImage100vw",
-                    "data" : {
-                        "class" : "endeavor-item-no-margin",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "MSTY Intro",
-                            "src": "images/projects/msty/standard/msty-intro-1.jpg",
-                            "src_standard": "images/projects/msty/standard/msty-intro-1.jpg",
-                            "src_retina": "images/projects/msty/retina/msty-intro-1.jpg",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/msty/hi-res/msty-intro-1.jpg",
-                            "src_preview": "images/projects/msty/hi-res/msty-intro-1.jpg",
-                            "caption": "MSTY Intro"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorVideoFS",
-                    "data" : {
-                        "class" : "endeavor-width-100vw endeavor-pos-rel",
-                        "loop": "",
-                        "muted": "",
-                        "autoplay": "true",
-                        "src" : {
-                            "webm" : "images/projects/msty/videos/msty_idle.webm",
-                            "mp4" : "images/projects/msty/videos/msty_idle.mp4",
-                            "poster" : "images/projects/msty/videos/msty_idle.jpg"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImage100vw",
-                    "data" : {
-                        "class" : "endeavor-item-no-margin",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "MSTY Intro",
-                            "src": "images/projects/msty/standard/msty-intro-2.jpg",
-                            "src_standard": "images/projects/msty/standard/msty-intro-2.jpg",
-                            "src_retina": "images/projects/msty/retina/msty-intro-2.jpg",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/msty/hi-res/msty-intro-2.jpg",
-                            "src_preview": "images/projects/msty/hi-res/msty-intro-2.jpg",
-                            "caption": "MSTY Intro"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImage100vw",
-                    "data" : {
-                        "class" : "endeavor-item-no-margin",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "MSTY Intro",
-                            "src": "images/projects/msty/standard/msty-intro-3.jpg",
-                            "src_standard": "images/projects/msty/standard/msty-intro-3.jpg",
-                            "src_retina": "images/projects/msty/retina/msty-intro-3.jpg",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/msty/hi-res/msty-intro-3.jpg",
-                            "src_preview": "images/projects/msty/hi-res/msty-intro-3.jpg",
-                            "caption": "MSTY Intro"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImage100vw",
-                    "data" : {
-                        "class" : "endeavor-item-no-margin",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "MSTY Expressions",
-                            "src": "images/projects/msty/standard/msty-many.jpg",
-                            "src_standard": "images/projects/msty/standard/msty-many.jpg",
-                            "src_retina": "images/projects/msty/retina/msty-many.jpg",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/msty/hi-res/msty-many.jpg",
-                            "src_preview": "images/projects/msty/hi-res/msty-many.jpg",
-                            "caption": "MSTY Expressions"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorVideoFS",
-                    "data" : {
-                        "class" : "endeavor-item-bottom-125 endeavor-width-100vw endeavor-pos-rel",
-                        "loop": "",
-                        "muted": "",
-                        "autoplay": "true",
-                        "src" : {
-                            "webm" : "images/projects/msty/videos/msty_awesome.webm",
-                            "mp4" : "images/projects/msty/videos/msty_awesome.mp4",
-                            "poster" : "images/projects/msty/videos/msty_awesome.jpg"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImageFS",
-                    "data" : {
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "MSTY Lineup",
-                            "src": "images/projects/msty/standard/msty-lineup.jpg",
-                            "src_standard": "images/projects/msty/standard/msty-lineup.jpg",
-                            "src_retina": "images/projects/msty/retina/msty-lineup.jpg",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/msty/hi-res/msty-lineup.jpg",
-                            "src_preview": "images/projects/msty/hi-res/msty-lineup.jpg",
-                            "caption": "MSTY Lineup"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorVideoFS",
-                    "data" : {
-                        "class" : "endeavor-item-125 endeavor-width-100vw endeavor-pos-rel",
-                        "loop": "",
-                        "muted": "",
-                        "autoplay": "true",
-                        "src" : {
-                            "webm" : "images/projects/msty/videos/msty_fly.webm",
-                            "mp4" : "images/projects/msty/videos/msty_fly.mp4",
-                            "poster" : "images/projects/msty/videos/msty_fly.jpg"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImageFS",
-                    "data" : {
-                        "class" : "endeavor-item-top-125",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "MSTY State Machine",
-                            "src": "images/projects/msty/standard/msty-fsm.jpg",
-                            "src_standard": "images/projects/msty/standard/msty-fsm.jpg",
-                            "src_retina": "images/projects/msty/retina/msty-fsm.jpg",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/msty/hi-res/msty-fsm.jpg",
-                            "src_preview": "images/projects/msty/hi-res/msty-fsm.jpg",
-                            "caption": "MSTY State Machine"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorCaptionFS",
-                    "data" : {
-                        "class" : "endeavor-item endeavor-item-bottom-125",
-                        "caption" : "(above) MSTY's brain, or a finite state machine created to naturally transition between all of MSTY's facial expressions and movement states. The particular state machine shown above included states for MSTY's location and interaction patterns."
-                    }
-                },
-                {
-                    "name" : "endeavorImage100vw",
-                    "data" : {
-                        "class" : "endeavor-item-no-margin",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "MSTY Navigation System",
-                            "src": "images/projects/msty/standard/msty-navigation.jpg",
-                            "src_standard": "images/projects/msty/standard/msty-navigation.jpg",
-                            "src_retina": "images/projects/msty/retina/msty-navigation.jpg",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/msty/hi-res/msty-navigation.jpg",
-                            "src_preview": "images/projects/msty/hi-res/msty-navigation.jpg",
-                            "caption": "MSTY Navigation System"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImage100vw",
-                    "data" : {
-                        "class" : "endeavor-item-no-margin",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "MSTY Neuroscience",
-                            "src": "images/projects/msty/standard/msty-meshes.jpg",
-                            "src_standard": "images/projects/msty/standard/msty-meshes.jpg",
-                            "src_retina": "images/projects/msty/retina/msty-meshes.jpg",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/msty/hi-res/msty-meshes.jpg",
-                            "src_preview": "images/projects/msty/hi-res/msty-meshes.jpg",
-                            "caption": "MSTY Neuroscience"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImage100vw",
-                    "data" : {
-                        "class" : "endeavor-item-no-margin",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "MSTY Spatial Design",
-                            "src": "images/projects/msty/standard/msty-space.jpg",
-                            "src_standard": "images/projects/msty/standard/msty-space.jpg",
-                            "src_retina": "images/projects/msty/retina/msty-space.jpg",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/msty/hi-res/msty-space.jpg",
-                            "src_preview": "images/projects/msty/hi-res/msty-space.jpg",
-                            "caption": "MSTY Spatial Design"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImage100vw",
-                    "data" : {
-                        "class" : "endeavor-item-no-margin",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "MSTY Dynamic Depth of Field",
-                            "src": "images/projects/msty/standard/msty-dynamic-dof-1.jpg",
-                            "src_standard": "images/projects/msty/standard/msty-dynamic-dof-1.jpg",
-                            "src_retina": "images/projects/msty/retina/msty-dynamic-dof-1.jpg",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/msty/hi-res/msty-dynamic-dof-1.jpg",
-                            "src_preview": "images/projects/msty/hi-res/msty-dynamic-dof-1.jpg",
-                            "caption": "MSTY Dynamic Depth of Field"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImageFS",
-                    "data" : {
-                        "class" : "endeavor-item-top-125 endeavor-item-bottom-50",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "MSTY Dynamic Depth of Field",
-                            "src": "images/projects/msty/standard/msty-dynamic-dof-2.jpg",
-                            "src_standard": "images/projects/msty/standard/msty-dynamic-dof-2.jpg",
-                            "src_retina": "images/projects/msty/retina/msty-dynamic-dof-2.jpg",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/msty/hi-res/msty-dynamic-dof-2.jpg",
-                            "src_preview": "images/projects/msty/hi-res/msty-dynamic-dof-2.jpg",
-                            "caption": "MSTY Dynamic Depth of Field"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorParagraphPoints",
-                    "data" : {
-                        "class" : "endeavor-item-bottom",
-                        "bgColor" : "",
-                        "header" : "",
-                        "contents": [
-                            {
-                                "header": "Dynamic Depth of Field",
-                                "description" : "Visualizing dynamic depth of field. A depth–mapped image where darker shades of gray represent sharper focus."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "name" : "endeavorVideoFS",
-                    "data" : {
-                        "class" : "endeavor-item-no-margin endeavor-width-100vw endeavor-pos-rel",
-                        "loop": "",
-                        "muted": "",
-                        "autoplay": "true",
-                        "src" : {
-                            "webm" : "images/projects/msty/videos/msty_dof.webm",
-                            "mp4" : "images/projects/msty/videos/msty_dof.mp4",
-                            "poster" : "images/projects/msty/videos/msty_dof.jpg"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImage100vw",
-                    "data" : {
-                        "class" : "endeavor-item-no-margin",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "MSTY Exhibition",
-                            "src": "images/projects/msty/standard/msty-exhibition.jpg",
-                            "src_standard": "images/projects/msty/standard/msty-exhibition.jpg",
-                            "src_retina": "images/projects/msty/retina/msty-exhibition.jpg",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/msty/hi-res/msty-exhibition.jpg",
-                            "src_preview": "images/projects/msty/hi-res/msty-exhibition.jpg",
-                            "caption": "MSTY Exhibition"
-                        }
                     }
                 },
                 {
