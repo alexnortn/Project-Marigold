@@ -2595,54 +2595,6 @@
                         },
                         "image" : {
                             "name": "TEDxBeaconStreet",
-                            "src": "images/projects/tedx/standard/tedx-2.jpg",
-                            "src_standard": "images/projects/tedx/standard/tedx-2.jpg",
-                            "src_retina": "images/projects/tedx/retina/tedx-2.jpg",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/tedx/hi-res/tedx-2.jpg",
-                            "src_preview": "images/projects/tedx/hi-res/tedx-2.jpg",
-                            "caption": "TEDxBeaconStreet"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImage100vw",
-                    "data" : {
-                        "class" : "endeavor-item-top-25-responsive",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "TEDxBeaconStreet",
-                            "src": "images/projects/tedx/standard/tedx-3.jpg",
-                            "src_standard": "images/projects/tedx/standard/tedx-3.jpg",
-                            "src_retina": "images/projects/tedx/retina/tedx-3.jpg",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/tedx/hi-res/tedx-3.jpg",
-                            "src_preview": "images/projects/tedx/hi-res/tedx-3.jpg",
-                            "caption": "TEDxBeaconStreet"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImage100vw",
-                    "data" : {
-                        "class" : "endeavor-item-top-25-responsive",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "TEDxBeaconStreet",
                             "src": "images/projects/tedx/standard/tedx-4.jpg",
                             "src_standard": "images/projects/tedx/standard/tedx-4.jpg",
                             "src_retina": "images/projects/tedx/retina/tedx-4.jpg",
@@ -2667,12 +2619,12 @@
                         },
                         "image" : {
                             "name": "TEDxBeaconStreet",
-                            "src": "images/projects/tedx/standard/tedx-5.jpg",
-                            "src_standard": "images/projects/tedx/standard/tedx-5.jpg",
-                            "src_retina": "images/projects/tedx/retina/tedx-5.jpg",
+                            "src": "images/projects/tedx/standard/tedx-3.jpg",
+                            "src_standard": "images/projects/tedx/standard/tedx-3.jpg",
+                            "src_retina": "images/projects/tedx/retina/tedx-3.jpg",
                             "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/tedx/hi-res/tedx-5.jpg",
-                            "src_preview": "images/projects/tedx/hi-res/tedx-5.jpg",
+                            "src_mobile": "images/projects/tedx/hi-res/tedx-3.jpg",
+                            "src_preview": "images/projects/tedx/hi-res/tedx-3.jpg",
                             "caption": "TEDxBeaconStreet"
                         }
                     }
