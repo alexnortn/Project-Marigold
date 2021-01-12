@@ -48,6 +48,27 @@
                     }
                 },
                 {
+                    "name" : "endeavorCaptionHeaderGrid",
+                    "data" : {
+                        "class" : "endeavor-item-top-125 endeavor-no-padding",
+                        "textColor" : "#1a1a1a",
+                        "contents" : [ 
+                            {
+                                "header" : "Impact",
+                                "caption" : "Google Travel products serve hundreds of millions of monthly active users. In 2019 I led product design to unite the disparate verticals (Trips, Flights, Hotels, etc) under a unified navigation and brand identity."
+                            },
+                            {
+                                "header" : "Difficulty",
+                                "caption" : "Before joining, uniting the Google Travel products had been a faltering project for over six years. I was able to inspire support, then work with stakeholders from across the verticals to realize and successfully launch."
+                            },
+                            {
+                                "header" : "Leadership",
+                                "caption" : "Organized and led a series of cross-functional meetings over the course of a year to arrive at a workable proposal, roadmap, and identity system resulting in buy-in at the director and VP level."
+                            }
+                        ]
+                    }
+                },
+                {
                     "name" : "endeavorVideoFS",
                     "data" : {
                         "class" : "endeavor-item-top-125 endeavor-width-100-prcnt endeavor-border-32-responsive endeavor-pos-rel",
@@ -62,9 +83,29 @@
                     }
                 },
                 {
+                    "name" : "endeavorModuleMachine",
+                    "data" : {
+                        "bgColor" : "",
+                        "class" : "endeavor-item-no-margin",
+                        "modules" : [
+                            {
+                                "name" : "endeavorIntroFS",
+                                "data" : {
+                                    "margin" : "endeavor-item-250",
+                                    "header" : "Brand buy-in",
+                                    "subtext" : "Achieving brand buy-in for a product at the scale of Google Travel required a combination of market research, external agency partnerships, and substatial internal awareness campaigns, such as 'Why Travel?'",
+                                    "bgColor" : "",
+                                    "class" : "",
+                                    "textColor" : "#1a1a1a"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
                     "name" : "endeavorVideoFS",
                     "data" : {
-                        "class" : "endeavor-item-top-125 endeavor-width-100vw endeavor-pos-rel",
+                        "class" : "endeavor-width-100vw endeavor-pos-rel",
                         "loop": "",
                         "muted": "",
                         "autoplay": "true",
@@ -151,54 +192,6 @@
                         },
                         "image" : {
                             "name": "Google Travel",
-                            "src": "images/projects/travel/standard/travel-5.png",
-                            "src_standard": "images/projects/travel/standard/travel-5.png",
-                            "src_retina": "images/projects/travel/retina/travel-5.png",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/travel/hi-res/travel-5.png",
-                            "src_preview": "images/projects/travel/hi-res/travel-5.png",
-                            "caption": "Google Travel"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImage100vw",
-                    "data" : {
-                        "class" : "endeavor-item-top-25-responsive",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "Google Travel",
-                            "src": "images/projects/travel/standard/travel-6.png",
-                            "src_standard": "images/projects/travel/standard/travel-6.png",
-                            "src_retina": "images/projects/travel/retina/travel-6.png",
-                            "src_low": "images/empty.gif",
-                            "src_mobile": "images/projects/travel/hi-res/travel-6.png",
-                            "src_preview": "images/projects/travel/hi-res/travel-6.png",
-                            "caption": "Google Travel"
-                        }
-                    }
-                },
-                {
-                    "name" : "endeavorImage100vw",
-                    "data" : {
-                        "class" : "endeavor-item-top-25-responsive",
-                        "placeholder" : {
-                            "name" : "",
-                            "src" : "",
-                            "src" : "",
-                            "src_mobile" : "",
-                            "src_preview" : "",
-                            "caption" : ""
-                        },
-                        "image" : {
-                            "name": "Google Travel",
                             "src": "images/projects/travel/standard/travel-7.png",
                             "src_standard": "images/projects/travel/standard/travel-7.png",
                             "src_retina": "images/projects/travel/retina/travel-7.png",
@@ -236,7 +229,7 @@
                 {
                     "name" : "endeavorImage100vw",
                     "data" : {
-                        "class" : "endeavor-item-top-25-responsive endeavor-item-bottom-125-responsive",
+                        "class" : "endeavor-item-top-25-responsive",
                         "placeholder" : {
                             "name" : "",
                             "src" : "",
@@ -255,6 +248,24 @@
                             "src_preview": "images/projects/travel/hi-res/travel-9.png",
                             "caption": "Google Travel"
                         }
+                    }
+                },
+                {
+                    "name" : "endeavorParagraphChecklist",
+                    "data" : {
+                        "header" : "Reflecting",
+                        "id" : "ghost-reflecting-affect",
+                        "class" : "endeavor-item-250 endeavor-item-bottom-125-responsive",
+                        "class2" : "endeavor-reveal",
+                        "bgColor" : "",
+                        "description" : "Adding a flagship identity to Google's brand portfolio requires equal parts metrics driven research and human-centered principles. If the brand doesn't resonate with people, it follows that metrics won't converge the way you'd like. Likewise, if you optimize the brand for a specific market, you could easily alienate others. To art direct Google Travel, I had to dig deep into my skillset: at one point I even created a data-viz of all Google's branded marks (thousands) to distill out common visual language principles. The data-viz added a quantitative emphasis on the largely subjective visual design giving senior stakeholders a common language to offer feedback around. Landing this brand has been one of my favorite experience at Google since it brought together equal parts strategy and human-centered asthetics.",
+                        "contents": ""
+                    }
+                },
+                {
+                    "name" : "endeavorPad",
+                    "data" : {
+                        "class" : "endeavor-height-200px-responsive endeavor-item-no-margin endeavor-height-10vw"
                     }
                 }
             ]

@@ -1232,7 +1232,8 @@ mixin endeavorCaptionHeaderGrid(data)
     - var marginClass = data.noMargin ? "endeavor-item-no-margin" : "endeavor-item" // $BLACK
     - var textColor = data.textColor ? data.textColor : "#232323" // $BLACK
     - var contents = data.contents
-    .endeavor-element.endeavor-flex-row-nowrap.endeavor-flex-around.endeavor-padding-bottom-50(class=`${marginClass}`)
+    - var _class = data.class ? data.class : marginClass
+    .endeavor-element.endeavor-flex-row-nowrap.endeavor-flex-around.endeavor-padding-bottom-50(class=`${_class}`)
         each content, index in contents
             +endeavorCaptionHeader(content, _width, textColor)
 
