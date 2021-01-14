@@ -21,7 +21,7 @@ $StickyOffset = 40vh
 
 #bios 
 	width 100%
-	padding-top 15%
+	padding-top 250px  // « (15%) add back in for sticky bios with image 
 	// padding-bottom 15% // Only for beta
 	
 
@@ -173,7 +173,7 @@ $StickyOffset = 40vh
 	
 
 .copy q
-	margin-top 25px
+	margin-top 0 // Was 25px beforehand when bios image was here
 	text-align left
 	
 
@@ -289,9 +289,11 @@ $StickyOffset = 40vh
 		padding-top 64px
 
 	.bios-title
-		top calc(80vw)
+		display none
+		position relative
+		top 0
 		width 95%
-		height 250px
+		height 225px
 
 	#bios-title p
 		visibility hidden
@@ -318,6 +320,8 @@ $StickyOffset = 40vh
 		display none
 
 	#bios-wrapper
+			margin-top 50px
+		flex-direction column
 		min-width 300px
 		width 90% 
 		
@@ -329,9 +333,11 @@ $StickyOffset = 40vh
 		padding-top 64px
 	
 	.bios-title
-		top calc(80vw)
+		display none
+		position relative
+		top 0
 		width 95%
-		height 250px
+		height 225px
 
 	#bios-title p
 		visibility hidden
@@ -358,6 +364,8 @@ $StickyOffset = 40vh
 		display none
 
 	#bios-wrapper
+		margin-top 50px
+		flex-direction column
 		min-width 300px
 		width 90% 
 

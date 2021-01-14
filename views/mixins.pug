@@ -49,7 +49,8 @@ mixin caseStudyPreview(data, index)
                 .description-wrapper
                     h3=data.project_type
                     h2.project-intro=data.name
-                    hr
+                    button#case-study-more.endeavor-button.flat
+                        h3.endeavor-center.endeavor-text-center.endeavor-transition-500 Read more
             .hero-box
                 .hero(style=`background-image: url(${data.image_hero})`)
 

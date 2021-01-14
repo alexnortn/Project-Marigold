@@ -145,6 +145,9 @@ let glyph = function (p) {
 		glyphCenter = p.createVector();
 		aCenterOffset = p.createVector();
 
+		// Setup render mode [fluid, perlin, debug]
+		_renderMode = "perlin" 
+
 		centerGlyph(vertices);
 		findCenter();
 
@@ -157,7 +160,7 @@ let glyph = function (p) {
 
 	    	if (_options.phone) {
 	    		// 10% height to offset element with respect to header
-	    		glyph_obj.y_offset = (p.height * 0.05);
+	    		glyph_obj.y_offset = (p.height * 0.5);
 	    	}
 
 	    	if (_options.tablet) {
@@ -167,11 +170,11 @@ let glyph = function (p) {
 	    	glyph_obj.height = p.height * 0.5;
 	    	glyph_obj.width = glyph_obj.height; 
 	    	glyph_obj.x = (p.width - glyph_obj.width) / 2;
-	    	glyph_obj.y = (p.height - glyph_obj.height) / 2 + glyph_obj.y_offset;
+	    	glyph_obj.y = (p.height - glyph_obj.height) / 2 - glyph_obj.y_offset;
 
 	    	physInitMobile(); // Initiate the physics world
 			
-			return;
+			// return;
 		}
 
 		loadArrays(vertices); 	// Load the arrays
@@ -209,12 +212,13 @@ let glyph = function (p) {
 
 		// Update the physics world
 		physics.update();
-		p.clear();
+		p.background("#1a1a1a");
+		// p.clear();
 
-		if (_options.mobile) {
-			mobile_physics();
-			return; // No more, no more
-		}
+		// if (_options.mobile) {
+		// 	mobile_physics();
+		// 	return; // No more, no more
+		// }
 
 		// Draw the bezier Shapes 
 		drawBasicA();
@@ -269,13 +273,13 @@ let glyph = function (p) {
 			p.ellipse(glyph_obj.dynamic.x, glyph_obj.dynamic.y,5,5);
 		*/
 
-		p.image(
-			glyph_obj.img,
-			glyph_obj.x + x_off,
-			glyph_obj.y + y_off,
-			glyph_obj.width,
-			glyph_obj.height
-		);
+		// p.image(
+		// 	glyph_obj.img,
+		// 	glyph_obj.x + x_off,
+		// 	glyph_obj.y + y_off,
+		// 	glyph_obj.width,
+		// 	glyph_obj.height
+		// );
 	}
 
 	// --------------------------------------
@@ -328,11 +332,11 @@ let glyph = function (p) {
 		if (_slow) {
 			p.noFill();
 			p.strokeWeight(1);
-			p.stroke(35,35,35,glyphOp);
+			p.stroke(230,230,230,glyphOp); // 35,35,35 before
 		} 
 		else {
 			p.noStroke();
-			p.fill(35,35,35,glyphOp);
+			p.fill(230,230,230,glyphOp); // 35,35,35 before
 		}
 
 		p.beginShape();
@@ -358,7 +362,7 @@ let glyph = function (p) {
 			p.bezierVertex(aSpringVert[49].x, aSpringVert[49].y, aSpringVert[50].x, aSpringVert[50].y, aSpringVert[51].x, aSpringVert[51].y);
 			p.bezierVertex(aSpringVert[52].x, aSpringVert[52].y, aSpringVert[53].x, aSpringVert[53].y, aSpringVert[54].x, aSpringVert[54].y);
 		p.endShape(p.CLOSE);
-		p.fill('#f4f4f4');
+		p.fill('#1a1a1a'); // before #f4f4f4 
 		p.beginShape();
 		p.vertex(aCounterSpringVert[0].x, aCounterSpringVert[0].y);
 		p.vertex(aCounterSpringVert[1].x, aCounterSpringVert[1].y);
@@ -377,11 +381,11 @@ let glyph = function (p) {
 		if (_slow) {
 			p.noFill();
 			p.strokeWeight(1);
-			p.stroke(35,35,35,glyphOp);
+			p.stroke(230,230,230,glyphOp); // 35,35,35 before
 		} 
 		else {
 			p.noStroke();
-			p.fill(35,35,35,glyphOp);
+			p.fill(230,230,230,glyphOp); // 35,35,35 before
 		}
 
 		p.beginShape();
@@ -693,7 +697,7 @@ let glyph = function (p) {
 		);
 
 		let springStrength = 0.00035,
-				springLength   = 0.05;
+			springLength   = 0.05;
 
 		// ToxiParticle: Centroid
 		glyph_obj.lock = 
@@ -764,7 +768,7 @@ let glyph = function (p) {
 		h = p.windowHeight;
 		
 		w < 450 && _options.mobile
-			? center.set(w/2, h/1.5)
+			? center.set(w/2, h/2)
 			: center.set(w/2, h/2);
 
 		let glyphCenterX = center.x - aCenterOffset.x; 
@@ -1060,7 +1064,7 @@ let glyph = function (p) {
 
 	function motionBlur() {
 		p.push();
-			p.fill(255, 100);
+			p.fill(34,34,34, 100); // was 255 before
 			p.rect(0,0,width,height);
 		p.pop();
 	}

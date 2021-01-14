@@ -40,7 +40,7 @@ function Attractor(args = {}) {
 		let alpha = p.map(_this.strength, 0.05, -0.05, 0, 255); // 1/x | inversely proportional
 
 		p.noStroke();
-		p.fill(35,35,35,alpha);
+		p.fill(230,230,230,alpha); // previously 35,35,35
 		p.ellipse(
 			_this.x,
 			_this.y,

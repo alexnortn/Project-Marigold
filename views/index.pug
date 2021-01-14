@@ -84,7 +84,7 @@ block content
 
 
     // HEADER
-    #header.header.plus
+    #header.header.plus_plus_plus
         .logo
             img(src = "/images/logo.svg" alt = "main logo")
         //- Progress Bar
@@ -110,10 +110,10 @@ block content
                 .lab-menu
                     ul
                         li
-                            input(type="radio" name="lab-radio" id="fluid-radio" class="lab-radio" value="1" checked="checked")
+                            input(type="radio" name="lab-radio" id="fluid-radio" class="lab-radio" value="1")
                             label(for="fluid-radio") Fluid
                         li
-                            input(type="radio" name="lab-radio" id="perlin-radio" class="lab-radio" value="2")
+                            input(type="radio" name="lab-radio" id="perlin-radio" class="lab-radio" value="2" checked="checked")
                             label(for="perlin-radio") Perlin
                         li
                             input(type="radio" name="lab-radio" id="debug-radio" class="lab-radio" value="3") 
@@ -141,7 +141,7 @@ block content
                     img(src = "/images/name.svg" alt = "Alex Norton")
                     //- p#bios-title-p !{bios_text.title}
                 #bios-content.bios-content
-                    img(src = "/images/alexnorton-hs2.jpg" alt = "Alex Norton Portrait")
+                    //- img(src = "/images/alexnorton-hs2.jpg" alt = "Alex Norton Portrait")
                     .copy
                         q !{bios_text.description_pull}
                         h4#bios-about About

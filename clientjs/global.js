@@ -180,9 +180,9 @@ $(document).ready(function() {
         // }, 500);
     });
 
-    window.addEventListener('scroll', function(e) {
-        $('.scroll-arrow').velocity("fadeOut", { duration: 250 });
-    }, {passive:true});
+    // window.addEventListener('scroll', function(e) {
+    //     $('.scroll-arrow').velocity("fadeOut", { duration: 250 });
+    // }, {passive:true});
 
     // Bios Button
     $('#bios-button').click(function() {
@@ -815,7 +815,7 @@ $(document).ready(function() {
     $('.scroll-arrow').click(function() {
         _sectionCurrent = "bios"; // Set #bios as current
         animation.scrollToVelocity(_sectionCurrent); // Navigate
-        $(this).velocity("fadeOut", { duration: 250 }); // Fade it out | They get it
+        // $(this).velocity("fadeOut", { duration: 250 }); // Fade it out | They get it
     });
 
 
@@ -864,10 +864,10 @@ $(document).ready(function() {
     // --------------------------------------
     // Mobile
 
-    // Hide Web-Lab
-    if (_mobile) {
-        $('#web-lab').addClass('hidden');
-    }
+    // Hide Web-Lab ~before 2021
+    // if (_mobile) {
+    //     $('#web-lab').addClass('hidden');
+    // }
 
     /*
         Alternative check for mobile devices
