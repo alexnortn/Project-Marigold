@@ -206,7 +206,7 @@ let glyph = function (p) {
 	p.draw = function() {
 
 		// Only render if glyph is in view
-		if (!_render || window._openProjectState) {
+		if (!_render) {
 			return;
 		}
 
@@ -1172,18 +1172,20 @@ let glyph = function (p) {
 
 	// Scroll Accumulator
 	$( window ).scroll(function() {
+		window.settimeout 
 		if (_options.mobile) {
 			return;
 		}
 		
-		let scroll_top = $(window).scrollTop();
+		let scroll_top = window.scrollY;
 		if (scroll_top < p.height)  { // We only care if it's happening around p5 environment
 			_bounce.bounceFactory(scroll_top);
 			_render = true;
 		}
-		else {
+		else if (window.scrollY > 0) { // hack to get around annoying initialization bug
 			_render = false;
 		}
+
 	});
 
 
