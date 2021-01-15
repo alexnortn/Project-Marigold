@@ -253,12 +253,12 @@
                 {
                     "name" : "endeavorParagraphChecklist",
                     "data" : {
-                        "header" : "Reflecting",
+                        "header" : "Reflection",
                         "id" : "ghost-reflecting-affect",
                         "class" : "endeavor-item-250 endeavor-item-bottom-125-responsive",
                         "class2" : "endeavor-reveal",
                         "bgColor" : "",
-                        "description" : "Adding a flagship identity to Google's brand portfolio requires equal parts metrics driven research and human-centered principles. If the brand doesn't resonate with people, it follows that metrics won't converge the way you'd like. Likewise, if you optimize the brand for a specific market, you could easily alienate others. To art direct Google Travel, I had to dig deep into my skillset: at one point I even created a data-viz of all Google's branded marks (thousands) to distill out common visual language principles. The data-viz added a quantitative emphasis on the largely subjective visual design giving senior stakeholders a common language to offer feedback around. Landing this brand has been one of my favorite experience at Google since it brought together equal parts strategy and human-centered asthetics.",
+                        "description" : "Adding a flagship identity to Google's brand portfolio requires equal parts metrics driven research and human-centered principles. If the brand doesn't resonate with people, it follows that metrics won't converge the way you'd like. Likewise, if you optimize the brand for a specific market, you could easily alienate others. To art direct Google Travel, I had to dig deep into my skillset. I created a data-viz encompassing all (thousands) Google's branded marks to distill common visual language principles. The analysis added a quantitative emphasis on the largely subjective visual design giving senior stakeholders a common language to offer feedback around. Landing this brand has been one of my favorite experience at Google since it brought together equal parts strategy and human-centered asthetics.",
                         "contents": ""
                     }
                 },
@@ -582,7 +582,7 @@
                     "name" : "endeavorGhostButtonURL",
                     "data" : {
                         "class" : "endeavor-item-bottom-125 endeavor-text-left",
-                        "text" : "Send It",
+                        "text" : "View live",
                         "align" : "",
                         "id" : "museum-live",
                         "url" : "https://pair.withgoogle.com/guidebook/",
@@ -901,7 +901,7 @@
                     "name" : "endeavorGhostButtonURL",
                     "data" : {
                         "class" : "endeavor-item-bottom-125 endeavor-text-left",
-                        "text" : "Send It",
+                        "text" : "View live",
                         "align" : "",
                         "id" : "museum-live",
                         "url" : "http://museum.eyewire.org/",
@@ -2446,7 +2446,7 @@
                 {
                     "name" : "endeavorParagraphChecklist",
                     "data" : {
-                        "header" : "Reflecting",
+                        "header" : "Reflection",
                         "id" : "ghost-reflecting-affect",
                         "class" : "endeavor-item-125 endeavor-item-bottom-15",
                         "class2" : "endeavor-reveal",
@@ -2519,7 +2519,7 @@
                     "name" : "endeavorGhostButtonURL",
                     "data" : {
                         "class" : "endeavor-item-bottom-125 endeavor-text-left",
-                        "text" : "Send It",
+                        "text" : "View live",
                         "align" : "",
                         "id" : "museum-live",
                         "url" : "http://museum.eyewire.org/",
@@ -2558,7 +2558,6 @@
                 "Client" : "Ideas in Action",
                 "Year" : 2017,
                 "Role" : "Design Director",
-                "Team" : "Annie Zeng",
                 "Discipline" : "Art direction",
                 "Medium" : "Digital design",
                 "Technologies": "Visual design, computational design",
@@ -3522,7 +3521,7 @@
                 {
                     "name" : "endeavorParagraphChecklist",
                     "data" : {
-                        "header" : "Reflecting",
+                        "header" : "Reflection",
                         "id" : "ghost-reflecting-affect",
                         "class" : "endeavor-item-250",
                         "class2" : "endeavor-reveal",
@@ -4891,7 +4890,7 @@
                 {
                     "name" : "endeavorParagraphChecklist",
                     "data" : {
-                        "header" : "Reflecting",
+                        "header" : "Reflection",
                         "id" : "ghost-reflecting-affect",
                         "class" : "endeavor-item-bottom-125 endeavor-item-bottom-15",
                         "class2" : "endeavor-reveal",
@@ -7642,7 +7641,7 @@
     ],
     "contact": {
         "shout_out": "Interested in working together or simply meeting up?",
-        "shout_out_sub": "I love sharing adventures, discovering new design, and nerding out on emerging technology—especially VR + AI.",
+        "shout_out_sub": "I love sharing adventures, discovering new design, and exploring emerging technology—especially AI.",
         "cta": "Let's Talk.",
         "email": "alexnortn@gmail.com",
         "phone": "774 766 1179",
