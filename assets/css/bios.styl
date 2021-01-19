@@ -208,6 +208,24 @@ $StickyOffset = 40vh
 	color $BLACK_TEXT
 
 
+/* unvisited link */
+.copy q a:link
+	color $BLACK
+	text-decoration underline
+
+/* visited link */
+.copy q a:visited
+	color $DARK_GRAY
+
+/* mouse over link */
+.copy q a:hover
+	color $DARK_GRAY
+
+/* selected link */
+.copy q a:active
+	color $BLACK_TEXT
+
+
 	
 
 #self-long
@@ -228,7 +246,12 @@ $StickyOffset = 40vh
 
 /* ----------- Non-Retina Screens ----------- */
 @media screen and (max-width: 1025px) and (min-resolution: 1dppx) and (min-resolution: 96dpi)	
+	#bios
+		padding-top 128px
+		padding-bottom 64px
+
 	.bios-title
+		display none // new addition 01/2021
 		position absolute
 		top 5%
 		max-width 600px
@@ -238,7 +261,7 @@ $StickyOffset = 40vh
 		
 	.bios-content 
 		position relative
-		margin-left auto
+		margin-left 0
 		max-width 600px
 		min-width 350px
 		box-sizing content-box
@@ -264,7 +287,12 @@ $StickyOffset = 40vh
 
 /* ----------- Retina Screens ----------- */
 @media screen and (max-width: 1025px) and (min-resolution: 2dppx) and (min-resolution: 192dpi)
+	#bios
+		padding-top 128px
+		padding-bottom 64px
+
 	.bios-title
+		display none // new addition 01/2021
 		position absolute
 		top 5%
 		max-width 600px
@@ -274,7 +302,7 @@ $StickyOffset = 40vh
 
 	.bios-content 
 		position relative
-		margin-left auto
+		margin-left 0
 		max-width 600px
 		min-width 350px
 		box-sizing content-box

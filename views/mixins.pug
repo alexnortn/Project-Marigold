@@ -203,10 +203,12 @@ mixin endeavorDesignProcess(data)
     - var _class = data.class ? data.class : "endeavor-item-125"
     - var textColor = data.textColor ? data.textColor : "#232323" // $BLACK
     - var textColor2 = data.textColor2 ? data.textColor2 : "#232323" // $BLACK
-    .endeavor-element.endeavor-process.endeavor-pos-rel.endeavor-width-100vw.endeavor-height-750px.endeavor-height-500px-1000.endeavor-bg-graydient(class=`${_class}`)&attributes({ 'data-process': process })
+    - var textProcess = data.textProcess ? data.textProcess : "Design Process"
+    - var textNumber = data.textNumber ? data.textNumber : "D5"
+    .endeavor-element.endeavor-process.endeavor-pos-rel.endeavor-width-100vw.endeavor-height-500px.endeavor-height-500px-1000.endeavor-bg-black(class=`${_class}`)&attributes({ 'data-process': process })
         .endeavor-width-norm.endeavor-flex.endeavor-flex-center.endeavor-center.endeavor-height-100-prcnt
-            h3.endeavor-top-left.endeavor-padding-top-50(style=`color: ${textColor}`) Design Process
-            h3.endeavor-top-right.endeavor-padding-top-50(style=`color: ${textColor}`) D5
+            h3.endeavor-top-left.endeavor-padding-top-50(style=`color: ${textColor}`)=textProcess
+            h3.endeavor-top-right.endeavor-padding-top-50(style=`color: ${textColor}`)=textNumber
             div
                 h1.endeavor-section-opener.endeavor-text-center.endeavor-no-padding(style=`color: ${textColor2}`)=process
                 h3.endeavor-text-center(style=`color: ${textColor}`)=number
@@ -224,7 +226,7 @@ mixin endeavorSectionOpener(section, number, _class_)
     - var _class = _class_ ? _class_ : "endeavor-item-no-margin"
     - var textColor  = "#bfbfbf" // $BLACK
     - var textColor2 = "#d9d9d9" // $BLACK
-    .endeavor-element.endeavor-pos-rel.endeavor-flex-self-center.endeavor-width-100-prcnt.endeavor-height-750px.endeavor-height-500px-1000.endeavor-bg-graydient(class=`${_class}`)
+    .endeavor-element.endeavor-pos-rel.endeavor-flex-self-center.endeavor-width-100-prcnt.endeavor-height-750px.endeavor-height-500px-1000.endeavor-bg-black(class=`${_class}`)
         .endeavor-width-norm.endeavor-flex.endeavor-flex-center.endeavor-center.endeavor-height-100-prcnt
             h3.endeavor-top-left.endeavor-padding-top-50(style=`color: ${textColor}`) Design Section
             h3.endeavor-top-right.endeavor-padding-top-50(style=`color: ${textColor}`) C3
@@ -560,6 +562,33 @@ mixin endeavorNestedImageFS(data)
     .endeavor-element.endeavor-item.endeavor-flex-column.endeavor-flex-center-main(style=`margin-bottom: ${marginBottom}`)
         img.lazyload.blur-up.fsw(src=image.src_low)&attributes({'data-sizes': "auto"}, {'data-srcset': sources}) 
         img.lazyload.blur-up.endeavor-width-40-prcnt.endeavor-pos-rel.endeavor-top-minus-10vw.endeavor-flex-self-center.endeavor-shadow-50(src=image.src_low)&attributes({'data-src': image2.src}, {'data-srcset': sources2}) 
+
+
+//-  Endeavor Project | Full-Width Adaptive Image + Nested Centered + Offset Video
+    Requires: <data.image> <data.video>
+    Description: Full-Width Image Element
+
+mixin endeavorNestedVideoFS(data)
+    - var image = data.image
+    - var sources = `${data.image.src_standard} 1x, ${data.image.src_retina} 2x`
+    - var webm = data.video.src.webm
+    - var mp4 = data.video.src.mp4
+    - var sourcesVideo = webm + " " + mp4
+    - var poster = data.video.src.poster
+    - var loop = data.video.loop ? data.video.loop : true
+    - var muted = data.video.muted ? data.video.muted : true
+    - var audio_toggle = data.video.audio_toggle ? "" : "hidden"
+    - var autoplay = data.video.autoplay ? data.video.autoplay : false
+    - var marginBottom = data.video.margin ? data.video.margin : "" // $BLACK
+    .endeavor-element.endeavor-item.endeavor-flex-column.endeavor-flex-center-main(style=`margin-bottom: ${marginBottom}`)
+        img.lazyload.blur-up.endeavor-width-125-percent(src=image.src_low)&attributes({'data-sizes': "auto"}, {'data-srcset': sources}) 
+        .video-toggle(class=audio_toggle)
+            i(class="fa fa-volume-up fa-2x toggle-center-within")
+            i(class="hidden fa fa-volume-off fa-2x toggle-center-within endeavor-item-left-neg-5")
+        video.lazyload.fsw.endeavor-pos-rel.endeavor-top-minus-10vw.endeavor-flex-self-center.endeavor-shadow-50.endeavor-border-32-responsive(loop=loop muted=muted autoplay=autoplay data-poster=poster preload="none" data-src=webm data-srcset=sourcesVideo)
+            source(type="video/webm; codecs=vp9,vorbis")
+            source(type="video/mp4")
+            |Your browser is old AF
 
 
 
